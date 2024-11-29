@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="pipeline" nsURI="http://www.mcgill.ca/devops/pipeline/Pipeline"
+    nsPrefix="pipeline">
+  <eClassifiers xsi:type="ecore:EClass" name="Pipeline">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pipelineConfigurations"
+        upperBound="-1" eType="#//Configuration" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="run_name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="default_shell_for_all_jobs"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="default_wd_for_all_jobs"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="group" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cancelProgress" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="triggers" upperBound="-1"
+        eType="#//Event" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jobOrStage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="stages" upperBound="-1"
+        eType="#//Stage" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="jobs" upperBound="-1" eType="#//Job"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Configuration">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameters" upperBound="-1"
+        eType="#//Parameter" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="variablesValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="poolID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="poolName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="poolVm" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="poolDemands" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="resource" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="schedule" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Parameter">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="displayName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="defaultValue" unique="false"
+        upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Stage">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="displayName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dependsOn" unique="false"
+        upperBound="-1" eType="#//Stage"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="jobs" upperBound="-1" eType="#//Job"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Job">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nameKW" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jobName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="permission" eType="#//Permission"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" unique="false" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dependKW" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="references" unique="false"
+        upperBound="-1" eType="#//Job"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="runKW" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="vm" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="poolName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="poolVm" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="poolDemands" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="jobParameters" upperBound="-1"
+        eType="#//JobParameter" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="steps" upperBound="-1"
+        eType="#//Step" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="JobParameter">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="keyword" eType="#//PipelineKeyword"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameters" upperBound="-1"
+        eType="#//ParameterValue" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Step">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subSteps" upperBound="-1"
+        eType="#//Step" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Script" eSuperTypes="#//Step">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="command" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Action" eSuperTypes="#//Step">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="keyword" eType="#//PipelineKeyword"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="paraKW" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameters" upperBound="-1"
+        eType="#//ParameterValue" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ParameterValue">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Event">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="branches" upperBound="-1"
+        eType="#//Branch" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="keyword" eType="#//PipelineKeyword"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="activities" upperBound="-1"
+        eType="#//Activity" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="branchKW" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pathKW" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pathValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="incExcKW" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="autoCancel" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="drafts" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Branch">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Activity">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="PipelineKeyword">
+    <eLiterals name="PPL_KW_NAME" literal="name:"/>
+    <eLiterals name="PPL_KW_RUN_NAME" value="1" literal="run-name:"/>
+    <eLiterals name="PPL_KW_ON" value="2" literal="on:"/>
+    <eLiterals name="PPL_KW_TYPES" value="3" literal="types:"/>
+    <eLiterals name="PPL_KW_BRANCHES" value="4" literal="branches:"/>
+    <eLiterals name="PPL_KW_BRANCHES_IGNORE" value="5" literal="branches-ignore:"/>
+    <eLiterals name="PPL_KW_PUSH" value="6" literal="push:"/>
+    <eLiterals name="PPL_KW_PULL_REQ" value="7" literal="pull_request:"/>
+    <eLiterals name="PPL_KW_PATH" value="8" literal="path:"/>
+    <eLiterals name="PPL_KW_PATH_IGN" value="9" literal="paths-ignore:"/>
+    <eLiterals name="PPL_KW_TAGS" value="10" literal="tags:"/>
+    <eLiterals name="PPL_KW_TAGS_IGNORE" value="11" literal="tags-ignore:"/>
+    <eLiterals name="PPL_KW_PATHS" value="12" literal="paths:"/>
+    <eLiterals name="PPL_KW_SCHEDULE" value="13" literal="schedule:"/>
+    <eLiterals name="PPL_KW_INPUTS" value="14" literal="inputs:"/>
+    <eLiterals name="PPL_KW_TYPE" value="15" literal="type:"/>
+    <eLiterals name="PPL_KW_OUTPUTS" value="16" literal="outputs:"/>
+    <eLiterals name="PPL_KW_SECRETS" value="17" literal="secrets:"/>
+    <eLiterals name="PPL_KW_TRIGGER" value="18" literal="trigger:"/>
+    <eLiterals name="PPL_KW_PR" value="19" literal="pr:"/>
+    <eLiterals name="PPL_KW_REQUIRED" value="20" literal="required:"/>
+    <eLiterals name="PPL_KW_PERMISSIONS" value="21" literal="permissions:"/>
+    <eLiterals name="PPL_KW_ENV" value="22" literal="env:"/>
+    <eLiterals name="PPL_KW_DEFAULTS" value="23" literal="defaults:"/>
+    <eLiterals name="PPL_KW_CONCURRENCY" value="24" literal="concurrency:"/>
+    <eLiterals name="PPL_KW_NEEDS" value="25" literal="needs:"/>
+    <eLiterals name="PPL_KW_IF" value="26" literal="if:"/>
+    <eLiterals name="PPL_KW_RUNS_ON" value="27" literal="runs-on:"/>
+    <eLiterals name="PPL_KW_ENVIRONMENT" value="28" literal="environment:"/>
+    <eLiterals name="PPL_KW_ID" value="29" literal="id:"/>
+    <eLiterals name="PPL_KW_USES" value="30" literal="uses:"/>
+    <eLiterals name="PPL_KW_WORKING_DIRECTORY" value="31" literal="working-directory:"/>
+    <eLiterals name="PPL_KW_SHELL" value="32" literal="shell:"/>
+    <eLiterals name="PPL_KW_ARGS" value="33" literal="args:"/>
+    <eLiterals name="PPL_KW_ENTRYPOINT" value="34" literal="entrypoint:"/>
+    <eLiterals name="PPL_KW_CONTINUE_ON_ERROR" value="35" literal="continue-on-error:"/>
+    <eLiterals name="PPL_KW_TIMEOUT_MINUTES" value="36" literal="timeout-minutes:"/>
+    <eLiterals name="PPL_KW_STRATEGY" value="37" literal="strategy:"/>
+    <eLiterals name="PPL_KW_MATRIX" value="38" literal="matrix:"/>
+    <eLiterals name="PPL_KW_INCLUDE" value="39" literal="include:"/>
+    <eLiterals name="PPL_KW_EXCLUDE" value="40" literal="exclude:"/>
+    <eLiterals name="PPL_KW_FAIL_FAST" value="41" literal="fail-fast:"/>
+    <eLiterals name="PPL_KW_MAX_PARALLEL" value="42" literal="max-parallel:"/>
+    <eLiterals name="PPL_KW_CONTAINER" value="43" literal="container:"/>
+    <eLiterals name="PPL_KW_IMAGE" value="44" literal="image:"/>
+    <eLiterals name="PPL_KW_CREDENTIALS" value="45" literal="credentials:"/>
+    <eLiterals name="PPL_KW_PORTS" value="46" literal="ports:"/>
+    <eLiterals name="PPL_KW_INHERIT" value="47" literal="inherit:"/>
+    <eLiterals name="PPL_KW_PIPELINE" value="48" literal="pipeline:"/>
+    <eLiterals name="PPL_KW_EXTENDS" value="49" literal="extends:"/>
+    <eLiterals name="PPL_KW_DEPLOYMENT" value="50" literal="deployment:"/>
+    <eLiterals name="PPL_KW_CANARY" value="51" literal="canary:"/>
+    <eLiterals name="PPL_KW_ROLLING" value="52" literal="rolling:"/>
+    <eLiterals name="PPL_KW_RUNONCE" value="53" literal="runOnce:"/>
+    <eLiterals name="PPL_KW_TEMPLATE" value="54" literal="template:"/>
+    <eLiterals name="PPL_KW_RESOURCES" value="55" literal="resources:"/>
+    <eLiterals name="PPL_KW_BUILDS" value="56" literal="builds:"/>
+    <eLiterals name="PPL_KW_BUILD" value="57" literal="build:"/>
+    <eLiterals name="PPL_KW_CONTAINERS" value="58" literal="containers:"/>
+    <eLiterals name="PPL_KW_PACKAGES" value="59" literal="packages:"/>
+    <eLiterals name="PPL_KW_PIPELINES" value="60" literal="pipelines:"/>
+    <eLiterals name="PPL_KW_REPOSITORIES" value="61" literal="repositories:"/>
+    <eLiterals name="PPL_KW_WEBHOOKS" value="62" literal="webhooks:"/>
+    <eLiterals name="PPL_KW_FILTERS" value="63" literal="filters:"/>
+    <eLiterals name="PPL_KW_SCHEDULES" value="64" literal="schedules:"/>
+    <eLiterals name="PPL_KW_CRON" value="65" literal="cron:"/>
+    <eLiterals name="PPL_KW_DOWNLOADBUILD" value="66" literal="downloadBuild:"/>
+    <eLiterals name="PPL_KW_REVIEWAPP" value="67" literal="reviewApp:"/>
+    <eLiterals name="PPL_KW_SCRIPT" value="68" literal="script:"/>
+    <eLiterals name="PPL_KW_TARGET" value="69" literal="target:"/>
+    <eLiterals name="PPL_KW_SETTABLEVARIABLES" value="70" literal="settableVariables:"/>
+    <eLiterals name="PPL_KW_VARIABLES" value="71" literal="variables:"/>
+    <eLiterals name="PPL_KW_GROUP" value="72" literal="group:"/>
+    <eLiterals name="PPL_KW_WF_RUN" value="73" literal="workflow_run:"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Permission">
+    <eLiterals name="READ_ALL" literal="read-all"/>
+    <eLiterals name="WRITE_ALL" value="1" literal="write-all"/>
+  </eClassifiers>
+</ecore:EPackage>

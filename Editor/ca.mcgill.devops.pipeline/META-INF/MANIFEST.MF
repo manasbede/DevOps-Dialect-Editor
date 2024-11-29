@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: ca.mcgill.devops.pipeline
+Bundle-ManifestVersion: 2
+Bundle-Name: ca.mcgill.devops.pipeline
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: ca.mcgill.devops.pipeline; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.16.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.eclipse.emf.common,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Export-Package: ca.mcgill.devops.pipeline.pipeline.util,
+ ca.mcgill.devops.pipeline,
+ ca.mcgill.devops.pipeline.serializer,
+ ca.mcgill.devops.pipeline.parser.antlr.internal,
+ ca.mcgill.devops.pipeline.parser.antlr.lexer,
+ ca.mcgill.devops.pipeline.validation,
+ ca.mcgill.devops.pipeline.scoping,
+ ca.mcgill.devops.pipeline.parser.antlr,
+ ca.mcgill.devops.pipeline.generator,
+ ca.mcgill.devops.pipeline.pipeline.impl,
+ ca.mcgill.devops.pipeline.pipeline,
+ ca.mcgill.devops.pipeline.services
+Import-Package: org.apache.log4j

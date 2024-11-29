@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: ca.mcgill.devops.pipeline.ide
+Bundle-ManifestVersion: 2
+Bundle-Name: ca.mcgill.devops.pipeline.ide
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: ca.mcgill.devops.pipeline.ide; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: ca.mcgill.devops.pipeline,
+ org.eclipse.xtext.ide,
+ org.eclipse.xtext.xbase.ide,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Export-Package: ca.mcgill.devops.pipeline.ide.contentassist.antlr.internal,
+ ca.mcgill.devops.pipeline.ide.contentassist.antlr,
+ ca.mcgill.devops.pipeline.ide.contentassist.antlr.lexer
