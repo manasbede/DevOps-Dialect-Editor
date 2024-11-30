@@ -9,15 +9,18 @@ import ca.mcgill.devops.pipeline.pipeline.PipelinePackage;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.eclipse.emf.ecore.util.EDataTypeEList;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,9 +31,7 @@ import org.eclipse.emf.ecore.util.EDataTypeEList;
  * </p>
  * <ul>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ParameterImpl#getName <em>Name</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ParameterImpl#getType <em>Type</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ParameterImpl#getDisplayName <em>Display Name</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ParameterImpl#getDefaultValue <em>Default Value</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ParameterImpl#getParameters <em>Parameters</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ParameterImpl#getValue <em>Value</em>}</li>
  * </ul>
  *
@@ -59,54 +60,14 @@ public class ParameterImpl extends MinimalEObjectImpl.Container implements Param
   protected String name = NAME_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getType() <em>Type</em>}' attribute.
+   * The cached value of the '{@link #getParameters() <em>Parameters</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getType()
+   * @see #getParameters()
    * @generated
    * @ordered
    */
-  protected static final String TYPE_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getType() <em>Type</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getType()
-   * @generated
-   * @ordered
-   */
-  protected String type = TYPE_EDEFAULT;
-
-  /**
-   * The default value of the '{@link #getDisplayName() <em>Display Name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getDisplayName()
-   * @generated
-   * @ordered
-   */
-  protected static final String DISPLAY_NAME_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getDisplayName() <em>Display Name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getDisplayName()
-   * @generated
-   * @ordered
-   */
-  protected String displayName = DISPLAY_NAME_EDEFAULT;
-
-  /**
-   * The cached value of the '{@link #getDefaultValue() <em>Default Value</em>}' attribute list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getDefaultValue()
-   * @generated
-   * @ordered
-   */
-  protected EList<String> defaultValue;
+  protected EList<Parameter> parameters;
 
   /**
    * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
@@ -180,63 +141,13 @@ public class ParameterImpl extends MinimalEObjectImpl.Container implements Param
    * @generated
    */
   @Override
-  public String getType()
+  public EList<Parameter> getParameters()
   {
-    return type;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public void setType(String newType)
-  {
-    String oldType = type;
-    type = newType;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.PARAMETER__TYPE, oldType, type));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String getDisplayName()
-  {
-    return displayName;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public void setDisplayName(String newDisplayName)
-  {
-    String oldDisplayName = displayName;
-    displayName = newDisplayName;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.PARAMETER__DISPLAY_NAME, oldDisplayName, displayName));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EList<String> getDefaultValue()
-  {
-    if (defaultValue == null)
+    if (parameters == null)
     {
-      defaultValue = new EDataTypeEList<String>(String.class, this, PipelinePackage.PARAMETER__DEFAULT_VALUE);
+      parameters = new EObjectContainmentEList<Parameter>(Parameter.class, this, PipelinePackage.PARAMETER__PARAMETERS);
     }
-    return defaultValue;
+    return parameters;
   }
 
   /**
@@ -270,18 +181,30 @@ public class ParameterImpl extends MinimalEObjectImpl.Container implements Param
    * @generated
    */
   @Override
+  public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  {
+    switch (featureID)
+    {
+      case PipelinePackage.PARAMETER__PARAMETERS:
+        return ((InternalEList<?>)getParameters()).basicRemove(otherEnd, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
     switch (featureID)
     {
       case PipelinePackage.PARAMETER__NAME:
         return getName();
-      case PipelinePackage.PARAMETER__TYPE:
-        return getType();
-      case PipelinePackage.PARAMETER__DISPLAY_NAME:
-        return getDisplayName();
-      case PipelinePackage.PARAMETER__DEFAULT_VALUE:
-        return getDefaultValue();
+      case PipelinePackage.PARAMETER__PARAMETERS:
+        return getParameters();
       case PipelinePackage.PARAMETER__VALUE:
         return getValue();
     }
@@ -302,15 +225,9 @@ public class ParameterImpl extends MinimalEObjectImpl.Container implements Param
       case PipelinePackage.PARAMETER__NAME:
         setName((String)newValue);
         return;
-      case PipelinePackage.PARAMETER__TYPE:
-        setType((String)newValue);
-        return;
-      case PipelinePackage.PARAMETER__DISPLAY_NAME:
-        setDisplayName((String)newValue);
-        return;
-      case PipelinePackage.PARAMETER__DEFAULT_VALUE:
-        getDefaultValue().clear();
-        getDefaultValue().addAll((Collection<? extends String>)newValue);
+      case PipelinePackage.PARAMETER__PARAMETERS:
+        getParameters().clear();
+        getParameters().addAll((Collection<? extends Parameter>)newValue);
         return;
       case PipelinePackage.PARAMETER__VALUE:
         setValue((String)newValue);
@@ -332,14 +249,8 @@ public class ParameterImpl extends MinimalEObjectImpl.Container implements Param
       case PipelinePackage.PARAMETER__NAME:
         setName(NAME_EDEFAULT);
         return;
-      case PipelinePackage.PARAMETER__TYPE:
-        setType(TYPE_EDEFAULT);
-        return;
-      case PipelinePackage.PARAMETER__DISPLAY_NAME:
-        setDisplayName(DISPLAY_NAME_EDEFAULT);
-        return;
-      case PipelinePackage.PARAMETER__DEFAULT_VALUE:
-        getDefaultValue().clear();
+      case PipelinePackage.PARAMETER__PARAMETERS:
+        getParameters().clear();
         return;
       case PipelinePackage.PARAMETER__VALUE:
         setValue(VALUE_EDEFAULT);
@@ -360,12 +271,8 @@ public class ParameterImpl extends MinimalEObjectImpl.Container implements Param
     {
       case PipelinePackage.PARAMETER__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case PipelinePackage.PARAMETER__TYPE:
-        return TYPE_EDEFAULT == null ? type != null : !TYPE_EDEFAULT.equals(type);
-      case PipelinePackage.PARAMETER__DISPLAY_NAME:
-        return DISPLAY_NAME_EDEFAULT == null ? displayName != null : !DISPLAY_NAME_EDEFAULT.equals(displayName);
-      case PipelinePackage.PARAMETER__DEFAULT_VALUE:
-        return defaultValue != null && !defaultValue.isEmpty();
+      case PipelinePackage.PARAMETER__PARAMETERS:
+        return parameters != null && !parameters.isEmpty();
       case PipelinePackage.PARAMETER__VALUE:
         return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
     }
@@ -385,12 +292,6 @@ public class ParameterImpl extends MinimalEObjectImpl.Container implements Param
     StringBuilder result = new StringBuilder(super.toString());
     result.append(" (name: ");
     result.append(name);
-    result.append(", type: ");
-    result.append(type);
-    result.append(", displayName: ");
-    result.append(displayName);
-    result.append(", defaultValue: ");
-    result.append(defaultValue);
     result.append(", value: ");
     result.append(value);
     result.append(')');

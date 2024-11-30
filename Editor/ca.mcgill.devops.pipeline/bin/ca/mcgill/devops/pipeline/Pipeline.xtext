@@ -4,139 +4,19 @@ import "http://www.eclipse.org/emf/2002/Ecore" as ecore
 generate pipeline "http://www.mcgill.ca/devops/pipeline/Pipeline"
 
 Pipeline:
-	(
-		(('name:' name=StringValue))?  &
-		(pipelineConfigurations+=Configuration*)? &
-		('run-name:' run_name=StringValue)? &
-		('defaults:' BEGIN 'run:' BEGIN (('shell:'default_shell_for_all_jobs=StringValue)? & ('working-directory:'default_wd_for_all_jobs=StringValue)?)END END)? &
-		('concurrency:' BEGIN 
-							('group:' group=(StringValue|EXPRESSION)) & 
-							('cancel-in-progress:' cancelProgress=(ID|StringValue|EXPRESSION))
-						END
-		)? &
-	    (('on:')  ((triggers+=Event) | ('['triggers+=Event (',' triggers+=Event)*']'))? (BEGIN triggers+=Event* END)?)? 
-	    (triggers+=Event*)
-    )
-    
-    (jobOrStage=('stages:'|'jobs:')
-    	BEGIN ((stages+=Stage*) | jobs+=Job* ) END
-    )
+	('name:' name=UnquotedString) | (pipelineConfiguration+=Configuration*)
 ;
 
 Configuration:
-	(('parameters:' parameters+=Parameter*) |
-	('variables:' variablesValue=STRING) |
-	('pool:' (poolID=(ID|STRING))?
-		(BEGIN
-			('name:' poolName=StringValue)?
-			('vmImage:' poolVm=StringValue)? &
-			('demands:' poolDemands=(StringValue|HyphenParameters))?
-		END)?
-	)|
-	('resources:' resource=STRING)|
-	('schedules:' schedule=STRING)) |
-	
-	('options:'BEGIN ('max-time:' INT)? & ('docker:'ID)?& ('size:'ID)? END) 
+	('parameters:' parameters+=Parameter*)
 ;
 
 Parameter:
-	('-''name:' name=ID)
-		BEGIN
-			('type:' type=ID)?& 
-			('displayName:' displayName=StringValue)?&
-			(('default:' (defaultValue+=(StringValue|INTV)) | (BEGIN defaultValue+=(IndentedKeyValues|HyphenKVP|KeyValuePairs)* END)))?&
-			('values:'value=HyphenParameters)?
-		END
+    name=ID ':' ((BEGIN (parameters+=Parameter)* END) | (value=(AnyData|ArrayList)))
 ;
 
-Stage:
-	(('-''stage:' name=StringValue))
-	(BEGIN
-		('displayName:' displayName=StringValue)? &
-		('dependsOn:' (dependsOn+=[Stage])*)? &
-		('jobs:'(jobs+=Job)*)
-  	END)?
-;
 
-Job:
-	((('-' 'job:')? name=StringValue (':')?))
-	(BEGIN
-		(nameKW=('name:'|'displayName:') jobName=StringValue)? &
-		('permissions:' ((permission=Permission) | (BEGIN (value+=KeyValuePairs) END) ))? &
-		(dependKW=('needs:' | 'dependsOn:') ((references+=[Job]) | ('[' references+=[Job] (',' references+=[Job])* ']')))? &
-		((runKW=('runs-on:' | 'pool:') vm=(ID | ArrayList)) | (runKW=('pool:')
-																	(BEGIN
-																		('name:' poolName=StringValue)?
-																		('vmImage:' poolVm=StringValue)? &
-																		('demands:' poolDemands=(StringValue|HyphenParameters))?
-																	END)
-		))? &
-		(jobParameters+=JobParameter)* &
-		('steps:' (steps+=Step)*)?
-	END)?
-;
-
-JobParameter:
-	('-')((name=(ID | ArrayList)) | keyword=(PipelineKeyword))
-	
-	(BEGIN
-		parameters+=ParameterValue*
-	END)?
-;
-
-Step:
-	('-')(Action | Script)
-;
-
-Script:
-	(name=('run:'|'script:'|'bash:'|'pwsh:'|'powershell:'|'checkout:'|'download:'|'getPackage:'|'publish:'|'task:') ((command=StringValue) | 
-			(('|' | '>-') 
-			BEGIN
-				command=StringValue
-			END))
-	)
-	(BEGIN (subSteps+=(Action|Script))* END)?
-;
-
-Action:
-	((keyword=PipelineKeyword)) 
-	(	(value=StringValue)? &
-		((paraKW=('with:'|'parameters:') | (BEGIN paraKW=('with:'|'parameters:') END))
-			BEGIN 
-				(parameters+=ParameterValue)*
-			END
-		)?
-	)
-	(BEGIN (subSteps+=(Action|Script))* END)?
-	
-;
-
-ParameterValue:
-	((name=KeyValuePairs) (value=(StringValue|INTV))?)
-;
-
-Event:
-	((branches+=Branch) | (keyword = PipelineKeyword))
-	(BEGIN
-		(('types:') ((activities+=Activity) | ('['activities+=Activity (',' activities+=Activity)*']'))? (BEGIN ('-'?activities+=Activity)* END)?)? &
-		(branchKW=('branches:' | 'branches-ignore:') ((branches+=Branch) | ('[' branches+=Branch (',' branches+=Branch)*']'))? (('-'branches+=Branch)* | (BEGIN (('includes:'|'excludes:')('-'branches+=Branch)*)+ END)) )? &
-		(pathKW=('paths:'|'paths-ignore:') (BEGIN ((pathValue=(HyphenParameters)) | (incExcKW=('includes:'|'excludes:')pathValue=HyphenParameters)) END))? &
-		('autoCancel:'autoCancel=ID)? &
-		('drafts:'drafts=ID)? &
-		('-' 'cron:'activities+=Activity)* &
-		
-	END)?
-
-;
-
-Branch:
-	(name=ID) | (name=STRING)
-;
-
-Activity:
-	(name=ID) | (name=STRING)
-;
-
+/*  Defining Enumerations */
 
 enum PipelineKeyword:
 	PPL_KW_NAME= 'name:'|
@@ -220,69 +100,55 @@ enum Permission:
     WRITE_ALL = 'write-all'
 ;
 
-IndentedKeyValues:
-	(ID':' '|'?((BEGIN (KeyValuePairs | EXPRESSION)+  END)))
+
+
+
+
+
+/*  Defining Datatypes */
+
+AnyData:
+    STRING | Number | FloatingPoint | SimpleWord | COMPLEX_EXPRESSION | HEX_INT | VERSION;
+
+UnquotedString:
+	ID (WS ID|INT|VERSION)*
 ;
 
-KeyValuePairs:
-	(ID':' (ID|STRING|EXPRESSION|INTV|StringValue| FLOAT_LITERAL))
+Number:
+    INT;
+
+FloatingPoint:
+	FLOAT_LITERAL
 ;
 
-HyphenKVP:
-	(ID':'HyphenParameters)
-;
+SimpleWord:
+    ID;
 
 HyphenParameters:
-	('-' (ID|STRING|StringValue|ArrayList|INT))+
+	('-' AnyData)+
 ;
 
 ArrayList:
-	'['(StringValue (','StringValue)?)+']'
+	'['(AnyData (',' AnyData)*)?']'
 ;
-
-StringValue:
-	((ID | SINGLE_CHAR | STRING | VERSION) (POSSIBLE_SPECIAL_KEY)? INTV? STRING?)+
-;
-
 
 POSSIBLE_SPECIAL_KEY:
 	('_'|'{' | '}' | '*' | '!')+
 ;
 
-terminal SINGLE_CHAR:
-    ('a'..'z' | 'A'..'Z')
-;
-
-terminal EXPRESSION:
-	(ID)?
-	('"${{ ' ( '\\'('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|'"') )* ' }}"' |
-    "'${{ " ( '\\'('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|"'") )* " }}'" |
-    '${{ ' (ID|STRING|HEX_INT|FLOAT_LITERAL)* ' }}')
-;
-
-
 @Override 
 terminal ID:
-    //'^'?('a'..'z'|'A'..'Z'|'_')('a'..'z'|'A'..'Z'|'_'|'0'..'9')('a'..'z'|'A'..'Z'|'-'|'0'..'9')('a'..'z'|'A'..'Z'|'-'|'0'..'9')*;
     ('a'..'z' | 'A'..'Z' | '_' | '/' | '@' | '-' | '.' | '\\' | '&') ('a'..'z' | 'A'..'Z' | '0'..'9' | '_' | '/' | '@' | '&' |'-' | '.' | '\\' |'$' | '(' | ')')*;
-//@Override 
-//terminal INT returns ecore::EInt:
-//    ('0'..'9')+;
-    
 
-terminal INTV:
-	('0'..'9')+
-;
+terminal COMPLEX_EXPRESSION: '${{' -> '}}';
     
 terminal HEX_INT returns ecore::EInt: '0x' ('0'..'9' | 'a'..'f' | 'A'..'F')+;
 
-terminal FLOAT_LITERAL:
-    ('-')?(INT '.' INT | INT) ('e' INT)?
-;
+terminal FLOAT_LITERAL returns ecore::EFloat:
+    ('-')?(INT '.' INT);
 
 terminal VERSION:
-	(INT ('.' INT)? ('.')?)+
-;
+	INT ('.' INT)+;
  
 @Override 
 terminal STRING:
@@ -291,9 +157,7 @@ terminal STRING:
  
 @Override 
 terminal ML_COMMENT:
-    '/*' -> '*/'
-    
-    ;
+    '/*' -> '*/';
  
 @Override 
 terminal SL_COMMENT:

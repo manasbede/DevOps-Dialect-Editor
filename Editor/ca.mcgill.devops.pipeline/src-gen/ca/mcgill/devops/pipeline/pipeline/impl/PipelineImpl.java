@@ -4,11 +4,8 @@
 package ca.mcgill.devops.pipeline.pipeline.impl;
 
 import ca.mcgill.devops.pipeline.pipeline.Configuration;
-import ca.mcgill.devops.pipeline.pipeline.Event;
-import ca.mcgill.devops.pipeline.pipeline.Job;
 import ca.mcgill.devops.pipeline.pipeline.Pipeline;
 import ca.mcgill.devops.pipeline.pipeline.PipelinePackage;
-import ca.mcgill.devops.pipeline.pipeline.Stage;
 
 import java.util.Collection;
 
@@ -35,16 +32,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getName <em>Name</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getPipelineConfigurations <em>Pipeline Configurations</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getRun_name <em>Run name</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getDefault_shell_for_all_jobs <em>Default shell for all jobs</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getDefault_wd_for_all_jobs <em>Default wd for all jobs</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getGroup <em>Group</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getCancelProgress <em>Cancel Progress</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getTriggers <em>Triggers</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getJobOrStage <em>Job Or Stage</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getStages <em>Stages</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getJobs <em>Jobs</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getPipelineConfiguration <em>Pipeline Configuration</em>}</li>
  * </ul>
  *
  * @generated
@@ -72,164 +60,14 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
   protected String name = NAME_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getPipelineConfigurations() <em>Pipeline Configurations</em>}' containment reference list.
+   * The cached value of the '{@link #getPipelineConfiguration() <em>Pipeline Configuration</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getPipelineConfigurations()
+   * @see #getPipelineConfiguration()
    * @generated
    * @ordered
    */
-  protected EList<Configuration> pipelineConfigurations;
-
-  /**
-   * The default value of the '{@link #getRun_name() <em>Run name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getRun_name()
-   * @generated
-   * @ordered
-   */
-  protected static final String RUN_NAME_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getRun_name() <em>Run name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getRun_name()
-   * @generated
-   * @ordered
-   */
-  protected String run_name = RUN_NAME_EDEFAULT;
-
-  /**
-   * The default value of the '{@link #getDefault_shell_for_all_jobs() <em>Default shell for all jobs</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getDefault_shell_for_all_jobs()
-   * @generated
-   * @ordered
-   */
-  protected static final String DEFAULT_SHELL_FOR_ALL_JOBS_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getDefault_shell_for_all_jobs() <em>Default shell for all jobs</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getDefault_shell_for_all_jobs()
-   * @generated
-   * @ordered
-   */
-  protected String default_shell_for_all_jobs = DEFAULT_SHELL_FOR_ALL_JOBS_EDEFAULT;
-
-  /**
-   * The default value of the '{@link #getDefault_wd_for_all_jobs() <em>Default wd for all jobs</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getDefault_wd_for_all_jobs()
-   * @generated
-   * @ordered
-   */
-  protected static final String DEFAULT_WD_FOR_ALL_JOBS_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getDefault_wd_for_all_jobs() <em>Default wd for all jobs</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getDefault_wd_for_all_jobs()
-   * @generated
-   * @ordered
-   */
-  protected String default_wd_for_all_jobs = DEFAULT_WD_FOR_ALL_JOBS_EDEFAULT;
-
-  /**
-   * The default value of the '{@link #getGroup() <em>Group</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getGroup()
-   * @generated
-   * @ordered
-   */
-  protected static final String GROUP_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getGroup() <em>Group</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getGroup()
-   * @generated
-   * @ordered
-   */
-  protected String group = GROUP_EDEFAULT;
-
-  /**
-   * The default value of the '{@link #getCancelProgress() <em>Cancel Progress</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getCancelProgress()
-   * @generated
-   * @ordered
-   */
-  protected static final String CANCEL_PROGRESS_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getCancelProgress() <em>Cancel Progress</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getCancelProgress()
-   * @generated
-   * @ordered
-   */
-  protected String cancelProgress = CANCEL_PROGRESS_EDEFAULT;
-
-  /**
-   * The cached value of the '{@link #getTriggers() <em>Triggers</em>}' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getTriggers()
-   * @generated
-   * @ordered
-   */
-  protected EList<Event> triggers;
-
-  /**
-   * The default value of the '{@link #getJobOrStage() <em>Job Or Stage</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getJobOrStage()
-   * @generated
-   * @ordered
-   */
-  protected static final String JOB_OR_STAGE_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getJobOrStage() <em>Job Or Stage</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getJobOrStage()
-   * @generated
-   * @ordered
-   */
-  protected String jobOrStage = JOB_OR_STAGE_EDEFAULT;
-
-  /**
-   * The cached value of the '{@link #getStages() <em>Stages</em>}' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getStages()
-   * @generated
-   * @ordered
-   */
-  protected EList<Stage> stages;
-
-  /**
-   * The cached value of the '{@link #getJobs() <em>Jobs</em>}' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getJobs()
-   * @generated
-   * @ordered
-   */
-  protected EList<Job> jobs;
+  protected EList<Configuration> pipelineConfiguration;
 
   /**
    * <!-- begin-user-doc -->
@@ -283,208 +121,13 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
    * @generated
    */
   @Override
-  public EList<Configuration> getPipelineConfigurations()
+  public EList<Configuration> getPipelineConfiguration()
   {
-    if (pipelineConfigurations == null)
+    if (pipelineConfiguration == null)
     {
-      pipelineConfigurations = new EObjectContainmentEList<Configuration>(Configuration.class, this, PipelinePackage.PIPELINE__PIPELINE_CONFIGURATIONS);
+      pipelineConfiguration = new EObjectContainmentEList<Configuration>(Configuration.class, this, PipelinePackage.PIPELINE__PIPELINE_CONFIGURATION);
     }
-    return pipelineConfigurations;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String getRun_name()
-  {
-    return run_name;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public void setRun_name(String newRun_name)
-  {
-    String oldRun_name = run_name;
-    run_name = newRun_name;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.PIPELINE__RUN_NAME, oldRun_name, run_name));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String getDefault_shell_for_all_jobs()
-  {
-    return default_shell_for_all_jobs;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public void setDefault_shell_for_all_jobs(String newDefault_shell_for_all_jobs)
-  {
-    String oldDefault_shell_for_all_jobs = default_shell_for_all_jobs;
-    default_shell_for_all_jobs = newDefault_shell_for_all_jobs;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.PIPELINE__DEFAULT_SHELL_FOR_ALL_JOBS, oldDefault_shell_for_all_jobs, default_shell_for_all_jobs));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String getDefault_wd_for_all_jobs()
-  {
-    return default_wd_for_all_jobs;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public void setDefault_wd_for_all_jobs(String newDefault_wd_for_all_jobs)
-  {
-    String oldDefault_wd_for_all_jobs = default_wd_for_all_jobs;
-    default_wd_for_all_jobs = newDefault_wd_for_all_jobs;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.PIPELINE__DEFAULT_WD_FOR_ALL_JOBS, oldDefault_wd_for_all_jobs, default_wd_for_all_jobs));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String getGroup()
-  {
-    return group;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public void setGroup(String newGroup)
-  {
-    String oldGroup = group;
-    group = newGroup;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.PIPELINE__GROUP, oldGroup, group));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String getCancelProgress()
-  {
-    return cancelProgress;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public void setCancelProgress(String newCancelProgress)
-  {
-    String oldCancelProgress = cancelProgress;
-    cancelProgress = newCancelProgress;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.PIPELINE__CANCEL_PROGRESS, oldCancelProgress, cancelProgress));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EList<Event> getTriggers()
-  {
-    if (triggers == null)
-    {
-      triggers = new EObjectContainmentEList<Event>(Event.class, this, PipelinePackage.PIPELINE__TRIGGERS);
-    }
-    return triggers;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String getJobOrStage()
-  {
-    return jobOrStage;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public void setJobOrStage(String newJobOrStage)
-  {
-    String oldJobOrStage = jobOrStage;
-    jobOrStage = newJobOrStage;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.PIPELINE__JOB_OR_STAGE, oldJobOrStage, jobOrStage));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EList<Stage> getStages()
-  {
-    if (stages == null)
-    {
-      stages = new EObjectContainmentEList<Stage>(Stage.class, this, PipelinePackage.PIPELINE__STAGES);
-    }
-    return stages;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EList<Job> getJobs()
-  {
-    if (jobs == null)
-    {
-      jobs = new EObjectContainmentEList<Job>(Job.class, this, PipelinePackage.PIPELINE__JOBS);
-    }
-    return jobs;
+    return pipelineConfiguration;
   }
 
   /**
@@ -497,14 +140,8 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
   {
     switch (featureID)
     {
-      case PipelinePackage.PIPELINE__PIPELINE_CONFIGURATIONS:
-        return ((InternalEList<?>)getPipelineConfigurations()).basicRemove(otherEnd, msgs);
-      case PipelinePackage.PIPELINE__TRIGGERS:
-        return ((InternalEList<?>)getTriggers()).basicRemove(otherEnd, msgs);
-      case PipelinePackage.PIPELINE__STAGES:
-        return ((InternalEList<?>)getStages()).basicRemove(otherEnd, msgs);
-      case PipelinePackage.PIPELINE__JOBS:
-        return ((InternalEList<?>)getJobs()).basicRemove(otherEnd, msgs);
+      case PipelinePackage.PIPELINE__PIPELINE_CONFIGURATION:
+        return ((InternalEList<?>)getPipelineConfiguration()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -521,26 +158,8 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
     {
       case PipelinePackage.PIPELINE__NAME:
         return getName();
-      case PipelinePackage.PIPELINE__PIPELINE_CONFIGURATIONS:
-        return getPipelineConfigurations();
-      case PipelinePackage.PIPELINE__RUN_NAME:
-        return getRun_name();
-      case PipelinePackage.PIPELINE__DEFAULT_SHELL_FOR_ALL_JOBS:
-        return getDefault_shell_for_all_jobs();
-      case PipelinePackage.PIPELINE__DEFAULT_WD_FOR_ALL_JOBS:
-        return getDefault_wd_for_all_jobs();
-      case PipelinePackage.PIPELINE__GROUP:
-        return getGroup();
-      case PipelinePackage.PIPELINE__CANCEL_PROGRESS:
-        return getCancelProgress();
-      case PipelinePackage.PIPELINE__TRIGGERS:
-        return getTriggers();
-      case PipelinePackage.PIPELINE__JOB_OR_STAGE:
-        return getJobOrStage();
-      case PipelinePackage.PIPELINE__STAGES:
-        return getStages();
-      case PipelinePackage.PIPELINE__JOBS:
-        return getJobs();
+      case PipelinePackage.PIPELINE__PIPELINE_CONFIGURATION:
+        return getPipelineConfiguration();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -559,39 +178,9 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
       case PipelinePackage.PIPELINE__NAME:
         setName((String)newValue);
         return;
-      case PipelinePackage.PIPELINE__PIPELINE_CONFIGURATIONS:
-        getPipelineConfigurations().clear();
-        getPipelineConfigurations().addAll((Collection<? extends Configuration>)newValue);
-        return;
-      case PipelinePackage.PIPELINE__RUN_NAME:
-        setRun_name((String)newValue);
-        return;
-      case PipelinePackage.PIPELINE__DEFAULT_SHELL_FOR_ALL_JOBS:
-        setDefault_shell_for_all_jobs((String)newValue);
-        return;
-      case PipelinePackage.PIPELINE__DEFAULT_WD_FOR_ALL_JOBS:
-        setDefault_wd_for_all_jobs((String)newValue);
-        return;
-      case PipelinePackage.PIPELINE__GROUP:
-        setGroup((String)newValue);
-        return;
-      case PipelinePackage.PIPELINE__CANCEL_PROGRESS:
-        setCancelProgress((String)newValue);
-        return;
-      case PipelinePackage.PIPELINE__TRIGGERS:
-        getTriggers().clear();
-        getTriggers().addAll((Collection<? extends Event>)newValue);
-        return;
-      case PipelinePackage.PIPELINE__JOB_OR_STAGE:
-        setJobOrStage((String)newValue);
-        return;
-      case PipelinePackage.PIPELINE__STAGES:
-        getStages().clear();
-        getStages().addAll((Collection<? extends Stage>)newValue);
-        return;
-      case PipelinePackage.PIPELINE__JOBS:
-        getJobs().clear();
-        getJobs().addAll((Collection<? extends Job>)newValue);
+      case PipelinePackage.PIPELINE__PIPELINE_CONFIGURATION:
+        getPipelineConfiguration().clear();
+        getPipelineConfiguration().addAll((Collection<? extends Configuration>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -610,35 +199,8 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
       case PipelinePackage.PIPELINE__NAME:
         setName(NAME_EDEFAULT);
         return;
-      case PipelinePackage.PIPELINE__PIPELINE_CONFIGURATIONS:
-        getPipelineConfigurations().clear();
-        return;
-      case PipelinePackage.PIPELINE__RUN_NAME:
-        setRun_name(RUN_NAME_EDEFAULT);
-        return;
-      case PipelinePackage.PIPELINE__DEFAULT_SHELL_FOR_ALL_JOBS:
-        setDefault_shell_for_all_jobs(DEFAULT_SHELL_FOR_ALL_JOBS_EDEFAULT);
-        return;
-      case PipelinePackage.PIPELINE__DEFAULT_WD_FOR_ALL_JOBS:
-        setDefault_wd_for_all_jobs(DEFAULT_WD_FOR_ALL_JOBS_EDEFAULT);
-        return;
-      case PipelinePackage.PIPELINE__GROUP:
-        setGroup(GROUP_EDEFAULT);
-        return;
-      case PipelinePackage.PIPELINE__CANCEL_PROGRESS:
-        setCancelProgress(CANCEL_PROGRESS_EDEFAULT);
-        return;
-      case PipelinePackage.PIPELINE__TRIGGERS:
-        getTriggers().clear();
-        return;
-      case PipelinePackage.PIPELINE__JOB_OR_STAGE:
-        setJobOrStage(JOB_OR_STAGE_EDEFAULT);
-        return;
-      case PipelinePackage.PIPELINE__STAGES:
-        getStages().clear();
-        return;
-      case PipelinePackage.PIPELINE__JOBS:
-        getJobs().clear();
+      case PipelinePackage.PIPELINE__PIPELINE_CONFIGURATION:
+        getPipelineConfiguration().clear();
         return;
     }
     super.eUnset(featureID);
@@ -656,26 +218,8 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
     {
       case PipelinePackage.PIPELINE__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case PipelinePackage.PIPELINE__PIPELINE_CONFIGURATIONS:
-        return pipelineConfigurations != null && !pipelineConfigurations.isEmpty();
-      case PipelinePackage.PIPELINE__RUN_NAME:
-        return RUN_NAME_EDEFAULT == null ? run_name != null : !RUN_NAME_EDEFAULT.equals(run_name);
-      case PipelinePackage.PIPELINE__DEFAULT_SHELL_FOR_ALL_JOBS:
-        return DEFAULT_SHELL_FOR_ALL_JOBS_EDEFAULT == null ? default_shell_for_all_jobs != null : !DEFAULT_SHELL_FOR_ALL_JOBS_EDEFAULT.equals(default_shell_for_all_jobs);
-      case PipelinePackage.PIPELINE__DEFAULT_WD_FOR_ALL_JOBS:
-        return DEFAULT_WD_FOR_ALL_JOBS_EDEFAULT == null ? default_wd_for_all_jobs != null : !DEFAULT_WD_FOR_ALL_JOBS_EDEFAULT.equals(default_wd_for_all_jobs);
-      case PipelinePackage.PIPELINE__GROUP:
-        return GROUP_EDEFAULT == null ? group != null : !GROUP_EDEFAULT.equals(group);
-      case PipelinePackage.PIPELINE__CANCEL_PROGRESS:
-        return CANCEL_PROGRESS_EDEFAULT == null ? cancelProgress != null : !CANCEL_PROGRESS_EDEFAULT.equals(cancelProgress);
-      case PipelinePackage.PIPELINE__TRIGGERS:
-        return triggers != null && !triggers.isEmpty();
-      case PipelinePackage.PIPELINE__JOB_OR_STAGE:
-        return JOB_OR_STAGE_EDEFAULT == null ? jobOrStage != null : !JOB_OR_STAGE_EDEFAULT.equals(jobOrStage);
-      case PipelinePackage.PIPELINE__STAGES:
-        return stages != null && !stages.isEmpty();
-      case PipelinePackage.PIPELINE__JOBS:
-        return jobs != null && !jobs.isEmpty();
+      case PipelinePackage.PIPELINE__PIPELINE_CONFIGURATION:
+        return pipelineConfiguration != null && !pipelineConfiguration.isEmpty();
     }
     return super.eIsSet(featureID);
   }
@@ -693,18 +237,6 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
     StringBuilder result = new StringBuilder(super.toString());
     result.append(" (name: ");
     result.append(name);
-    result.append(", run_name: ");
-    result.append(run_name);
-    result.append(", default_shell_for_all_jobs: ");
-    result.append(default_shell_for_all_jobs);
-    result.append(", default_wd_for_all_jobs: ");
-    result.append(default_wd_for_all_jobs);
-    result.append(", group: ");
-    result.append(group);
-    result.append(", cancelProgress: ");
-    result.append(cancelProgress);
-    result.append(", jobOrStage: ");
-    result.append(jobOrStage);
     result.append(')');
     return result.toString();
   }

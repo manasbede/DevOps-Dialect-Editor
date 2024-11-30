@@ -17,9 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Parameter#getName <em>Name</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Parameter#getType <em>Type</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Parameter#getDisplayName <em>Display Name</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Parameter#getDefaultValue <em>Default Value</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Parameter#getParameters <em>Parameters</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Parameter#getValue <em>Value</em>}</li>
  * </ul>
  *
@@ -52,60 +50,16 @@ public interface Parameter extends EObject
   void setName(String value);
 
   /**
-   * Returns the value of the '<em><b>Type</b></em>' attribute.
+   * Returns the value of the '<em><b>Parameters</b></em>' containment reference list.
+   * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.Parameter}.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Type</em>' attribute.
-   * @see #setType(String)
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getParameter_Type()
-   * @model
+   * @return the value of the '<em>Parameters</em>' containment reference list.
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getParameter_Parameters()
+   * @model containment="true"
    * @generated
    */
-  String getType();
-
-  /**
-   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Parameter#getType <em>Type</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Type</em>' attribute.
-   * @see #getType()
-   * @generated
-   */
-  void setType(String value);
-
-  /**
-   * Returns the value of the '<em><b>Display Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Display Name</em>' attribute.
-   * @see #setDisplayName(String)
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getParameter_DisplayName()
-   * @model
-   * @generated
-   */
-  String getDisplayName();
-
-  /**
-   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Parameter#getDisplayName <em>Display Name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Display Name</em>' attribute.
-   * @see #getDisplayName()
-   * @generated
-   */
-  void setDisplayName(String value);
-
-  /**
-   * Returns the value of the '<em><b>Default Value</b></em>' attribute list.
-   * The list contents are of type {@link java.lang.String}.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Default Value</em>' attribute list.
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getParameter_DefaultValue()
-   * @model unique="false"
-   * @generated
-   */
-  EList<String> getDefaultValue();
+  EList<Parameter> getParameters();
 
   /**
    * Returns the value of the '<em><b>Value</b></em>' attribute.

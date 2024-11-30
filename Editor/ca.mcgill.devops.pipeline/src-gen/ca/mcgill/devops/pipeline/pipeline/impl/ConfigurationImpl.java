@@ -9,7 +9,6 @@ import ca.mcgill.devops.pipeline.pipeline.PipelinePackage;
 
 import java.util.Collection;
 
-import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
@@ -17,7 +16,6 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
@@ -32,13 +30,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationImpl#getParameters <em>Parameters</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationImpl#getVariablesValue <em>Variables Value</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationImpl#getPoolID <em>Pool ID</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationImpl#getPoolName <em>Pool Name</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationImpl#getPoolVm <em>Pool Vm</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationImpl#getPoolDemands <em>Pool Demands</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationImpl#getResource <em>Resource</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationImpl#getSchedule <em>Schedule</em>}</li>
  * </ul>
  *
  * @generated
@@ -54,146 +45,6 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
    * @ordered
    */
   protected EList<Parameter> parameters;
-
-  /**
-   * The default value of the '{@link #getVariablesValue() <em>Variables Value</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getVariablesValue()
-   * @generated
-   * @ordered
-   */
-  protected static final String VARIABLES_VALUE_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getVariablesValue() <em>Variables Value</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getVariablesValue()
-   * @generated
-   * @ordered
-   */
-  protected String variablesValue = VARIABLES_VALUE_EDEFAULT;
-
-  /**
-   * The default value of the '{@link #getPoolID() <em>Pool ID</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getPoolID()
-   * @generated
-   * @ordered
-   */
-  protected static final String POOL_ID_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getPoolID() <em>Pool ID</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getPoolID()
-   * @generated
-   * @ordered
-   */
-  protected String poolID = POOL_ID_EDEFAULT;
-
-  /**
-   * The default value of the '{@link #getPoolName() <em>Pool Name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getPoolName()
-   * @generated
-   * @ordered
-   */
-  protected static final String POOL_NAME_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getPoolName() <em>Pool Name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getPoolName()
-   * @generated
-   * @ordered
-   */
-  protected String poolName = POOL_NAME_EDEFAULT;
-
-  /**
-   * The default value of the '{@link #getPoolVm() <em>Pool Vm</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getPoolVm()
-   * @generated
-   * @ordered
-   */
-  protected static final String POOL_VM_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getPoolVm() <em>Pool Vm</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getPoolVm()
-   * @generated
-   * @ordered
-   */
-  protected String poolVm = POOL_VM_EDEFAULT;
-
-  /**
-   * The default value of the '{@link #getPoolDemands() <em>Pool Demands</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getPoolDemands()
-   * @generated
-   * @ordered
-   */
-  protected static final String POOL_DEMANDS_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getPoolDemands() <em>Pool Demands</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getPoolDemands()
-   * @generated
-   * @ordered
-   */
-  protected String poolDemands = POOL_DEMANDS_EDEFAULT;
-
-  /**
-   * The default value of the '{@link #getResource() <em>Resource</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getResource()
-   * @generated
-   * @ordered
-   */
-  protected static final String RESOURCE_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getResource() <em>Resource</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getResource()
-   * @generated
-   * @ordered
-   */
-  protected String resource = RESOURCE_EDEFAULT;
-
-  /**
-   * The default value of the '{@link #getSchedule() <em>Schedule</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getSchedule()
-   * @generated
-   * @ordered
-   */
-  protected static final String SCHEDULE_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getSchedule() <em>Schedule</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getSchedule()
-   * @generated
-   * @ordered
-   */
-  protected String schedule = SCHEDULE_EDEFAULT;
 
   /**
    * <!-- begin-user-doc -->
@@ -237,181 +88,6 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
    * @generated
    */
   @Override
-  public String getVariablesValue()
-  {
-    return variablesValue;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public void setVariablesValue(String newVariablesValue)
-  {
-    String oldVariablesValue = variablesValue;
-    variablesValue = newVariablesValue;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.CONFIGURATION__VARIABLES_VALUE, oldVariablesValue, variablesValue));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String getPoolID()
-  {
-    return poolID;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public void setPoolID(String newPoolID)
-  {
-    String oldPoolID = poolID;
-    poolID = newPoolID;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.CONFIGURATION__POOL_ID, oldPoolID, poolID));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String getPoolName()
-  {
-    return poolName;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public void setPoolName(String newPoolName)
-  {
-    String oldPoolName = poolName;
-    poolName = newPoolName;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.CONFIGURATION__POOL_NAME, oldPoolName, poolName));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String getPoolVm()
-  {
-    return poolVm;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public void setPoolVm(String newPoolVm)
-  {
-    String oldPoolVm = poolVm;
-    poolVm = newPoolVm;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.CONFIGURATION__POOL_VM, oldPoolVm, poolVm));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String getPoolDemands()
-  {
-    return poolDemands;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public void setPoolDemands(String newPoolDemands)
-  {
-    String oldPoolDemands = poolDemands;
-    poolDemands = newPoolDemands;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.CONFIGURATION__POOL_DEMANDS, oldPoolDemands, poolDemands));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String getResource()
-  {
-    return resource;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public void setResource(String newResource)
-  {
-    String oldResource = resource;
-    resource = newResource;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.CONFIGURATION__RESOURCE, oldResource, resource));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String getSchedule()
-  {
-    return schedule;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public void setSchedule(String newSchedule)
-  {
-    String oldSchedule = schedule;
-    schedule = newSchedule;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.CONFIGURATION__SCHEDULE, oldSchedule, schedule));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
     switch (featureID)
@@ -434,20 +110,6 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
     {
       case PipelinePackage.CONFIGURATION__PARAMETERS:
         return getParameters();
-      case PipelinePackage.CONFIGURATION__VARIABLES_VALUE:
-        return getVariablesValue();
-      case PipelinePackage.CONFIGURATION__POOL_ID:
-        return getPoolID();
-      case PipelinePackage.CONFIGURATION__POOL_NAME:
-        return getPoolName();
-      case PipelinePackage.CONFIGURATION__POOL_VM:
-        return getPoolVm();
-      case PipelinePackage.CONFIGURATION__POOL_DEMANDS:
-        return getPoolDemands();
-      case PipelinePackage.CONFIGURATION__RESOURCE:
-        return getResource();
-      case PipelinePackage.CONFIGURATION__SCHEDULE:
-        return getSchedule();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -467,27 +129,6 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
         getParameters().clear();
         getParameters().addAll((Collection<? extends Parameter>)newValue);
         return;
-      case PipelinePackage.CONFIGURATION__VARIABLES_VALUE:
-        setVariablesValue((String)newValue);
-        return;
-      case PipelinePackage.CONFIGURATION__POOL_ID:
-        setPoolID((String)newValue);
-        return;
-      case PipelinePackage.CONFIGURATION__POOL_NAME:
-        setPoolName((String)newValue);
-        return;
-      case PipelinePackage.CONFIGURATION__POOL_VM:
-        setPoolVm((String)newValue);
-        return;
-      case PipelinePackage.CONFIGURATION__POOL_DEMANDS:
-        setPoolDemands((String)newValue);
-        return;
-      case PipelinePackage.CONFIGURATION__RESOURCE:
-        setResource((String)newValue);
-        return;
-      case PipelinePackage.CONFIGURATION__SCHEDULE:
-        setSchedule((String)newValue);
-        return;
     }
     super.eSet(featureID, newValue);
   }
@@ -505,27 +146,6 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
       case PipelinePackage.CONFIGURATION__PARAMETERS:
         getParameters().clear();
         return;
-      case PipelinePackage.CONFIGURATION__VARIABLES_VALUE:
-        setVariablesValue(VARIABLES_VALUE_EDEFAULT);
-        return;
-      case PipelinePackage.CONFIGURATION__POOL_ID:
-        setPoolID(POOL_ID_EDEFAULT);
-        return;
-      case PipelinePackage.CONFIGURATION__POOL_NAME:
-        setPoolName(POOL_NAME_EDEFAULT);
-        return;
-      case PipelinePackage.CONFIGURATION__POOL_VM:
-        setPoolVm(POOL_VM_EDEFAULT);
-        return;
-      case PipelinePackage.CONFIGURATION__POOL_DEMANDS:
-        setPoolDemands(POOL_DEMANDS_EDEFAULT);
-        return;
-      case PipelinePackage.CONFIGURATION__RESOURCE:
-        setResource(RESOURCE_EDEFAULT);
-        return;
-      case PipelinePackage.CONFIGURATION__SCHEDULE:
-        setSchedule(SCHEDULE_EDEFAULT);
-        return;
     }
     super.eUnset(featureID);
   }
@@ -542,51 +162,8 @@ public class ConfigurationImpl extends MinimalEObjectImpl.Container implements C
     {
       case PipelinePackage.CONFIGURATION__PARAMETERS:
         return parameters != null && !parameters.isEmpty();
-      case PipelinePackage.CONFIGURATION__VARIABLES_VALUE:
-        return VARIABLES_VALUE_EDEFAULT == null ? variablesValue != null : !VARIABLES_VALUE_EDEFAULT.equals(variablesValue);
-      case PipelinePackage.CONFIGURATION__POOL_ID:
-        return POOL_ID_EDEFAULT == null ? poolID != null : !POOL_ID_EDEFAULT.equals(poolID);
-      case PipelinePackage.CONFIGURATION__POOL_NAME:
-        return POOL_NAME_EDEFAULT == null ? poolName != null : !POOL_NAME_EDEFAULT.equals(poolName);
-      case PipelinePackage.CONFIGURATION__POOL_VM:
-        return POOL_VM_EDEFAULT == null ? poolVm != null : !POOL_VM_EDEFAULT.equals(poolVm);
-      case PipelinePackage.CONFIGURATION__POOL_DEMANDS:
-        return POOL_DEMANDS_EDEFAULT == null ? poolDemands != null : !POOL_DEMANDS_EDEFAULT.equals(poolDemands);
-      case PipelinePackage.CONFIGURATION__RESOURCE:
-        return RESOURCE_EDEFAULT == null ? resource != null : !RESOURCE_EDEFAULT.equals(resource);
-      case PipelinePackage.CONFIGURATION__SCHEDULE:
-        return SCHEDULE_EDEFAULT == null ? schedule != null : !SCHEDULE_EDEFAULT.equals(schedule);
     }
     return super.eIsSet(featureID);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String toString()
-  {
-    if (eIsProxy()) return super.toString();
-
-    StringBuilder result = new StringBuilder(super.toString());
-    result.append(" (variablesValue: ");
-    result.append(variablesValue);
-    result.append(", poolID: ");
-    result.append(poolID);
-    result.append(", poolName: ");
-    result.append(poolName);
-    result.append(", poolVm: ");
-    result.append(poolVm);
-    result.append(", poolDemands: ");
-    result.append(poolDemands);
-    result.append(", resource: ");
-    result.append(resource);
-    result.append(", schedule: ");
-    result.append(schedule);
-    result.append(')');
-    return result.toString();
   }
 
 } //ConfigurationImpl

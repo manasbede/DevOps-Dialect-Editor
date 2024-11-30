@@ -11,8 +11,6 @@ package ca.mcgill.devops.pipeline.ide.contentassist.antlr.lexer;
 import org.eclipse.xtext.ide.editor.contentassist.antlr.internal.Lexer;
 }
 
-CancelInProgress : 'cancel-in-progress:';
-
 ContinueOnError : 'continue-on-error:';
 
 SettableVariables : 'settableVariables:';
@@ -39,15 +37,11 @@ Concurrency : 'concurrency:';
 
 Credentials : 'credentials:';
 
-DisplayName : 'displayName:';
-
 Environment : 'environment:';
 
 Permissions : 'permissions:';
 
 TagsIgnore : 'tags-ignore:';
-
-AutoCancel : 'autoCancel:';
 
 Containers : 'containers:';
 
@@ -55,15 +49,9 @@ Deployment : 'deployment:';
 
 Entrypoint : 'entrypoint:';
 
-GetPackage : 'getPackage:';
-
 Parameters : 'parameters:';
 
-Powershell : 'powershell:';
-
 Container : 'container:';
-
-DependsOn : 'dependsOn:';
 
 FailFast : 'fail-fast:';
 
@@ -79,17 +67,7 @@ Variables : 'variables:';
 
 Branches : 'branches:';
 
-Checkout : 'checkout:';
-
 Defaults : 'defaults:';
-
-Download : 'download:';
-
-Excludes : 'excludes:';
-
-Includes : 'includes:';
-
-MaxTime : 'max-time:';
 
 Packages : 'packages:';
 
@@ -109,10 +87,6 @@ Webhooks : 'webhooks:';
 
 WriteAll : 'write-all';
 
-Default : 'default:';
-
-Demands : 'demands:';
-
 Exclude : 'exclude:';
 
 Extends : 'extends:';
@@ -123,11 +97,7 @@ Include : 'include:';
 
 Inherit : 'inherit:';
 
-Options : 'options:';
-
 Outputs : 'outputs:';
-
-Publish : 'publish:';
 
 ReadAll : 'read-all';
 
@@ -141,15 +111,9 @@ Secrets : 'secrets:';
 
 Trigger : 'trigger:';
 
-VmImage : 'vmImage:';
-
 Builds : 'builds:';
 
 Canary : 'canary:';
-
-Docker : 'docker:';
-
-Drafts : 'drafts:';
 
 Inputs : 'inputs:';
 
@@ -157,11 +121,7 @@ Matrix : 'matrix:';
 
 Script : 'script:';
 
-Stages : 'stages:';
-
 Target : 'target:';
-
-Values : 'values:';
 
 Build : 'build:';
 
@@ -177,47 +137,25 @@ Ports : 'ports:';
 
 Shell : 'shell:';
 
-Stage : 'stage:';
-
-Steps : 'steps:';
-
 Types : 'types:';
 
 Args : 'args:';
 
-Bash : 'bash:';
-
 Cron : 'cron:';
-
-Jobs : 'jobs:';
 
 Name : 'name:';
 
 Path : 'path:';
 
-Pool : 'pool:';
-
 Push : 'push:';
 
-Pwsh : 'pwsh:';
-
-Size : 'size:';
-
 Tags : 'tags:';
-
-Task : 'task:';
 
 Type : 'type:';
 
 Uses : 'uses:';
 
-With : 'with:';
-
 Env : 'env:';
-
-Job : 'job:';
-
-Run : 'run:';
 
 Id : 'id:';
 
@@ -226,8 +164,6 @@ If : 'if:';
 On : 'on:';
 
 Pr : 'pr:';
-
-GreaterThanSignHyphenMinus : '>-';
 
 ExclamationMark : '!';
 
@@ -247,23 +183,17 @@ KW__ : '_';
 
 LeftCurlyBracket : '{';
 
-VerticalLine : '|';
-
 RightCurlyBracket : '}';
-
-RULE_SINGLE_CHAR : ('a'..'z'|'A'..'Z');
-
-RULE_EXPRESSION : RULE_ID? ('"${{ ' ('\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|'\''|'\\')|~(('\\'|'"')))* ' }}"'|'\'${{ ' ('\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|'\''|'\\')|~(('\\'|'\'')))* ' }}\''|'${{ ' (RULE_ID|RULE_STRING|RULE_HEX_INT|RULE_FLOAT_LITERAL)* ' }}');
 
 RULE_ID : ('a'..'z'|'A'..'Z'|'_'|'/'|'@'|'-'|'.'|'\\'|'&') ('a'..'z'|'A'..'Z'|'0'..'9'|'_'|'/'|'@'|'&'|'-'|'.'|'\\'|'$'|'('|')')*;
 
-RULE_INTV : ('0'..'9')+;
+RULE_COMPLEX_EXPRESSION : '${{' ( options {greedy=false;} : . )*'}}';
 
-fragment RULE_HEX_INT : '0x' ('0'..'9'|'a'..'f'|'A'..'F')+;
+RULE_HEX_INT : '0x' ('0'..'9'|'a'..'f'|'A'..'F')+;
 
-RULE_FLOAT_LITERAL : '-'? (RULE_INT '.' RULE_INT|RULE_INT) ('e' RULE_INT)?;
+RULE_FLOAT_LITERAL : '-'? RULE_INT '.' RULE_INT;
 
-RULE_VERSION : (RULE_INT ('.' RULE_INT)? '.'?)+;
+RULE_VERSION : RULE_INT ('.' RULE_INT)+;
 
 RULE_STRING : ('"' ('\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|'\''|'\\')|~(('\\'|'"')))* '"'|'\'' ('\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|'\''|'\\')|~(('\\'|'\'')))* '\'');
 

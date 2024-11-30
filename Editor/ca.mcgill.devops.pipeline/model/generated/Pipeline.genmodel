@@ -88,94 +88,15 @@
     </genEnums>
     <genClasses ecoreClass="Pipeline.ecore#//Pipeline">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/pipelineConfigurations"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/run_name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/default_shell_for_all_jobs"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/default_wd_for_all_jobs"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/group"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/cancelProgress"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/triggers"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/jobOrStage"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/stages"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/jobs"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/pipelineConfiguration"/>
     </genClasses>
     <genClasses ecoreClass="Pipeline.ecore#//Configuration">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Configuration/parameters"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Configuration/variablesValue"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Configuration/poolID"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Configuration/poolName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Configuration/poolVm"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Configuration/poolDemands"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Configuration/resource"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Configuration/schedule"/>
     </genClasses>
     <genClasses ecoreClass="Pipeline.ecore#//Parameter">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Parameter/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Parameter/type"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Parameter/displayName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Parameter/defaultValue"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Parameter/parameters"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Parameter/value"/>
-    </genClasses>
-    <genClasses ecoreClass="Pipeline.ecore#//Stage">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Stage/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Stage/displayName"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Stage/dependsOn"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Stage/jobs"/>
-    </genClasses>
-    <genClasses ecoreClass="Pipeline.ecore#//Job">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Job/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Job/nameKW"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Job/jobName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Job/permission"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Job/value"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Job/dependKW"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Job/references"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Job/runKW"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Job/vm"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Job/poolName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Job/poolVm"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Job/poolDemands"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Job/jobParameters"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Job/steps"/>
-    </genClasses>
-    <genClasses ecoreClass="Pipeline.ecore#//JobParameter">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//JobParameter/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//JobParameter/keyword"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//JobParameter/parameters"/>
-    </genClasses>
-    <genClasses ecoreClass="Pipeline.ecore#//Step">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Step/subSteps"/>
-    </genClasses>
-    <genClasses ecoreClass="Pipeline.ecore#//Script">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Script/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Script/command"/>
-    </genClasses>
-    <genClasses ecoreClass="Pipeline.ecore#//Action">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Action/keyword"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Action/value"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Action/paraKW"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Action/parameters"/>
-    </genClasses>
-    <genClasses ecoreClass="Pipeline.ecore#//ParameterValue">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//ParameterValue/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//ParameterValue/value"/>
-    </genClasses>
-    <genClasses ecoreClass="Pipeline.ecore#//Event">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Event/branches"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Event/keyword"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Event/activities"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Event/branchKW"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Event/pathKW"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Event/pathValue"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Event/incExcKW"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Event/autoCancel"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Event/drafts"/>
-    </genClasses>
-    <genClasses ecoreClass="Pipeline.ecore#//Branch">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Branch/name"/>
-    </genClasses>
-    <genClasses ecoreClass="Pipeline.ecore#//Activity">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Activity/name"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>
