@@ -81,14 +81,29 @@ public class PipelineAdapterFactory extends AdapterFactoryImpl
         return createPipelineAdapter();
       }
       @Override
-      public Adapter caseConfiguration(Configuration object)
+      public Adapter caseExtendedParameter(ExtendedParameter object)
       {
-        return createConfigurationAdapter();
+        return createExtendedParameterAdapter();
       }
       @Override
-      public Adapter caseParameter(Parameter object)
+      public Adapter caseVariable(Variable object)
       {
-        return createParameterAdapter();
+        return createVariableAdapter();
+      }
+      @Override
+      public Adapter caseResource(Resource object)
+      {
+        return createResourceAdapter();
+      }
+      @Override
+      public Adapter casePipelineParameter(PipelineParameter object)
+      {
+        return createPipelineParameterAdapter();
+      }
+      @Override
+      public Adapter caseParameterValue(ParameterValue object)
+      {
+        return createParameterValueAdapter();
       }
       @Override
       public Adapter defaultCase(EObject object)
@@ -128,31 +143,76 @@ public class PipelineAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.Configuration <em>Configuration</em>}'.
+   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.ExtendedParameter <em>Extended Parameter</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see ca.mcgill.devops.pipeline.pipeline.Configuration
+   * @see ca.mcgill.devops.pipeline.pipeline.ExtendedParameter
    * @generated
    */
-  public Adapter createConfigurationAdapter()
+  public Adapter createExtendedParameterAdapter()
   {
     return null;
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.Parameter <em>Parameter</em>}'.
+   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.Variable <em>Variable</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see ca.mcgill.devops.pipeline.pipeline.Parameter
+   * @see ca.mcgill.devops.pipeline.pipeline.Variable
    * @generated
    */
-  public Adapter createParameterAdapter()
+  public Adapter createVariableAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.Resource <em>Resource</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see ca.mcgill.devops.pipeline.pipeline.Resource
+   * @generated
+   */
+  public Adapter createResourceAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.PipelineParameter <em>Parameter</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelineParameter
+   * @generated
+   */
+  public Adapter createPipelineParameterAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.ParameterValue <em>Parameter Value</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see ca.mcgill.devops.pipeline.pipeline.ParameterValue
+   * @generated
+   */
+  public Adapter createParameterValueAdapter()
   {
     return null;
   }

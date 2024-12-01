@@ -3,9 +3,13 @@
  */
 package ca.mcgill.devops.pipeline.serializer;
 
-import ca.mcgill.devops.pipeline.pipeline.Configuration;
+import ca.mcgill.devops.pipeline.pipeline.ExtendedParameter;
+import ca.mcgill.devops.pipeline.pipeline.ParameterValue;
 import ca.mcgill.devops.pipeline.pipeline.Pipeline;
 import ca.mcgill.devops.pipeline.pipeline.PipelinePackage;
+import ca.mcgill.devops.pipeline.pipeline.PipelineParameter;
+import ca.mcgill.devops.pipeline.pipeline.Resource;
+import ca.mcgill.devops.pipeline.pipeline.Variable;
 import ca.mcgill.devops.pipeline.services.PipelineGrammarAccess;
 import com.google.inject.Inject;
 import java.util.Set;
@@ -31,14 +35,23 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 		Set<Parameter> parameters = context.getEnabledBooleanParameters();
 		if (epackage == PipelinePackage.eINSTANCE)
 			switch (semanticObject.eClass().getClassifierID()) {
-			case PipelinePackage.CONFIGURATION:
-				sequence_Configuration(context, (Configuration) semanticObject); 
+			case PipelinePackage.EXTENDED_PARAMETER:
+				sequence_ExtendedParameter(context, (ExtendedParameter) semanticObject); 
 				return; 
-			case PipelinePackage.PARAMETER:
-				sequence_Parameter(context, (ca.mcgill.devops.pipeline.pipeline.Parameter) semanticObject); 
+			case PipelinePackage.PARAMETER_VALUE:
+				sequence_ParameterValue(context, (ParameterValue) semanticObject); 
 				return; 
 			case PipelinePackage.PIPELINE:
 				sequence_Pipeline(context, (Pipeline) semanticObject); 
+				return; 
+			case PipelinePackage.PIPELINE_PARAMETER:
+				sequence_PipelineParameter(context, (PipelineParameter) semanticObject); 
+				return; 
+			case PipelinePackage.RESOURCE:
+				sequence_Resource(context, (Resource) semanticObject); 
+				return; 
+			case PipelinePackage.VARIABLE:
+				sequence_Variable(context, (Variable) semanticObject); 
 				return; 
 			}
 		if (errorAcceptor != null)
@@ -48,13 +61,13 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	/**
 	 * <pre>
 	 * Contexts:
-	 *     Configuration returns Configuration
+	 *     ExtendedParameter returns ExtendedParameter
 	 *
 	 * Constraint:
-	 *     parameters+=Parameter+
+	 *     ((template=ID extendedParameterValues+=ParameterValue*) | extendedParameterValues+=ParameterValue+)
 	 * </pre>
 	 */
-	protected void sequence_Configuration(ISerializationContext context, Configuration semanticObject) {
+	protected void sequence_ExtendedParameter(ISerializationContext context, ExtendedParameter semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
@@ -62,13 +75,30 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	/**
 	 * <pre>
 	 * Contexts:
-	 *     Parameter returns Parameter
+	 *     ParameterValue returns ParameterValue
 	 *
 	 * Constraint:
-	 *     (name=ID (parameters+=Parameter+ | value=AnyData | value=ArrayList)?)
+	 *     (
+	 *         (name=ID | name=COMPLEX_EXPRESSION | preDefinedKeyword=Permission) 
+	 *         (subParameterValues+=ParameterValue+ | ((value=AnyData | value=ArrayList | value=HyphenValues) subParameterValues+=ParameterValue*))?
+	 *     )
 	 * </pre>
 	 */
-	protected void sequence_Parameter(ISerializationContext context, ca.mcgill.devops.pipeline.pipeline.Parameter semanticObject) {
+	protected void sequence_ParameterValue(ISerializationContext context, ParameterValue semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * <pre>
+	 * Contexts:
+	 *     PipelineParameter returns PipelineParameter
+	 *
+	 * Constraint:
+	 *     (name=ID? (displayName=UnquotedString | parameterValues+=ParameterValue)*)
+	 * </pre>
+	 */
+	protected void sequence_PipelineParameter(ISerializationContext context, PipelineParameter semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
@@ -79,10 +109,67 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *     Pipeline returns Pipeline
 	 *
 	 * Constraint:
-	 *     (name=UnquotedString | pipelineConfiguration+=Configuration+)
+	 *     (
+	 *         (
+	 *             name=UnquotedString | 
+	 *             runName=UnquotedString | 
+	 *             defaultShellValue=STRING | 
+	 *             defaultWDValue=STRING | 
+	 *             env+=KeyValue | 
+	 *             allPermission=Permission | 
+	 *             indPermissions+=IndPermissionValue | 
+	 *             pipelineParameters+=PipelineParameter | 
+	 *             vmDemands=AnyData | 
+	 *             vmDemands=HyphenValues | 
+	 *             resources+=Resource | 
+	 *             pipelineParameters+=PipelineParameter | 
+	 *             variables+=Variable | 
+	 *             extendedParameter=ExtendedParameter
+	 *         )? 
+	 *         (vmName=ID (vmImage=ID | vmImage=STRING)?)? 
+	 *         ((group=ID | group=COMPLEX_EXPRESSION) (cancelConcurrence=ID | cancelConcurrence=COMPLEX_EXPRESSION))?
+	 *     )+
 	 * </pre>
 	 */
 	protected void sequence_Pipeline(ISerializationContext context, Pipeline semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * <pre>
+	 * Contexts:
+	 *     Resource returns Resource
+	 *
+	 * Constraint:
+	 *     (
+	 *         (
+	 *             resourceName='builds:' | 
+	 *             resourceName='containers:' | 
+	 *             resourceName='pipelines:' | 
+	 *             resourceName='repositories:' | 
+	 *             resourceName='webhooks:' | 
+	 *             resourceName='packages:'
+	 *         ) 
+	 *         (resourceValues+=ParameterValue+ | resourceValues+=ParameterValue+)?
+	 *     )
+	 * </pre>
+	 */
+	protected void sequence_Resource(ISerializationContext context, Resource semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * <pre>
+	 * Contexts:
+	 *     Variable returns Variable
+	 *
+	 * Constraint:
+	 *     (variableValues+=ParameterValue+ | (group=AnyData? name=AnyData value=AnyData readonly=ID?))
+	 * </pre>
+	 */
+	protected void sequence_Variable(ISerializationContext context, Variable semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	

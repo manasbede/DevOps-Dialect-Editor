@@ -3,8 +3,9 @@
  */
 package ca.mcgill.devops.pipeline.pipeline.impl;
 
-import ca.mcgill.devops.pipeline.pipeline.Parameter;
+import ca.mcgill.devops.pipeline.pipeline.ParameterValue;
 import ca.mcgill.devops.pipeline.pipeline.PipelinePackage;
+import ca.mcgill.devops.pipeline.pipeline.PipelineParameter;
 
 import java.util.Collection;
 
@@ -30,14 +31,14 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ParameterImpl#getName <em>Name</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ParameterImpl#getParameters <em>Parameters</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ParameterImpl#getValue <em>Value</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineParameterImpl#getName <em>Name</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineParameterImpl#getDisplayName <em>Display Name</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineParameterImpl#getParameterValues <em>Parameter Values</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class ParameterImpl extends MinimalEObjectImpl.Container implements Parameter
+public class PipelineParameterImpl extends MinimalEObjectImpl.Container implements PipelineParameter
 {
   /**
    * The default value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -60,41 +61,41 @@ public class ParameterImpl extends MinimalEObjectImpl.Container implements Param
   protected String name = NAME_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getParameters() <em>Parameters</em>}' containment reference list.
+   * The default value of the '{@link #getDisplayName() <em>Display Name</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getParameters()
+   * @see #getDisplayName()
    * @generated
    * @ordered
    */
-  protected EList<Parameter> parameters;
+  protected static final String DISPLAY_NAME_EDEFAULT = null;
 
   /**
-   * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
+   * The cached value of the '{@link #getDisplayName() <em>Display Name</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getValue()
+   * @see #getDisplayName()
    * @generated
    * @ordered
    */
-  protected static final String VALUE_EDEFAULT = null;
+  protected String displayName = DISPLAY_NAME_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
+   * The cached value of the '{@link #getParameterValues() <em>Parameter Values</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getValue()
+   * @see #getParameterValues()
    * @generated
    * @ordered
    */
-  protected String value = VALUE_EDEFAULT;
+  protected EList<ParameterValue> parameterValues;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected ParameterImpl()
+  protected PipelineParameterImpl()
   {
     super();
   }
@@ -107,7 +108,7 @@ public class ParameterImpl extends MinimalEObjectImpl.Container implements Param
   @Override
   protected EClass eStaticClass()
   {
-    return PipelinePackage.Literals.PARAMETER;
+    return PipelinePackage.Literals.PIPELINE_PARAMETER;
   }
 
   /**
@@ -132,7 +133,7 @@ public class ParameterImpl extends MinimalEObjectImpl.Container implements Param
     String oldName = name;
     name = newName;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.PARAMETER__NAME, oldName, name));
+      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.PIPELINE_PARAMETER__NAME, oldName, name));
   }
 
   /**
@@ -141,13 +142,9 @@ public class ParameterImpl extends MinimalEObjectImpl.Container implements Param
    * @generated
    */
   @Override
-  public EList<Parameter> getParameters()
+  public String getDisplayName()
   {
-    if (parameters == null)
-    {
-      parameters = new EObjectContainmentEList<Parameter>(Parameter.class, this, PipelinePackage.PARAMETER__PARAMETERS);
-    }
-    return parameters;
+    return displayName;
   }
 
   /**
@@ -156,23 +153,27 @@ public class ParameterImpl extends MinimalEObjectImpl.Container implements Param
    * @generated
    */
   @Override
-  public String getValue()
+  public void setDisplayName(String newDisplayName)
   {
-    return value;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public void setValue(String newValue)
-  {
-    String oldValue = value;
-    value = newValue;
+    String oldDisplayName = displayName;
+    displayName = newDisplayName;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.PARAMETER__VALUE, oldValue, value));
+      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.PIPELINE_PARAMETER__DISPLAY_NAME, oldDisplayName, displayName));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EList<ParameterValue> getParameterValues()
+  {
+    if (parameterValues == null)
+    {
+      parameterValues = new EObjectContainmentEList<ParameterValue>(ParameterValue.class, this, PipelinePackage.PIPELINE_PARAMETER__PARAMETER_VALUES);
+    }
+    return parameterValues;
   }
 
   /**
@@ -185,8 +186,8 @@ public class ParameterImpl extends MinimalEObjectImpl.Container implements Param
   {
     switch (featureID)
     {
-      case PipelinePackage.PARAMETER__PARAMETERS:
-        return ((InternalEList<?>)getParameters()).basicRemove(otherEnd, msgs);
+      case PipelinePackage.PIPELINE_PARAMETER__PARAMETER_VALUES:
+        return ((InternalEList<?>)getParameterValues()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -201,12 +202,12 @@ public class ParameterImpl extends MinimalEObjectImpl.Container implements Param
   {
     switch (featureID)
     {
-      case PipelinePackage.PARAMETER__NAME:
+      case PipelinePackage.PIPELINE_PARAMETER__NAME:
         return getName();
-      case PipelinePackage.PARAMETER__PARAMETERS:
-        return getParameters();
-      case PipelinePackage.PARAMETER__VALUE:
-        return getValue();
+      case PipelinePackage.PIPELINE_PARAMETER__DISPLAY_NAME:
+        return getDisplayName();
+      case PipelinePackage.PIPELINE_PARAMETER__PARAMETER_VALUES:
+        return getParameterValues();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -222,15 +223,15 @@ public class ParameterImpl extends MinimalEObjectImpl.Container implements Param
   {
     switch (featureID)
     {
-      case PipelinePackage.PARAMETER__NAME:
+      case PipelinePackage.PIPELINE_PARAMETER__NAME:
         setName((String)newValue);
         return;
-      case PipelinePackage.PARAMETER__PARAMETERS:
-        getParameters().clear();
-        getParameters().addAll((Collection<? extends Parameter>)newValue);
+      case PipelinePackage.PIPELINE_PARAMETER__DISPLAY_NAME:
+        setDisplayName((String)newValue);
         return;
-      case PipelinePackage.PARAMETER__VALUE:
-        setValue((String)newValue);
+      case PipelinePackage.PIPELINE_PARAMETER__PARAMETER_VALUES:
+        getParameterValues().clear();
+        getParameterValues().addAll((Collection<? extends ParameterValue>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -246,14 +247,14 @@ public class ParameterImpl extends MinimalEObjectImpl.Container implements Param
   {
     switch (featureID)
     {
-      case PipelinePackage.PARAMETER__NAME:
+      case PipelinePackage.PIPELINE_PARAMETER__NAME:
         setName(NAME_EDEFAULT);
         return;
-      case PipelinePackage.PARAMETER__PARAMETERS:
-        getParameters().clear();
+      case PipelinePackage.PIPELINE_PARAMETER__DISPLAY_NAME:
+        setDisplayName(DISPLAY_NAME_EDEFAULT);
         return;
-      case PipelinePackage.PARAMETER__VALUE:
-        setValue(VALUE_EDEFAULT);
+      case PipelinePackage.PIPELINE_PARAMETER__PARAMETER_VALUES:
+        getParameterValues().clear();
         return;
     }
     super.eUnset(featureID);
@@ -269,12 +270,12 @@ public class ParameterImpl extends MinimalEObjectImpl.Container implements Param
   {
     switch (featureID)
     {
-      case PipelinePackage.PARAMETER__NAME:
+      case PipelinePackage.PIPELINE_PARAMETER__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case PipelinePackage.PARAMETER__PARAMETERS:
-        return parameters != null && !parameters.isEmpty();
-      case PipelinePackage.PARAMETER__VALUE:
-        return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
+      case PipelinePackage.PIPELINE_PARAMETER__DISPLAY_NAME:
+        return DISPLAY_NAME_EDEFAULT == null ? displayName != null : !DISPLAY_NAME_EDEFAULT.equals(displayName);
+      case PipelinePackage.PIPELINE_PARAMETER__PARAMETER_VALUES:
+        return parameterValues != null && !parameterValues.isEmpty();
     }
     return super.eIsSet(featureID);
   }
@@ -292,10 +293,10 @@ public class ParameterImpl extends MinimalEObjectImpl.Container implements Param
     StringBuilder result = new StringBuilder(super.toString());
     result.append(" (name: ");
     result.append(name);
-    result.append(", value: ");
-    result.append(value);
+    result.append(", displayName: ");
+    result.append(displayName);
     result.append(')');
     return result.toString();
   }
 
-} //ParameterImpl
+} //PipelineParameterImpl

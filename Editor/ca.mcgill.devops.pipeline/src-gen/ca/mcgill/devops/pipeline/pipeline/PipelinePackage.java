@@ -78,13 +78,139 @@ public interface PipelinePackage extends EPackage
   int PIPELINE__NAME = 0;
 
   /**
-   * The feature id for the '<em><b>Pipeline Configuration</b></em>' containment reference list.
+   * The feature id for the '<em><b>Run Name</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int PIPELINE__PIPELINE_CONFIGURATION = 1;
+  int PIPELINE__RUN_NAME = 1;
+
+  /**
+   * The feature id for the '<em><b>Default Shell Value</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PIPELINE__DEFAULT_SHELL_VALUE = 2;
+
+  /**
+   * The feature id for the '<em><b>Default WD Value</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PIPELINE__DEFAULT_WD_VALUE = 3;
+
+  /**
+   * The feature id for the '<em><b>Env</b></em>' attribute list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PIPELINE__ENV = 4;
+
+  /**
+   * The feature id for the '<em><b>All Permission</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PIPELINE__ALL_PERMISSION = 5;
+
+  /**
+   * The feature id for the '<em><b>Ind Permissions</b></em>' attribute list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PIPELINE__IND_PERMISSIONS = 6;
+
+  /**
+   * The feature id for the '<em><b>Group</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PIPELINE__GROUP = 7;
+
+  /**
+   * The feature id for the '<em><b>Cancel Concurrence</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PIPELINE__CANCEL_CONCURRENCE = 8;
+
+  /**
+   * The feature id for the '<em><b>Pipeline Parameters</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PIPELINE__PIPELINE_PARAMETERS = 9;
+
+  /**
+   * The feature id for the '<em><b>Vm Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PIPELINE__VM_NAME = 10;
+
+  /**
+   * The feature id for the '<em><b>Vm Image</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PIPELINE__VM_IMAGE = 11;
+
+  /**
+   * The feature id for the '<em><b>Vm Demands</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PIPELINE__VM_DEMANDS = 12;
+
+  /**
+   * The feature id for the '<em><b>Resources</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PIPELINE__RESOURCES = 13;
+
+  /**
+   * The feature id for the '<em><b>Variables</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PIPELINE__VARIABLES = 14;
+
+  /**
+   * The feature id for the '<em><b>Extended Parameter</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PIPELINE__EXTENDED_PARAMETER = 15;
 
   /**
    * The number of structural features of the '<em>Pipeline</em>' class.
@@ -93,45 +219,72 @@ public interface PipelinePackage extends EPackage
    * @generated
    * @ordered
    */
-  int PIPELINE_FEATURE_COUNT = 2;
+  int PIPELINE_FEATURE_COUNT = 16;
 
   /**
-   * The meta object id for the '{@link ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationImpl <em>Configuration</em>}' class.
+   * The meta object id for the '{@link ca.mcgill.devops.pipeline.pipeline.impl.ExtendedParameterImpl <em>Extended Parameter</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationImpl
-   * @see ca.mcgill.devops.pipeline.pipeline.impl.PipelinePackageImpl#getConfiguration()
+   * @see ca.mcgill.devops.pipeline.pipeline.impl.ExtendedParameterImpl
+   * @see ca.mcgill.devops.pipeline.pipeline.impl.PipelinePackageImpl#getExtendedParameter()
    * @generated
    */
-  int CONFIGURATION = 1;
+  int EXTENDED_PARAMETER = 1;
 
   /**
-   * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CONFIGURATION__PARAMETERS = 0;
-
-  /**
-   * The number of structural features of the '<em>Configuration</em>' class.
+   * The feature id for the '<em><b>Template</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int CONFIGURATION_FEATURE_COUNT = 1;
+  int EXTENDED_PARAMETER__TEMPLATE = 0;
 
   /**
-   * The meta object id for the '{@link ca.mcgill.devops.pipeline.pipeline.impl.ParameterImpl <em>Parameter</em>}' class.
+   * The feature id for the '<em><b>Extended Parameter Values</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see ca.mcgill.devops.pipeline.pipeline.impl.ParameterImpl
-   * @see ca.mcgill.devops.pipeline.pipeline.impl.PipelinePackageImpl#getParameter()
+   * @generated
+   * @ordered
+   */
+  int EXTENDED_PARAMETER__EXTENDED_PARAMETER_VALUES = 1;
+
+  /**
+   * The number of structural features of the '<em>Extended Parameter</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EXTENDED_PARAMETER_FEATURE_COUNT = 2;
+
+  /**
+   * The meta object id for the '{@link ca.mcgill.devops.pipeline.pipeline.impl.VariableImpl <em>Variable</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see ca.mcgill.devops.pipeline.pipeline.impl.VariableImpl
+   * @see ca.mcgill.devops.pipeline.pipeline.impl.PipelinePackageImpl#getVariable()
    * @generated
    */
-  int PARAMETER = 2;
+  int VARIABLE = 2;
+
+  /**
+   * The feature id for the '<em><b>Variable Values</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int VARIABLE__VARIABLE_VALUES = 0;
+
+  /**
+   * The feature id for the '<em><b>Group</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int VARIABLE__GROUP = 1;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -140,16 +293,7 @@ public interface PipelinePackage extends EPackage
    * @generated
    * @ordered
    */
-  int PARAMETER__NAME = 0;
-
-  /**
-   * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PARAMETER__PARAMETERS = 1;
+  int VARIABLE__NAME = 2;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -158,7 +302,99 @@ public interface PipelinePackage extends EPackage
    * @generated
    * @ordered
    */
-  int PARAMETER__VALUE = 2;
+  int VARIABLE__VALUE = 3;
+
+  /**
+   * The feature id for the '<em><b>Readonly</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int VARIABLE__READONLY = 4;
+
+  /**
+   * The number of structural features of the '<em>Variable</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int VARIABLE_FEATURE_COUNT = 5;
+
+  /**
+   * The meta object id for the '{@link ca.mcgill.devops.pipeline.pipeline.impl.ResourceImpl <em>Resource</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see ca.mcgill.devops.pipeline.pipeline.impl.ResourceImpl
+   * @see ca.mcgill.devops.pipeline.pipeline.impl.PipelinePackageImpl#getResource()
+   * @generated
+   */
+  int RESOURCE = 3;
+
+  /**
+   * The feature id for the '<em><b>Resource Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int RESOURCE__RESOURCE_NAME = 0;
+
+  /**
+   * The feature id for the '<em><b>Resource Values</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int RESOURCE__RESOURCE_VALUES = 1;
+
+  /**
+   * The number of structural features of the '<em>Resource</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int RESOURCE_FEATURE_COUNT = 2;
+
+  /**
+   * The meta object id for the '{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineParameterImpl <em>Parameter</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see ca.mcgill.devops.pipeline.pipeline.impl.PipelineParameterImpl
+   * @see ca.mcgill.devops.pipeline.pipeline.impl.PipelinePackageImpl#getPipelineParameter()
+   * @generated
+   */
+  int PIPELINE_PARAMETER = 4;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PIPELINE_PARAMETER__NAME = 0;
+
+  /**
+   * The feature id for the '<em><b>Display Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PIPELINE_PARAMETER__DISPLAY_NAME = 1;
+
+  /**
+   * The feature id for the '<em><b>Parameter Values</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PIPELINE_PARAMETER__PARAMETER_VALUES = 2;
 
   /**
    * The number of structural features of the '<em>Parameter</em>' class.
@@ -167,17 +403,62 @@ public interface PipelinePackage extends EPackage
    * @generated
    * @ordered
    */
-  int PARAMETER_FEATURE_COUNT = 3;
+  int PIPELINE_PARAMETER_FEATURE_COUNT = 3;
 
   /**
-   * The meta object id for the '{@link ca.mcgill.devops.pipeline.pipeline.PipelineKeyword <em>Keyword</em>}' enum.
+   * The meta object id for the '{@link ca.mcgill.devops.pipeline.pipeline.impl.ParameterValueImpl <em>Parameter Value</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelineKeyword
-   * @see ca.mcgill.devops.pipeline.pipeline.impl.PipelinePackageImpl#getPipelineKeyword()
+   * @see ca.mcgill.devops.pipeline.pipeline.impl.ParameterValueImpl
+   * @see ca.mcgill.devops.pipeline.pipeline.impl.PipelinePackageImpl#getParameterValue()
    * @generated
    */
-  int PIPELINE_KEYWORD = 3;
+  int PARAMETER_VALUE = 5;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PARAMETER_VALUE__NAME = 0;
+
+  /**
+   * The feature id for the '<em><b>Pre Defined Keyword</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PARAMETER_VALUE__PRE_DEFINED_KEYWORD = 1;
+
+  /**
+   * The feature id for the '<em><b>Sub Parameter Values</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PARAMETER_VALUE__SUB_PARAMETER_VALUES = 2;
+
+  /**
+   * The feature id for the '<em><b>Value</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PARAMETER_VALUE__VALUE = 3;
+
+  /**
+   * The number of structural features of the '<em>Parameter Value</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PARAMETER_VALUE_FEATURE_COUNT = 4;
 
   /**
    * The meta object id for the '{@link ca.mcgill.devops.pipeline.pipeline.Permission <em>Permission</em>}' enum.
@@ -187,7 +468,7 @@ public interface PipelinePackage extends EPackage
    * @see ca.mcgill.devops.pipeline.pipeline.impl.PipelinePackageImpl#getPermission()
    * @generated
    */
-  int PERMISSION = 4;
+  int PERMISSION = 6;
 
 
   /**
@@ -212,89 +493,395 @@ public interface PipelinePackage extends EPackage
   EAttribute getPipeline_Name();
 
   /**
-   * Returns the meta object for the containment reference list '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getPipelineConfiguration <em>Pipeline Configuration</em>}'.
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getRunName <em>Run Name</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Pipeline Configuration</em>'.
-   * @see ca.mcgill.devops.pipeline.pipeline.Pipeline#getPipelineConfiguration()
+   * @return the meta object for the attribute '<em>Run Name</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Pipeline#getRunName()
    * @see #getPipeline()
    * @generated
    */
-  EReference getPipeline_PipelineConfiguration();
+  EAttribute getPipeline_RunName();
 
   /**
-   * Returns the meta object for class '{@link ca.mcgill.devops.pipeline.pipeline.Configuration <em>Configuration</em>}'.
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getDefaultShellValue <em>Default Shell Value</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Configuration</em>'.
-   * @see ca.mcgill.devops.pipeline.pipeline.Configuration
+   * @return the meta object for the attribute '<em>Default Shell Value</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Pipeline#getDefaultShellValue()
+   * @see #getPipeline()
    * @generated
    */
-  EClass getConfiguration();
+  EAttribute getPipeline_DefaultShellValue();
 
   /**
-   * Returns the meta object for the containment reference list '{@link ca.mcgill.devops.pipeline.pipeline.Configuration#getParameters <em>Parameters</em>}'.
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getDefaultWDValue <em>Default WD Value</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Parameters</em>'.
-   * @see ca.mcgill.devops.pipeline.pipeline.Configuration#getParameters()
-   * @see #getConfiguration()
+   * @return the meta object for the attribute '<em>Default WD Value</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Pipeline#getDefaultWDValue()
+   * @see #getPipeline()
    * @generated
    */
-  EReference getConfiguration_Parameters();
+  EAttribute getPipeline_DefaultWDValue();
 
   /**
-   * Returns the meta object for class '{@link ca.mcgill.devops.pipeline.pipeline.Parameter <em>Parameter</em>}'.
+   * Returns the meta object for the attribute list '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getEnv <em>Env</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Parameter</em>'.
-   * @see ca.mcgill.devops.pipeline.pipeline.Parameter
+   * @return the meta object for the attribute list '<em>Env</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Pipeline#getEnv()
+   * @see #getPipeline()
    * @generated
    */
-  EClass getParameter();
+  EAttribute getPipeline_Env();
 
   /**
-   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Parameter#getName <em>Name</em>}'.
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getAllPermission <em>All Permission</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>All Permission</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Pipeline#getAllPermission()
+   * @see #getPipeline()
+   * @generated
+   */
+  EAttribute getPipeline_AllPermission();
+
+  /**
+   * Returns the meta object for the attribute list '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getIndPermissions <em>Ind Permissions</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute list '<em>Ind Permissions</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Pipeline#getIndPermissions()
+   * @see #getPipeline()
+   * @generated
+   */
+  EAttribute getPipeline_IndPermissions();
+
+  /**
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getGroup <em>Group</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Group</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Pipeline#getGroup()
+   * @see #getPipeline()
+   * @generated
+   */
+  EAttribute getPipeline_Group();
+
+  /**
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getCancelConcurrence <em>Cancel Concurrence</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Cancel Concurrence</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Pipeline#getCancelConcurrence()
+   * @see #getPipeline()
+   * @generated
+   */
+  EAttribute getPipeline_CancelConcurrence();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getPipelineParameters <em>Pipeline Parameters</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Pipeline Parameters</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Pipeline#getPipelineParameters()
+   * @see #getPipeline()
+   * @generated
+   */
+  EReference getPipeline_PipelineParameters();
+
+  /**
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getVmName <em>Vm Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Vm Name</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Pipeline#getVmName()
+   * @see #getPipeline()
+   * @generated
+   */
+  EAttribute getPipeline_VmName();
+
+  /**
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getVmImage <em>Vm Image</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Vm Image</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Pipeline#getVmImage()
+   * @see #getPipeline()
+   * @generated
+   */
+  EAttribute getPipeline_VmImage();
+
+  /**
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getVmDemands <em>Vm Demands</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Vm Demands</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Pipeline#getVmDemands()
+   * @see #getPipeline()
+   * @generated
+   */
+  EAttribute getPipeline_VmDemands();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getResources <em>Resources</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Resources</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Pipeline#getResources()
+   * @see #getPipeline()
+   * @generated
+   */
+  EReference getPipeline_Resources();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getVariables <em>Variables</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Variables</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Pipeline#getVariables()
+   * @see #getPipeline()
+   * @generated
+   */
+  EReference getPipeline_Variables();
+
+  /**
+   * Returns the meta object for the containment reference '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getExtendedParameter <em>Extended Parameter</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>Extended Parameter</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Pipeline#getExtendedParameter()
+   * @see #getPipeline()
+   * @generated
+   */
+  EReference getPipeline_ExtendedParameter();
+
+  /**
+   * Returns the meta object for class '{@link ca.mcgill.devops.pipeline.pipeline.ExtendedParameter <em>Extended Parameter</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Extended Parameter</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.ExtendedParameter
+   * @generated
+   */
+  EClass getExtendedParameter();
+
+  /**
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.ExtendedParameter#getTemplate <em>Template</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Template</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.ExtendedParameter#getTemplate()
+   * @see #getExtendedParameter()
+   * @generated
+   */
+  EAttribute getExtendedParameter_Template();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link ca.mcgill.devops.pipeline.pipeline.ExtendedParameter#getExtendedParameterValues <em>Extended Parameter Values</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Extended Parameter Values</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.ExtendedParameter#getExtendedParameterValues()
+   * @see #getExtendedParameter()
+   * @generated
+   */
+  EReference getExtendedParameter_ExtendedParameterValues();
+
+  /**
+   * Returns the meta object for class '{@link ca.mcgill.devops.pipeline.pipeline.Variable <em>Variable</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Variable</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Variable
+   * @generated
+   */
+  EClass getVariable();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link ca.mcgill.devops.pipeline.pipeline.Variable#getVariableValues <em>Variable Values</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Variable Values</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Variable#getVariableValues()
+   * @see #getVariable()
+   * @generated
+   */
+  EReference getVariable_VariableValues();
+
+  /**
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Variable#getGroup <em>Group</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Group</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Variable#getGroup()
+   * @see #getVariable()
+   * @generated
+   */
+  EAttribute getVariable_Group();
+
+  /**
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Variable#getName <em>Name</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Name</em>'.
-   * @see ca.mcgill.devops.pipeline.pipeline.Parameter#getName()
-   * @see #getParameter()
+   * @see ca.mcgill.devops.pipeline.pipeline.Variable#getName()
+   * @see #getVariable()
    * @generated
    */
-  EAttribute getParameter_Name();
+  EAttribute getVariable_Name();
 
   /**
-   * Returns the meta object for the containment reference list '{@link ca.mcgill.devops.pipeline.pipeline.Parameter#getParameters <em>Parameters</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Parameters</em>'.
-   * @see ca.mcgill.devops.pipeline.pipeline.Parameter#getParameters()
-   * @see #getParameter()
-   * @generated
-   */
-  EReference getParameter_Parameters();
-
-  /**
-   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Parameter#getValue <em>Value</em>}'.
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Variable#getValue <em>Value</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Value</em>'.
-   * @see ca.mcgill.devops.pipeline.pipeline.Parameter#getValue()
-   * @see #getParameter()
+   * @see ca.mcgill.devops.pipeline.pipeline.Variable#getValue()
+   * @see #getVariable()
    * @generated
    */
-  EAttribute getParameter_Value();
+  EAttribute getVariable_Value();
 
   /**
-   * Returns the meta object for enum '{@link ca.mcgill.devops.pipeline.pipeline.PipelineKeyword <em>Keyword</em>}'.
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Variable#getReadonly <em>Readonly</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for enum '<em>Keyword</em>'.
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelineKeyword
+   * @return the meta object for the attribute '<em>Readonly</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Variable#getReadonly()
+   * @see #getVariable()
    * @generated
    */
-  EEnum getPipelineKeyword();
+  EAttribute getVariable_Readonly();
+
+  /**
+   * Returns the meta object for class '{@link ca.mcgill.devops.pipeline.pipeline.Resource <em>Resource</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Resource</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Resource
+   * @generated
+   */
+  EClass getResource();
+
+  /**
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Resource#getResourceName <em>Resource Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Resource Name</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Resource#getResourceName()
+   * @see #getResource()
+   * @generated
+   */
+  EAttribute getResource_ResourceName();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link ca.mcgill.devops.pipeline.pipeline.Resource#getResourceValues <em>Resource Values</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Resource Values</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Resource#getResourceValues()
+   * @see #getResource()
+   * @generated
+   */
+  EReference getResource_ResourceValues();
+
+  /**
+   * Returns the meta object for class '{@link ca.mcgill.devops.pipeline.pipeline.PipelineParameter <em>Parameter</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Parameter</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelineParameter
+   * @generated
+   */
+  EClass getPipelineParameter();
+
+  /**
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.PipelineParameter#getName <em>Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Name</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelineParameter#getName()
+   * @see #getPipelineParameter()
+   * @generated
+   */
+  EAttribute getPipelineParameter_Name();
+
+  /**
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.PipelineParameter#getDisplayName <em>Display Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Display Name</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelineParameter#getDisplayName()
+   * @see #getPipelineParameter()
+   * @generated
+   */
+  EAttribute getPipelineParameter_DisplayName();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link ca.mcgill.devops.pipeline.pipeline.PipelineParameter#getParameterValues <em>Parameter Values</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Parameter Values</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelineParameter#getParameterValues()
+   * @see #getPipelineParameter()
+   * @generated
+   */
+  EReference getPipelineParameter_ParameterValues();
+
+  /**
+   * Returns the meta object for class '{@link ca.mcgill.devops.pipeline.pipeline.ParameterValue <em>Parameter Value</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Parameter Value</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.ParameterValue
+   * @generated
+   */
+  EClass getParameterValue();
+
+  /**
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.ParameterValue#getName <em>Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Name</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.ParameterValue#getName()
+   * @see #getParameterValue()
+   * @generated
+   */
+  EAttribute getParameterValue_Name();
+
+  /**
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.ParameterValue#getPreDefinedKeyword <em>Pre Defined Keyword</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Pre Defined Keyword</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.ParameterValue#getPreDefinedKeyword()
+   * @see #getParameterValue()
+   * @generated
+   */
+  EAttribute getParameterValue_PreDefinedKeyword();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link ca.mcgill.devops.pipeline.pipeline.ParameterValue#getSubParameterValues <em>Sub Parameter Values</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Sub Parameter Values</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.ParameterValue#getSubParameterValues()
+   * @see #getParameterValue()
+   * @generated
+   */
+  EReference getParameterValue_SubParameterValues();
+
+  /**
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.ParameterValue#getValue <em>Value</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Value</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.ParameterValue#getValue()
+   * @see #getParameterValue()
+   * @generated
+   */
+  EAttribute getParameterValue_Value();
 
   /**
    * Returns the meta object for enum '{@link ca.mcgill.devops.pipeline.pipeline.Permission <em>Permission</em>}'.
@@ -348,40 +935,176 @@ public interface PipelinePackage extends EPackage
     EAttribute PIPELINE__NAME = eINSTANCE.getPipeline_Name();
 
     /**
-     * The meta object literal for the '<em><b>Pipeline Configuration</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Run Name</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference PIPELINE__PIPELINE_CONFIGURATION = eINSTANCE.getPipeline_PipelineConfiguration();
+    EAttribute PIPELINE__RUN_NAME = eINSTANCE.getPipeline_RunName();
 
     /**
-     * The meta object literal for the '{@link ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationImpl <em>Configuration</em>}' class.
+     * The meta object literal for the '<em><b>Default Shell Value</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationImpl
-     * @see ca.mcgill.devops.pipeline.pipeline.impl.PipelinePackageImpl#getConfiguration()
      * @generated
      */
-    EClass CONFIGURATION = eINSTANCE.getConfiguration();
+    EAttribute PIPELINE__DEFAULT_SHELL_VALUE = eINSTANCE.getPipeline_DefaultShellValue();
 
     /**
-     * The meta object literal for the '<em><b>Parameters</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Default WD Value</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference CONFIGURATION__PARAMETERS = eINSTANCE.getConfiguration_Parameters();
+    EAttribute PIPELINE__DEFAULT_WD_VALUE = eINSTANCE.getPipeline_DefaultWDValue();
 
     /**
-     * The meta object literal for the '{@link ca.mcgill.devops.pipeline.pipeline.impl.ParameterImpl <em>Parameter</em>}' class.
+     * The meta object literal for the '<em><b>Env</b></em>' attribute list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see ca.mcgill.devops.pipeline.pipeline.impl.ParameterImpl
-     * @see ca.mcgill.devops.pipeline.pipeline.impl.PipelinePackageImpl#getParameter()
      * @generated
      */
-    EClass PARAMETER = eINSTANCE.getParameter();
+    EAttribute PIPELINE__ENV = eINSTANCE.getPipeline_Env();
+
+    /**
+     * The meta object literal for the '<em><b>All Permission</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PIPELINE__ALL_PERMISSION = eINSTANCE.getPipeline_AllPermission();
+
+    /**
+     * The meta object literal for the '<em><b>Ind Permissions</b></em>' attribute list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PIPELINE__IND_PERMISSIONS = eINSTANCE.getPipeline_IndPermissions();
+
+    /**
+     * The meta object literal for the '<em><b>Group</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PIPELINE__GROUP = eINSTANCE.getPipeline_Group();
+
+    /**
+     * The meta object literal for the '<em><b>Cancel Concurrence</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PIPELINE__CANCEL_CONCURRENCE = eINSTANCE.getPipeline_CancelConcurrence();
+
+    /**
+     * The meta object literal for the '<em><b>Pipeline Parameters</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference PIPELINE__PIPELINE_PARAMETERS = eINSTANCE.getPipeline_PipelineParameters();
+
+    /**
+     * The meta object literal for the '<em><b>Vm Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PIPELINE__VM_NAME = eINSTANCE.getPipeline_VmName();
+
+    /**
+     * The meta object literal for the '<em><b>Vm Image</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PIPELINE__VM_IMAGE = eINSTANCE.getPipeline_VmImage();
+
+    /**
+     * The meta object literal for the '<em><b>Vm Demands</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PIPELINE__VM_DEMANDS = eINSTANCE.getPipeline_VmDemands();
+
+    /**
+     * The meta object literal for the '<em><b>Resources</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference PIPELINE__RESOURCES = eINSTANCE.getPipeline_Resources();
+
+    /**
+     * The meta object literal for the '<em><b>Variables</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference PIPELINE__VARIABLES = eINSTANCE.getPipeline_Variables();
+
+    /**
+     * The meta object literal for the '<em><b>Extended Parameter</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference PIPELINE__EXTENDED_PARAMETER = eINSTANCE.getPipeline_ExtendedParameter();
+
+    /**
+     * The meta object literal for the '{@link ca.mcgill.devops.pipeline.pipeline.impl.ExtendedParameterImpl <em>Extended Parameter</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see ca.mcgill.devops.pipeline.pipeline.impl.ExtendedParameterImpl
+     * @see ca.mcgill.devops.pipeline.pipeline.impl.PipelinePackageImpl#getExtendedParameter()
+     * @generated
+     */
+    EClass EXTENDED_PARAMETER = eINSTANCE.getExtendedParameter();
+
+    /**
+     * The meta object literal for the '<em><b>Template</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute EXTENDED_PARAMETER__TEMPLATE = eINSTANCE.getExtendedParameter_Template();
+
+    /**
+     * The meta object literal for the '<em><b>Extended Parameter Values</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference EXTENDED_PARAMETER__EXTENDED_PARAMETER_VALUES = eINSTANCE.getExtendedParameter_ExtendedParameterValues();
+
+    /**
+     * The meta object literal for the '{@link ca.mcgill.devops.pipeline.pipeline.impl.VariableImpl <em>Variable</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see ca.mcgill.devops.pipeline.pipeline.impl.VariableImpl
+     * @see ca.mcgill.devops.pipeline.pipeline.impl.PipelinePackageImpl#getVariable()
+     * @generated
+     */
+    EClass VARIABLE = eINSTANCE.getVariable();
+
+    /**
+     * The meta object literal for the '<em><b>Variable Values</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference VARIABLE__VARIABLE_VALUES = eINSTANCE.getVariable_VariableValues();
+
+    /**
+     * The meta object literal for the '<em><b>Group</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute VARIABLE__GROUP = eINSTANCE.getVariable_Group();
 
     /**
      * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
@@ -389,15 +1112,7 @@ public interface PipelinePackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute PARAMETER__NAME = eINSTANCE.getParameter_Name();
-
-    /**
-     * The meta object literal for the '<em><b>Parameters</b></em>' containment reference list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference PARAMETER__PARAMETERS = eINSTANCE.getParameter_Parameters();
+    EAttribute VARIABLE__NAME = eINSTANCE.getVariable_Name();
 
     /**
      * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
@@ -405,17 +1120,117 @@ public interface PipelinePackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute PARAMETER__VALUE = eINSTANCE.getParameter_Value();
+    EAttribute VARIABLE__VALUE = eINSTANCE.getVariable_Value();
 
     /**
-     * The meta object literal for the '{@link ca.mcgill.devops.pipeline.pipeline.PipelineKeyword <em>Keyword</em>}' enum.
+     * The meta object literal for the '<em><b>Readonly</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see ca.mcgill.devops.pipeline.pipeline.PipelineKeyword
-     * @see ca.mcgill.devops.pipeline.pipeline.impl.PipelinePackageImpl#getPipelineKeyword()
      * @generated
      */
-    EEnum PIPELINE_KEYWORD = eINSTANCE.getPipelineKeyword();
+    EAttribute VARIABLE__READONLY = eINSTANCE.getVariable_Readonly();
+
+    /**
+     * The meta object literal for the '{@link ca.mcgill.devops.pipeline.pipeline.impl.ResourceImpl <em>Resource</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see ca.mcgill.devops.pipeline.pipeline.impl.ResourceImpl
+     * @see ca.mcgill.devops.pipeline.pipeline.impl.PipelinePackageImpl#getResource()
+     * @generated
+     */
+    EClass RESOURCE = eINSTANCE.getResource();
+
+    /**
+     * The meta object literal for the '<em><b>Resource Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute RESOURCE__RESOURCE_NAME = eINSTANCE.getResource_ResourceName();
+
+    /**
+     * The meta object literal for the '<em><b>Resource Values</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference RESOURCE__RESOURCE_VALUES = eINSTANCE.getResource_ResourceValues();
+
+    /**
+     * The meta object literal for the '{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineParameterImpl <em>Parameter</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see ca.mcgill.devops.pipeline.pipeline.impl.PipelineParameterImpl
+     * @see ca.mcgill.devops.pipeline.pipeline.impl.PipelinePackageImpl#getPipelineParameter()
+     * @generated
+     */
+    EClass PIPELINE_PARAMETER = eINSTANCE.getPipelineParameter();
+
+    /**
+     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PIPELINE_PARAMETER__NAME = eINSTANCE.getPipelineParameter_Name();
+
+    /**
+     * The meta object literal for the '<em><b>Display Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PIPELINE_PARAMETER__DISPLAY_NAME = eINSTANCE.getPipelineParameter_DisplayName();
+
+    /**
+     * The meta object literal for the '<em><b>Parameter Values</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference PIPELINE_PARAMETER__PARAMETER_VALUES = eINSTANCE.getPipelineParameter_ParameterValues();
+
+    /**
+     * The meta object literal for the '{@link ca.mcgill.devops.pipeline.pipeline.impl.ParameterValueImpl <em>Parameter Value</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see ca.mcgill.devops.pipeline.pipeline.impl.ParameterValueImpl
+     * @see ca.mcgill.devops.pipeline.pipeline.impl.PipelinePackageImpl#getParameterValue()
+     * @generated
+     */
+    EClass PARAMETER_VALUE = eINSTANCE.getParameterValue();
+
+    /**
+     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PARAMETER_VALUE__NAME = eINSTANCE.getParameterValue_Name();
+
+    /**
+     * The meta object literal for the '<em><b>Pre Defined Keyword</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PARAMETER_VALUE__PRE_DEFINED_KEYWORD = eINSTANCE.getParameterValue_PreDefinedKeyword();
+
+    /**
+     * The meta object literal for the '<em><b>Sub Parameter Values</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference PARAMETER_VALUE__SUB_PARAMETER_VALUES = eINSTANCE.getParameterValue_SubParameterValues();
+
+    /**
+     * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PARAMETER_VALUE__VALUE = eINSTANCE.getParameterValue_Value();
 
     /**
      * The meta object literal for the '{@link ca.mcgill.devops.pipeline.pipeline.Permission <em>Permission</em>}' enum.

@@ -67,8 +67,11 @@ public class PipelineFactoryImpl extends EFactoryImpl implements PipelineFactory
     switch (eClass.getClassifierID())
     {
       case PipelinePackage.PIPELINE: return createPipeline();
-      case PipelinePackage.CONFIGURATION: return createConfiguration();
-      case PipelinePackage.PARAMETER: return createParameter();
+      case PipelinePackage.EXTENDED_PARAMETER: return createExtendedParameter();
+      case PipelinePackage.VARIABLE: return createVariable();
+      case PipelinePackage.RESOURCE: return createResource();
+      case PipelinePackage.PIPELINE_PARAMETER: return createPipelineParameter();
+      case PipelinePackage.PARAMETER_VALUE: return createParameterValue();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
     }
@@ -84,8 +87,6 @@ public class PipelineFactoryImpl extends EFactoryImpl implements PipelineFactory
   {
     switch (eDataType.getClassifierID())
     {
-      case PipelinePackage.PIPELINE_KEYWORD:
-        return createPipelineKeywordFromString(eDataType, initialValue);
       case PipelinePackage.PERMISSION:
         return createPermissionFromString(eDataType, initialValue);
       default:
@@ -103,8 +104,6 @@ public class PipelineFactoryImpl extends EFactoryImpl implements PipelineFactory
   {
     switch (eDataType.getClassifierID())
     {
-      case PipelinePackage.PIPELINE_KEYWORD:
-        return convertPipelineKeywordToString(eDataType, instanceValue);
       case PipelinePackage.PERMISSION:
         return convertPermissionToString(eDataType, instanceValue);
       default:
@@ -130,10 +129,10 @@ public class PipelineFactoryImpl extends EFactoryImpl implements PipelineFactory
    * @generated
    */
   @Override
-  public Configuration createConfiguration()
+  public ExtendedParameter createExtendedParameter()
   {
-    ConfigurationImpl configuration = new ConfigurationImpl();
-    return configuration;
+    ExtendedParameterImpl extendedParameter = new ExtendedParameterImpl();
+    return extendedParameter;
   }
 
   /**
@@ -142,10 +141,10 @@ public class PipelineFactoryImpl extends EFactoryImpl implements PipelineFactory
    * @generated
    */
   @Override
-  public Parameter createParameter()
+  public Variable createVariable()
   {
-    ParameterImpl parameter = new ParameterImpl();
-    return parameter;
+    VariableImpl variable = new VariableImpl();
+    return variable;
   }
 
   /**
@@ -153,11 +152,11 @@ public class PipelineFactoryImpl extends EFactoryImpl implements PipelineFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public PipelineKeyword createPipelineKeywordFromString(EDataType eDataType, String initialValue)
+  @Override
+  public Resource createResource()
   {
-    PipelineKeyword result = PipelineKeyword.get(initialValue);
-    if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-    return result;
+    ResourceImpl resource = new ResourceImpl();
+    return resource;
   }
 
   /**
@@ -165,9 +164,23 @@ public class PipelineFactoryImpl extends EFactoryImpl implements PipelineFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public String convertPipelineKeywordToString(EDataType eDataType, Object instanceValue)
+  @Override
+  public PipelineParameter createPipelineParameter()
   {
-    return instanceValue == null ? null : instanceValue.toString();
+    PipelineParameterImpl pipelineParameter = new PipelineParameterImpl();
+    return pipelineParameter;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public ParameterValue createParameterValue()
+  {
+    ParameterValueImpl parameterValue = new ParameterValueImpl();
+    return parameterValue;
   }
 
   /**

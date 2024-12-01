@@ -11,75 +11,35 @@ package ca.mcgill.devops.pipeline.ide.contentassist.antlr.lexer;
 import org.eclipse.xtext.ide.editor.contentassist.antlr.internal.Lexer;
 }
 
-ContinueOnError : 'continue-on-error:';
-
-SettableVariables : 'settableVariables:';
+CancelInProgress : 'cancel-in-progress:';
 
 WorkingDirectory : 'working-directory:';
 
-BranchesIgnore : 'branches-ignore:';
-
-TimeoutMinutes : 'timeout-minutes:';
-
-DownloadBuild : 'downloadBuild:';
-
-MaxParallel : 'max-parallel:';
-
-PathsIgnore : 'paths-ignore:';
-
-Pull_request : 'pull_request:';
-
 Repositories : 'repositories:';
-
-Workflow_run : 'workflow_run:';
 
 Concurrency : 'concurrency:';
 
-Credentials : 'credentials:';
-
-Environment : 'environment:';
-
-Permissions : 'permissions:';
-
-TagsIgnore : 'tags-ignore:';
+DisplayName : 'displayName:';
 
 Containers : 'containers:';
 
-Deployment : 'deployment:';
-
-Entrypoint : 'entrypoint:';
-
 Parameters : 'parameters:';
 
-Container : 'container:';
-
-FailFast : 'fail-fast:';
+Permission : 'permission:';
 
 Pipelines : 'pipelines:';
 
 Resources : 'resources:';
 
-ReviewApp : 'reviewApp:';
-
-Schedules : 'schedules:';
-
 Variables : 'variables:';
-
-Branches : 'branches:';
 
 Defaults : 'defaults:';
 
 Packages : 'packages:';
 
-Pipeline : 'pipeline:';
-
-Required : 'required:';
+Readonly : 'readonly:';
 
 RunName : 'run-name:';
-
-Schedule : 'schedule:';
-
-Strategy : 'strategy:';
 
 Template : 'template:';
 
@@ -87,87 +47,39 @@ Webhooks : 'webhooks:';
 
 WriteAll : 'write-all';
 
-Exclude : 'exclude:';
+Default : 'default:';
+
+Demands : 'demands:';
 
 Extends : 'extends:';
 
-Filters : 'filters:';
-
 Include : 'include:';
-
-Inherit : 'inherit:';
-
-Outputs : 'outputs:';
 
 ReadAll : 'read-all';
 
-Rolling : 'rolling:';
-
-RunOnce : 'runOnce:';
-
-RunsOn : 'runs-on:';
-
-Secrets : 'secrets:';
-
-Trigger : 'trigger:';
+VmImage : 'vmImage:';
 
 Builds : 'builds:';
 
-Canary : 'canary:';
-
-Inputs : 'inputs:';
-
-Matrix : 'matrix:';
-
-Script : 'script:';
-
-Target : 'target:';
-
-Build : 'build:';
-
 Group : 'group:';
-
-Image : 'image:';
-
-Needs : 'needs:';
-
-Paths : 'paths:';
-
-Ports : 'ports:';
 
 Shell : 'shell:';
 
-Types : 'types:';
-
-Args : 'args:';
-
-Cron : 'cron:';
+Value : 'value:';
 
 Name : 'name:';
 
-Path : 'path:';
+Pool : 'pool:';
 
-Push : 'push:';
-
-Tags : 'tags:';
-
-Type : 'type:';
-
-Uses : 'uses:';
+Write : 'write';
 
 Env : 'env:';
 
-Id : 'id:';
+None : 'none';
 
-If : 'if:';
+Read : 'read';
 
-On : 'on:';
-
-Pr : 'pr:';
-
-ExclamationMark : '!';
-
-Asterisk : '*';
+Run : 'run:';
 
 Comma : ',';
 
@@ -179,15 +91,7 @@ LeftSquareBracket : '[';
 
 RightSquareBracket : ']';
 
-KW__ : '_';
-
-LeftCurlyBracket : '{';
-
-RightCurlyBracket : '}';
-
-RULE_ID : ('a'..'z'|'A'..'Z'|'_'|'/'|'@'|'-'|'.'|'\\'|'&') ('a'..'z'|'A'..'Z'|'0'..'9'|'_'|'/'|'@'|'&'|'-'|'.'|'\\'|'$'|'('|')')*;
-
-RULE_COMPLEX_EXPRESSION : '${{' ( options {greedy=false;} : . )*'}}';
+RULE_COMPLEX_EXPRESSION : (('a'..'z'|'A'..'Z') ('a'..'z'|'A'..'Z'|'-')*)? '${{' ( options {greedy=false;} : . )*'}}' ('-${{' ( options {greedy=false;} : . )*'}}')*;
 
 RULE_HEX_INT : '0x' ('0'..'9'|'a'..'f'|'A'..'F')+;
 
@@ -195,20 +99,20 @@ RULE_FLOAT_LITERAL : '-'? RULE_INT '.' RULE_INT;
 
 RULE_VERSION : RULE_INT ('.' RULE_INT)+;
 
-RULE_STRING : ('"' ('\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|'\''|'\\')|~(('\\'|'"')))* '"'|'\'' ('\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|'\''|'\\')|~(('\\'|'\'')))* '\'');
+fragment RULE_BEGIN : ;
+
+fragment RULE_END : ;
+
+RULE_ID : ('a'..'z'|'A'..'Z'|'_'|'/'|'@'|'-'|'.'|'\\'|'&') ('a'..'z'|'A'..'Z'|'0'..'9'|'_'|'/'|'@'|'&'|'-'|'.'|'\\'|'('|')'|'|'|'$')*;
 
 RULE_ML_COMMENT : '/*' ( options {greedy=false;} : . )*'*/';
 
 RULE_SL_COMMENT : '#' ~(('\n'|'\r'))* ('\r'? '\n')?;
 
+RULE_INT : ('0'..'9')+;
+
+RULE_STRING : ('"' ('\\' .|~(('\\'|'"')))* '"'|'\'' ('\\' .|~(('\\'|'\'')))* '\'');
+
 RULE_WS : (' '|'\t'|'\r'|'\n')+;
 
 RULE_ANY_OTHER : .;
-
-RULE_UNCLOSED_STRING : '"' ~('"')* EOF;
-
-fragment RULE_BEGIN : ;
-
-fragment RULE_END : ;
-
-RULE_INT : ('0'..'9')+;

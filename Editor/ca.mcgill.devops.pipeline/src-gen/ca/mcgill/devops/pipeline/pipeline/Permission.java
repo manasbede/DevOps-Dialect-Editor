@@ -38,7 +38,37 @@ public enum Permission implements Enumerator
    * @generated
    * @ordered
    */
-  WRITE_ALL(1, "WRITE_ALL", "write-all");
+  WRITE_ALL(1, "WRITE_ALL", "write-all"),
+
+  /**
+   * The '<em><b>READ</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #READ_VALUE
+   * @generated
+   * @ordered
+   */
+  READ(2, "READ", "read"),
+
+  /**
+   * The '<em><b>WRITE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #WRITE_VALUE
+   * @generated
+   * @ordered
+   */
+  WRITE(3, "WRITE", "write"),
+
+  /**
+   * The '<em><b>NONE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #NONE_VALUE
+   * @generated
+   * @ordered
+   */
+  NONE(4, "NONE", "none");
 
   /**
    * The '<em><b>READ ALL</b></em>' literal value.
@@ -63,6 +93,39 @@ public enum Permission implements Enumerator
   public static final int WRITE_ALL_VALUE = 1;
 
   /**
+   * The '<em><b>READ</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #READ
+   * @model literal="read"
+   * @generated
+   * @ordered
+   */
+  public static final int READ_VALUE = 2;
+
+  /**
+   * The '<em><b>WRITE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #WRITE
+   * @model literal="write"
+   * @generated
+   * @ordered
+   */
+  public static final int WRITE_VALUE = 3;
+
+  /**
+   * The '<em><b>NONE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #NONE
+   * @model literal="none"
+   * @generated
+   * @ordered
+   */
+  public static final int NONE_VALUE = 4;
+
+  /**
    * An array of all the '<em><b>Permission</b></em>' enumerators.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -73,6 +136,9 @@ public enum Permission implements Enumerator
     {
       READ_ALL,
       WRITE_ALL,
+      READ,
+      WRITE,
+      NONE,
     };
 
   /**
@@ -139,6 +205,9 @@ public enum Permission implements Enumerator
     {
       case READ_ALL_VALUE: return READ_ALL;
       case WRITE_ALL_VALUE: return WRITE_ALL;
+      case READ_VALUE: return READ;
+      case WRITE_VALUE: return WRITE;
+      case NONE_VALUE: return NONE;
     }
     return null;
   }

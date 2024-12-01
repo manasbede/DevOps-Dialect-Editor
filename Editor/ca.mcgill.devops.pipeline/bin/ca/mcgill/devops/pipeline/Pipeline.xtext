@@ -4,144 +4,110 @@ import "http://www.eclipse.org/emf/2002/Ecore" as ecore
 generate pipeline "http://www.mcgill.ca/devops/pipeline/Pipeline"
 
 Pipeline:
-	('name:' name=UnquotedString) | (pipelineConfiguration+=Configuration*)
+	// GitHub Actions Config
+	('name:' name=UnquotedString)? &
+	('run-name:'runName=UnquotedString)? &
+	('defaults:' BEGIN 'run:' BEGIN ('shell:'defaultShellValue=STRING)?&('working-directory:'defaultWDValue=STRING)? END END)? &
+	('env:' BEGIN ('-'?env+=KeyValue)* END)? &
+	('permission:'((allPermission=Permission)|(BEGIN (indPermissions+=IndPermissionValue*) END))) ? &
+	('concurrency:'(BEGIN ('group:' group=(ID|COMPLEX_EXPRESSION)) ('cancel-in-progress:' cancelConcurrence=(ID|COMPLEX_EXPRESSION)) END))? &
+	
+	// Azure DevOps Config
+	('parameters:' ('-' pipelineParameters+=PipelineParameter)*)? &
+	('pool:'(BEGIN ('name:'vmName=ID)('vmImage:'vmImage=(ID|STRING))?&('demands:'vmDemands=(AnyData|HyphenValues))? END))? &
+	('resources:' (BEGIN (resources+=Resource*) END))? & 
+	
+	//GitLab Config
+	('default:' pipelineParameters+=PipelineParameter)? &
+	
+	// Common
+	('variables:' (variables+=Variable)*) ? &
+	(extendedParameter=ExtendedParameter)?
+	
+	//Event
+	
+	//Job or Stage
 ;
 
-Configuration:
-	('parameters:' parameters+=Parameter*)
+ExtendedParameter:
+	('extends:'(BEGIN ('template:' template=ID) ('parameters:' (BEGIN extendedParameterValues+=ParameterValue* END)) END)) |
+	('include:'(BEGIN extendedParameterValues+=ParameterValue+ END))
 ;
 
-Parameter:
-    name=ID ':' ((BEGIN (parameters+=Parameter)* END) | (value=(AnyData|ArrayList)))
+Variable:
+	(BEGIN (variableValues+=ParameterValue)+ END)|
+	(('-''group:' group=AnyData)?
+	(('-''name:'name=AnyData)(BEGIN ('value:'value=AnyData)('readonly:'readonly=ID)? END)))
+;
+
+Resource:
+	(resourceName=('builds:'|'containers:'|'pipelines:'|'repositories:'|'webhooks:'|'packages:'))
+	(('-'resourceValues+=ParameterValue)*|(BEGIN('-'resourceValues+=ParameterValue)*END))
+;
+	
+PipelineParameter:
+	('name:' name=ID)?
+	(BEGIN 
+		('displayName:' displayName=UnquotedString)? &
+		(parameterValues+=ParameterValue*) 
+	END)
+;
+
+// Change preDefinedKeywrod assignment
+ParameterValue:
+    ('-')?((name=(ID|COMPLEX_EXPRESSION))|(preDefinedKeyword=Permission)) ':' WS* ((BEGIN (subParameterValues+=ParameterValue)* END) | (value=(AnyData|ArrayList|HyphenValues)(BEGIN subParameterValues+=ParameterValue* END)?)) 
 ;
 
 
-/*  Defining Enumerations */
-
-enum PipelineKeyword:
-	PPL_KW_NAME= 'name:'|
-	PPL_KW_RUN_NAME= 'run-name:'|
-	PPL_KW_ON= 'on:'|
-	PPL_KW_TYPES= 'types:'|
-	PPL_KW_BRANCHES= 'branches:'|
-	PPL_KW_BRANCHES_IGNORE= 'branches-ignore:'|
-	PPL_KW_PUSH= 'push:'|
-	PPL_KW_PULL_REQ= 'pull_request:'|
-	PPL_KW_PATH= 'path:'|
-	PPL_KW_PATH_IGN= 'paths-ignore:'|
-	PPL_KW_TAGS= 'tags:'|
-	PPL_KW_TAGS_IGNORE= 'tags-ignore:'|
-	PPL_KW_PATHS= 'paths:'|
-	PPL_KW_SCHEDULE= 'schedule:'|
-	PPL_KW_INPUTS= 'inputs:'|
-	PPL_KW_TYPE= 'type:'|
-	PPL_KW_OUTPUTS= 'outputs:'|
-	PPL_KW_SECRETS= 'secrets:'|
-	PPL_KW_TRIGGER= 'trigger:'|
-	PPL_KW_PR= 'pr:'|
-	PPL_KW_REQUIRED= 'required:'|
-	PPL_KW_PERMISSIONS= 'permissions:'|
-	PPL_KW_ENV= 'env:'|
-	PPL_KW_DEFAULTS= 'defaults:'|
-	PPL_KW_CONCURRENCY= 'concurrency:'|
-	PPL_KW_NEEDS= 'needs:'|
-	PPL_KW_IF= 'if:'|
-	PPL_KW_RUNS_ON= 'runs-on:'|
-	PPL_KW_ENVIRONMENT= 'environment:'|
-	PPL_KW_ID= 'id:'|
-	PPL_KW_USES= 'uses:'|
-	PPL_KW_WORKING_DIRECTORY= 'working-directory:'|
-	PPL_KW_SHELL= 'shell:'|
-	PPL_KW_ARGS= 'args:'|
-	PPL_KW_ENTRYPOINT= 'entrypoint:'|
-	PPL_KW_CONTINUE_ON_ERROR= 'continue-on-error:'|
-	PPL_KW_TIMEOUT_MINUTES= 'timeout-minutes:'|
-	PPL_KW_STRATEGY= 'strategy:'|
-	PPL_KW_MATRIX= 'matrix:'|
-	PPL_KW_INCLUDE= 'include:'|
-	PPL_KW_EXCLUDE= 'exclude:'|
-	PPL_KW_FAIL_FAST= 'fail-fast:'|
-	PPL_KW_MAX_PARALLEL= 'max-parallel:'|
-	PPL_KW_CONTAINER= 'container:'|
-	PPL_KW_IMAGE= 'image:'|
-	PPL_KW_CREDENTIALS= 'credentials:'|
-	PPL_KW_PORTS= 'ports:'|
-	PPL_KW_INHERIT= 'inherit:'|
-	PPL_KW_PIPELINE= 'pipeline:'|
-	PPL_KW_EXTENDS= 'extends:'|
-	PPL_KW_DEPLOYMENT= 'deployment:'|
-	PPL_KW_CANARY= 'canary:'|
-	PPL_KW_ROLLING= 'rolling:'|
-	PPL_KW_RUNONCE= 'runOnce:'|
-	PPL_KW_TEMPLATE= 'template:'|
-	PPL_KW_RESOURCES= 'resources:'|
-	PPL_KW_BUILDS= 'builds:'|
-	PPL_KW_BUILD= 'build:'|
-	PPL_KW_CONTAINERS= 'containers:'|
-	PPL_KW_PACKAGES= 'packages:'|
-	PPL_KW_PIPELINES= 'pipelines:'|
-	PPL_KW_REPOSITORIES= 'repositories:'|
-	PPL_KW_WEBHOOKS= 'webhooks:'|
-	PPL_KW_FILTERS= 'filters:'|
-	PPL_KW_SCHEDULES= 'schedules:'|
-	PPL_KW_CRON= 'cron:'|
-	PPL_KW_DOWNLOADBUILD= 'downloadBuild:'|
-	PPL_KW_REVIEWAPP= 'reviewApp:'|
-	PPL_KW_SCRIPT= 'script:'|
-	PPL_KW_TARGET= 'target:'|
-	PPL_KW_SETTABLEVARIABLES= 'settableVariables:'|
-	PPL_KW_VARIABLES= 'variables:'|
-	PPL_KW_GROUP= 'group:'|
-	PPL_KW_WF_RUN= 'workflow_run:'
-;
-
+/* Defining Enum */
 enum Permission:
 	READ_ALL = 'read-all' |
-    WRITE_ALL = 'write-all'
+    WRITE_ALL = 'write-all'|
+    READ ='read'|
+    WRITE = 'write'|
+    NONE = 'none'
 ;
 
 
 
 
 
-
-/*  Defining Datatypes */
-
+/* Defining Datatypes */
 AnyData:
-    STRING | Number | FloatingPoint | SimpleWord | COMPLEX_EXPRESSION | HEX_INT | VERSION;
+    STRING |Number | FloatingPoint | SimpleWord | COMPLEX_EXPRESSION | VERSION | HEX_INT;
+    
+KeyValue:
+	ID':' AnyData;
 
-UnquotedString:
-	ID (WS ID|INT|VERSION)*
-;
+IndPermissionValue:
+	ID':'('read'|'write'|'none');
+
+UnquotedString:	
+	ID (ID|INT|COMPLEX_EXPRESSION)*;
+
+HyphenValues:
+	('-' AnyData)+ |
+	(BEGIN ('-' AnyData)+ END);
 
 Number:
     INT;
 
 FloatingPoint:
-	FLOAT_LITERAL
-;
+    FLOAT_LITERAL;
 
 SimpleWord:
     ID;
-
-HyphenParameters:
-	('-' AnyData)+
-;
-
-ArrayList:
-	'['(AnyData (',' AnyData)*)?']'
-;
-
-POSSIBLE_SPECIAL_KEY:
-	('_'|'{' | '}' | '*' | '!')+
-;
-
-@Override 
-terminal ID:
-    ('a'..'z' | 'A'..'Z' | '_' | '/' | '@' | '-' | '.' | '\\' | '&') ('a'..'z' | 'A'..'Z' | '0'..'9' | '_' | '/' | '@' | '&' |'-' | '.' | '\\' |'$' | '(' | ')')*;
-
-terminal COMPLEX_EXPRESSION: '${{' -> '}}';
     
+ArrayList:
+	'['(AnyData (',' AnyData)*)?']';
+
+
+
+/* Defining Terminal Datatypes */
+terminal COMPLEX_EXPRESSION: 
+	((('a'..'z' | 'A'..'Z')('a'..'z' | 'A'..'Z' | '-')*)? '${{' -> '}}')('-${{' -> '}}')*;
+	
+
 terminal HEX_INT returns ecore::EInt: '0x' ('0'..'9' | 'a'..'f' | 'A'..'F')+;
 
 terminal FLOAT_LITERAL returns ecore::EFloat:
@@ -149,28 +115,19 @@ terminal FLOAT_LITERAL returns ecore::EFloat:
 
 terminal VERSION:
 	INT ('.' INT)+;
- 
+	
+terminal BEGIN: 'synthetic:BEGIN';
+
+terminal END: 'synthetic:END';
+
 @Override 
-terminal STRING:
-    '"' ( '\\'('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|'"') )* '"' |
-    "'" ( '\\'('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|"'") )* "'";
- 
+terminal ID:
+    ('a'..'z' | 'A'..'Z' | '_' | '/' | '@' | '-' | '.' | '\\' | '&') ('a'..'z' | 'A'..'Z' | '0'..'9' | '_' | '/' | '@' | '&' |'-' | '.' | '\\' | '(' | ')' | '|' | '$')*;
+
 @Override 
 terminal ML_COMMENT:
     '/*' -> '*/';
  
 @Override 
 terminal SL_COMMENT:
-    '#' !('\n'|'\r')* ('\r'? '\n')?;	
- 
-@Override 
-terminal WS:
-    (' '|'\t'|'\r'|'\n')+;
- 
-@Override 
-terminal ANY_OTHER:
-    .;
-terminal UNCLOSED_STRING : '"' (!'"')* EOF;
-
-terminal BEGIN: 'synthetic:BEGIN';
-terminal END: 'synthetic:END';
+    '#' !('\n'|'\r')* ('\r'? '\n')?;		
