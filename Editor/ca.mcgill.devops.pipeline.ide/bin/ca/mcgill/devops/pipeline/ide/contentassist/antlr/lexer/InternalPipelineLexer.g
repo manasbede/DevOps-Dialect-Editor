@@ -13,13 +13,27 @@ import org.eclipse.xtext.ide.editor.contentassist.antlr.internal.Lexer;
 
 CancelInProgress : 'cancel-in-progress:';
 
+Workflow_dispatch : 'workflow_dispatch:';
+
 WorkingDirectory : 'working-directory:';
 
+BranchesIgnore : 'branches-ignore:';
+
+Workflow_call : 'workflow_call:';
+
+PathsIgnore : 'paths-ignore:';
+
 Repositories : 'repositories:';
+
+Workflow_run : 'workflow_run:';
 
 Concurrency : 'concurrency:';
 
 DisplayName : 'displayName:';
+
+TagsIgnore : 'tags-ignore:';
+
+AutoCancel : 'autoCancel:';
 
 Containers : 'containers:';
 
@@ -27,19 +41,33 @@ Parameters : 'parameters:';
 
 Permission : 'permission:';
 
+Executors : 'executors:';
+
 Pipelines : 'pipelines:';
 
 Resources : 'resources:';
 
+Schedules : 'schedules:';
+
 Variables : 'variables:';
 
+Branches : 'branches:';
+
+Commands : 'commands:';
+
 Defaults : 'defaults:';
+
+Excluded : 'excluded:';
+
+Included : 'included:';
 
 Packages : 'packages:';
 
 Readonly : 'readonly:';
 
 RunName : 'run-name:';
+
+Schedule : 'schedule:';
 
 Template : 'template:';
 
@@ -57,17 +85,35 @@ Include : 'include:';
 
 ReadAll : 'read-all';
 
+Version : 'version:';
+
 VmImage : 'vmImage:';
+
+Always : 'always:';
 
 Builds : 'builds:';
 
+Drafts : 'drafts:';
+
+Batch : 'batch:';
+
 Group : 'group:';
+
+Paths : 'paths:';
 
 Shell : 'shell:';
 
+Tags : 'tags::';
+
+Types : 'types:';
+
 Value : 'value:';
 
+Cron : 'cron:';
+
 Name : 'name:';
+
+Orbs : 'orbs:';
 
 Pool : 'pool:';
 
@@ -75,11 +121,15 @@ Write : 'write';
 
 Env : 'env:';
 
+Job : 'job:';
+
 None : 'none';
 
 Read : 'read';
 
 Run : 'run:';
+
+On : 'on:';
 
 Comma : ',';
 

@@ -67,6 +67,10 @@ public class PipelineFactoryImpl extends EFactoryImpl implements PipelineFactory
     switch (eClass.getClassifierID())
     {
       case PipelinePackage.PIPELINE: return createPipeline();
+      case PipelinePackage.EVENT: return createEvent();
+      case PipelinePackage.TRIGGER_SCHEDULE: return createTriggerSchedule();
+      case PipelinePackage.BRANCH: return createBranch();
+      case PipelinePackage.ACTIVITY: return createActivity();
       case PipelinePackage.EXTENDED_PARAMETER: return createExtendedParameter();
       case PipelinePackage.VARIABLE: return createVariable();
       case PipelinePackage.RESOURCE: return createResource();
@@ -121,6 +125,54 @@ public class PipelineFactoryImpl extends EFactoryImpl implements PipelineFactory
   {
     PipelineImpl pipeline = new PipelineImpl();
     return pipeline;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public Event createEvent()
+  {
+    EventImpl event = new EventImpl();
+    return event;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public TriggerSchedule createTriggerSchedule()
+  {
+    TriggerScheduleImpl triggerSchedule = new TriggerScheduleImpl();
+    return triggerSchedule;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public Branch createBranch()
+  {
+    BranchImpl branch = new BranchImpl();
+    return branch;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public Activity createActivity()
+  {
+    ActivityImpl activity = new ActivityImpl();
+    return activity;
   }
 
   /**

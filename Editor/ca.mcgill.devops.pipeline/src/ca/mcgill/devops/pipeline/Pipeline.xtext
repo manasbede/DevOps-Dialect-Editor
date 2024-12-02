@@ -13,20 +13,63 @@ Pipeline:
 	('concurrency:'(BEGIN ('group:' group=(ID|COMPLEX_EXPRESSION)) ('cancel-in-progress:' cancelConcurrence=(ID|COMPLEX_EXPRESSION)) END))? &
 	
 	// Azure DevOps Config
-	('parameters:' ('-' pipelineParameters+=PipelineParameter)*)? &
 	('pool:'(BEGIN ('name:'vmName=ID)('vmImage:'vmImage=(ID|STRING))?&('demands:'vmDemands=(AnyData|HyphenValues))? END))? &
 	('resources:' (BEGIN (resources+=Resource*) END))? & 
 	
-	//GitLab Config
-	('default:' pipelineParameters+=PipelineParameter)? &
+	//CircleCI Config
+	('version:' version=VERSION)? &
 	
-	// Common
+	// Common for GitHub Actions, Azure Devops, GitLab, CircleCI
 	('variables:' (variables+=Variable)*) ? &
-	(extendedParameter=ExtendedParameter)?
+	(extendedParameter=ExtendedParameter)? &
+	(pipelineParameters+=PipelineParameter*)
 	
 	//Event
-	
+	(('on:' (BEGIN triggers+=Event+ END)? ((triggers+=Event) | ('['triggers+=Event (',' triggers+=Event)*']'))?) | (triggers+=Event*))
+	('job:')
 	//Job or Stage
+;
+
+Event:
+	(
+		(name=ID(':')?)(includedBranches+=Branch*)
+		(BEGIN 
+			(('types:')(activities+=Activity)|(BEGIN activities+=Activity END)) ?
+			(
+				('batch:' batch=ID)? &
+				('autoCancel:' autoCancel=ID)? &
+				('drafts:' drafts=ID)? &
+				(('branches:')((includedBranches+=Branch*)|(BEGIN (includedBranches+=Branch*) (('included:')(includedBranches+=Branch*))? (('excluded:')(excludedBranches+=Branch*))? END)))? &
+				(('branches-ignore:')(BEGIN (excludedBranches+=Branch*) END))? &
+				(('paths:')((BEGIN (includedPaths+=HyphenValues)? (('included:')(includedPaths+=HyphenValues))? (('excluded:')(excludedPaths+=HyphenValues))? END)))? &
+				(('paths-ignore:')(BEGIN (excludedPaths+=HyphenValues) END))? &
+				(('tags::')((BEGIN (includedTags+=HyphenValues)? (('included:')(includedTags+=HyphenValues))? (('excluded:')(excludedTags+=HyphenValues))? END)))? &
+				(('tags-ignore:')(BEGIN (excludedTags+=HyphenValues) END))?
+			)
+		END)?
+	) |
+	(
+		((name=('schedules:'|'schedule:'))(triggerSchedules+=TriggerSchedule*))|
+		((name=('workflow_call:'|'workflow_run:'|'workflow_dispatch:'))(otherEventParameterValues+=ParameterValue*))
+	)
+;
+
+TriggerSchedule:
+	(('-''cron:' cronValue=STRING) | (BEGIN ('-''cron:' cronValue=STRING) END))
+	(BEGIN 
+		('displayName:' displayName=UnquotedString)?
+		('branches:'(BEGIN (('included:')(includedBranches+=Branch*))? (('excluded:')(excludedBranches+=Branch*))? END))
+		(('batch:' batch=ID) ? &
+		('always:' always=ID)?)
+	END)?
+;
+
+Branch:
+	(('-')? name=(ID|STRING))
+;
+
+Activity:
+	name=(AnyData|ArrayList|HyphenValues)
 ;
 
 ExtendedParameter:
@@ -44,13 +87,10 @@ Resource:
 	(resourceName=('builds:'|'containers:'|'pipelines:'|'repositories:'|'webhooks:'|'packages:'))
 	(('-'resourceValues+=ParameterValue)*|(BEGIN('-'resourceValues+=ParameterValue)*END))
 ;
-	
+
 PipelineParameter:
-	('name:' name=ID)?
-	(BEGIN 
-		('displayName:' displayName=UnquotedString)? &
-		(parameterValues+=ParameterValue*) 
-	END)
+	(name='parameters:'(parameterValues+=ParameterValue+))|
+	(name=('default:'|'executors:'|'orbs:'|'commands:')(BEGIN (parameterValues+=ParameterValue+) END))
 ;
 
 // Change preDefinedKeywrod assignment
@@ -127,7 +167,7 @@ terminal ID:
 @Override 
 terminal ML_COMMENT:
     '/*' -> '*/';
- 
+
 @Override 
 terminal SL_COMMENT:
-    '#' !('\n'|'\r')* ('\r'? '\n')?;		
+    '#' !('\n'|'\r')* ('\r'? '\n')?;	

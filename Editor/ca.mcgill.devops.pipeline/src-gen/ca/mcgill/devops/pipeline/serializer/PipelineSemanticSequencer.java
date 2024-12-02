@@ -3,12 +3,16 @@
  */
 package ca.mcgill.devops.pipeline.serializer;
 
+import ca.mcgill.devops.pipeline.pipeline.Activity;
+import ca.mcgill.devops.pipeline.pipeline.Branch;
+import ca.mcgill.devops.pipeline.pipeline.Event;
 import ca.mcgill.devops.pipeline.pipeline.ExtendedParameter;
 import ca.mcgill.devops.pipeline.pipeline.ParameterValue;
 import ca.mcgill.devops.pipeline.pipeline.Pipeline;
 import ca.mcgill.devops.pipeline.pipeline.PipelinePackage;
 import ca.mcgill.devops.pipeline.pipeline.PipelineParameter;
 import ca.mcgill.devops.pipeline.pipeline.Resource;
+import ca.mcgill.devops.pipeline.pipeline.TriggerSchedule;
 import ca.mcgill.devops.pipeline.pipeline.Variable;
 import ca.mcgill.devops.pipeline.services.PipelineGrammarAccess;
 import com.google.inject.Inject;
@@ -35,6 +39,15 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 		Set<Parameter> parameters = context.getEnabledBooleanParameters();
 		if (epackage == PipelinePackage.eINSTANCE)
 			switch (semanticObject.eClass().getClassifierID()) {
+			case PipelinePackage.ACTIVITY:
+				sequence_Activity(context, (Activity) semanticObject); 
+				return; 
+			case PipelinePackage.BRANCH:
+				sequence_Branch(context, (Branch) semanticObject); 
+				return; 
+			case PipelinePackage.EVENT:
+				sequence_Event(context, (Event) semanticObject); 
+				return; 
 			case PipelinePackage.EXTENDED_PARAMETER:
 				sequence_ExtendedParameter(context, (ExtendedParameter) semanticObject); 
 				return; 
@@ -50,6 +63,9 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 			case PipelinePackage.RESOURCE:
 				sequence_Resource(context, (Resource) semanticObject); 
 				return; 
+			case PipelinePackage.TRIGGER_SCHEDULE:
+				sequence_TriggerSchedule(context, (TriggerSchedule) semanticObject); 
+				return; 
 			case PipelinePackage.VARIABLE:
 				sequence_Variable(context, (Variable) semanticObject); 
 				return; 
@@ -57,6 +73,77 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 		if (errorAcceptor != null)
 			errorAcceptor.accept(diagnosticProvider.createInvalidContextOrTypeDiagnostic(semanticObject, context));
 	}
+	
+	/**
+	 * <pre>
+	 * Contexts:
+	 *     Activity returns Activity
+	 *
+	 * Constraint:
+	 *     (name=AnyData | name=ArrayList | name=HyphenValues)
+	 * </pre>
+	 */
+	protected void sequence_Activity(ISerializationContext context, Activity semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * <pre>
+	 * Contexts:
+	 *     Branch returns Branch
+	 *
+	 * Constraint:
+	 *     (name=ID | name=STRING)
+	 * </pre>
+	 */
+	protected void sequence_Branch(ISerializationContext context, Branch semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * <pre>
+	 * Contexts:
+	 *     Event returns Event
+	 *
+	 * Constraint:
+	 *     (
+	 *         (
+	 *             name=ID 
+	 *             includedBranches+=Branch* 
+	 *             (activities+=Activity | activities+=Activity)? 
+	 *             batch=ID? 
+	 *             (
+	 *                 (
+	 *                     autoCancel=ID | 
+	 *                     drafts=ID | 
+	 *                     includedBranches+=Branch | 
+	 *                     includedBranches+=Branch | 
+	 *                     includedBranches+=Branch | 
+	 *                     excludedBranches+=Branch | 
+	 *                     excludedBranches+=Branch | 
+	 *                     includedPaths+=HyphenValues | 
+	 *                     includedPaths+=HyphenValues | 
+	 *                     excludedPaths+=HyphenValues | 
+	 *                     excludedPaths+=HyphenValues | 
+	 *                     includedTags+=HyphenValues | 
+	 *                     includedTags+=HyphenValues | 
+	 *                     excludedTags+=HyphenValues | 
+	 *                     excludedTags+=HyphenValues
+	 *                 )? 
+	 *                 batch=ID?
+	 *             )*
+	 *         ) | 
+	 *         ((name='schedules:' | name='schedule:') triggerSchedules+=TriggerSchedule*) | 
+	 *         ((name='workflow_call:' | name='workflow_run:' | name='workflow_dispatch:') otherEventParameterValues+=ParameterValue*)
+	 *     )
+	 * </pre>
+	 */
+	protected void sequence_Event(ISerializationContext context, Event semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
 	
 	/**
 	 * <pre>
@@ -95,7 +182,10 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *     PipelineParameter returns PipelineParameter
 	 *
 	 * Constraint:
-	 *     (name=ID? (displayName=UnquotedString | parameterValues+=ParameterValue)*)
+	 *     (
+	 *         (name='parameters:' parameterValues+=ParameterValue+) | 
+	 *         ((name='default:' | name='executors:' | name='orbs:' | name='commands:') parameterValues+=ParameterValue+)
+	 *     )
 	 * </pre>
 	 */
 	protected void sequence_PipelineParameter(ISerializationContext context, PipelineParameter semanticObject) {
@@ -118,14 +208,18 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *             env+=KeyValue | 
 	 *             allPermission=Permission | 
 	 *             indPermissions+=IndPermissionValue | 
-	 *             pipelineParameters+=PipelineParameter | 
 	 *             vmDemands=AnyData | 
 	 *             vmDemands=HyphenValues | 
 	 *             resources+=Resource | 
-	 *             pipelineParameters+=PipelineParameter | 
+	 *             version=VERSION | 
 	 *             variables+=Variable | 
-	 *             extendedParameter=ExtendedParameter
+	 *             extendedParameter=ExtendedParameter | 
+	 *             pipelineParameters+=PipelineParameter | 
+	 *             triggers+=Event | 
+	 *             triggers+=Event | 
+	 *             triggers+=Event
 	 *         )? 
+	 *         (triggers+=Event triggers+=Event*)? 
 	 *         (vmName=ID (vmImage=ID | vmImage=STRING)?)? 
 	 *         ((group=ID | group=COMPLEX_EXPRESSION) (cancelConcurrence=ID | cancelConcurrence=COMPLEX_EXPRESSION))?
 	 *     )+
@@ -156,6 +250,27 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 * </pre>
 	 */
 	protected void sequence_Resource(ISerializationContext context, Resource semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * <pre>
+	 * Contexts:
+	 *     TriggerSchedule returns TriggerSchedule
+	 *
+	 * Constraint:
+	 *     (
+	 *         (cronValue=STRING | cronValue=STRING) 
+	 *         displayName=UnquotedString? 
+	 *         includedBranches+=Branch* 
+	 *         excludedBranches+=Branch* 
+	 *         batch=ID? 
+	 *         (always=ID? batch=ID?)*
+	 *     )
+	 * </pre>
+	 */
+	protected void sequence_TriggerSchedule(ISerializationContext context, TriggerSchedule semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	

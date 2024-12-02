@@ -80,6 +80,34 @@ public class PipelineSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case PipelinePackage.EVENT:
+      {
+        Event event = (Event)theEObject;
+        T result = caseEvent(event);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case PipelinePackage.TRIGGER_SCHEDULE:
+      {
+        TriggerSchedule triggerSchedule = (TriggerSchedule)theEObject;
+        T result = caseTriggerSchedule(triggerSchedule);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case PipelinePackage.BRANCH:
+      {
+        Branch branch = (Branch)theEObject;
+        T result = caseBranch(branch);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case PipelinePackage.ACTIVITY:
+      {
+        Activity activity = (Activity)theEObject;
+        T result = caseActivity(activity);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       case PipelinePackage.EXTENDED_PARAMETER:
       {
         ExtendedParameter extendedParameter = (ExtendedParameter)theEObject;
@@ -131,6 +159,70 @@ public class PipelineSwitch<T> extends Switch<T>
    * @generated
    */
   public T casePipeline(Pipeline object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Event</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Event</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseEvent(Event object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Trigger Schedule</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Trigger Schedule</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseTriggerSchedule(TriggerSchedule object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Branch</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Branch</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseBranch(Branch object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Activity</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Activity</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseActivity(Activity object)
   {
     return null;
   }

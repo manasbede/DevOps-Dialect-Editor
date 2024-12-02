@@ -25,13 +25,15 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getIndPermissions <em>Ind Permissions</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getGroup <em>Group</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getCancelConcurrence <em>Cancel Concurrence</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getPipelineParameters <em>Pipeline Parameters</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getVmName <em>Vm Name</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getVmImage <em>Vm Image</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getVmDemands <em>Vm Demands</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getResources <em>Resources</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getVersion <em>Version</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getVariables <em>Variables</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getExtendedParameter <em>Extended Parameter</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getPipelineParameters <em>Pipeline Parameters</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getTriggers <em>Triggers</em>}</li>
  * </ul>
  *
  * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline()
@@ -222,18 +224,6 @@ public interface Pipeline extends EObject
   void setCancelConcurrence(String value);
 
   /**
-   * Returns the value of the '<em><b>Pipeline Parameters</b></em>' containment reference list.
-   * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.PipelineParameter}.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Pipeline Parameters</em>' containment reference list.
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_PipelineParameters()
-   * @model containment="true"
-   * @generated
-   */
-  EList<PipelineParameter> getPipelineParameters();
-
-  /**
    * Returns the value of the '<em><b>Vm Name</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -312,6 +302,28 @@ public interface Pipeline extends EObject
   EList<Resource> getResources();
 
   /**
+   * Returns the value of the '<em><b>Version</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Version</em>' attribute.
+   * @see #setVersion(String)
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_Version()
+   * @model
+   * @generated
+   */
+  String getVersion();
+
+  /**
+   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getVersion <em>Version</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Version</em>' attribute.
+   * @see #getVersion()
+   * @generated
+   */
+  void setVersion(String value);
+
+  /**
    * Returns the value of the '<em><b>Variables</b></em>' containment reference list.
    * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.Variable}.
    * <!-- begin-user-doc -->
@@ -344,5 +356,29 @@ public interface Pipeline extends EObject
    * @generated
    */
   void setExtendedParameter(ExtendedParameter value);
+
+  /**
+   * Returns the value of the '<em><b>Pipeline Parameters</b></em>' containment reference list.
+   * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.PipelineParameter}.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Pipeline Parameters</em>' containment reference list.
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_PipelineParameters()
+   * @model containment="true"
+   * @generated
+   */
+  EList<PipelineParameter> getPipelineParameters();
+
+  /**
+   * Returns the value of the '<em><b>Triggers</b></em>' containment reference list.
+   * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.Event}.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Triggers</em>' containment reference list.
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_Triggers()
+   * @model containment="true"
+   * @generated
+   */
+  EList<Event> getTriggers();
 
 } // Pipeline

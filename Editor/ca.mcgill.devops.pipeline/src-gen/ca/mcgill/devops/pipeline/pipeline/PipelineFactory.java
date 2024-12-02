@@ -33,6 +33,42 @@ public interface PipelineFactory extends EFactory
   Pipeline createPipeline();
 
   /**
+   * Returns a new object of class '<em>Event</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Event</em>'.
+   * @generated
+   */
+  Event createEvent();
+
+  /**
+   * Returns a new object of class '<em>Trigger Schedule</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Trigger Schedule</em>'.
+   * @generated
+   */
+  TriggerSchedule createTriggerSchedule();
+
+  /**
+   * Returns a new object of class '<em>Branch</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Branch</em>'.
+   * @generated
+   */
+  Branch createBranch();
+
+  /**
+   * Returns a new object of class '<em>Activity</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Activity</em>'.
+   * @generated
+   */
+  Activity createActivity();
+
+  /**
    * Returns a new object of class '<em>Extended Parameter</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->

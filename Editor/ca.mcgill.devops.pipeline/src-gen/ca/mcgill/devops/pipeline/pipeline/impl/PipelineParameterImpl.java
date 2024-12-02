@@ -32,7 +32,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineParameterImpl#getName <em>Name</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineParameterImpl#getDisplayName <em>Display Name</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineParameterImpl#getParameterValues <em>Parameter Values</em>}</li>
  * </ul>
  *
@@ -59,26 +58,6 @@ public class PipelineParameterImpl extends MinimalEObjectImpl.Container implemen
    * @ordered
    */
   protected String name = NAME_EDEFAULT;
-
-  /**
-   * The default value of the '{@link #getDisplayName() <em>Display Name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getDisplayName()
-   * @generated
-   * @ordered
-   */
-  protected static final String DISPLAY_NAME_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getDisplayName() <em>Display Name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getDisplayName()
-   * @generated
-   * @ordered
-   */
-  protected String displayName = DISPLAY_NAME_EDEFAULT;
 
   /**
    * The cached value of the '{@link #getParameterValues() <em>Parameter Values</em>}' containment reference list.
@@ -142,31 +121,6 @@ public class PipelineParameterImpl extends MinimalEObjectImpl.Container implemen
    * @generated
    */
   @Override
-  public String getDisplayName()
-  {
-    return displayName;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public void setDisplayName(String newDisplayName)
-  {
-    String oldDisplayName = displayName;
-    displayName = newDisplayName;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.PIPELINE_PARAMETER__DISPLAY_NAME, oldDisplayName, displayName));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
   public EList<ParameterValue> getParameterValues()
   {
     if (parameterValues == null)
@@ -204,8 +158,6 @@ public class PipelineParameterImpl extends MinimalEObjectImpl.Container implemen
     {
       case PipelinePackage.PIPELINE_PARAMETER__NAME:
         return getName();
-      case PipelinePackage.PIPELINE_PARAMETER__DISPLAY_NAME:
-        return getDisplayName();
       case PipelinePackage.PIPELINE_PARAMETER__PARAMETER_VALUES:
         return getParameterValues();
     }
@@ -225,9 +177,6 @@ public class PipelineParameterImpl extends MinimalEObjectImpl.Container implemen
     {
       case PipelinePackage.PIPELINE_PARAMETER__NAME:
         setName((String)newValue);
-        return;
-      case PipelinePackage.PIPELINE_PARAMETER__DISPLAY_NAME:
-        setDisplayName((String)newValue);
         return;
       case PipelinePackage.PIPELINE_PARAMETER__PARAMETER_VALUES:
         getParameterValues().clear();
@@ -250,9 +199,6 @@ public class PipelineParameterImpl extends MinimalEObjectImpl.Container implemen
       case PipelinePackage.PIPELINE_PARAMETER__NAME:
         setName(NAME_EDEFAULT);
         return;
-      case PipelinePackage.PIPELINE_PARAMETER__DISPLAY_NAME:
-        setDisplayName(DISPLAY_NAME_EDEFAULT);
-        return;
       case PipelinePackage.PIPELINE_PARAMETER__PARAMETER_VALUES:
         getParameterValues().clear();
         return;
@@ -272,8 +218,6 @@ public class PipelineParameterImpl extends MinimalEObjectImpl.Container implemen
     {
       case PipelinePackage.PIPELINE_PARAMETER__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case PipelinePackage.PIPELINE_PARAMETER__DISPLAY_NAME:
-        return DISPLAY_NAME_EDEFAULT == null ? displayName != null : !DISPLAY_NAME_EDEFAULT.equals(displayName);
       case PipelinePackage.PIPELINE_PARAMETER__PARAMETER_VALUES:
         return parameterValues != null && !parameterValues.isEmpty();
     }
@@ -293,8 +237,6 @@ public class PipelineParameterImpl extends MinimalEObjectImpl.Container implemen
     StringBuilder result = new StringBuilder(super.toString());
     result.append(" (name: ");
     result.append(name);
-    result.append(", displayName: ");
-    result.append(displayName);
     result.append(')');
     return result.toString();
   }

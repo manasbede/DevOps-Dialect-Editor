@@ -23,13 +23,44 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/indPermissions"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/group"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/cancelConcurrence"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/pipelineParameters"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/vmName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/vmImage"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/vmDemands"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/resources"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/version"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/variables"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/extendedParameter"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/pipelineParameters"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/triggers"/>
+    </genClasses>
+    <genClasses ecoreClass="Pipeline.ecore#//Event">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Event/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Event/includedBranches"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Event/activities"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Event/batch"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Event/autoCancel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Event/drafts"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Event/excludedBranches"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Event/includedPaths"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Event/excludedPaths"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Event/includedTags"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Event/excludedTags"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Event/triggerSchedules"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Event/otherEventParameterValues"/>
+    </genClasses>
+    <genClasses ecoreClass="Pipeline.ecore#//TriggerSchedule">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//TriggerSchedule/cronValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//TriggerSchedule/displayName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//TriggerSchedule/includedBranches"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//TriggerSchedule/excludedBranches"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//TriggerSchedule/batch"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//TriggerSchedule/always"/>
+    </genClasses>
+    <genClasses ecoreClass="Pipeline.ecore#//Branch">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Branch/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Pipeline.ecore#//Activity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Activity/name"/>
     </genClasses>
     <genClasses ecoreClass="Pipeline.ecore#//ExtendedParameter">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//ExtendedParameter/template"/>
@@ -48,7 +79,6 @@
     </genClasses>
     <genClasses ecoreClass="Pipeline.ecore#//PipelineParameter">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//PipelineParameter/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//PipelineParameter/displayName"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//PipelineParameter/parameterValues"/>
     </genClasses>
     <genClasses ecoreClass="Pipeline.ecore#//ParameterValue">

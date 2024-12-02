@@ -81,6 +81,26 @@ public class PipelineAdapterFactory extends AdapterFactoryImpl
         return createPipelineAdapter();
       }
       @Override
+      public Adapter caseEvent(Event object)
+      {
+        return createEventAdapter();
+      }
+      @Override
+      public Adapter caseTriggerSchedule(TriggerSchedule object)
+      {
+        return createTriggerScheduleAdapter();
+      }
+      @Override
+      public Adapter caseBranch(Branch object)
+      {
+        return createBranchAdapter();
+      }
+      @Override
+      public Adapter caseActivity(Activity object)
+      {
+        return createActivityAdapter();
+      }
+      @Override
       public Adapter caseExtendedParameter(ExtendedParameter object)
       {
         return createExtendedParameterAdapter();
@@ -138,6 +158,66 @@ public class PipelineAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createPipelineAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.Event <em>Event</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see ca.mcgill.devops.pipeline.pipeline.Event
+   * @generated
+   */
+  public Adapter createEventAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.TriggerSchedule <em>Trigger Schedule</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see ca.mcgill.devops.pipeline.pipeline.TriggerSchedule
+   * @generated
+   */
+  public Adapter createTriggerScheduleAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.Branch <em>Branch</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see ca.mcgill.devops.pipeline.pipeline.Branch
+   * @generated
+   */
+  public Adapter createBranchAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.Activity <em>Activity</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see ca.mcgill.devops.pipeline.pipeline.Activity
+   * @generated
+   */
+  public Adapter createActivityAdapter()
   {
     return null;
   }

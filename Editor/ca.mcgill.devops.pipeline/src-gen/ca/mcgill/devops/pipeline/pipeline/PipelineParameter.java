@@ -17,7 +17,6 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.PipelineParameter#getName <em>Name</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.PipelineParameter#getDisplayName <em>Display Name</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.PipelineParameter#getParameterValues <em>Parameter Values</em>}</li>
  * </ul>
  *
@@ -48,28 +47,6 @@ public interface PipelineParameter extends EObject
    * @generated
    */
   void setName(String value);
-
-  /**
-   * Returns the value of the '<em><b>Display Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Display Name</em>' attribute.
-   * @see #setDisplayName(String)
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipelineParameter_DisplayName()
-   * @model
-   * @generated
-   */
-  String getDisplayName();
-
-  /**
-   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.PipelineParameter#getDisplayName <em>Display Name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Display Name</em>' attribute.
-   * @see #getDisplayName()
-   * @generated
-   */
-  void setDisplayName(String value);
 
   /**
    * Returns the value of the '<em><b>Parameter Values</b></em>' containment reference list.

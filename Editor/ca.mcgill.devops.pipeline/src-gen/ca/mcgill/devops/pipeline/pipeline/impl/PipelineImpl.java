@@ -3,6 +3,7 @@
  */
 package ca.mcgill.devops.pipeline.pipeline.impl;
 
+import ca.mcgill.devops.pipeline.pipeline.Event;
 import ca.mcgill.devops.pipeline.pipeline.ExtendedParameter;
 import ca.mcgill.devops.pipeline.pipeline.Permission;
 import ca.mcgill.devops.pipeline.pipeline.Pipeline;
@@ -45,13 +46,15 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getIndPermissions <em>Ind Permissions</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getGroup <em>Group</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getCancelConcurrence <em>Cancel Concurrence</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getPipelineParameters <em>Pipeline Parameters</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getVmName <em>Vm Name</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getVmImage <em>Vm Image</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getVmDemands <em>Vm Demands</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getResources <em>Resources</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getVersion <em>Version</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getVariables <em>Variables</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getExtendedParameter <em>Extended Parameter</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getPipelineParameters <em>Pipeline Parameters</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getTriggers <em>Triggers</em>}</li>
  * </ul>
  *
  * @generated
@@ -219,16 +222,6 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
   protected String cancelConcurrence = CANCEL_CONCURRENCE_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getPipelineParameters() <em>Pipeline Parameters</em>}' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getPipelineParameters()
-   * @generated
-   * @ordered
-   */
-  protected EList<PipelineParameter> pipelineParameters;
-
-  /**
    * The default value of the '{@link #getVmName() <em>Vm Name</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -299,6 +292,26 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
   protected EList<Resource> resources;
 
   /**
+   * The default value of the '{@link #getVersion() <em>Version</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getVersion()
+   * @generated
+   * @ordered
+   */
+  protected static final String VERSION_EDEFAULT = null;
+
+  /**
+   * The cached value of the '{@link #getVersion() <em>Version</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getVersion()
+   * @generated
+   * @ordered
+   */
+  protected String version = VERSION_EDEFAULT;
+
+  /**
    * The cached value of the '{@link #getVariables() <em>Variables</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -317,6 +330,26 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
    * @ordered
    */
   protected ExtendedParameter extendedParameter;
+
+  /**
+   * The cached value of the '{@link #getPipelineParameters() <em>Pipeline Parameters</em>}' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getPipelineParameters()
+   * @generated
+   * @ordered
+   */
+  protected EList<PipelineParameter> pipelineParameters;
+
+  /**
+   * The cached value of the '{@link #getTriggers() <em>Triggers</em>}' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getTriggers()
+   * @generated
+   * @ordered
+   */
+  protected EList<Event> triggers;
 
   /**
    * <!-- begin-user-doc -->
@@ -550,21 +583,6 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
    * @generated
    */
   @Override
-  public EList<PipelineParameter> getPipelineParameters()
-  {
-    if (pipelineParameters == null)
-    {
-      pipelineParameters = new EObjectContainmentEList<PipelineParameter>(PipelineParameter.class, this, PipelinePackage.PIPELINE__PIPELINE_PARAMETERS);
-    }
-    return pipelineParameters;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
   public String getVmName()
   {
     return vmName;
@@ -655,6 +673,31 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
    * @generated
    */
   @Override
+  public String getVersion()
+  {
+    return version;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public void setVersion(String newVersion)
+  {
+    String oldVersion = version;
+    version = newVersion;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.PIPELINE__VERSION, oldVersion, version));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
   public EList<Variable> getVariables()
   {
     if (variables == null)
@@ -720,18 +763,50 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
    * @generated
    */
   @Override
+  public EList<PipelineParameter> getPipelineParameters()
+  {
+    if (pipelineParameters == null)
+    {
+      pipelineParameters = new EObjectContainmentEList<PipelineParameter>(PipelineParameter.class, this, PipelinePackage.PIPELINE__PIPELINE_PARAMETERS);
+    }
+    return pipelineParameters;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EList<Event> getTriggers()
+  {
+    if (triggers == null)
+    {
+      triggers = new EObjectContainmentEList<Event>(Event.class, this, PipelinePackage.PIPELINE__TRIGGERS);
+    }
+    return triggers;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
     switch (featureID)
     {
-      case PipelinePackage.PIPELINE__PIPELINE_PARAMETERS:
-        return ((InternalEList<?>)getPipelineParameters()).basicRemove(otherEnd, msgs);
       case PipelinePackage.PIPELINE__RESOURCES:
         return ((InternalEList<?>)getResources()).basicRemove(otherEnd, msgs);
       case PipelinePackage.PIPELINE__VARIABLES:
         return ((InternalEList<?>)getVariables()).basicRemove(otherEnd, msgs);
       case PipelinePackage.PIPELINE__EXTENDED_PARAMETER:
         return basicSetExtendedParameter(null, msgs);
+      case PipelinePackage.PIPELINE__PIPELINE_PARAMETERS:
+        return ((InternalEList<?>)getPipelineParameters()).basicRemove(otherEnd, msgs);
+      case PipelinePackage.PIPELINE__TRIGGERS:
+        return ((InternalEList<?>)getTriggers()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -764,8 +839,6 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
         return getGroup();
       case PipelinePackage.PIPELINE__CANCEL_CONCURRENCE:
         return getCancelConcurrence();
-      case PipelinePackage.PIPELINE__PIPELINE_PARAMETERS:
-        return getPipelineParameters();
       case PipelinePackage.PIPELINE__VM_NAME:
         return getVmName();
       case PipelinePackage.PIPELINE__VM_IMAGE:
@@ -774,10 +847,16 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
         return getVmDemands();
       case PipelinePackage.PIPELINE__RESOURCES:
         return getResources();
+      case PipelinePackage.PIPELINE__VERSION:
+        return getVersion();
       case PipelinePackage.PIPELINE__VARIABLES:
         return getVariables();
       case PipelinePackage.PIPELINE__EXTENDED_PARAMETER:
         return getExtendedParameter();
+      case PipelinePackage.PIPELINE__PIPELINE_PARAMETERS:
+        return getPipelineParameters();
+      case PipelinePackage.PIPELINE__TRIGGERS:
+        return getTriggers();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -822,10 +901,6 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
       case PipelinePackage.PIPELINE__CANCEL_CONCURRENCE:
         setCancelConcurrence((String)newValue);
         return;
-      case PipelinePackage.PIPELINE__PIPELINE_PARAMETERS:
-        getPipelineParameters().clear();
-        getPipelineParameters().addAll((Collection<? extends PipelineParameter>)newValue);
-        return;
       case PipelinePackage.PIPELINE__VM_NAME:
         setVmName((String)newValue);
         return;
@@ -839,12 +914,23 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
         getResources().clear();
         getResources().addAll((Collection<? extends Resource>)newValue);
         return;
+      case PipelinePackage.PIPELINE__VERSION:
+        setVersion((String)newValue);
+        return;
       case PipelinePackage.PIPELINE__VARIABLES:
         getVariables().clear();
         getVariables().addAll((Collection<? extends Variable>)newValue);
         return;
       case PipelinePackage.PIPELINE__EXTENDED_PARAMETER:
         setExtendedParameter((ExtendedParameter)newValue);
+        return;
+      case PipelinePackage.PIPELINE__PIPELINE_PARAMETERS:
+        getPipelineParameters().clear();
+        getPipelineParameters().addAll((Collection<? extends PipelineParameter>)newValue);
+        return;
+      case PipelinePackage.PIPELINE__TRIGGERS:
+        getTriggers().clear();
+        getTriggers().addAll((Collection<? extends Event>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -887,9 +973,6 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
       case PipelinePackage.PIPELINE__CANCEL_CONCURRENCE:
         setCancelConcurrence(CANCEL_CONCURRENCE_EDEFAULT);
         return;
-      case PipelinePackage.PIPELINE__PIPELINE_PARAMETERS:
-        getPipelineParameters().clear();
-        return;
       case PipelinePackage.PIPELINE__VM_NAME:
         setVmName(VM_NAME_EDEFAULT);
         return;
@@ -902,11 +985,20 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
       case PipelinePackage.PIPELINE__RESOURCES:
         getResources().clear();
         return;
+      case PipelinePackage.PIPELINE__VERSION:
+        setVersion(VERSION_EDEFAULT);
+        return;
       case PipelinePackage.PIPELINE__VARIABLES:
         getVariables().clear();
         return;
       case PipelinePackage.PIPELINE__EXTENDED_PARAMETER:
         setExtendedParameter((ExtendedParameter)null);
+        return;
+      case PipelinePackage.PIPELINE__PIPELINE_PARAMETERS:
+        getPipelineParameters().clear();
+        return;
+      case PipelinePackage.PIPELINE__TRIGGERS:
+        getTriggers().clear();
         return;
     }
     super.eUnset(featureID);
@@ -940,8 +1032,6 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
         return GROUP_EDEFAULT == null ? group != null : !GROUP_EDEFAULT.equals(group);
       case PipelinePackage.PIPELINE__CANCEL_CONCURRENCE:
         return CANCEL_CONCURRENCE_EDEFAULT == null ? cancelConcurrence != null : !CANCEL_CONCURRENCE_EDEFAULT.equals(cancelConcurrence);
-      case PipelinePackage.PIPELINE__PIPELINE_PARAMETERS:
-        return pipelineParameters != null && !pipelineParameters.isEmpty();
       case PipelinePackage.PIPELINE__VM_NAME:
         return VM_NAME_EDEFAULT == null ? vmName != null : !VM_NAME_EDEFAULT.equals(vmName);
       case PipelinePackage.PIPELINE__VM_IMAGE:
@@ -950,10 +1040,16 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
         return VM_DEMANDS_EDEFAULT == null ? vmDemands != null : !VM_DEMANDS_EDEFAULT.equals(vmDemands);
       case PipelinePackage.PIPELINE__RESOURCES:
         return resources != null && !resources.isEmpty();
+      case PipelinePackage.PIPELINE__VERSION:
+        return VERSION_EDEFAULT == null ? version != null : !VERSION_EDEFAULT.equals(version);
       case PipelinePackage.PIPELINE__VARIABLES:
         return variables != null && !variables.isEmpty();
       case PipelinePackage.PIPELINE__EXTENDED_PARAMETER:
         return extendedParameter != null;
+      case PipelinePackage.PIPELINE__PIPELINE_PARAMETERS:
+        return pipelineParameters != null && !pipelineParameters.isEmpty();
+      case PipelinePackage.PIPELINE__TRIGGERS:
+        return triggers != null && !triggers.isEmpty();
     }
     return super.eIsSet(featureID);
   }
@@ -993,6 +1089,8 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
     result.append(vmImage);
     result.append(", vmDemands: ");
     result.append(vmDemands);
+    result.append(", version: ");
+    result.append(version);
     result.append(')');
     return result.toString();
   }
