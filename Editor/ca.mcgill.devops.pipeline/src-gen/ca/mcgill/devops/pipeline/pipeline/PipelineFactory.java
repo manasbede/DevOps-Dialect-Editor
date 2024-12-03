@@ -33,6 +33,42 @@ public interface PipelineFactory extends EFactory
   Pipeline createPipeline();
 
   /**
+   * Returns a new object of class '<em>Extended Parameter</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Extended Parameter</em>'.
+   * @generated
+   */
+  ExtendedParameter createExtendedParameter();
+
+  /**
+   * Returns a new object of class '<em>Variable</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Variable</em>'.
+   * @generated
+   */
+  Variable createVariable();
+
+  /**
+   * Returns a new object of class '<em>Resource</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Resource</em>'.
+   * @generated
+   */
+  Resource createResource();
+
+  /**
+   * Returns a new object of class '<em>Parameter</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Parameter</em>'.
+   * @generated
+   */
+  PipelineParameter createPipelineParameter();
+
+  /**
    * Returns a new object of class '<em>Event</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -69,40 +105,58 @@ public interface PipelineFactory extends EFactory
   Activity createActivity();
 
   /**
-   * Returns a new object of class '<em>Extended Parameter</em>'.
+   * Returns a new object of class '<em>Stage</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Extended Parameter</em>'.
+   * @return a new object of class '<em>Stage</em>'.
    * @generated
    */
-  ExtendedParameter createExtendedParameter();
+  Stage createStage();
 
   /**
-   * Returns a new object of class '<em>Variable</em>'.
+   * Returns a new object of class '<em>Job</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Variable</em>'.
+   * @return a new object of class '<em>Job</em>'.
    * @generated
    */
-  Variable createVariable();
+  Job createJob();
 
   /**
-   * Returns a new object of class '<em>Resource</em>'.
+   * Returns a new object of class '<em>Job Parameter</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Resource</em>'.
+   * @return a new object of class '<em>Job Parameter</em>'.
    * @generated
    */
-  Resource createResource();
+  JobParameter createJobParameter();
 
   /**
-   * Returns a new object of class '<em>Parameter</em>'.
+   * Returns a new object of class '<em>Step</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Parameter</em>'.
+   * @return a new object of class '<em>Step</em>'.
    * @generated
    */
-  PipelineParameter createPipelineParameter();
+  Step createStep();
+
+  /**
+   * Returns a new object of class '<em>Script</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Script</em>'.
+   * @generated
+   */
+  Script createScript();
+
+  /**
+   * Returns a new object of class '<em>Action</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Action</em>'.
+   * @generated
+   */
+  Action createAction();
 
   /**
    * Returns a new object of class '<em>Parameter Value</em>'.

@@ -6,12 +6,136 @@
     complianceLevel="11.0" copyrightFields="false" runtimeVersion="2.29">
   <genPackages prefix="Pipeline" basePackage="ca.mcgill.devops.pipeline" disposableProviderFactory="true"
       fileExtensions="Pipeline" ecorePackage="Pipeline.ecore#/">
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Pipeline.ecore#//Permission">
-      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//Permission/READ_ALL"/>
-      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//Permission/WRITE_ALL"/>
-      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//Permission/READ"/>
-      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//Permission/WRITE"/>
-      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//Permission/NONE"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Pipeline.ecore#//PipelineKeyword">
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_NAME"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_ON"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_RUN_NAME"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_IF"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_RUNS_ON"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_ENV"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_DEFAULTS"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_STRATEGY"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_MATRIX"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_CONTAINER"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_SERVICES"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_STEPS"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_USES"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_RUN"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_SHELL"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_WORKING_DIRECTORY"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_WITH"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_TIMEOUT_MINUTES"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_CONTINUE_ON_ERROR"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_CONDITION"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_ENVIRONMENT"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_ID"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_NEEDS"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_OUTPUTS"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_SECRETS"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_PERMISSIONS"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_CONCURRENCY"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_TIMEOUTS"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_DEFAULTS_RUN"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_WORKFLOW_DISPATCH"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_WORKFLOW_CALL"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_SCHEDULE"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_PUSH"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_PULL_REQUEST"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_PATHS"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_BRANCHES"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_TAGS"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_BRANCHES_IGNORE"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_PATHS_IGNORE"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_TAGS_IGNORE"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_CRON"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_REPOSITORY_DISPATCH"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_WORKFLOW_RUN"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_CHECKOUT"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_FILTERS"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_INCLUDE"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_EXCLUDE"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_FAIL_FAST"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_MAX_PARALLEL"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_CONTAINER_IMAGE"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_CREDENTIALS"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_PORTS"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_INHERIT"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_TRIGGER"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_POOL"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_DISPLAY_NAME"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_TASK"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_TEMPLATE"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_DEPENDS_ON"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_WORKSPACE"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_PARAMETERS"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_POOL_VM_IMAGE"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_RESOURCES"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_PIPELINE"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_STAGE"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_TIMEOUT_IN_MINUTES"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_CONTINUE_ON_ERR"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_RESOURCE_TYPE"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_RESOURCE_NAME"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_STAGES"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_ONLY"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_EXCEPT"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_IMAGE"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_VARIABLES"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_CACHE"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_ARTIFACTS"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_RETRIES"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_RULES"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_BEFORE_SCRIPT"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_AFTER_SCRIPT"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_TIMEOUT"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_WHEN"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_ALLOW_FAILURE"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_DEPENDENCIES"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_EXTENDS"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_PIPELINES"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_DEFAULT"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_PULL_REQUESTS"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_STEP"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_SCRIPT"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_DEFINITIONS"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_CACHES"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_PARALLEL"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_CONDITIONS"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_MAX_TIME"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_PROJECT"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_PLAN"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_TASKS"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_REQUIREMENTS"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_FINAL"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_JDK"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_LABELS"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_REPOSITORY"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_DEPLOYMENT"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_RELEASE"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_VERSION"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_DOCKER"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_AGENT"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_QUEUE"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_SNAPSHOT"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_POLICY"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_APPROVALS"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_PREBUILD"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_POSTBUILD"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_SSH"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_AUTH"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_STORAGE"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_ENDPOINTS"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_COMMAND"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_PROVISIONER"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_TRIGGER_RULES"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_RUN_POLICY"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_QUEUED"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_AUTO_CANCEL"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_NOTIFICATIONS"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_DEPLOY_TRIGGER"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_RELEASE_TRIGGER"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_LOCK_BEHAVIOR"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_REVIEW_STAGE"/>
     </genEnums>
     <genClasses ecoreClass="Pipeline.ecore#//Pipeline">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/name"/>
@@ -23,15 +147,37 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/indPermissions"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/group"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/cancelConcurrence"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/pipelineParameters"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/vmName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/vmImage"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/vmDemands"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/resources"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/version"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/variables"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/pplVariables"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/extendedParameter"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/pipelineParameters"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/triggers"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/jobOrStageVar"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/stages"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/jobs"/>
+    </genClasses>
+    <genClasses ecoreClass="Pipeline.ecore#//ExtendedParameter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//ExtendedParameter/template"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//ExtendedParameter/extendedParameterValues"/>
+    </genClasses>
+    <genClasses ecoreClass="Pipeline.ecore#//Variable">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Variable/variableValues"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Variable/group"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Variable/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Variable/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Variable/readonly"/>
+    </genClasses>
+    <genClasses ecoreClass="Pipeline.ecore#//Resource">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Resource/resourceName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Resource/resourceValues"/>
+    </genClasses>
+    <genClasses ecoreClass="Pipeline.ecore#//PipelineParameter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//PipelineParameter/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//PipelineParameter/parameterValues"/>
     </genClasses>
     <genClasses ecoreClass="Pipeline.ecore#//Event">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Event/name"/>
@@ -62,28 +208,49 @@
     <genClasses ecoreClass="Pipeline.ecore#//Activity">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Activity/name"/>
     </genClasses>
-    <genClasses ecoreClass="Pipeline.ecore#//ExtendedParameter">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//ExtendedParameter/template"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//ExtendedParameter/extendedParameterValues"/>
+    <genClasses ecoreClass="Pipeline.ecore#//Stage">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Stage/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Stage/displayName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Stage/poolValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Stage/vmName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Stage/vmImage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Stage/vmDemands"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Stage/conditionValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Stage/isSkippable"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Stage/stageVariables"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Stage/dependsOn"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Stage/jobs"/>
     </genClasses>
-    <genClasses ecoreClass="Pipeline.ecore#//Variable">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Variable/variableValues"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Variable/group"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Variable/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Variable/value"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Variable/readonly"/>
+    <genClasses ecoreClass="Pipeline.ecore#//Job">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Job/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Job/nameKW"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Job/jobName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Job/dependKW"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Job/references"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Job/jobParameterValues"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Job/steps"/>
     </genClasses>
-    <genClasses ecoreClass="Pipeline.ecore#//Resource">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Resource/resourceName"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Resource/resourceValues"/>
+    <genClasses ecoreClass="Pipeline.ecore#//JobParameter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//JobParameter/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//JobParameter/otherName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//JobParameter/value"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//JobParameter/subParameters"/>
     </genClasses>
-    <genClasses ecoreClass="Pipeline.ecore#//PipelineParameter">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//PipelineParameter/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//PipelineParameter/parameterValues"/>
+    <genClasses ecoreClass="Pipeline.ecore#//Step">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Step/subSteps"/>
+    </genClasses>
+    <genClasses ecoreClass="Pipeline.ecore#//Script">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Script/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Script/command"/>
+    </genClasses>
+    <genClasses ecoreClass="Pipeline.ecore#//Action">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Action/stepName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Action/actionKeyword"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Action/otherKeyword"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Action/actionValue"/>
     </genClasses>
     <genClasses ecoreClass="Pipeline.ecore#//ParameterValue">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//ParameterValue/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//ParameterValue/preDefinedKeyword"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//ParameterValue/subParameterValues"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//ParameterValue/value"/>
     </genClasses>

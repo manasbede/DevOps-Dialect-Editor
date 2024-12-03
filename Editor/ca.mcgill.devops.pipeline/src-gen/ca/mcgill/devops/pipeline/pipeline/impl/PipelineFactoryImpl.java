@@ -67,14 +67,20 @@ public class PipelineFactoryImpl extends EFactoryImpl implements PipelineFactory
     switch (eClass.getClassifierID())
     {
       case PipelinePackage.PIPELINE: return createPipeline();
-      case PipelinePackage.EVENT: return createEvent();
-      case PipelinePackage.TRIGGER_SCHEDULE: return createTriggerSchedule();
-      case PipelinePackage.BRANCH: return createBranch();
-      case PipelinePackage.ACTIVITY: return createActivity();
       case PipelinePackage.EXTENDED_PARAMETER: return createExtendedParameter();
       case PipelinePackage.VARIABLE: return createVariable();
       case PipelinePackage.RESOURCE: return createResource();
       case PipelinePackage.PIPELINE_PARAMETER: return createPipelineParameter();
+      case PipelinePackage.EVENT: return createEvent();
+      case PipelinePackage.TRIGGER_SCHEDULE: return createTriggerSchedule();
+      case PipelinePackage.BRANCH: return createBranch();
+      case PipelinePackage.ACTIVITY: return createActivity();
+      case PipelinePackage.STAGE: return createStage();
+      case PipelinePackage.JOB: return createJob();
+      case PipelinePackage.JOB_PARAMETER: return createJobParameter();
+      case PipelinePackage.STEP: return createStep();
+      case PipelinePackage.SCRIPT: return createScript();
+      case PipelinePackage.ACTION: return createAction();
       case PipelinePackage.PARAMETER_VALUE: return createParameterValue();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
@@ -91,8 +97,8 @@ public class PipelineFactoryImpl extends EFactoryImpl implements PipelineFactory
   {
     switch (eDataType.getClassifierID())
     {
-      case PipelinePackage.PERMISSION:
-        return createPermissionFromString(eDataType, initialValue);
+      case PipelinePackage.PIPELINE_KEYWORD:
+        return createPipelineKeywordFromString(eDataType, initialValue);
       default:
         throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
     }
@@ -108,8 +114,8 @@ public class PipelineFactoryImpl extends EFactoryImpl implements PipelineFactory
   {
     switch (eDataType.getClassifierID())
     {
-      case PipelinePackage.PERMISSION:
-        return convertPermissionToString(eDataType, instanceValue);
+      case PipelinePackage.PIPELINE_KEYWORD:
+        return convertPipelineKeywordToString(eDataType, instanceValue);
       default:
         throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
     }
@@ -125,54 +131,6 @@ public class PipelineFactoryImpl extends EFactoryImpl implements PipelineFactory
   {
     PipelineImpl pipeline = new PipelineImpl();
     return pipeline;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public Event createEvent()
-  {
-    EventImpl event = new EventImpl();
-    return event;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public TriggerSchedule createTriggerSchedule()
-  {
-    TriggerScheduleImpl triggerSchedule = new TriggerScheduleImpl();
-    return triggerSchedule;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public Branch createBranch()
-  {
-    BranchImpl branch = new BranchImpl();
-    return branch;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public Activity createActivity()
-  {
-    ActivityImpl activity = new ActivityImpl();
-    return activity;
   }
 
   /**
@@ -229,6 +187,126 @@ public class PipelineFactoryImpl extends EFactoryImpl implements PipelineFactory
    * @generated
    */
   @Override
+  public Event createEvent()
+  {
+    EventImpl event = new EventImpl();
+    return event;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public TriggerSchedule createTriggerSchedule()
+  {
+    TriggerScheduleImpl triggerSchedule = new TriggerScheduleImpl();
+    return triggerSchedule;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public Branch createBranch()
+  {
+    BranchImpl branch = new BranchImpl();
+    return branch;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public Activity createActivity()
+  {
+    ActivityImpl activity = new ActivityImpl();
+    return activity;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public Stage createStage()
+  {
+    StageImpl stage = new StageImpl();
+    return stage;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public Job createJob()
+  {
+    JobImpl job = new JobImpl();
+    return job;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public JobParameter createJobParameter()
+  {
+    JobParameterImpl jobParameter = new JobParameterImpl();
+    return jobParameter;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public Step createStep()
+  {
+    StepImpl step = new StepImpl();
+    return step;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public Script createScript()
+  {
+    ScriptImpl script = new ScriptImpl();
+    return script;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public Action createAction()
+  {
+    ActionImpl action = new ActionImpl();
+    return action;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
   public ParameterValue createParameterValue()
   {
     ParameterValueImpl parameterValue = new ParameterValueImpl();
@@ -240,9 +318,9 @@ public class PipelineFactoryImpl extends EFactoryImpl implements PipelineFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public Permission createPermissionFromString(EDataType eDataType, String initialValue)
+  public PipelineKeyword createPipelineKeywordFromString(EDataType eDataType, String initialValue)
   {
-    Permission result = Permission.get(initialValue);
+    PipelineKeyword result = PipelineKeyword.get(initialValue);
     if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
     return result;
   }
@@ -252,7 +330,7 @@ public class PipelineFactoryImpl extends EFactoryImpl implements PipelineFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public String convertPermissionToString(EDataType eDataType, Object instanceValue)
+  public String convertPipelineKeywordToString(EDataType eDataType, Object instanceValue)
   {
     return instanceValue == null ? null : instanceValue.toString();
   }

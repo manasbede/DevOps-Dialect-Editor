@@ -4,7 +4,6 @@
 package ca.mcgill.devops.pipeline.pipeline.impl;
 
 import ca.mcgill.devops.pipeline.pipeline.ParameterValue;
-import ca.mcgill.devops.pipeline.pipeline.Permission;
 import ca.mcgill.devops.pipeline.pipeline.PipelinePackage;
 
 import java.util.Collection;
@@ -32,7 +31,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ParameterValueImpl#getName <em>Name</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ParameterValueImpl#getPreDefinedKeyword <em>Pre Defined Keyword</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ParameterValueImpl#getSubParameterValues <em>Sub Parameter Values</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ParameterValueImpl#getValue <em>Value</em>}</li>
  * </ul>
@@ -60,26 +58,6 @@ public class ParameterValueImpl extends MinimalEObjectImpl.Container implements 
    * @ordered
    */
   protected String name = NAME_EDEFAULT;
-
-  /**
-   * The default value of the '{@link #getPreDefinedKeyword() <em>Pre Defined Keyword</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getPreDefinedKeyword()
-   * @generated
-   * @ordered
-   */
-  protected static final Permission PRE_DEFINED_KEYWORD_EDEFAULT = Permission.READ_ALL;
-
-  /**
-   * The cached value of the '{@link #getPreDefinedKeyword() <em>Pre Defined Keyword</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getPreDefinedKeyword()
-   * @generated
-   * @ordered
-   */
-  protected Permission preDefinedKeyword = PRE_DEFINED_KEYWORD_EDEFAULT;
 
   /**
    * The cached value of the '{@link #getSubParameterValues() <em>Sub Parameter Values</em>}' containment reference list.
@@ -163,31 +141,6 @@ public class ParameterValueImpl extends MinimalEObjectImpl.Container implements 
    * @generated
    */
   @Override
-  public Permission getPreDefinedKeyword()
-  {
-    return preDefinedKeyword;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public void setPreDefinedKeyword(Permission newPreDefinedKeyword)
-  {
-    Permission oldPreDefinedKeyword = preDefinedKeyword;
-    preDefinedKeyword = newPreDefinedKeyword == null ? PRE_DEFINED_KEYWORD_EDEFAULT : newPreDefinedKeyword;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.PARAMETER_VALUE__PRE_DEFINED_KEYWORD, oldPreDefinedKeyword, preDefinedKeyword));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
   public EList<ParameterValue> getSubParameterValues()
   {
     if (subParameterValues == null)
@@ -250,8 +203,6 @@ public class ParameterValueImpl extends MinimalEObjectImpl.Container implements 
     {
       case PipelinePackage.PARAMETER_VALUE__NAME:
         return getName();
-      case PipelinePackage.PARAMETER_VALUE__PRE_DEFINED_KEYWORD:
-        return getPreDefinedKeyword();
       case PipelinePackage.PARAMETER_VALUE__SUB_PARAMETER_VALUES:
         return getSubParameterValues();
       case PipelinePackage.PARAMETER_VALUE__VALUE:
@@ -273,9 +224,6 @@ public class ParameterValueImpl extends MinimalEObjectImpl.Container implements 
     {
       case PipelinePackage.PARAMETER_VALUE__NAME:
         setName((String)newValue);
-        return;
-      case PipelinePackage.PARAMETER_VALUE__PRE_DEFINED_KEYWORD:
-        setPreDefinedKeyword((Permission)newValue);
         return;
       case PipelinePackage.PARAMETER_VALUE__SUB_PARAMETER_VALUES:
         getSubParameterValues().clear();
@@ -301,9 +249,6 @@ public class ParameterValueImpl extends MinimalEObjectImpl.Container implements 
       case PipelinePackage.PARAMETER_VALUE__NAME:
         setName(NAME_EDEFAULT);
         return;
-      case PipelinePackage.PARAMETER_VALUE__PRE_DEFINED_KEYWORD:
-        setPreDefinedKeyword(PRE_DEFINED_KEYWORD_EDEFAULT);
-        return;
       case PipelinePackage.PARAMETER_VALUE__SUB_PARAMETER_VALUES:
         getSubParameterValues().clear();
         return;
@@ -326,8 +271,6 @@ public class ParameterValueImpl extends MinimalEObjectImpl.Container implements 
     {
       case PipelinePackage.PARAMETER_VALUE__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case PipelinePackage.PARAMETER_VALUE__PRE_DEFINED_KEYWORD:
-        return preDefinedKeyword != PRE_DEFINED_KEYWORD_EDEFAULT;
       case PipelinePackage.PARAMETER_VALUE__SUB_PARAMETER_VALUES:
         return subParameterValues != null && !subParameterValues.isEmpty();
       case PipelinePackage.PARAMETER_VALUE__VALUE:
@@ -349,8 +292,6 @@ public class ParameterValueImpl extends MinimalEObjectImpl.Container implements 
     StringBuilder result = new StringBuilder(super.toString());
     result.append(" (name: ");
     result.append(name);
-    result.append(", preDefinedKeyword: ");
-    result.append(preDefinedKeyword);
     result.append(", value: ");
     result.append(value);
     result.append(')');

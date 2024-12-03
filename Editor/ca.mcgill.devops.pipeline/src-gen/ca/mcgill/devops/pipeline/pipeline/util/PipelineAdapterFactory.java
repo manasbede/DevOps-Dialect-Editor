@@ -81,6 +81,26 @@ public class PipelineAdapterFactory extends AdapterFactoryImpl
         return createPipelineAdapter();
       }
       @Override
+      public Adapter caseExtendedParameter(ExtendedParameter object)
+      {
+        return createExtendedParameterAdapter();
+      }
+      @Override
+      public Adapter caseVariable(Variable object)
+      {
+        return createVariableAdapter();
+      }
+      @Override
+      public Adapter caseResource(Resource object)
+      {
+        return createResourceAdapter();
+      }
+      @Override
+      public Adapter casePipelineParameter(PipelineParameter object)
+      {
+        return createPipelineParameterAdapter();
+      }
+      @Override
       public Adapter caseEvent(Event object)
       {
         return createEventAdapter();
@@ -101,24 +121,34 @@ public class PipelineAdapterFactory extends AdapterFactoryImpl
         return createActivityAdapter();
       }
       @Override
-      public Adapter caseExtendedParameter(ExtendedParameter object)
+      public Adapter caseStage(Stage object)
       {
-        return createExtendedParameterAdapter();
+        return createStageAdapter();
       }
       @Override
-      public Adapter caseVariable(Variable object)
+      public Adapter caseJob(Job object)
       {
-        return createVariableAdapter();
+        return createJobAdapter();
       }
       @Override
-      public Adapter caseResource(Resource object)
+      public Adapter caseJobParameter(JobParameter object)
       {
-        return createResourceAdapter();
+        return createJobParameterAdapter();
       }
       @Override
-      public Adapter casePipelineParameter(PipelineParameter object)
+      public Adapter caseStep(Step object)
       {
-        return createPipelineParameterAdapter();
+        return createStepAdapter();
+      }
+      @Override
+      public Adapter caseScript(Script object)
+      {
+        return createScriptAdapter();
+      }
+      @Override
+      public Adapter caseAction(Action object)
+      {
+        return createActionAdapter();
       }
       @Override
       public Adapter caseParameterValue(ParameterValue object)
@@ -158,6 +188,66 @@ public class PipelineAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createPipelineAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.ExtendedParameter <em>Extended Parameter</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see ca.mcgill.devops.pipeline.pipeline.ExtendedParameter
+   * @generated
+   */
+  public Adapter createExtendedParameterAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.Variable <em>Variable</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see ca.mcgill.devops.pipeline.pipeline.Variable
+   * @generated
+   */
+  public Adapter createVariableAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.Resource <em>Resource</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see ca.mcgill.devops.pipeline.pipeline.Resource
+   * @generated
+   */
+  public Adapter createResourceAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.PipelineParameter <em>Parameter</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelineParameter
+   * @generated
+   */
+  public Adapter createPipelineParameterAdapter()
   {
     return null;
   }
@@ -223,61 +313,91 @@ public class PipelineAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.ExtendedParameter <em>Extended Parameter</em>}'.
+   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.Stage <em>Stage</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see ca.mcgill.devops.pipeline.pipeline.ExtendedParameter
+   * @see ca.mcgill.devops.pipeline.pipeline.Stage
    * @generated
    */
-  public Adapter createExtendedParameterAdapter()
+  public Adapter createStageAdapter()
   {
     return null;
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.Variable <em>Variable</em>}'.
+   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.Job <em>Job</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see ca.mcgill.devops.pipeline.pipeline.Variable
+   * @see ca.mcgill.devops.pipeline.pipeline.Job
    * @generated
    */
-  public Adapter createVariableAdapter()
+  public Adapter createJobAdapter()
   {
     return null;
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.Resource <em>Resource</em>}'.
+   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.JobParameter <em>Job Parameter</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see ca.mcgill.devops.pipeline.pipeline.Resource
+   * @see ca.mcgill.devops.pipeline.pipeline.JobParameter
    * @generated
    */
-  public Adapter createResourceAdapter()
+  public Adapter createJobParameterAdapter()
   {
     return null;
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.PipelineParameter <em>Parameter</em>}'.
+   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.Step <em>Step</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelineParameter
+   * @see ca.mcgill.devops.pipeline.pipeline.Step
    * @generated
    */
-  public Adapter createPipelineParameterAdapter()
+  public Adapter createStepAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.Script <em>Script</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see ca.mcgill.devops.pipeline.pipeline.Script
+   * @generated
+   */
+  public Adapter createScriptAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link ca.mcgill.devops.pipeline.pipeline.Action <em>Action</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see ca.mcgill.devops.pipeline.pipeline.Action
+   * @generated
+   */
+  public Adapter createActionAdapter()
   {
     return null;
   }

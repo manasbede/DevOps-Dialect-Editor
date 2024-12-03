@@ -80,34 +80,6 @@ public class PipelineSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case PipelinePackage.EVENT:
-      {
-        Event event = (Event)theEObject;
-        T result = caseEvent(event);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case PipelinePackage.TRIGGER_SCHEDULE:
-      {
-        TriggerSchedule triggerSchedule = (TriggerSchedule)theEObject;
-        T result = caseTriggerSchedule(triggerSchedule);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case PipelinePackage.BRANCH:
-      {
-        Branch branch = (Branch)theEObject;
-        T result = caseBranch(branch);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case PipelinePackage.ACTIVITY:
-      {
-        Activity activity = (Activity)theEObject;
-        T result = caseActivity(activity);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
       case PipelinePackage.EXTENDED_PARAMETER:
       {
         ExtendedParameter extendedParameter = (ExtendedParameter)theEObject;
@@ -136,6 +108,78 @@ public class PipelineSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case PipelinePackage.EVENT:
+      {
+        Event event = (Event)theEObject;
+        T result = caseEvent(event);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case PipelinePackage.TRIGGER_SCHEDULE:
+      {
+        TriggerSchedule triggerSchedule = (TriggerSchedule)theEObject;
+        T result = caseTriggerSchedule(triggerSchedule);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case PipelinePackage.BRANCH:
+      {
+        Branch branch = (Branch)theEObject;
+        T result = caseBranch(branch);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case PipelinePackage.ACTIVITY:
+      {
+        Activity activity = (Activity)theEObject;
+        T result = caseActivity(activity);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case PipelinePackage.STAGE:
+      {
+        Stage stage = (Stage)theEObject;
+        T result = caseStage(stage);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case PipelinePackage.JOB:
+      {
+        Job job = (Job)theEObject;
+        T result = caseJob(job);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case PipelinePackage.JOB_PARAMETER:
+      {
+        JobParameter jobParameter = (JobParameter)theEObject;
+        T result = caseJobParameter(jobParameter);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case PipelinePackage.STEP:
+      {
+        Step step = (Step)theEObject;
+        T result = caseStep(step);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case PipelinePackage.SCRIPT:
+      {
+        Script script = (Script)theEObject;
+        T result = caseScript(script);
+        if (result == null) result = caseStep(script);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case PipelinePackage.ACTION:
+      {
+        Action action = (Action)theEObject;
+        T result = caseAction(action);
+        if (result == null) result = caseStep(action);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       case PipelinePackage.PARAMETER_VALUE:
       {
         ParameterValue parameterValue = (ParameterValue)theEObject;
@@ -159,6 +203,70 @@ public class PipelineSwitch<T> extends Switch<T>
    * @generated
    */
   public T casePipeline(Pipeline object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Extended Parameter</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Extended Parameter</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseExtendedParameter(ExtendedParameter object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Variable</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Variable</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseVariable(Variable object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Resource</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Resource</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseResource(Resource object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Parameter</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Parameter</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T casePipelineParameter(PipelineParameter object)
   {
     return null;
   }
@@ -228,65 +336,97 @@ public class PipelineSwitch<T> extends Switch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Extended Parameter</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Stage</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Extended Parameter</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Stage</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseExtendedParameter(ExtendedParameter object)
+  public T caseStage(Stage object)
   {
     return null;
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Variable</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Job</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Variable</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Job</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseVariable(Variable object)
+  public T caseJob(Job object)
   {
     return null;
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Resource</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Job Parameter</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Resource</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Job Parameter</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseResource(Resource object)
+  public T caseJobParameter(JobParameter object)
   {
     return null;
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Parameter</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Step</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Parameter</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Step</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T casePipelineParameter(PipelineParameter object)
+  public T caseStep(Step object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Script</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Script</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseScript(Script object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Action</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Action</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseAction(Action object)
   {
     return null;
   }

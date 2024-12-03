@@ -17,7 +17,6 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.ParameterValue#getName <em>Name</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.ParameterValue#getPreDefinedKeyword <em>Pre Defined Keyword</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.ParameterValue#getSubParameterValues <em>Sub Parameter Values</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.ParameterValue#getValue <em>Value</em>}</li>
  * </ul>
@@ -49,31 +48,6 @@ public interface ParameterValue extends EObject
    * @generated
    */
   void setName(String value);
-
-  /**
-   * Returns the value of the '<em><b>Pre Defined Keyword</b></em>' attribute.
-   * The literals are from the enumeration {@link ca.mcgill.devops.pipeline.pipeline.Permission}.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Pre Defined Keyword</em>' attribute.
-   * @see ca.mcgill.devops.pipeline.pipeline.Permission
-   * @see #setPreDefinedKeyword(Permission)
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getParameterValue_PreDefinedKeyword()
-   * @model
-   * @generated
-   */
-  Permission getPreDefinedKeyword();
-
-  /**
-   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.ParameterValue#getPreDefinedKeyword <em>Pre Defined Keyword</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Pre Defined Keyword</em>' attribute.
-   * @see ca.mcgill.devops.pipeline.pipeline.Permission
-   * @see #getPreDefinedKeyword()
-   * @generated
-   */
-  void setPreDefinedKeyword(Permission value);
 
   /**
    * Returns the value of the '<em><b>Sub Parameter Values</b></em>' containment reference list.

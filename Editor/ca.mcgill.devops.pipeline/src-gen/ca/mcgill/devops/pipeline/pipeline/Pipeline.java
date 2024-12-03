@@ -25,15 +25,18 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getIndPermissions <em>Ind Permissions</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getGroup <em>Group</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getCancelConcurrence <em>Cancel Concurrence</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getPipelineParameters <em>Pipeline Parameters</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getVmName <em>Vm Name</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getVmImage <em>Vm Image</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getVmDemands <em>Vm Demands</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getResources <em>Resources</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getVersion <em>Version</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getVariables <em>Variables</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getPplVariables <em>Ppl Variables</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getExtendedParameter <em>Extended Parameter</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getPipelineParameters <em>Pipeline Parameters</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getTriggers <em>Triggers</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getJobOrStageVar <em>Job Or Stage Var</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getStages <em>Stages</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getJobs <em>Jobs</em>}</li>
  * </ul>
  *
  * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline()
@@ -144,28 +147,25 @@ public interface Pipeline extends EObject
 
   /**
    * Returns the value of the '<em><b>All Permission</b></em>' attribute.
-   * The literals are from the enumeration {@link ca.mcgill.devops.pipeline.pipeline.Permission}.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the value of the '<em>All Permission</em>' attribute.
-   * @see ca.mcgill.devops.pipeline.pipeline.Permission
-   * @see #setAllPermission(Permission)
+   * @see #setAllPermission(String)
    * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_AllPermission()
    * @model
    * @generated
    */
-  Permission getAllPermission();
+  String getAllPermission();
 
   /**
    * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getAllPermission <em>All Permission</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>All Permission</em>' attribute.
-   * @see ca.mcgill.devops.pipeline.pipeline.Permission
    * @see #getAllPermission()
    * @generated
    */
-  void setAllPermission(Permission value);
+  void setAllPermission(String value);
 
   /**
    * Returns the value of the '<em><b>Ind Permissions</b></em>' attribute list.
@@ -222,6 +222,18 @@ public interface Pipeline extends EObject
    * @generated
    */
   void setCancelConcurrence(String value);
+
+  /**
+   * Returns the value of the '<em><b>Pipeline Parameters</b></em>' containment reference list.
+   * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.PipelineParameter}.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Pipeline Parameters</em>' containment reference list.
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_PipelineParameters()
+   * @model containment="true"
+   * @generated
+   */
+  EList<PipelineParameter> getPipelineParameters();
 
   /**
    * Returns the value of the '<em><b>Vm Name</b></em>' attribute.
@@ -324,16 +336,16 @@ public interface Pipeline extends EObject
   void setVersion(String value);
 
   /**
-   * Returns the value of the '<em><b>Variables</b></em>' containment reference list.
+   * Returns the value of the '<em><b>Ppl Variables</b></em>' containment reference list.
    * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.Variable}.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Variables</em>' containment reference list.
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_Variables()
+   * @return the value of the '<em>Ppl Variables</em>' containment reference list.
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_PplVariables()
    * @model containment="true"
    * @generated
    */
-  EList<Variable> getVariables();
+  EList<Variable> getPplVariables();
 
   /**
    * Returns the value of the '<em><b>Extended Parameter</b></em>' containment reference.
@@ -358,18 +370,6 @@ public interface Pipeline extends EObject
   void setExtendedParameter(ExtendedParameter value);
 
   /**
-   * Returns the value of the '<em><b>Pipeline Parameters</b></em>' containment reference list.
-   * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.PipelineParameter}.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Pipeline Parameters</em>' containment reference list.
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_PipelineParameters()
-   * @model containment="true"
-   * @generated
-   */
-  EList<PipelineParameter> getPipelineParameters();
-
-  /**
    * Returns the value of the '<em><b>Triggers</b></em>' containment reference list.
    * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.Event}.
    * <!-- begin-user-doc -->
@@ -380,5 +380,51 @@ public interface Pipeline extends EObject
    * @generated
    */
   EList<Event> getTriggers();
+
+  /**
+   * Returns the value of the '<em><b>Job Or Stage Var</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Job Or Stage Var</em>' attribute.
+   * @see #setJobOrStageVar(String)
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_JobOrStageVar()
+   * @model
+   * @generated
+   */
+  String getJobOrStageVar();
+
+  /**
+   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getJobOrStageVar <em>Job Or Stage Var</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Job Or Stage Var</em>' attribute.
+   * @see #getJobOrStageVar()
+   * @generated
+   */
+  void setJobOrStageVar(String value);
+
+  /**
+   * Returns the value of the '<em><b>Stages</b></em>' containment reference list.
+   * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.Stage}.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Stages</em>' containment reference list.
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_Stages()
+   * @model containment="true"
+   * @generated
+   */
+  EList<Stage> getStages();
+
+  /**
+   * Returns the value of the '<em><b>Jobs</b></em>' containment reference list.
+   * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.Job}.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Jobs</em>' containment reference list.
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_Jobs()
+   * @model containment="true"
+   * @generated
+   */
+  EList<Job> getJobs();
 
 } // Pipeline
