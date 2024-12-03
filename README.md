@@ -32,6 +32,10 @@
 - **Validating Pipelines**: The editor automatically checks for platform-specific keywords, indentation issues, and malformed configurations.
 - **Exploring the Dataset**: The dataset is pre-processed to help researchers and practitioners examine automation pipelines from multiple CI/CD platforms. The dataset includes pipelines from GitHub, GitLab, Azure DevOps, BitBucket, Bamboo, and Circle CI.
 
+## Metamodel
+Version 2.0 Metamodel
+![Metamodel](Version-2-Metamodel.png)
+
 ## Dataset Preparation
 
 The heterogeneous dataset of DevOps pipelines was collected from both GitHub and Software Heritage, including over 42,000 YAML pipeline files. The dataset helps validate the generalizability of the language model used in this editor.
