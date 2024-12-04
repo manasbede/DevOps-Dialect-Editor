@@ -6,12 +6,18 @@ package ca.mcgill.devops.pipeline.pipeline.impl;
 import ca.mcgill.devops.pipeline.pipeline.Activity;
 import ca.mcgill.devops.pipeline.pipeline.PipelinePackage;
 
+import java.util.Collection;
+
 import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EDataTypeEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -22,6 +28,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * </p>
  * <ul>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ActivityImpl#getName <em>Name</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ActivityImpl#getActivities <em>Activities</em>}</li>
  * </ul>
  *
  * @generated
@@ -47,6 +54,16 @@ public class ActivityImpl extends MinimalEObjectImpl.Container implements Activi
    * @ordered
    */
   protected String name = NAME_EDEFAULT;
+
+  /**
+   * The cached value of the '{@link #getActivities() <em>Activities</em>}' attribute list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getActivities()
+   * @generated
+   * @ordered
+   */
+  protected EList<String> activities;
 
   /**
    * <!-- begin-user-doc -->
@@ -100,12 +117,29 @@ public class ActivityImpl extends MinimalEObjectImpl.Container implements Activi
    * @generated
    */
   @Override
+  public EList<String> getActivities()
+  {
+    if (activities == null)
+    {
+      activities = new EDataTypeEList<String>(String.class, this, PipelinePackage.ACTIVITY__ACTIVITIES);
+    }
+    return activities;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
     switch (featureID)
     {
       case PipelinePackage.ACTIVITY__NAME:
         return getName();
+      case PipelinePackage.ACTIVITY__ACTIVITIES:
+        return getActivities();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -115,6 +149,7 @@ public class ActivityImpl extends MinimalEObjectImpl.Container implements Activi
    * <!-- end-user-doc -->
    * @generated
    */
+  @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue)
   {
@@ -122,6 +157,10 @@ public class ActivityImpl extends MinimalEObjectImpl.Container implements Activi
     {
       case PipelinePackage.ACTIVITY__NAME:
         setName((String)newValue);
+        return;
+      case PipelinePackage.ACTIVITY__ACTIVITIES:
+        getActivities().clear();
+        getActivities().addAll((Collection<? extends String>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -140,6 +179,9 @@ public class ActivityImpl extends MinimalEObjectImpl.Container implements Activi
       case PipelinePackage.ACTIVITY__NAME:
         setName(NAME_EDEFAULT);
         return;
+      case PipelinePackage.ACTIVITY__ACTIVITIES:
+        getActivities().clear();
+        return;
     }
     super.eUnset(featureID);
   }
@@ -156,6 +198,8 @@ public class ActivityImpl extends MinimalEObjectImpl.Container implements Activi
     {
       case PipelinePackage.ACTIVITY__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+      case PipelinePackage.ACTIVITY__ACTIVITIES:
+        return activities != null && !activities.isEmpty();
     }
     return super.eIsSet(featureID);
   }
@@ -173,6 +217,8 @@ public class ActivityImpl extends MinimalEObjectImpl.Container implements Activi
     StringBuilder result = new StringBuilder(super.toString());
     result.append(" (name: ");
     result.append(name);
+    result.append(", activities: ");
+    result.append(activities);
     result.append(')');
     return result.toString();
   }

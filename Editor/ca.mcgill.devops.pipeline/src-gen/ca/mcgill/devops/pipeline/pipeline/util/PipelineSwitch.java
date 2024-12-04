@@ -80,10 +80,10 @@ public class PipelineSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case PipelinePackage.EXTENDED_PARAMETER:
+      case PipelinePackage.CONFIGURATIONS:
       {
-        ExtendedParameter extendedParameter = (ExtendedParameter)theEObject;
-        T result = caseExtendedParameter(extendedParameter);
+        Configurations configurations = (Configurations)theEObject;
+        T result = caseConfigurations(configurations);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -98,13 +98,6 @@ public class PipelineSwitch<T> extends Switch<T>
       {
         Resource resource = (Resource)theEObject;
         T result = caseResource(resource);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case PipelinePackage.PIPELINE_PARAMETER:
-      {
-        PipelineParameter pipelineParameter = (PipelineParameter)theEObject;
-        T result = casePipelineParameter(pipelineParameter);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -147,13 +140,6 @@ public class PipelineSwitch<T> extends Switch<T>
       {
         Job job = (Job)theEObject;
         T result = caseJob(job);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case PipelinePackage.JOB_PARAMETER:
-      {
-        JobParameter jobParameter = (JobParameter)theEObject;
-        T result = caseJobParameter(jobParameter);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -208,17 +194,17 @@ public class PipelineSwitch<T> extends Switch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Extended Parameter</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Configurations</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Extended Parameter</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Configurations</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseExtendedParameter(ExtendedParameter object)
+  public T caseConfigurations(Configurations object)
   {
     return null;
   }
@@ -251,22 +237,6 @@ public class PipelineSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseResource(Resource object)
-  {
-    return null;
-  }
-
-  /**
-   * Returns the result of interpreting the object as an instance of '<em>Parameter</em>'.
-   * <!-- begin-user-doc -->
-   * This implementation returns null;
-   * returning a non-null result will terminate the switch.
-   * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Parameter</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
-  public T casePipelineParameter(PipelineParameter object)
   {
     return null;
   }
@@ -363,22 +333,6 @@ public class PipelineSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseJob(Job object)
-  {
-    return null;
-  }
-
-  /**
-   * Returns the result of interpreting the object as an instance of '<em>Job Parameter</em>'.
-   * <!-- begin-user-doc -->
-   * This implementation returns null;
-   * returning a non-null result will terminate the switch.
-   * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Job Parameter</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
-  public T caseJobParameter(JobParameter object)
   {
     return null;
   }

@@ -71,29 +71,280 @@ rulePipeline returns [EObject current=null]
 }:
 	(
 		(
-			{ 
-			  getUnorderedGroupHelper().enter(grammarAccess.getPipelineAccess().getUnorderedGroup());
-			}
 			(
-				(
-		(
-			{getUnorderedGroupHelper().canSelect(grammarAccess.getPipelineAccess().getUnorderedGroup(), 0)}?=>(
 				{
-					getUnorderedGroupHelper().select(grammarAccess.getPipelineAccess().getUnorderedGroup(), 0);
+					newCompositeNode(grammarAccess.getPipelineAccess().getPipelineConfigurationConfigurationsParserRuleCall_0_0());
 				}
-							({true}?=>(otherlv_1=Name
+				lv_pipelineConfiguration_0_0=ruleConfigurations
+				{
+					if ($current==null) {
+						$current = createModelElementForParent(grammarAccess.getPipelineRule());
+					}
+					set(
+						$current,
+						"pipelineConfiguration",
+						lv_pipelineConfiguration_0_0,
+						"ca.mcgill.devops.pipeline.Pipeline.Configurations");
+					afterParserOrEnumRuleCall();
+				}
+			)
+		)
+		(
+			(
+				otherlv_1=On
+				{
+					newLeafNode(otherlv_1, grammarAccess.getPipelineAccess().getOnKeyword_1_0_0());
+				}
+				(
+					this_BEGIN_2=RULE_BEGIN
+					{
+						newLeafNode(this_BEGIN_2, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_1_0_1_0());
+					}
+					(
+						(
 							{
-								newLeafNode(otherlv_1, grammarAccess.getPipelineAccess().getNameKeyword_0_0());
+								newCompositeNode(grammarAccess.getPipelineAccess().getTriggersEventParserRuleCall_1_0_1_1_0());
+							}
+							lv_triggers_3_0=ruleEvent
+							{
+								if ($current==null) {
+									$current = createModelElementForParent(grammarAccess.getPipelineRule());
+								}
+								add(
+									$current,
+									"triggers",
+									lv_triggers_3_0,
+									"ca.mcgill.devops.pipeline.Pipeline.Event");
+								afterParserOrEnumRuleCall();
+							}
+						)
+					)+
+					this_END_4=RULE_END
+					{
+						newLeafNode(this_END_4, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_1_0_1_2());
+					}
+				)?
+				(
+					(
+						(
+							{
+								newCompositeNode(grammarAccess.getPipelineAccess().getTriggersEventParserRuleCall_1_0_2_0_0());
+							}
+							lv_triggers_5_0=ruleEvent
+							{
+								if ($current==null) {
+									$current = createModelElementForParent(grammarAccess.getPipelineRule());
+								}
+								add(
+									$current,
+									"triggers",
+									lv_triggers_5_0,
+									"ca.mcgill.devops.pipeline.Pipeline.Event");
+								afterParserOrEnumRuleCall();
+							}
+						)
+					)
+					    |
+					(
+						otherlv_6=LeftSquareBracket
+						{
+							newLeafNode(otherlv_6, grammarAccess.getPipelineAccess().getLeftSquareBracketKeyword_1_0_2_1_0());
+						}
+						(
+							(
+								{
+									newCompositeNode(grammarAccess.getPipelineAccess().getTriggersEventParserRuleCall_1_0_2_1_1_0());
+								}
+								lv_triggers_7_0=ruleEvent
+								{
+									if ($current==null) {
+										$current = createModelElementForParent(grammarAccess.getPipelineRule());
+									}
+									add(
+										$current,
+										"triggers",
+										lv_triggers_7_0,
+										"ca.mcgill.devops.pipeline.Pipeline.Event");
+									afterParserOrEnumRuleCall();
+								}
+							)
+						)
+						(
+							otherlv_8=Comma
+							{
+								newLeafNode(otherlv_8, grammarAccess.getPipelineAccess().getCommaKeyword_1_0_2_1_2_0());
 							}
 							(
 								(
 									{
-										newCompositeNode(grammarAccess.getPipelineAccess().getNameUnquotedStringParserRuleCall_0_1_0());
+										newCompositeNode(grammarAccess.getPipelineAccess().getTriggersEventParserRuleCall_1_0_2_1_2_1_0());
+									}
+									lv_triggers_9_0=ruleEvent
+									{
+										if ($current==null) {
+											$current = createModelElementForParent(grammarAccess.getPipelineRule());
+										}
+										add(
+											$current,
+											"triggers",
+											lv_triggers_9_0,
+											"ca.mcgill.devops.pipeline.Pipeline.Event");
+										afterParserOrEnumRuleCall();
+									}
+								)
+							)
+						)*
+						otherlv_10=RightSquareBracket
+						{
+							newLeafNode(otherlv_10, grammarAccess.getPipelineAccess().getRightSquareBracketKeyword_1_0_2_1_3());
+						}
+					)
+				)?
+			)
+			    |
+			(
+				(
+					{
+						newCompositeNode(grammarAccess.getPipelineAccess().getTriggersEventParserRuleCall_1_1_0());
+					}
+					lv_triggers_11_0=ruleEvent
+					{
+						if ($current==null) {
+							$current = createModelElementForParent(grammarAccess.getPipelineRule());
+						}
+						add(
+							$current,
+							"triggers",
+							lv_triggers_11_0,
+							"ca.mcgill.devops.pipeline.Pipeline.Event");
+						afterParserOrEnumRuleCall();
+					}
+				)
+			)*
+		)
+		(
+			(
+				(
+					(
+						lv_jobOrStageVar_12_1=Stages
+						{
+							newLeafNode(lv_jobOrStageVar_12_1, grammarAccess.getPipelineAccess().getJobOrStageVarStagesKeyword_2_0_0_0());
+						}
+						{
+							if ($current==null) {
+								$current = createModelElement(grammarAccess.getPipelineRule());
+							}
+							setWithLastConsumed($current, "jobOrStageVar", lv_jobOrStageVar_12_1, null);
+						}
+						    |
+						lv_jobOrStageVar_12_2=Jobs
+						{
+							newLeafNode(lv_jobOrStageVar_12_2, grammarAccess.getPipelineAccess().getJobOrStageVarJobsKeyword_2_0_0_1());
+						}
+						{
+							if ($current==null) {
+								$current = createModelElement(grammarAccess.getPipelineRule());
+							}
+							setWithLastConsumed($current, "jobOrStageVar", lv_jobOrStageVar_12_2, null);
+						}
+					)
+				)
+			)
+			(
+				(
+					(
+						{
+							newCompositeNode(grammarAccess.getPipelineAccess().getStagesStageParserRuleCall_2_1_0_0());
+						}
+						lv_stages_13_0=ruleStage
+						{
+							if ($current==null) {
+								$current = createModelElementForParent(grammarAccess.getPipelineRule());
+							}
+							add(
+								$current,
+								"stages",
+								lv_stages_13_0,
+								"ca.mcgill.devops.pipeline.Pipeline.Stage");
+							afterParserOrEnumRuleCall();
+						}
+					)
+				)*
+				    |
+				(
+					this_BEGIN_14=RULE_BEGIN
+					{
+						newLeafNode(this_BEGIN_14, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_1_1_0());
+					}
+					(
+						(
+							{
+								newCompositeNode(grammarAccess.getPipelineAccess().getJobsJobParserRuleCall_2_1_1_1_0());
+							}
+							lv_jobs_15_0=ruleJob
+							{
+								if ($current==null) {
+									$current = createModelElementForParent(grammarAccess.getPipelineRule());
+								}
+								add(
+									$current,
+									"jobs",
+									lv_jobs_15_0,
+									"ca.mcgill.devops.pipeline.Pipeline.Job");
+								afterParserOrEnumRuleCall();
+							}
+						)
+					)*
+					this_END_16=RULE_END
+					{
+						newLeafNode(this_END_16, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_1_2());
+					}
+				)
+			)
+		)
+	)
+;
+
+// Entry rule entryRuleConfigurations
+entryRuleConfigurations returns [EObject current=null]:
+	{ newCompositeNode(grammarAccess.getConfigurationsRule()); }
+	iv_ruleConfigurations=ruleConfigurations
+	{ $current=$iv_ruleConfigurations.current; }
+	EOF;
+
+// Rule Configurations
+ruleConfigurations returns [EObject current=null]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	(
+		(
+			{ 
+			  getUnorderedGroupHelper().enter(grammarAccess.getConfigurationsAccess().getUnorderedGroup());
+			}
+			(
+				(
+		(
+			{getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 0)}?=>(
+				{
+					getUnorderedGroupHelper().select(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 0);
+				}
+							({true}?=>(otherlv_1=Name
+							{
+								newLeafNode(otherlv_1, grammarAccess.getConfigurationsAccess().getNameKeyword_0_0());
+							}
+							(
+								(
+									{
+										newCompositeNode(grammarAccess.getConfigurationsAccess().getNameUnquotedStringParserRuleCall_0_1_0());
 									}
 									lv_name_2_0=ruleUnquotedString
 									{
 										if ($current==null) {
-											$current = createModelElementForParent(grammarAccess.getPipelineRule());
+											$current = createModelElementForParent(grammarAccess.getConfigurationsRule());
 										}
 										set(
 											$current,
@@ -106,28 +357,28 @@ rulePipeline returns [EObject current=null]
 							)
 							))
 				{ 
-					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getPipelineAccess().getUnorderedGroup());
+					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getConfigurationsAccess().getUnorderedGroup());
 				}
 			)
 		)|
 		(
-			{getUnorderedGroupHelper().canSelect(grammarAccess.getPipelineAccess().getUnorderedGroup(), 1)}?=>(
+			{getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 1)}?=>(
 				{
-					getUnorderedGroupHelper().select(grammarAccess.getPipelineAccess().getUnorderedGroup(), 1);
+					getUnorderedGroupHelper().select(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 1);
 				}
 							({true}?=>(otherlv_3=RunName
 							{
-								newLeafNode(otherlv_3, grammarAccess.getPipelineAccess().getRunNameKeyword_1_0());
+								newLeafNode(otherlv_3, grammarAccess.getConfigurationsAccess().getRunNameKeyword_1_0());
 							}
 							(
 								(
 									{
-										newCompositeNode(grammarAccess.getPipelineAccess().getRunNameUnquotedStringParserRuleCall_1_1_0());
+										newCompositeNode(grammarAccess.getConfigurationsAccess().getRunNameUnquotedStringParserRuleCall_1_1_0());
 									}
 									lv_runName_4_0=ruleUnquotedString
 									{
 										if ($current==null) {
-											$current = createModelElementForParent(grammarAccess.getPipelineRule());
+											$current = createModelElementForParent(grammarAccess.getConfigurationsRule());
 										}
 										set(
 											$current,
@@ -140,56 +391,56 @@ rulePipeline returns [EObject current=null]
 							)
 							))
 				{ 
-					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getPipelineAccess().getUnorderedGroup());
+					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getConfigurationsAccess().getUnorderedGroup());
 				}
 			)
 		)|
 		(
-			{getUnorderedGroupHelper().canSelect(grammarAccess.getPipelineAccess().getUnorderedGroup(), 2)}?=>(
+			{getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 2)}?=>(
 				{
-					getUnorderedGroupHelper().select(grammarAccess.getPipelineAccess().getUnorderedGroup(), 2);
+					getUnorderedGroupHelper().select(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 2);
 				}
 							({true}?=>((
 								{ 
-								  getUnorderedGroupHelper().enter(grammarAccess.getPipelineAccess().getUnorderedGroup_2());
+								  getUnorderedGroupHelper().enter(grammarAccess.getConfigurationsAccess().getUnorderedGroup_2());
 								}
 								(
 									(
 							(
-								{getUnorderedGroupHelper().canSelect(grammarAccess.getPipelineAccess().getUnorderedGroup_2(), 0)}?=>(
+								{getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_2(), 0)}?=>(
 									{
-										getUnorderedGroupHelper().select(grammarAccess.getPipelineAccess().getUnorderedGroup_2(), 0);
+										getUnorderedGroupHelper().select(grammarAccess.getConfigurationsAccess().getUnorderedGroup_2(), 0);
 									}
 												({true}?=>(otherlv_6=Defaults
 												{
-													newLeafNode(otherlv_6, grammarAccess.getPipelineAccess().getDefaultsKeyword_2_0_0());
+													newLeafNode(otherlv_6, grammarAccess.getConfigurationsAccess().getDefaultsKeyword_2_0_0());
 												}
 												this_BEGIN_7=RULE_BEGIN
 												{
-													newLeafNode(this_BEGIN_7, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_0_1());
+													newLeafNode(this_BEGIN_7, grammarAccess.getConfigurationsAccess().getBEGINTerminalRuleCall_2_0_1());
 												}
 												otherlv_8=Run
 												{
-													newLeafNode(otherlv_8, grammarAccess.getPipelineAccess().getRunKeyword_2_0_2());
+													newLeafNode(otherlv_8, grammarAccess.getConfigurationsAccess().getRunKeyword_2_0_2());
 												}
 												this_BEGIN_9=RULE_BEGIN
 												{
-													newLeafNode(this_BEGIN_9, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_0_3());
+													newLeafNode(this_BEGIN_9, grammarAccess.getConfigurationsAccess().getBEGINTerminalRuleCall_2_0_3());
 												}
 												(
 													otherlv_10=Shell
 													{
-														newLeafNode(otherlv_10, grammarAccess.getPipelineAccess().getShellKeyword_2_0_4_0());
+														newLeafNode(otherlv_10, grammarAccess.getConfigurationsAccess().getShellKeyword_2_0_4_0());
 													}
 													(
 														(
 															lv_defaultShellValue_11_0=RULE_STRING
 															{
-																newLeafNode(lv_defaultShellValue_11_0, grammarAccess.getPipelineAccess().getDefaultShellValueSTRINGTerminalRuleCall_2_0_4_1_0());
+																newLeafNode(lv_defaultShellValue_11_0, grammarAccess.getConfigurationsAccess().getDefaultShellValueSTRINGTerminalRuleCall_2_0_4_1_0());
 															}
 															{
 																if ($current==null) {
-																	$current = createModelElement(grammarAccess.getPipelineRule());
+																	$current = createModelElement(grammarAccess.getConfigurationsRule());
 																}
 																setWithLastConsumed(
 																	$current,
@@ -202,29 +453,29 @@ rulePipeline returns [EObject current=null]
 												)?
 												))
 									{ 
-										getUnorderedGroupHelper().returnFromSelection(grammarAccess.getPipelineAccess().getUnorderedGroup_2());
+										getUnorderedGroupHelper().returnFromSelection(grammarAccess.getConfigurationsAccess().getUnorderedGroup_2());
 									}
 								)
 							)|
 							(
-								{getUnorderedGroupHelper().canSelect(grammarAccess.getPipelineAccess().getUnorderedGroup_2(), 1)}?=>(
+								{getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_2(), 1)}?=>(
 									{
-										getUnorderedGroupHelper().select(grammarAccess.getPipelineAccess().getUnorderedGroup_2(), 1);
+										getUnorderedGroupHelper().select(grammarAccess.getConfigurationsAccess().getUnorderedGroup_2(), 1);
 									}
 												({true}?=>((
 													otherlv_12=WorkingDirectory
 													{
-														newLeafNode(otherlv_12, grammarAccess.getPipelineAccess().getWorkingDirectoryKeyword_2_1_0_0());
+														newLeafNode(otherlv_12, grammarAccess.getConfigurationsAccess().getWorkingDirectoryKeyword_2_1_0_0());
 													}
 													(
 														(
 															lv_defaultWDValue_13_0=RULE_STRING
 															{
-																newLeafNode(lv_defaultWDValue_13_0, grammarAccess.getPipelineAccess().getDefaultWDValueSTRINGTerminalRuleCall_2_1_0_1_0());
+																newLeafNode(lv_defaultWDValue_13_0, grammarAccess.getConfigurationsAccess().getDefaultWDValueSTRINGTerminalRuleCall_2_1_0_1_0());
 															}
 															{
 																if ($current==null) {
-																	$current = createModelElement(grammarAccess.getPipelineRule());
+																	$current = createModelElement(grammarAccess.getConfigurationsRule());
 																}
 																setWithLastConsumed(
 																	$current,
@@ -237,60 +488,60 @@ rulePipeline returns [EObject current=null]
 												)?
 												this_END_14=RULE_END
 												{
-													newLeafNode(this_END_14, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_1());
+													newLeafNode(this_END_14, grammarAccess.getConfigurationsAccess().getENDTerminalRuleCall_2_1_1());
 												}
 												this_END_15=RULE_END
 												{
-													newLeafNode(this_END_15, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_2());
+													newLeafNode(this_END_15, grammarAccess.getConfigurationsAccess().getENDTerminalRuleCall_2_1_2());
 												}
 												))
 									{ 
-										getUnorderedGroupHelper().returnFromSelection(grammarAccess.getPipelineAccess().getUnorderedGroup_2());
+										getUnorderedGroupHelper().returnFromSelection(grammarAccess.getConfigurationsAccess().getUnorderedGroup_2());
 									}
 								)
 							)
 									)+
-									{getUnorderedGroupHelper().canLeave(grammarAccess.getPipelineAccess().getUnorderedGroup_2())}?
+									{getUnorderedGroupHelper().canLeave(grammarAccess.getConfigurationsAccess().getUnorderedGroup_2())}?
 								)
 							)
 								{ 
-								  getUnorderedGroupHelper().leave(grammarAccess.getPipelineAccess().getUnorderedGroup_2());
+								  getUnorderedGroupHelper().leave(grammarAccess.getConfigurationsAccess().getUnorderedGroup_2());
 								}
 							))
 				{ 
-					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getPipelineAccess().getUnorderedGroup());
+					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getConfigurationsAccess().getUnorderedGroup());
 				}
 			)
 		)|
 		(
-			{getUnorderedGroupHelper().canSelect(grammarAccess.getPipelineAccess().getUnorderedGroup(), 3)}?=>(
+			{getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 3)}?=>(
 				{
-					getUnorderedGroupHelper().select(grammarAccess.getPipelineAccess().getUnorderedGroup(), 3);
+					getUnorderedGroupHelper().select(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 3);
 				}
 							({true}?=>(otherlv_16=Env
 							{
-								newLeafNode(otherlv_16, grammarAccess.getPipelineAccess().getEnvKeyword_3_0());
+								newLeafNode(otherlv_16, grammarAccess.getConfigurationsAccess().getEnvKeyword_3_0());
 							}
 							this_BEGIN_17=RULE_BEGIN
 							{
-								newLeafNode(this_BEGIN_17, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_3_1());
+								newLeafNode(this_BEGIN_17, grammarAccess.getConfigurationsAccess().getBEGINTerminalRuleCall_3_1());
 							}
 							(
 								(
 									otherlv_18=HyphenMinus
 									{
-										newLeafNode(otherlv_18, grammarAccess.getPipelineAccess().getHyphenMinusKeyword_3_2_0());
+										newLeafNode(otherlv_18, grammarAccess.getConfigurationsAccess().getHyphenMinusKeyword_3_2_0());
 									}
 								)?
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getPipelineAccess().getEnvKeyValueParserRuleCall_3_2_1_0());
+											newCompositeNode(grammarAccess.getConfigurationsAccess().getEnvKeyValueParserRuleCall_3_2_1_0());
 										}
 										lv_env_19_0=ruleKeyValue
 										{
 											if ($current==null) {
-												$current = createModelElementForParent(grammarAccess.getPipelineRule());
+												$current = createModelElementForParent(grammarAccess.getConfigurationsRule());
 											}
 											add(
 												$current,
@@ -304,33 +555,33 @@ rulePipeline returns [EObject current=null]
 							)*
 							this_END_20=RULE_END
 							{
-								newLeafNode(this_END_20, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_3_3());
+								newLeafNode(this_END_20, grammarAccess.getConfigurationsAccess().getENDTerminalRuleCall_3_3());
 							}
 							))
 				{ 
-					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getPipelineAccess().getUnorderedGroup());
+					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getConfigurationsAccess().getUnorderedGroup());
 				}
 			)
 		)|
 		(
-			{getUnorderedGroupHelper().canSelect(grammarAccess.getPipelineAccess().getUnorderedGroup(), 4)}?=>(
+			{getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 4)}?=>(
 				{
-					getUnorderedGroupHelper().select(grammarAccess.getPipelineAccess().getUnorderedGroup(), 4);
+					getUnorderedGroupHelper().select(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 4);
 				}
 							({true}?=>(otherlv_21=Permission
 							{
-								newLeafNode(otherlv_21, grammarAccess.getPipelineAccess().getPermissionKeyword_4_0());
+								newLeafNode(otherlv_21, grammarAccess.getConfigurationsAccess().getPermissionKeyword_4_0());
 							}
 							(
 								(
 									(
 										lv_allPermission_22_0=RULE_ID
 										{
-											newLeafNode(lv_allPermission_22_0, grammarAccess.getPipelineAccess().getAllPermissionIDTerminalRuleCall_4_1_0_0());
+											newLeafNode(lv_allPermission_22_0, grammarAccess.getConfigurationsAccess().getAllPermissionIDTerminalRuleCall_4_1_0_0());
 										}
 										{
 											if ($current==null) {
-												$current = createModelElement(grammarAccess.getPipelineRule());
+												$current = createModelElement(grammarAccess.getConfigurationsRule());
 											}
 											setWithLastConsumed(
 												$current,
@@ -344,17 +595,17 @@ rulePipeline returns [EObject current=null]
 								(
 									this_BEGIN_23=RULE_BEGIN
 									{
-										newLeafNode(this_BEGIN_23, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_4_1_1_0());
+										newLeafNode(this_BEGIN_23, grammarAccess.getConfigurationsAccess().getBEGINTerminalRuleCall_4_1_1_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getPipelineAccess().getIndPermissionsIndPermissionValueParserRuleCall_4_1_1_1_0());
+												newCompositeNode(grammarAccess.getConfigurationsAccess().getIndPermissionsIndPermissionValueParserRuleCall_4_1_1_1_0());
 											}
 											lv_indPermissions_24_0=ruleIndPermissionValue
 											{
 												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getPipelineRule());
+													$current = createModelElementForParent(grammarAccess.getConfigurationsRule());
 												}
 												add(
 													$current,
@@ -367,45 +618,45 @@ rulePipeline returns [EObject current=null]
 									)*
 									this_END_25=RULE_END
 									{
-										newLeafNode(this_END_25, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_4_1_1_2());
+										newLeafNode(this_END_25, grammarAccess.getConfigurationsAccess().getENDTerminalRuleCall_4_1_1_2());
 									}
 								)
 							)
 							))
 				{ 
-					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getPipelineAccess().getUnorderedGroup());
+					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getConfigurationsAccess().getUnorderedGroup());
 				}
 			)
 		)|
 		(
-			{getUnorderedGroupHelper().canSelect(grammarAccess.getPipelineAccess().getUnorderedGroup(), 5)}?=>(
+			{getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 5)}?=>(
 				{
-					getUnorderedGroupHelper().select(grammarAccess.getPipelineAccess().getUnorderedGroup(), 5);
+					getUnorderedGroupHelper().select(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 5);
 				}
 							({true}?=>(otherlv_26=Concurrency
 							{
-								newLeafNode(otherlv_26, grammarAccess.getPipelineAccess().getConcurrencyKeyword_5_0());
+								newLeafNode(otherlv_26, grammarAccess.getConfigurationsAccess().getConcurrencyKeyword_5_0());
 							}
 							(
 								this_BEGIN_27=RULE_BEGIN
 								{
-									newLeafNode(this_BEGIN_27, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_5_1_0());
+									newLeafNode(this_BEGIN_27, grammarAccess.getConfigurationsAccess().getBEGINTerminalRuleCall_5_1_0());
 								}
 								(
 									otherlv_28=Group
 									{
-										newLeafNode(otherlv_28, grammarAccess.getPipelineAccess().getGroupKeyword_5_1_1_0());
+										newLeafNode(otherlv_28, grammarAccess.getConfigurationsAccess().getGroupKeyword_5_1_1_0());
 									}
 									(
 										(
 											(
 												lv_group_29_1=RULE_ID
 												{
-													newLeafNode(lv_group_29_1, grammarAccess.getPipelineAccess().getGroupIDTerminalRuleCall_5_1_1_1_0_0());
+													newLeafNode(lv_group_29_1, grammarAccess.getConfigurationsAccess().getGroupIDTerminalRuleCall_5_1_1_1_0_0());
 												}
 												{
 													if ($current==null) {
-														$current = createModelElement(grammarAccess.getPipelineRule());
+														$current = createModelElement(grammarAccess.getConfigurationsRule());
 													}
 													setWithLastConsumed(
 														$current,
@@ -416,11 +667,11 @@ rulePipeline returns [EObject current=null]
 												    |
 												lv_group_29_2=RULE_COMPLEX_EXPRESSION
 												{
-													newLeafNode(lv_group_29_2, grammarAccess.getPipelineAccess().getGroupCOMPLEX_EXPRESSIONTerminalRuleCall_5_1_1_1_0_1());
+													newLeafNode(lv_group_29_2, grammarAccess.getConfigurationsAccess().getGroupCOMPLEX_EXPRESSIONTerminalRuleCall_5_1_1_1_0_1());
 												}
 												{
 													if ($current==null) {
-														$current = createModelElement(grammarAccess.getPipelineRule());
+														$current = createModelElement(grammarAccess.getConfigurationsRule());
 													}
 													setWithLastConsumed(
 														$current,
@@ -435,18 +686,18 @@ rulePipeline returns [EObject current=null]
 								(
 									otherlv_30=CancelInProgress
 									{
-										newLeafNode(otherlv_30, grammarAccess.getPipelineAccess().getCancelInProgressKeyword_5_1_2_0());
+										newLeafNode(otherlv_30, grammarAccess.getConfigurationsAccess().getCancelInProgressKeyword_5_1_2_0());
 									}
 									(
 										(
 											(
 												lv_cancelConcurrence_31_1=RULE_ID
 												{
-													newLeafNode(lv_cancelConcurrence_31_1, grammarAccess.getPipelineAccess().getCancelConcurrenceIDTerminalRuleCall_5_1_2_1_0_0());
+													newLeafNode(lv_cancelConcurrence_31_1, grammarAccess.getConfigurationsAccess().getCancelConcurrenceIDTerminalRuleCall_5_1_2_1_0_0());
 												}
 												{
 													if ($current==null) {
-														$current = createModelElement(grammarAccess.getPipelineRule());
+														$current = createModelElement(grammarAccess.getConfigurationsRule());
 													}
 													setWithLastConsumed(
 														$current,
@@ -457,11 +708,11 @@ rulePipeline returns [EObject current=null]
 												    |
 												lv_cancelConcurrence_31_2=RULE_COMPLEX_EXPRESSION
 												{
-													newLeafNode(lv_cancelConcurrence_31_2, grammarAccess.getPipelineAccess().getCancelConcurrenceCOMPLEX_EXPRESSIONTerminalRuleCall_5_1_2_1_0_1());
+													newLeafNode(lv_cancelConcurrence_31_2, grammarAccess.getConfigurationsAccess().getCancelConcurrenceCOMPLEX_EXPRESSIONTerminalRuleCall_5_1_2_1_0_1());
 												}
 												{
 													if ($current==null) {
-														$current = createModelElement(grammarAccess.getPipelineRule());
+														$current = createModelElement(grammarAccess.getConfigurationsRule());
 													}
 													setWithLastConsumed(
 														$current,
@@ -475,127 +726,99 @@ rulePipeline returns [EObject current=null]
 								)
 								this_END_32=RULE_END
 								{
-									newLeafNode(this_END_32, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_5_1_3());
+									newLeafNode(this_END_32, grammarAccess.getConfigurationsAccess().getENDTerminalRuleCall_5_1_3());
 								}
 							)
 							))
 				{ 
-					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getPipelineAccess().getUnorderedGroup());
+					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getConfigurationsAccess().getUnorderedGroup());
 				}
 			)
 		)|
 		(
-			{getUnorderedGroupHelper().canSelect(grammarAccess.getPipelineAccess().getUnorderedGroup(), 6)}?=>(
+			{getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 6)}?=>(
 				{
-					getUnorderedGroupHelper().select(grammarAccess.getPipelineAccess().getUnorderedGroup(), 6);
+					getUnorderedGroupHelper().select(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 6);
 				}
-							({true}?=>((
-								{
-									newCompositeNode(grammarAccess.getPipelineAccess().getPipelineParametersPipelineParameterParserRuleCall_6_0());
-								}
-								lv_pipelineParameters_33_0=rulePipelineParameter
-								{
-									if ($current==null) {
-										$current = createModelElementForParent(grammarAccess.getPipelineRule());
-									}
-									add(
-										$current,
-										"pipelineParameters",
-										lv_pipelineParameters_33_0,
-										"ca.mcgill.devops.pipeline.Pipeline.PipelineParameter");
-									afterParserOrEnumRuleCall();
-								}
-							)
-							))+
-				{ 
-					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getPipelineAccess().getUnorderedGroup());
-				}
-			)
-		)|
-		(
-			{getUnorderedGroupHelper().canSelect(grammarAccess.getPipelineAccess().getUnorderedGroup(), 7)}?=>(
-				{
-					getUnorderedGroupHelper().select(grammarAccess.getPipelineAccess().getUnorderedGroup(), 7);
-				}
-							({true}?=>(otherlv_34=Pool
+							({true}?=>(otherlv_33=Pool
 							{
-								newLeafNode(otherlv_34, grammarAccess.getPipelineAccess().getPoolKeyword_7_0());
+								newLeafNode(otherlv_33, grammarAccess.getConfigurationsAccess().getPoolKeyword_6_0());
 							}
 							(
 								(
 									{ 
-									  getUnorderedGroupHelper().enter(grammarAccess.getPipelineAccess().getUnorderedGroup_7_1());
+									  getUnorderedGroupHelper().enter(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1());
 									}
 									(
 										(
 								(
-									{getUnorderedGroupHelper().canSelect(grammarAccess.getPipelineAccess().getUnorderedGroup_7_1(), 0)}?=>(
+									{getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 0)}?=>(
 										{
-											getUnorderedGroupHelper().select(grammarAccess.getPipelineAccess().getUnorderedGroup_7_1(), 0);
+											getUnorderedGroupHelper().select(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 0);
 										}
-													({true}?=>(this_BEGIN_36=RULE_BEGIN
+													({true}?=>(this_BEGIN_35=RULE_BEGIN
 													{
-														newLeafNode(this_BEGIN_36, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_7_1_0_0());
+														newLeafNode(this_BEGIN_35, grammarAccess.getConfigurationsAccess().getBEGINTerminalRuleCall_6_1_0_0());
 													}
 													(
-														otherlv_37=Name
+														otherlv_36=Name
 														{
-															newLeafNode(otherlv_37, grammarAccess.getPipelineAccess().getNameKeyword_7_1_0_1_0());
+															newLeafNode(otherlv_36, grammarAccess.getConfigurationsAccess().getNameKeyword_6_1_0_1_0());
 														}
 														(
 															(
-																lv_vmName_38_0=RULE_ID
+																lv_vmName_37_0=RULE_ID
 																{
-																	newLeafNode(lv_vmName_38_0, grammarAccess.getPipelineAccess().getVmNameIDTerminalRuleCall_7_1_0_1_1_0());
+																	newLeafNode(lv_vmName_37_0, grammarAccess.getConfigurationsAccess().getVmNameIDTerminalRuleCall_6_1_0_1_1_0());
 																}
 																{
 																	if ($current==null) {
-																		$current = createModelElement(grammarAccess.getPipelineRule());
+																		$current = createModelElement(grammarAccess.getConfigurationsRule());
 																	}
 																	setWithLastConsumed(
 																		$current,
 																		"vmName",
-																		lv_vmName_38_0,
+																		lv_vmName_37_0,
 																		"ca.mcgill.devops.pipeline.Pipeline.ID");
 																}
 															)
 														)
 													)
 													(
-														otherlv_39=VmImage
+														otherlv_38=VmImage
 														{
-															newLeafNode(otherlv_39, grammarAccess.getPipelineAccess().getVmImageKeyword_7_1_0_2_0());
+															newLeafNode(otherlv_38, grammarAccess.getConfigurationsAccess().getVmImageKeyword_6_1_0_2_0());
 														}
 														(
 															(
 																(
-																	lv_vmImage_40_1=RULE_ID
+																	lv_vmImage_39_1=RULE_ID
 																	{
-																		newLeafNode(lv_vmImage_40_1, grammarAccess.getPipelineAccess().getVmImageIDTerminalRuleCall_7_1_0_2_1_0_0());
+																		newLeafNode(lv_vmImage_39_1, grammarAccess.getConfigurationsAccess().getVmImageIDTerminalRuleCall_6_1_0_2_1_0_0());
 																	}
 																	{
 																		if ($current==null) {
-																			$current = createModelElement(grammarAccess.getPipelineRule());
+																			$current = createModelElement(grammarAccess.getConfigurationsRule());
 																		}
 																		setWithLastConsumed(
 																			$current,
 																			"vmImage",
-																			lv_vmImage_40_1,
+																			lv_vmImage_39_1,
 																			"ca.mcgill.devops.pipeline.Pipeline.ID");
 																	}
 																	    |
-																	lv_vmImage_40_2=RULE_STRING
+																	lv_vmImage_39_2=RULE_STRING
 																	{
-																		newLeafNode(lv_vmImage_40_2, grammarAccess.getPipelineAccess().getVmImageSTRINGTerminalRuleCall_7_1_0_2_1_0_1());
+																		newLeafNode(lv_vmImage_39_2, grammarAccess.getConfigurationsAccess().getVmImageSTRINGTerminalRuleCall_6_1_0_2_1_0_1());
 																	}
 																	{
 																		if ($current==null) {
-																			$current = createModelElement(grammarAccess.getPipelineRule());
+																			$current = createModelElement(grammarAccess.getConfigurationsRule());
 																		}
 																		setWithLastConsumed(
 																			$current,
 																			"vmImage",
-																			lv_vmImage_40_2,
+																			lv_vmImage_39_2,
 																			"org.eclipse.xtext.common.Terminals.STRING");
 																	}
 																)
@@ -604,51 +827,51 @@ rulePipeline returns [EObject current=null]
 													)?
 													))
 										{ 
-											getUnorderedGroupHelper().returnFromSelection(grammarAccess.getPipelineAccess().getUnorderedGroup_7_1());
+											getUnorderedGroupHelper().returnFromSelection(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1());
 										}
 									)
 								)|
 								(
-									{getUnorderedGroupHelper().canSelect(grammarAccess.getPipelineAccess().getUnorderedGroup_7_1(), 1)}?=>(
+									{getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1)}?=>(
 										{
-											getUnorderedGroupHelper().select(grammarAccess.getPipelineAccess().getUnorderedGroup_7_1(), 1);
+											getUnorderedGroupHelper().select(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1);
 										}
 													({true}?=>((
-														otherlv_41=Demands
+														otherlv_40=Demands
 														{
-															newLeafNode(otherlv_41, grammarAccess.getPipelineAccess().getDemandsKeyword_7_1_1_0_0());
+															newLeafNode(otherlv_40, grammarAccess.getConfigurationsAccess().getDemandsKeyword_6_1_1_0_0());
 														}
 														(
 															(
 																(
 																	{
-																		newCompositeNode(grammarAccess.getPipelineAccess().getVmDemandsAnyDataParserRuleCall_7_1_1_0_1_0_0());
+																		newCompositeNode(grammarAccess.getConfigurationsAccess().getVmDemandsAnyDataParserRuleCall_6_1_1_0_1_0_0());
 																	}
-																	lv_vmDemands_42_1=ruleAnyData
+																	lv_vmDemands_41_1=ruleAnyData
 																	{
 																		if ($current==null) {
-																			$current = createModelElementForParent(grammarAccess.getPipelineRule());
+																			$current = createModelElementForParent(grammarAccess.getConfigurationsRule());
 																		}
 																		set(
 																			$current,
 																			"vmDemands",
-																			lv_vmDemands_42_1,
+																			lv_vmDemands_41_1,
 																			"ca.mcgill.devops.pipeline.Pipeline.AnyData");
 																		afterParserOrEnumRuleCall();
 																	}
 																	    |
 																	{
-																		newCompositeNode(grammarAccess.getPipelineAccess().getVmDemandsHyphenValuesParserRuleCall_7_1_1_0_1_0_1());
+																		newCompositeNode(grammarAccess.getConfigurationsAccess().getVmDemandsHyphenValuesParserRuleCall_6_1_1_0_1_0_1());
 																	}
-																	lv_vmDemands_42_2=ruleHyphenValues
+																	lv_vmDemands_41_2=ruleHyphenValues
 																	{
 																		if ($current==null) {
-																			$current = createModelElementForParent(grammarAccess.getPipelineRule());
+																			$current = createModelElementForParent(grammarAccess.getConfigurationsRule());
 																		}
 																		set(
 																			$current,
 																			"vmDemands",
-																			lv_vmDemands_42_2,
+																			lv_vmDemands_41_2,
 																			"ca.mcgill.devops.pipeline.Pipeline.HyphenValues");
 																		afterParserOrEnumRuleCall();
 																	}
@@ -656,130 +879,130 @@ rulePipeline returns [EObject current=null]
 															)
 														)
 													)?
-													this_END_43=RULE_END
+													this_END_42=RULE_END
 													{
-														newLeafNode(this_END_43, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_7_1_1_1());
+														newLeafNode(this_END_42, grammarAccess.getConfigurationsAccess().getENDTerminalRuleCall_6_1_1_1());
 													}
 													))
 										{ 
-											getUnorderedGroupHelper().returnFromSelection(grammarAccess.getPipelineAccess().getUnorderedGroup_7_1());
+											getUnorderedGroupHelper().returnFromSelection(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1());
 										}
 									)
 								)
 										)+
-										{getUnorderedGroupHelper().canLeave(grammarAccess.getPipelineAccess().getUnorderedGroup_7_1())}?
+										{getUnorderedGroupHelper().canLeave(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1())}?
 									)
 								)
 									{ 
-									  getUnorderedGroupHelper().leave(grammarAccess.getPipelineAccess().getUnorderedGroup_7_1());
+									  getUnorderedGroupHelper().leave(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1());
 									}
 							)
 							))
 				{ 
-					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getPipelineAccess().getUnorderedGroup());
+					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getConfigurationsAccess().getUnorderedGroup());
 				}
 			)
 		)|
 		(
-			{getUnorderedGroupHelper().canSelect(grammarAccess.getPipelineAccess().getUnorderedGroup(), 8)}?=>(
+			{getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 7)}?=>(
 				{
-					getUnorderedGroupHelper().select(grammarAccess.getPipelineAccess().getUnorderedGroup(), 8);
+					getUnorderedGroupHelper().select(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 7);
 				}
-							({true}?=>(otherlv_44=Resources
+							({true}?=>(otherlv_43=Resources
 							{
-								newLeafNode(otherlv_44, grammarAccess.getPipelineAccess().getResourcesKeyword_8_0());
+								newLeafNode(otherlv_43, grammarAccess.getConfigurationsAccess().getResourcesKeyword_7_0());
 							}
 							(
-								this_BEGIN_45=RULE_BEGIN
+								this_BEGIN_44=RULE_BEGIN
 								{
-									newLeafNode(this_BEGIN_45, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_8_1_0());
+									newLeafNode(this_BEGIN_44, grammarAccess.getConfigurationsAccess().getBEGINTerminalRuleCall_7_1_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getPipelineAccess().getResourcesResourceParserRuleCall_8_1_1_0());
+											newCompositeNode(grammarAccess.getConfigurationsAccess().getResourcesResourceParserRuleCall_7_1_1_0());
 										}
-										lv_resources_46_0=ruleResource
+										lv_resources_45_0=ruleResource
 										{
 											if ($current==null) {
-												$current = createModelElementForParent(grammarAccess.getPipelineRule());
+												$current = createModelElementForParent(grammarAccess.getConfigurationsRule());
 											}
 											add(
 												$current,
 												"resources",
-												lv_resources_46_0,
+												lv_resources_45_0,
 												"ca.mcgill.devops.pipeline.Pipeline.Resource");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)*
-								this_END_47=RULE_END
+								this_END_46=RULE_END
 								{
-									newLeafNode(this_END_47, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_8_1_2());
+									newLeafNode(this_END_46, grammarAccess.getConfigurationsAccess().getENDTerminalRuleCall_7_1_2());
 								}
 							)
 							))
 				{ 
-					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getPipelineAccess().getUnorderedGroup());
+					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getConfigurationsAccess().getUnorderedGroup());
 				}
 			)
 		)|
 		(
-			{getUnorderedGroupHelper().canSelect(grammarAccess.getPipelineAccess().getUnorderedGroup(), 9)}?=>(
+			{getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 8)}?=>(
 				{
-					getUnorderedGroupHelper().select(grammarAccess.getPipelineAccess().getUnorderedGroup(), 9);
+					getUnorderedGroupHelper().select(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 8);
 				}
-							({true}?=>(otherlv_48=Version
+							({true}?=>(otherlv_47=Version
 							{
-								newLeafNode(otherlv_48, grammarAccess.getPipelineAccess().getVersionKeyword_9_0());
+								newLeafNode(otherlv_47, grammarAccess.getConfigurationsAccess().getVersionKeyword_8_0());
 							}
 							(
 								(
-									lv_version_49_0=RULE_VERSION
+									lv_version_48_0=RULE_VERSION
 									{
-										newLeafNode(lv_version_49_0, grammarAccess.getPipelineAccess().getVersionVERSIONTerminalRuleCall_9_1_0());
+										newLeafNode(lv_version_48_0, grammarAccess.getConfigurationsAccess().getVersionVERSIONTerminalRuleCall_8_1_0());
 									}
 									{
 										if ($current==null) {
-											$current = createModelElement(grammarAccess.getPipelineRule());
+											$current = createModelElement(grammarAccess.getConfigurationsRule());
 										}
 										setWithLastConsumed(
 											$current,
 											"version",
-											lv_version_49_0,
+											lv_version_48_0,
 											"ca.mcgill.devops.pipeline.Pipeline.VERSION");
 									}
 								)
 							)
 							))
 				{ 
-					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getPipelineAccess().getUnorderedGroup());
+					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getConfigurationsAccess().getUnorderedGroup());
 				}
 			)
 		)|
 		(
-			{getUnorderedGroupHelper().canSelect(grammarAccess.getPipelineAccess().getUnorderedGroup(), 10)}?=>(
+			{getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 9)}?=>(
 				{
-					getUnorderedGroupHelper().select(grammarAccess.getPipelineAccess().getUnorderedGroup(), 10);
+					getUnorderedGroupHelper().select(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 9);
 				}
-							({true}?=>(otherlv_50=Variables
+							({true}?=>(otherlv_49=Variables
 							{
-								newLeafNode(otherlv_50, grammarAccess.getPipelineAccess().getVariablesKeyword_10_0());
+								newLeafNode(otherlv_49, grammarAccess.getConfigurationsAccess().getVariablesKeyword_9_0());
 							}
 							(
 								(
 									{
-										newCompositeNode(grammarAccess.getPipelineAccess().getPplVariablesVariableParserRuleCall_10_1_0());
+										newCompositeNode(grammarAccess.getConfigurationsAccess().getPplVariablesVariableParserRuleCall_9_1_0());
 									}
-									lv_pplVariables_51_0=ruleVariable
+									lv_pplVariables_50_0=ruleVariable
 									{
 										if ($current==null) {
-											$current = createModelElementForParent(grammarAccess.getPipelineRule());
+											$current = createModelElementForParent(grammarAccess.getConfigurationsRule());
 										}
 										add(
 											$current,
 											"pplVariables",
-											lv_pplVariables_51_0,
+											lv_pplVariables_50_0,
 											"ca.mcgill.devops.pipeline.Pipeline.Variable");
 										afterParserOrEnumRuleCall();
 									}
@@ -787,283 +1010,123 @@ rulePipeline returns [EObject current=null]
 							)*
 							))
 				{ 
-					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getPipelineAccess().getUnorderedGroup());
+					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getConfigurationsAccess().getUnorderedGroup());
 				}
 			)
 		)|
 		(
-			{getUnorderedGroupHelper().canSelect(grammarAccess.getPipelineAccess().getUnorderedGroup(), 11)}?=>(
+			{getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 10)}?=>(
 				{
-					getUnorderedGroupHelper().select(grammarAccess.getPipelineAccess().getUnorderedGroup(), 11);
+					getUnorderedGroupHelper().select(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 10);
 				}
-							({true}?=>((
-								{
-									newCompositeNode(grammarAccess.getPipelineAccess().getExtendedParameterExtendedParameterParserRuleCall_11_0());
-								}
-								lv_extendedParameter_52_0=ruleExtendedParameter
-								{
-									if ($current==null) {
-										$current = createModelElementForParent(grammarAccess.getPipelineRule());
-									}
-									set(
-										$current,
-										"extendedParameter",
-										lv_extendedParameter_52_0,
-										"ca.mcgill.devops.pipeline.Pipeline.ExtendedParameter");
-									afterParserOrEnumRuleCall();
-								}
-							)
-							))
-				{ 
-					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getPipelineAccess().getUnorderedGroup());
-				}
-			)
-		)|
-		(
-			{getUnorderedGroupHelper().canSelect(grammarAccess.getPipelineAccess().getUnorderedGroup(), 12)}?=>(
-				{
-					getUnorderedGroupHelper().select(grammarAccess.getPipelineAccess().getUnorderedGroup(), 12);
-				}
-							({true}?=>((
-								(
-									{
-										newCompositeNode(grammarAccess.getPipelineAccess().getPipelineParametersPipelineParameterParserRuleCall_12_0_0());
-									}
-									lv_pipelineParameters_53_0=rulePipelineParameter
-									{
-										if ($current==null) {
-											$current = createModelElementForParent(grammarAccess.getPipelineRule());
-										}
-										add(
-											$current,
-											"pipelineParameters",
-											lv_pipelineParameters_53_0,
-											"ca.mcgill.devops.pipeline.Pipeline.PipelineParameter");
-										afterParserOrEnumRuleCall();
-									}
-								)
-							)*
+							({true}?=>(otherlv_51=Parameters
+							{
+								newLeafNode(otherlv_51, grammarAccess.getConfigurationsAccess().getParametersKeyword_10_0());
+							}
 							(
+								otherlv_52=HyphenMinus
+								{
+									newLeafNode(otherlv_52, grammarAccess.getConfigurationsAccess().getHyphenMinusKeyword_10_1_0());
+								}
 								(
 									(
-										(
-											lv_jobOrStageVar_54_1=Stages
-											{
-												newLeafNode(lv_jobOrStageVar_54_1, grammarAccess.getPipelineAccess().getJobOrStageVarStagesKeyword_12_1_0_0_0());
+										{
+											newCompositeNode(grammarAccess.getConfigurationsAccess().getParasParameterValueParserRuleCall_10_1_1_0());
+										}
+										lv_paras_53_0=ruleParameterValue
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getConfigurationsRule());
 											}
-											{
-												if ($current==null) {
-													$current = createModelElement(grammarAccess.getPipelineRule());
-												}
-												setWithLastConsumed($current, "jobOrStageVar", lv_jobOrStageVar_54_1, null);
-											}
-											    |
-											lv_jobOrStageVar_54_2=Jobs
-											{
-												newLeafNode(lv_jobOrStageVar_54_2, grammarAccess.getPipelineAccess().getJobOrStageVarJobsKeyword_12_1_0_0_1());
-											}
-											{
-												if ($current==null) {
-													$current = createModelElement(grammarAccess.getPipelineRule());
-												}
-												setWithLastConsumed($current, "jobOrStageVar", lv_jobOrStageVar_54_2, null);
-											}
-										)
+											add(
+												$current,
+												"paras",
+												lv_paras_53_0,
+												"ca.mcgill.devops.pipeline.Pipeline.ParameterValue");
+											afterParserOrEnumRuleCall();
+										}
 									)
 								)
+							)*
+							))
+				{ 
+					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getConfigurationsAccess().getUnorderedGroup());
+				}
+			)
+		)|
+		(
+			{getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 11)}?=>(
+				{
+					getUnorderedGroupHelper().select(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 11);
+				}
+							({true}?=>((
+								(
+									(
+										lv_extendOrInclude_54_1=Extends
+										{
+											newLeafNode(lv_extendOrInclude_54_1, grammarAccess.getConfigurationsAccess().getExtendOrIncludeExtendsKeyword_11_0_0_0());
+										}
+										{
+											if ($current==null) {
+												$current = createModelElement(grammarAccess.getConfigurationsRule());
+											}
+											setWithLastConsumed($current, "extendOrInclude", lv_extendOrInclude_54_1, null);
+										}
+										    |
+										lv_extendOrInclude_54_2=Include
+										{
+											newLeafNode(lv_extendOrInclude_54_2, grammarAccess.getConfigurationsAccess().getExtendOrIncludeIncludeKeyword_11_0_0_1());
+										}
+										{
+											if ($current==null) {
+												$current = createModelElement(grammarAccess.getConfigurationsRule());
+											}
+											setWithLastConsumed($current, "extendOrInclude", lv_extendOrInclude_54_2, null);
+										}
+									)
+								)
+							)
+							(
 								this_BEGIN_55=RULE_BEGIN
 								{
-									newLeafNode(this_BEGIN_55, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_12_1_1());
+									newLeafNode(this_BEGIN_55, grammarAccess.getConfigurationsAccess().getBEGINTerminalRuleCall_11_1_0());
 								}
 								(
 									(
-										(
-											{
-												newCompositeNode(grammarAccess.getPipelineAccess().getStagesStageParserRuleCall_12_1_2_0_0());
+										{
+											newCompositeNode(grammarAccess.getConfigurationsAccess().getExtendedParametersParameterValueParserRuleCall_11_1_1_0());
+										}
+										lv_extendedParameters_56_0=ruleParameterValue
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getConfigurationsRule());
 											}
-											lv_stages_56_0=ruleStage
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getPipelineRule());
-												}
-												add(
-													$current,
-													"stages",
-													lv_stages_56_0,
-													"ca.mcgill.devops.pipeline.Pipeline.Stage");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)*
-									    |
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getPipelineAccess().getJobsJobParserRuleCall_12_1_2_1_0());
-											}
-											lv_jobs_57_0=ruleJob
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getPipelineRule());
-												}
-												add(
-													$current,
-													"jobs",
-													lv_jobs_57_0,
-													"ca.mcgill.devops.pipeline.Pipeline.Job");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)*
-								)
-								this_END_58=RULE_END
+											add(
+												$current,
+												"extendedParameters",
+												lv_extendedParameters_56_0,
+												"ca.mcgill.devops.pipeline.Pipeline.ParameterValue");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)+
+								this_END_57=RULE_END
 								{
-									newLeafNode(this_END_58, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_12_1_3());
+									newLeafNode(this_END_57, grammarAccess.getConfigurationsAccess().getENDTerminalRuleCall_11_1_2());
 								}
 							)
 							))
 				{ 
-					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getPipelineAccess().getUnorderedGroup());
+					getUnorderedGroupHelper().returnFromSelection(grammarAccess.getConfigurationsAccess().getUnorderedGroup());
 				}
 			)
 		)
-				)+
-				{getUnorderedGroupHelper().canLeave(grammarAccess.getPipelineAccess().getUnorderedGroup())}?
+				)*
 			)
 		)
 			{ 
-			  getUnorderedGroupHelper().leave(grammarAccess.getPipelineAccess().getUnorderedGroup());
+			  getUnorderedGroupHelper().leave(grammarAccess.getConfigurationsAccess().getUnorderedGroup());
 			}
-	)
-;
-
-// Entry rule entryRuleExtendedParameter
-entryRuleExtendedParameter returns [EObject current=null]:
-	{ newCompositeNode(grammarAccess.getExtendedParameterRule()); }
-	iv_ruleExtendedParameter=ruleExtendedParameter
-	{ $current=$iv_ruleExtendedParameter.current; }
-	EOF;
-
-// Rule ExtendedParameter
-ruleExtendedParameter returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
-	(
-		(
-			otherlv_0=Extends
-			{
-				newLeafNode(otherlv_0, grammarAccess.getExtendedParameterAccess().getExtendsKeyword_0_0());
-			}
-			(
-				this_BEGIN_1=RULE_BEGIN
-				{
-					newLeafNode(this_BEGIN_1, grammarAccess.getExtendedParameterAccess().getBEGINTerminalRuleCall_0_1_0());
-				}
-				(
-					otherlv_2=Template
-					{
-						newLeafNode(otherlv_2, grammarAccess.getExtendedParameterAccess().getTemplateKeyword_0_1_1_0());
-					}
-					(
-						(
-							lv_template_3_0=RULE_ID
-							{
-								newLeafNode(lv_template_3_0, grammarAccess.getExtendedParameterAccess().getTemplateIDTerminalRuleCall_0_1_1_1_0());
-							}
-							{
-								if ($current==null) {
-									$current = createModelElement(grammarAccess.getExtendedParameterRule());
-								}
-								setWithLastConsumed(
-									$current,
-									"template",
-									lv_template_3_0,
-									"ca.mcgill.devops.pipeline.Pipeline.ID");
-							}
-						)
-					)
-				)
-				(
-					otherlv_4=Parameters
-					{
-						newLeafNode(otherlv_4, grammarAccess.getExtendedParameterAccess().getParametersKeyword_0_1_2_0());
-					}
-					(
-						this_BEGIN_5=RULE_BEGIN
-						{
-							newLeafNode(this_BEGIN_5, grammarAccess.getExtendedParameterAccess().getBEGINTerminalRuleCall_0_1_2_1_0());
-						}
-						(
-							(
-								{
-									newCompositeNode(grammarAccess.getExtendedParameterAccess().getExtendedParameterValuesParameterValueParserRuleCall_0_1_2_1_1_0());
-								}
-								lv_extendedParameterValues_6_0=ruleParameterValue
-								{
-									if ($current==null) {
-										$current = createModelElementForParent(grammarAccess.getExtendedParameterRule());
-									}
-									add(
-										$current,
-										"extendedParameterValues",
-										lv_extendedParameterValues_6_0,
-										"ca.mcgill.devops.pipeline.Pipeline.ParameterValue");
-									afterParserOrEnumRuleCall();
-								}
-							)
-						)*
-						this_END_7=RULE_END
-						{
-							newLeafNode(this_END_7, grammarAccess.getExtendedParameterAccess().getENDTerminalRuleCall_0_1_2_1_2());
-						}
-					)
-				)
-				this_END_8=RULE_END
-				{
-					newLeafNode(this_END_8, grammarAccess.getExtendedParameterAccess().getENDTerminalRuleCall_0_1_3());
-				}
-			)
-		)
-		    |
-		(
-			otherlv_9=Include
-			{
-				newLeafNode(otherlv_9, grammarAccess.getExtendedParameterAccess().getIncludeKeyword_1_0());
-			}
-			(
-				this_BEGIN_10=RULE_BEGIN
-				{
-					newLeafNode(this_BEGIN_10, grammarAccess.getExtendedParameterAccess().getBEGINTerminalRuleCall_1_1_0());
-				}
-				(
-					(
-						{
-							newCompositeNode(grammarAccess.getExtendedParameterAccess().getExtendedParameterValuesParameterValueParserRuleCall_1_1_1_0());
-						}
-						lv_extendedParameterValues_11_0=ruleParameterValue
-						{
-							if ($current==null) {
-								$current = createModelElementForParent(grammarAccess.getExtendedParameterRule());
-							}
-							add(
-								$current,
-								"extendedParameterValues",
-								lv_extendedParameterValues_11_0,
-								"ca.mcgill.devops.pipeline.Pipeline.ParameterValue");
-							afterParserOrEnumRuleCall();
-						}
-					)
-				)+
-				this_END_12=RULE_END
-				{
-					newLeafNode(this_END_12, grammarAccess.getExtendedParameterAccess().getENDTerminalRuleCall_1_1_2());
-				}
-			)
-		)
 	)
 ;
 
@@ -1084,79 +1147,81 @@ ruleVariable returns [EObject current=null]
 }:
 	(
 		(
-			this_BEGIN_0=RULE_BEGIN
-			{
-				newLeafNode(this_BEGIN_0, grammarAccess.getVariableAccess().getBEGINTerminalRuleCall_0_0());
-			}
 			(
-				(
-					{
-						newCompositeNode(grammarAccess.getVariableAccess().getVariableValuesParameterValueParserRuleCall_0_1_0());
-					}
-					lv_variableValues_1_0=ruleParameterValue
-					{
-						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getVariableRule());
-						}
-						add(
-							$current,
-							"variableValues",
-							lv_variableValues_1_0,
-							"ca.mcgill.devops.pipeline.Pipeline.ParameterValue");
-						afterParserOrEnumRuleCall();
-					}
-				)
-			)+
-			this_END_2=RULE_END
-			{
-				newLeafNode(this_END_2, grammarAccess.getVariableAccess().getENDTerminalRuleCall_0_2());
-			}
-		)
-		    |
-		(
-			(
-				otherlv_3=HyphenMinus
+				this_BEGIN_0=RULE_BEGIN
 				{
-					newLeafNode(otherlv_3, grammarAccess.getVariableAccess().getHyphenMinusKeyword_1_0_0());
-				}
-				otherlv_4=Group
-				{
-					newLeafNode(otherlv_4, grammarAccess.getVariableAccess().getGroupKeyword_1_0_1());
+					newLeafNode(this_BEGIN_0, grammarAccess.getVariableAccess().getBEGINTerminalRuleCall_0_0_0());
 				}
 				(
 					(
+						(
+							lv_variableKey_1_0=RULE_ID
+							{
+								newLeafNode(lv_variableKey_1_0, grammarAccess.getVariableAccess().getVariableKeyIDTerminalRuleCall_0_0_1_0_0());
+							}
+							{
+								if ($current==null) {
+									$current = createModelElement(grammarAccess.getVariableRule());
+								}
+								setWithLastConsumed(
+									$current,
+									"variableKey",
+									lv_variableKey_1_0,
+									"ca.mcgill.devops.pipeline.Pipeline.ID");
+							}
+						)
+					)
+					otherlv_2=Colon
+					{
+						newLeafNode(otherlv_2, grammarAccess.getVariableAccess().getColonKeyword_0_0_1_1());
+					}
+				)
+				(
+					(
 						{
-							newCompositeNode(grammarAccess.getVariableAccess().getGroupAnyDataParserRuleCall_1_0_2_0());
+							newCompositeNode(grammarAccess.getVariableAccess().getVariableValueAnyDataParserRuleCall_0_0_2_0());
 						}
-						lv_group_5_0=ruleAnyData
+						lv_variableValue_3_0=ruleAnyData
 						{
 							if ($current==null) {
 								$current = createModelElementForParent(grammarAccess.getVariableRule());
 							}
 							set(
 								$current,
-								"group",
-								lv_group_5_0,
+								"variableValue",
+								lv_variableValue_3_0,
 								"ca.mcgill.devops.pipeline.Pipeline.AnyData");
 							afterParserOrEnumRuleCall();
 						}
 					)
 				)
-			)?
+				this_END_4=RULE_END
+				{
+					newLeafNode(this_END_4, grammarAccess.getVariableAccess().getENDTerminalRuleCall_0_0_3());
+				}
+			)
+			    |
 			(
 				(
-					otherlv_6=HyphenMinus
+					otherlv_5=HyphenMinus
 					{
-						newLeafNode(otherlv_6, grammarAccess.getVariableAccess().getHyphenMinusKeyword_1_1_0_0());
+						newLeafNode(otherlv_5, grammarAccess.getVariableAccess().getHyphenMinusKeyword_0_1_0_0());
 					}
-					otherlv_7=Name
-					{
-						newLeafNode(otherlv_7, grammarAccess.getVariableAccess().getNameKeyword_1_1_0_1());
-					}
+					(
+						otherlv_6=Name
+						{
+							newLeafNode(otherlv_6, grammarAccess.getVariableAccess().getNameKeyword_0_1_0_1_0());
+						}
+						    |
+						otherlv_7=Group
+						{
+							newLeafNode(otherlv_7, grammarAccess.getVariableAccess().getGroupKeyword_0_1_0_1_1());
+						}
+					)
 					(
 						(
 							{
-								newCompositeNode(grammarAccess.getVariableAccess().getNameAnyDataParserRuleCall_1_1_0_2_0());
+								newCompositeNode(grammarAccess.getVariableAccess().getNameAnyDataParserRuleCall_0_1_0_2_0());
 							}
 							lv_name_8_0=ruleAnyData
 							{
@@ -1176,17 +1241,17 @@ ruleVariable returns [EObject current=null]
 				(
 					this_BEGIN_9=RULE_BEGIN
 					{
-						newLeafNode(this_BEGIN_9, grammarAccess.getVariableAccess().getBEGINTerminalRuleCall_1_1_1_0());
+						newLeafNode(this_BEGIN_9, grammarAccess.getVariableAccess().getBEGINTerminalRuleCall_0_1_1_0());
 					}
 					(
 						otherlv_10=Value
 						{
-							newLeafNode(otherlv_10, grammarAccess.getVariableAccess().getValueKeyword_1_1_1_1_0());
+							newLeafNode(otherlv_10, grammarAccess.getVariableAccess().getValueKeyword_0_1_1_1_0());
 						}
 						(
 							(
 								{
-									newCompositeNode(grammarAccess.getVariableAccess().getValueAnyDataParserRuleCall_1_1_1_1_1_0());
+									newCompositeNode(grammarAccess.getVariableAccess().getValueAnyDataParserRuleCall_0_1_1_1_1_0());
 								}
 								lv_value_11_0=ruleAnyData
 								{
@@ -1206,13 +1271,13 @@ ruleVariable returns [EObject current=null]
 					(
 						otherlv_12=Readonly
 						{
-							newLeafNode(otherlv_12, grammarAccess.getVariableAccess().getReadonlyKeyword_1_1_1_2_0());
+							newLeafNode(otherlv_12, grammarAccess.getVariableAccess().getReadonlyKeyword_0_1_1_2_0());
 						}
 						(
 							(
 								lv_readonly_13_0=RULE_ID
 								{
-									newLeafNode(lv_readonly_13_0, grammarAccess.getVariableAccess().getReadonlyIDTerminalRuleCall_1_1_1_2_1_0());
+									newLeafNode(lv_readonly_13_0, grammarAccess.getVariableAccess().getReadonlyIDTerminalRuleCall_0_1_1_2_1_0());
 								}
 								{
 									if ($current==null) {
@@ -1229,10 +1294,72 @@ ruleVariable returns [EObject current=null]
 					)?
 					this_END_14=RULE_END
 					{
-						newLeafNode(this_END_14, grammarAccess.getVariableAccess().getENDTerminalRuleCall_1_1_1_3());
+						newLeafNode(this_END_14, grammarAccess.getVariableAccess().getENDTerminalRuleCall_0_1_1_3());
+					}
+				)?
+			)
+		)
+		    |
+		(
+			this_BEGIN_15=RULE_BEGIN
+			{
+				newLeafNode(this_BEGIN_15, grammarAccess.getVariableAccess().getBEGINTerminalRuleCall_1_0());
+			}
+			(
+				(
+					lv_name_16_0=RULE_ID
+					{
+						newLeafNode(lv_name_16_0, grammarAccess.getVariableAccess().getNameIDTerminalRuleCall_1_1_0());
+					}
+					{
+						if ($current==null) {
+							$current = createModelElement(grammarAccess.getVariableRule());
+						}
+						setWithLastConsumed(
+							$current,
+							"name",
+							lv_name_16_0,
+							"ca.mcgill.devops.pipeline.Pipeline.ID");
 					}
 				)
 			)
+			otherlv_17=Colon
+			{
+				newLeafNode(otherlv_17, grammarAccess.getVariableAccess().getColonKeyword_1_2());
+			}
+			(
+				this_BEGIN_18=RULE_BEGIN
+				{
+					newLeafNode(this_BEGIN_18, grammarAccess.getVariableAccess().getBEGINTerminalRuleCall_1_3_0());
+				}
+				(
+					(
+						{
+							newCompositeNode(grammarAccess.getVariableAccess().getVariablesKeyValueParserRuleCall_1_3_1_0());
+						}
+						lv_variables_19_0=ruleKeyValue
+						{
+							if ($current==null) {
+								$current = createModelElementForParent(grammarAccess.getVariableRule());
+							}
+							add(
+								$current,
+								"variables",
+								lv_variables_19_0,
+								"ca.mcgill.devops.pipeline.Pipeline.KeyValue");
+							afterParserOrEnumRuleCall();
+						}
+					)
+				)+
+				this_END_20=RULE_END
+				{
+					newLeafNode(this_END_20, grammarAccess.getVariableAccess().getENDTerminalRuleCall_1_3_2());
+				}
+			)
+			this_END_21=RULE_END
+			{
+				newLeafNode(this_END_21, grammarAccess.getVariableAccess().getENDTerminalRuleCall_1_4());
+			}
 		)
 	)
 ;
@@ -1390,15 +1517,15 @@ ruleResource returns [EObject current=null]
 	)
 ;
 
-// Entry rule entryRulePipelineParameter
-entryRulePipelineParameter returns [EObject current=null]:
-	{ newCompositeNode(grammarAccess.getPipelineParameterRule()); }
-	iv_rulePipelineParameter=rulePipelineParameter
-	{ $current=$iv_rulePipelineParameter.current; }
+// Entry rule entryRuleEvent
+entryRuleEvent returns [EObject current=null]:
+	{ newCompositeNode(grammarAccess.getEventRule()); }
+	iv_ruleEvent=ruleEvent
+	{ $current=$iv_ruleEvent.current; }
 	EOF;
 
-// Rule PipelineParameter
-rulePipelineParameter returns [EObject current=null]
+// Rule Event
+ruleEvent returns [EObject current=null]
 @init {
 	enterRule();
 }
@@ -1409,117 +1536,940 @@ rulePipelineParameter returns [EObject current=null]
 		(
 			(
 				(
-					lv_name_0_0=Parameters
-					{
-						newLeafNode(lv_name_0_0, grammarAccess.getPipelineParameterAccess().getNameParametersKeyword_0_0_0());
-					}
-					{
-						if ($current==null) {
-							$current = createModelElement(grammarAccess.getPipelineParameterRule());
+					(
+						{
+							newCompositeNode(grammarAccess.getEventAccess().getNamePipelineEventKeywordEnumRuleCall_0_0_0_0());
 						}
-						setWithLastConsumed($current, "name", lv_name_0_0, "parameters:");
-					}
+						lv_name_0_0=rulePipelineEventKeyword
+						{
+							if ($current==null) {
+								$current = createModelElementForParent(grammarAccess.getEventRule());
+							}
+							set(
+								$current,
+								"name",
+								lv_name_0_0,
+								"ca.mcgill.devops.pipeline.Pipeline.PipelineEventKeyword");
+							afterParserOrEnumRuleCall();
+						}
+					)
+				)
+				    |
+				(
+					(
+						(
+							lv_simpleEvent_1_0=RULE_ID
+							{
+								newLeafNode(lv_simpleEvent_1_0, grammarAccess.getEventAccess().getSimpleEventIDTerminalRuleCall_0_0_1_0_0());
+							}
+							{
+								if ($current==null) {
+									$current = createModelElement(grammarAccess.getEventRule());
+								}
+								setWithLastConsumed(
+									$current,
+									"simpleEvent",
+									lv_simpleEvent_1_0,
+									"ca.mcgill.devops.pipeline.Pipeline.ID");
+							}
+						)
+					)
+					(
+						otherlv_2=Colon
+						{
+							newLeafNode(otherlv_2, grammarAccess.getEventAccess().getColonKeyword_0_0_1_1());
+						}
+					)?
 				)
 			)
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getPipelineParameterAccess().getParameterValuesParameterValueParserRuleCall_0_1_0());
+						newCompositeNode(grammarAccess.getEventAccess().getIncludedBranchesBranchParserRuleCall_0_1_0());
 					}
-					lv_parameterValues_1_0=ruleParameterValue
+					lv_includedBranches_3_0=ruleBranch
 					{
 						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getPipelineParameterRule());
+							$current = createModelElementForParent(grammarAccess.getEventRule());
 						}
 						add(
 							$current,
-							"parameterValues",
-							lv_parameterValues_1_0,
-							"ca.mcgill.devops.pipeline.Pipeline.ParameterValue");
+							"includedBranches",
+							lv_includedBranches_3_0,
+							"ca.mcgill.devops.pipeline.Pipeline.Branch");
 						afterParserOrEnumRuleCall();
 					}
 				)
-			)+
+			)*
+			(
+				this_BEGIN_4=RULE_BEGIN
+				{
+					newLeafNode(this_BEGIN_4, grammarAccess.getEventAccess().getBEGINTerminalRuleCall_0_2_0());
+				}
+				(
+					(
+						otherlv_5=Types
+						{
+							newLeafNode(otherlv_5, grammarAccess.getEventAccess().getTypesKeyword_0_2_1_0_0());
+						}
+						(
+							(
+								{
+									newCompositeNode(grammarAccess.getEventAccess().getActivitiesActivityParserRuleCall_0_2_1_0_1_0());
+								}
+								lv_activities_6_0=ruleActivity
+								{
+									if ($current==null) {
+										$current = createModelElementForParent(grammarAccess.getEventRule());
+									}
+									add(
+										$current,
+										"activities",
+										lv_activities_6_0,
+										"ca.mcgill.devops.pipeline.Pipeline.Activity");
+									afterParserOrEnumRuleCall();
+								}
+							)
+						)
+					)
+					    |
+					(
+						this_BEGIN_7=RULE_BEGIN
+						{
+							newLeafNode(this_BEGIN_7, grammarAccess.getEventAccess().getBEGINTerminalRuleCall_0_2_1_1_0());
+						}
+						(
+							(
+								{
+									newCompositeNode(grammarAccess.getEventAccess().getActivitiesActivityParserRuleCall_0_2_1_1_1_0());
+								}
+								lv_activities_8_0=ruleActivity
+								{
+									if ($current==null) {
+										$current = createModelElementForParent(grammarAccess.getEventRule());
+									}
+									add(
+										$current,
+										"activities",
+										lv_activities_8_0,
+										"ca.mcgill.devops.pipeline.Pipeline.Activity");
+									afterParserOrEnumRuleCall();
+								}
+							)
+						)
+						this_END_9=RULE_END
+						{
+							newLeafNode(this_END_9, grammarAccess.getEventAccess().getENDTerminalRuleCall_0_2_1_1_2());
+						}
+					)
+				)?
+				(
+					(
+						{ 
+						  getUnorderedGroupHelper().enter(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2());
+						}
+						(
+							(
+					(
+						{getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 0)}?=>(
+							{
+								getUnorderedGroupHelper().select(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 0);
+							}
+										({true}?=>(otherlv_11=Batch
+										{
+											newLeafNode(otherlv_11, grammarAccess.getEventAccess().getBatchKeyword_0_2_2_0_0());
+										}
+										(
+											(
+												lv_batch_12_0=RULE_ID
+												{
+													newLeafNode(lv_batch_12_0, grammarAccess.getEventAccess().getBatchIDTerminalRuleCall_0_2_2_0_1_0());
+												}
+												{
+													if ($current==null) {
+														$current = createModelElement(grammarAccess.getEventRule());
+													}
+													setWithLastConsumed(
+														$current,
+														"batch",
+														lv_batch_12_0,
+														"ca.mcgill.devops.pipeline.Pipeline.ID");
+												}
+											)
+										)
+										))
+							{ 
+								getUnorderedGroupHelper().returnFromSelection(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2());
+							}
+						)
+					)|
+					(
+						{getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 1)}?=>(
+							{
+								getUnorderedGroupHelper().select(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 1);
+							}
+										({true}?=>(otherlv_13=AutoCancel
+										{
+											newLeafNode(otherlv_13, grammarAccess.getEventAccess().getAutoCancelKeyword_0_2_2_1_0());
+										}
+										(
+											(
+												lv_autoCancel_14_0=RULE_ID
+												{
+													newLeafNode(lv_autoCancel_14_0, grammarAccess.getEventAccess().getAutoCancelIDTerminalRuleCall_0_2_2_1_1_0());
+												}
+												{
+													if ($current==null) {
+														$current = createModelElement(grammarAccess.getEventRule());
+													}
+													setWithLastConsumed(
+														$current,
+														"autoCancel",
+														lv_autoCancel_14_0,
+														"ca.mcgill.devops.pipeline.Pipeline.ID");
+												}
+											)
+										)
+										))
+							{ 
+								getUnorderedGroupHelper().returnFromSelection(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2());
+							}
+						)
+					)|
+					(
+						{getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 2)}?=>(
+							{
+								getUnorderedGroupHelper().select(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 2);
+							}
+										({true}?=>(otherlv_15=Workflows
+										{
+											newLeafNode(otherlv_15, grammarAccess.getEventAccess().getWorkflowsKeyword_0_2_2_2_0());
+										}
+										(
+											(
+												{
+													newCompositeNode(grammarAccess.getEventAccess().getWorkflowsArrayListParserRuleCall_0_2_2_2_1_0());
+												}
+												lv_workflows_16_0=ruleArrayList
+												{
+													if ($current==null) {
+														$current = createModelElementForParent(grammarAccess.getEventRule());
+													}
+													set(
+														$current,
+														"workflows",
+														lv_workflows_16_0,
+														"ca.mcgill.devops.pipeline.Pipeline.ArrayList");
+													afterParserOrEnumRuleCall();
+												}
+											)
+										)
+										))
+							{ 
+								getUnorderedGroupHelper().returnFromSelection(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2());
+							}
+						)
+					)|
+					(
+						{getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 3)}?=>(
+							{
+								getUnorderedGroupHelper().select(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 3);
+							}
+										({true}?=>(otherlv_17=Drafts
+										{
+											newLeafNode(otherlv_17, grammarAccess.getEventAccess().getDraftsKeyword_0_2_2_3_0());
+										}
+										(
+											(
+												lv_drafts_18_0=RULE_ID
+												{
+													newLeafNode(lv_drafts_18_0, grammarAccess.getEventAccess().getDraftsIDTerminalRuleCall_0_2_2_3_1_0());
+												}
+												{
+													if ($current==null) {
+														$current = createModelElement(grammarAccess.getEventRule());
+													}
+													setWithLastConsumed(
+														$current,
+														"drafts",
+														lv_drafts_18_0,
+														"ca.mcgill.devops.pipeline.Pipeline.ID");
+												}
+											)
+										)
+										))
+							{ 
+								getUnorderedGroupHelper().returnFromSelection(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2());
+							}
+						)
+					)|
+					(
+						{getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 4)}?=>(
+							{
+								getUnorderedGroupHelper().select(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 4);
+							}
+										({true}?=>(otherlv_19=Branches
+										{
+											newLeafNode(otherlv_19, grammarAccess.getEventAccess().getBranchesKeyword_0_2_2_4_0());
+										}
+										(
+											(
+												(
+													(
+														{
+															newCompositeNode(grammarAccess.getEventAccess().getIncludedBranchesBranchParserRuleCall_0_2_2_4_1_0_0_0());
+														}
+														lv_includedBranches_20_0=ruleBranch
+														{
+															if ($current==null) {
+																$current = createModelElementForParent(grammarAccess.getEventRule());
+															}
+															add(
+																$current,
+																"includedBranches",
+																lv_includedBranches_20_0,
+																"ca.mcgill.devops.pipeline.Pipeline.Branch");
+															afterParserOrEnumRuleCall();
+														}
+													)
+												)*
+												    |
+												(
+													otherlv_21=LeftSquareBracket
+													{
+														newLeafNode(otherlv_21, grammarAccess.getEventAccess().getLeftSquareBracketKeyword_0_2_2_4_1_0_1_0());
+													}
+													(
+														(
+															{
+																newCompositeNode(grammarAccess.getEventAccess().getIncludedBranchesBranchParserRuleCall_0_2_2_4_1_0_1_1_0());
+															}
+															lv_includedBranches_22_0=ruleBranch
+															{
+																if ($current==null) {
+																	$current = createModelElementForParent(grammarAccess.getEventRule());
+																}
+																add(
+																	$current,
+																	"includedBranches",
+																	lv_includedBranches_22_0,
+																	"ca.mcgill.devops.pipeline.Pipeline.Branch");
+																afterParserOrEnumRuleCall();
+															}
+														)
+													)
+													(
+														otherlv_23=Comma
+														{
+															newLeafNode(otherlv_23, grammarAccess.getEventAccess().getCommaKeyword_0_2_2_4_1_0_1_2_0());
+														}
+														(
+															(
+																{
+																	newCompositeNode(grammarAccess.getEventAccess().getIncludedBranchesBranchParserRuleCall_0_2_2_4_1_0_1_2_1_0());
+																}
+																lv_includedBranches_24_0=ruleBranch
+																{
+																	if ($current==null) {
+																		$current = createModelElementForParent(grammarAccess.getEventRule());
+																	}
+																	add(
+																		$current,
+																		"includedBranches",
+																		lv_includedBranches_24_0,
+																		"ca.mcgill.devops.pipeline.Pipeline.Branch");
+																	afterParserOrEnumRuleCall();
+																}
+															)
+														)
+													)*
+													otherlv_25=RightSquareBracket
+													{
+														newLeafNode(otherlv_25, grammarAccess.getEventAccess().getRightSquareBracketKeyword_0_2_2_4_1_0_1_3());
+													}
+												)
+											)
+											    |
+											(
+												this_BEGIN_26=RULE_BEGIN
+												{
+													newLeafNode(this_BEGIN_26, grammarAccess.getEventAccess().getBEGINTerminalRuleCall_0_2_2_4_1_1_0());
+												}
+												(
+													(
+														{
+															newCompositeNode(grammarAccess.getEventAccess().getIncludedBranchesBranchParserRuleCall_0_2_2_4_1_1_1_0());
+														}
+														lv_includedBranches_27_0=ruleBranch
+														{
+															if ($current==null) {
+																$current = createModelElementForParent(grammarAccess.getEventRule());
+															}
+															add(
+																$current,
+																"includedBranches",
+																lv_includedBranches_27_0,
+																"ca.mcgill.devops.pipeline.Pipeline.Branch");
+															afterParserOrEnumRuleCall();
+														}
+													)
+												)*
+												(
+													otherlv_28=Include
+													{
+														newLeafNode(otherlv_28, grammarAccess.getEventAccess().getIncludeKeyword_0_2_2_4_1_1_2_0());
+													}
+													(
+														(
+															{
+																newCompositeNode(grammarAccess.getEventAccess().getIncludedBranchesBranchParserRuleCall_0_2_2_4_1_1_2_1_0());
+															}
+															lv_includedBranches_29_0=ruleBranch
+															{
+																if ($current==null) {
+																	$current = createModelElementForParent(grammarAccess.getEventRule());
+																}
+																add(
+																	$current,
+																	"includedBranches",
+																	lv_includedBranches_29_0,
+																	"ca.mcgill.devops.pipeline.Pipeline.Branch");
+																afterParserOrEnumRuleCall();
+															}
+														)
+													)*
+												)?
+												(
+													otherlv_30=Exclude
+													{
+														newLeafNode(otherlv_30, grammarAccess.getEventAccess().getExcludeKeyword_0_2_2_4_1_1_3_0());
+													}
+													(
+														(
+															{
+																newCompositeNode(grammarAccess.getEventAccess().getExcludedBranchesBranchParserRuleCall_0_2_2_4_1_1_3_1_0());
+															}
+															lv_excludedBranches_31_0=ruleBranch
+															{
+																if ($current==null) {
+																	$current = createModelElementForParent(grammarAccess.getEventRule());
+																}
+																add(
+																	$current,
+																	"excludedBranches",
+																	lv_excludedBranches_31_0,
+																	"ca.mcgill.devops.pipeline.Pipeline.Branch");
+																afterParserOrEnumRuleCall();
+															}
+														)
+													)*
+												)?
+												this_END_32=RULE_END
+												{
+													newLeafNode(this_END_32, grammarAccess.getEventAccess().getENDTerminalRuleCall_0_2_2_4_1_1_4());
+												}
+											)
+										)
+										))
+							{ 
+								getUnorderedGroupHelper().returnFromSelection(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2());
+							}
+						)
+					)|
+					(
+						{getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 5)}?=>(
+							{
+								getUnorderedGroupHelper().select(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 5);
+							}
+										({true}?=>(otherlv_33=BranchesIgnore
+										{
+											newLeafNode(otherlv_33, grammarAccess.getEventAccess().getBranchesIgnoreKeyword_0_2_2_5_0());
+										}
+										(
+											(
+												(
+													(
+														{
+															newCompositeNode(grammarAccess.getEventAccess().getExcludedBranchesBranchParserRuleCall_0_2_2_5_1_0_0_0());
+														}
+														lv_excludedBranches_34_0=ruleBranch
+														{
+															if ($current==null) {
+																$current = createModelElementForParent(grammarAccess.getEventRule());
+															}
+															add(
+																$current,
+																"excludedBranches",
+																lv_excludedBranches_34_0,
+																"ca.mcgill.devops.pipeline.Pipeline.Branch");
+															afterParserOrEnumRuleCall();
+														}
+													)
+												)*
+												    |
+												(
+													otherlv_35=LeftSquareBracket
+													{
+														newLeafNode(otherlv_35, grammarAccess.getEventAccess().getLeftSquareBracketKeyword_0_2_2_5_1_0_1_0());
+													}
+													(
+														(
+															{
+																newCompositeNode(grammarAccess.getEventAccess().getExcludedBranchesBranchParserRuleCall_0_2_2_5_1_0_1_1_0());
+															}
+															lv_excludedBranches_36_0=ruleBranch
+															{
+																if ($current==null) {
+																	$current = createModelElementForParent(grammarAccess.getEventRule());
+																}
+																add(
+																	$current,
+																	"excludedBranches",
+																	lv_excludedBranches_36_0,
+																	"ca.mcgill.devops.pipeline.Pipeline.Branch");
+																afterParserOrEnumRuleCall();
+															}
+														)
+													)
+													(
+														otherlv_37=Comma
+														{
+															newLeafNode(otherlv_37, grammarAccess.getEventAccess().getCommaKeyword_0_2_2_5_1_0_1_2_0());
+														}
+														(
+															(
+																{
+																	newCompositeNode(grammarAccess.getEventAccess().getExcludedBranchesBranchParserRuleCall_0_2_2_5_1_0_1_2_1_0());
+																}
+																lv_excludedBranches_38_0=ruleBranch
+																{
+																	if ($current==null) {
+																		$current = createModelElementForParent(grammarAccess.getEventRule());
+																	}
+																	add(
+																		$current,
+																		"excludedBranches",
+																		lv_excludedBranches_38_0,
+																		"ca.mcgill.devops.pipeline.Pipeline.Branch");
+																	afterParserOrEnumRuleCall();
+																}
+															)
+														)
+													)*
+													otherlv_39=RightSquareBracket
+													{
+														newLeafNode(otherlv_39, grammarAccess.getEventAccess().getRightSquareBracketKeyword_0_2_2_5_1_0_1_3());
+													}
+												)
+											)
+											    |
+											(
+												this_BEGIN_40=RULE_BEGIN
+												{
+													newLeafNode(this_BEGIN_40, grammarAccess.getEventAccess().getBEGINTerminalRuleCall_0_2_2_5_1_1_0());
+												}
+												(
+													(
+														{
+															newCompositeNode(grammarAccess.getEventAccess().getExcludedBranchesBranchParserRuleCall_0_2_2_5_1_1_1_0());
+														}
+														lv_excludedBranches_41_0=ruleBranch
+														{
+															if ($current==null) {
+																$current = createModelElementForParent(grammarAccess.getEventRule());
+															}
+															add(
+																$current,
+																"excludedBranches",
+																lv_excludedBranches_41_0,
+																"ca.mcgill.devops.pipeline.Pipeline.Branch");
+															afterParserOrEnumRuleCall();
+														}
+													)
+												)*
+												this_END_42=RULE_END
+												{
+													newLeafNode(this_END_42, grammarAccess.getEventAccess().getENDTerminalRuleCall_0_2_2_5_1_1_2());
+												}
+											)
+										)
+										))
+							{ 
+								getUnorderedGroupHelper().returnFromSelection(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2());
+							}
+						)
+					)|
+					(
+						{getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 6)}?=>(
+							{
+								getUnorderedGroupHelper().select(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 6);
+							}
+										({true}?=>(otherlv_43=Paths
+										{
+											newLeafNode(otherlv_43, grammarAccess.getEventAccess().getPathsKeyword_0_2_2_6_0());
+										}
+										(
+											(
+												{
+													newCompositeNode(grammarAccess.getEventAccess().getIncludedPathsHyphenValuesParserRuleCall_0_2_2_6_1_0());
+												}
+												lv_includedPaths_44_0=ruleHyphenValues
+												{
+													if ($current==null) {
+														$current = createModelElementForParent(grammarAccess.getEventRule());
+													}
+													set(
+														$current,
+														"includedPaths",
+														lv_includedPaths_44_0,
+														"ca.mcgill.devops.pipeline.Pipeline.HyphenValues");
+													afterParserOrEnumRuleCall();
+												}
+											)
+										)?
+										(
+											this_BEGIN_45=RULE_BEGIN
+											{
+												newLeafNode(this_BEGIN_45, grammarAccess.getEventAccess().getBEGINTerminalRuleCall_0_2_2_6_2_0());
+											}
+											(
+												otherlv_46=Include
+												{
+													newLeafNode(otherlv_46, grammarAccess.getEventAccess().getIncludeKeyword_0_2_2_6_2_1_0());
+												}
+												(
+													(
+														{
+															newCompositeNode(grammarAccess.getEventAccess().getIncludedPathsHyphenValuesParserRuleCall_0_2_2_6_2_1_1_0());
+														}
+														lv_includedPaths_47_0=ruleHyphenValues
+														{
+															if ($current==null) {
+																$current = createModelElementForParent(grammarAccess.getEventRule());
+															}
+															set(
+																$current,
+																"includedPaths",
+																lv_includedPaths_47_0,
+																"ca.mcgill.devops.pipeline.Pipeline.HyphenValues");
+															afterParserOrEnumRuleCall();
+														}
+													)
+												)
+											)?
+											(
+												otherlv_48=Exclude
+												{
+													newLeafNode(otherlv_48, grammarAccess.getEventAccess().getExcludeKeyword_0_2_2_6_2_2_0());
+												}
+												(
+													(
+														{
+															newCompositeNode(grammarAccess.getEventAccess().getExcludedPathsHyphenValuesParserRuleCall_0_2_2_6_2_2_1_0());
+														}
+														lv_excludedPaths_49_0=ruleHyphenValues
+														{
+															if ($current==null) {
+																$current = createModelElementForParent(grammarAccess.getEventRule());
+															}
+															set(
+																$current,
+																"excludedPaths",
+																lv_excludedPaths_49_0,
+																"ca.mcgill.devops.pipeline.Pipeline.HyphenValues");
+															afterParserOrEnumRuleCall();
+														}
+													)
+												)
+											)?
+											this_END_50=RULE_END
+											{
+												newLeafNode(this_END_50, grammarAccess.getEventAccess().getENDTerminalRuleCall_0_2_2_6_2_3());
+											}
+										)
+										))
+							{ 
+								getUnorderedGroupHelper().returnFromSelection(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2());
+							}
+						)
+					)|
+					(
+						{getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 7)}?=>(
+							{
+								getUnorderedGroupHelper().select(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 7);
+							}
+										({true}?=>(otherlv_51=PathsIgnore
+										{
+											newLeafNode(otherlv_51, grammarAccess.getEventAccess().getPathsIgnoreKeyword_0_2_2_7_0());
+										}
+										(
+											(
+												{
+													newCompositeNode(grammarAccess.getEventAccess().getExcludedPathsHyphenValuesParserRuleCall_0_2_2_7_1_0());
+												}
+												lv_excludedPaths_52_0=ruleHyphenValues
+												{
+													if ($current==null) {
+														$current = createModelElementForParent(grammarAccess.getEventRule());
+													}
+													set(
+														$current,
+														"excludedPaths",
+														lv_excludedPaths_52_0,
+														"ca.mcgill.devops.pipeline.Pipeline.HyphenValues");
+													afterParserOrEnumRuleCall();
+												}
+											)
+										)
+										))
+							{ 
+								getUnorderedGroupHelper().returnFromSelection(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2());
+							}
+						)
+					)|
+					(
+						{getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 8)}?=>(
+							{
+								getUnorderedGroupHelper().select(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 8);
+							}
+										({true}?=>(otherlv_53=Tags
+										{
+											newLeafNode(otherlv_53, grammarAccess.getEventAccess().getTagsKeyword_0_2_2_8_0());
+										}
+										(
+											(
+												{
+													newCompositeNode(grammarAccess.getEventAccess().getIncludedTagsHyphenValuesParserRuleCall_0_2_2_8_1_0());
+												}
+												lv_includedTags_54_0=ruleHyphenValues
+												{
+													if ($current==null) {
+														$current = createModelElementForParent(grammarAccess.getEventRule());
+													}
+													set(
+														$current,
+														"includedTags",
+														lv_includedTags_54_0,
+														"ca.mcgill.devops.pipeline.Pipeline.HyphenValues");
+													afterParserOrEnumRuleCall();
+												}
+											)
+										)?
+										(
+											this_BEGIN_55=RULE_BEGIN
+											{
+												newLeafNode(this_BEGIN_55, grammarAccess.getEventAccess().getBEGINTerminalRuleCall_0_2_2_8_2_0());
+											}
+											(
+												otherlv_56=Include
+												{
+													newLeafNode(otherlv_56, grammarAccess.getEventAccess().getIncludeKeyword_0_2_2_8_2_1_0());
+												}
+												(
+													(
+														{
+															newCompositeNode(grammarAccess.getEventAccess().getIncludedTagsHyphenValuesParserRuleCall_0_2_2_8_2_1_1_0());
+														}
+														lv_includedTags_57_0=ruleHyphenValues
+														{
+															if ($current==null) {
+																$current = createModelElementForParent(grammarAccess.getEventRule());
+															}
+															set(
+																$current,
+																"includedTags",
+																lv_includedTags_57_0,
+																"ca.mcgill.devops.pipeline.Pipeline.HyphenValues");
+															afterParserOrEnumRuleCall();
+														}
+													)
+												)
+											)?
+											(
+												otherlv_58=Exclude
+												{
+													newLeafNode(otherlv_58, grammarAccess.getEventAccess().getExcludeKeyword_0_2_2_8_2_2_0());
+												}
+												(
+													(
+														{
+															newCompositeNode(grammarAccess.getEventAccess().getExcludedTagsHyphenValuesParserRuleCall_0_2_2_8_2_2_1_0());
+														}
+														lv_excludedTags_59_0=ruleHyphenValues
+														{
+															if ($current==null) {
+																$current = createModelElementForParent(grammarAccess.getEventRule());
+															}
+															set(
+																$current,
+																"excludedTags",
+																lv_excludedTags_59_0,
+																"ca.mcgill.devops.pipeline.Pipeline.HyphenValues");
+															afterParserOrEnumRuleCall();
+														}
+													)
+												)
+											)?
+											this_END_60=RULE_END
+											{
+												newLeafNode(this_END_60, grammarAccess.getEventAccess().getENDTerminalRuleCall_0_2_2_8_2_3());
+											}
+										)
+										))
+							{ 
+								getUnorderedGroupHelper().returnFromSelection(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2());
+							}
+						)
+					)|
+					(
+						{getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 9)}?=>(
+							{
+								getUnorderedGroupHelper().select(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 9);
+							}
+										({true}?=>(otherlv_61=TagsIgnore
+										{
+											newLeafNode(otherlv_61, grammarAccess.getEventAccess().getTagsIgnoreKeyword_0_2_2_9_0());
+										}
+										(
+											(
+												{
+													newCompositeNode(grammarAccess.getEventAccess().getExcludedTagsHyphenValuesParserRuleCall_0_2_2_9_1_0());
+												}
+												lv_excludedTags_62_0=ruleHyphenValues
+												{
+													if ($current==null) {
+														$current = createModelElementForParent(grammarAccess.getEventRule());
+													}
+													set(
+														$current,
+														"excludedTags",
+														lv_excludedTags_62_0,
+														"ca.mcgill.devops.pipeline.Pipeline.HyphenValues");
+													afterParserOrEnumRuleCall();
+												}
+											)
+										)
+										))
+							{ 
+								getUnorderedGroupHelper().returnFromSelection(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2());
+							}
+						)
+					)
+							)*
+						)
+					)
+						{ 
+						  getUnorderedGroupHelper().leave(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2());
+						}
+				)
+				this_END_63=RULE_END
+				{
+					newLeafNode(this_END_63, grammarAccess.getEventAccess().getENDTerminalRuleCall_0_2_3());
+				}
+			)?
 		)
 		    |
 		(
 			(
 				(
 					(
-						lv_name_2_1=Default
-						{
-							newLeafNode(lv_name_2_1, grammarAccess.getPipelineParameterAccess().getNameDefaultKeyword_1_0_0_0());
-						}
-						{
-							if ($current==null) {
-								$current = createModelElement(grammarAccess.getPipelineParameterRule());
+						(
+							lv_scheduleName_64_1=Schedules
+							{
+								newLeafNode(lv_scheduleName_64_1, grammarAccess.getEventAccess().getScheduleNameSchedulesKeyword_1_0_0_0_0());
 							}
-							setWithLastConsumed($current, "name", lv_name_2_1, null);
-						}
-						    |
-						lv_name_2_2=Executors
-						{
-							newLeafNode(lv_name_2_2, grammarAccess.getPipelineParameterAccess().getNameExecutorsKeyword_1_0_0_1());
-						}
-						{
-							if ($current==null) {
-								$current = createModelElement(grammarAccess.getPipelineParameterRule());
+							{
+								if ($current==null) {
+									$current = createModelElement(grammarAccess.getEventRule());
+								}
+								setWithLastConsumed($current, "scheduleName", lv_scheduleName_64_1, null);
 							}
-							setWithLastConsumed($current, "name", lv_name_2_2, null);
-						}
-						    |
-						lv_name_2_3=Orbs
-						{
-							newLeafNode(lv_name_2_3, grammarAccess.getPipelineParameterAccess().getNameOrbsKeyword_1_0_0_2());
-						}
-						{
-							if ($current==null) {
-								$current = createModelElement(grammarAccess.getPipelineParameterRule());
+							    |
+							lv_scheduleName_64_2=Schedule
+							{
+								newLeafNode(lv_scheduleName_64_2, grammarAccess.getEventAccess().getScheduleNameScheduleKeyword_1_0_0_0_1());
 							}
-							setWithLastConsumed($current, "name", lv_name_2_3, null);
-						}
-						    |
-						lv_name_2_4=Commands
-						{
-							newLeafNode(lv_name_2_4, grammarAccess.getPipelineParameterAccess().getNameCommandsKeyword_1_0_0_3());
-						}
-						{
-							if ($current==null) {
-								$current = createModelElement(grammarAccess.getPipelineParameterRule());
+							{
+								if ($current==null) {
+									$current = createModelElement(grammarAccess.getEventRule());
+								}
+								setWithLastConsumed($current, "scheduleName", lv_scheduleName_64_2, null);
 							}
-							setWithLastConsumed($current, "name", lv_name_2_4, null);
-						}
+						)
 					)
 				)
-			)
-			(
-				this_BEGIN_3=RULE_BEGIN
-				{
-					newLeafNode(this_BEGIN_3, grammarAccess.getPipelineParameterAccess().getBEGINTerminalRuleCall_1_1_0());
-				}
 				(
 					(
 						{
-							newCompositeNode(grammarAccess.getPipelineParameterAccess().getParameterValuesParameterValueParserRuleCall_1_1_1_0());
+							newCompositeNode(grammarAccess.getEventAccess().getTriggerSchedulesTriggerScheduleParserRuleCall_1_0_1_0());
 						}
-						lv_parameterValues_4_0=ruleParameterValue
+						lv_triggerSchedules_65_0=ruleTriggerSchedule
 						{
 							if ($current==null) {
-								$current = createModelElementForParent(grammarAccess.getPipelineParameterRule());
+								$current = createModelElementForParent(grammarAccess.getEventRule());
 							}
 							add(
 								$current,
-								"parameterValues",
-								lv_parameterValues_4_0,
-								"ca.mcgill.devops.pipeline.Pipeline.ParameterValue");
+								"triggerSchedules",
+								lv_triggerSchedules_65_0,
+								"ca.mcgill.devops.pipeline.Pipeline.TriggerSchedule");
 							afterParserOrEnumRuleCall();
 						}
 					)
-				)+
-				this_END_5=RULE_END
-				{
-					newLeafNode(this_END_5, grammarAccess.getPipelineParameterAccess().getENDTerminalRuleCall_1_1_2());
-				}
+				)*
+			)
+			    |
+			(
+				(
+					(
+						(
+							lv_workflowType_66_0=Workflow_call
+							{
+								newLeafNode(lv_workflowType_66_0, grammarAccess.getEventAccess().getWorkflowTypeWorkflow_callKeyword_1_1_0_0_0());
+							}
+							{
+								if ($current==null) {
+									$current = createModelElement(grammarAccess.getEventRule());
+								}
+								setWithLastConsumed($current, "workflowType", lv_workflowType_66_0, "workflow_call:");
+							}
+						)
+					)
+					    |
+					otherlv_67=Workflow_dispatch
+					{
+						newLeafNode(otherlv_67, grammarAccess.getEventAccess().getWorkflow_dispatchKeyword_1_1_0_1());
+					}
+				)
+				(
+					this_BEGIN_68=RULE_BEGIN
+					{
+						newLeafNode(this_BEGIN_68, grammarAccess.getEventAccess().getBEGINTerminalRuleCall_1_1_1_0());
+					}
+					(
+						(
+							{
+								newCompositeNode(grammarAccess.getEventAccess().getWorkFlowActivitiesActivityParserRuleCall_1_1_1_1_0());
+							}
+							lv_workFlowActivities_69_0=ruleActivity
+							{
+								if ($current==null) {
+									$current = createModelElementForParent(grammarAccess.getEventRule());
+								}
+								add(
+									$current,
+									"workFlowActivities",
+									lv_workFlowActivities_69_0,
+									"ca.mcgill.devops.pipeline.Pipeline.Activity");
+								afterParserOrEnumRuleCall();
+							}
+						)
+					)*
+					this_END_70=RULE_END
+					{
+						newLeafNode(this_END_70, grammarAccess.getEventAccess().getENDTerminalRuleCall_1_1_1_2());
+					}
+				)
 			)
 		)
 	)
@@ -1872,52 +2822,108 @@ ruleActivity returns [EObject current=null]
 	(
 		(
 			(
-				{
-					newCompositeNode(grammarAccess.getActivityAccess().getNameAnyDataParserRuleCall_0_0());
-				}
-				lv_name_0_1=ruleAnyData
-				{
-					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getActivityRule());
+				(
+					{
+						newCompositeNode(grammarAccess.getActivityAccess().getNameHyphenValuesParserRuleCall_0_0_0());
 					}
-					set(
-						$current,
-						"name",
-						lv_name_0_1,
-						"ca.mcgill.devops.pipeline.Pipeline.AnyData");
-					afterParserOrEnumRuleCall();
-				}
-				    |
-				{
-					newCompositeNode(grammarAccess.getActivityAccess().getNameArrayListParserRuleCall_0_1());
-				}
-				lv_name_0_2=ruleArrayList
-				{
-					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getActivityRule());
+					lv_name_0_1=ruleHyphenValues
+					{
+						if ($current==null) {
+							$current = createModelElementForParent(grammarAccess.getActivityRule());
+						}
+						set(
+							$current,
+							"name",
+							lv_name_0_1,
+							"ca.mcgill.devops.pipeline.Pipeline.HyphenValues");
+						afterParserOrEnumRuleCall();
 					}
-					set(
-						$current,
-						"name",
-						lv_name_0_2,
-						"ca.mcgill.devops.pipeline.Pipeline.ArrayList");
-					afterParserOrEnumRuleCall();
-				}
-				    |
-				{
-					newCompositeNode(grammarAccess.getActivityAccess().getNameHyphenValuesParserRuleCall_0_2());
-				}
-				lv_name_0_3=ruleHyphenValues
-				{
-					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getActivityRule());
+					    |
+					{
+						newCompositeNode(grammarAccess.getActivityAccess().getNameArrayListParserRuleCall_0_0_1());
 					}
-					set(
-						$current,
-						"name",
-						lv_name_0_3,
-						"ca.mcgill.devops.pipeline.Pipeline.HyphenValues");
-					afterParserOrEnumRuleCall();
+					lv_name_0_2=ruleArrayList
+					{
+						if ($current==null) {
+							$current = createModelElementForParent(grammarAccess.getActivityRule());
+						}
+						set(
+							$current,
+							"name",
+							lv_name_0_2,
+							"ca.mcgill.devops.pipeline.Pipeline.ArrayList");
+						afterParserOrEnumRuleCall();
+					}
+				)
+			)
+		)
+		    |
+		(
+			(
+				(
+					(
+						lv_name_1_1=Inputs
+						{
+							newLeafNode(lv_name_1_1, grammarAccess.getActivityAccess().getNameInputsKeyword_1_0_0_0());
+						}
+						{
+							if ($current==null) {
+								$current = createModelElement(grammarAccess.getActivityRule());
+							}
+							setWithLastConsumed($current, "name", lv_name_1_1, null);
+						}
+						    |
+						lv_name_1_2=Outputs
+						{
+							newLeafNode(lv_name_1_2, grammarAccess.getActivityAccess().getNameOutputsKeyword_1_0_0_1());
+						}
+						{
+							if ($current==null) {
+								$current = createModelElement(grammarAccess.getActivityRule());
+							}
+							setWithLastConsumed($current, "name", lv_name_1_2, null);
+						}
+						    |
+						lv_name_1_3=Secrets
+						{
+							newLeafNode(lv_name_1_3, grammarAccess.getActivityAccess().getNameSecretsKeyword_1_0_0_2());
+						}
+						{
+							if ($current==null) {
+								$current = createModelElement(grammarAccess.getActivityRule());
+							}
+							setWithLastConsumed($current, "name", lv_name_1_3, null);
+						}
+					)
+				)
+			)
+			(
+				this_BEGIN_2=RULE_BEGIN
+				{
+					newLeafNode(this_BEGIN_2, grammarAccess.getActivityAccess().getBEGINTerminalRuleCall_1_1_0());
+				}
+				(
+					(
+						{
+							newCompositeNode(grammarAccess.getActivityAccess().getActivitiesWorkFlowKeyValueParserRuleCall_1_1_1_0());
+						}
+						lv_activities_3_0=ruleWorkFlowKeyValue
+						{
+							if ($current==null) {
+								$current = createModelElementForParent(grammarAccess.getActivityRule());
+							}
+							add(
+								$current,
+								"activities",
+								lv_activities_3_0,
+								"ca.mcgill.devops.pipeline.Pipeline.WorkFlowKeyValue");
+							afterParserOrEnumRuleCall();
+						}
+					)
+				)+
+				this_END_4=RULE_END
+				{
+					newLeafNode(this_END_4, grammarAccess.getActivityAccess().getENDTerminalRuleCall_1_1_2());
 				}
 			)
 		)
@@ -2634,9 +3640,9 @@ ruleJob returns [EObject current=null]
 								({true}?=>((
 									(
 										{
-											newCompositeNode(grammarAccess.getJobAccess().getJobParameterValuesJobParameterParserRuleCall_1_2_0_0());
+											newCompositeNode(grammarAccess.getJobAccess().getJobParameterValuesParameterValueParserRuleCall_1_2_0_0());
 										}
-										lv_jobParameterValues_16_0=ruleJobParameter
+										lv_jobParameterValues_16_0=ruleParameterValue
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getJobRule());
@@ -2645,7 +3651,7 @@ ruleJob returns [EObject current=null]
 												$current,
 												"jobParameterValues",
 												lv_jobParameterValues_16_0,
-												"ca.mcgill.devops.pipeline.Pipeline.JobParameter");
+												"ca.mcgill.devops.pipeline.Pipeline.ParameterValue");
 											afterParserOrEnumRuleCall();
 										}
 									)
@@ -2692,140 +3698,6 @@ ruleJob returns [EObject current=null]
 				{ 
 				  getUnorderedGroupHelper().leave(grammarAccess.getJobAccess().getUnorderedGroup_1());
 				}
-		)
-	)
-;
-
-// Entry rule entryRuleJobParameter
-entryRuleJobParameter returns [EObject current=null]:
-	{ newCompositeNode(grammarAccess.getJobParameterRule()); }
-	iv_ruleJobParameter=ruleJobParameter
-	{ $current=$iv_ruleJobParameter.current; }
-	EOF;
-
-// Rule JobParameter
-ruleJobParameter returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
-	(
-		(
-			(
-				(
-					{
-						newCompositeNode(grammarAccess.getJobParameterAccess().getNamePipelineKeywordEnumRuleCall_0_0_0());
-					}
-					lv_name_0_0=rulePipelineKeyword
-					{
-						if ($current==null) {
-							$current = createModelElementForParent(grammarAccess.getJobParameterRule());
-						}
-						set(
-							$current,
-							"name",
-							lv_name_0_0,
-							"ca.mcgill.devops.pipeline.Pipeline.PipelineKeyword");
-						afterParserOrEnumRuleCall();
-					}
-				)
-			)
-			    |
-			(
-				(
-					(
-						lv_otherName_1_0=RULE_ID
-						{
-							newLeafNode(lv_otherName_1_0, grammarAccess.getJobParameterAccess().getOtherNameIDTerminalRuleCall_0_1_0_0());
-						}
-						{
-							if ($current==null) {
-								$current = createModelElement(grammarAccess.getJobParameterRule());
-							}
-							setWithLastConsumed(
-								$current,
-								"otherName",
-								lv_otherName_1_0,
-								"ca.mcgill.devops.pipeline.Pipeline.ID");
-						}
-					)
-				)
-				otherlv_2=Colon
-				{
-					newLeafNode(otherlv_2, grammarAccess.getJobParameterAccess().getColonKeyword_0_1_1());
-				}
-			)
-		)
-		(
-			(
-				(
-					(
-						{
-							newCompositeNode(grammarAccess.getJobParameterAccess().getValueAnyDataParserRuleCall_1_0_0_0());
-						}
-						lv_value_3_1=ruleAnyData
-						{
-							if ($current==null) {
-								$current = createModelElementForParent(grammarAccess.getJobParameterRule());
-							}
-							set(
-								$current,
-								"value",
-								lv_value_3_1,
-								"ca.mcgill.devops.pipeline.Pipeline.AnyData");
-							afterParserOrEnumRuleCall();
-						}
-						    |
-						{
-							newCompositeNode(grammarAccess.getJobParameterAccess().getValueArrayListParserRuleCall_1_0_0_1());
-						}
-						lv_value_3_2=ruleArrayList
-						{
-							if ($current==null) {
-								$current = createModelElementForParent(grammarAccess.getJobParameterRule());
-							}
-							set(
-								$current,
-								"value",
-								lv_value_3_2,
-								"ca.mcgill.devops.pipeline.Pipeline.ArrayList");
-							afterParserOrEnumRuleCall();
-						}
-					)
-				)
-			)
-			    |
-			(
-				this_BEGIN_4=RULE_BEGIN
-				{
-					newLeafNode(this_BEGIN_4, grammarAccess.getJobParameterAccess().getBEGINTerminalRuleCall_1_1_0());
-				}
-				(
-					(
-						{
-							newCompositeNode(grammarAccess.getJobParameterAccess().getSubParametersJobParameterParserRuleCall_1_1_1_0());
-						}
-						lv_subParameters_5_0=ruleJobParameter
-						{
-							if ($current==null) {
-								$current = createModelElementForParent(grammarAccess.getJobParameterRule());
-							}
-							add(
-								$current,
-								"subParameters",
-								lv_subParameters_5_0,
-								"ca.mcgill.devops.pipeline.Pipeline.JobParameter");
-							afterParserOrEnumRuleCall();
-						}
-					)
-				)+
-				this_END_6=RULE_END
-				{
-					newLeafNode(this_END_6, grammarAccess.getJobParameterAccess().getENDTerminalRuleCall_1_1_2());
-				}
-			)
 		)
 	)
 ;
@@ -3135,102 +4007,75 @@ ruleAction returns [EObject current=null]
 	(
 		(
 			(
-				otherlv_0=Name
-				{
-					newLeafNode(otherlv_0, grammarAccess.getActionAccess().getNameKeyword_0_0_0());
-				}
-				(
-					(
-						lv_stepName_1_0=RULE_STRING
-						{
-							newLeafNode(lv_stepName_1_0, grammarAccess.getActionAccess().getStepNameSTRINGTerminalRuleCall_0_0_1_0());
-						}
-						{
-							if ($current==null) {
-								$current = createModelElement(grammarAccess.getActionRule());
-							}
-							setWithLastConsumed(
-								$current,
-								"stepName",
-								lv_stepName_1_0,
-								"org.eclipse.xtext.common.Terminals.STRING");
-						}
-					)
-				)
-			)
-			    |
-			(
-				(
-					(
-						(
-							{
-								newCompositeNode(grammarAccess.getActionAccess().getActionKeywordPipelineKeywordEnumRuleCall_0_1_0_0_0());
-							}
-							lv_actionKeyword_2_0=rulePipelineKeyword
-							{
-								if ($current==null) {
-									$current = createModelElementForParent(grammarAccess.getActionRule());
-								}
-								set(
-									$current,
-									"actionKeyword",
-									lv_actionKeyword_2_0,
-									"ca.mcgill.devops.pipeline.Pipeline.PipelineKeyword");
-								afterParserOrEnumRuleCall();
-							}
-						)
-					)
-					    |
-					(
-						(
-							(
-								lv_otherKeyword_3_0=RULE_ID
-								{
-									newLeafNode(lv_otherKeyword_3_0, grammarAccess.getActionAccess().getOtherKeywordIDTerminalRuleCall_0_1_0_1_0_0());
-								}
-								{
-									if ($current==null) {
-										$current = createModelElement(grammarAccess.getActionRule());
-									}
-									setWithLastConsumed(
-										$current,
-										"otherKeyword",
-										lv_otherKeyword_3_0,
-										"ca.mcgill.devops.pipeline.Pipeline.ID");
-								}
-							)
-						)
-						otherlv_4=Colon
-						{
-							newLeafNode(otherlv_4, grammarAccess.getActionAccess().getColonKeyword_0_1_0_1_1());
-						}
-					)
-				)
 				(
 					(
 						{
-							newCompositeNode(grammarAccess.getActionAccess().getActionValueAnyDataParserRuleCall_0_1_1_0());
+							newCompositeNode(grammarAccess.getActionAccess().getActionKeywordPipelineKeywordEnumRuleCall_0_0_0_0());
 						}
-						lv_actionValue_5_0=ruleAnyData
+						lv_actionKeyword_0_0=rulePipelineKeyword
 						{
 							if ($current==null) {
 								$current = createModelElementForParent(grammarAccess.getActionRule());
 							}
 							set(
 								$current,
-								"actionValue",
-								lv_actionValue_5_0,
-								"ca.mcgill.devops.pipeline.Pipeline.AnyData");
+								"actionKeyword",
+								lv_actionKeyword_0_0,
+								"ca.mcgill.devops.pipeline.Pipeline.PipelineKeyword");
 							afterParserOrEnumRuleCall();
 						}
 					)
-				)?
+				)
+				    |
+				(
+					(
+						(
+							lv_otherKeyword_1_0=RULE_ID
+							{
+								newLeafNode(lv_otherKeyword_1_0, grammarAccess.getActionAccess().getOtherKeywordIDTerminalRuleCall_0_0_1_0_0());
+							}
+							{
+								if ($current==null) {
+									$current = createModelElement(grammarAccess.getActionRule());
+								}
+								setWithLastConsumed(
+									$current,
+									"otherKeyword",
+									lv_otherKeyword_1_0,
+									"ca.mcgill.devops.pipeline.Pipeline.ID");
+							}
+						)
+					)
+					otherlv_2=Colon
+					{
+						newLeafNode(otherlv_2, grammarAccess.getActionAccess().getColonKeyword_0_0_1_1());
+					}
+				)
 			)
+			(
+				(
+					{
+						newCompositeNode(grammarAccess.getActionAccess().getActionValueAnyDataParserRuleCall_0_1_0());
+					}
+					lv_actionValue_3_0=ruleAnyData
+					{
+						if ($current==null) {
+							$current = createModelElementForParent(grammarAccess.getActionRule());
+						}
+						set(
+							$current,
+							"actionValue",
+							lv_actionValue_3_0,
+							"ca.mcgill.devops.pipeline.Pipeline.AnyData");
+						afterParserOrEnumRuleCall();
+					}
+				)
+			)?
 		)
 		(
-			this_BEGIN_6=RULE_BEGIN
+			this_BEGIN_4=RULE_BEGIN
 			{
-				newLeafNode(this_BEGIN_6, grammarAccess.getActionAccess().getBEGINTerminalRuleCall_1_0());
+				newLeafNode(this_BEGIN_4, grammarAccess.getActionAccess().getBEGINTerminalRuleCall_1_0());
 			}
 			(
 				(
@@ -3238,7 +4083,7 @@ ruleAction returns [EObject current=null]
 						{
 							newCompositeNode(grammarAccess.getActionAccess().getSubStepsActionParserRuleCall_1_1_0_0());
 						}
-						lv_subSteps_7_1=ruleAction
+						lv_subSteps_5_1=ruleAction
 						{
 							if ($current==null) {
 								$current = createModelElementForParent(grammarAccess.getActionRule());
@@ -3246,7 +4091,7 @@ ruleAction returns [EObject current=null]
 							add(
 								$current,
 								"subSteps",
-								lv_subSteps_7_1,
+								lv_subSteps_5_1,
 								"ca.mcgill.devops.pipeline.Pipeline.Action");
 							afterParserOrEnumRuleCall();
 						}
@@ -3254,7 +4099,7 @@ ruleAction returns [EObject current=null]
 						{
 							newCompositeNode(grammarAccess.getActionAccess().getSubStepsScriptParserRuleCall_1_1_0_1());
 						}
-						lv_subSteps_7_2=ruleScript
+						lv_subSteps_5_2=ruleScript
 						{
 							if ($current==null) {
 								$current = createModelElementForParent(grammarAccess.getActionRule());
@@ -3262,16 +4107,16 @@ ruleAction returns [EObject current=null]
 							add(
 								$current,
 								"subSteps",
-								lv_subSteps_7_2,
+								lv_subSteps_5_2,
 								"ca.mcgill.devops.pipeline.Pipeline.Script");
 							afterParserOrEnumRuleCall();
 						}
 					)
 				)
 			)*
-			this_END_8=RULE_END
+			this_END_6=RULE_END
 			{
-				newLeafNode(this_END_8, grammarAccess.getActionAccess().getENDTerminalRuleCall_1_2());
+				newLeafNode(this_END_6, grammarAccess.getActionAccess().getENDTerminalRuleCall_1_2());
 			}
 		)?
 	)
@@ -3294,95 +4139,77 @@ ruleParameterValue returns [EObject current=null]
 }:
 	(
 		(
-			otherlv_0=HyphenMinus
-			{
-				newLeafNode(otherlv_0, grammarAccess.getParameterValueAccess().getHyphenMinusKeyword_0());
-			}
-		)?
-		(
 			(
 				(
-					lv_name_1_1=RULE_ID
 					{
-						newLeafNode(lv_name_1_1, grammarAccess.getParameterValueAccess().getNameIDTerminalRuleCall_1_0_0());
+						newCompositeNode(grammarAccess.getParameterValueAccess().getNamePipelineKeywordEnumRuleCall_0_0_0());
 					}
+					lv_name_0_0=rulePipelineKeyword
 					{
 						if ($current==null) {
-							$current = createModelElement(grammarAccess.getParameterValueRule());
+							$current = createModelElementForParent(grammarAccess.getParameterValueRule());
 						}
-						setWithLastConsumed(
+						set(
 							$current,
 							"name",
-							lv_name_1_1,
-							"ca.mcgill.devops.pipeline.Pipeline.ID");
-					}
-					    |
-					lv_name_1_2=RULE_COMPLEX_EXPRESSION
-					{
-						newLeafNode(lv_name_1_2, grammarAccess.getParameterValueAccess().getNameCOMPLEX_EXPRESSIONTerminalRuleCall_1_0_1());
-					}
-					{
-						if ($current==null) {
-							$current = createModelElement(grammarAccess.getParameterValueRule());
-						}
-						setWithLastConsumed(
-							$current,
-							"name",
-							lv_name_1_2,
-							"ca.mcgill.devops.pipeline.Pipeline.COMPLEX_EXPRESSION");
+							lv_name_0_0,
+							"ca.mcgill.devops.pipeline.Pipeline.PipelineKeyword");
+						afterParserOrEnumRuleCall();
 					}
 				)
-			)
-		)
-		otherlv_2=Colon
-		{
-			newLeafNode(otherlv_2, grammarAccess.getParameterValueAccess().getColonKeyword_2());
-		}
-		(
-			this_WS_3=RULE_WS
-			{
-				newLeafNode(this_WS_3, grammarAccess.getParameterValueAccess().getWSTerminalRuleCall_3());
-			}
-		)*
-		(
-			(
-				this_BEGIN_4=RULE_BEGIN
-				{
-					newLeafNode(this_BEGIN_4, grammarAccess.getParameterValueAccess().getBEGINTerminalRuleCall_4_0_0());
-				}
-				(
-					(
-						{
-							newCompositeNode(grammarAccess.getParameterValueAccess().getSubParameterValuesParameterValueParserRuleCall_4_0_1_0());
-						}
-						lv_subParameterValues_5_0=ruleParameterValue
-						{
-							if ($current==null) {
-								$current = createModelElementForParent(grammarAccess.getParameterValueRule());
-							}
-							add(
-								$current,
-								"subParameterValues",
-								lv_subParameterValues_5_0,
-								"ca.mcgill.devops.pipeline.Pipeline.ParameterValue");
-							afterParserOrEnumRuleCall();
-						}
-					)
-				)*
-				this_END_6=RULE_END
-				{
-					newLeafNode(this_END_6, grammarAccess.getParameterValueAccess().getENDTerminalRuleCall_4_0_2());
-				}
 			)
 			    |
 			(
 				(
 					(
 						(
+							lv_otherName_1_1=RULE_ID
 							{
-								newCompositeNode(grammarAccess.getParameterValueAccess().getValueAnyDataParserRuleCall_4_1_0_0_0());
+								newLeafNode(lv_otherName_1_1, grammarAccess.getParameterValueAccess().getOtherNameIDTerminalRuleCall_0_1_0_0_0());
 							}
-							lv_value_7_1=ruleAnyData
+							{
+								if ($current==null) {
+									$current = createModelElement(grammarAccess.getParameterValueRule());
+								}
+								setWithLastConsumed(
+									$current,
+									"otherName",
+									lv_otherName_1_1,
+									"ca.mcgill.devops.pipeline.Pipeline.ID");
+							}
+							    |
+							lv_otherName_1_2=RULE_COMPLEX_EXPRESSION
+							{
+								newLeafNode(lv_otherName_1_2, grammarAccess.getParameterValueAccess().getOtherNameCOMPLEX_EXPRESSIONTerminalRuleCall_0_1_0_0_1());
+							}
+							{
+								if ($current==null) {
+									$current = createModelElement(grammarAccess.getParameterValueRule());
+								}
+								setWithLastConsumed(
+									$current,
+									"otherName",
+									lv_otherName_1_2,
+									"ca.mcgill.devops.pipeline.Pipeline.COMPLEX_EXPRESSION");
+							}
+						)
+					)
+				)
+				otherlv_2=Colon
+				{
+					newLeafNode(otherlv_2, grammarAccess.getParameterValueAccess().getColonKeyword_0_1_1());
+				}
+			)
+		)
+		(
+			(
+				(
+					(
+						(
+							{
+								newCompositeNode(grammarAccess.getParameterValueAccess().getValueAnyDataParserRuleCall_1_0_0_0_0());
+							}
+							lv_value_3_1=ruleAnyData
 							{
 								if ($current==null) {
 									$current = createModelElementForParent(grammarAccess.getParameterValueRule());
@@ -3390,15 +4217,15 @@ ruleParameterValue returns [EObject current=null]
 								set(
 									$current,
 									"value",
-									lv_value_7_1,
+									lv_value_3_1,
 									"ca.mcgill.devops.pipeline.Pipeline.AnyData");
 								afterParserOrEnumRuleCall();
 							}
 							    |
 							{
-								newCompositeNode(grammarAccess.getParameterValueAccess().getValueArrayListParserRuleCall_4_1_0_0_1());
+								newCompositeNode(grammarAccess.getParameterValueAccess().getValueArrayListParserRuleCall_1_0_0_0_1());
 							}
-							lv_value_7_2=ruleArrayList
+							lv_value_3_2=ruleArrayList
 							{
 								if ($current==null) {
 									$current = createModelElementForParent(grammarAccess.getParameterValueRule());
@@ -3406,15 +4233,15 @@ ruleParameterValue returns [EObject current=null]
 								set(
 									$current,
 									"value",
-									lv_value_7_2,
+									lv_value_3_2,
 									"ca.mcgill.devops.pipeline.Pipeline.ArrayList");
 								afterParserOrEnumRuleCall();
 							}
 							    |
 							{
-								newCompositeNode(grammarAccess.getParameterValueAccess().getValueHyphenValuesParserRuleCall_4_1_0_0_2());
+								newCompositeNode(grammarAccess.getParameterValueAccess().getValueHyphenValuesParserRuleCall_1_0_0_0_2());
 							}
-							lv_value_7_3=ruleHyphenValues
+							lv_value_3_3=ruleHyphenValues
 							{
 								if ($current==null) {
 									$current = createModelElementForParent(grammarAccess.getParameterValueRule());
@@ -3422,7 +4249,7 @@ ruleParameterValue returns [EObject current=null]
 								set(
 									$current,
 									"value",
-									lv_value_7_3,
+									lv_value_3_3,
 									"ca.mcgill.devops.pipeline.Pipeline.HyphenValues");
 								afterParserOrEnumRuleCall();
 							}
@@ -3430,34 +4257,80 @@ ruleParameterValue returns [EObject current=null]
 					)
 				)
 				(
-					this_BEGIN_8=RULE_BEGIN
+					this_BEGIN_4=RULE_BEGIN
 					{
-						newLeafNode(this_BEGIN_8, grammarAccess.getParameterValueAccess().getBEGINTerminalRuleCall_4_1_1_0());
+						newLeafNode(this_BEGIN_4, grammarAccess.getParameterValueAccess().getBEGINTerminalRuleCall_1_0_1_0());
 					}
 					(
 						(
+							otherlv_5=HyphenMinus
 							{
-								newCompositeNode(grammarAccess.getParameterValueAccess().getSubParameterValuesParameterValueParserRuleCall_4_1_1_1_0());
+								newLeafNode(otherlv_5, grammarAccess.getParameterValueAccess().getHyphenMinusKeyword_1_0_1_1_0());
 							}
-							lv_subParameterValues_9_0=ruleParameterValue
+						)?
+						(
+							(
+								{
+									newCompositeNode(grammarAccess.getParameterValueAccess().getSubParametersParameterValueParserRuleCall_1_0_1_1_1_0());
+								}
+								lv_subParameters_6_0=ruleParameterValue
+								{
+									if ($current==null) {
+										$current = createModelElementForParent(grammarAccess.getParameterValueRule());
+									}
+									add(
+										$current,
+										"subParameters",
+										lv_subParameters_6_0,
+										"ca.mcgill.devops.pipeline.Pipeline.ParameterValue");
+									afterParserOrEnumRuleCall();
+								}
+							)
+						)
+					)*
+					this_END_7=RULE_END
+					{
+						newLeafNode(this_END_7, grammarAccess.getParameterValueAccess().getENDTerminalRuleCall_1_0_1_2());
+					}
+				)?
+			)
+			    |
+			(
+				this_BEGIN_8=RULE_BEGIN
+				{
+					newLeafNode(this_BEGIN_8, grammarAccess.getParameterValueAccess().getBEGINTerminalRuleCall_1_1_0());
+				}
+				(
+					(
+						otherlv_9=HyphenMinus
+						{
+							newLeafNode(otherlv_9, grammarAccess.getParameterValueAccess().getHyphenMinusKeyword_1_1_1_0());
+						}
+					)?
+					(
+						(
+							{
+								newCompositeNode(grammarAccess.getParameterValueAccess().getSubParametersParameterValueParserRuleCall_1_1_1_1_0());
+							}
+							lv_subParameters_10_0=ruleParameterValue
 							{
 								if ($current==null) {
 									$current = createModelElementForParent(grammarAccess.getParameterValueRule());
 								}
 								add(
 									$current,
-									"subParameterValues",
-									lv_subParameterValues_9_0,
+									"subParameters",
+									lv_subParameters_10_0,
 									"ca.mcgill.devops.pipeline.Pipeline.ParameterValue");
 								afterParserOrEnumRuleCall();
 							}
 						)
-					)*
-					this_END_10=RULE_END
-					{
-						newLeafNode(this_END_10, grammarAccess.getParameterValueAccess().getENDTerminalRuleCall_4_1_1_2());
-					}
-				)?
+					)
+				)*
+				this_END_11=RULE_END
+				{
+					newLeafNode(this_END_11, grammarAccess.getParameterValueAccess().getENDTerminalRuleCall_1_1_2());
+				}
 			)
 		)
 	)
@@ -3546,6 +4419,111 @@ ruleAnyData returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()
 	)
 ;
 
+// Entry rule entryRuleWorkFlowKeyValue
+entryRuleWorkFlowKeyValue returns [String current=null]:
+	{ newCompositeNode(grammarAccess.getWorkFlowKeyValueRule()); }
+	iv_ruleWorkFlowKeyValue=ruleWorkFlowKeyValue
+	{ $current=$iv_ruleWorkFlowKeyValue.current.getText(); }
+	EOF;
+
+// Rule WorkFlowKeyValue
+ruleWorkFlowKeyValue returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	(
+		(
+			this_ID_0=RULE_ID
+			{
+				$current.merge(this_ID_0);
+			}
+			{
+				newLeafNode(this_ID_0, grammarAccess.getWorkFlowKeyValueAccess().getIDTerminalRuleCall_0_0());
+			}
+			kw=Colon
+			{
+				$current.merge(kw);
+				newLeafNode(kw, grammarAccess.getWorkFlowKeyValueAccess().getColonKeyword_0_1());
+			}
+		)
+		(
+			this_BEGIN_2=RULE_BEGIN
+			{
+				$current.merge(this_BEGIN_2);
+			}
+			{
+				newLeafNode(this_BEGIN_2, grammarAccess.getWorkFlowKeyValueAccess().getBEGINTerminalRuleCall_1_0());
+			}
+			(
+				(
+					kw=Description
+					{
+						$current.merge(kw);
+						newLeafNode(kw, grammarAccess.getWorkFlowKeyValueAccess().getDescriptionKeyword_1_1_0_0());
+					}
+					    |
+					kw=Required
+					{
+						$current.merge(kw);
+						newLeafNode(kw, grammarAccess.getWorkFlowKeyValueAccess().getRequiredKeyword_1_1_0_1());
+					}
+					    |
+					kw=Default
+					{
+						$current.merge(kw);
+						newLeafNode(kw, grammarAccess.getWorkFlowKeyValueAccess().getDefaultKeyword_1_1_0_2());
+					}
+					    |
+					kw=Type
+					{
+						$current.merge(kw);
+						newLeafNode(kw, grammarAccess.getWorkFlowKeyValueAccess().getTypeKeyword_1_1_0_3());
+					}
+					    |
+					kw=Options
+					{
+						$current.merge(kw);
+						newLeafNode(kw, grammarAccess.getWorkFlowKeyValueAccess().getOptionsKeyword_1_1_0_4());
+					}
+				)
+				(
+					{
+						newCompositeNode(grammarAccess.getWorkFlowKeyValueAccess().getAnyDataParserRuleCall_1_1_1_0());
+					}
+					this_AnyData_8=ruleAnyData
+					{
+						$current.merge(this_AnyData_8);
+					}
+					{
+						afterParserOrEnumRuleCall();
+					}
+					    |
+					{
+						newCompositeNode(grammarAccess.getWorkFlowKeyValueAccess().getHyphenValuesParserRuleCall_1_1_1_1());
+					}
+					this_HyphenValues_9=ruleHyphenValues
+					{
+						$current.merge(this_HyphenValues_9);
+					}
+					{
+						afterParserOrEnumRuleCall();
+					}
+				)
+			)+
+			this_END_10=RULE_END
+			{
+				$current.merge(this_END_10);
+			}
+			{
+				newLeafNode(this_END_10, grammarAccess.getWorkFlowKeyValueAccess().getENDTerminalRuleCall_1_2());
+			}
+		)
+	)
+;
+
 // Entry rule entryRuleKeyValue
 entryRuleKeyValue returns [String current=null]:
 	{ newCompositeNode(grammarAccess.getKeyValueRule()); }
@@ -3574,16 +4552,29 @@ ruleKeyValue returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken(
 			$current.merge(kw);
 			newLeafNode(kw, grammarAccess.getKeyValueAccess().getColonKeyword_1());
 		}
-		{
-			newCompositeNode(grammarAccess.getKeyValueAccess().getAnyDataParserRuleCall_2());
-		}
-		this_AnyData_2=ruleAnyData
-		{
-			$current.merge(this_AnyData_2);
-		}
-		{
-			afterParserOrEnumRuleCall();
-		}
+		(
+			{
+				newCompositeNode(grammarAccess.getKeyValueAccess().getAnyDataParserRuleCall_2_0());
+			}
+			this_AnyData_2=ruleAnyData
+			{
+				$current.merge(this_AnyData_2);
+			}
+			{
+				afterParserOrEnumRuleCall();
+			}
+			    |
+			{
+				newCompositeNode(grammarAccess.getKeyValueAccess().getHyphenValuesParserRuleCall_2_1());
+			}
+			this_HyphenValues_3=ruleHyphenValues
+			{
+				$current.merge(this_HyphenValues_3);
+			}
+			{
+				afterParserOrEnumRuleCall();
+			}
+		)
 	)
 ;
 
@@ -3888,6 +4879,505 @@ ruleArrayList returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken
 	)
 ;
 
+// Rule PipelineEventKeyword
+rulePipelineEventKeyword returns [Enumerator current=null]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	(
+		(
+			enumLiteral_0=Push
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PUSHEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_0, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PUSHEnumLiteralDeclaration_0());
+			}
+		)
+		    |
+		(
+			enumLiteral_1=Pull_request
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUESTEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_1, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUESTEnumLiteralDeclaration_1());
+			}
+		)
+		    |
+		(
+			enumLiteral_2=Workflow_dispatch
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_DISPATCHEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_2, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_DISPATCHEnumLiteralDeclaration_2());
+			}
+		)
+		    |
+		(
+			enumLiteral_3=Repository_dispatch
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REPOSITORY_DISPATCHEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_3, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REPOSITORY_DISPATCHEnumLiteralDeclaration_3());
+			}
+		)
+		    |
+		(
+			enumLiteral_4=Check_run
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHECK_RUNEnumLiteralDeclaration_4().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_4, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHECK_RUNEnumLiteralDeclaration_4());
+			}
+		)
+		    |
+		(
+			enumLiteral_5=Check_suite
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHECK_SUITEEnumLiteralDeclaration_5().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_5, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHECK_SUITEEnumLiteralDeclaration_5());
+			}
+		)
+		    |
+		(
+			enumLiteral_6=Create
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CREATEEnumLiteralDeclaration_6().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_6, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CREATEEnumLiteralDeclaration_6());
+			}
+		)
+		    |
+		(
+			enumLiteral_7=Delete
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DELETEEnumLiteralDeclaration_7().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_7, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DELETEEnumLiteralDeclaration_7());
+			}
+		)
+		    |
+		(
+			enumLiteral_8=Deployment
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEPLOYMENTEnumLiteralDeclaration_8().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_8, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEPLOYMENTEnumLiteralDeclaration_8());
+			}
+		)
+		    |
+		(
+			enumLiteral_9=Deployment_status
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEPLOYMENT_STATUSEnumLiteralDeclaration_9().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_9, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEPLOYMENT_STATUSEnumLiteralDeclaration_9());
+			}
+		)
+		    |
+		(
+			enumLiteral_10=Fork
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_FORKEnumLiteralDeclaration_10().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_10, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_FORKEnumLiteralDeclaration_10());
+			}
+		)
+		    |
+		(
+			enumLiteral_11=Gollum
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_GOLLUMEnumLiteralDeclaration_11().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_11, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_GOLLUMEnumLiteralDeclaration_11());
+			}
+		)
+		    |
+		(
+			enumLiteral_12=Issue_comment
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ISSUE_COMMENTEnumLiteralDeclaration_12().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_12, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ISSUE_COMMENTEnumLiteralDeclaration_12());
+			}
+		)
+		    |
+		(
+			enumLiteral_13=Issues
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ISSUESEnumLiteralDeclaration_13().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_13, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ISSUESEnumLiteralDeclaration_13());
+			}
+		)
+		    |
+		(
+			enumLiteral_14=Label
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_LABELEnumLiteralDeclaration_14().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_14, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_LABELEnumLiteralDeclaration_14());
+			}
+		)
+		    |
+		(
+			enumLiteral_15=Milestone
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_MILESTONEEnumLiteralDeclaration_15().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_15, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_MILESTONEEnumLiteralDeclaration_15());
+			}
+		)
+		    |
+		(
+			enumLiteral_16=Page_build
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PAGE_BUILDEnumLiteralDeclaration_16().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_16, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PAGE_BUILDEnumLiteralDeclaration_16());
+			}
+		)
+		    |
+		(
+			enumLiteral_17=Project
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECTEnumLiteralDeclaration_17().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_17, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECTEnumLiteralDeclaration_17());
+			}
+		)
+		    |
+		(
+			enumLiteral_18=Project_card
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECT_CARDEnumLiteralDeclaration_18().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_18, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECT_CARDEnumLiteralDeclaration_18());
+			}
+		)
+		    |
+		(
+			enumLiteral_19=Project_column
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECT_COLUMNEnumLiteralDeclaration_19().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_19, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECT_COLUMNEnumLiteralDeclaration_19());
+			}
+		)
+		    |
+		(
+			enumLiteral_20=Public
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PUBLICEnumLiteralDeclaration_20().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_20, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PUBLICEnumLiteralDeclaration_20());
+			}
+		)
+		    |
+		(
+			enumLiteral_21=Pull_request_review
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_REVIEWEnumLiteralDeclaration_21().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_21, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_REVIEWEnumLiteralDeclaration_21());
+			}
+		)
+		    |
+		(
+			enumLiteral_22=Pull_request_review_comment
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_REVIEW_COMMENTEnumLiteralDeclaration_22().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_22, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_REVIEW_COMMENTEnumLiteralDeclaration_22());
+			}
+		)
+		    |
+		(
+			enumLiteral_23=Pull_request_target
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_TARGETEnumLiteralDeclaration_23().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_23, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_TARGETEnumLiteralDeclaration_23());
+			}
+		)
+		    |
+		(
+			enumLiteral_24=Registry_package
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REGISTRY_PACKAGEEnumLiteralDeclaration_24().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_24, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REGISTRY_PACKAGEEnumLiteralDeclaration_24());
+			}
+		)
+		    |
+		(
+			enumLiteral_25=Release
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_RELEASEEnumLiteralDeclaration_25().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_25, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_RELEASEEnumLiteralDeclaration_25());
+			}
+		)
+		    |
+		(
+			enumLiteral_26=Status
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_STATUSEnumLiteralDeclaration_26().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_26, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_STATUSEnumLiteralDeclaration_26());
+			}
+		)
+		    |
+		(
+			enumLiteral_27=Watch
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WATCHEnumLiteralDeclaration_27().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_27, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WATCHEnumLiteralDeclaration_27());
+			}
+		)
+		    |
+		(
+			enumLiteral_28=Workflow_call
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_CALLEnumLiteralDeclaration_28().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_28, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_CALLEnumLiteralDeclaration_28());
+			}
+		)
+		    |
+		(
+			enumLiteral_29=Workflow_run
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_RUNEnumLiteralDeclaration_29().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_29, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_RUNEnumLiteralDeclaration_29());
+			}
+		)
+		    |
+		(
+			enumLiteral_30=Trigger
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TRIGGEREnumLiteralDeclaration_30().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_30, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TRIGGEREnumLiteralDeclaration_30());
+			}
+		)
+		    |
+		(
+			enumLiteral_31=Pr
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PREnumLiteralDeclaration_31().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_31, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PREnumLiteralDeclaration_31());
+			}
+		)
+		    |
+		(
+			enumLiteral_32=Branches
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCHESEnumLiteralDeclaration_32().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_32, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCHESEnumLiteralDeclaration_32());
+			}
+		)
+		    |
+		(
+			enumLiteral_33=Tags
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAGSEnumLiteralDeclaration_33().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_33, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAGSEnumLiteralDeclaration_33());
+			}
+		)
+		    |
+		(
+			enumLiteral_34=Paths
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PATHSEnumLiteralDeclaration_34().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_34, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PATHSEnumLiteralDeclaration_34());
+			}
+		)
+		    |
+		(
+			enumLiteral_35=AutoCancel
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_AUTO_CANCELEnumLiteralDeclaration_35().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_35, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_AUTO_CANCELEnumLiteralDeclaration_35());
+			}
+		)
+		    |
+		(
+			enumLiteral_36=Drafts
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DRAFTSEnumLiteralDeclaration_36().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_36, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DRAFTSEnumLiteralDeclaration_36());
+			}
+		)
+		    |
+		(
+			enumLiteral_37=Only
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ONLYEnumLiteralDeclaration_37().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_37, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ONLYEnumLiteralDeclaration_37());
+			}
+		)
+		    |
+		(
+			enumLiteral_38=Except
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_EXCEPTEnumLiteralDeclaration_38().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_38, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_EXCEPTEnumLiteralDeclaration_38());
+			}
+		)
+		    |
+		(
+			enumLiteral_39=Rules
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_RULESEnumLiteralDeclaration_39().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_39, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_RULESEnumLiteralDeclaration_39());
+			}
+		)
+		    |
+		(
+			enumLiteral_40=WorkflowRules
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_RULESEnumLiteralDeclaration_40().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_40, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_RULESEnumLiteralDeclaration_40());
+			}
+		)
+		    |
+		(
+			enumLiteral_41=Pipeline_schedule
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PIPELINE_SCHEDULEEnumLiteralDeclaration_41().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_41, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PIPELINE_SCHEDULEEnumLiteralDeclaration_41());
+			}
+		)
+		    |
+		(
+			enumLiteral_42=Merge_requests
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_MERGE_REQUESTSEnumLiteralDeclaration_42().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_42, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_MERGE_REQUESTSEnumLiteralDeclaration_42());
+			}
+		)
+		    |
+		(
+			enumLiteral_43=Changes
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHANGESEnumLiteralDeclaration_43().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_43, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHANGESEnumLiteralDeclaration_43());
+			}
+		)
+		    |
+		(
+			enumLiteral_44=Pipelines
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PIPELINESEnumLiteralDeclaration_44().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_44, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PIPELINESEnumLiteralDeclaration_44());
+			}
+		)
+		    |
+		(
+			enumLiteral_45=Default
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEFAULTEnumLiteralDeclaration_45().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_45, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEFAULTEnumLiteralDeclaration_45());
+			}
+		)
+		    |
+		(
+			enumLiteral_46=PullRequests
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUESTSEnumLiteralDeclaration_46().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_46, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUESTSEnumLiteralDeclaration_46());
+			}
+		)
+		    |
+		(
+			enumLiteral_47=Custom
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CUSTOMEnumLiteralDeclaration_47().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_47, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CUSTOMEnumLiteralDeclaration_47());
+			}
+		)
+		    |
+		(
+			enumLiteral_48=Conditions
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CONDITIONSEnumLiteralDeclaration_48().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_48, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CONDITIONSEnumLiteralDeclaration_48());
+			}
+		)
+		    |
+		(
+			enumLiteral_49=BitbucketBranchDeleted
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCH_DELETEDEnumLiteralDeclaration_49().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_49, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCH_DELETEDEnumLiteralDeclaration_49());
+			}
+		)
+		    |
+		(
+			enumLiteral_50=BitbucketBranchCreated
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCH_CREATEDEnumLiteralDeclaration_50().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_50, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCH_CREATEDEnumLiteralDeclaration_50());
+			}
+		)
+		    |
+		(
+			enumLiteral_51=BitbucketTagCreated
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAG_CREATEDEnumLiteralDeclaration_51().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_51, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAG_CREATEDEnumLiteralDeclaration_51());
+			}
+		)
+		    |
+		(
+			enumLiteral_52=BitbucketTagDeleted
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAG_DELETEDEnumLiteralDeclaration_52().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_52, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAG_DELETEDEnumLiteralDeclaration_52());
+			}
+		)
+		    |
+		(
+			enumLiteral_53=Repository
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REPOSITORY_TRIGGEREnumLiteralDeclaration_53().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_53, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REPOSITORY_TRIGGEREnumLiteralDeclaration_53());
+			}
+		)
+		    |
+		(
+			enumLiteral_54=Scheduled
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_SCHEDULED_TRIGGEREnumLiteralDeclaration_54().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_54, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_SCHEDULED_TRIGGEREnumLiteralDeclaration_54());
+			}
+		)
+		    |
+		(
+			enumLiteral_55=Remote
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REMOTE_TRIGGEREnumLiteralDeclaration_55().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_55, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REMOTE_TRIGGEREnumLiteralDeclaration_55());
+			}
+		)
+		    |
+		(
+			enumLiteral_56=Bitbucket
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BITBUCKET_TRIGGEREnumLiteralDeclaration_56().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_56, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BITBUCKET_TRIGGEREnumLiteralDeclaration_56());
+			}
+		)
+		    |
+		(
+			enumLiteral_57=PlanBranch
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PLAN_BRANCHEnumLiteralDeclaration_57().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_57, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PLAN_BRANCHEnumLiteralDeclaration_57());
+			}
+		)
+		    |
+		(
+			enumLiteral_58=Cron
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CRONEnumLiteralDeclaration_58().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_58, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CRONEnumLiteralDeclaration_58());
+			}
+		)
+		    |
+		(
+			enumLiteral_59=Notifications
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_NOTIFICATIONSEnumLiteralDeclaration_59().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_59, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_NOTIFICATIONSEnumLiteralDeclaration_59());
+			}
+		)
+		    |
+		(
+			enumLiteral_60=LockBehavior
+			{
+				$current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_LOCK_BEHAVIOREnumLiteralDeclaration_60().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_60, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_LOCK_BEHAVIOREnumLiteralDeclaration_60());
+			}
+		)
+	)
+;
+
 // Rule PipelineKeyword
 rulePipelineKeyword returns [Enumerator current=null]
 @init {
@@ -3906,1026 +5396,1266 @@ rulePipelineKeyword returns [Enumerator current=null]
 		)
 		    |
 		(
-			enumLiteral_1=On
+			enumLiteral_1=RunName
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_ONEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_1, grammarAccess.getPipelineKeywordAccess().getPPL_KW_ONEnumLiteralDeclaration_1());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_RUN_NAMEEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_1, grammarAccess.getPipelineKeywordAccess().getPPL_KW_RUN_NAMEEnumLiteralDeclaration_1());
 			}
 		)
 		    |
 		(
-			enumLiteral_2=RunName
+			enumLiteral_2=On
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_RUN_NAMEEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_2, grammarAccess.getPipelineKeywordAccess().getPPL_KW_RUN_NAMEEnumLiteralDeclaration_2());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_ONEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_2, grammarAccess.getPipelineKeywordAccess().getPPL_KW_ONEnumLiteralDeclaration_2());
 			}
 		)
 		    |
 		(
-			enumLiteral_3=If
+			enumLiteral_3=Defaults
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_IFEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_3, grammarAccess.getPipelineKeywordAccess().getPPL_KW_IFEnumLiteralDeclaration_3());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEFAULTSEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_3, grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEFAULTSEnumLiteralDeclaration_3());
 			}
 		)
 		    |
 		(
-			enumLiteral_4=RunsOn
+			enumLiteral_4=Run
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_RUNS_ONEnumLiteralDeclaration_4().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_4, grammarAccess.getPipelineKeywordAccess().getPPL_KW_RUNS_ONEnumLiteralDeclaration_4());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_RUNEnumLiteralDeclaration_4().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_4, grammarAccess.getPipelineKeywordAccess().getPPL_KW_RUNEnumLiteralDeclaration_4());
 			}
 		)
 		    |
 		(
-			enumLiteral_5=Env
+			enumLiteral_5=Shell
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_ENVEnumLiteralDeclaration_5().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_5, grammarAccess.getPipelineKeywordAccess().getPPL_KW_ENVEnumLiteralDeclaration_5());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_SHELLEnumLiteralDeclaration_5().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_5, grammarAccess.getPipelineKeywordAccess().getPPL_KW_SHELLEnumLiteralDeclaration_5());
 			}
 		)
 		    |
 		(
-			enumLiteral_6=Defaults
+			enumLiteral_6=WorkingDirectory
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEFAULTSEnumLiteralDeclaration_6().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_6, grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEFAULTSEnumLiteralDeclaration_6());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_WORKING_DIRECTORYEnumLiteralDeclaration_6().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_6, grammarAccess.getPipelineKeywordAccess().getPPL_KW_WORKING_DIRECTORYEnumLiteralDeclaration_6());
 			}
 		)
 		    |
 		(
-			enumLiteral_7=Strategy
+			enumLiteral_7=Env
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_STRATEGYEnumLiteralDeclaration_7().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_7, grammarAccess.getPipelineKeywordAccess().getPPL_KW_STRATEGYEnumLiteralDeclaration_7());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_ENVEnumLiteralDeclaration_7().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_7, grammarAccess.getPipelineKeywordAccess().getPPL_KW_ENVEnumLiteralDeclaration_7());
 			}
 		)
 		    |
 		(
-			enumLiteral_8=Matrix
+			enumLiteral_8=Permission
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_MATRIXEnumLiteralDeclaration_8().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_8, grammarAccess.getPipelineKeywordAccess().getPPL_KW_MATRIXEnumLiteralDeclaration_8());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PERMISSIONEnumLiteralDeclaration_8().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_8, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PERMISSIONEnumLiteralDeclaration_8());
 			}
 		)
 		    |
 		(
-			enumLiteral_9=Container
+			enumLiteral_9=Concurrency
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONTAINEREnumLiteralDeclaration_9().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_9, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONTAINEREnumLiteralDeclaration_9());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONCURRENCYEnumLiteralDeclaration_9().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_9, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONCURRENCYEnumLiteralDeclaration_9());
 			}
 		)
 		    |
 		(
-			enumLiteral_10=Services
+			enumLiteral_10=Group
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_SERVICESEnumLiteralDeclaration_10().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_10, grammarAccess.getPipelineKeywordAccess().getPPL_KW_SERVICESEnumLiteralDeclaration_10());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_GROUPEnumLiteralDeclaration_10().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_10, grammarAccess.getPipelineKeywordAccess().getPPL_KW_GROUPEnumLiteralDeclaration_10());
 			}
 		)
 		    |
 		(
-			enumLiteral_11=Steps
+			enumLiteral_11=CancelInProgress
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_STEPSEnumLiteralDeclaration_11().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_11, grammarAccess.getPipelineKeywordAccess().getPPL_KW_STEPSEnumLiteralDeclaration_11());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CANCEL_IN_PROGRESSEnumLiteralDeclaration_11().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_11, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CANCEL_IN_PROGRESSEnumLiteralDeclaration_11());
 			}
 		)
 		    |
 		(
-			enumLiteral_12=Uses
+			enumLiteral_12=Pool
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_USESEnumLiteralDeclaration_12().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_12, grammarAccess.getPipelineKeywordAccess().getPPL_KW_USESEnumLiteralDeclaration_12());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_POOLEnumLiteralDeclaration_12().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_12, grammarAccess.getPipelineKeywordAccess().getPPL_KW_POOLEnumLiteralDeclaration_12());
 			}
 		)
 		    |
 		(
-			enumLiteral_13=Run
+			enumLiteral_13=VmImage
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_RUNEnumLiteralDeclaration_13().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_13, grammarAccess.getPipelineKeywordAccess().getPPL_KW_RUNEnumLiteralDeclaration_13());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_VM_IMAGEEnumLiteralDeclaration_13().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_13, grammarAccess.getPipelineKeywordAccess().getPPL_KW_VM_IMAGEEnumLiteralDeclaration_13());
 			}
 		)
 		    |
 		(
-			enumLiteral_14=Shell
+			enumLiteral_14=Demands
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_SHELLEnumLiteralDeclaration_14().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_14, grammarAccess.getPipelineKeywordAccess().getPPL_KW_SHELLEnumLiteralDeclaration_14());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEMANDSEnumLiteralDeclaration_14().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_14, grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEMANDSEnumLiteralDeclaration_14());
 			}
 		)
 		    |
 		(
-			enumLiteral_15=WorkingDirectory
+			enumLiteral_15=Resources
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_WORKING_DIRECTORYEnumLiteralDeclaration_15().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_15, grammarAccess.getPipelineKeywordAccess().getPPL_KW_WORKING_DIRECTORYEnumLiteralDeclaration_15());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_RESOURCESEnumLiteralDeclaration_15().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_15, grammarAccess.getPipelineKeywordAccess().getPPL_KW_RESOURCESEnumLiteralDeclaration_15());
 			}
 		)
 		    |
 		(
-			enumLiteral_16=With
+			enumLiteral_16=Version
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_WITHEnumLiteralDeclaration_16().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_16, grammarAccess.getPipelineKeywordAccess().getPPL_KW_WITHEnumLiteralDeclaration_16());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_VERSIONEnumLiteralDeclaration_16().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_16, grammarAccess.getPipelineKeywordAccess().getPPL_KW_VERSIONEnumLiteralDeclaration_16());
 			}
 		)
 		    |
 		(
-			enumLiteral_17=TimeoutMinutes
+			enumLiteral_17=Variables
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_TIMEOUT_MINUTESEnumLiteralDeclaration_17().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_17, grammarAccess.getPipelineKeywordAccess().getPPL_KW_TIMEOUT_MINUTESEnumLiteralDeclaration_17());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_VARIABLESEnumLiteralDeclaration_17().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_17, grammarAccess.getPipelineKeywordAccess().getPPL_KW_VARIABLESEnumLiteralDeclaration_17());
 			}
 		)
 		    |
 		(
-			enumLiteral_18=ContinueOnError_1
+			enumLiteral_18=Parameters
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONTINUE_ON_ERROREnumLiteralDeclaration_18().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_18, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONTINUE_ON_ERROREnumLiteralDeclaration_18());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PARAMETERSEnumLiteralDeclaration_18().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_18, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PARAMETERSEnumLiteralDeclaration_18());
 			}
 		)
 		    |
 		(
-			enumLiteral_19=Condition
+			enumLiteral_19=Extends
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONDITIONEnumLiteralDeclaration_19().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_19, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONDITIONEnumLiteralDeclaration_19());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_EXTENDSEnumLiteralDeclaration_19().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_19, grammarAccess.getPipelineKeywordAccess().getPPL_KW_EXTENDSEnumLiteralDeclaration_19());
 			}
 		)
 		    |
 		(
-			enumLiteral_20=Environment
+			enumLiteral_20=Include
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_ENVIRONMENTEnumLiteralDeclaration_20().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_20, grammarAccess.getPipelineKeywordAccess().getPPL_KW_ENVIRONMENTEnumLiteralDeclaration_20());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_INCLUDEEnumLiteralDeclaration_20().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_20, grammarAccess.getPipelineKeywordAccess().getPPL_KW_INCLUDEEnumLiteralDeclaration_20());
 			}
 		)
 		    |
 		(
-			enumLiteral_21=Id
+			enumLiteral_21=Types
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_IDEnumLiteralDeclaration_21().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_21, grammarAccess.getPipelineKeywordAccess().getPPL_KW_IDEnumLiteralDeclaration_21());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_TYPESEnumLiteralDeclaration_21().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_21, grammarAccess.getPipelineKeywordAccess().getPPL_KW_TYPESEnumLiteralDeclaration_21());
 			}
 		)
 		    |
 		(
-			enumLiteral_22=Needs
+			enumLiteral_22=Batch
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_NEEDSEnumLiteralDeclaration_22().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_22, grammarAccess.getPipelineKeywordAccess().getPPL_KW_NEEDSEnumLiteralDeclaration_22());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_BATCHEnumLiteralDeclaration_22().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_22, grammarAccess.getPipelineKeywordAccess().getPPL_KW_BATCHEnumLiteralDeclaration_22());
 			}
 		)
 		    |
 		(
-			enumLiteral_23=Outputs
+			enumLiteral_23=AutoCancel
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_OUTPUTSEnumLiteralDeclaration_23().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_23, grammarAccess.getPipelineKeywordAccess().getPPL_KW_OUTPUTSEnumLiteralDeclaration_23());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_AUTO_CANCELEnumLiteralDeclaration_23().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_23, grammarAccess.getPipelineKeywordAccess().getPPL_KW_AUTO_CANCELEnumLiteralDeclaration_23());
 			}
 		)
 		    |
 		(
-			enumLiteral_24=Secrets
+			enumLiteral_24=Workflows
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_SECRETSEnumLiteralDeclaration_24().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_24, grammarAccess.getPipelineKeywordAccess().getPPL_KW_SECRETSEnumLiteralDeclaration_24());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_WORKFLOWSEnumLiteralDeclaration_24().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_24, grammarAccess.getPipelineKeywordAccess().getPPL_KW_WORKFLOWSEnumLiteralDeclaration_24());
 			}
 		)
 		    |
 		(
-			enumLiteral_25=Permissions
+			enumLiteral_25=Drafts
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PERMISSIONSEnumLiteralDeclaration_25().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_25, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PERMISSIONSEnumLiteralDeclaration_25());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_DRAFTSEnumLiteralDeclaration_25().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_25, grammarAccess.getPipelineKeywordAccess().getPPL_KW_DRAFTSEnumLiteralDeclaration_25());
 			}
 		)
 		    |
 		(
-			enumLiteral_26=Concurrency
+			enumLiteral_26=Branches
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONCURRENCYEnumLiteralDeclaration_26().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_26, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONCURRENCYEnumLiteralDeclaration_26());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_BRANCHESEnumLiteralDeclaration_26().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_26, grammarAccess.getPipelineKeywordAccess().getPPL_KW_BRANCHESEnumLiteralDeclaration_26());
 			}
 		)
 		    |
 		(
-			enumLiteral_27=Timeouts
+			enumLiteral_27=BranchesIgnore
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_TIMEOUTSEnumLiteralDeclaration_27().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_27, grammarAccess.getPipelineKeywordAccess().getPPL_KW_TIMEOUTSEnumLiteralDeclaration_27());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_BRANCHES_IGNOREEnumLiteralDeclaration_27().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_27, grammarAccess.getPipelineKeywordAccess().getPPL_KW_BRANCHES_IGNOREEnumLiteralDeclaration_27());
 			}
 		)
 		    |
 		(
-			enumLiteral_28=DefaultsRun
+			enumLiteral_28=Paths
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEFAULTS_RUNEnumLiteralDeclaration_28().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_28, grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEFAULTS_RUNEnumLiteralDeclaration_28());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PATHSEnumLiteralDeclaration_28().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_28, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PATHSEnumLiteralDeclaration_28());
 			}
 		)
 		    |
 		(
-			enumLiteral_29=Workflow_dispatch
+			enumLiteral_29=PathsIgnore
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_WORKFLOW_DISPATCHEnumLiteralDeclaration_29().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_29, grammarAccess.getPipelineKeywordAccess().getPPL_KW_WORKFLOW_DISPATCHEnumLiteralDeclaration_29());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PATHS_IGNOREEnumLiteralDeclaration_29().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_29, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PATHS_IGNOREEnumLiteralDeclaration_29());
 			}
 		)
 		    |
 		(
-			enumLiteral_30=Workflow_call
+			enumLiteral_30=Tags
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_WORKFLOW_CALLEnumLiteralDeclaration_30().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_30, grammarAccess.getPipelineKeywordAccess().getPPL_KW_WORKFLOW_CALLEnumLiteralDeclaration_30());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_TAGSEnumLiteralDeclaration_30().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_30, grammarAccess.getPipelineKeywordAccess().getPPL_KW_TAGSEnumLiteralDeclaration_30());
 			}
 		)
 		    |
 		(
-			enumLiteral_31=Schedule
+			enumLiteral_31=TagsIgnore
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_SCHEDULEEnumLiteralDeclaration_31().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_31, grammarAccess.getPipelineKeywordAccess().getPPL_KW_SCHEDULEEnumLiteralDeclaration_31());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_TAGS_IGNOREEnumLiteralDeclaration_31().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_31, grammarAccess.getPipelineKeywordAccess().getPPL_KW_TAGS_IGNOREEnumLiteralDeclaration_31());
 			}
 		)
 		    |
 		(
-			enumLiteral_32=Push
+			enumLiteral_32=Schedules
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PUSHEnumLiteralDeclaration_32().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_32, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PUSHEnumLiteralDeclaration_32());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_SCHEDULESEnumLiteralDeclaration_32().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_32, grammarAccess.getPipelineKeywordAccess().getPPL_KW_SCHEDULESEnumLiteralDeclaration_32());
 			}
 		)
 		    |
 		(
-			enumLiteral_33=Pull_request
+			enumLiteral_33=Schedule
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PULL_REQUESTEnumLiteralDeclaration_33().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_33, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PULL_REQUESTEnumLiteralDeclaration_33());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_SCHEDULEEnumLiteralDeclaration_33().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_33, grammarAccess.getPipelineKeywordAccess().getPPL_KW_SCHEDULEEnumLiteralDeclaration_33());
 			}
 		)
 		    |
 		(
-			enumLiteral_34=Paths
+			enumLiteral_34=Workflow_call
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PATHSEnumLiteralDeclaration_34().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_34, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PATHSEnumLiteralDeclaration_34());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_WORKFLOW_CALLEnumLiteralDeclaration_34().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_34, grammarAccess.getPipelineKeywordAccess().getPPL_KW_WORKFLOW_CALLEnumLiteralDeclaration_34());
 			}
 		)
 		    |
 		(
-			enumLiteral_35=Branches
+			enumLiteral_35=Workflow_dispatch
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_BRANCHESEnumLiteralDeclaration_35().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_35, grammarAccess.getPipelineKeywordAccess().getPPL_KW_BRANCHESEnumLiteralDeclaration_35());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_WORKFLOW_DISPATCHEnumLiteralDeclaration_35().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_35, grammarAccess.getPipelineKeywordAccess().getPPL_KW_WORKFLOW_DISPATCHEnumLiteralDeclaration_35());
 			}
 		)
 		    |
 		(
-			enumLiteral_36=Tags
+			enumLiteral_36=Cron
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_TAGSEnumLiteralDeclaration_36().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_36, grammarAccess.getPipelineKeywordAccess().getPPL_KW_TAGSEnumLiteralDeclaration_36());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CRONEnumLiteralDeclaration_36().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_36, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CRONEnumLiteralDeclaration_36());
 			}
 		)
 		    |
 		(
-			enumLiteral_37=BranchesIgnore
+			enumLiteral_37=DisplayName
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_BRANCHES_IGNOREEnumLiteralDeclaration_37().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_37, grammarAccess.getPipelineKeywordAccess().getPPL_KW_BRANCHES_IGNOREEnumLiteralDeclaration_37());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_DISPLAY_NAMEEnumLiteralDeclaration_37().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_37, grammarAccess.getPipelineKeywordAccess().getPPL_KW_DISPLAY_NAMEEnumLiteralDeclaration_37());
 			}
 		)
 		    |
 		(
-			enumLiteral_38=PathsIgnore
+			enumLiteral_38=Always
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PATHS_IGNOREEnumLiteralDeclaration_38().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_38, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PATHS_IGNOREEnumLiteralDeclaration_38());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_ALWAYSEnumLiteralDeclaration_38().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_38, grammarAccess.getPipelineKeywordAccess().getPPL_KW_ALWAYSEnumLiteralDeclaration_38());
 			}
 		)
 		    |
 		(
-			enumLiteral_39=TagsIgnore
+			enumLiteral_39=Stage
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_TAGS_IGNOREEnumLiteralDeclaration_39().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_39, grammarAccess.getPipelineKeywordAccess().getPPL_KW_TAGS_IGNOREEnumLiteralDeclaration_39());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_STAGEEnumLiteralDeclaration_39().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_39, grammarAccess.getPipelineKeywordAccess().getPPL_KW_STAGEEnumLiteralDeclaration_39());
 			}
 		)
 		    |
 		(
-			enumLiteral_40=Cron
+			enumLiteral_40=Condition
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CRONEnumLiteralDeclaration_40().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_40, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CRONEnumLiteralDeclaration_40());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONDITIONEnumLiteralDeclaration_40().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_40, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONDITIONEnumLiteralDeclaration_40());
 			}
 		)
 		    |
 		(
-			enumLiteral_41=Repository_dispatch
+			enumLiteral_41=IsSkippable
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_REPOSITORY_DISPATCHEnumLiteralDeclaration_41().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_41, grammarAccess.getPipelineKeywordAccess().getPPL_KW_REPOSITORY_DISPATCHEnumLiteralDeclaration_41());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_IS_SKIPPABLEEnumLiteralDeclaration_41().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_41, grammarAccess.getPipelineKeywordAccess().getPPL_KW_IS_SKIPPABLEEnumLiteralDeclaration_41());
 			}
 		)
 		    |
 		(
-			enumLiteral_42=Workflow_run
+			enumLiteral_42=DependsOn
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_WORKFLOW_RUNEnumLiteralDeclaration_42().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_42, grammarAccess.getPipelineKeywordAccess().getPPL_KW_WORKFLOW_RUNEnumLiteralDeclaration_42());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEPENDS_ONEnumLiteralDeclaration_42().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_42, grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEPENDS_ONEnumLiteralDeclaration_42());
 			}
 		)
 		    |
 		(
-			enumLiteral_43=Checkout
+			enumLiteral_43=Job
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CHECKOUTEnumLiteralDeclaration_43().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_43, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CHECKOUTEnumLiteralDeclaration_43());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_JOBEnumLiteralDeclaration_43().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_43, grammarAccess.getPipelineKeywordAccess().getPPL_KW_JOBEnumLiteralDeclaration_43());
 			}
 		)
 		    |
 		(
-			enumLiteral_44=Filters
+			enumLiteral_44=Deployment
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_FILTERSEnumLiteralDeclaration_44().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_44, grammarAccess.getPipelineKeywordAccess().getPPL_KW_FILTERSEnumLiteralDeclaration_44());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEPLOYMENTEnumLiteralDeclaration_44().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_44, grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEPLOYMENTEnumLiteralDeclaration_44());
 			}
 		)
 		    |
 		(
-			enumLiteral_45=Include
+			enumLiteral_45=Needs
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_INCLUDEEnumLiteralDeclaration_45().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_45, grammarAccess.getPipelineKeywordAccess().getPPL_KW_INCLUDEEnumLiteralDeclaration_45());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_NEEDSEnumLiteralDeclaration_45().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_45, grammarAccess.getPipelineKeywordAccess().getPPL_KW_NEEDSEnumLiteralDeclaration_45());
 			}
 		)
 		    |
 		(
-			enumLiteral_46=Exclude
+			enumLiteral_46=Script
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_EXCLUDEEnumLiteralDeclaration_46().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_46, grammarAccess.getPipelineKeywordAccess().getPPL_KW_EXCLUDEEnumLiteralDeclaration_46());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_SCRIPTEnumLiteralDeclaration_46().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_46, grammarAccess.getPipelineKeywordAccess().getPPL_KW_SCRIPTEnumLiteralDeclaration_46());
 			}
 		)
 		    |
 		(
-			enumLiteral_47=FailFast
+			enumLiteral_47=Bash
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_FAIL_FASTEnumLiteralDeclaration_47().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_47, grammarAccess.getPipelineKeywordAccess().getPPL_KW_FAIL_FASTEnumLiteralDeclaration_47());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_BASHEnumLiteralDeclaration_47().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_47, grammarAccess.getPipelineKeywordAccess().getPPL_KW_BASHEnumLiteralDeclaration_47());
 			}
 		)
 		    |
 		(
-			enumLiteral_48=MaxParallel
+			enumLiteral_48=Pwsh
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_MAX_PARALLELEnumLiteralDeclaration_48().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_48, grammarAccess.getPipelineKeywordAccess().getPPL_KW_MAX_PARALLELEnumLiteralDeclaration_48());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PWSHEnumLiteralDeclaration_48().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_48, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PWSHEnumLiteralDeclaration_48());
 			}
 		)
 		    |
 		(
-			enumLiteral_49=ContainerImage
+			enumLiteral_49=Powershell
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONTAINER_IMAGEEnumLiteralDeclaration_49().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_49, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONTAINER_IMAGEEnumLiteralDeclaration_49());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_POWERSHELLEnumLiteralDeclaration_49().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_49, grammarAccess.getPipelineKeywordAccess().getPPL_KW_POWERSHELLEnumLiteralDeclaration_49());
 			}
 		)
 		    |
 		(
-			enumLiteral_50=Credentials
+			enumLiteral_50=Checkout
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CREDENTIALSEnumLiteralDeclaration_50().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_50, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CREDENTIALSEnumLiteralDeclaration_50());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CHECKOUTEnumLiteralDeclaration_50().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_50, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CHECKOUTEnumLiteralDeclaration_50());
 			}
 		)
 		    |
 		(
-			enumLiteral_51=Ports
+			enumLiteral_51=Download
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PORTSEnumLiteralDeclaration_51().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_51, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PORTSEnumLiteralDeclaration_51());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_DOWNLOADEnumLiteralDeclaration_51().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_51, grammarAccess.getPipelineKeywordAccess().getPPL_KW_DOWNLOADEnumLiteralDeclaration_51());
 			}
 		)
 		    |
 		(
-			enumLiteral_52=Inherit
+			enumLiteral_52=GetPackage
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_INHERITEnumLiteralDeclaration_52().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_52, grammarAccess.getPipelineKeywordAccess().getPPL_KW_INHERITEnumLiteralDeclaration_52());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_GET_PACKAGEEnumLiteralDeclaration_52().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_52, grammarAccess.getPipelineKeywordAccess().getPPL_KW_GET_PACKAGEEnumLiteralDeclaration_52());
 			}
 		)
 		    |
 		(
-			enumLiteral_53=Trigger
+			enumLiteral_53=Publish
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_TRIGGEREnumLiteralDeclaration_53().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_53, grammarAccess.getPipelineKeywordAccess().getPPL_KW_TRIGGEREnumLiteralDeclaration_53());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PUBLISHEnumLiteralDeclaration_53().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_53, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PUBLISHEnumLiteralDeclaration_53());
 			}
 		)
 		    |
 		(
-			enumLiteral_54=Pool
+			enumLiteral_54=Task
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_POOLEnumLiteralDeclaration_54().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_54, grammarAccess.getPipelineKeywordAccess().getPPL_KW_POOLEnumLiteralDeclaration_54());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_TASKEnumLiteralDeclaration_54().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_54, grammarAccess.getPipelineKeywordAccess().getPPL_KW_TASKEnumLiteralDeclaration_54());
 			}
 		)
 		    |
 		(
-			enumLiteral_55=DisplayName
+			enumLiteral_55=Value
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_DISPLAY_NAMEEnumLiteralDeclaration_55().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_55, grammarAccess.getPipelineKeywordAccess().getPPL_KW_DISPLAY_NAMEEnumLiteralDeclaration_55());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_VALUEEnumLiteralDeclaration_55().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_55, grammarAccess.getPipelineKeywordAccess().getPPL_KW_VALUEEnumLiteralDeclaration_55());
 			}
 		)
 		    |
 		(
-			enumLiteral_56=Task
+			enumLiteral_56=Readonly
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_TASKEnumLiteralDeclaration_56().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_56, grammarAccess.getPipelineKeywordAccess().getPPL_KW_TASKEnumLiteralDeclaration_56());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_READONLYEnumLiteralDeclaration_56().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_56, grammarAccess.getPipelineKeywordAccess().getPPL_KW_READONLYEnumLiteralDeclaration_56());
 			}
 		)
 		    |
 		(
-			enumLiteral_57=Template
+			enumLiteral_57=Builds
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_TEMPLATEEnumLiteralDeclaration_57().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_57, grammarAccess.getPipelineKeywordAccess().getPPL_KW_TEMPLATEEnumLiteralDeclaration_57());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_BUILDSEnumLiteralDeclaration_57().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_57, grammarAccess.getPipelineKeywordAccess().getPPL_KW_BUILDSEnumLiteralDeclaration_57());
 			}
 		)
 		    |
 		(
-			enumLiteral_58=DependsOn
+			enumLiteral_58=Containers
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEPENDS_ONEnumLiteralDeclaration_58().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_58, grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEPENDS_ONEnumLiteralDeclaration_58());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONTAINERSEnumLiteralDeclaration_58().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_58, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONTAINERSEnumLiteralDeclaration_58());
 			}
 		)
 		    |
 		(
-			enumLiteral_59=Workspace
+			enumLiteral_59=Pipelines
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_WORKSPACEEnumLiteralDeclaration_59().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_59, grammarAccess.getPipelineKeywordAccess().getPPL_KW_WORKSPACEEnumLiteralDeclaration_59());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PIPELINESEnumLiteralDeclaration_59().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_59, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PIPELINESEnumLiteralDeclaration_59());
 			}
 		)
 		    |
 		(
-			enumLiteral_60=Parameters
+			enumLiteral_60=Repositories
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PARAMETERSEnumLiteralDeclaration_60().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_60, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PARAMETERSEnumLiteralDeclaration_60());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_REPOSITORIESEnumLiteralDeclaration_60().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_60, grammarAccess.getPipelineKeywordAccess().getPPL_KW_REPOSITORIESEnumLiteralDeclaration_60());
 			}
 		)
 		    |
 		(
-			enumLiteral_61=VmImage
+			enumLiteral_61=Webhooks
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_POOL_VM_IMAGEEnumLiteralDeclaration_61().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_61, grammarAccess.getPipelineKeywordAccess().getPPL_KW_POOL_VM_IMAGEEnumLiteralDeclaration_61());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_WEBHOOKSEnumLiteralDeclaration_61().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_61, grammarAccess.getPipelineKeywordAccess().getPPL_KW_WEBHOOKSEnumLiteralDeclaration_61());
 			}
 		)
 		    |
 		(
-			enumLiteral_62=Resources
+			enumLiteral_62=Packages
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_RESOURCESEnumLiteralDeclaration_62().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_62, grammarAccess.getPipelineKeywordAccess().getPPL_KW_RESOURCESEnumLiteralDeclaration_62());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PACKAGESEnumLiteralDeclaration_62().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_62, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PACKAGESEnumLiteralDeclaration_62());
 			}
 		)
 		    |
 		(
-			enumLiteral_63=Pipeline
+			enumLiteral_63=Inputs
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PIPELINEEnumLiteralDeclaration_63().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_63, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PIPELINEEnumLiteralDeclaration_63());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_INPUTSEnumLiteralDeclaration_63().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_63, grammarAccess.getPipelineKeywordAccess().getPPL_KW_INPUTSEnumLiteralDeclaration_63());
 			}
 		)
 		    |
 		(
-			enumLiteral_64=Stage
+			enumLiteral_64=Outputs
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_STAGEEnumLiteralDeclaration_64().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_64, grammarAccess.getPipelineKeywordAccess().getPPL_KW_STAGEEnumLiteralDeclaration_64());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_OUTPUTSEnumLiteralDeclaration_64().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_64, grammarAccess.getPipelineKeywordAccess().getPPL_KW_OUTPUTSEnumLiteralDeclaration_64());
 			}
 		)
 		    |
 		(
-			enumLiteral_65=TimeoutInMinutes
+			enumLiteral_65=Secrets
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_TIMEOUT_IN_MINUTESEnumLiteralDeclaration_65().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_65, grammarAccess.getPipelineKeywordAccess().getPPL_KW_TIMEOUT_IN_MINUTESEnumLiteralDeclaration_65());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_SECRETSEnumLiteralDeclaration_65().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_65, grammarAccess.getPipelineKeywordAccess().getPPL_KW_SECRETSEnumLiteralDeclaration_65());
 			}
 		)
 		    |
 		(
-			enumLiteral_66=ContinueOnError
+			enumLiteral_66=Description
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONTINUE_ON_ERREnumLiteralDeclaration_66().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_66, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONTINUE_ON_ERREnumLiteralDeclaration_66());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_DESCRIPTIONEnumLiteralDeclaration_66().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_66, grammarAccess.getPipelineKeywordAccess().getPPL_KW_DESCRIPTIONEnumLiteralDeclaration_66());
 			}
 		)
 		    |
 		(
-			enumLiteral_67=ResourceType
+			enumLiteral_67=Required
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_RESOURCE_TYPEEnumLiteralDeclaration_67().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_67, grammarAccess.getPipelineKeywordAccess().getPPL_KW_RESOURCE_TYPEEnumLiteralDeclaration_67());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_REQUIREDEnumLiteralDeclaration_67().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_67, grammarAccess.getPipelineKeywordAccess().getPPL_KW_REQUIREDEnumLiteralDeclaration_67());
 			}
 		)
 		    |
 		(
-			enumLiteral_68=ResourceName
+			enumLiteral_68=Default
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_RESOURCE_NAMEEnumLiteralDeclaration_68().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_68, grammarAccess.getPipelineKeywordAccess().getPPL_KW_RESOURCE_NAMEEnumLiteralDeclaration_68());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEFAULTEnumLiteralDeclaration_68().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_68, grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEFAULTEnumLiteralDeclaration_68());
 			}
 		)
 		    |
 		(
-			enumLiteral_69=Stages
+			enumLiteral_69=Type
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_STAGESEnumLiteralDeclaration_69().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_69, grammarAccess.getPipelineKeywordAccess().getPPL_KW_STAGESEnumLiteralDeclaration_69());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_TYPEEnumLiteralDeclaration_69().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_69, grammarAccess.getPipelineKeywordAccess().getPPL_KW_TYPEEnumLiteralDeclaration_69());
 			}
 		)
 		    |
 		(
-			enumLiteral_70=Only
+			enumLiteral_70=Options
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_ONLYEnumLiteralDeclaration_70().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_70, grammarAccess.getPipelineKeywordAccess().getPPL_KW_ONLYEnumLiteralDeclaration_70());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_OPTIONSEnumLiteralDeclaration_70().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_70, grammarAccess.getPipelineKeywordAccess().getPPL_KW_OPTIONSEnumLiteralDeclaration_70());
 			}
 		)
 		    |
 		(
-			enumLiteral_71=Except
+			enumLiteral_71=If
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_EXCEPTEnumLiteralDeclaration_71().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_71, grammarAccess.getPipelineKeywordAccess().getPPL_KW_EXCEPTEnumLiteralDeclaration_71());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_IFEnumLiteralDeclaration_71().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_71, grammarAccess.getPipelineKeywordAccess().getPPL_KW_IFEnumLiteralDeclaration_71());
 			}
 		)
 		    |
 		(
-			enumLiteral_72=Image
+			enumLiteral_72=RunsOn
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_IMAGEEnumLiteralDeclaration_72().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_72, grammarAccess.getPipelineKeywordAccess().getPPL_KW_IMAGEEnumLiteralDeclaration_72());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_RUNS_ONEnumLiteralDeclaration_72().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_72, grammarAccess.getPipelineKeywordAccess().getPPL_KW_RUNS_ONEnumLiteralDeclaration_72());
 			}
 		)
 		    |
 		(
-			enumLiteral_73=Variables
+			enumLiteral_73=Strategy
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_VARIABLESEnumLiteralDeclaration_73().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_73, grammarAccess.getPipelineKeywordAccess().getPPL_KW_VARIABLESEnumLiteralDeclaration_73());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_STRATEGYEnumLiteralDeclaration_73().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_73, grammarAccess.getPipelineKeywordAccess().getPPL_KW_STRATEGYEnumLiteralDeclaration_73());
 			}
 		)
 		    |
 		(
-			enumLiteral_74=Cache
+			enumLiteral_74=Matrix
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CACHEEnumLiteralDeclaration_74().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_74, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CACHEEnumLiteralDeclaration_74());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_MATRIXEnumLiteralDeclaration_74().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_74, grammarAccess.getPipelineKeywordAccess().getPPL_KW_MATRIXEnumLiteralDeclaration_74());
 			}
 		)
 		    |
 		(
-			enumLiteral_75=Artifacts
+			enumLiteral_75=Container
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_ARTIFACTSEnumLiteralDeclaration_75().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_75, grammarAccess.getPipelineKeywordAccess().getPPL_KW_ARTIFACTSEnumLiteralDeclaration_75());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONTAINEREnumLiteralDeclaration_75().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_75, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONTAINEREnumLiteralDeclaration_75());
 			}
 		)
 		    |
 		(
-			enumLiteral_76=Retries
+			enumLiteral_76=Services
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_RETRIESEnumLiteralDeclaration_76().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_76, grammarAccess.getPipelineKeywordAccess().getPPL_KW_RETRIESEnumLiteralDeclaration_76());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_SERVICESEnumLiteralDeclaration_76().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_76, grammarAccess.getPipelineKeywordAccess().getPPL_KW_SERVICESEnumLiteralDeclaration_76());
 			}
 		)
 		    |
 		(
-			enumLiteral_77=Rules
+			enumLiteral_77=Steps
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_RULESEnumLiteralDeclaration_77().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_77, grammarAccess.getPipelineKeywordAccess().getPPL_KW_RULESEnumLiteralDeclaration_77());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_STEPSEnumLiteralDeclaration_77().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_77, grammarAccess.getPipelineKeywordAccess().getPPL_KW_STEPSEnumLiteralDeclaration_77());
 			}
 		)
 		    |
 		(
-			enumLiteral_78=Before_script
+			enumLiteral_78=Uses
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_BEFORE_SCRIPTEnumLiteralDeclaration_78().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_78, grammarAccess.getPipelineKeywordAccess().getPPL_KW_BEFORE_SCRIPTEnumLiteralDeclaration_78());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_USESEnumLiteralDeclaration_78().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_78, grammarAccess.getPipelineKeywordAccess().getPPL_KW_USESEnumLiteralDeclaration_78());
 			}
 		)
 		    |
 		(
-			enumLiteral_79=After_script
+			enumLiteral_79=With
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_AFTER_SCRIPTEnumLiteralDeclaration_79().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_79, grammarAccess.getPipelineKeywordAccess().getPPL_KW_AFTER_SCRIPTEnumLiteralDeclaration_79());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_WITHEnumLiteralDeclaration_79().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_79, grammarAccess.getPipelineKeywordAccess().getPPL_KW_WITHEnumLiteralDeclaration_79());
 			}
 		)
 		    |
 		(
-			enumLiteral_80=Timeout
+			enumLiteral_80=TimeoutMinutes
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_TIMEOUTEnumLiteralDeclaration_80().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_80, grammarAccess.getPipelineKeywordAccess().getPPL_KW_TIMEOUTEnumLiteralDeclaration_80());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_TIMEOUT_MINUTESEnumLiteralDeclaration_80().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_80, grammarAccess.getPipelineKeywordAccess().getPPL_KW_TIMEOUT_MINUTESEnumLiteralDeclaration_80());
 			}
 		)
 		    |
 		(
-			enumLiteral_81=When
+			enumLiteral_81=ContinueOnError_1
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_WHENEnumLiteralDeclaration_81().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_81, grammarAccess.getPipelineKeywordAccess().getPPL_KW_WHENEnumLiteralDeclaration_81());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONTINUE_ON_ERROREnumLiteralDeclaration_81().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_81, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONTINUE_ON_ERROREnumLiteralDeclaration_81());
 			}
 		)
 		    |
 		(
-			enumLiteral_82=Allow_failure
+			enumLiteral_82=Environment
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_ALLOW_FAILUREEnumLiteralDeclaration_82().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_82, grammarAccess.getPipelineKeywordAccess().getPPL_KW_ALLOW_FAILUREEnumLiteralDeclaration_82());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_ENVIRONMENTEnumLiteralDeclaration_82().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_82, grammarAccess.getPipelineKeywordAccess().getPPL_KW_ENVIRONMENTEnumLiteralDeclaration_82());
 			}
 		)
 		    |
 		(
-			enumLiteral_83=Dependencies
+			enumLiteral_83=Id
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEPENDENCIESEnumLiteralDeclaration_83().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_83, grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEPENDENCIESEnumLiteralDeclaration_83());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_IDEnumLiteralDeclaration_83().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_83, grammarAccess.getPipelineKeywordAccess().getPPL_KW_IDEnumLiteralDeclaration_83());
 			}
 		)
 		    |
 		(
-			enumLiteral_84=Extends
+			enumLiteral_84=Permissions
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_EXTENDSEnumLiteralDeclaration_84().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_84, grammarAccess.getPipelineKeywordAccess().getPPL_KW_EXTENDSEnumLiteralDeclaration_84());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PERMISSIONSEnumLiteralDeclaration_84().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_84, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PERMISSIONSEnumLiteralDeclaration_84());
 			}
 		)
 		    |
 		(
-			enumLiteral_85=Pipelines
+			enumLiteral_85=Timeouts
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PIPELINESEnumLiteralDeclaration_85().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_85, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PIPELINESEnumLiteralDeclaration_85());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_TIMEOUTSEnumLiteralDeclaration_85().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_85, grammarAccess.getPipelineKeywordAccess().getPPL_KW_TIMEOUTSEnumLiteralDeclaration_85());
 			}
 		)
 		    |
 		(
-			enumLiteral_86=Default
+			enumLiteral_86=DefaultsRun
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEFAULTEnumLiteralDeclaration_86().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_86, grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEFAULTEnumLiteralDeclaration_86());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEFAULTS_RUNEnumLiteralDeclaration_86().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_86, grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEFAULTS_RUNEnumLiteralDeclaration_86());
 			}
 		)
 		    |
 		(
-			enumLiteral_87=PullRequests
+			enumLiteral_87=Push
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PULL_REQUESTSEnumLiteralDeclaration_87().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_87, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PULL_REQUESTSEnumLiteralDeclaration_87());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PUSHEnumLiteralDeclaration_87().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_87, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PUSHEnumLiteralDeclaration_87());
 			}
 		)
 		    |
 		(
-			enumLiteral_88=Step
+			enumLiteral_88=Pull_request
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_STEPEnumLiteralDeclaration_88().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_88, grammarAccess.getPipelineKeywordAccess().getPPL_KW_STEPEnumLiteralDeclaration_88());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PULL_REQUESTEnumLiteralDeclaration_88().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_88, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PULL_REQUESTEnumLiteralDeclaration_88());
 			}
 		)
 		    |
 		(
-			enumLiteral_89=Script
+			enumLiteral_89=Repository_dispatch
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_SCRIPTEnumLiteralDeclaration_89().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_89, grammarAccess.getPipelineKeywordAccess().getPPL_KW_SCRIPTEnumLiteralDeclaration_89());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_REPOSITORY_DISPATCHEnumLiteralDeclaration_89().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_89, grammarAccess.getPipelineKeywordAccess().getPPL_KW_REPOSITORY_DISPATCHEnumLiteralDeclaration_89());
 			}
 		)
 		    |
 		(
-			enumLiteral_90=Definitions
+			enumLiteral_90=Workflow_run
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEFINITIONSEnumLiteralDeclaration_90().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_90, grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEFINITIONSEnumLiteralDeclaration_90());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_WORKFLOW_RUNEnumLiteralDeclaration_90().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_90, grammarAccess.getPipelineKeywordAccess().getPPL_KW_WORKFLOW_RUNEnumLiteralDeclaration_90());
 			}
 		)
 		    |
 		(
-			enumLiteral_91=Caches
+			enumLiteral_91=Filters
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CACHESEnumLiteralDeclaration_91().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_91, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CACHESEnumLiteralDeclaration_91());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_FILTERSEnumLiteralDeclaration_91().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_91, grammarAccess.getPipelineKeywordAccess().getPPL_KW_FILTERSEnumLiteralDeclaration_91());
 			}
 		)
 		    |
 		(
-			enumLiteral_92=Parallel
+			enumLiteral_92=Exclude
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PARALLELEnumLiteralDeclaration_92().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_92, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PARALLELEnumLiteralDeclaration_92());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_EXCLUDEEnumLiteralDeclaration_92().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_92, grammarAccess.getPipelineKeywordAccess().getPPL_KW_EXCLUDEEnumLiteralDeclaration_92());
 			}
 		)
 		    |
 		(
-			enumLiteral_93=Conditions
+			enumLiteral_93=FailFast
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONDITIONSEnumLiteralDeclaration_93().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_93, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONDITIONSEnumLiteralDeclaration_93());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_FAIL_FASTEnumLiteralDeclaration_93().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_93, grammarAccess.getPipelineKeywordAccess().getPPL_KW_FAIL_FASTEnumLiteralDeclaration_93());
 			}
 		)
 		    |
 		(
-			enumLiteral_94=MaxTime
+			enumLiteral_94=MaxParallel
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_MAX_TIMEEnumLiteralDeclaration_94().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_94, grammarAccess.getPipelineKeywordAccess().getPPL_KW_MAX_TIMEEnumLiteralDeclaration_94());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_MAX_PARALLELEnumLiteralDeclaration_94().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_94, grammarAccess.getPipelineKeywordAccess().getPPL_KW_MAX_PARALLELEnumLiteralDeclaration_94());
 			}
 		)
 		    |
 		(
-			enumLiteral_95=Project
+			enumLiteral_95=ContainerImage
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PROJECTEnumLiteralDeclaration_95().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_95, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PROJECTEnumLiteralDeclaration_95());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONTAINER_IMAGEEnumLiteralDeclaration_95().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_95, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONTAINER_IMAGEEnumLiteralDeclaration_95());
 			}
 		)
 		    |
 		(
-			enumLiteral_96=Plan
+			enumLiteral_96=Credentials
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PLANEnumLiteralDeclaration_96().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_96, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PLANEnumLiteralDeclaration_96());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CREDENTIALSEnumLiteralDeclaration_96().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_96, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CREDENTIALSEnumLiteralDeclaration_96());
 			}
 		)
 		    |
 		(
-			enumLiteral_97=Tasks
+			enumLiteral_97=Ports
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_TASKSEnumLiteralDeclaration_97().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_97, grammarAccess.getPipelineKeywordAccess().getPPL_KW_TASKSEnumLiteralDeclaration_97());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PORTSEnumLiteralDeclaration_97().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_97, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PORTSEnumLiteralDeclaration_97());
 			}
 		)
 		    |
 		(
-			enumLiteral_98=Requirements
+			enumLiteral_98=Inherit
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_REQUIREMENTSEnumLiteralDeclaration_98().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_98, grammarAccess.getPipelineKeywordAccess().getPPL_KW_REQUIREMENTSEnumLiteralDeclaration_98());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_INHERITEnumLiteralDeclaration_98().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_98, grammarAccess.getPipelineKeywordAccess().getPPL_KW_INHERITEnumLiteralDeclaration_98());
 			}
 		)
 		    |
 		(
-			enumLiteral_99=Final
+			enumLiteral_99=Trigger
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_FINALEnumLiteralDeclaration_99().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_99, grammarAccess.getPipelineKeywordAccess().getPPL_KW_FINALEnumLiteralDeclaration_99());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_TRIGGEREnumLiteralDeclaration_99().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_99, grammarAccess.getPipelineKeywordAccess().getPPL_KW_TRIGGEREnumLiteralDeclaration_99());
 			}
 		)
 		    |
 		(
-			enumLiteral_100=Jdk
+			enumLiteral_100=Template
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_JDKEnumLiteralDeclaration_100().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_100, grammarAccess.getPipelineKeywordAccess().getPPL_KW_JDKEnumLiteralDeclaration_100());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_TEMPLATEEnumLiteralDeclaration_100().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_100, grammarAccess.getPipelineKeywordAccess().getPPL_KW_TEMPLATEEnumLiteralDeclaration_100());
 			}
 		)
 		    |
 		(
-			enumLiteral_101=Labels
+			enumLiteral_101=Workspace
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_LABELSEnumLiteralDeclaration_101().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_101, grammarAccess.getPipelineKeywordAccess().getPPL_KW_LABELSEnumLiteralDeclaration_101());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_WORKSPACEEnumLiteralDeclaration_101().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_101, grammarAccess.getPipelineKeywordAccess().getPPL_KW_WORKSPACEEnumLiteralDeclaration_101());
 			}
 		)
 		    |
 		(
-			enumLiteral_102=Repository
+			enumLiteral_102=Pipeline
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_REPOSITORYEnumLiteralDeclaration_102().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_102, grammarAccess.getPipelineKeywordAccess().getPPL_KW_REPOSITORYEnumLiteralDeclaration_102());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PIPELINEEnumLiteralDeclaration_102().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_102, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PIPELINEEnumLiteralDeclaration_102());
 			}
 		)
 		    |
 		(
-			enumLiteral_103=Deployment
+			enumLiteral_103=TimeoutInMinutes
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEPLOYMENTEnumLiteralDeclaration_103().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_103, grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEPLOYMENTEnumLiteralDeclaration_103());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_TIMEOUT_IN_MINUTESEnumLiteralDeclaration_103().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_103, grammarAccess.getPipelineKeywordAccess().getPPL_KW_TIMEOUT_IN_MINUTESEnumLiteralDeclaration_103());
 			}
 		)
 		    |
 		(
-			enumLiteral_104=Release
+			enumLiteral_104=ContinueOnError
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_RELEASEEnumLiteralDeclaration_104().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_104, grammarAccess.getPipelineKeywordAccess().getPPL_KW_RELEASEEnumLiteralDeclaration_104());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONTINUE_ON_ERREnumLiteralDeclaration_104().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_104, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONTINUE_ON_ERREnumLiteralDeclaration_104());
 			}
 		)
 		    |
 		(
-			enumLiteral_105=Version
+			enumLiteral_105=ResourceType
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_VERSIONEnumLiteralDeclaration_105().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_105, grammarAccess.getPipelineKeywordAccess().getPPL_KW_VERSIONEnumLiteralDeclaration_105());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_RESOURCE_TYPEEnumLiteralDeclaration_105().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_105, grammarAccess.getPipelineKeywordAccess().getPPL_KW_RESOURCE_TYPEEnumLiteralDeclaration_105());
 			}
 		)
 		    |
 		(
-			enumLiteral_106=Docker
+			enumLiteral_106=ResourceName
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_DOCKEREnumLiteralDeclaration_106().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_106, grammarAccess.getPipelineKeywordAccess().getPPL_KW_DOCKEREnumLiteralDeclaration_106());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_RESOURCE_NAMEEnumLiteralDeclaration_106().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_106, grammarAccess.getPipelineKeywordAccess().getPPL_KW_RESOURCE_NAMEEnumLiteralDeclaration_106());
 			}
 		)
 		    |
 		(
-			enumLiteral_107=Agent
+			enumLiteral_107=Stages
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_AGENTEnumLiteralDeclaration_107().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_107, grammarAccess.getPipelineKeywordAccess().getPPL_KW_AGENTEnumLiteralDeclaration_107());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_STAGESEnumLiteralDeclaration_107().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_107, grammarAccess.getPipelineKeywordAccess().getPPL_KW_STAGESEnumLiteralDeclaration_107());
 			}
 		)
 		    |
 		(
-			enumLiteral_108=Queue
+			enumLiteral_108=Only
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_QUEUEEnumLiteralDeclaration_108().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_108, grammarAccess.getPipelineKeywordAccess().getPPL_KW_QUEUEEnumLiteralDeclaration_108());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_ONLYEnumLiteralDeclaration_108().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_108, grammarAccess.getPipelineKeywordAccess().getPPL_KW_ONLYEnumLiteralDeclaration_108());
 			}
 		)
 		    |
 		(
-			enumLiteral_109=Snapshot
+			enumLiteral_109=Except
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_SNAPSHOTEnumLiteralDeclaration_109().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_109, grammarAccess.getPipelineKeywordAccess().getPPL_KW_SNAPSHOTEnumLiteralDeclaration_109());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_EXCEPTEnumLiteralDeclaration_109().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_109, grammarAccess.getPipelineKeywordAccess().getPPL_KW_EXCEPTEnumLiteralDeclaration_109());
 			}
 		)
 		    |
 		(
-			enumLiteral_110=Policy
+			enumLiteral_110=Image
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_POLICYEnumLiteralDeclaration_110().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_110, grammarAccess.getPipelineKeywordAccess().getPPL_KW_POLICYEnumLiteralDeclaration_110());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_IMAGEEnumLiteralDeclaration_110().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_110, grammarAccess.getPipelineKeywordAccess().getPPL_KW_IMAGEEnumLiteralDeclaration_110());
 			}
 		)
 		    |
 		(
-			enumLiteral_111=Approvals
+			enumLiteral_111=Cache
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_APPROVALSEnumLiteralDeclaration_111().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_111, grammarAccess.getPipelineKeywordAccess().getPPL_KW_APPROVALSEnumLiteralDeclaration_111());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CACHEEnumLiteralDeclaration_111().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_111, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CACHEEnumLiteralDeclaration_111());
 			}
 		)
 		    |
 		(
-			enumLiteral_112=PreBuild
+			enumLiteral_112=Artifacts
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PREBUILDEnumLiteralDeclaration_112().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_112, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PREBUILDEnumLiteralDeclaration_112());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_ARTIFACTSEnumLiteralDeclaration_112().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_112, grammarAccess.getPipelineKeywordAccess().getPPL_KW_ARTIFACTSEnumLiteralDeclaration_112());
 			}
 		)
 		    |
 		(
-			enumLiteral_113=PostBuild
+			enumLiteral_113=Retries
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_POSTBUILDEnumLiteralDeclaration_113().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_113, grammarAccess.getPipelineKeywordAccess().getPPL_KW_POSTBUILDEnumLiteralDeclaration_113());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_RETRIESEnumLiteralDeclaration_113().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_113, grammarAccess.getPipelineKeywordAccess().getPPL_KW_RETRIESEnumLiteralDeclaration_113());
 			}
 		)
 		    |
 		(
-			enumLiteral_114=Ssh
+			enumLiteral_114=Rules
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_SSHEnumLiteralDeclaration_114().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_114, grammarAccess.getPipelineKeywordAccess().getPPL_KW_SSHEnumLiteralDeclaration_114());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_RULESEnumLiteralDeclaration_114().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_114, grammarAccess.getPipelineKeywordAccess().getPPL_KW_RULESEnumLiteralDeclaration_114());
 			}
 		)
 		    |
 		(
-			enumLiteral_115=Auth
+			enumLiteral_115=Before_script
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_AUTHEnumLiteralDeclaration_115().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_115, grammarAccess.getPipelineKeywordAccess().getPPL_KW_AUTHEnumLiteralDeclaration_115());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_BEFORE_SCRIPTEnumLiteralDeclaration_115().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_115, grammarAccess.getPipelineKeywordAccess().getPPL_KW_BEFORE_SCRIPTEnumLiteralDeclaration_115());
 			}
 		)
 		    |
 		(
-			enumLiteral_116=Storage
+			enumLiteral_116=After_script
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_STORAGEEnumLiteralDeclaration_116().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_116, grammarAccess.getPipelineKeywordAccess().getPPL_KW_STORAGEEnumLiteralDeclaration_116());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_AFTER_SCRIPTEnumLiteralDeclaration_116().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_116, grammarAccess.getPipelineKeywordAccess().getPPL_KW_AFTER_SCRIPTEnumLiteralDeclaration_116());
 			}
 		)
 		    |
 		(
-			enumLiteral_117=Endpoints
+			enumLiteral_117=Timeout
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_ENDPOINTSEnumLiteralDeclaration_117().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_117, grammarAccess.getPipelineKeywordAccess().getPPL_KW_ENDPOINTSEnumLiteralDeclaration_117());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_TIMEOUTEnumLiteralDeclaration_117().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_117, grammarAccess.getPipelineKeywordAccess().getPPL_KW_TIMEOUTEnumLiteralDeclaration_117());
 			}
 		)
 		    |
 		(
-			enumLiteral_118=Command
+			enumLiteral_118=When
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_COMMANDEnumLiteralDeclaration_118().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_118, grammarAccess.getPipelineKeywordAccess().getPPL_KW_COMMANDEnumLiteralDeclaration_118());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_WHENEnumLiteralDeclaration_118().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_118, grammarAccess.getPipelineKeywordAccess().getPPL_KW_WHENEnumLiteralDeclaration_118());
 			}
 		)
 		    |
 		(
-			enumLiteral_119=Provisioner
+			enumLiteral_119=Allow_failure
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PROVISIONEREnumLiteralDeclaration_119().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_119, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PROVISIONEREnumLiteralDeclaration_119());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_ALLOW_FAILUREEnumLiteralDeclaration_119().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_119, grammarAccess.getPipelineKeywordAccess().getPPL_KW_ALLOW_FAILUREEnumLiteralDeclaration_119());
 			}
 		)
 		    |
 		(
-			enumLiteral_120=TriggerRules
+			enumLiteral_120=Dependencies
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_TRIGGER_RULESEnumLiteralDeclaration_120().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_120, grammarAccess.getPipelineKeywordAccess().getPPL_KW_TRIGGER_RULESEnumLiteralDeclaration_120());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEPENDENCIESEnumLiteralDeclaration_120().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_120, grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEPENDENCIESEnumLiteralDeclaration_120());
 			}
 		)
 		    |
 		(
-			enumLiteral_121=RunPolicy
+			enumLiteral_121=PullRequests
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_RUN_POLICYEnumLiteralDeclaration_121().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_121, grammarAccess.getPipelineKeywordAccess().getPPL_KW_RUN_POLICYEnumLiteralDeclaration_121());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PULL_REQUESTSEnumLiteralDeclaration_121().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_121, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PULL_REQUESTSEnumLiteralDeclaration_121());
 			}
 		)
 		    |
 		(
-			enumLiteral_122=Queued
+			enumLiteral_122=Step
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_QUEUEDEnumLiteralDeclaration_122().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_122, grammarAccess.getPipelineKeywordAccess().getPPL_KW_QUEUEDEnumLiteralDeclaration_122());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_STEPEnumLiteralDeclaration_122().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_122, grammarAccess.getPipelineKeywordAccess().getPPL_KW_STEPEnumLiteralDeclaration_122());
 			}
 		)
 		    |
 		(
-			enumLiteral_123=AutoCancel
+			enumLiteral_123=Definitions
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_AUTO_CANCELEnumLiteralDeclaration_123().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_123, grammarAccess.getPipelineKeywordAccess().getPPL_KW_AUTO_CANCELEnumLiteralDeclaration_123());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEFINITIONSEnumLiteralDeclaration_123().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_123, grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEFINITIONSEnumLiteralDeclaration_123());
 			}
 		)
 		    |
 		(
-			enumLiteral_124=Notifications
+			enumLiteral_124=Caches
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_NOTIFICATIONSEnumLiteralDeclaration_124().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_124, grammarAccess.getPipelineKeywordAccess().getPPL_KW_NOTIFICATIONSEnumLiteralDeclaration_124());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CACHESEnumLiteralDeclaration_124().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_124, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CACHESEnumLiteralDeclaration_124());
 			}
 		)
 		    |
 		(
-			enumLiteral_125=DeployTrigger
+			enumLiteral_125=Parallel
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEPLOY_TRIGGEREnumLiteralDeclaration_125().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_125, grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEPLOY_TRIGGEREnumLiteralDeclaration_125());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PARALLELEnumLiteralDeclaration_125().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_125, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PARALLELEnumLiteralDeclaration_125());
 			}
 		)
 		    |
 		(
-			enumLiteral_126=ReleaseTrigger
+			enumLiteral_126=Conditions
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_RELEASE_TRIGGEREnumLiteralDeclaration_126().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_126, grammarAccess.getPipelineKeywordAccess().getPPL_KW_RELEASE_TRIGGEREnumLiteralDeclaration_126());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONDITIONSEnumLiteralDeclaration_126().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_126, grammarAccess.getPipelineKeywordAccess().getPPL_KW_CONDITIONSEnumLiteralDeclaration_126());
 			}
 		)
 		    |
 		(
-			enumLiteral_127=LockBehavior
+			enumLiteral_127=MaxTime
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_LOCK_BEHAVIOREnumLiteralDeclaration_127().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_127, grammarAccess.getPipelineKeywordAccess().getPPL_KW_LOCK_BEHAVIOREnumLiteralDeclaration_127());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_MAX_TIMEEnumLiteralDeclaration_127().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_127, grammarAccess.getPipelineKeywordAccess().getPPL_KW_MAX_TIMEEnumLiteralDeclaration_127());
 			}
 		)
 		    |
 		(
-			enumLiteral_128=ReviewStage
+			enumLiteral_128=Project
 			{
-				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_REVIEW_STAGEEnumLiteralDeclaration_128().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_128, grammarAccess.getPipelineKeywordAccess().getPPL_KW_REVIEW_STAGEEnumLiteralDeclaration_128());
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PROJECTEnumLiteralDeclaration_128().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_128, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PROJECTEnumLiteralDeclaration_128());
+			}
+		)
+		    |
+		(
+			enumLiteral_129=Plan
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PLANEnumLiteralDeclaration_129().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_129, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PLANEnumLiteralDeclaration_129());
+			}
+		)
+		    |
+		(
+			enumLiteral_130=Tasks
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_TASKSEnumLiteralDeclaration_130().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_130, grammarAccess.getPipelineKeywordAccess().getPPL_KW_TASKSEnumLiteralDeclaration_130());
+			}
+		)
+		    |
+		(
+			enumLiteral_131=Requirements
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_REQUIREMENTSEnumLiteralDeclaration_131().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_131, grammarAccess.getPipelineKeywordAccess().getPPL_KW_REQUIREMENTSEnumLiteralDeclaration_131());
+			}
+		)
+		    |
+		(
+			enumLiteral_132=Final
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_FINALEnumLiteralDeclaration_132().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_132, grammarAccess.getPipelineKeywordAccess().getPPL_KW_FINALEnumLiteralDeclaration_132());
+			}
+		)
+		    |
+		(
+			enumLiteral_133=Jdk
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_JDKEnumLiteralDeclaration_133().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_133, grammarAccess.getPipelineKeywordAccess().getPPL_KW_JDKEnumLiteralDeclaration_133());
+			}
+		)
+		    |
+		(
+			enumLiteral_134=Labels
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_LABELSEnumLiteralDeclaration_134().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_134, grammarAccess.getPipelineKeywordAccess().getPPL_KW_LABELSEnumLiteralDeclaration_134());
+			}
+		)
+		    |
+		(
+			enumLiteral_135=Repository
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_REPOSITORYEnumLiteralDeclaration_135().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_135, grammarAccess.getPipelineKeywordAccess().getPPL_KW_REPOSITORYEnumLiteralDeclaration_135());
+			}
+		)
+		    |
+		(
+			enumLiteral_136=Release
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_RELEASEEnumLiteralDeclaration_136().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_136, grammarAccess.getPipelineKeywordAccess().getPPL_KW_RELEASEEnumLiteralDeclaration_136());
+			}
+		)
+		    |
+		(
+			enumLiteral_137=Docker
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_DOCKEREnumLiteralDeclaration_137().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_137, grammarAccess.getPipelineKeywordAccess().getPPL_KW_DOCKEREnumLiteralDeclaration_137());
+			}
+		)
+		    |
+		(
+			enumLiteral_138=Agent
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_AGENTEnumLiteralDeclaration_138().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_138, grammarAccess.getPipelineKeywordAccess().getPPL_KW_AGENTEnumLiteralDeclaration_138());
+			}
+		)
+		    |
+		(
+			enumLiteral_139=Queue
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_QUEUEEnumLiteralDeclaration_139().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_139, grammarAccess.getPipelineKeywordAccess().getPPL_KW_QUEUEEnumLiteralDeclaration_139());
+			}
+		)
+		    |
+		(
+			enumLiteral_140=Snapshot
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_SNAPSHOTEnumLiteralDeclaration_140().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_140, grammarAccess.getPipelineKeywordAccess().getPPL_KW_SNAPSHOTEnumLiteralDeclaration_140());
+			}
+		)
+		    |
+		(
+			enumLiteral_141=Policy
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_POLICYEnumLiteralDeclaration_141().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_141, grammarAccess.getPipelineKeywordAccess().getPPL_KW_POLICYEnumLiteralDeclaration_141());
+			}
+		)
+		    |
+		(
+			enumLiteral_142=Approvals
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_APPROVALSEnumLiteralDeclaration_142().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_142, grammarAccess.getPipelineKeywordAccess().getPPL_KW_APPROVALSEnumLiteralDeclaration_142());
+			}
+		)
+		    |
+		(
+			enumLiteral_143=PreBuild
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PREBUILDEnumLiteralDeclaration_143().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_143, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PREBUILDEnumLiteralDeclaration_143());
+			}
+		)
+		    |
+		(
+			enumLiteral_144=PostBuild
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_POSTBUILDEnumLiteralDeclaration_144().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_144, grammarAccess.getPipelineKeywordAccess().getPPL_KW_POSTBUILDEnumLiteralDeclaration_144());
+			}
+		)
+		    |
+		(
+			enumLiteral_145=Ssh
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_SSHEnumLiteralDeclaration_145().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_145, grammarAccess.getPipelineKeywordAccess().getPPL_KW_SSHEnumLiteralDeclaration_145());
+			}
+		)
+		    |
+		(
+			enumLiteral_146=Auth
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_AUTHEnumLiteralDeclaration_146().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_146, grammarAccess.getPipelineKeywordAccess().getPPL_KW_AUTHEnumLiteralDeclaration_146());
+			}
+		)
+		    |
+		(
+			enumLiteral_147=Storage
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_STORAGEEnumLiteralDeclaration_147().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_147, grammarAccess.getPipelineKeywordAccess().getPPL_KW_STORAGEEnumLiteralDeclaration_147());
+			}
+		)
+		    |
+		(
+			enumLiteral_148=Endpoints
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_ENDPOINTSEnumLiteralDeclaration_148().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_148, grammarAccess.getPipelineKeywordAccess().getPPL_KW_ENDPOINTSEnumLiteralDeclaration_148());
+			}
+		)
+		    |
+		(
+			enumLiteral_149=Command
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_COMMANDEnumLiteralDeclaration_149().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_149, grammarAccess.getPipelineKeywordAccess().getPPL_KW_COMMANDEnumLiteralDeclaration_149());
+			}
+		)
+		    |
+		(
+			enumLiteral_150=Provisioner
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_PROVISIONEREnumLiteralDeclaration_150().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_150, grammarAccess.getPipelineKeywordAccess().getPPL_KW_PROVISIONEREnumLiteralDeclaration_150());
+			}
+		)
+		    |
+		(
+			enumLiteral_151=TriggerRules
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_TRIGGER_RULESEnumLiteralDeclaration_151().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_151, grammarAccess.getPipelineKeywordAccess().getPPL_KW_TRIGGER_RULESEnumLiteralDeclaration_151());
+			}
+		)
+		    |
+		(
+			enumLiteral_152=RunPolicy
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_RUN_POLICYEnumLiteralDeclaration_152().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_152, grammarAccess.getPipelineKeywordAccess().getPPL_KW_RUN_POLICYEnumLiteralDeclaration_152());
+			}
+		)
+		    |
+		(
+			enumLiteral_153=Queued
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_QUEUEDEnumLiteralDeclaration_153().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_153, grammarAccess.getPipelineKeywordAccess().getPPL_KW_QUEUEDEnumLiteralDeclaration_153());
+			}
+		)
+		    |
+		(
+			enumLiteral_154=Notifications
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_NOTIFICATIONSEnumLiteralDeclaration_154().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_154, grammarAccess.getPipelineKeywordAccess().getPPL_KW_NOTIFICATIONSEnumLiteralDeclaration_154());
+			}
+		)
+		    |
+		(
+			enumLiteral_155=DeployTrigger
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEPLOY_TRIGGEREnumLiteralDeclaration_155().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_155, grammarAccess.getPipelineKeywordAccess().getPPL_KW_DEPLOY_TRIGGEREnumLiteralDeclaration_155());
+			}
+		)
+		    |
+		(
+			enumLiteral_156=ReleaseTrigger
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_RELEASE_TRIGGEREnumLiteralDeclaration_156().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_156, grammarAccess.getPipelineKeywordAccess().getPPL_KW_RELEASE_TRIGGEREnumLiteralDeclaration_156());
+			}
+		)
+		    |
+		(
+			enumLiteral_157=LockBehavior
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_LOCK_BEHAVIOREnumLiteralDeclaration_157().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_157, grammarAccess.getPipelineKeywordAccess().getPPL_KW_LOCK_BEHAVIOREnumLiteralDeclaration_157());
+			}
+		)
+		    |
+		(
+			enumLiteral_158=ReviewStage
+			{
+				$current = grammarAccess.getPipelineKeywordAccess().getPPL_KW_REVIEW_STAGEEnumLiteralDeclaration_158().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_158, grammarAccess.getPipelineKeywordAccess().getPPL_KW_REVIEW_STAGEEnumLiteralDeclaration_158());
 			}
 		)
 	)

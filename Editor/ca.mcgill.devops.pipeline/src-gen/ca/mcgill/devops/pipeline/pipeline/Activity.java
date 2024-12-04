@@ -3,6 +3,8 @@
  */
 package ca.mcgill.devops.pipeline.pipeline;
 
+import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -15,6 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Activity#getName <em>Name</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Activity#getActivities <em>Activities</em>}</li>
  * </ul>
  *
  * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getActivity()
@@ -44,5 +47,17 @@ public interface Activity extends EObject
    * @generated
    */
   void setName(String value);
+
+  /**
+   * Returns the value of the '<em><b>Activities</b></em>' attribute list.
+   * The list contents are of type {@link java.lang.String}.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Activities</em>' attribute list.
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getActivity_Activities()
+   * @model unique="false"
+   * @generated
+   */
+  EList<String> getActivities();
 
 } // Activity

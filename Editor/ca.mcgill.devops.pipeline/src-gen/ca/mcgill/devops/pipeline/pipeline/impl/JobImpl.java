@@ -4,7 +4,7 @@
 package ca.mcgill.devops.pipeline.pipeline.impl;
 
 import ca.mcgill.devops.pipeline.pipeline.Job;
-import ca.mcgill.devops.pipeline.pipeline.JobParameter;
+import ca.mcgill.devops.pipeline.pipeline.ParameterValue;
 import ca.mcgill.devops.pipeline.pipeline.PipelinePackage;
 import ca.mcgill.devops.pipeline.pipeline.Step;
 
@@ -144,7 +144,7 @@ public class JobImpl extends MinimalEObjectImpl.Container implements Job
    * @generated
    * @ordered
    */
-  protected EList<JobParameter> jobParameterValues;
+  protected EList<ParameterValue> jobParameterValues;
 
   /**
    * The cached value of the '{@link #getSteps() <em>Steps</em>}' containment reference list.
@@ -298,11 +298,11 @@ public class JobImpl extends MinimalEObjectImpl.Container implements Job
    * @generated
    */
   @Override
-  public EList<JobParameter> getJobParameterValues()
+  public EList<ParameterValue> getJobParameterValues()
   {
     if (jobParameterValues == null)
     {
-      jobParameterValues = new EObjectContainmentEList<JobParameter>(JobParameter.class, this, PipelinePackage.JOB__JOB_PARAMETER_VALUES);
+      jobParameterValues = new EObjectContainmentEList<ParameterValue>(ParameterValue.class, this, PipelinePackage.JOB__JOB_PARAMETER_VALUES);
     }
     return jobParameterValues;
   }
@@ -397,7 +397,7 @@ public class JobImpl extends MinimalEObjectImpl.Container implements Job
         return;
       case PipelinePackage.JOB__JOB_PARAMETER_VALUES:
         getJobParameterValues().clear();
-        getJobParameterValues().addAll((Collection<? extends JobParameter>)newValue);
+        getJobParameterValues().addAll((Collection<? extends ParameterValue>)newValue);
         return;
       case PipelinePackage.JOB__STEPS:
         getSteps().clear();

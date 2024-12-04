@@ -4,6 +4,7 @@
 package ca.mcgill.devops.pipeline.pipeline.impl;
 
 import ca.mcgill.devops.pipeline.pipeline.ParameterValue;
+import ca.mcgill.devops.pipeline.pipeline.PipelineKeyword;
 import ca.mcgill.devops.pipeline.pipeline.PipelinePackage;
 
 import java.util.Collection;
@@ -31,8 +32,9 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ParameterValueImpl#getName <em>Name</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ParameterValueImpl#getSubParameterValues <em>Sub Parameter Values</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ParameterValueImpl#getOtherName <em>Other Name</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ParameterValueImpl#getValue <em>Value</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ParameterValueImpl#getSubParameters <em>Sub Parameters</em>}</li>
  * </ul>
  *
  * @generated
@@ -47,7 +49,7 @@ public class ParameterValueImpl extends MinimalEObjectImpl.Container implements 
    * @generated
    * @ordered
    */
-  protected static final String NAME_EDEFAULT = null;
+  protected static final PipelineKeyword NAME_EDEFAULT = PipelineKeyword.PPL_KW_NAME;
 
   /**
    * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -57,17 +59,27 @@ public class ParameterValueImpl extends MinimalEObjectImpl.Container implements 
    * @generated
    * @ordered
    */
-  protected String name = NAME_EDEFAULT;
+  protected PipelineKeyword name = NAME_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getSubParameterValues() <em>Sub Parameter Values</em>}' containment reference list.
+   * The default value of the '{@link #getOtherName() <em>Other Name</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getSubParameterValues()
+   * @see #getOtherName()
    * @generated
    * @ordered
    */
-  protected EList<ParameterValue> subParameterValues;
+  protected static final String OTHER_NAME_EDEFAULT = null;
+
+  /**
+   * The cached value of the '{@link #getOtherName() <em>Other Name</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getOtherName()
+   * @generated
+   * @ordered
+   */
+  protected String otherName = OTHER_NAME_EDEFAULT;
 
   /**
    * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
@@ -88,6 +100,16 @@ public class ParameterValueImpl extends MinimalEObjectImpl.Container implements 
    * @ordered
    */
   protected String value = VALUE_EDEFAULT;
+
+  /**
+   * The cached value of the '{@link #getSubParameters() <em>Sub Parameters</em>}' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getSubParameters()
+   * @generated
+   * @ordered
+   */
+  protected EList<ParameterValue> subParameters;
 
   /**
    * <!-- begin-user-doc -->
@@ -116,7 +138,7 @@ public class ParameterValueImpl extends MinimalEObjectImpl.Container implements 
    * @generated
    */
   @Override
-  public String getName()
+  public PipelineKeyword getName()
   {
     return name;
   }
@@ -127,10 +149,10 @@ public class ParameterValueImpl extends MinimalEObjectImpl.Container implements 
    * @generated
    */
   @Override
-  public void setName(String newName)
+  public void setName(PipelineKeyword newName)
   {
-    String oldName = name;
-    name = newName;
+    PipelineKeyword oldName = name;
+    name = newName == null ? NAME_EDEFAULT : newName;
     if (eNotificationRequired())
       eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.PARAMETER_VALUE__NAME, oldName, name));
   }
@@ -141,13 +163,23 @@ public class ParameterValueImpl extends MinimalEObjectImpl.Container implements 
    * @generated
    */
   @Override
-  public EList<ParameterValue> getSubParameterValues()
+  public String getOtherName()
   {
-    if (subParameterValues == null)
-    {
-      subParameterValues = new EObjectContainmentEList<ParameterValue>(ParameterValue.class, this, PipelinePackage.PARAMETER_VALUE__SUB_PARAMETER_VALUES);
-    }
-    return subParameterValues;
+    return otherName;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public void setOtherName(String newOtherName)
+  {
+    String oldOtherName = otherName;
+    otherName = newOtherName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.PARAMETER_VALUE__OTHER_NAME, oldOtherName, otherName));
   }
 
   /**
@@ -181,12 +213,27 @@ public class ParameterValueImpl extends MinimalEObjectImpl.Container implements 
    * @generated
    */
   @Override
+  public EList<ParameterValue> getSubParameters()
+  {
+    if (subParameters == null)
+    {
+      subParameters = new EObjectContainmentEList<ParameterValue>(ParameterValue.class, this, PipelinePackage.PARAMETER_VALUE__SUB_PARAMETERS);
+    }
+    return subParameters;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
     switch (featureID)
     {
-      case PipelinePackage.PARAMETER_VALUE__SUB_PARAMETER_VALUES:
-        return ((InternalEList<?>)getSubParameterValues()).basicRemove(otherEnd, msgs);
+      case PipelinePackage.PARAMETER_VALUE__SUB_PARAMETERS:
+        return ((InternalEList<?>)getSubParameters()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -203,10 +250,12 @@ public class ParameterValueImpl extends MinimalEObjectImpl.Container implements 
     {
       case PipelinePackage.PARAMETER_VALUE__NAME:
         return getName();
-      case PipelinePackage.PARAMETER_VALUE__SUB_PARAMETER_VALUES:
-        return getSubParameterValues();
+      case PipelinePackage.PARAMETER_VALUE__OTHER_NAME:
+        return getOtherName();
       case PipelinePackage.PARAMETER_VALUE__VALUE:
         return getValue();
+      case PipelinePackage.PARAMETER_VALUE__SUB_PARAMETERS:
+        return getSubParameters();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -223,14 +272,17 @@ public class ParameterValueImpl extends MinimalEObjectImpl.Container implements 
     switch (featureID)
     {
       case PipelinePackage.PARAMETER_VALUE__NAME:
-        setName((String)newValue);
+        setName((PipelineKeyword)newValue);
         return;
-      case PipelinePackage.PARAMETER_VALUE__SUB_PARAMETER_VALUES:
-        getSubParameterValues().clear();
-        getSubParameterValues().addAll((Collection<? extends ParameterValue>)newValue);
+      case PipelinePackage.PARAMETER_VALUE__OTHER_NAME:
+        setOtherName((String)newValue);
         return;
       case PipelinePackage.PARAMETER_VALUE__VALUE:
         setValue((String)newValue);
+        return;
+      case PipelinePackage.PARAMETER_VALUE__SUB_PARAMETERS:
+        getSubParameters().clear();
+        getSubParameters().addAll((Collection<? extends ParameterValue>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -249,11 +301,14 @@ public class ParameterValueImpl extends MinimalEObjectImpl.Container implements 
       case PipelinePackage.PARAMETER_VALUE__NAME:
         setName(NAME_EDEFAULT);
         return;
-      case PipelinePackage.PARAMETER_VALUE__SUB_PARAMETER_VALUES:
-        getSubParameterValues().clear();
+      case PipelinePackage.PARAMETER_VALUE__OTHER_NAME:
+        setOtherName(OTHER_NAME_EDEFAULT);
         return;
       case PipelinePackage.PARAMETER_VALUE__VALUE:
         setValue(VALUE_EDEFAULT);
+        return;
+      case PipelinePackage.PARAMETER_VALUE__SUB_PARAMETERS:
+        getSubParameters().clear();
         return;
     }
     super.eUnset(featureID);
@@ -270,11 +325,13 @@ public class ParameterValueImpl extends MinimalEObjectImpl.Container implements 
     switch (featureID)
     {
       case PipelinePackage.PARAMETER_VALUE__NAME:
-        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case PipelinePackage.PARAMETER_VALUE__SUB_PARAMETER_VALUES:
-        return subParameterValues != null && !subParameterValues.isEmpty();
+        return name != NAME_EDEFAULT;
+      case PipelinePackage.PARAMETER_VALUE__OTHER_NAME:
+        return OTHER_NAME_EDEFAULT == null ? otherName != null : !OTHER_NAME_EDEFAULT.equals(otherName);
       case PipelinePackage.PARAMETER_VALUE__VALUE:
         return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
+      case PipelinePackage.PARAMETER_VALUE__SUB_PARAMETERS:
+        return subParameters != null && !subParameters.isEmpty();
     }
     return super.eIsSet(featureID);
   }
@@ -292,6 +349,8 @@ public class ParameterValueImpl extends MinimalEObjectImpl.Container implements 
     StringBuilder result = new StringBuilder(super.toString());
     result.append(" (name: ");
     result.append(name);
+    result.append(", otherName: ");
+    result.append(otherName);
     result.append(", value: ");
     result.append(value);
     result.append(')');

@@ -16,23 +16,8 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getName <em>Name</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getRunName <em>Run Name</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getDefaultShellValue <em>Default Shell Value</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getDefaultWDValue <em>Default WD Value</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getEnv <em>Env</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getAllPermission <em>All Permission</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getIndPermissions <em>Ind Permissions</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getGroup <em>Group</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getCancelConcurrence <em>Cancel Concurrence</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getPipelineParameters <em>Pipeline Parameters</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getVmName <em>Vm Name</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getVmImage <em>Vm Image</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getVmDemands <em>Vm Demands</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getResources <em>Resources</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getVersion <em>Version</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getPplVariables <em>Ppl Variables</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getExtendedParameter <em>Extended Parameter</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getPipelineConfiguration <em>Pipeline Configuration</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getTriggers <em>Triggers</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getJobOrStageVar <em>Job Or Stage Var</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getStages <em>Stages</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getJobs <em>Jobs</em>}</li>
@@ -45,328 +30,38 @@ import org.eclipse.emf.ecore.EObject;
 public interface Pipeline extends EObject
 {
   /**
-   * Returns the value of the '<em><b>Name</b></em>' attribute.
+   * Returns the value of the '<em><b>Pipeline Configuration</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Name</em>' attribute.
-   * @see #setName(String)
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_Name()
-   * @model
-   * @generated
-   */
-  String getName();
-
-  /**
-   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getName <em>Name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Name</em>' attribute.
-   * @see #getName()
-   * @generated
-   */
-  void setName(String value);
-
-  /**
-   * Returns the value of the '<em><b>Run Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Run Name</em>' attribute.
-   * @see #setRunName(String)
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_RunName()
-   * @model
-   * @generated
-   */
-  String getRunName();
-
-  /**
-   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getRunName <em>Run Name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Run Name</em>' attribute.
-   * @see #getRunName()
-   * @generated
-   */
-  void setRunName(String value);
-
-  /**
-   * Returns the value of the '<em><b>Default Shell Value</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Default Shell Value</em>' attribute.
-   * @see #setDefaultShellValue(String)
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_DefaultShellValue()
-   * @model
-   * @generated
-   */
-  String getDefaultShellValue();
-
-  /**
-   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getDefaultShellValue <em>Default Shell Value</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Default Shell Value</em>' attribute.
-   * @see #getDefaultShellValue()
-   * @generated
-   */
-  void setDefaultShellValue(String value);
-
-  /**
-   * Returns the value of the '<em><b>Default WD Value</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Default WD Value</em>' attribute.
-   * @see #setDefaultWDValue(String)
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_DefaultWDValue()
-   * @model
-   * @generated
-   */
-  String getDefaultWDValue();
-
-  /**
-   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getDefaultWDValue <em>Default WD Value</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Default WD Value</em>' attribute.
-   * @see #getDefaultWDValue()
-   * @generated
-   */
-  void setDefaultWDValue(String value);
-
-  /**
-   * Returns the value of the '<em><b>Env</b></em>' attribute list.
-   * The list contents are of type {@link java.lang.String}.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Env</em>' attribute list.
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_Env()
-   * @model unique="false"
-   * @generated
-   */
-  EList<String> getEnv();
-
-  /**
-   * Returns the value of the '<em><b>All Permission</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>All Permission</em>' attribute.
-   * @see #setAllPermission(String)
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_AllPermission()
-   * @model
-   * @generated
-   */
-  String getAllPermission();
-
-  /**
-   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getAllPermission <em>All Permission</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>All Permission</em>' attribute.
-   * @see #getAllPermission()
-   * @generated
-   */
-  void setAllPermission(String value);
-
-  /**
-   * Returns the value of the '<em><b>Ind Permissions</b></em>' attribute list.
-   * The list contents are of type {@link java.lang.String}.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Ind Permissions</em>' attribute list.
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_IndPermissions()
-   * @model unique="false"
-   * @generated
-   */
-  EList<String> getIndPermissions();
-
-  /**
-   * Returns the value of the '<em><b>Group</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Group</em>' attribute.
-   * @see #setGroup(String)
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_Group()
-   * @model
-   * @generated
-   */
-  String getGroup();
-
-  /**
-   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getGroup <em>Group</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Group</em>' attribute.
-   * @see #getGroup()
-   * @generated
-   */
-  void setGroup(String value);
-
-  /**
-   * Returns the value of the '<em><b>Cancel Concurrence</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Cancel Concurrence</em>' attribute.
-   * @see #setCancelConcurrence(String)
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_CancelConcurrence()
-   * @model
-   * @generated
-   */
-  String getCancelConcurrence();
-
-  /**
-   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getCancelConcurrence <em>Cancel Concurrence</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Cancel Concurrence</em>' attribute.
-   * @see #getCancelConcurrence()
-   * @generated
-   */
-  void setCancelConcurrence(String value);
-
-  /**
-   * Returns the value of the '<em><b>Pipeline Parameters</b></em>' containment reference list.
-   * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.PipelineParameter}.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Pipeline Parameters</em>' containment reference list.
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_PipelineParameters()
+   * @return the value of the '<em>Pipeline Configuration</em>' containment reference.
+   * @see #setPipelineConfiguration(Configurations)
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_PipelineConfiguration()
    * @model containment="true"
    * @generated
    */
-  EList<PipelineParameter> getPipelineParameters();
+  Configurations getPipelineConfiguration();
 
   /**
-   * Returns the value of the '<em><b>Vm Name</b></em>' attribute.
+   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getPipelineConfiguration <em>Pipeline Configuration</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Vm Name</em>' attribute.
-   * @see #setVmName(String)
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_VmName()
-   * @model
+   * @param value the new value of the '<em>Pipeline Configuration</em>' containment reference.
+   * @see #getPipelineConfiguration()
    * @generated
    */
-  String getVmName();
+  void setPipelineConfiguration(Configurations value);
 
   /**
-   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getVmName <em>Vm Name</em>}' attribute.
+   * Returns the value of the '<em><b>Triggers</b></em>' containment reference list.
+   * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.Event}.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Vm Name</em>' attribute.
-   * @see #getVmName()
-   * @generated
-   */
-  void setVmName(String value);
-
-  /**
-   * Returns the value of the '<em><b>Vm Image</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Vm Image</em>' attribute.
-   * @see #setVmImage(String)
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_VmImage()
-   * @model
-   * @generated
-   */
-  String getVmImage();
-
-  /**
-   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getVmImage <em>Vm Image</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Vm Image</em>' attribute.
-   * @see #getVmImage()
-   * @generated
-   */
-  void setVmImage(String value);
-
-  /**
-   * Returns the value of the '<em><b>Vm Demands</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Vm Demands</em>' attribute.
-   * @see #setVmDemands(String)
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_VmDemands()
-   * @model
-   * @generated
-   */
-  String getVmDemands();
-
-  /**
-   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getVmDemands <em>Vm Demands</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Vm Demands</em>' attribute.
-   * @see #getVmDemands()
-   * @generated
-   */
-  void setVmDemands(String value);
-
-  /**
-   * Returns the value of the '<em><b>Resources</b></em>' containment reference list.
-   * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.Resource}.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Resources</em>' containment reference list.
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_Resources()
+   * @return the value of the '<em>Triggers</em>' containment reference list.
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_Triggers()
    * @model containment="true"
    * @generated
    */
-  EList<Resource> getResources();
-
-  /**
-   * Returns the value of the '<em><b>Version</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Version</em>' attribute.
-   * @see #setVersion(String)
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_Version()
-   * @model
-   * @generated
-   */
-  String getVersion();
-
-  /**
-   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getVersion <em>Version</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Version</em>' attribute.
-   * @see #getVersion()
-   * @generated
-   */
-  void setVersion(String value);
-
-  /**
-   * Returns the value of the '<em><b>Ppl Variables</b></em>' containment reference list.
-   * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.Variable}.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Ppl Variables</em>' containment reference list.
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_PplVariables()
-   * @model containment="true"
-   * @generated
-   */
-  EList<Variable> getPplVariables();
-
-  /**
-   * Returns the value of the '<em><b>Extended Parameter</b></em>' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Extended Parameter</em>' containment reference.
-   * @see #setExtendedParameter(ExtendedParameter)
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_ExtendedParameter()
-   * @model containment="true"
-   * @generated
-   */
-  ExtendedParameter getExtendedParameter();
-
-  /**
-   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getExtendedParameter <em>Extended Parameter</em>}' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Extended Parameter</em>' containment reference.
-   * @see #getExtendedParameter()
-   * @generated
-   */
-  void setExtendedParameter(ExtendedParameter value);
+  EList<Event> getTriggers();
 
   /**
    * Returns the value of the '<em><b>Job Or Stage Var</b></em>' attribute.

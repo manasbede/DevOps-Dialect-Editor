@@ -5,14 +5,12 @@ package ca.mcgill.devops.pipeline.serializer;
 
 import ca.mcgill.devops.pipeline.pipeline.Activity;
 import ca.mcgill.devops.pipeline.pipeline.Branch;
+import ca.mcgill.devops.pipeline.pipeline.Configurations;
 import ca.mcgill.devops.pipeline.pipeline.Event;
-import ca.mcgill.devops.pipeline.pipeline.ExtendedParameter;
 import ca.mcgill.devops.pipeline.pipeline.Job;
-import ca.mcgill.devops.pipeline.pipeline.JobParameter;
 import ca.mcgill.devops.pipeline.pipeline.ParameterValue;
 import ca.mcgill.devops.pipeline.pipeline.Pipeline;
 import ca.mcgill.devops.pipeline.pipeline.PipelinePackage;
-import ca.mcgill.devops.pipeline.pipeline.PipelineParameter;
 import ca.mcgill.devops.pipeline.pipeline.Resource;
 import ca.mcgill.devops.pipeline.pipeline.Script;
 import ca.mcgill.devops.pipeline.pipeline.Stage;
@@ -52,26 +50,20 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 			case PipelinePackage.BRANCH:
 				sequence_Branch(context, (Branch) semanticObject); 
 				return; 
+			case PipelinePackage.CONFIGURATIONS:
+				sequence_Configurations(context, (Configurations) semanticObject); 
+				return; 
 			case PipelinePackage.EVENT:
 				sequence_Event(context, (Event) semanticObject); 
 				return; 
-			case PipelinePackage.EXTENDED_PARAMETER:
-				sequence_ExtendedParameter(context, (ExtendedParameter) semanticObject); 
-				return; 
 			case PipelinePackage.JOB:
 				sequence_Job(context, (Job) semanticObject); 
-				return; 
-			case PipelinePackage.JOB_PARAMETER:
-				sequence_JobParameter(context, (JobParameter) semanticObject); 
 				return; 
 			case PipelinePackage.PARAMETER_VALUE:
 				sequence_ParameterValue(context, (ParameterValue) semanticObject); 
 				return; 
 			case PipelinePackage.PIPELINE:
 				sequence_Pipeline(context, (Pipeline) semanticObject); 
-				return; 
-			case PipelinePackage.PIPELINE_PARAMETER:
-				sequence_PipelineParameter(context, (PipelineParameter) semanticObject); 
 				return; 
 			case PipelinePackage.RESOURCE:
 				sequence_Resource(context, (Resource) semanticObject); 
@@ -100,11 +92,7 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *     Action returns Action
 	 *
 	 * Constraint:
-	 *     (
-	 *         (stepName=STRING | ((actionKeyword=PipelineKeyword | otherKeyword=ID) actionValue=AnyData?)) 
-	 *         subSteps+=Action? 
-	 *         (subSteps+=Script? subSteps+=Action?)*
-	 *     )
+	 *     ((actionKeyword=PipelineKeyword | otherKeyword=ID) actionValue=AnyData? subSteps+=Action? (subSteps+=Script? subSteps+=Action?)*)
 	 * </pre>
 	 */
 	protected void sequence_Action(ISerializationContext context, ca.mcgill.devops.pipeline.pipeline.Action semanticObject) {
@@ -118,7 +106,7 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *     Activity returns Activity
 	 *
 	 * Constraint:
-	 *     (name=AnyData | name=ArrayList | name=HyphenValues)
+	 *     (name=HyphenValues | name=ArrayList | ((name='inputs:' | name='outputs:' | name='secrets:') activities+=WorkFlowKeyValue+))
 	 * </pre>
 	 */
 	protected void sequence_Activity(ISerializationContext context, Activity semanticObject) {
@@ -143,20 +131,54 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	/**
 	 * <pre>
 	 * Contexts:
+	 *     Configurations returns Configurations
+	 *
+	 * Constraint:
+	 *     (
+	 *         (
+	 *             name=UnquotedString | 
+	 *             runName=UnquotedString | 
+	 *             defaultShellValue=STRING | 
+	 *             defaultWDValue=STRING | 
+	 *             env+=KeyValue | 
+	 *             allPermission=ID | 
+	 *             indPermissions+=IndPermissionValue | 
+	 *             vmDemands=AnyData | 
+	 *             vmDemands=HyphenValues | 
+	 *             resources+=Resource | 
+	 *             version=VERSION | 
+	 *             pplVariables+=Variable | 
+	 *             paras+=ParameterValue
+	 *         )? 
+	 *         (vmName=ID (vmImage=ID | vmImage=STRING)?)? 
+	 *         ((extendOrInclude='extends:' | extendOrInclude='include:') extendedParameters+=ParameterValue+)? 
+	 *         ((group=ID | group=COMPLEX_EXPRESSION) (cancelConcurrence=ID | cancelConcurrence=COMPLEX_EXPRESSION))?
+	 *     )+
+	 * </pre>
+	 */
+	protected void sequence_Configurations(ISerializationContext context, Configurations semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * <pre>
+	 * Contexts:
 	 *     Event returns Event
 	 *
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             name=ID 
+	 *             (name=PipelineEventKeyword | simpleEvent=ID) 
 	 *             includedBranches+=Branch* 
 	 *             (activities+=Activity | activities+=Activity)? 
-	 *             batch=ID? 
+	 *             includedBranches+=Branch? 
 	 *             (
 	 *                 (
+	 *                     batch=ID | 
 	 *                     autoCancel=ID | 
+	 *                     workflows=ArrayList | 
 	 *                     drafts=ID | 
-	 *                     includedBranches+=Branch | 
 	 *                     (includedBranches+=Branch includedBranches+=Branch*) | 
 	 *                     includedBranches+=Branch | 
 	 *                     includedBranches+=Branch | 
@@ -164,54 +186,24 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *                     excludedBranches+=Branch | 
 	 *                     (excludedBranches+=Branch excludedBranches+=Branch*) | 
 	 *                     excludedBranches+=Branch | 
-	 *                     includedPaths+=HyphenValues | 
-	 *                     includedPaths+=HyphenValues | 
-	 *                     includedPaths+=HyphenValues | 
-	 *                     excludedPaths+=HyphenValues | 
-	 *                     (excludedPaths+=HyphenValues? excludedPaths+=HyphenValues) | 
-	 *                     includedTags+=HyphenValues | 
-	 *                     includedTags+=HyphenValues | 
-	 *                     includedTags+=HyphenValues | 
-	 *                     excludedTags+=HyphenValues | 
-	 *                     (excludedTags+=HyphenValues? excludedTags+=HyphenValues)
+	 *                     includedPaths=HyphenValues | 
+	 *                     includedPaths=HyphenValues | 
+	 *                     excludedPaths=HyphenValues | 
+	 *                     excludedPaths=HyphenValues | 
+	 *                     includedTags=HyphenValues | 
+	 *                     includedTags=HyphenValues | 
+	 *                     excludedTags=HyphenValues | 
+	 *                     excludedTags=HyphenValues
 	 *                 )? 
-	 *                 batch=ID?
+	 *                 includedBranches+=Branch?
 	 *             )*
 	 *         ) | 
-	 *         ((name='schedules:' | name='schedule:') triggerSchedules+=TriggerSchedule*) | 
-	 *         ((name='workflow_call:' | name='workflow_run:' | name='workflow_dispatch:') otherEventParameterValues+=ParameterValue*)
+	 *         ((scheduleName='schedules:' | scheduleName='schedule:') triggerSchedules+=TriggerSchedule*) | 
+	 *         (workflowType='workflow_call:'? workFlowActivities+=Activity*)
 	 *     )
 	 * </pre>
 	 */
 	protected void sequence_Event(ISerializationContext context, Event semanticObject) {
-		genericSequencer.createSequence(context, semanticObject);
-	}
-	
-	
-	/**
-	 * <pre>
-	 * Contexts:
-	 *     ExtendedParameter returns ExtendedParameter
-	 *
-	 * Constraint:
-	 *     ((template=ID extendedParameterValues+=ParameterValue*) | extendedParameterValues+=ParameterValue+)
-	 * </pre>
-	 */
-	protected void sequence_ExtendedParameter(ISerializationContext context, ExtendedParameter semanticObject) {
-		genericSequencer.createSequence(context, semanticObject);
-	}
-	
-	
-	/**
-	 * <pre>
-	 * Contexts:
-	 *     JobParameter returns JobParameter
-	 *
-	 * Constraint:
-	 *     ((name=PipelineKeyword | otherName=ID) (value=AnyData | value=ArrayList | subParameters+=JobParameter+))
-	 * </pre>
-	 */
-	protected void sequence_JobParameter(ISerializationContext context, JobParameter semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
@@ -224,14 +216,14 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 * Constraint:
 	 *     (
 	 *         (name=ID | name=STRING) 
-	 *         jobParameterValues+=JobParameter? 
+	 *         jobParameterValues+=ParameterValue? 
 	 *         (
 	 *             (
 	 *                 ((nameKW='name:' | nameKW='displayName:') jobName=STRING) | 
 	 *                 ((dependKW='needs:' | dependKW='dependsOn:') (references+=[Job|ID] | (references+=[Job|ID] references+=[Job|ID]*))) | 
 	 *                 steps+=Step
 	 *             )? 
-	 *             jobParameterValues+=JobParameter?
+	 *             jobParameterValues+=ParameterValue?
 	 *         )*
 	 *     )
 	 * </pre>
@@ -248,8 +240,8 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *
 	 * Constraint:
 	 *     (
-	 *         (name=ID | name=COMPLEX_EXPRESSION) 
-	 *         (subParameterValues+=ParameterValue+ | ((value=AnyData | value=ArrayList | value=HyphenValues) subParameterValues+=ParameterValue*))?
+	 *         (name=PipelineKeyword | otherName=ID | otherName=COMPLEX_EXPRESSION) 
+	 *         (((value=AnyData | value=ArrayList | value=HyphenValues) subParameters+=ParameterValue*) | subParameters+=ParameterValue+)?
 	 *     )
 	 * </pre>
 	 */
@@ -261,47 +253,15 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	/**
 	 * <pre>
 	 * Contexts:
-	 *     PipelineParameter returns PipelineParameter
-	 *
-	 * Constraint:
-	 *     (
-	 *         (name='parameters:' parameterValues+=ParameterValue+) | 
-	 *         ((name='default:' | name='executors:' | name='orbs:' | name='commands:') parameterValues+=ParameterValue+)
-	 *     )
-	 * </pre>
-	 */
-	protected void sequence_PipelineParameter(ISerializationContext context, PipelineParameter semanticObject) {
-		genericSequencer.createSequence(context, semanticObject);
-	}
-	
-	
-	/**
-	 * <pre>
-	 * Contexts:
 	 *     Pipeline returns Pipeline
 	 *
 	 * Constraint:
 	 *     (
-	 *         (
-	 *             name=UnquotedString | 
-	 *             runName=UnquotedString | 
-	 *             defaultShellValue=STRING | 
-	 *             defaultWDValue=STRING | 
-	 *             env+=KeyValue | 
-	 *             allPermission=ID | 
-	 *             indPermissions+=IndPermissionValue | 
-	 *             pipelineParameters+=PipelineParameter | 
-	 *             vmDemands=AnyData | 
-	 *             vmDemands=HyphenValues | 
-	 *             resources+=Resource | 
-	 *             version=VERSION | 
-	 *             pplVariables+=Variable | 
-	 *             extendedParameter=ExtendedParameter
-	 *         )? 
-	 *         (vmName=ID (vmImage=ID | vmImage=STRING)?)? 
-	 *         (pipelineParameters+=PipelineParameter* (jobOrStageVar='stages:' | jobOrStageVar='jobs:') (stages+=Stage+ | jobs+=Job+)?)? 
-	 *         ((group=ID | group=COMPLEX_EXPRESSION) (cancelConcurrence=ID | cancelConcurrence=COMPLEX_EXPRESSION))?
-	 *     )+
+	 *         pipelineConfiguration=Configurations 
+	 *         ((triggers+=Event* (triggers+=Event | (triggers+=Event triggers+=Event*))?) | triggers+=Event+)? 
+	 *         (jobOrStageVar='stages:' | jobOrStageVar='jobs:') 
+	 *         (stages+=Stage+ | jobs+=Job+)?
+	 *     )
 	 * </pre>
 	 */
 	protected void sequence_Pipeline(ISerializationContext context, Pipeline semanticObject) {
@@ -420,7 +380,7 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *     Variable returns Variable
 	 *
 	 * Constraint:
-	 *     (variableValues+=ParameterValue+ | (group=AnyData? name=AnyData value=AnyData readonly=ID?))
+	 *     ((variableKey=ID variableValue=AnyData) | (name=AnyData (value=AnyData readonly=ID?)?) | (name=ID variables+=KeyValue+))
 	 * </pre>
 	 */
 	protected void sequence_Variable(ISerializationContext context, Variable semanticObject) {

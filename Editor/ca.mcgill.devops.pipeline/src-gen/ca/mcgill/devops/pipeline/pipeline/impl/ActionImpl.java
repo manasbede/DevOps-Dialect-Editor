@@ -21,7 +21,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ActionImpl#getStepName <em>Step Name</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ActionImpl#getActionKeyword <em>Action Keyword</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ActionImpl#getOtherKeyword <em>Other Keyword</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ActionImpl#getActionValue <em>Action Value</em>}</li>
@@ -31,26 +30,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class ActionImpl extends StepImpl implements Action
 {
-  /**
-   * The default value of the '{@link #getStepName() <em>Step Name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getStepName()
-   * @generated
-   * @ordered
-   */
-  protected static final String STEP_NAME_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getStepName() <em>Step Name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getStepName()
-   * @generated
-   * @ordered
-   */
-  protected String stepName = STEP_NAME_EDEFAULT;
-
   /**
    * The default value of the '{@link #getActionKeyword() <em>Action Keyword</em>}' attribute.
    * <!-- begin-user-doc -->
@@ -138,31 +117,6 @@ public class ActionImpl extends StepImpl implements Action
    * @generated
    */
   @Override
-  public String getStepName()
-  {
-    return stepName;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public void setStepName(String newStepName)
-  {
-    String oldStepName = stepName;
-    stepName = newStepName;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.ACTION__STEP_NAME, oldStepName, stepName));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
   public PipelineKeyword getActionKeyword()
   {
     return actionKeyword;
@@ -242,8 +196,6 @@ public class ActionImpl extends StepImpl implements Action
   {
     switch (featureID)
     {
-      case PipelinePackage.ACTION__STEP_NAME:
-        return getStepName();
       case PipelinePackage.ACTION__ACTION_KEYWORD:
         return getActionKeyword();
       case PipelinePackage.ACTION__OTHER_KEYWORD:
@@ -264,9 +216,6 @@ public class ActionImpl extends StepImpl implements Action
   {
     switch (featureID)
     {
-      case PipelinePackage.ACTION__STEP_NAME:
-        setStepName((String)newValue);
-        return;
       case PipelinePackage.ACTION__ACTION_KEYWORD:
         setActionKeyword((PipelineKeyword)newValue);
         return;
@@ -290,9 +239,6 @@ public class ActionImpl extends StepImpl implements Action
   {
     switch (featureID)
     {
-      case PipelinePackage.ACTION__STEP_NAME:
-        setStepName(STEP_NAME_EDEFAULT);
-        return;
       case PipelinePackage.ACTION__ACTION_KEYWORD:
         setActionKeyword(ACTION_KEYWORD_EDEFAULT);
         return;
@@ -316,8 +262,6 @@ public class ActionImpl extends StepImpl implements Action
   {
     switch (featureID)
     {
-      case PipelinePackage.ACTION__STEP_NAME:
-        return STEP_NAME_EDEFAULT == null ? stepName != null : !STEP_NAME_EDEFAULT.equals(stepName);
       case PipelinePackage.ACTION__ACTION_KEYWORD:
         return actionKeyword != ACTION_KEYWORD_EDEFAULT;
       case PipelinePackage.ACTION__OTHER_KEYWORD:
@@ -339,9 +283,7 @@ public class ActionImpl extends StepImpl implements Action
     if (eIsProxy()) return super.toString();
 
     StringBuilder result = new StringBuilder(super.toString());
-    result.append(" (stepName: ");
-    result.append(stepName);
-    result.append(", actionKeyword: ");
+    result.append(" (actionKeyword: ");
     result.append(actionKeyword);
     result.append(", otherKeyword: ");
     result.append(otherKeyword);

@@ -70,7 +70,7 @@ Configurations:
 	
 	// Common for GitHub Actions, Azure Devops, GitLab, CircleCI
 	('variables:' (pplVariables+=Variable*)) ? &
-	('parameters:'(('-'paras+=ParameterValue)*)) ? &
+	('parameters:'(('-'parameterValues+=ParameterValue)*)) ? &
 	(extendOrInclude=('extends:'|'include:')(BEGIN (extendedParameters+=ParameterValue+) END))?
 ;
 

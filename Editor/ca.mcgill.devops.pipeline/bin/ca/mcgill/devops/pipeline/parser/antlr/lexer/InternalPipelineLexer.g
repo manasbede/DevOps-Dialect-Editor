@@ -11,15 +11,35 @@ package ca.mcgill.devops.pipeline.parser.antlr.lexer;
 import org.eclipse.xtext.parser.antlr.Lexer;
 }
 
+Pull_request_review_comment : 'pull_request_review_comment:';
+
+BitbucketBranchCreated : 'bitbucket-branch-created:';
+
+BitbucketBranchDeleted : 'bitbucket-branch-deleted:';
+
+BitbucketTagCreated : 'bitbucket-tag-created:';
+
+BitbucketTagDeleted : 'bitbucket-tag-deleted:';
+
+Pull_request_review : 'pull_request_review:';
+
+Pull_request_target : 'pull_request_target:';
+
 Repository_dispatch : 'repository_dispatch:';
 
 CancelInProgress : 'cancel-in-progress:';
 
 ContinueOnError_1 : 'continue-on-error:';
 
+Deployment_status : 'deployment_status:';
+
+Pipeline_schedule : 'pipeline_schedule:';
+
 Workflow_dispatch : 'workflow_dispatch:';
 
 WorkingDirectory : 'working-directory:';
+
+Registry_package : 'registry_package:';
 
 TimeoutInMinutes : 'timeoutInMinutes:';
 
@@ -31,13 +51,21 @@ ContinueOnError : 'continueOnError:';
 
 TimeoutMinutes : 'timeout-minutes:';
 
+Merge_requests : 'merge_requests:';
+
+Project_column : 'project_column:';
+
 ReleaseTrigger : 'releaseTrigger:';
+
+WorkflowRules : 'workflow.rules:';
 
 Allow_failure : 'allow_failure:';
 
 Before_script : 'before_script:';
 
 DeployTrigger : 'deployTrigger:';
+
+Issue_comment : 'issue_comment:';
 
 Notifications : 'notifications:';
 
@@ -57,6 +85,8 @@ MaxParallel : 'max-parallel:';
 
 PathsIgnore : 'paths-ignore:';
 
+Project_card : 'project_card:';
+
 Pull_request : 'pull_request:';
 
 Repositories : 'repositories:';
@@ -71,11 +101,15 @@ TriggerRules : 'triggerRules:';
 
 Workflow_run : 'workflow_run:';
 
+Check_suite : 'check_suite:';
+
 Concurrency : 'concurrency:';
 
 Credentials : 'credentials:';
 
 Definitions : 'definitions:';
+
+Description : 'description:';
 
 DisplayName : 'displayName:';
 
@@ -101,9 +135,13 @@ Deployment : 'deployment:';
 
 GetPackage : 'getPackage:';
 
+Page_build : 'page_build:';
+
 Parameters : 'parameters:';
 
 Permission : 'permission:';
+
+PlanBranch : 'planBranch:';
 
 Powershell : 'powershell:';
 
@@ -113,6 +151,10 @@ Approvals : 'approvals:';
 
 Artifacts : 'artifacts:';
 
+Bitbucket : 'bitbucket:';
+
+Check_run : 'check_run:';
+
 Condition : 'condition:';
 
 Container : 'container:';
@@ -121,9 +163,9 @@ DependsOn : 'dependsOn:';
 
 Endpoints : 'endpoints:';
 
-Executors : 'executors:';
-
 FailFast : 'fail-fast:';
+
+Milestone : 'milestone:';
 
 Pipelines : 'pipelines:';
 
@@ -133,17 +175,21 @@ Resources : 'resources:';
 
 RunPolicy : 'runPolicy:';
 
+Scheduled : 'scheduled:';
+
 Schedules : 'schedules:';
 
 Variables : 'variables:';
 
+Workflows : 'workflows:';
+
 Workspace : 'workspace:';
+
+WriteAll : 'write-all:';
 
 Branches : 'branches:';
 
 Checkout : 'checkout:';
-
-Commands : 'commands:';
 
 Defaults : 'defaults:';
 
@@ -159,7 +205,11 @@ Pipeline : 'pipeline:';
 
 PreBuild : 'preBuild:';
 
+ReadAll : 'read-all:';
+
 Readonly : 'readonly:';
+
+Required : 'required:';
 
 RunName : 'run-name:';
 
@@ -177,6 +227,8 @@ Timeouts : 'timeouts:';
 
 Webhooks : 'webhooks:';
 
+Changes : 'changes:';
+
 Command : 'command:';
 
 Default : 'default:';
@@ -192,6 +244,8 @@ Filters : 'filters:';
 Include : 'include:';
 
 Inherit : 'inherit:';
+
+Options : 'options:';
 
 Outputs : 'outputs:';
 
@@ -223,11 +277,23 @@ Builds : 'builds:';
 
 Caches : 'caches:';
 
+Create : 'create:';
+
+Custom : 'custom:';
+
+Delete : 'delete:';
+
 Docker : 'docker:';
 
 Drafts : 'drafts:';
 
 Except : 'except:';
+
+Gollum : 'gollum:';
+
+Inputs : 'inputs:';
+
+Issues : 'issues:';
 
 Labels : 'labels:';
 
@@ -235,11 +301,17 @@ Matrix : 'matrix:';
 
 Policy : 'policy:';
 
+Public : 'public:';
+
 Queued : 'queued:';
+
+Remote : 'remote:';
 
 Script : 'script:';
 
 Stages : 'stages:';
+
+Status : 'status:';
 
 Agent : 'agent:';
 
@@ -252,6 +324,8 @@ Final : 'final:';
 Group : 'group:';
 
 Image : 'image:';
+
+Label : 'label:';
 
 Needs : 'needs:';
 
@@ -275,19 +349,25 @@ Types : 'types:';
 
 Value : 'value:';
 
+Watch : 'watch:';
+
+Write_1 : 'write:';
+
 Auth : 'auth:';
 
 Bash : 'bash:';
 
 Cron : 'cron:';
 
+Fork : 'fork:';
+
 Jobs : 'jobs:';
 
 Name : 'name:';
 
-Only : 'only:';
+None_1 : 'none:';
 
-Orbs : 'orbs:';
+Only : 'only:';
 
 Plan : 'plan:';
 
@@ -297,11 +377,15 @@ Push : 'push:';
 
 Pwsh : 'pwsh:';
 
+Read_1 : 'read:';
+
 Step : 'step:';
 
 Tags : 'tags:';
 
 Task : 'task:';
+
+Type : 'type:';
 
 Uses : 'uses:';
 
@@ -330,6 +414,8 @@ Id : 'id:';
 If : 'if:';
 
 On : 'on:';
+
+Pr : 'pr:';
 
 GreaterThanSignHyphenMinus : '>-';
 

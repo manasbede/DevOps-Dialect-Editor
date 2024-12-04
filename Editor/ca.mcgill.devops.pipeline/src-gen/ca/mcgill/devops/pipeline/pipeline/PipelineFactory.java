@@ -33,13 +33,13 @@ public interface PipelineFactory extends EFactory
   Pipeline createPipeline();
 
   /**
-   * Returns a new object of class '<em>Extended Parameter</em>'.
+   * Returns a new object of class '<em>Configurations</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Extended Parameter</em>'.
+   * @return a new object of class '<em>Configurations</em>'.
    * @generated
    */
-  ExtendedParameter createExtendedParameter();
+  Configurations createConfigurations();
 
   /**
    * Returns a new object of class '<em>Variable</em>'.
@@ -58,15 +58,6 @@ public interface PipelineFactory extends EFactory
    * @generated
    */
   Resource createResource();
-
-  /**
-   * Returns a new object of class '<em>Parameter</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Parameter</em>'.
-   * @generated
-   */
-  PipelineParameter createPipelineParameter();
 
   /**
    * Returns a new object of class '<em>Event</em>'.
@@ -121,15 +112,6 @@ public interface PipelineFactory extends EFactory
    * @generated
    */
   Job createJob();
-
-  /**
-   * Returns a new object of class '<em>Job Parameter</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Job Parameter</em>'.
-   * @generated
-   */
-  JobParameter createJobParameter();
 
   /**
    * Returns a new object of class '<em>Step</em>'.

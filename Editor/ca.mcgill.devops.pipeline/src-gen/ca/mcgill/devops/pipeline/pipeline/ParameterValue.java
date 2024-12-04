@@ -17,8 +17,9 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.ParameterValue#getName <em>Name</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.ParameterValue#getSubParameterValues <em>Sub Parameter Values</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.ParameterValue#getOtherName <em>Other Name</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.ParameterValue#getValue <em>Value</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.ParameterValue#getSubParameters <em>Sub Parameters</em>}</li>
  * </ul>
  *
  * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getParameterValue()
@@ -29,37 +30,50 @@ public interface ParameterValue extends EObject
 {
   /**
    * Returns the value of the '<em><b>Name</b></em>' attribute.
+   * The literals are from the enumeration {@link ca.mcgill.devops.pipeline.pipeline.PipelineKeyword}.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the value of the '<em>Name</em>' attribute.
-   * @see #setName(String)
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelineKeyword
+   * @see #setName(PipelineKeyword)
    * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getParameterValue_Name()
    * @model
    * @generated
    */
-  String getName();
+  PipelineKeyword getName();
 
   /**
    * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.ParameterValue#getName <em>Name</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>Name</em>' attribute.
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelineKeyword
    * @see #getName()
    * @generated
    */
-  void setName(String value);
+  void setName(PipelineKeyword value);
 
   /**
-   * Returns the value of the '<em><b>Sub Parameter Values</b></em>' containment reference list.
-   * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.ParameterValue}.
+   * Returns the value of the '<em><b>Other Name</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Sub Parameter Values</em>' containment reference list.
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getParameterValue_SubParameterValues()
-   * @model containment="true"
+   * @return the value of the '<em>Other Name</em>' attribute.
+   * @see #setOtherName(String)
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getParameterValue_OtherName()
+   * @model
    * @generated
    */
-  EList<ParameterValue> getSubParameterValues();
+  String getOtherName();
+
+  /**
+   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.ParameterValue#getOtherName <em>Other Name</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Other Name</em>' attribute.
+   * @see #getOtherName()
+   * @generated
+   */
+  void setOtherName(String value);
 
   /**
    * Returns the value of the '<em><b>Value</b></em>' attribute.
@@ -82,5 +96,17 @@ public interface ParameterValue extends EObject
    * @generated
    */
   void setValue(String value);
+
+  /**
+   * Returns the value of the '<em><b>Sub Parameters</b></em>' containment reference list.
+   * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.ParameterValue}.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Sub Parameters</em>' containment reference list.
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getParameterValue_SubParameters()
+   * @model containment="true"
+   * @generated
+   */
+  EList<ParameterValue> getSubParameters();
 
 } // ParameterValue

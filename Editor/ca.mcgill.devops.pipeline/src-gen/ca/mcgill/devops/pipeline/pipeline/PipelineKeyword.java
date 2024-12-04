@@ -31,16 +31,6 @@ public enum PipelineKeyword implements Enumerator
   PPL_KW_NAME(0, "PPL_KW_NAME", "name:"),
 
   /**
-   * The '<em><b>PPL KW ON</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_ON_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_ON(1, "PPL_KW_ON", "on:"),
-
-  /**
    * The '<em><b>PPL KW RUN NAME</b></em>' literal object.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -48,37 +38,17 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_RUN_NAME(2, "PPL_KW_RUN_NAME", "run-name:"),
+  PPL_KW_RUN_NAME(1, "PPL_KW_RUN_NAME", "run-name:"),
 
   /**
-   * The '<em><b>PPL KW IF</b></em>' literal object.
+   * The '<em><b>PPL KW ON</b></em>' literal object.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_IF_VALUE
+   * @see #PPL_KW_ON_VALUE
    * @generated
    * @ordered
    */
-  PPL_KW_IF(3, "PPL_KW_IF", "if:"),
-
-  /**
-   * The '<em><b>PPL KW RUNS ON</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_RUNS_ON_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_RUNS_ON(4, "PPL_KW_RUNS_ON", "runs-on:"),
-
-  /**
-   * The '<em><b>PPL KW ENV</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_ENV_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_ENV(5, "PPL_KW_ENV", "env:"),
+  PPL_KW_ON(2, "PPL_KW_ON", "on:"),
 
   /**
    * The '<em><b>PPL KW DEFAULTS</b></em>' literal object.
@@ -88,67 +58,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_DEFAULTS(6, "PPL_KW_DEFAULTS", "defaults:"),
-
-  /**
-   * The '<em><b>PPL KW STRATEGY</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_STRATEGY_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_STRATEGY(7, "PPL_KW_STRATEGY", "strategy:"),
-
-  /**
-   * The '<em><b>PPL KW MATRIX</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_MATRIX_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_MATRIX(8, "PPL_KW_MATRIX", "matrix:"),
-
-  /**
-   * The '<em><b>PPL KW CONTAINER</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_CONTAINER_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_CONTAINER(9, "PPL_KW_CONTAINER", "container:"),
-
-  /**
-   * The '<em><b>PPL KW SERVICES</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_SERVICES_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_SERVICES(10, "PPL_KW_SERVICES", "services:"),
-
-  /**
-   * The '<em><b>PPL KW STEPS</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_STEPS_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_STEPS(11, "PPL_KW_STEPS", "steps:"),
-
-  /**
-   * The '<em><b>PPL KW USES</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_USES_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_USES(12, "PPL_KW_USES", "uses:"),
+  PPL_KW_DEFAULTS(3, "PPL_KW_DEFAULTS", "defaults:"),
 
   /**
    * The '<em><b>PPL KW RUN</b></em>' literal object.
@@ -158,7 +68,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_RUN(13, "PPL_KW_RUN", "run:"),
+  PPL_KW_RUN(4, "PPL_KW_RUN", "run:"),
 
   /**
    * The '<em><b>PPL KW SHELL</b></em>' literal object.
@@ -168,7 +78,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_SHELL(14, "PPL_KW_SHELL", "shell:"),
+  PPL_KW_SHELL(5, "PPL_KW_SHELL", "shell:"),
 
   /**
    * The '<em><b>PPL KW WORKING DIRECTORY</b></em>' literal object.
@@ -178,107 +88,27 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_WORKING_DIRECTORY(15, "PPL_KW_WORKING_DIRECTORY", "working-directory:"),
+  PPL_KW_WORKING_DIRECTORY(6, "PPL_KW_WORKING_DIRECTORY", "working-directory:"),
 
   /**
-   * The '<em><b>PPL KW WITH</b></em>' literal object.
+   * The '<em><b>PPL KW ENV</b></em>' literal object.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_WITH_VALUE
+   * @see #PPL_KW_ENV_VALUE
    * @generated
    * @ordered
    */
-  PPL_KW_WITH(16, "PPL_KW_WITH", "with:"),
+  PPL_KW_ENV(7, "PPL_KW_ENV", "env:"),
 
   /**
-   * The '<em><b>PPL KW TIMEOUT MINUTES</b></em>' literal object.
+   * The '<em><b>PPL KW PERMISSION</b></em>' literal object.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_TIMEOUT_MINUTES_VALUE
+   * @see #PPL_KW_PERMISSION_VALUE
    * @generated
    * @ordered
    */
-  PPL_KW_TIMEOUT_MINUTES(17, "PPL_KW_TIMEOUT_MINUTES", "timeout-minutes:"),
-
-  /**
-   * The '<em><b>PPL KW CONTINUE ON ERROR</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_CONTINUE_ON_ERROR_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_CONTINUE_ON_ERROR(18, "PPL_KW_CONTINUE_ON_ERROR", "continue-on-error:"),
-
-  /**
-   * The '<em><b>PPL KW CONDITION</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_CONDITION_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_CONDITION(19, "PPL_KW_CONDITION", "condition:"),
-
-  /**
-   * The '<em><b>PPL KW ENVIRONMENT</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_ENVIRONMENT_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_ENVIRONMENT(20, "PPL_KW_ENVIRONMENT", "environment:"),
-
-  /**
-   * The '<em><b>PPL KW ID</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_ID_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_ID(21, "PPL_KW_ID", "id:"),
-
-  /**
-   * The '<em><b>PPL KW NEEDS</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_NEEDS_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_NEEDS(22, "PPL_KW_NEEDS", "needs:"),
-
-  /**
-   * The '<em><b>PPL KW OUTPUTS</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_OUTPUTS_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_OUTPUTS(23, "PPL_KW_OUTPUTS", "outputs:"),
-
-  /**
-   * The '<em><b>PPL KW SECRETS</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_SECRETS_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_SECRETS(24, "PPL_KW_SECRETS", "secrets:"),
-
-  /**
-   * The '<em><b>PPL KW PERMISSIONS</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PERMISSIONS_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_PERMISSIONS(25, "PPL_KW_PERMISSIONS", "permissions:"),
+  PPL_KW_PERMISSION(8, "PPL_KW_PERMISSION", "permission:"),
 
   /**
    * The '<em><b>PPL KW CONCURRENCY</b></em>' literal object.
@@ -288,277 +118,27 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_CONCURRENCY(26, "PPL_KW_CONCURRENCY", "concurrency:"),
+  PPL_KW_CONCURRENCY(9, "PPL_KW_CONCURRENCY", "concurrency:"),
 
   /**
-   * The '<em><b>PPL KW TIMEOUTS</b></em>' literal object.
+   * The '<em><b>PPL KW GROUP</b></em>' literal object.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_TIMEOUTS_VALUE
+   * @see #PPL_KW_GROUP_VALUE
    * @generated
    * @ordered
    */
-  PPL_KW_TIMEOUTS(27, "PPL_KW_TIMEOUTS", "timeouts:"),
+  PPL_KW_GROUP(10, "PPL_KW_GROUP", "group:"),
 
   /**
-   * The '<em><b>PPL KW DEFAULTS RUN</b></em>' literal object.
+   * The '<em><b>PPL KW CANCEL IN PROGRESS</b></em>' literal object.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_DEFAULTS_RUN_VALUE
+   * @see #PPL_KW_CANCEL_IN_PROGRESS_VALUE
    * @generated
    * @ordered
    */
-  PPL_KW_DEFAULTS_RUN(28, "PPL_KW_DEFAULTS_RUN", "defaults.run:"),
-
-  /**
-   * The '<em><b>PPL KW WORKFLOW DISPATCH</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_WORKFLOW_DISPATCH_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_WORKFLOW_DISPATCH(29, "PPL_KW_WORKFLOW_DISPATCH", "workflow_dispatch:"),
-
-  /**
-   * The '<em><b>PPL KW WORKFLOW CALL</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_WORKFLOW_CALL_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_WORKFLOW_CALL(30, "PPL_KW_WORKFLOW_CALL", "workflow_call:"),
-
-  /**
-   * The '<em><b>PPL KW SCHEDULE</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_SCHEDULE_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_SCHEDULE(31, "PPL_KW_SCHEDULE", "schedule:"),
-
-  /**
-   * The '<em><b>PPL KW PUSH</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PUSH_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_PUSH(32, "PPL_KW_PUSH", "push:"),
-
-  /**
-   * The '<em><b>PPL KW PULL REQUEST</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PULL_REQUEST_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_PULL_REQUEST(33, "PPL_KW_PULL_REQUEST", "pull_request:"),
-
-  /**
-   * The '<em><b>PPL KW PATHS</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PATHS_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_PATHS(34, "PPL_KW_PATHS", "paths:"),
-
-  /**
-   * The '<em><b>PPL KW BRANCHES</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_BRANCHES_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_BRANCHES(35, "PPL_KW_BRANCHES", "branches:"),
-
-  /**
-   * The '<em><b>PPL KW TAGS</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_TAGS_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_TAGS(36, "PPL_KW_TAGS", "tags:"),
-
-  /**
-   * The '<em><b>PPL KW BRANCHES IGNORE</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_BRANCHES_IGNORE_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_BRANCHES_IGNORE(37, "PPL_KW_BRANCHES_IGNORE", "branches-ignore:"),
-
-  /**
-   * The '<em><b>PPL KW PATHS IGNORE</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PATHS_IGNORE_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_PATHS_IGNORE(38, "PPL_KW_PATHS_IGNORE", "paths-ignore:"),
-
-  /**
-   * The '<em><b>PPL KW TAGS IGNORE</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_TAGS_IGNORE_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_TAGS_IGNORE(39, "PPL_KW_TAGS_IGNORE", "tags-ignore:"),
-
-  /**
-   * The '<em><b>PPL KW CRON</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_CRON_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_CRON(40, "PPL_KW_CRON", "cron:"),
-
-  /**
-   * The '<em><b>PPL KW REPOSITORY DISPATCH</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_REPOSITORY_DISPATCH_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_REPOSITORY_DISPATCH(41, "PPL_KW_REPOSITORY_DISPATCH", "repository_dispatch:"),
-
-  /**
-   * The '<em><b>PPL KW WORKFLOW RUN</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_WORKFLOW_RUN_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_WORKFLOW_RUN(42, "PPL_KW_WORKFLOW_RUN", "workflow_run:"),
-
-  /**
-   * The '<em><b>PPL KW CHECKOUT</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_CHECKOUT_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_CHECKOUT(43, "PPL_KW_CHECKOUT", "checkout:"),
-
-  /**
-   * The '<em><b>PPL KW FILTERS</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_FILTERS_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_FILTERS(44, "PPL_KW_FILTERS", "filters:"),
-
-  /**
-   * The '<em><b>PPL KW INCLUDE</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_INCLUDE_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_INCLUDE(45, "PPL_KW_INCLUDE", "include:"),
-
-  /**
-   * The '<em><b>PPL KW EXCLUDE</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_EXCLUDE_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_EXCLUDE(46, "PPL_KW_EXCLUDE", "exclude:"),
-
-  /**
-   * The '<em><b>PPL KW FAIL FAST</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_FAIL_FAST_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_FAIL_FAST(47, "PPL_KW_FAIL_FAST", "fail-fast:"),
-
-  /**
-   * The '<em><b>PPL KW MAX PARALLEL</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_MAX_PARALLEL_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_MAX_PARALLEL(48, "PPL_KW_MAX_PARALLEL", "max-parallel:"),
-
-  /**
-   * The '<em><b>PPL KW CONTAINER IMAGE</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_CONTAINER_IMAGE_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_CONTAINER_IMAGE(49, "PPL_KW_CONTAINER_IMAGE", "container.image:"),
-
-  /**
-   * The '<em><b>PPL KW CREDENTIALS</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_CREDENTIALS_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_CREDENTIALS(50, "PPL_KW_CREDENTIALS", "credentials:"),
-
-  /**
-   * The '<em><b>PPL KW PORTS</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PORTS_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_PORTS(51, "PPL_KW_PORTS", "ports:"),
-
-  /**
-   * The '<em><b>PPL KW INHERIT</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_INHERIT_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_INHERIT(52, "PPL_KW_INHERIT", "inherit:"),
-
-  /**
-   * The '<em><b>PPL KW TRIGGER</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_TRIGGER_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_TRIGGER(53, "PPL_KW_TRIGGER", "trigger:"),
+  PPL_KW_CANCEL_IN_PROGRESS(11, "PPL_KW_CANCEL_IN_PROGRESS", "cancel-in-progress:"),
 
   /**
    * The '<em><b>PPL KW POOL</b></em>' literal object.
@@ -568,77 +148,27 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_POOL(54, "PPL_KW_POOL", "pool:"),
+  PPL_KW_POOL(12, "PPL_KW_POOL", "pool:"),
 
   /**
-   * The '<em><b>PPL KW DISPLAY NAME</b></em>' literal object.
+   * The '<em><b>PPL KW VM IMAGE</b></em>' literal object.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_DISPLAY_NAME_VALUE
+   * @see #PPL_KW_VM_IMAGE_VALUE
    * @generated
    * @ordered
    */
-  PPL_KW_DISPLAY_NAME(55, "PPL_KW_DISPLAY_NAME", "displayName:"),
+  PPL_KW_VM_IMAGE(13, "PPL_KW_VM_IMAGE", "vmImage:"),
 
   /**
-   * The '<em><b>PPL KW TASK</b></em>' literal object.
+   * The '<em><b>PPL KW DEMANDS</b></em>' literal object.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_TASK_VALUE
+   * @see #PPL_KW_DEMANDS_VALUE
    * @generated
    * @ordered
    */
-  PPL_KW_TASK(56, "PPL_KW_TASK", "task:"),
-
-  /**
-   * The '<em><b>PPL KW TEMPLATE</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_TEMPLATE_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_TEMPLATE(57, "PPL_KW_TEMPLATE", "template:"),
-
-  /**
-   * The '<em><b>PPL KW DEPENDS ON</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_DEPENDS_ON_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_DEPENDS_ON(58, "PPL_KW_DEPENDS_ON", "dependsOn:"),
-
-  /**
-   * The '<em><b>PPL KW WORKSPACE</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_WORKSPACE_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_WORKSPACE(59, "PPL_KW_WORKSPACE", "workspace:"),
-
-  /**
-   * The '<em><b>PPL KW PARAMETERS</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PARAMETERS_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_PARAMETERS(60, "PPL_KW_PARAMETERS", "parameters:"),
-
-  /**
-   * The '<em><b>PPL KW POOL VM IMAGE</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_POOL_VM_IMAGE_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_POOL_VM_IMAGE(61, "PPL_KW_POOL_VM_IMAGE", "vmImage:"),
+  PPL_KW_DEMANDS(14, "PPL_KW_DEMANDS", "demands:"),
 
   /**
    * The '<em><b>PPL KW RESOURCES</b></em>' literal object.
@@ -648,427 +178,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_RESOURCES(62, "PPL_KW_RESOURCES", "resources:"),
-
-  /**
-   * The '<em><b>PPL KW PIPELINE</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PIPELINE_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_PIPELINE(63, "PPL_KW_PIPELINE", "pipeline:"),
-
-  /**
-   * The '<em><b>PPL KW STAGE</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_STAGE_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_STAGE(64, "PPL_KW_STAGE", "stage:"),
-
-  /**
-   * The '<em><b>PPL KW TIMEOUT IN MINUTES</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_TIMEOUT_IN_MINUTES_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_TIMEOUT_IN_MINUTES(65, "PPL_KW_TIMEOUT_IN_MINUTES", "timeoutInMinutes:"),
-
-  /**
-   * The '<em><b>PPL KW CONTINUE ON ERR</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_CONTINUE_ON_ERR_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_CONTINUE_ON_ERR(66, "PPL_KW_CONTINUE_ON_ERR", "continueOnError:"),
-
-  /**
-   * The '<em><b>PPL KW RESOURCE TYPE</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_RESOURCE_TYPE_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_RESOURCE_TYPE(67, "PPL_KW_RESOURCE_TYPE", "resourceType:"),
-
-  /**
-   * The '<em><b>PPL KW RESOURCE NAME</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_RESOURCE_NAME_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_RESOURCE_NAME(68, "PPL_KW_RESOURCE_NAME", "resourceName:"),
-
-  /**
-   * The '<em><b>PPL KW STAGES</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_STAGES_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_STAGES(69, "PPL_KW_STAGES", "stages:"),
-
-  /**
-   * The '<em><b>PPL KW ONLY</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_ONLY_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_ONLY(70, "PPL_KW_ONLY", "only:"),
-
-  /**
-   * The '<em><b>PPL KW EXCEPT</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_EXCEPT_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_EXCEPT(71, "PPL_KW_EXCEPT", "except:"),
-
-  /**
-   * The '<em><b>PPL KW IMAGE</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_IMAGE_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_IMAGE(72, "PPL_KW_IMAGE", "image:"),
-
-  /**
-   * The '<em><b>PPL KW VARIABLES</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_VARIABLES_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_VARIABLES(73, "PPL_KW_VARIABLES", "variables:"),
-
-  /**
-   * The '<em><b>PPL KW CACHE</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_CACHE_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_CACHE(74, "PPL_KW_CACHE", "cache:"),
-
-  /**
-   * The '<em><b>PPL KW ARTIFACTS</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_ARTIFACTS_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_ARTIFACTS(75, "PPL_KW_ARTIFACTS", "artifacts:"),
-
-  /**
-   * The '<em><b>PPL KW RETRIES</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_RETRIES_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_RETRIES(76, "PPL_KW_RETRIES", "retries:"),
-
-  /**
-   * The '<em><b>PPL KW RULES</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_RULES_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_RULES(77, "PPL_KW_RULES", "rules:"),
-
-  /**
-   * The '<em><b>PPL KW BEFORE SCRIPT</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_BEFORE_SCRIPT_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_BEFORE_SCRIPT(78, "PPL_KW_BEFORE_SCRIPT", "before_script:"),
-
-  /**
-   * The '<em><b>PPL KW AFTER SCRIPT</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_AFTER_SCRIPT_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_AFTER_SCRIPT(79, "PPL_KW_AFTER_SCRIPT", "after_script:"),
-
-  /**
-   * The '<em><b>PPL KW TIMEOUT</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_TIMEOUT_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_TIMEOUT(80, "PPL_KW_TIMEOUT", "timeout:"),
-
-  /**
-   * The '<em><b>PPL KW WHEN</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_WHEN_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_WHEN(81, "PPL_KW_WHEN", "when:"),
-
-  /**
-   * The '<em><b>PPL KW ALLOW FAILURE</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_ALLOW_FAILURE_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_ALLOW_FAILURE(82, "PPL_KW_ALLOW_FAILURE", "allow_failure:"),
-
-  /**
-   * The '<em><b>PPL KW DEPENDENCIES</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_DEPENDENCIES_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_DEPENDENCIES(83, "PPL_KW_DEPENDENCIES", "dependencies:"),
-
-  /**
-   * The '<em><b>PPL KW EXTENDS</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_EXTENDS_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_EXTENDS(84, "PPL_KW_EXTENDS", "extends:"),
-
-  /**
-   * The '<em><b>PPL KW PIPELINES</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PIPELINES_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_PIPELINES(85, "PPL_KW_PIPELINES", "pipelines:"),
-
-  /**
-   * The '<em><b>PPL KW DEFAULT</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_DEFAULT_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_DEFAULT(86, "PPL_KW_DEFAULT", "default:"),
-
-  /**
-   * The '<em><b>PPL KW PULL REQUESTS</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PULL_REQUESTS_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_PULL_REQUESTS(87, "PPL_KW_PULL_REQUESTS", "pull-requests:"),
-
-  /**
-   * The '<em><b>PPL KW STEP</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_STEP_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_STEP(88, "PPL_KW_STEP", "step:"),
-
-  /**
-   * The '<em><b>PPL KW SCRIPT</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_SCRIPT_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_SCRIPT(89, "PPL_KW_SCRIPT", "script:"),
-
-  /**
-   * The '<em><b>PPL KW DEFINITIONS</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_DEFINITIONS_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_DEFINITIONS(90, "PPL_KW_DEFINITIONS", "definitions:"),
-
-  /**
-   * The '<em><b>PPL KW CACHES</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_CACHES_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_CACHES(91, "PPL_KW_CACHES", "caches:"),
-
-  /**
-   * The '<em><b>PPL KW PARALLEL</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PARALLEL_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_PARALLEL(92, "PPL_KW_PARALLEL", "parallel:"),
-
-  /**
-   * The '<em><b>PPL KW CONDITIONS</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_CONDITIONS_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_CONDITIONS(93, "PPL_KW_CONDITIONS", "conditions:"),
-
-  /**
-   * The '<em><b>PPL KW MAX TIME</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_MAX_TIME_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_MAX_TIME(94, "PPL_KW_MAX_TIME", "max-time:"),
-
-  /**
-   * The '<em><b>PPL KW PROJECT</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PROJECT_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_PROJECT(95, "PPL_KW_PROJECT", "project:"),
-
-  /**
-   * The '<em><b>PPL KW PLAN</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PLAN_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_PLAN(96, "PPL_KW_PLAN", "plan:"),
-
-  /**
-   * The '<em><b>PPL KW TASKS</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_TASKS_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_TASKS(97, "PPL_KW_TASKS", "tasks:"),
-
-  /**
-   * The '<em><b>PPL KW REQUIREMENTS</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_REQUIREMENTS_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_REQUIREMENTS(98, "PPL_KW_REQUIREMENTS", "requirements:"),
-
-  /**
-   * The '<em><b>PPL KW FINAL</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_FINAL_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_FINAL(99, "PPL_KW_FINAL", "final:"),
-
-  /**
-   * The '<em><b>PPL KW JDK</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_JDK_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_JDK(100, "PPL_KW_JDK", "jdk:"),
-
-  /**
-   * The '<em><b>PPL KW LABELS</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_LABELS_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_LABELS(101, "PPL_KW_LABELS", "labels:"),
-
-  /**
-   * The '<em><b>PPL KW REPOSITORY</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_REPOSITORY_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_REPOSITORY(102, "PPL_KW_REPOSITORY", "repository:"),
-
-  /**
-   * The '<em><b>PPL KW DEPLOYMENT</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_DEPLOYMENT_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_DEPLOYMENT(103, "PPL_KW_DEPLOYMENT", "deployment:"),
-
-  /**
-   * The '<em><b>PPL KW RELEASE</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_RELEASE_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_RELEASE(104, "PPL_KW_RELEASE", "release:"),
+  PPL_KW_RESOURCES(15, "PPL_KW_RESOURCES", "resources:"),
 
   /**
    * The '<em><b>PPL KW VERSION</b></em>' literal object.
@@ -1078,177 +188,67 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_VERSION(105, "PPL_KW_VERSION", "version:"),
+  PPL_KW_VERSION(16, "PPL_KW_VERSION", "version:"),
 
   /**
-   * The '<em><b>PPL KW DOCKER</b></em>' literal object.
+   * The '<em><b>PPL KW VARIABLES</b></em>' literal object.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_DOCKER_VALUE
+   * @see #PPL_KW_VARIABLES_VALUE
    * @generated
    * @ordered
    */
-  PPL_KW_DOCKER(106, "PPL_KW_DOCKER", "docker:"),
+  PPL_KW_VARIABLES(17, "PPL_KW_VARIABLES", "variables:"),
 
   /**
-   * The '<em><b>PPL KW AGENT</b></em>' literal object.
+   * The '<em><b>PPL KW PARAMETERS</b></em>' literal object.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_AGENT_VALUE
+   * @see #PPL_KW_PARAMETERS_VALUE
    * @generated
    * @ordered
    */
-  PPL_KW_AGENT(107, "PPL_KW_AGENT", "agent:"),
+  PPL_KW_PARAMETERS(18, "PPL_KW_PARAMETERS", "parameters:"),
 
   /**
-   * The '<em><b>PPL KW QUEUE</b></em>' literal object.
+   * The '<em><b>PPL KW EXTENDS</b></em>' literal object.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_QUEUE_VALUE
+   * @see #PPL_KW_EXTENDS_VALUE
    * @generated
    * @ordered
    */
-  PPL_KW_QUEUE(108, "PPL_KW_QUEUE", "queue:"),
+  PPL_KW_EXTENDS(19, "PPL_KW_EXTENDS", "extends:"),
 
   /**
-   * The '<em><b>PPL KW SNAPSHOT</b></em>' literal object.
+   * The '<em><b>PPL KW INCLUDE</b></em>' literal object.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_SNAPSHOT_VALUE
+   * @see #PPL_KW_INCLUDE_VALUE
    * @generated
    * @ordered
    */
-  PPL_KW_SNAPSHOT(109, "PPL_KW_SNAPSHOT", "snapshot:"),
+  PPL_KW_INCLUDE(20, "PPL_KW_INCLUDE", "include:"),
 
   /**
-   * The '<em><b>PPL KW POLICY</b></em>' literal object.
+   * The '<em><b>PPL KW TYPES</b></em>' literal object.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_POLICY_VALUE
+   * @see #PPL_KW_TYPES_VALUE
    * @generated
    * @ordered
    */
-  PPL_KW_POLICY(110, "PPL_KW_POLICY", "policy:"),
+  PPL_KW_TYPES(21, "PPL_KW_TYPES", "types:"),
 
   /**
-   * The '<em><b>PPL KW APPROVALS</b></em>' literal object.
+   * The '<em><b>PPL KW BATCH</b></em>' literal object.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_APPROVALS_VALUE
+   * @see #PPL_KW_BATCH_VALUE
    * @generated
    * @ordered
    */
-  PPL_KW_APPROVALS(111, "PPL_KW_APPROVALS", "approvals:"),
-
-  /**
-   * The '<em><b>PPL KW PREBUILD</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PREBUILD_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_PREBUILD(112, "PPL_KW_PREBUILD", "preBuild:"),
-
-  /**
-   * The '<em><b>PPL KW POSTBUILD</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_POSTBUILD_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_POSTBUILD(113, "PPL_KW_POSTBUILD", "postBuild:"),
-
-  /**
-   * The '<em><b>PPL KW SSH</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_SSH_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_SSH(114, "PPL_KW_SSH", "ssh:"),
-
-  /**
-   * The '<em><b>PPL KW AUTH</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_AUTH_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_AUTH(115, "PPL_KW_AUTH", "auth:"),
-
-  /**
-   * The '<em><b>PPL KW STORAGE</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_STORAGE_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_STORAGE(116, "PPL_KW_STORAGE", "storage:"),
-
-  /**
-   * The '<em><b>PPL KW ENDPOINTS</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_ENDPOINTS_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_ENDPOINTS(117, "PPL_KW_ENDPOINTS", "endpoints:"),
-
-  /**
-   * The '<em><b>PPL KW COMMAND</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_COMMAND_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_COMMAND(118, "PPL_KW_COMMAND", "command:"),
-
-  /**
-   * The '<em><b>PPL KW PROVISIONER</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PROVISIONER_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_PROVISIONER(119, "PPL_KW_PROVISIONER", "provisioner:"),
-
-  /**
-   * The '<em><b>PPL KW TRIGGER RULES</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_TRIGGER_RULES_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_TRIGGER_RULES(120, "PPL_KW_TRIGGER_RULES", "triggerRules:"),
-
-  /**
-   * The '<em><b>PPL KW RUN POLICY</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_RUN_POLICY_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_RUN_POLICY(121, "PPL_KW_RUN_POLICY", "runPolicy:"),
-
-  /**
-   * The '<em><b>PPL KW QUEUED</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_QUEUED_VALUE
-   * @generated
-   * @ordered
-   */
-  PPL_KW_QUEUED(122, "PPL_KW_QUEUED", "queued:"),
+  PPL_KW_BATCH(22, "PPL_KW_BATCH", "batch:"),
 
   /**
    * The '<em><b>PPL KW AUTO CANCEL</b></em>' literal object.
@@ -1258,7 +258,1307 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_AUTO_CANCEL(123, "PPL_KW_AUTO_CANCEL", "autoCancel:"),
+  PPL_KW_AUTO_CANCEL(23, "PPL_KW_AUTO_CANCEL", "autoCancel:"),
+
+  /**
+   * The '<em><b>PPL KW WORKFLOWS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_WORKFLOWS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_WORKFLOWS(24, "PPL_KW_WORKFLOWS", "workflows:"),
+
+  /**
+   * The '<em><b>PPL KW DRAFTS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_DRAFTS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_DRAFTS(25, "PPL_KW_DRAFTS", "drafts:"),
+
+  /**
+   * The '<em><b>PPL KW BRANCHES</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_BRANCHES_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_BRANCHES(26, "PPL_KW_BRANCHES", "branches:"),
+
+  /**
+   * The '<em><b>PPL KW BRANCHES IGNORE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_BRANCHES_IGNORE_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_BRANCHES_IGNORE(27, "PPL_KW_BRANCHES_IGNORE", "branches-ignore:"),
+
+  /**
+   * The '<em><b>PPL KW PATHS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PATHS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_PATHS(28, "PPL_KW_PATHS", "paths:"),
+
+  /**
+   * The '<em><b>PPL KW PATHS IGNORE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PATHS_IGNORE_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_PATHS_IGNORE(29, "PPL_KW_PATHS_IGNORE", "paths-ignore:"),
+
+  /**
+   * The '<em><b>PPL KW TAGS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_TAGS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_TAGS(30, "PPL_KW_TAGS", "tags:"),
+
+  /**
+   * The '<em><b>PPL KW TAGS IGNORE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_TAGS_IGNORE_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_TAGS_IGNORE(31, "PPL_KW_TAGS_IGNORE", "tags-ignore:"),
+
+  /**
+   * The '<em><b>PPL KW SCHEDULES</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_SCHEDULES_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_SCHEDULES(32, "PPL_KW_SCHEDULES", "schedules:"),
+
+  /**
+   * The '<em><b>PPL KW SCHEDULE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_SCHEDULE_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_SCHEDULE(33, "PPL_KW_SCHEDULE", "schedule:"),
+
+  /**
+   * The '<em><b>PPL KW WORKFLOW CALL</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_WORKFLOW_CALL_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_WORKFLOW_CALL(34, "PPL_KW_WORKFLOW_CALL", "workflow_call:"),
+
+  /**
+   * The '<em><b>PPL KW WORKFLOW DISPATCH</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_WORKFLOW_DISPATCH_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_WORKFLOW_DISPATCH(35, "PPL_KW_WORKFLOW_DISPATCH", "workflow_dispatch:"),
+
+  /**
+   * The '<em><b>PPL KW CRON</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_CRON_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_CRON(36, "PPL_KW_CRON", "cron:"),
+
+  /**
+   * The '<em><b>PPL KW DISPLAY NAME</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_DISPLAY_NAME_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_DISPLAY_NAME(37, "PPL_KW_DISPLAY_NAME", "displayName:"),
+
+  /**
+   * The '<em><b>PPL KW ALWAYS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_ALWAYS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_ALWAYS(38, "PPL_KW_ALWAYS", "always:"),
+
+  /**
+   * The '<em><b>PPL KW STAGE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_STAGE_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_STAGE(39, "PPL_KW_STAGE", "stage:"),
+
+  /**
+   * The '<em><b>PPL KW CONDITION</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_CONDITION_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_CONDITION(40, "PPL_KW_CONDITION", "condition:"),
+
+  /**
+   * The '<em><b>PPL KW IS SKIPPABLE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_IS_SKIPPABLE_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_IS_SKIPPABLE(41, "PPL_KW_IS_SKIPPABLE", "isSkippable:"),
+
+  /**
+   * The '<em><b>PPL KW DEPENDS ON</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_DEPENDS_ON_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_DEPENDS_ON(42, "PPL_KW_DEPENDS_ON", "dependsOn:"),
+
+  /**
+   * The '<em><b>PPL KW JOB</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_JOB_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_JOB(43, "PPL_KW_JOB", "job:"),
+
+  /**
+   * The '<em><b>PPL KW DEPLOYMENT</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_DEPLOYMENT_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_DEPLOYMENT(44, "PPL_KW_DEPLOYMENT", "deployment:"),
+
+  /**
+   * The '<em><b>PPL KW NEEDS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_NEEDS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_NEEDS(45, "PPL_KW_NEEDS", "needs:"),
+
+  /**
+   * The '<em><b>PPL KW SCRIPT</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_SCRIPT_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_SCRIPT(46, "PPL_KW_SCRIPT", "script:"),
+
+  /**
+   * The '<em><b>PPL KW BASH</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_BASH_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_BASH(47, "PPL_KW_BASH", "bash:"),
+
+  /**
+   * The '<em><b>PPL KW PWSH</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PWSH_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_PWSH(48, "PPL_KW_PWSH", "pwsh:"),
+
+  /**
+   * The '<em><b>PPL KW POWERSHELL</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_POWERSHELL_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_POWERSHELL(49, "PPL_KW_POWERSHELL", "powershell:"),
+
+  /**
+   * The '<em><b>PPL KW CHECKOUT</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_CHECKOUT_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_CHECKOUT(50, "PPL_KW_CHECKOUT", "checkout:"),
+
+  /**
+   * The '<em><b>PPL KW DOWNLOAD</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_DOWNLOAD_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_DOWNLOAD(51, "PPL_KW_DOWNLOAD", "download:"),
+
+  /**
+   * The '<em><b>PPL KW GET PACKAGE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_GET_PACKAGE_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_GET_PACKAGE(52, "PPL_KW_GET_PACKAGE", "getPackage:"),
+
+  /**
+   * The '<em><b>PPL KW PUBLISH</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PUBLISH_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_PUBLISH(53, "PPL_KW_PUBLISH", "publish:"),
+
+  /**
+   * The '<em><b>PPL KW TASK</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_TASK_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_TASK(54, "PPL_KW_TASK", "task:"),
+
+  /**
+   * The '<em><b>PPL KW VALUE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_VALUE_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_VALUE(55, "PPL_KW_VALUE", "value:"),
+
+  /**
+   * The '<em><b>PPL KW READONLY</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_READONLY_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_READONLY(56, "PPL_KW_READONLY", "readonly:"),
+
+  /**
+   * The '<em><b>PPL KW BUILDS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_BUILDS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_BUILDS(57, "PPL_KW_BUILDS", "builds:"),
+
+  /**
+   * The '<em><b>PPL KW CONTAINERS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_CONTAINERS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_CONTAINERS(58, "PPL_KW_CONTAINERS", "containers:"),
+
+  /**
+   * The '<em><b>PPL KW PIPELINES</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PIPELINES_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_PIPELINES(59, "PPL_KW_PIPELINES", "pipelines:"),
+
+  /**
+   * The '<em><b>PPL KW REPOSITORIES</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_REPOSITORIES_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_REPOSITORIES(60, "PPL_KW_REPOSITORIES", "repositories:"),
+
+  /**
+   * The '<em><b>PPL KW WEBHOOKS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_WEBHOOKS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_WEBHOOKS(61, "PPL_KW_WEBHOOKS", "webhooks:"),
+
+  /**
+   * The '<em><b>PPL KW PACKAGES</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PACKAGES_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_PACKAGES(62, "PPL_KW_PACKAGES", "packages:"),
+
+  /**
+   * The '<em><b>PPL KW INPUTS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_INPUTS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_INPUTS(63, "PPL_KW_INPUTS", "inputs:"),
+
+  /**
+   * The '<em><b>PPL KW OUTPUTS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_OUTPUTS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_OUTPUTS(64, "PPL_KW_OUTPUTS", "outputs:"),
+
+  /**
+   * The '<em><b>PPL KW SECRETS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_SECRETS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_SECRETS(65, "PPL_KW_SECRETS", "secrets:"),
+
+  /**
+   * The '<em><b>PPL KW DESCRIPTION</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_DESCRIPTION_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_DESCRIPTION(66, "PPL_KW_DESCRIPTION", "description:"),
+
+  /**
+   * The '<em><b>PPL KW REQUIRED</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_REQUIRED_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_REQUIRED(67, "PPL_KW_REQUIRED", "required:"),
+
+  /**
+   * The '<em><b>PPL KW DEFAULT</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_DEFAULT_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_DEFAULT(68, "PPL_KW_DEFAULT", "default:"),
+
+  /**
+   * The '<em><b>PPL KW TYPE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_TYPE_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_TYPE(69, "PPL_KW_TYPE", "type:"),
+
+  /**
+   * The '<em><b>PPL KW OPTIONS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_OPTIONS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_OPTIONS(70, "PPL_KW_OPTIONS", "options:"),
+
+  /**
+   * The '<em><b>PPL KW IF</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_IF_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_IF(71, "PPL_KW_IF", "if:"),
+
+  /**
+   * The '<em><b>PPL KW RUNS ON</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_RUNS_ON_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_RUNS_ON(72, "PPL_KW_RUNS_ON", "runs-on:"),
+
+  /**
+   * The '<em><b>PPL KW STRATEGY</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_STRATEGY_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_STRATEGY(73, "PPL_KW_STRATEGY", "strategy:"),
+
+  /**
+   * The '<em><b>PPL KW MATRIX</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_MATRIX_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_MATRIX(74, "PPL_KW_MATRIX", "matrix:"),
+
+  /**
+   * The '<em><b>PPL KW CONTAINER</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_CONTAINER_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_CONTAINER(75, "PPL_KW_CONTAINER", "container:"),
+
+  /**
+   * The '<em><b>PPL KW SERVICES</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_SERVICES_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_SERVICES(76, "PPL_KW_SERVICES", "services:"),
+
+  /**
+   * The '<em><b>PPL KW STEPS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_STEPS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_STEPS(77, "PPL_KW_STEPS", "steps:"),
+
+  /**
+   * The '<em><b>PPL KW USES</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_USES_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_USES(78, "PPL_KW_USES", "uses:"),
+
+  /**
+   * The '<em><b>PPL KW WITH</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_WITH_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_WITH(79, "PPL_KW_WITH", "with:"),
+
+  /**
+   * The '<em><b>PPL KW TIMEOUT MINUTES</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_TIMEOUT_MINUTES_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_TIMEOUT_MINUTES(80, "PPL_KW_TIMEOUT_MINUTES", "timeout-minutes:"),
+
+  /**
+   * The '<em><b>PPL KW CONTINUE ON ERROR</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_CONTINUE_ON_ERROR_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_CONTINUE_ON_ERROR(81, "PPL_KW_CONTINUE_ON_ERROR", "continue-on-error:"),
+
+  /**
+   * The '<em><b>PPL KW ENVIRONMENT</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_ENVIRONMENT_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_ENVIRONMENT(82, "PPL_KW_ENVIRONMENT", "environment:"),
+
+  /**
+   * The '<em><b>PPL KW ID</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_ID_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_ID(83, "PPL_KW_ID", "id:"),
+
+  /**
+   * The '<em><b>PPL KW PERMISSIONS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PERMISSIONS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_PERMISSIONS(84, "PPL_KW_PERMISSIONS", "permissions:"),
+
+  /**
+   * The '<em><b>PPL KW TIMEOUTS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_TIMEOUTS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_TIMEOUTS(85, "PPL_KW_TIMEOUTS", "timeouts:"),
+
+  /**
+   * The '<em><b>PPL KW DEFAULTS RUN</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_DEFAULTS_RUN_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_DEFAULTS_RUN(86, "PPL_KW_DEFAULTS_RUN", "defaults.run:"),
+
+  /**
+   * The '<em><b>PPL KW PUSH</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PUSH_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_PUSH(87, "PPL_KW_PUSH", "push:"),
+
+  /**
+   * The '<em><b>PPL KW PULL REQUEST</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PULL_REQUEST_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_PULL_REQUEST(88, "PPL_KW_PULL_REQUEST", "pull_request:"),
+
+  /**
+   * The '<em><b>PPL KW REPOSITORY DISPATCH</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_REPOSITORY_DISPATCH_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_REPOSITORY_DISPATCH(89, "PPL_KW_REPOSITORY_DISPATCH", "repository_dispatch:"),
+
+  /**
+   * The '<em><b>PPL KW WORKFLOW RUN</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_WORKFLOW_RUN_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_WORKFLOW_RUN(90, "PPL_KW_WORKFLOW_RUN", "workflow_run:"),
+
+  /**
+   * The '<em><b>PPL KW FILTERS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_FILTERS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_FILTERS(91, "PPL_KW_FILTERS", "filters:"),
+
+  /**
+   * The '<em><b>PPL KW EXCLUDE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_EXCLUDE_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_EXCLUDE(92, "PPL_KW_EXCLUDE", "exclude:"),
+
+  /**
+   * The '<em><b>PPL KW FAIL FAST</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_FAIL_FAST_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_FAIL_FAST(93, "PPL_KW_FAIL_FAST", "fail-fast:"),
+
+  /**
+   * The '<em><b>PPL KW MAX PARALLEL</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_MAX_PARALLEL_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_MAX_PARALLEL(94, "PPL_KW_MAX_PARALLEL", "max-parallel:"),
+
+  /**
+   * The '<em><b>PPL KW CONTAINER IMAGE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_CONTAINER_IMAGE_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_CONTAINER_IMAGE(95, "PPL_KW_CONTAINER_IMAGE", "container.image:"),
+
+  /**
+   * The '<em><b>PPL KW CREDENTIALS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_CREDENTIALS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_CREDENTIALS(96, "PPL_KW_CREDENTIALS", "credentials:"),
+
+  /**
+   * The '<em><b>PPL KW PORTS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PORTS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_PORTS(97, "PPL_KW_PORTS", "ports:"),
+
+  /**
+   * The '<em><b>PPL KW INHERIT</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_INHERIT_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_INHERIT(98, "PPL_KW_INHERIT", "inherit:"),
+
+  /**
+   * The '<em><b>PPL KW TRIGGER</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_TRIGGER_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_TRIGGER(99, "PPL_KW_TRIGGER", "trigger:"),
+
+  /**
+   * The '<em><b>PPL KW TEMPLATE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_TEMPLATE_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_TEMPLATE(100, "PPL_KW_TEMPLATE", "template:"),
+
+  /**
+   * The '<em><b>PPL KW WORKSPACE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_WORKSPACE_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_WORKSPACE(101, "PPL_KW_WORKSPACE", "workspace:"),
+
+  /**
+   * The '<em><b>PPL KW PIPELINE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PIPELINE_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_PIPELINE(102, "PPL_KW_PIPELINE", "pipeline:"),
+
+  /**
+   * The '<em><b>PPL KW TIMEOUT IN MINUTES</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_TIMEOUT_IN_MINUTES_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_TIMEOUT_IN_MINUTES(103, "PPL_KW_TIMEOUT_IN_MINUTES", "timeoutInMinutes:"),
+
+  /**
+   * The '<em><b>PPL KW CONTINUE ON ERR</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_CONTINUE_ON_ERR_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_CONTINUE_ON_ERR(104, "PPL_KW_CONTINUE_ON_ERR", "continueOnError:"),
+
+  /**
+   * The '<em><b>PPL KW RESOURCE TYPE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_RESOURCE_TYPE_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_RESOURCE_TYPE(105, "PPL_KW_RESOURCE_TYPE", "resourceType:"),
+
+  /**
+   * The '<em><b>PPL KW RESOURCE NAME</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_RESOURCE_NAME_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_RESOURCE_NAME(106, "PPL_KW_RESOURCE_NAME", "resourceName:"),
+
+  /**
+   * The '<em><b>PPL KW STAGES</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_STAGES_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_STAGES(107, "PPL_KW_STAGES", "stages:"),
+
+  /**
+   * The '<em><b>PPL KW ONLY</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_ONLY_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_ONLY(108, "PPL_KW_ONLY", "only:"),
+
+  /**
+   * The '<em><b>PPL KW EXCEPT</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_EXCEPT_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_EXCEPT(109, "PPL_KW_EXCEPT", "except:"),
+
+  /**
+   * The '<em><b>PPL KW IMAGE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_IMAGE_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_IMAGE(110, "PPL_KW_IMAGE", "image:"),
+
+  /**
+   * The '<em><b>PPL KW CACHE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_CACHE_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_CACHE(111, "PPL_KW_CACHE", "cache:"),
+
+  /**
+   * The '<em><b>PPL KW ARTIFACTS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_ARTIFACTS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_ARTIFACTS(112, "PPL_KW_ARTIFACTS", "artifacts:"),
+
+  /**
+   * The '<em><b>PPL KW RETRIES</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_RETRIES_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_RETRIES(113, "PPL_KW_RETRIES", "retries:"),
+
+  /**
+   * The '<em><b>PPL KW RULES</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_RULES_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_RULES(114, "PPL_KW_RULES", "rules:"),
+
+  /**
+   * The '<em><b>PPL KW BEFORE SCRIPT</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_BEFORE_SCRIPT_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_BEFORE_SCRIPT(115, "PPL_KW_BEFORE_SCRIPT", "before_script:"),
+
+  /**
+   * The '<em><b>PPL KW AFTER SCRIPT</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_AFTER_SCRIPT_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_AFTER_SCRIPT(116, "PPL_KW_AFTER_SCRIPT", "after_script:"),
+
+  /**
+   * The '<em><b>PPL KW TIMEOUT</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_TIMEOUT_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_TIMEOUT(117, "PPL_KW_TIMEOUT", "timeout:"),
+
+  /**
+   * The '<em><b>PPL KW WHEN</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_WHEN_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_WHEN(118, "PPL_KW_WHEN", "when:"),
+
+  /**
+   * The '<em><b>PPL KW ALLOW FAILURE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_ALLOW_FAILURE_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_ALLOW_FAILURE(119, "PPL_KW_ALLOW_FAILURE", "allow_failure:"),
+
+  /**
+   * The '<em><b>PPL KW DEPENDENCIES</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_DEPENDENCIES_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_DEPENDENCIES(120, "PPL_KW_DEPENDENCIES", "dependencies:"),
+
+  /**
+   * The '<em><b>PPL KW PULL REQUESTS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PULL_REQUESTS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_PULL_REQUESTS(121, "PPL_KW_PULL_REQUESTS", "pull-requests:"),
+
+  /**
+   * The '<em><b>PPL KW STEP</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_STEP_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_STEP(122, "PPL_KW_STEP", "step:"),
+
+  /**
+   * The '<em><b>PPL KW DEFINITIONS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_DEFINITIONS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_DEFINITIONS(123, "PPL_KW_DEFINITIONS", "definitions:"),
+
+  /**
+   * The '<em><b>PPL KW CACHES</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_CACHES_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_CACHES(124, "PPL_KW_CACHES", "caches:"),
+
+  /**
+   * The '<em><b>PPL KW PARALLEL</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PARALLEL_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_PARALLEL(125, "PPL_KW_PARALLEL", "parallel:"),
+
+  /**
+   * The '<em><b>PPL KW CONDITIONS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_CONDITIONS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_CONDITIONS(126, "PPL_KW_CONDITIONS", "conditions:"),
+
+  /**
+   * The '<em><b>PPL KW MAX TIME</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_MAX_TIME_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_MAX_TIME(127, "PPL_KW_MAX_TIME", "max-time:"),
+
+  /**
+   * The '<em><b>PPL KW PROJECT</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PROJECT_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_PROJECT(128, "PPL_KW_PROJECT", "project:"),
+
+  /**
+   * The '<em><b>PPL KW PLAN</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PLAN_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_PLAN(129, "PPL_KW_PLAN", "plan:"),
+
+  /**
+   * The '<em><b>PPL KW TASKS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_TASKS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_TASKS(130, "PPL_KW_TASKS", "tasks:"),
+
+  /**
+   * The '<em><b>PPL KW REQUIREMENTS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_REQUIREMENTS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_REQUIREMENTS(131, "PPL_KW_REQUIREMENTS", "requirements:"),
+
+  /**
+   * The '<em><b>PPL KW FINAL</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_FINAL_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_FINAL(132, "PPL_KW_FINAL", "final:"),
+
+  /**
+   * The '<em><b>PPL KW JDK</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_JDK_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_JDK(133, "PPL_KW_JDK", "jdk:"),
+
+  /**
+   * The '<em><b>PPL KW LABELS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_LABELS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_LABELS(134, "PPL_KW_LABELS", "labels:"),
+
+  /**
+   * The '<em><b>PPL KW REPOSITORY</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_REPOSITORY_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_REPOSITORY(135, "PPL_KW_REPOSITORY", "repository:"),
+
+  /**
+   * The '<em><b>PPL KW RELEASE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_RELEASE_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_RELEASE(136, "PPL_KW_RELEASE", "release:"),
+
+  /**
+   * The '<em><b>PPL KW DOCKER</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_DOCKER_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_DOCKER(137, "PPL_KW_DOCKER", "docker:"),
+
+  /**
+   * The '<em><b>PPL KW AGENT</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_AGENT_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_AGENT(138, "PPL_KW_AGENT", "agent:"),
+
+  /**
+   * The '<em><b>PPL KW QUEUE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_QUEUE_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_QUEUE(139, "PPL_KW_QUEUE", "queue:"),
+
+  /**
+   * The '<em><b>PPL KW SNAPSHOT</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_SNAPSHOT_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_SNAPSHOT(140, "PPL_KW_SNAPSHOT", "snapshot:"),
+
+  /**
+   * The '<em><b>PPL KW POLICY</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_POLICY_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_POLICY(141, "PPL_KW_POLICY", "policy:"),
+
+  /**
+   * The '<em><b>PPL KW APPROVALS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_APPROVALS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_APPROVALS(142, "PPL_KW_APPROVALS", "approvals:"),
+
+  /**
+   * The '<em><b>PPL KW PREBUILD</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PREBUILD_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_PREBUILD(143, "PPL_KW_PREBUILD", "preBuild:"),
+
+  /**
+   * The '<em><b>PPL KW POSTBUILD</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_POSTBUILD_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_POSTBUILD(144, "PPL_KW_POSTBUILD", "postBuild:"),
+
+  /**
+   * The '<em><b>PPL KW SSH</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_SSH_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_SSH(145, "PPL_KW_SSH", "ssh:"),
+
+  /**
+   * The '<em><b>PPL KW AUTH</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_AUTH_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_AUTH(146, "PPL_KW_AUTH", "auth:"),
+
+  /**
+   * The '<em><b>PPL KW STORAGE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_STORAGE_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_STORAGE(147, "PPL_KW_STORAGE", "storage:"),
+
+  /**
+   * The '<em><b>PPL KW ENDPOINTS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_ENDPOINTS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_ENDPOINTS(148, "PPL_KW_ENDPOINTS", "endpoints:"),
+
+  /**
+   * The '<em><b>PPL KW COMMAND</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_COMMAND_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_COMMAND(149, "PPL_KW_COMMAND", "command:"),
+
+  /**
+   * The '<em><b>PPL KW PROVISIONER</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PROVISIONER_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_PROVISIONER(150, "PPL_KW_PROVISIONER", "provisioner:"),
+
+  /**
+   * The '<em><b>PPL KW TRIGGER RULES</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_TRIGGER_RULES_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_TRIGGER_RULES(151, "PPL_KW_TRIGGER_RULES", "triggerRules:"),
+
+  /**
+   * The '<em><b>PPL KW RUN POLICY</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_RUN_POLICY_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_RUN_POLICY(152, "PPL_KW_RUN_POLICY", "runPolicy:"),
+
+  /**
+   * The '<em><b>PPL KW QUEUED</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_QUEUED_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_QUEUED(153, "PPL_KW_QUEUED", "queued:"),
 
   /**
    * The '<em><b>PPL KW NOTIFICATIONS</b></em>' literal object.
@@ -1268,7 +1568,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_NOTIFICATIONS(124, "PPL_KW_NOTIFICATIONS", "notifications:"),
+  PPL_KW_NOTIFICATIONS(154, "PPL_KW_NOTIFICATIONS", "notifications:"),
 
   /**
    * The '<em><b>PPL KW DEPLOY TRIGGER</b></em>' literal object.
@@ -1278,7 +1578,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_DEPLOY_TRIGGER(125, "PPL_KW_DEPLOY_TRIGGER", "deployTrigger:"),
+  PPL_KW_DEPLOY_TRIGGER(155, "PPL_KW_DEPLOY_TRIGGER", "deployTrigger:"),
 
   /**
    * The '<em><b>PPL KW RELEASE TRIGGER</b></em>' literal object.
@@ -1288,7 +1588,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_RELEASE_TRIGGER(126, "PPL_KW_RELEASE_TRIGGER", "releaseTrigger:"),
+  PPL_KW_RELEASE_TRIGGER(156, "PPL_KW_RELEASE_TRIGGER", "releaseTrigger:"),
 
   /**
    * The '<em><b>PPL KW LOCK BEHAVIOR</b></em>' literal object.
@@ -1298,7 +1598,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_LOCK_BEHAVIOR(127, "PPL_KW_LOCK_BEHAVIOR", "lockBehavior:"),
+  PPL_KW_LOCK_BEHAVIOR(157, "PPL_KW_LOCK_BEHAVIOR", "lockBehavior:"),
 
   /**
    * The '<em><b>PPL KW REVIEW STAGE</b></em>' literal object.
@@ -1308,7 +1608,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_REVIEW_STAGE(128, "PPL_KW_REVIEW_STAGE", "reviewStage:");
+  PPL_KW_REVIEW_STAGE(158, "PPL_KW_REVIEW_STAGE", "reviewStage:");
 
   /**
    * The '<em><b>PPL KW NAME</b></em>' literal value.
@@ -1322,17 +1622,6 @@ public enum PipelineKeyword implements Enumerator
   public static final int PPL_KW_NAME_VALUE = 0;
 
   /**
-   * The '<em><b>PPL KW ON</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_ON
-   * @model literal="on:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_ON_VALUE = 1;
-
-  /**
    * The '<em><b>PPL KW RUN NAME</b></em>' literal value.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -1341,40 +1630,18 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_RUN_NAME_VALUE = 2;
+  public static final int PPL_KW_RUN_NAME_VALUE = 1;
 
   /**
-   * The '<em><b>PPL KW IF</b></em>' literal value.
+   * The '<em><b>PPL KW ON</b></em>' literal value.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_IF
-   * @model literal="if:"
+   * @see #PPL_KW_ON
+   * @model literal="on:"
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_IF_VALUE = 3;
-
-  /**
-   * The '<em><b>PPL KW RUNS ON</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_RUNS_ON
-   * @model literal="runs-on:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_RUNS_ON_VALUE = 4;
-
-  /**
-   * The '<em><b>PPL KW ENV</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_ENV
-   * @model literal="env:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_ENV_VALUE = 5;
+  public static final int PPL_KW_ON_VALUE = 2;
 
   /**
    * The '<em><b>PPL KW DEFAULTS</b></em>' literal value.
@@ -1385,73 +1652,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_DEFAULTS_VALUE = 6;
-
-  /**
-   * The '<em><b>PPL KW STRATEGY</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_STRATEGY
-   * @model literal="strategy:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_STRATEGY_VALUE = 7;
-
-  /**
-   * The '<em><b>PPL KW MATRIX</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_MATRIX
-   * @model literal="matrix:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_MATRIX_VALUE = 8;
-
-  /**
-   * The '<em><b>PPL KW CONTAINER</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_CONTAINER
-   * @model literal="container:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_CONTAINER_VALUE = 9;
-
-  /**
-   * The '<em><b>PPL KW SERVICES</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_SERVICES
-   * @model literal="services:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_SERVICES_VALUE = 10;
-
-  /**
-   * The '<em><b>PPL KW STEPS</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_STEPS
-   * @model literal="steps:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_STEPS_VALUE = 11;
-
-  /**
-   * The '<em><b>PPL KW USES</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_USES
-   * @model literal="uses:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_USES_VALUE = 12;
+  public static final int PPL_KW_DEFAULTS_VALUE = 3;
 
   /**
    * The '<em><b>PPL KW RUN</b></em>' literal value.
@@ -1462,7 +1663,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_RUN_VALUE = 13;
+  public static final int PPL_KW_RUN_VALUE = 4;
 
   /**
    * The '<em><b>PPL KW SHELL</b></em>' literal value.
@@ -1473,7 +1674,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_SHELL_VALUE = 14;
+  public static final int PPL_KW_SHELL_VALUE = 5;
 
   /**
    * The '<em><b>PPL KW WORKING DIRECTORY</b></em>' literal value.
@@ -1484,117 +1685,29 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_WORKING_DIRECTORY_VALUE = 15;
+  public static final int PPL_KW_WORKING_DIRECTORY_VALUE = 6;
 
   /**
-   * The '<em><b>PPL KW WITH</b></em>' literal value.
+   * The '<em><b>PPL KW ENV</b></em>' literal value.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_WITH
-   * @model literal="with:"
+   * @see #PPL_KW_ENV
+   * @model literal="env:"
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_WITH_VALUE = 16;
+  public static final int PPL_KW_ENV_VALUE = 7;
 
   /**
-   * The '<em><b>PPL KW TIMEOUT MINUTES</b></em>' literal value.
+   * The '<em><b>PPL KW PERMISSION</b></em>' literal value.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_TIMEOUT_MINUTES
-   * @model literal="timeout-minutes:"
+   * @see #PPL_KW_PERMISSION
+   * @model literal="permission:"
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_TIMEOUT_MINUTES_VALUE = 17;
-
-  /**
-   * The '<em><b>PPL KW CONTINUE ON ERROR</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_CONTINUE_ON_ERROR
-   * @model literal="continue-on-error:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_CONTINUE_ON_ERROR_VALUE = 18;
-
-  /**
-   * The '<em><b>PPL KW CONDITION</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_CONDITION
-   * @model literal="condition:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_CONDITION_VALUE = 19;
-
-  /**
-   * The '<em><b>PPL KW ENVIRONMENT</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_ENVIRONMENT
-   * @model literal="environment:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_ENVIRONMENT_VALUE = 20;
-
-  /**
-   * The '<em><b>PPL KW ID</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_ID
-   * @model literal="id:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_ID_VALUE = 21;
-
-  /**
-   * The '<em><b>PPL KW NEEDS</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_NEEDS
-   * @model literal="needs:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_NEEDS_VALUE = 22;
-
-  /**
-   * The '<em><b>PPL KW OUTPUTS</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_OUTPUTS
-   * @model literal="outputs:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_OUTPUTS_VALUE = 23;
-
-  /**
-   * The '<em><b>PPL KW SECRETS</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_SECRETS
-   * @model literal="secrets:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_SECRETS_VALUE = 24;
-
-  /**
-   * The '<em><b>PPL KW PERMISSIONS</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PERMISSIONS
-   * @model literal="permissions:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_PERMISSIONS_VALUE = 25;
+  public static final int PPL_KW_PERMISSION_VALUE = 8;
 
   /**
    * The '<em><b>PPL KW CONCURRENCY</b></em>' literal value.
@@ -1605,304 +1718,29 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_CONCURRENCY_VALUE = 26;
+  public static final int PPL_KW_CONCURRENCY_VALUE = 9;
 
   /**
-   * The '<em><b>PPL KW TIMEOUTS</b></em>' literal value.
+   * The '<em><b>PPL KW GROUP</b></em>' literal value.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_TIMEOUTS
-   * @model literal="timeouts:"
+   * @see #PPL_KW_GROUP
+   * @model literal="group:"
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_TIMEOUTS_VALUE = 27;
+  public static final int PPL_KW_GROUP_VALUE = 10;
 
   /**
-   * The '<em><b>PPL KW DEFAULTS RUN</b></em>' literal value.
+   * The '<em><b>PPL KW CANCEL IN PROGRESS</b></em>' literal value.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_DEFAULTS_RUN
-   * @model literal="defaults.run:"
+   * @see #PPL_KW_CANCEL_IN_PROGRESS
+   * @model literal="cancel-in-progress:"
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_DEFAULTS_RUN_VALUE = 28;
-
-  /**
-   * The '<em><b>PPL KW WORKFLOW DISPATCH</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_WORKFLOW_DISPATCH
-   * @model literal="workflow_dispatch:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_WORKFLOW_DISPATCH_VALUE = 29;
-
-  /**
-   * The '<em><b>PPL KW WORKFLOW CALL</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_WORKFLOW_CALL
-   * @model literal="workflow_call:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_WORKFLOW_CALL_VALUE = 30;
-
-  /**
-   * The '<em><b>PPL KW SCHEDULE</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_SCHEDULE
-   * @model literal="schedule:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_SCHEDULE_VALUE = 31;
-
-  /**
-   * The '<em><b>PPL KW PUSH</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PUSH
-   * @model literal="push:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_PUSH_VALUE = 32;
-
-  /**
-   * The '<em><b>PPL KW PULL REQUEST</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PULL_REQUEST
-   * @model literal="pull_request:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_PULL_REQUEST_VALUE = 33;
-
-  /**
-   * The '<em><b>PPL KW PATHS</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PATHS
-   * @model literal="paths:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_PATHS_VALUE = 34;
-
-  /**
-   * The '<em><b>PPL KW BRANCHES</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_BRANCHES
-   * @model literal="branches:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_BRANCHES_VALUE = 35;
-
-  /**
-   * The '<em><b>PPL KW TAGS</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_TAGS
-   * @model literal="tags:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_TAGS_VALUE = 36;
-
-  /**
-   * The '<em><b>PPL KW BRANCHES IGNORE</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_BRANCHES_IGNORE
-   * @model literal="branches-ignore:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_BRANCHES_IGNORE_VALUE = 37;
-
-  /**
-   * The '<em><b>PPL KW PATHS IGNORE</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PATHS_IGNORE
-   * @model literal="paths-ignore:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_PATHS_IGNORE_VALUE = 38;
-
-  /**
-   * The '<em><b>PPL KW TAGS IGNORE</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_TAGS_IGNORE
-   * @model literal="tags-ignore:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_TAGS_IGNORE_VALUE = 39;
-
-  /**
-   * The '<em><b>PPL KW CRON</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_CRON
-   * @model literal="cron:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_CRON_VALUE = 40;
-
-  /**
-   * The '<em><b>PPL KW REPOSITORY DISPATCH</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_REPOSITORY_DISPATCH
-   * @model literal="repository_dispatch:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_REPOSITORY_DISPATCH_VALUE = 41;
-
-  /**
-   * The '<em><b>PPL KW WORKFLOW RUN</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_WORKFLOW_RUN
-   * @model literal="workflow_run:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_WORKFLOW_RUN_VALUE = 42;
-
-  /**
-   * The '<em><b>PPL KW CHECKOUT</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_CHECKOUT
-   * @model literal="checkout:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_CHECKOUT_VALUE = 43;
-
-  /**
-   * The '<em><b>PPL KW FILTERS</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_FILTERS
-   * @model literal="filters:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_FILTERS_VALUE = 44;
-
-  /**
-   * The '<em><b>PPL KW INCLUDE</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_INCLUDE
-   * @model literal="include:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_INCLUDE_VALUE = 45;
-
-  /**
-   * The '<em><b>PPL KW EXCLUDE</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_EXCLUDE
-   * @model literal="exclude:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_EXCLUDE_VALUE = 46;
-
-  /**
-   * The '<em><b>PPL KW FAIL FAST</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_FAIL_FAST
-   * @model literal="fail-fast:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_FAIL_FAST_VALUE = 47;
-
-  /**
-   * The '<em><b>PPL KW MAX PARALLEL</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_MAX_PARALLEL
-   * @model literal="max-parallel:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_MAX_PARALLEL_VALUE = 48;
-
-  /**
-   * The '<em><b>PPL KW CONTAINER IMAGE</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_CONTAINER_IMAGE
-   * @model literal="container.image:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_CONTAINER_IMAGE_VALUE = 49;
-
-  /**
-   * The '<em><b>PPL KW CREDENTIALS</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_CREDENTIALS
-   * @model literal="credentials:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_CREDENTIALS_VALUE = 50;
-
-  /**
-   * The '<em><b>PPL KW PORTS</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PORTS
-   * @model literal="ports:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_PORTS_VALUE = 51;
-
-  /**
-   * The '<em><b>PPL KW INHERIT</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_INHERIT
-   * @model literal="inherit:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_INHERIT_VALUE = 52;
-
-  /**
-   * The '<em><b>PPL KW TRIGGER</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_TRIGGER
-   * @model literal="trigger:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_TRIGGER_VALUE = 53;
+  public static final int PPL_KW_CANCEL_IN_PROGRESS_VALUE = 11;
 
   /**
    * The '<em><b>PPL KW POOL</b></em>' literal value.
@@ -1913,84 +1751,29 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_POOL_VALUE = 54;
+  public static final int PPL_KW_POOL_VALUE = 12;
 
   /**
-   * The '<em><b>PPL KW DISPLAY NAME</b></em>' literal value.
+   * The '<em><b>PPL KW VM IMAGE</b></em>' literal value.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_DISPLAY_NAME
-   * @model literal="displayName:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_DISPLAY_NAME_VALUE = 55;
-
-  /**
-   * The '<em><b>PPL KW TASK</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_TASK
-   * @model literal="task:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_TASK_VALUE = 56;
-
-  /**
-   * The '<em><b>PPL KW TEMPLATE</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_TEMPLATE
-   * @model literal="template:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_TEMPLATE_VALUE = 57;
-
-  /**
-   * The '<em><b>PPL KW DEPENDS ON</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_DEPENDS_ON
-   * @model literal="dependsOn:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_DEPENDS_ON_VALUE = 58;
-
-  /**
-   * The '<em><b>PPL KW WORKSPACE</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_WORKSPACE
-   * @model literal="workspace:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_WORKSPACE_VALUE = 59;
-
-  /**
-   * The '<em><b>PPL KW PARAMETERS</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PARAMETERS
-   * @model literal="parameters:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_PARAMETERS_VALUE = 60;
-
-  /**
-   * The '<em><b>PPL KW POOL VM IMAGE</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_POOL_VM_IMAGE
+   * @see #PPL_KW_VM_IMAGE
    * @model literal="vmImage:"
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_POOL_VM_IMAGE_VALUE = 61;
+  public static final int PPL_KW_VM_IMAGE_VALUE = 13;
+
+  /**
+   * The '<em><b>PPL KW DEMANDS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_DEMANDS
+   * @model literal="demands:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_DEMANDS_VALUE = 14;
 
   /**
    * The '<em><b>PPL KW RESOURCES</b></em>' literal value.
@@ -2001,469 +1784,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_RESOURCES_VALUE = 62;
-
-  /**
-   * The '<em><b>PPL KW PIPELINE</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PIPELINE
-   * @model literal="pipeline:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_PIPELINE_VALUE = 63;
-
-  /**
-   * The '<em><b>PPL KW STAGE</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_STAGE
-   * @model literal="stage:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_STAGE_VALUE = 64;
-
-  /**
-   * The '<em><b>PPL KW TIMEOUT IN MINUTES</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_TIMEOUT_IN_MINUTES
-   * @model literal="timeoutInMinutes:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_TIMEOUT_IN_MINUTES_VALUE = 65;
-
-  /**
-   * The '<em><b>PPL KW CONTINUE ON ERR</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_CONTINUE_ON_ERR
-   * @model literal="continueOnError:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_CONTINUE_ON_ERR_VALUE = 66;
-
-  /**
-   * The '<em><b>PPL KW RESOURCE TYPE</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_RESOURCE_TYPE
-   * @model literal="resourceType:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_RESOURCE_TYPE_VALUE = 67;
-
-  /**
-   * The '<em><b>PPL KW RESOURCE NAME</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_RESOURCE_NAME
-   * @model literal="resourceName:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_RESOURCE_NAME_VALUE = 68;
-
-  /**
-   * The '<em><b>PPL KW STAGES</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_STAGES
-   * @model literal="stages:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_STAGES_VALUE = 69;
-
-  /**
-   * The '<em><b>PPL KW ONLY</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_ONLY
-   * @model literal="only:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_ONLY_VALUE = 70;
-
-  /**
-   * The '<em><b>PPL KW EXCEPT</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_EXCEPT
-   * @model literal="except:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_EXCEPT_VALUE = 71;
-
-  /**
-   * The '<em><b>PPL KW IMAGE</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_IMAGE
-   * @model literal="image:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_IMAGE_VALUE = 72;
-
-  /**
-   * The '<em><b>PPL KW VARIABLES</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_VARIABLES
-   * @model literal="variables:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_VARIABLES_VALUE = 73;
-
-  /**
-   * The '<em><b>PPL KW CACHE</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_CACHE
-   * @model literal="cache:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_CACHE_VALUE = 74;
-
-  /**
-   * The '<em><b>PPL KW ARTIFACTS</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_ARTIFACTS
-   * @model literal="artifacts:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_ARTIFACTS_VALUE = 75;
-
-  /**
-   * The '<em><b>PPL KW RETRIES</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_RETRIES
-   * @model literal="retries:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_RETRIES_VALUE = 76;
-
-  /**
-   * The '<em><b>PPL KW RULES</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_RULES
-   * @model literal="rules:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_RULES_VALUE = 77;
-
-  /**
-   * The '<em><b>PPL KW BEFORE SCRIPT</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_BEFORE_SCRIPT
-   * @model literal="before_script:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_BEFORE_SCRIPT_VALUE = 78;
-
-  /**
-   * The '<em><b>PPL KW AFTER SCRIPT</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_AFTER_SCRIPT
-   * @model literal="after_script:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_AFTER_SCRIPT_VALUE = 79;
-
-  /**
-   * The '<em><b>PPL KW TIMEOUT</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_TIMEOUT
-   * @model literal="timeout:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_TIMEOUT_VALUE = 80;
-
-  /**
-   * The '<em><b>PPL KW WHEN</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_WHEN
-   * @model literal="when:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_WHEN_VALUE = 81;
-
-  /**
-   * The '<em><b>PPL KW ALLOW FAILURE</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_ALLOW_FAILURE
-   * @model literal="allow_failure:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_ALLOW_FAILURE_VALUE = 82;
-
-  /**
-   * The '<em><b>PPL KW DEPENDENCIES</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_DEPENDENCIES
-   * @model literal="dependencies:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_DEPENDENCIES_VALUE = 83;
-
-  /**
-   * The '<em><b>PPL KW EXTENDS</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_EXTENDS
-   * @model literal="extends:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_EXTENDS_VALUE = 84;
-
-  /**
-   * The '<em><b>PPL KW PIPELINES</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PIPELINES
-   * @model literal="pipelines:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_PIPELINES_VALUE = 85;
-
-  /**
-   * The '<em><b>PPL KW DEFAULT</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_DEFAULT
-   * @model literal="default:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_DEFAULT_VALUE = 86;
-
-  /**
-   * The '<em><b>PPL KW PULL REQUESTS</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PULL_REQUESTS
-   * @model literal="pull-requests:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_PULL_REQUESTS_VALUE = 87;
-
-  /**
-   * The '<em><b>PPL KW STEP</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_STEP
-   * @model literal="step:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_STEP_VALUE = 88;
-
-  /**
-   * The '<em><b>PPL KW SCRIPT</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_SCRIPT
-   * @model literal="script:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_SCRIPT_VALUE = 89;
-
-  /**
-   * The '<em><b>PPL KW DEFINITIONS</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_DEFINITIONS
-   * @model literal="definitions:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_DEFINITIONS_VALUE = 90;
-
-  /**
-   * The '<em><b>PPL KW CACHES</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_CACHES
-   * @model literal="caches:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_CACHES_VALUE = 91;
-
-  /**
-   * The '<em><b>PPL KW PARALLEL</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PARALLEL
-   * @model literal="parallel:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_PARALLEL_VALUE = 92;
-
-  /**
-   * The '<em><b>PPL KW CONDITIONS</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_CONDITIONS
-   * @model literal="conditions:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_CONDITIONS_VALUE = 93;
-
-  /**
-   * The '<em><b>PPL KW MAX TIME</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_MAX_TIME
-   * @model literal="max-time:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_MAX_TIME_VALUE = 94;
-
-  /**
-   * The '<em><b>PPL KW PROJECT</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PROJECT
-   * @model literal="project:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_PROJECT_VALUE = 95;
-
-  /**
-   * The '<em><b>PPL KW PLAN</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PLAN
-   * @model literal="plan:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_PLAN_VALUE = 96;
-
-  /**
-   * The '<em><b>PPL KW TASKS</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_TASKS
-   * @model literal="tasks:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_TASKS_VALUE = 97;
-
-  /**
-   * The '<em><b>PPL KW REQUIREMENTS</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_REQUIREMENTS
-   * @model literal="requirements:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_REQUIREMENTS_VALUE = 98;
-
-  /**
-   * The '<em><b>PPL KW FINAL</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_FINAL
-   * @model literal="final:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_FINAL_VALUE = 99;
-
-  /**
-   * The '<em><b>PPL KW JDK</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_JDK
-   * @model literal="jdk:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_JDK_VALUE = 100;
-
-  /**
-   * The '<em><b>PPL KW LABELS</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_LABELS
-   * @model literal="labels:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_LABELS_VALUE = 101;
-
-  /**
-   * The '<em><b>PPL KW REPOSITORY</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_REPOSITORY
-   * @model literal="repository:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_REPOSITORY_VALUE = 102;
-
-  /**
-   * The '<em><b>PPL KW DEPLOYMENT</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_DEPLOYMENT
-   * @model literal="deployment:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_DEPLOYMENT_VALUE = 103;
-
-  /**
-   * The '<em><b>PPL KW RELEASE</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_RELEASE
-   * @model literal="release:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_RELEASE_VALUE = 104;
+  public static final int PPL_KW_RESOURCES_VALUE = 15;
 
   /**
    * The '<em><b>PPL KW VERSION</b></em>' literal value.
@@ -2474,194 +1795,73 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_VERSION_VALUE = 105;
+  public static final int PPL_KW_VERSION_VALUE = 16;
 
   /**
-   * The '<em><b>PPL KW DOCKER</b></em>' literal value.
+   * The '<em><b>PPL KW VARIABLES</b></em>' literal value.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_DOCKER
-   * @model literal="docker:"
+   * @see #PPL_KW_VARIABLES
+   * @model literal="variables:"
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_DOCKER_VALUE = 106;
+  public static final int PPL_KW_VARIABLES_VALUE = 17;
 
   /**
-   * The '<em><b>PPL KW AGENT</b></em>' literal value.
+   * The '<em><b>PPL KW PARAMETERS</b></em>' literal value.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_AGENT
-   * @model literal="agent:"
+   * @see #PPL_KW_PARAMETERS
+   * @model literal="parameters:"
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_AGENT_VALUE = 107;
+  public static final int PPL_KW_PARAMETERS_VALUE = 18;
 
   /**
-   * The '<em><b>PPL KW QUEUE</b></em>' literal value.
+   * The '<em><b>PPL KW EXTENDS</b></em>' literal value.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_QUEUE
-   * @model literal="queue:"
+   * @see #PPL_KW_EXTENDS
+   * @model literal="extends:"
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_QUEUE_VALUE = 108;
+  public static final int PPL_KW_EXTENDS_VALUE = 19;
 
   /**
-   * The '<em><b>PPL KW SNAPSHOT</b></em>' literal value.
+   * The '<em><b>PPL KW INCLUDE</b></em>' literal value.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_SNAPSHOT
-   * @model literal="snapshot:"
+   * @see #PPL_KW_INCLUDE
+   * @model literal="include:"
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_SNAPSHOT_VALUE = 109;
+  public static final int PPL_KW_INCLUDE_VALUE = 20;
 
   /**
-   * The '<em><b>PPL KW POLICY</b></em>' literal value.
+   * The '<em><b>PPL KW TYPES</b></em>' literal value.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_POLICY
-   * @model literal="policy:"
+   * @see #PPL_KW_TYPES
+   * @model literal="types:"
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_POLICY_VALUE = 110;
+  public static final int PPL_KW_TYPES_VALUE = 21;
 
   /**
-   * The '<em><b>PPL KW APPROVALS</b></em>' literal value.
+   * The '<em><b>PPL KW BATCH</b></em>' literal value.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #PPL_KW_APPROVALS
-   * @model literal="approvals:"
+   * @see #PPL_KW_BATCH
+   * @model literal="batch:"
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_APPROVALS_VALUE = 111;
-
-  /**
-   * The '<em><b>PPL KW PREBUILD</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PREBUILD
-   * @model literal="preBuild:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_PREBUILD_VALUE = 112;
-
-  /**
-   * The '<em><b>PPL KW POSTBUILD</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_POSTBUILD
-   * @model literal="postBuild:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_POSTBUILD_VALUE = 113;
-
-  /**
-   * The '<em><b>PPL KW SSH</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_SSH
-   * @model literal="ssh:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_SSH_VALUE = 114;
-
-  /**
-   * The '<em><b>PPL KW AUTH</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_AUTH
-   * @model literal="auth:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_AUTH_VALUE = 115;
-
-  /**
-   * The '<em><b>PPL KW STORAGE</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_STORAGE
-   * @model literal="storage:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_STORAGE_VALUE = 116;
-
-  /**
-   * The '<em><b>PPL KW ENDPOINTS</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_ENDPOINTS
-   * @model literal="endpoints:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_ENDPOINTS_VALUE = 117;
-
-  /**
-   * The '<em><b>PPL KW COMMAND</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_COMMAND
-   * @model literal="command:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_COMMAND_VALUE = 118;
-
-  /**
-   * The '<em><b>PPL KW PROVISIONER</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_PROVISIONER
-   * @model literal="provisioner:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_PROVISIONER_VALUE = 119;
-
-  /**
-   * The '<em><b>PPL KW TRIGGER RULES</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_TRIGGER_RULES
-   * @model literal="triggerRules:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_TRIGGER_RULES_VALUE = 120;
-
-  /**
-   * The '<em><b>PPL KW RUN POLICY</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_RUN_POLICY
-   * @model literal="runPolicy:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_RUN_POLICY_VALUE = 121;
-
-  /**
-   * The '<em><b>PPL KW QUEUED</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #PPL_KW_QUEUED
-   * @model literal="queued:"
-   * @generated
-   * @ordered
-   */
-  public static final int PPL_KW_QUEUED_VALUE = 122;
+  public static final int PPL_KW_BATCH_VALUE = 22;
 
   /**
    * The '<em><b>PPL KW AUTO CANCEL</b></em>' literal value.
@@ -2672,7 +1872,1437 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_AUTO_CANCEL_VALUE = 123;
+  public static final int PPL_KW_AUTO_CANCEL_VALUE = 23;
+
+  /**
+   * The '<em><b>PPL KW WORKFLOWS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_WORKFLOWS
+   * @model literal="workflows:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_WORKFLOWS_VALUE = 24;
+
+  /**
+   * The '<em><b>PPL KW DRAFTS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_DRAFTS
+   * @model literal="drafts:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_DRAFTS_VALUE = 25;
+
+  /**
+   * The '<em><b>PPL KW BRANCHES</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_BRANCHES
+   * @model literal="branches:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_BRANCHES_VALUE = 26;
+
+  /**
+   * The '<em><b>PPL KW BRANCHES IGNORE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_BRANCHES_IGNORE
+   * @model literal="branches-ignore:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_BRANCHES_IGNORE_VALUE = 27;
+
+  /**
+   * The '<em><b>PPL KW PATHS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PATHS
+   * @model literal="paths:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_PATHS_VALUE = 28;
+
+  /**
+   * The '<em><b>PPL KW PATHS IGNORE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PATHS_IGNORE
+   * @model literal="paths-ignore:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_PATHS_IGNORE_VALUE = 29;
+
+  /**
+   * The '<em><b>PPL KW TAGS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_TAGS
+   * @model literal="tags:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_TAGS_VALUE = 30;
+
+  /**
+   * The '<em><b>PPL KW TAGS IGNORE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_TAGS_IGNORE
+   * @model literal="tags-ignore:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_TAGS_IGNORE_VALUE = 31;
+
+  /**
+   * The '<em><b>PPL KW SCHEDULES</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_SCHEDULES
+   * @model literal="schedules:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_SCHEDULES_VALUE = 32;
+
+  /**
+   * The '<em><b>PPL KW SCHEDULE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_SCHEDULE
+   * @model literal="schedule:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_SCHEDULE_VALUE = 33;
+
+  /**
+   * The '<em><b>PPL KW WORKFLOW CALL</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_WORKFLOW_CALL
+   * @model literal="workflow_call:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_WORKFLOW_CALL_VALUE = 34;
+
+  /**
+   * The '<em><b>PPL KW WORKFLOW DISPATCH</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_WORKFLOW_DISPATCH
+   * @model literal="workflow_dispatch:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_WORKFLOW_DISPATCH_VALUE = 35;
+
+  /**
+   * The '<em><b>PPL KW CRON</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_CRON
+   * @model literal="cron:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_CRON_VALUE = 36;
+
+  /**
+   * The '<em><b>PPL KW DISPLAY NAME</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_DISPLAY_NAME
+   * @model literal="displayName:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_DISPLAY_NAME_VALUE = 37;
+
+  /**
+   * The '<em><b>PPL KW ALWAYS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_ALWAYS
+   * @model literal="always:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_ALWAYS_VALUE = 38;
+
+  /**
+   * The '<em><b>PPL KW STAGE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_STAGE
+   * @model literal="stage:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_STAGE_VALUE = 39;
+
+  /**
+   * The '<em><b>PPL KW CONDITION</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_CONDITION
+   * @model literal="condition:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_CONDITION_VALUE = 40;
+
+  /**
+   * The '<em><b>PPL KW IS SKIPPABLE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_IS_SKIPPABLE
+   * @model literal="isSkippable:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_IS_SKIPPABLE_VALUE = 41;
+
+  /**
+   * The '<em><b>PPL KW DEPENDS ON</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_DEPENDS_ON
+   * @model literal="dependsOn:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_DEPENDS_ON_VALUE = 42;
+
+  /**
+   * The '<em><b>PPL KW JOB</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_JOB
+   * @model literal="job:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_JOB_VALUE = 43;
+
+  /**
+   * The '<em><b>PPL KW DEPLOYMENT</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_DEPLOYMENT
+   * @model literal="deployment:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_DEPLOYMENT_VALUE = 44;
+
+  /**
+   * The '<em><b>PPL KW NEEDS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_NEEDS
+   * @model literal="needs:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_NEEDS_VALUE = 45;
+
+  /**
+   * The '<em><b>PPL KW SCRIPT</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_SCRIPT
+   * @model literal="script:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_SCRIPT_VALUE = 46;
+
+  /**
+   * The '<em><b>PPL KW BASH</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_BASH
+   * @model literal="bash:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_BASH_VALUE = 47;
+
+  /**
+   * The '<em><b>PPL KW PWSH</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PWSH
+   * @model literal="pwsh:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_PWSH_VALUE = 48;
+
+  /**
+   * The '<em><b>PPL KW POWERSHELL</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_POWERSHELL
+   * @model literal="powershell:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_POWERSHELL_VALUE = 49;
+
+  /**
+   * The '<em><b>PPL KW CHECKOUT</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_CHECKOUT
+   * @model literal="checkout:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_CHECKOUT_VALUE = 50;
+
+  /**
+   * The '<em><b>PPL KW DOWNLOAD</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_DOWNLOAD
+   * @model literal="download:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_DOWNLOAD_VALUE = 51;
+
+  /**
+   * The '<em><b>PPL KW GET PACKAGE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_GET_PACKAGE
+   * @model literal="getPackage:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_GET_PACKAGE_VALUE = 52;
+
+  /**
+   * The '<em><b>PPL KW PUBLISH</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PUBLISH
+   * @model literal="publish:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_PUBLISH_VALUE = 53;
+
+  /**
+   * The '<em><b>PPL KW TASK</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_TASK
+   * @model literal="task:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_TASK_VALUE = 54;
+
+  /**
+   * The '<em><b>PPL KW VALUE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_VALUE
+   * @model literal="value:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_VALUE_VALUE = 55;
+
+  /**
+   * The '<em><b>PPL KW READONLY</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_READONLY
+   * @model literal="readonly:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_READONLY_VALUE = 56;
+
+  /**
+   * The '<em><b>PPL KW BUILDS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_BUILDS
+   * @model literal="builds:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_BUILDS_VALUE = 57;
+
+  /**
+   * The '<em><b>PPL KW CONTAINERS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_CONTAINERS
+   * @model literal="containers:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_CONTAINERS_VALUE = 58;
+
+  /**
+   * The '<em><b>PPL KW PIPELINES</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PIPELINES
+   * @model literal="pipelines:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_PIPELINES_VALUE = 59;
+
+  /**
+   * The '<em><b>PPL KW REPOSITORIES</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_REPOSITORIES
+   * @model literal="repositories:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_REPOSITORIES_VALUE = 60;
+
+  /**
+   * The '<em><b>PPL KW WEBHOOKS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_WEBHOOKS
+   * @model literal="webhooks:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_WEBHOOKS_VALUE = 61;
+
+  /**
+   * The '<em><b>PPL KW PACKAGES</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PACKAGES
+   * @model literal="packages:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_PACKAGES_VALUE = 62;
+
+  /**
+   * The '<em><b>PPL KW INPUTS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_INPUTS
+   * @model literal="inputs:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_INPUTS_VALUE = 63;
+
+  /**
+   * The '<em><b>PPL KW OUTPUTS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_OUTPUTS
+   * @model literal="outputs:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_OUTPUTS_VALUE = 64;
+
+  /**
+   * The '<em><b>PPL KW SECRETS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_SECRETS
+   * @model literal="secrets:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_SECRETS_VALUE = 65;
+
+  /**
+   * The '<em><b>PPL KW DESCRIPTION</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_DESCRIPTION
+   * @model literal="description:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_DESCRIPTION_VALUE = 66;
+
+  /**
+   * The '<em><b>PPL KW REQUIRED</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_REQUIRED
+   * @model literal="required:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_REQUIRED_VALUE = 67;
+
+  /**
+   * The '<em><b>PPL KW DEFAULT</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_DEFAULT
+   * @model literal="default:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_DEFAULT_VALUE = 68;
+
+  /**
+   * The '<em><b>PPL KW TYPE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_TYPE
+   * @model literal="type:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_TYPE_VALUE = 69;
+
+  /**
+   * The '<em><b>PPL KW OPTIONS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_OPTIONS
+   * @model literal="options:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_OPTIONS_VALUE = 70;
+
+  /**
+   * The '<em><b>PPL KW IF</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_IF
+   * @model literal="if:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_IF_VALUE = 71;
+
+  /**
+   * The '<em><b>PPL KW RUNS ON</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_RUNS_ON
+   * @model literal="runs-on:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_RUNS_ON_VALUE = 72;
+
+  /**
+   * The '<em><b>PPL KW STRATEGY</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_STRATEGY
+   * @model literal="strategy:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_STRATEGY_VALUE = 73;
+
+  /**
+   * The '<em><b>PPL KW MATRIX</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_MATRIX
+   * @model literal="matrix:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_MATRIX_VALUE = 74;
+
+  /**
+   * The '<em><b>PPL KW CONTAINER</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_CONTAINER
+   * @model literal="container:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_CONTAINER_VALUE = 75;
+
+  /**
+   * The '<em><b>PPL KW SERVICES</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_SERVICES
+   * @model literal="services:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_SERVICES_VALUE = 76;
+
+  /**
+   * The '<em><b>PPL KW STEPS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_STEPS
+   * @model literal="steps:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_STEPS_VALUE = 77;
+
+  /**
+   * The '<em><b>PPL KW USES</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_USES
+   * @model literal="uses:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_USES_VALUE = 78;
+
+  /**
+   * The '<em><b>PPL KW WITH</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_WITH
+   * @model literal="with:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_WITH_VALUE = 79;
+
+  /**
+   * The '<em><b>PPL KW TIMEOUT MINUTES</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_TIMEOUT_MINUTES
+   * @model literal="timeout-minutes:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_TIMEOUT_MINUTES_VALUE = 80;
+
+  /**
+   * The '<em><b>PPL KW CONTINUE ON ERROR</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_CONTINUE_ON_ERROR
+   * @model literal="continue-on-error:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_CONTINUE_ON_ERROR_VALUE = 81;
+
+  /**
+   * The '<em><b>PPL KW ENVIRONMENT</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_ENVIRONMENT
+   * @model literal="environment:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_ENVIRONMENT_VALUE = 82;
+
+  /**
+   * The '<em><b>PPL KW ID</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_ID
+   * @model literal="id:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_ID_VALUE = 83;
+
+  /**
+   * The '<em><b>PPL KW PERMISSIONS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PERMISSIONS
+   * @model literal="permissions:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_PERMISSIONS_VALUE = 84;
+
+  /**
+   * The '<em><b>PPL KW TIMEOUTS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_TIMEOUTS
+   * @model literal="timeouts:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_TIMEOUTS_VALUE = 85;
+
+  /**
+   * The '<em><b>PPL KW DEFAULTS RUN</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_DEFAULTS_RUN
+   * @model literal="defaults.run:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_DEFAULTS_RUN_VALUE = 86;
+
+  /**
+   * The '<em><b>PPL KW PUSH</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PUSH
+   * @model literal="push:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_PUSH_VALUE = 87;
+
+  /**
+   * The '<em><b>PPL KW PULL REQUEST</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PULL_REQUEST
+   * @model literal="pull_request:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_PULL_REQUEST_VALUE = 88;
+
+  /**
+   * The '<em><b>PPL KW REPOSITORY DISPATCH</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_REPOSITORY_DISPATCH
+   * @model literal="repository_dispatch:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_REPOSITORY_DISPATCH_VALUE = 89;
+
+  /**
+   * The '<em><b>PPL KW WORKFLOW RUN</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_WORKFLOW_RUN
+   * @model literal="workflow_run:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_WORKFLOW_RUN_VALUE = 90;
+
+  /**
+   * The '<em><b>PPL KW FILTERS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_FILTERS
+   * @model literal="filters:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_FILTERS_VALUE = 91;
+
+  /**
+   * The '<em><b>PPL KW EXCLUDE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_EXCLUDE
+   * @model literal="exclude:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_EXCLUDE_VALUE = 92;
+
+  /**
+   * The '<em><b>PPL KW FAIL FAST</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_FAIL_FAST
+   * @model literal="fail-fast:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_FAIL_FAST_VALUE = 93;
+
+  /**
+   * The '<em><b>PPL KW MAX PARALLEL</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_MAX_PARALLEL
+   * @model literal="max-parallel:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_MAX_PARALLEL_VALUE = 94;
+
+  /**
+   * The '<em><b>PPL KW CONTAINER IMAGE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_CONTAINER_IMAGE
+   * @model literal="container.image:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_CONTAINER_IMAGE_VALUE = 95;
+
+  /**
+   * The '<em><b>PPL KW CREDENTIALS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_CREDENTIALS
+   * @model literal="credentials:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_CREDENTIALS_VALUE = 96;
+
+  /**
+   * The '<em><b>PPL KW PORTS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PORTS
+   * @model literal="ports:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_PORTS_VALUE = 97;
+
+  /**
+   * The '<em><b>PPL KW INHERIT</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_INHERIT
+   * @model literal="inherit:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_INHERIT_VALUE = 98;
+
+  /**
+   * The '<em><b>PPL KW TRIGGER</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_TRIGGER
+   * @model literal="trigger:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_TRIGGER_VALUE = 99;
+
+  /**
+   * The '<em><b>PPL KW TEMPLATE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_TEMPLATE
+   * @model literal="template:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_TEMPLATE_VALUE = 100;
+
+  /**
+   * The '<em><b>PPL KW WORKSPACE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_WORKSPACE
+   * @model literal="workspace:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_WORKSPACE_VALUE = 101;
+
+  /**
+   * The '<em><b>PPL KW PIPELINE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PIPELINE
+   * @model literal="pipeline:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_PIPELINE_VALUE = 102;
+
+  /**
+   * The '<em><b>PPL KW TIMEOUT IN MINUTES</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_TIMEOUT_IN_MINUTES
+   * @model literal="timeoutInMinutes:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_TIMEOUT_IN_MINUTES_VALUE = 103;
+
+  /**
+   * The '<em><b>PPL KW CONTINUE ON ERR</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_CONTINUE_ON_ERR
+   * @model literal="continueOnError:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_CONTINUE_ON_ERR_VALUE = 104;
+
+  /**
+   * The '<em><b>PPL KW RESOURCE TYPE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_RESOURCE_TYPE
+   * @model literal="resourceType:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_RESOURCE_TYPE_VALUE = 105;
+
+  /**
+   * The '<em><b>PPL KW RESOURCE NAME</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_RESOURCE_NAME
+   * @model literal="resourceName:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_RESOURCE_NAME_VALUE = 106;
+
+  /**
+   * The '<em><b>PPL KW STAGES</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_STAGES
+   * @model literal="stages:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_STAGES_VALUE = 107;
+
+  /**
+   * The '<em><b>PPL KW ONLY</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_ONLY
+   * @model literal="only:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_ONLY_VALUE = 108;
+
+  /**
+   * The '<em><b>PPL KW EXCEPT</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_EXCEPT
+   * @model literal="except:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_EXCEPT_VALUE = 109;
+
+  /**
+   * The '<em><b>PPL KW IMAGE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_IMAGE
+   * @model literal="image:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_IMAGE_VALUE = 110;
+
+  /**
+   * The '<em><b>PPL KW CACHE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_CACHE
+   * @model literal="cache:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_CACHE_VALUE = 111;
+
+  /**
+   * The '<em><b>PPL KW ARTIFACTS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_ARTIFACTS
+   * @model literal="artifacts:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_ARTIFACTS_VALUE = 112;
+
+  /**
+   * The '<em><b>PPL KW RETRIES</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_RETRIES
+   * @model literal="retries:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_RETRIES_VALUE = 113;
+
+  /**
+   * The '<em><b>PPL KW RULES</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_RULES
+   * @model literal="rules:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_RULES_VALUE = 114;
+
+  /**
+   * The '<em><b>PPL KW BEFORE SCRIPT</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_BEFORE_SCRIPT
+   * @model literal="before_script:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_BEFORE_SCRIPT_VALUE = 115;
+
+  /**
+   * The '<em><b>PPL KW AFTER SCRIPT</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_AFTER_SCRIPT
+   * @model literal="after_script:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_AFTER_SCRIPT_VALUE = 116;
+
+  /**
+   * The '<em><b>PPL KW TIMEOUT</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_TIMEOUT
+   * @model literal="timeout:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_TIMEOUT_VALUE = 117;
+
+  /**
+   * The '<em><b>PPL KW WHEN</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_WHEN
+   * @model literal="when:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_WHEN_VALUE = 118;
+
+  /**
+   * The '<em><b>PPL KW ALLOW FAILURE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_ALLOW_FAILURE
+   * @model literal="allow_failure:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_ALLOW_FAILURE_VALUE = 119;
+
+  /**
+   * The '<em><b>PPL KW DEPENDENCIES</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_DEPENDENCIES
+   * @model literal="dependencies:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_DEPENDENCIES_VALUE = 120;
+
+  /**
+   * The '<em><b>PPL KW PULL REQUESTS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PULL_REQUESTS
+   * @model literal="pull-requests:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_PULL_REQUESTS_VALUE = 121;
+
+  /**
+   * The '<em><b>PPL KW STEP</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_STEP
+   * @model literal="step:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_STEP_VALUE = 122;
+
+  /**
+   * The '<em><b>PPL KW DEFINITIONS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_DEFINITIONS
+   * @model literal="definitions:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_DEFINITIONS_VALUE = 123;
+
+  /**
+   * The '<em><b>PPL KW CACHES</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_CACHES
+   * @model literal="caches:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_CACHES_VALUE = 124;
+
+  /**
+   * The '<em><b>PPL KW PARALLEL</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PARALLEL
+   * @model literal="parallel:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_PARALLEL_VALUE = 125;
+
+  /**
+   * The '<em><b>PPL KW CONDITIONS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_CONDITIONS
+   * @model literal="conditions:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_CONDITIONS_VALUE = 126;
+
+  /**
+   * The '<em><b>PPL KW MAX TIME</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_MAX_TIME
+   * @model literal="max-time:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_MAX_TIME_VALUE = 127;
+
+  /**
+   * The '<em><b>PPL KW PROJECT</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PROJECT
+   * @model literal="project:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_PROJECT_VALUE = 128;
+
+  /**
+   * The '<em><b>PPL KW PLAN</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PLAN
+   * @model literal="plan:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_PLAN_VALUE = 129;
+
+  /**
+   * The '<em><b>PPL KW TASKS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_TASKS
+   * @model literal="tasks:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_TASKS_VALUE = 130;
+
+  /**
+   * The '<em><b>PPL KW REQUIREMENTS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_REQUIREMENTS
+   * @model literal="requirements:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_REQUIREMENTS_VALUE = 131;
+
+  /**
+   * The '<em><b>PPL KW FINAL</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_FINAL
+   * @model literal="final:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_FINAL_VALUE = 132;
+
+  /**
+   * The '<em><b>PPL KW JDK</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_JDK
+   * @model literal="jdk:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_JDK_VALUE = 133;
+
+  /**
+   * The '<em><b>PPL KW LABELS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_LABELS
+   * @model literal="labels:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_LABELS_VALUE = 134;
+
+  /**
+   * The '<em><b>PPL KW REPOSITORY</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_REPOSITORY
+   * @model literal="repository:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_REPOSITORY_VALUE = 135;
+
+  /**
+   * The '<em><b>PPL KW RELEASE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_RELEASE
+   * @model literal="release:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_RELEASE_VALUE = 136;
+
+  /**
+   * The '<em><b>PPL KW DOCKER</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_DOCKER
+   * @model literal="docker:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_DOCKER_VALUE = 137;
+
+  /**
+   * The '<em><b>PPL KW AGENT</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_AGENT
+   * @model literal="agent:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_AGENT_VALUE = 138;
+
+  /**
+   * The '<em><b>PPL KW QUEUE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_QUEUE
+   * @model literal="queue:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_QUEUE_VALUE = 139;
+
+  /**
+   * The '<em><b>PPL KW SNAPSHOT</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_SNAPSHOT
+   * @model literal="snapshot:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_SNAPSHOT_VALUE = 140;
+
+  /**
+   * The '<em><b>PPL KW POLICY</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_POLICY
+   * @model literal="policy:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_POLICY_VALUE = 141;
+
+  /**
+   * The '<em><b>PPL KW APPROVALS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_APPROVALS
+   * @model literal="approvals:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_APPROVALS_VALUE = 142;
+
+  /**
+   * The '<em><b>PPL KW PREBUILD</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PREBUILD
+   * @model literal="preBuild:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_PREBUILD_VALUE = 143;
+
+  /**
+   * The '<em><b>PPL KW POSTBUILD</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_POSTBUILD
+   * @model literal="postBuild:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_POSTBUILD_VALUE = 144;
+
+  /**
+   * The '<em><b>PPL KW SSH</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_SSH
+   * @model literal="ssh:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_SSH_VALUE = 145;
+
+  /**
+   * The '<em><b>PPL KW AUTH</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_AUTH
+   * @model literal="auth:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_AUTH_VALUE = 146;
+
+  /**
+   * The '<em><b>PPL KW STORAGE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_STORAGE
+   * @model literal="storage:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_STORAGE_VALUE = 147;
+
+  /**
+   * The '<em><b>PPL KW ENDPOINTS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_ENDPOINTS
+   * @model literal="endpoints:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_ENDPOINTS_VALUE = 148;
+
+  /**
+   * The '<em><b>PPL KW COMMAND</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_COMMAND
+   * @model literal="command:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_COMMAND_VALUE = 149;
+
+  /**
+   * The '<em><b>PPL KW PROVISIONER</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_PROVISIONER
+   * @model literal="provisioner:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_PROVISIONER_VALUE = 150;
+
+  /**
+   * The '<em><b>PPL KW TRIGGER RULES</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_TRIGGER_RULES
+   * @model literal="triggerRules:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_TRIGGER_RULES_VALUE = 151;
+
+  /**
+   * The '<em><b>PPL KW RUN POLICY</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_RUN_POLICY
+   * @model literal="runPolicy:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_RUN_POLICY_VALUE = 152;
+
+  /**
+   * The '<em><b>PPL KW QUEUED</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_QUEUED
+   * @model literal="queued:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_QUEUED_VALUE = 153;
 
   /**
    * The '<em><b>PPL KW NOTIFICATIONS</b></em>' literal value.
@@ -2683,7 +3313,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_NOTIFICATIONS_VALUE = 124;
+  public static final int PPL_KW_NOTIFICATIONS_VALUE = 154;
 
   /**
    * The '<em><b>PPL KW DEPLOY TRIGGER</b></em>' literal value.
@@ -2694,7 +3324,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_DEPLOY_TRIGGER_VALUE = 125;
+  public static final int PPL_KW_DEPLOY_TRIGGER_VALUE = 155;
 
   /**
    * The '<em><b>PPL KW RELEASE TRIGGER</b></em>' literal value.
@@ -2705,7 +3335,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_RELEASE_TRIGGER_VALUE = 126;
+  public static final int PPL_KW_RELEASE_TRIGGER_VALUE = 156;
 
   /**
    * The '<em><b>PPL KW LOCK BEHAVIOR</b></em>' literal value.
@@ -2716,7 +3346,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_LOCK_BEHAVIOR_VALUE = 127;
+  public static final int PPL_KW_LOCK_BEHAVIOR_VALUE = 157;
 
   /**
    * The '<em><b>PPL KW REVIEW STAGE</b></em>' literal value.
@@ -2727,7 +3357,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_REVIEW_STAGE_VALUE = 128;
+  public static final int PPL_KW_REVIEW_STAGE_VALUE = 158;
 
   /**
    * An array of all the '<em><b>Keyword</b></em>' enumerators.
@@ -2739,51 +3369,97 @@ public enum PipelineKeyword implements Enumerator
     new PipelineKeyword[]
     {
       PPL_KW_NAME,
-      PPL_KW_ON,
       PPL_KW_RUN_NAME,
+      PPL_KW_ON,
+      PPL_KW_DEFAULTS,
+      PPL_KW_RUN,
+      PPL_KW_SHELL,
+      PPL_KW_WORKING_DIRECTORY,
+      PPL_KW_ENV,
+      PPL_KW_PERMISSION,
+      PPL_KW_CONCURRENCY,
+      PPL_KW_GROUP,
+      PPL_KW_CANCEL_IN_PROGRESS,
+      PPL_KW_POOL,
+      PPL_KW_VM_IMAGE,
+      PPL_KW_DEMANDS,
+      PPL_KW_RESOURCES,
+      PPL_KW_VERSION,
+      PPL_KW_VARIABLES,
+      PPL_KW_PARAMETERS,
+      PPL_KW_EXTENDS,
+      PPL_KW_INCLUDE,
+      PPL_KW_TYPES,
+      PPL_KW_BATCH,
+      PPL_KW_AUTO_CANCEL,
+      PPL_KW_WORKFLOWS,
+      PPL_KW_DRAFTS,
+      PPL_KW_BRANCHES,
+      PPL_KW_BRANCHES_IGNORE,
+      PPL_KW_PATHS,
+      PPL_KW_PATHS_IGNORE,
+      PPL_KW_TAGS,
+      PPL_KW_TAGS_IGNORE,
+      PPL_KW_SCHEDULES,
+      PPL_KW_SCHEDULE,
+      PPL_KW_WORKFLOW_CALL,
+      PPL_KW_WORKFLOW_DISPATCH,
+      PPL_KW_CRON,
+      PPL_KW_DISPLAY_NAME,
+      PPL_KW_ALWAYS,
+      PPL_KW_STAGE,
+      PPL_KW_CONDITION,
+      PPL_KW_IS_SKIPPABLE,
+      PPL_KW_DEPENDS_ON,
+      PPL_KW_JOB,
+      PPL_KW_DEPLOYMENT,
+      PPL_KW_NEEDS,
+      PPL_KW_SCRIPT,
+      PPL_KW_BASH,
+      PPL_KW_PWSH,
+      PPL_KW_POWERSHELL,
+      PPL_KW_CHECKOUT,
+      PPL_KW_DOWNLOAD,
+      PPL_KW_GET_PACKAGE,
+      PPL_KW_PUBLISH,
+      PPL_KW_TASK,
+      PPL_KW_VALUE,
+      PPL_KW_READONLY,
+      PPL_KW_BUILDS,
+      PPL_KW_CONTAINERS,
+      PPL_KW_PIPELINES,
+      PPL_KW_REPOSITORIES,
+      PPL_KW_WEBHOOKS,
+      PPL_KW_PACKAGES,
+      PPL_KW_INPUTS,
+      PPL_KW_OUTPUTS,
+      PPL_KW_SECRETS,
+      PPL_KW_DESCRIPTION,
+      PPL_KW_REQUIRED,
+      PPL_KW_DEFAULT,
+      PPL_KW_TYPE,
+      PPL_KW_OPTIONS,
       PPL_KW_IF,
       PPL_KW_RUNS_ON,
-      PPL_KW_ENV,
-      PPL_KW_DEFAULTS,
       PPL_KW_STRATEGY,
       PPL_KW_MATRIX,
       PPL_KW_CONTAINER,
       PPL_KW_SERVICES,
       PPL_KW_STEPS,
       PPL_KW_USES,
-      PPL_KW_RUN,
-      PPL_KW_SHELL,
-      PPL_KW_WORKING_DIRECTORY,
       PPL_KW_WITH,
       PPL_KW_TIMEOUT_MINUTES,
       PPL_KW_CONTINUE_ON_ERROR,
-      PPL_KW_CONDITION,
       PPL_KW_ENVIRONMENT,
       PPL_KW_ID,
-      PPL_KW_NEEDS,
-      PPL_KW_OUTPUTS,
-      PPL_KW_SECRETS,
       PPL_KW_PERMISSIONS,
-      PPL_KW_CONCURRENCY,
       PPL_KW_TIMEOUTS,
       PPL_KW_DEFAULTS_RUN,
-      PPL_KW_WORKFLOW_DISPATCH,
-      PPL_KW_WORKFLOW_CALL,
-      PPL_KW_SCHEDULE,
       PPL_KW_PUSH,
       PPL_KW_PULL_REQUEST,
-      PPL_KW_PATHS,
-      PPL_KW_BRANCHES,
-      PPL_KW_TAGS,
-      PPL_KW_BRANCHES_IGNORE,
-      PPL_KW_PATHS_IGNORE,
-      PPL_KW_TAGS_IGNORE,
-      PPL_KW_CRON,
       PPL_KW_REPOSITORY_DISPATCH,
       PPL_KW_WORKFLOW_RUN,
-      PPL_KW_CHECKOUT,
       PPL_KW_FILTERS,
-      PPL_KW_INCLUDE,
       PPL_KW_EXCLUDE,
       PPL_KW_FAIL_FAST,
       PPL_KW_MAX_PARALLEL,
@@ -2792,17 +3468,9 @@ public enum PipelineKeyword implements Enumerator
       PPL_KW_PORTS,
       PPL_KW_INHERIT,
       PPL_KW_TRIGGER,
-      PPL_KW_POOL,
-      PPL_KW_DISPLAY_NAME,
-      PPL_KW_TASK,
       PPL_KW_TEMPLATE,
-      PPL_KW_DEPENDS_ON,
       PPL_KW_WORKSPACE,
-      PPL_KW_PARAMETERS,
-      PPL_KW_POOL_VM_IMAGE,
-      PPL_KW_RESOURCES,
       PPL_KW_PIPELINE,
-      PPL_KW_STAGE,
       PPL_KW_TIMEOUT_IN_MINUTES,
       PPL_KW_CONTINUE_ON_ERR,
       PPL_KW_RESOURCE_TYPE,
@@ -2811,7 +3479,6 @@ public enum PipelineKeyword implements Enumerator
       PPL_KW_ONLY,
       PPL_KW_EXCEPT,
       PPL_KW_IMAGE,
-      PPL_KW_VARIABLES,
       PPL_KW_CACHE,
       PPL_KW_ARTIFACTS,
       PPL_KW_RETRIES,
@@ -2822,12 +3489,8 @@ public enum PipelineKeyword implements Enumerator
       PPL_KW_WHEN,
       PPL_KW_ALLOW_FAILURE,
       PPL_KW_DEPENDENCIES,
-      PPL_KW_EXTENDS,
-      PPL_KW_PIPELINES,
-      PPL_KW_DEFAULT,
       PPL_KW_PULL_REQUESTS,
       PPL_KW_STEP,
-      PPL_KW_SCRIPT,
       PPL_KW_DEFINITIONS,
       PPL_KW_CACHES,
       PPL_KW_PARALLEL,
@@ -2841,9 +3504,7 @@ public enum PipelineKeyword implements Enumerator
       PPL_KW_JDK,
       PPL_KW_LABELS,
       PPL_KW_REPOSITORY,
-      PPL_KW_DEPLOYMENT,
       PPL_KW_RELEASE,
-      PPL_KW_VERSION,
       PPL_KW_DOCKER,
       PPL_KW_AGENT,
       PPL_KW_QUEUE,
@@ -2861,7 +3522,6 @@ public enum PipelineKeyword implements Enumerator
       PPL_KW_TRIGGER_RULES,
       PPL_KW_RUN_POLICY,
       PPL_KW_QUEUED,
-      PPL_KW_AUTO_CANCEL,
       PPL_KW_NOTIFICATIONS,
       PPL_KW_DEPLOY_TRIGGER,
       PPL_KW_RELEASE_TRIGGER,
@@ -2932,51 +3592,97 @@ public enum PipelineKeyword implements Enumerator
     switch (value)
     {
       case PPL_KW_NAME_VALUE: return PPL_KW_NAME;
-      case PPL_KW_ON_VALUE: return PPL_KW_ON;
       case PPL_KW_RUN_NAME_VALUE: return PPL_KW_RUN_NAME;
+      case PPL_KW_ON_VALUE: return PPL_KW_ON;
+      case PPL_KW_DEFAULTS_VALUE: return PPL_KW_DEFAULTS;
+      case PPL_KW_RUN_VALUE: return PPL_KW_RUN;
+      case PPL_KW_SHELL_VALUE: return PPL_KW_SHELL;
+      case PPL_KW_WORKING_DIRECTORY_VALUE: return PPL_KW_WORKING_DIRECTORY;
+      case PPL_KW_ENV_VALUE: return PPL_KW_ENV;
+      case PPL_KW_PERMISSION_VALUE: return PPL_KW_PERMISSION;
+      case PPL_KW_CONCURRENCY_VALUE: return PPL_KW_CONCURRENCY;
+      case PPL_KW_GROUP_VALUE: return PPL_KW_GROUP;
+      case PPL_KW_CANCEL_IN_PROGRESS_VALUE: return PPL_KW_CANCEL_IN_PROGRESS;
+      case PPL_KW_POOL_VALUE: return PPL_KW_POOL;
+      case PPL_KW_VM_IMAGE_VALUE: return PPL_KW_VM_IMAGE;
+      case PPL_KW_DEMANDS_VALUE: return PPL_KW_DEMANDS;
+      case PPL_KW_RESOURCES_VALUE: return PPL_KW_RESOURCES;
+      case PPL_KW_VERSION_VALUE: return PPL_KW_VERSION;
+      case PPL_KW_VARIABLES_VALUE: return PPL_KW_VARIABLES;
+      case PPL_KW_PARAMETERS_VALUE: return PPL_KW_PARAMETERS;
+      case PPL_KW_EXTENDS_VALUE: return PPL_KW_EXTENDS;
+      case PPL_KW_INCLUDE_VALUE: return PPL_KW_INCLUDE;
+      case PPL_KW_TYPES_VALUE: return PPL_KW_TYPES;
+      case PPL_KW_BATCH_VALUE: return PPL_KW_BATCH;
+      case PPL_KW_AUTO_CANCEL_VALUE: return PPL_KW_AUTO_CANCEL;
+      case PPL_KW_WORKFLOWS_VALUE: return PPL_KW_WORKFLOWS;
+      case PPL_KW_DRAFTS_VALUE: return PPL_KW_DRAFTS;
+      case PPL_KW_BRANCHES_VALUE: return PPL_KW_BRANCHES;
+      case PPL_KW_BRANCHES_IGNORE_VALUE: return PPL_KW_BRANCHES_IGNORE;
+      case PPL_KW_PATHS_VALUE: return PPL_KW_PATHS;
+      case PPL_KW_PATHS_IGNORE_VALUE: return PPL_KW_PATHS_IGNORE;
+      case PPL_KW_TAGS_VALUE: return PPL_KW_TAGS;
+      case PPL_KW_TAGS_IGNORE_VALUE: return PPL_KW_TAGS_IGNORE;
+      case PPL_KW_SCHEDULES_VALUE: return PPL_KW_SCHEDULES;
+      case PPL_KW_SCHEDULE_VALUE: return PPL_KW_SCHEDULE;
+      case PPL_KW_WORKFLOW_CALL_VALUE: return PPL_KW_WORKFLOW_CALL;
+      case PPL_KW_WORKFLOW_DISPATCH_VALUE: return PPL_KW_WORKFLOW_DISPATCH;
+      case PPL_KW_CRON_VALUE: return PPL_KW_CRON;
+      case PPL_KW_DISPLAY_NAME_VALUE: return PPL_KW_DISPLAY_NAME;
+      case PPL_KW_ALWAYS_VALUE: return PPL_KW_ALWAYS;
+      case PPL_KW_STAGE_VALUE: return PPL_KW_STAGE;
+      case PPL_KW_CONDITION_VALUE: return PPL_KW_CONDITION;
+      case PPL_KW_IS_SKIPPABLE_VALUE: return PPL_KW_IS_SKIPPABLE;
+      case PPL_KW_DEPENDS_ON_VALUE: return PPL_KW_DEPENDS_ON;
+      case PPL_KW_JOB_VALUE: return PPL_KW_JOB;
+      case PPL_KW_DEPLOYMENT_VALUE: return PPL_KW_DEPLOYMENT;
+      case PPL_KW_NEEDS_VALUE: return PPL_KW_NEEDS;
+      case PPL_KW_SCRIPT_VALUE: return PPL_KW_SCRIPT;
+      case PPL_KW_BASH_VALUE: return PPL_KW_BASH;
+      case PPL_KW_PWSH_VALUE: return PPL_KW_PWSH;
+      case PPL_KW_POWERSHELL_VALUE: return PPL_KW_POWERSHELL;
+      case PPL_KW_CHECKOUT_VALUE: return PPL_KW_CHECKOUT;
+      case PPL_KW_DOWNLOAD_VALUE: return PPL_KW_DOWNLOAD;
+      case PPL_KW_GET_PACKAGE_VALUE: return PPL_KW_GET_PACKAGE;
+      case PPL_KW_PUBLISH_VALUE: return PPL_KW_PUBLISH;
+      case PPL_KW_TASK_VALUE: return PPL_KW_TASK;
+      case PPL_KW_VALUE_VALUE: return PPL_KW_VALUE;
+      case PPL_KW_READONLY_VALUE: return PPL_KW_READONLY;
+      case PPL_KW_BUILDS_VALUE: return PPL_KW_BUILDS;
+      case PPL_KW_CONTAINERS_VALUE: return PPL_KW_CONTAINERS;
+      case PPL_KW_PIPELINES_VALUE: return PPL_KW_PIPELINES;
+      case PPL_KW_REPOSITORIES_VALUE: return PPL_KW_REPOSITORIES;
+      case PPL_KW_WEBHOOKS_VALUE: return PPL_KW_WEBHOOKS;
+      case PPL_KW_PACKAGES_VALUE: return PPL_KW_PACKAGES;
+      case PPL_KW_INPUTS_VALUE: return PPL_KW_INPUTS;
+      case PPL_KW_OUTPUTS_VALUE: return PPL_KW_OUTPUTS;
+      case PPL_KW_SECRETS_VALUE: return PPL_KW_SECRETS;
+      case PPL_KW_DESCRIPTION_VALUE: return PPL_KW_DESCRIPTION;
+      case PPL_KW_REQUIRED_VALUE: return PPL_KW_REQUIRED;
+      case PPL_KW_DEFAULT_VALUE: return PPL_KW_DEFAULT;
+      case PPL_KW_TYPE_VALUE: return PPL_KW_TYPE;
+      case PPL_KW_OPTIONS_VALUE: return PPL_KW_OPTIONS;
       case PPL_KW_IF_VALUE: return PPL_KW_IF;
       case PPL_KW_RUNS_ON_VALUE: return PPL_KW_RUNS_ON;
-      case PPL_KW_ENV_VALUE: return PPL_KW_ENV;
-      case PPL_KW_DEFAULTS_VALUE: return PPL_KW_DEFAULTS;
       case PPL_KW_STRATEGY_VALUE: return PPL_KW_STRATEGY;
       case PPL_KW_MATRIX_VALUE: return PPL_KW_MATRIX;
       case PPL_KW_CONTAINER_VALUE: return PPL_KW_CONTAINER;
       case PPL_KW_SERVICES_VALUE: return PPL_KW_SERVICES;
       case PPL_KW_STEPS_VALUE: return PPL_KW_STEPS;
       case PPL_KW_USES_VALUE: return PPL_KW_USES;
-      case PPL_KW_RUN_VALUE: return PPL_KW_RUN;
-      case PPL_KW_SHELL_VALUE: return PPL_KW_SHELL;
-      case PPL_KW_WORKING_DIRECTORY_VALUE: return PPL_KW_WORKING_DIRECTORY;
       case PPL_KW_WITH_VALUE: return PPL_KW_WITH;
       case PPL_KW_TIMEOUT_MINUTES_VALUE: return PPL_KW_TIMEOUT_MINUTES;
       case PPL_KW_CONTINUE_ON_ERROR_VALUE: return PPL_KW_CONTINUE_ON_ERROR;
-      case PPL_KW_CONDITION_VALUE: return PPL_KW_CONDITION;
       case PPL_KW_ENVIRONMENT_VALUE: return PPL_KW_ENVIRONMENT;
       case PPL_KW_ID_VALUE: return PPL_KW_ID;
-      case PPL_KW_NEEDS_VALUE: return PPL_KW_NEEDS;
-      case PPL_KW_OUTPUTS_VALUE: return PPL_KW_OUTPUTS;
-      case PPL_KW_SECRETS_VALUE: return PPL_KW_SECRETS;
       case PPL_KW_PERMISSIONS_VALUE: return PPL_KW_PERMISSIONS;
-      case PPL_KW_CONCURRENCY_VALUE: return PPL_KW_CONCURRENCY;
       case PPL_KW_TIMEOUTS_VALUE: return PPL_KW_TIMEOUTS;
       case PPL_KW_DEFAULTS_RUN_VALUE: return PPL_KW_DEFAULTS_RUN;
-      case PPL_KW_WORKFLOW_DISPATCH_VALUE: return PPL_KW_WORKFLOW_DISPATCH;
-      case PPL_KW_WORKFLOW_CALL_VALUE: return PPL_KW_WORKFLOW_CALL;
-      case PPL_KW_SCHEDULE_VALUE: return PPL_KW_SCHEDULE;
       case PPL_KW_PUSH_VALUE: return PPL_KW_PUSH;
       case PPL_KW_PULL_REQUEST_VALUE: return PPL_KW_PULL_REQUEST;
-      case PPL_KW_PATHS_VALUE: return PPL_KW_PATHS;
-      case PPL_KW_BRANCHES_VALUE: return PPL_KW_BRANCHES;
-      case PPL_KW_TAGS_VALUE: return PPL_KW_TAGS;
-      case PPL_KW_BRANCHES_IGNORE_VALUE: return PPL_KW_BRANCHES_IGNORE;
-      case PPL_KW_PATHS_IGNORE_VALUE: return PPL_KW_PATHS_IGNORE;
-      case PPL_KW_TAGS_IGNORE_VALUE: return PPL_KW_TAGS_IGNORE;
-      case PPL_KW_CRON_VALUE: return PPL_KW_CRON;
       case PPL_KW_REPOSITORY_DISPATCH_VALUE: return PPL_KW_REPOSITORY_DISPATCH;
       case PPL_KW_WORKFLOW_RUN_VALUE: return PPL_KW_WORKFLOW_RUN;
-      case PPL_KW_CHECKOUT_VALUE: return PPL_KW_CHECKOUT;
       case PPL_KW_FILTERS_VALUE: return PPL_KW_FILTERS;
-      case PPL_KW_INCLUDE_VALUE: return PPL_KW_INCLUDE;
       case PPL_KW_EXCLUDE_VALUE: return PPL_KW_EXCLUDE;
       case PPL_KW_FAIL_FAST_VALUE: return PPL_KW_FAIL_FAST;
       case PPL_KW_MAX_PARALLEL_VALUE: return PPL_KW_MAX_PARALLEL;
@@ -2985,17 +3691,9 @@ public enum PipelineKeyword implements Enumerator
       case PPL_KW_PORTS_VALUE: return PPL_KW_PORTS;
       case PPL_KW_INHERIT_VALUE: return PPL_KW_INHERIT;
       case PPL_KW_TRIGGER_VALUE: return PPL_KW_TRIGGER;
-      case PPL_KW_POOL_VALUE: return PPL_KW_POOL;
-      case PPL_KW_DISPLAY_NAME_VALUE: return PPL_KW_DISPLAY_NAME;
-      case PPL_KW_TASK_VALUE: return PPL_KW_TASK;
       case PPL_KW_TEMPLATE_VALUE: return PPL_KW_TEMPLATE;
-      case PPL_KW_DEPENDS_ON_VALUE: return PPL_KW_DEPENDS_ON;
       case PPL_KW_WORKSPACE_VALUE: return PPL_KW_WORKSPACE;
-      case PPL_KW_PARAMETERS_VALUE: return PPL_KW_PARAMETERS;
-      case PPL_KW_POOL_VM_IMAGE_VALUE: return PPL_KW_POOL_VM_IMAGE;
-      case PPL_KW_RESOURCES_VALUE: return PPL_KW_RESOURCES;
       case PPL_KW_PIPELINE_VALUE: return PPL_KW_PIPELINE;
-      case PPL_KW_STAGE_VALUE: return PPL_KW_STAGE;
       case PPL_KW_TIMEOUT_IN_MINUTES_VALUE: return PPL_KW_TIMEOUT_IN_MINUTES;
       case PPL_KW_CONTINUE_ON_ERR_VALUE: return PPL_KW_CONTINUE_ON_ERR;
       case PPL_KW_RESOURCE_TYPE_VALUE: return PPL_KW_RESOURCE_TYPE;
@@ -3004,7 +3702,6 @@ public enum PipelineKeyword implements Enumerator
       case PPL_KW_ONLY_VALUE: return PPL_KW_ONLY;
       case PPL_KW_EXCEPT_VALUE: return PPL_KW_EXCEPT;
       case PPL_KW_IMAGE_VALUE: return PPL_KW_IMAGE;
-      case PPL_KW_VARIABLES_VALUE: return PPL_KW_VARIABLES;
       case PPL_KW_CACHE_VALUE: return PPL_KW_CACHE;
       case PPL_KW_ARTIFACTS_VALUE: return PPL_KW_ARTIFACTS;
       case PPL_KW_RETRIES_VALUE: return PPL_KW_RETRIES;
@@ -3015,12 +3712,8 @@ public enum PipelineKeyword implements Enumerator
       case PPL_KW_WHEN_VALUE: return PPL_KW_WHEN;
       case PPL_KW_ALLOW_FAILURE_VALUE: return PPL_KW_ALLOW_FAILURE;
       case PPL_KW_DEPENDENCIES_VALUE: return PPL_KW_DEPENDENCIES;
-      case PPL_KW_EXTENDS_VALUE: return PPL_KW_EXTENDS;
-      case PPL_KW_PIPELINES_VALUE: return PPL_KW_PIPELINES;
-      case PPL_KW_DEFAULT_VALUE: return PPL_KW_DEFAULT;
       case PPL_KW_PULL_REQUESTS_VALUE: return PPL_KW_PULL_REQUESTS;
       case PPL_KW_STEP_VALUE: return PPL_KW_STEP;
-      case PPL_KW_SCRIPT_VALUE: return PPL_KW_SCRIPT;
       case PPL_KW_DEFINITIONS_VALUE: return PPL_KW_DEFINITIONS;
       case PPL_KW_CACHES_VALUE: return PPL_KW_CACHES;
       case PPL_KW_PARALLEL_VALUE: return PPL_KW_PARALLEL;
@@ -3034,9 +3727,7 @@ public enum PipelineKeyword implements Enumerator
       case PPL_KW_JDK_VALUE: return PPL_KW_JDK;
       case PPL_KW_LABELS_VALUE: return PPL_KW_LABELS;
       case PPL_KW_REPOSITORY_VALUE: return PPL_KW_REPOSITORY;
-      case PPL_KW_DEPLOYMENT_VALUE: return PPL_KW_DEPLOYMENT;
       case PPL_KW_RELEASE_VALUE: return PPL_KW_RELEASE;
-      case PPL_KW_VERSION_VALUE: return PPL_KW_VERSION;
       case PPL_KW_DOCKER_VALUE: return PPL_KW_DOCKER;
       case PPL_KW_AGENT_VALUE: return PPL_KW_AGENT;
       case PPL_KW_QUEUE_VALUE: return PPL_KW_QUEUE;
@@ -3054,7 +3745,6 @@ public enum PipelineKeyword implements Enumerator
       case PPL_KW_TRIGGER_RULES_VALUE: return PPL_KW_TRIGGER_RULES;
       case PPL_KW_RUN_POLICY_VALUE: return PPL_KW_RUN_POLICY;
       case PPL_KW_QUEUED_VALUE: return PPL_KW_QUEUED;
-      case PPL_KW_AUTO_CANCEL_VALUE: return PPL_KW_AUTO_CANCEL;
       case PPL_KW_NOTIFICATIONS_VALUE: return PPL_KW_NOTIFICATIONS;
       case PPL_KW_DEPLOY_TRIGGER_VALUE: return PPL_KW_DEPLOY_TRIGGER;
       case PPL_KW_RELEASE_TRIGGER_VALUE: return PPL_KW_RELEASE_TRIGGER;

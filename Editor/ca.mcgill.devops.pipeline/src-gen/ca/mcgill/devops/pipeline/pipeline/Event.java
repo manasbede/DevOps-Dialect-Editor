@@ -17,18 +17,22 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getName <em>Name</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getSimpleEvent <em>Simple Event</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getIncludedBranches <em>Included Branches</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getActivities <em>Activities</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getBatch <em>Batch</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getAutoCancel <em>Auto Cancel</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getWorkflows <em>Workflows</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getDrafts <em>Drafts</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getExcludedBranches <em>Excluded Branches</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getIncludedPaths <em>Included Paths</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getExcludedPaths <em>Excluded Paths</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getIncludedTags <em>Included Tags</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getExcludedTags <em>Excluded Tags</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getScheduleName <em>Schedule Name</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getTriggerSchedules <em>Trigger Schedules</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getOtherEventParameterValues <em>Other Event Parameter Values</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getWorkflowType <em>Workflow Type</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getWorkFlowActivities <em>Work Flow Activities</em>}</li>
  * </ul>
  *
  * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getEvent()
@@ -39,25 +43,50 @@ public interface Event extends EObject
 {
   /**
    * Returns the value of the '<em><b>Name</b></em>' attribute.
+   * The literals are from the enumeration {@link ca.mcgill.devops.pipeline.pipeline.PipelineEventKeyword}.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the value of the '<em>Name</em>' attribute.
-   * @see #setName(String)
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelineEventKeyword
+   * @see #setName(PipelineEventKeyword)
    * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getEvent_Name()
    * @model
    * @generated
    */
-  String getName();
+  PipelineEventKeyword getName();
 
   /**
    * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Event#getName <em>Name</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>Name</em>' attribute.
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelineEventKeyword
    * @see #getName()
    * @generated
    */
-  void setName(String value);
+  void setName(PipelineEventKeyword value);
+
+  /**
+   * Returns the value of the '<em><b>Simple Event</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Simple Event</em>' attribute.
+   * @see #setSimpleEvent(String)
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getEvent_SimpleEvent()
+   * @model
+   * @generated
+   */
+  String getSimpleEvent();
+
+  /**
+   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Event#getSimpleEvent <em>Simple Event</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Simple Event</em>' attribute.
+   * @see #getSimpleEvent()
+   * @generated
+   */
+  void setSimpleEvent(String value);
 
   /**
    * Returns the value of the '<em><b>Included Branches</b></em>' containment reference list.
@@ -128,6 +157,28 @@ public interface Event extends EObject
   void setAutoCancel(String value);
 
   /**
+   * Returns the value of the '<em><b>Workflows</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Workflows</em>' attribute.
+   * @see #setWorkflows(String)
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getEvent_Workflows()
+   * @model
+   * @generated
+   */
+  String getWorkflows();
+
+  /**
+   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Event#getWorkflows <em>Workflows</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Workflows</em>' attribute.
+   * @see #getWorkflows()
+   * @generated
+   */
+  void setWorkflows(String value);
+
+  /**
    * Returns the value of the '<em><b>Drafts</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -162,52 +213,114 @@ public interface Event extends EObject
   EList<Branch> getExcludedBranches();
 
   /**
-   * Returns the value of the '<em><b>Included Paths</b></em>' attribute list.
-   * The list contents are of type {@link java.lang.String}.
+   * Returns the value of the '<em><b>Included Paths</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Included Paths</em>' attribute list.
+   * @return the value of the '<em>Included Paths</em>' attribute.
+   * @see #setIncludedPaths(String)
    * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getEvent_IncludedPaths()
-   * @model unique="false"
+   * @model
    * @generated
    */
-  EList<String> getIncludedPaths();
+  String getIncludedPaths();
 
   /**
-   * Returns the value of the '<em><b>Excluded Paths</b></em>' attribute list.
-   * The list contents are of type {@link java.lang.String}.
+   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Event#getIncludedPaths <em>Included Paths</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Excluded Paths</em>' attribute list.
+   * @param value the new value of the '<em>Included Paths</em>' attribute.
+   * @see #getIncludedPaths()
+   * @generated
+   */
+  void setIncludedPaths(String value);
+
+  /**
+   * Returns the value of the '<em><b>Excluded Paths</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Excluded Paths</em>' attribute.
+   * @see #setExcludedPaths(String)
    * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getEvent_ExcludedPaths()
-   * @model unique="false"
+   * @model
    * @generated
    */
-  EList<String> getExcludedPaths();
+  String getExcludedPaths();
 
   /**
-   * Returns the value of the '<em><b>Included Tags</b></em>' attribute list.
-   * The list contents are of type {@link java.lang.String}.
+   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Event#getExcludedPaths <em>Excluded Paths</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Included Tags</em>' attribute list.
+   * @param value the new value of the '<em>Excluded Paths</em>' attribute.
+   * @see #getExcludedPaths()
+   * @generated
+   */
+  void setExcludedPaths(String value);
+
+  /**
+   * Returns the value of the '<em><b>Included Tags</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Included Tags</em>' attribute.
+   * @see #setIncludedTags(String)
    * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getEvent_IncludedTags()
-   * @model unique="false"
+   * @model
    * @generated
    */
-  EList<String> getIncludedTags();
+  String getIncludedTags();
 
   /**
-   * Returns the value of the '<em><b>Excluded Tags</b></em>' attribute list.
-   * The list contents are of type {@link java.lang.String}.
+   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Event#getIncludedTags <em>Included Tags</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Excluded Tags</em>' attribute list.
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getEvent_ExcludedTags()
-   * @model unique="false"
+   * @param value the new value of the '<em>Included Tags</em>' attribute.
+   * @see #getIncludedTags()
    * @generated
    */
-  EList<String> getExcludedTags();
+  void setIncludedTags(String value);
+
+  /**
+   * Returns the value of the '<em><b>Excluded Tags</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Excluded Tags</em>' attribute.
+   * @see #setExcludedTags(String)
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getEvent_ExcludedTags()
+   * @model
+   * @generated
+   */
+  String getExcludedTags();
+
+  /**
+   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Event#getExcludedTags <em>Excluded Tags</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Excluded Tags</em>' attribute.
+   * @see #getExcludedTags()
+   * @generated
+   */
+  void setExcludedTags(String value);
+
+  /**
+   * Returns the value of the '<em><b>Schedule Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Schedule Name</em>' attribute.
+   * @see #setScheduleName(String)
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getEvent_ScheduleName()
+   * @model
+   * @generated
+   */
+  String getScheduleName();
+
+  /**
+   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Event#getScheduleName <em>Schedule Name</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Schedule Name</em>' attribute.
+   * @see #getScheduleName()
+   * @generated
+   */
+  void setScheduleName(String value);
 
   /**
    * Returns the value of the '<em><b>Trigger Schedules</b></em>' containment reference list.
@@ -222,15 +335,37 @@ public interface Event extends EObject
   EList<TriggerSchedule> getTriggerSchedules();
 
   /**
-   * Returns the value of the '<em><b>Other Event Parameter Values</b></em>' containment reference list.
-   * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.ParameterValue}.
+   * Returns the value of the '<em><b>Workflow Type</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Other Event Parameter Values</em>' containment reference list.
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getEvent_OtherEventParameterValues()
+   * @return the value of the '<em>Workflow Type</em>' attribute.
+   * @see #setWorkflowType(String)
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getEvent_WorkflowType()
+   * @model
+   * @generated
+   */
+  String getWorkflowType();
+
+  /**
+   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Event#getWorkflowType <em>Workflow Type</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Workflow Type</em>' attribute.
+   * @see #getWorkflowType()
+   * @generated
+   */
+  void setWorkflowType(String value);
+
+  /**
+   * Returns the value of the '<em><b>Work Flow Activities</b></em>' containment reference list.
+   * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.Activity}.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Work Flow Activities</em>' containment reference list.
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getEvent_WorkFlowActivities()
    * @model containment="true"
    * @generated
    */
-  EList<ParameterValue> getOtherEventParameterValues();
+  EList<Activity> getWorkFlowActivities();
 
 } // Event

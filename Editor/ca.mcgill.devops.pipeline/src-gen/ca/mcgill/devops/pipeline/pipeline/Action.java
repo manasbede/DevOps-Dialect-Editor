@@ -13,7 +13,6 @@ package ca.mcgill.devops.pipeline.pipeline;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Action#getStepName <em>Step Name</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Action#getActionKeyword <em>Action Keyword</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Action#getOtherKeyword <em>Other Keyword</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Action#getActionValue <em>Action Value</em>}</li>
@@ -25,28 +24,6 @@ package ca.mcgill.devops.pipeline.pipeline;
  */
 public interface Action extends Step
 {
-  /**
-   * Returns the value of the '<em><b>Step Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Step Name</em>' attribute.
-   * @see #setStepName(String)
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getAction_StepName()
-   * @model
-   * @generated
-   */
-  String getStepName();
-
-  /**
-   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Action#getStepName <em>Step Name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Step Name</em>' attribute.
-   * @see #getStepName()
-   * @generated
-   */
-  void setStepName(String value);
-
   /**
    * Returns the value of the '<em><b>Action Keyword</b></em>' attribute.
    * The literals are from the enumeration {@link ca.mcgill.devops.pipeline.pipeline.PipelineKeyword}.

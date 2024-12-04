@@ -133,7 +133,7 @@ public interface Job extends EObject
 
   /**
    * Returns the value of the '<em><b>Job Parameter Values</b></em>' containment reference list.
-   * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.JobParameter}.
+   * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.ParameterValue}.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the value of the '<em>Job Parameter Values</em>' containment reference list.
@@ -141,7 +141,7 @@ public interface Job extends EObject
    * @model containment="true"
    * @generated
    */
-  EList<JobParameter> getJobParameterValues();
+  EList<ParameterValue> getJobParameterValues();
 
   /**
    * Returns the value of the '<em><b>Steps</b></em>' containment reference list.

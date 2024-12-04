@@ -3,25 +3,21 @@
  */
 package ca.mcgill.devops.pipeline.pipeline.impl;
 
-import ca.mcgill.devops.pipeline.pipeline.ParameterValue;
 import ca.mcgill.devops.pipeline.pipeline.PipelinePackage;
 import ca.mcgill.devops.pipeline.pipeline.Variable;
 
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
+import org.eclipse.emf.ecore.util.EDataTypeEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,11 +27,12 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.VariableImpl#getVariableValues <em>Variable Values</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.VariableImpl#getGroup <em>Group</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.VariableImpl#getVariableKey <em>Variable Key</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.VariableImpl#getVariableValue <em>Variable Value</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.VariableImpl#getName <em>Name</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.VariableImpl#getValue <em>Value</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.VariableImpl#getReadonly <em>Readonly</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.VariableImpl#getVariables <em>Variables</em>}</li>
  * </ul>
  *
  * @generated
@@ -43,34 +40,44 @@ import org.eclipse.emf.ecore.util.InternalEList;
 public class VariableImpl extends MinimalEObjectImpl.Container implements Variable
 {
   /**
-   * The cached value of the '{@link #getVariableValues() <em>Variable Values</em>}' containment reference list.
+   * The default value of the '{@link #getVariableKey() <em>Variable Key</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getVariableValues()
+   * @see #getVariableKey()
    * @generated
    * @ordered
    */
-  protected EList<ParameterValue> variableValues;
+  protected static final String VARIABLE_KEY_EDEFAULT = null;
 
   /**
-   * The default value of the '{@link #getGroup() <em>Group</em>}' attribute.
+   * The cached value of the '{@link #getVariableKey() <em>Variable Key</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getGroup()
+   * @see #getVariableKey()
    * @generated
    * @ordered
    */
-  protected static final String GROUP_EDEFAULT = null;
+  protected String variableKey = VARIABLE_KEY_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getGroup() <em>Group</em>}' attribute.
+   * The default value of the '{@link #getVariableValue() <em>Variable Value</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getGroup()
+   * @see #getVariableValue()
    * @generated
    * @ordered
    */
-  protected String group = GROUP_EDEFAULT;
+  protected static final String VARIABLE_VALUE_EDEFAULT = null;
+
+  /**
+   * The cached value of the '{@link #getVariableValue() <em>Variable Value</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getVariableValue()
+   * @generated
+   * @ordered
+   */
+  protected String variableValue = VARIABLE_VALUE_EDEFAULT;
 
   /**
    * The default value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -133,6 +140,16 @@ public class VariableImpl extends MinimalEObjectImpl.Container implements Variab
   protected String readonly = READONLY_EDEFAULT;
 
   /**
+   * The cached value of the '{@link #getVariables() <em>Variables</em>}' attribute list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getVariables()
+   * @generated
+   * @ordered
+   */
+  protected EList<String> variables;
+
+  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -159,13 +176,9 @@ public class VariableImpl extends MinimalEObjectImpl.Container implements Variab
    * @generated
    */
   @Override
-  public EList<ParameterValue> getVariableValues()
+  public String getVariableKey()
   {
-    if (variableValues == null)
-    {
-      variableValues = new EObjectContainmentEList<ParameterValue>(ParameterValue.class, this, PipelinePackage.VARIABLE__VARIABLE_VALUES);
-    }
-    return variableValues;
+    return variableKey;
   }
 
   /**
@@ -174,23 +187,37 @@ public class VariableImpl extends MinimalEObjectImpl.Container implements Variab
    * @generated
    */
   @Override
-  public String getGroup()
+  public void setVariableKey(String newVariableKey)
   {
-    return group;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public void setGroup(String newGroup)
-  {
-    String oldGroup = group;
-    group = newGroup;
+    String oldVariableKey = variableKey;
+    variableKey = newVariableKey;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.VARIABLE__GROUP, oldGroup, group));
+      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.VARIABLE__VARIABLE_KEY, oldVariableKey, variableKey));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public String getVariableValue()
+  {
+    return variableValue;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public void setVariableValue(String newVariableValue)
+  {
+    String oldVariableValue = variableValue;
+    variableValue = newVariableValue;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.VARIABLE__VARIABLE_VALUE, oldVariableValue, variableValue));
   }
 
   /**
@@ -274,14 +301,13 @@ public class VariableImpl extends MinimalEObjectImpl.Container implements Variab
    * @generated
    */
   @Override
-  public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  public EList<String> getVariables()
   {
-    switch (featureID)
+    if (variables == null)
     {
-      case PipelinePackage.VARIABLE__VARIABLE_VALUES:
-        return ((InternalEList<?>)getVariableValues()).basicRemove(otherEnd, msgs);
+      variables = new EDataTypeEList<String>(String.class, this, PipelinePackage.VARIABLE__VARIABLES);
     }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
+    return variables;
   }
 
   /**
@@ -294,16 +320,18 @@ public class VariableImpl extends MinimalEObjectImpl.Container implements Variab
   {
     switch (featureID)
     {
-      case PipelinePackage.VARIABLE__VARIABLE_VALUES:
-        return getVariableValues();
-      case PipelinePackage.VARIABLE__GROUP:
-        return getGroup();
+      case PipelinePackage.VARIABLE__VARIABLE_KEY:
+        return getVariableKey();
+      case PipelinePackage.VARIABLE__VARIABLE_VALUE:
+        return getVariableValue();
       case PipelinePackage.VARIABLE__NAME:
         return getName();
       case PipelinePackage.VARIABLE__VALUE:
         return getValue();
       case PipelinePackage.VARIABLE__READONLY:
         return getReadonly();
+      case PipelinePackage.VARIABLE__VARIABLES:
+        return getVariables();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -319,12 +347,11 @@ public class VariableImpl extends MinimalEObjectImpl.Container implements Variab
   {
     switch (featureID)
     {
-      case PipelinePackage.VARIABLE__VARIABLE_VALUES:
-        getVariableValues().clear();
-        getVariableValues().addAll((Collection<? extends ParameterValue>)newValue);
+      case PipelinePackage.VARIABLE__VARIABLE_KEY:
+        setVariableKey((String)newValue);
         return;
-      case PipelinePackage.VARIABLE__GROUP:
-        setGroup((String)newValue);
+      case PipelinePackage.VARIABLE__VARIABLE_VALUE:
+        setVariableValue((String)newValue);
         return;
       case PipelinePackage.VARIABLE__NAME:
         setName((String)newValue);
@@ -334,6 +361,10 @@ public class VariableImpl extends MinimalEObjectImpl.Container implements Variab
         return;
       case PipelinePackage.VARIABLE__READONLY:
         setReadonly((String)newValue);
+        return;
+      case PipelinePackage.VARIABLE__VARIABLES:
+        getVariables().clear();
+        getVariables().addAll((Collection<? extends String>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -349,11 +380,11 @@ public class VariableImpl extends MinimalEObjectImpl.Container implements Variab
   {
     switch (featureID)
     {
-      case PipelinePackage.VARIABLE__VARIABLE_VALUES:
-        getVariableValues().clear();
+      case PipelinePackage.VARIABLE__VARIABLE_KEY:
+        setVariableKey(VARIABLE_KEY_EDEFAULT);
         return;
-      case PipelinePackage.VARIABLE__GROUP:
-        setGroup(GROUP_EDEFAULT);
+      case PipelinePackage.VARIABLE__VARIABLE_VALUE:
+        setVariableValue(VARIABLE_VALUE_EDEFAULT);
         return;
       case PipelinePackage.VARIABLE__NAME:
         setName(NAME_EDEFAULT);
@@ -363,6 +394,9 @@ public class VariableImpl extends MinimalEObjectImpl.Container implements Variab
         return;
       case PipelinePackage.VARIABLE__READONLY:
         setReadonly(READONLY_EDEFAULT);
+        return;
+      case PipelinePackage.VARIABLE__VARIABLES:
+        getVariables().clear();
         return;
     }
     super.eUnset(featureID);
@@ -378,16 +412,18 @@ public class VariableImpl extends MinimalEObjectImpl.Container implements Variab
   {
     switch (featureID)
     {
-      case PipelinePackage.VARIABLE__VARIABLE_VALUES:
-        return variableValues != null && !variableValues.isEmpty();
-      case PipelinePackage.VARIABLE__GROUP:
-        return GROUP_EDEFAULT == null ? group != null : !GROUP_EDEFAULT.equals(group);
+      case PipelinePackage.VARIABLE__VARIABLE_KEY:
+        return VARIABLE_KEY_EDEFAULT == null ? variableKey != null : !VARIABLE_KEY_EDEFAULT.equals(variableKey);
+      case PipelinePackage.VARIABLE__VARIABLE_VALUE:
+        return VARIABLE_VALUE_EDEFAULT == null ? variableValue != null : !VARIABLE_VALUE_EDEFAULT.equals(variableValue);
       case PipelinePackage.VARIABLE__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
       case PipelinePackage.VARIABLE__VALUE:
         return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
       case PipelinePackage.VARIABLE__READONLY:
         return READONLY_EDEFAULT == null ? readonly != null : !READONLY_EDEFAULT.equals(readonly);
+      case PipelinePackage.VARIABLE__VARIABLES:
+        return variables != null && !variables.isEmpty();
     }
     return super.eIsSet(featureID);
   }
@@ -403,14 +439,18 @@ public class VariableImpl extends MinimalEObjectImpl.Container implements Variab
     if (eIsProxy()) return super.toString();
 
     StringBuilder result = new StringBuilder(super.toString());
-    result.append(" (group: ");
-    result.append(group);
+    result.append(" (variableKey: ");
+    result.append(variableKey);
+    result.append(", variableValue: ");
+    result.append(variableValue);
     result.append(", name: ");
     result.append(name);
     result.append(", value: ");
     result.append(value);
     result.append(", readonly: ");
     result.append(readonly);
+    result.append(", variables: ");
+    result.append(variables);
     result.append(')');
     return result.toString();
   }

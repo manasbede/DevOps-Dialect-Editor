@@ -67,17 +67,15 @@ public class PipelineFactoryImpl extends EFactoryImpl implements PipelineFactory
     switch (eClass.getClassifierID())
     {
       case PipelinePackage.PIPELINE: return createPipeline();
-      case PipelinePackage.EXTENDED_PARAMETER: return createExtendedParameter();
+      case PipelinePackage.CONFIGURATIONS: return createConfigurations();
       case PipelinePackage.VARIABLE: return createVariable();
       case PipelinePackage.RESOURCE: return createResource();
-      case PipelinePackage.PIPELINE_PARAMETER: return createPipelineParameter();
       case PipelinePackage.EVENT: return createEvent();
       case PipelinePackage.TRIGGER_SCHEDULE: return createTriggerSchedule();
       case PipelinePackage.BRANCH: return createBranch();
       case PipelinePackage.ACTIVITY: return createActivity();
       case PipelinePackage.STAGE: return createStage();
       case PipelinePackage.JOB: return createJob();
-      case PipelinePackage.JOB_PARAMETER: return createJobParameter();
       case PipelinePackage.STEP: return createStep();
       case PipelinePackage.SCRIPT: return createScript();
       case PipelinePackage.ACTION: return createAction();
@@ -97,6 +95,10 @@ public class PipelineFactoryImpl extends EFactoryImpl implements PipelineFactory
   {
     switch (eDataType.getClassifierID())
     {
+      case PipelinePackage.PERMISSION:
+        return createPermissionFromString(eDataType, initialValue);
+      case PipelinePackage.PIPELINE_EVENT_KEYWORD:
+        return createPipelineEventKeywordFromString(eDataType, initialValue);
       case PipelinePackage.PIPELINE_KEYWORD:
         return createPipelineKeywordFromString(eDataType, initialValue);
       default:
@@ -114,6 +116,10 @@ public class PipelineFactoryImpl extends EFactoryImpl implements PipelineFactory
   {
     switch (eDataType.getClassifierID())
     {
+      case PipelinePackage.PERMISSION:
+        return convertPermissionToString(eDataType, instanceValue);
+      case PipelinePackage.PIPELINE_EVENT_KEYWORD:
+        return convertPipelineEventKeywordToString(eDataType, instanceValue);
       case PipelinePackage.PIPELINE_KEYWORD:
         return convertPipelineKeywordToString(eDataType, instanceValue);
       default:
@@ -139,10 +145,10 @@ public class PipelineFactoryImpl extends EFactoryImpl implements PipelineFactory
    * @generated
    */
   @Override
-  public ExtendedParameter createExtendedParameter()
+  public Configurations createConfigurations()
   {
-    ExtendedParameterImpl extendedParameter = new ExtendedParameterImpl();
-    return extendedParameter;
+    ConfigurationsImpl configurations = new ConfigurationsImpl();
+    return configurations;
   }
 
   /**
@@ -167,18 +173,6 @@ public class PipelineFactoryImpl extends EFactoryImpl implements PipelineFactory
   {
     ResourceImpl resource = new ResourceImpl();
     return resource;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public PipelineParameter createPipelineParameter()
-  {
-    PipelineParameterImpl pipelineParameter = new PipelineParameterImpl();
-    return pipelineParameter;
   }
 
   /**
@@ -259,18 +253,6 @@ public class PipelineFactoryImpl extends EFactoryImpl implements PipelineFactory
    * @generated
    */
   @Override
-  public JobParameter createJobParameter()
-  {
-    JobParameterImpl jobParameter = new JobParameterImpl();
-    return jobParameter;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
   public Step createStep()
   {
     StepImpl step = new StepImpl();
@@ -311,6 +293,50 @@ public class PipelineFactoryImpl extends EFactoryImpl implements PipelineFactory
   {
     ParameterValueImpl parameterValue = new ParameterValueImpl();
     return parameterValue;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Permission createPermissionFromString(EDataType eDataType, String initialValue)
+  {
+    Permission result = Permission.get(initialValue);
+    if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+    return result;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public String convertPermissionToString(EDataType eDataType, Object instanceValue)
+  {
+    return instanceValue == null ? null : instanceValue.toString();
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public PipelineEventKeyword createPipelineEventKeywordFromString(EDataType eDataType, String initialValue)
+  {
+    PipelineEventKeyword result = PipelineEventKeyword.get(initialValue);
+    if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+    return result;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public String convertPipelineEventKeywordToString(EDataType eDataType, Object instanceValue)
+  {
+    return instanceValue == null ? null : instanceValue.toString();
   }
 
   /**

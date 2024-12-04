@@ -16,11 +16,12 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Variable#getVariableValues <em>Variable Values</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Variable#getGroup <em>Group</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Variable#getVariableKey <em>Variable Key</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Variable#getVariableValue <em>Variable Value</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Variable#getName <em>Name</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Variable#getValue <em>Value</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Variable#getReadonly <em>Readonly</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Variable#getVariables <em>Variables</em>}</li>
  * </ul>
  *
  * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getVariable()
@@ -30,38 +31,48 @@ import org.eclipse.emf.ecore.EObject;
 public interface Variable extends EObject
 {
   /**
-   * Returns the value of the '<em><b>Variable Values</b></em>' containment reference list.
-   * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.ParameterValue}.
+   * Returns the value of the '<em><b>Variable Key</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Variable Values</em>' containment reference list.
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getVariable_VariableValues()
-   * @model containment="true"
-   * @generated
-   */
-  EList<ParameterValue> getVariableValues();
-
-  /**
-   * Returns the value of the '<em><b>Group</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Group</em>' attribute.
-   * @see #setGroup(String)
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getVariable_Group()
+   * @return the value of the '<em>Variable Key</em>' attribute.
+   * @see #setVariableKey(String)
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getVariable_VariableKey()
    * @model
    * @generated
    */
-  String getGroup();
+  String getVariableKey();
 
   /**
-   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Variable#getGroup <em>Group</em>}' attribute.
+   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Variable#getVariableKey <em>Variable Key</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Group</em>' attribute.
-   * @see #getGroup()
+   * @param value the new value of the '<em>Variable Key</em>' attribute.
+   * @see #getVariableKey()
    * @generated
    */
-  void setGroup(String value);
+  void setVariableKey(String value);
+
+  /**
+   * Returns the value of the '<em><b>Variable Value</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Variable Value</em>' attribute.
+   * @see #setVariableValue(String)
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getVariable_VariableValue()
+   * @model
+   * @generated
+   */
+  String getVariableValue();
+
+  /**
+   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Variable#getVariableValue <em>Variable Value</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Variable Value</em>' attribute.
+   * @see #getVariableValue()
+   * @generated
+   */
+  void setVariableValue(String value);
 
   /**
    * Returns the value of the '<em><b>Name</b></em>' attribute.
@@ -128,5 +139,17 @@ public interface Variable extends EObject
    * @generated
    */
   void setReadonly(String value);
+
+  /**
+   * Returns the value of the '<em><b>Variables</b></em>' attribute list.
+   * The list contents are of type {@link java.lang.String}.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Variables</em>' attribute list.
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getVariable_Variables()
+   * @model unique="false"
+   * @generated
+   */
+  EList<String> getVariables();
 
 } // Variable

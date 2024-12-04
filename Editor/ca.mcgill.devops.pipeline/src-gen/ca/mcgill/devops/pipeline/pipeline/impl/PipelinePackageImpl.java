@@ -6,16 +6,16 @@ package ca.mcgill.devops.pipeline.pipeline.impl;
 import ca.mcgill.devops.pipeline.pipeline.Action;
 import ca.mcgill.devops.pipeline.pipeline.Activity;
 import ca.mcgill.devops.pipeline.pipeline.Branch;
+import ca.mcgill.devops.pipeline.pipeline.Configurations;
 import ca.mcgill.devops.pipeline.pipeline.Event;
-import ca.mcgill.devops.pipeline.pipeline.ExtendedParameter;
 import ca.mcgill.devops.pipeline.pipeline.Job;
-import ca.mcgill.devops.pipeline.pipeline.JobParameter;
 import ca.mcgill.devops.pipeline.pipeline.ParameterValue;
+import ca.mcgill.devops.pipeline.pipeline.Permission;
 import ca.mcgill.devops.pipeline.pipeline.Pipeline;
+import ca.mcgill.devops.pipeline.pipeline.PipelineEventKeyword;
 import ca.mcgill.devops.pipeline.pipeline.PipelineFactory;
 import ca.mcgill.devops.pipeline.pipeline.PipelineKeyword;
 import ca.mcgill.devops.pipeline.pipeline.PipelinePackage;
-import ca.mcgill.devops.pipeline.pipeline.PipelineParameter;
 import ca.mcgill.devops.pipeline.pipeline.Resource;
 import ca.mcgill.devops.pipeline.pipeline.Script;
 import ca.mcgill.devops.pipeline.pipeline.Stage;
@@ -51,7 +51,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass extendedParameterEClass = null;
+  private EClass configurationsEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -66,13 +66,6 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   private EClass resourceEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass pipelineParameterEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -121,13 +114,6 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass jobParameterEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   private EClass stepEClass = null;
 
   /**
@@ -150,6 +136,20 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   private EClass parameterValueEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EEnum permissionEEnum = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EEnum pipelineEventKeywordEEnum = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -237,9 +237,9 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getPipeline_Name()
+  public EReference getPipeline_PipelineConfiguration()
   {
-    return (EAttribute)pipelineEClass.getEStructuralFeatures().get(0);
+    return (EReference)pipelineEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -248,174 +248,9 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getPipeline_RunName()
+  public EReference getPipeline_Triggers()
   {
-    return (EAttribute)pipelineEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EAttribute getPipeline_DefaultShellValue()
-  {
-    return (EAttribute)pipelineEClass.getEStructuralFeatures().get(2);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EAttribute getPipeline_DefaultWDValue()
-  {
-    return (EAttribute)pipelineEClass.getEStructuralFeatures().get(3);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EAttribute getPipeline_Env()
-  {
-    return (EAttribute)pipelineEClass.getEStructuralFeatures().get(4);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EAttribute getPipeline_AllPermission()
-  {
-    return (EAttribute)pipelineEClass.getEStructuralFeatures().get(5);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EAttribute getPipeline_IndPermissions()
-  {
-    return (EAttribute)pipelineEClass.getEStructuralFeatures().get(6);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EAttribute getPipeline_Group()
-  {
-    return (EAttribute)pipelineEClass.getEStructuralFeatures().get(7);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EAttribute getPipeline_CancelConcurrence()
-  {
-    return (EAttribute)pipelineEClass.getEStructuralFeatures().get(8);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getPipeline_PipelineParameters()
-  {
-    return (EReference)pipelineEClass.getEStructuralFeatures().get(9);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EAttribute getPipeline_VmName()
-  {
-    return (EAttribute)pipelineEClass.getEStructuralFeatures().get(10);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EAttribute getPipeline_VmImage()
-  {
-    return (EAttribute)pipelineEClass.getEStructuralFeatures().get(11);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EAttribute getPipeline_VmDemands()
-  {
-    return (EAttribute)pipelineEClass.getEStructuralFeatures().get(12);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getPipeline_Resources()
-  {
-    return (EReference)pipelineEClass.getEStructuralFeatures().get(13);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EAttribute getPipeline_Version()
-  {
-    return (EAttribute)pipelineEClass.getEStructuralFeatures().get(14);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getPipeline_PplVariables()
-  {
-    return (EReference)pipelineEClass.getEStructuralFeatures().get(15);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getPipeline_ExtendedParameter()
-  {
-    return (EReference)pipelineEClass.getEStructuralFeatures().get(16);
+    return (EReference)pipelineEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -426,7 +261,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
   @Override
   public EAttribute getPipeline_JobOrStageVar()
   {
-    return (EAttribute)pipelineEClass.getEStructuralFeatures().get(17);
+    return (EAttribute)pipelineEClass.getEStructuralFeatures().get(2);
   }
 
   /**
@@ -437,7 +272,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
   @Override
   public EReference getPipeline_Stages()
   {
-    return (EReference)pipelineEClass.getEStructuralFeatures().get(18);
+    return (EReference)pipelineEClass.getEStructuralFeatures().get(3);
   }
 
   /**
@@ -448,7 +283,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
   @Override
   public EReference getPipeline_Jobs()
   {
-    return (EReference)pipelineEClass.getEStructuralFeatures().get(19);
+    return (EReference)pipelineEClass.getEStructuralFeatures().get(4);
   }
 
   /**
@@ -457,9 +292,9 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EClass getExtendedParameter()
+  public EClass getConfigurations()
   {
-    return extendedParameterEClass;
+    return configurationsEClass;
   }
 
   /**
@@ -468,9 +303,9 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getExtendedParameter_Template()
+  public EAttribute getConfigurations_Name()
   {
-    return (EAttribute)extendedParameterEClass.getEStructuralFeatures().get(0);
+    return (EAttribute)configurationsEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -479,9 +314,185 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EReference getExtendedParameter_ExtendedParameterValues()
+  public EAttribute getConfigurations_RunName()
   {
-    return (EReference)extendedParameterEClass.getEStructuralFeatures().get(1);
+    return (EAttribute)configurationsEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EAttribute getConfigurations_DefaultShellValue()
+  {
+    return (EAttribute)configurationsEClass.getEStructuralFeatures().get(2);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EAttribute getConfigurations_DefaultWDValue()
+  {
+    return (EAttribute)configurationsEClass.getEStructuralFeatures().get(3);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EAttribute getConfigurations_Env()
+  {
+    return (EAttribute)configurationsEClass.getEStructuralFeatures().get(4);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EAttribute getConfigurations_AllPermission()
+  {
+    return (EAttribute)configurationsEClass.getEStructuralFeatures().get(5);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EAttribute getConfigurations_IndPermissions()
+  {
+    return (EAttribute)configurationsEClass.getEStructuralFeatures().get(6);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EAttribute getConfigurations_Group()
+  {
+    return (EAttribute)configurationsEClass.getEStructuralFeatures().get(7);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EAttribute getConfigurations_CancelConcurrence()
+  {
+    return (EAttribute)configurationsEClass.getEStructuralFeatures().get(8);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EAttribute getConfigurations_VmName()
+  {
+    return (EAttribute)configurationsEClass.getEStructuralFeatures().get(9);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EAttribute getConfigurations_VmImage()
+  {
+    return (EAttribute)configurationsEClass.getEStructuralFeatures().get(10);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EAttribute getConfigurations_VmDemands()
+  {
+    return (EAttribute)configurationsEClass.getEStructuralFeatures().get(11);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EReference getConfigurations_Resources()
+  {
+    return (EReference)configurationsEClass.getEStructuralFeatures().get(12);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EAttribute getConfigurations_Version()
+  {
+    return (EAttribute)configurationsEClass.getEStructuralFeatures().get(13);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EReference getConfigurations_PplVariables()
+  {
+    return (EReference)configurationsEClass.getEStructuralFeatures().get(14);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EReference getConfigurations_Paras()
+  {
+    return (EReference)configurationsEClass.getEStructuralFeatures().get(15);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EAttribute getConfigurations_ExtendOrInclude()
+  {
+    return (EAttribute)configurationsEClass.getEStructuralFeatures().get(16);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EReference getConfigurations_ExtendedParameters()
+  {
+    return (EReference)configurationsEClass.getEStructuralFeatures().get(17);
   }
 
   /**
@@ -501,9 +512,9 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EReference getVariable_VariableValues()
+  public EAttribute getVariable_VariableKey()
   {
-    return (EReference)variableEClass.getEStructuralFeatures().get(0);
+    return (EAttribute)variableEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -512,7 +523,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getVariable_Group()
+  public EAttribute getVariable_VariableValue()
   {
     return (EAttribute)variableEClass.getEStructuralFeatures().get(1);
   }
@@ -556,6 +567,17 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
+  public EAttribute getVariable_Variables()
+  {
+    return (EAttribute)variableEClass.getEStructuralFeatures().get(5);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
   public EClass getResource()
   {
     return resourceEClass;
@@ -589,39 +611,6 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EClass getPipelineParameter()
-  {
-    return pipelineParameterEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EAttribute getPipelineParameter_Name()
-  {
-    return (EAttribute)pipelineParameterEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getPipelineParameter_ParameterValues()
-  {
-    return (EReference)pipelineParameterEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
   public EClass getEvent()
   {
     return eventEClass;
@@ -644,9 +633,9 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EReference getEvent_IncludedBranches()
+  public EAttribute getEvent_SimpleEvent()
   {
-    return (EReference)eventEClass.getEStructuralFeatures().get(1);
+    return (EAttribute)eventEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -655,7 +644,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EReference getEvent_Activities()
+  public EReference getEvent_IncludedBranches()
   {
     return (EReference)eventEClass.getEStructuralFeatures().get(2);
   }
@@ -666,9 +655,9 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getEvent_Batch()
+  public EReference getEvent_Activities()
   {
-    return (EAttribute)eventEClass.getEStructuralFeatures().get(3);
+    return (EReference)eventEClass.getEStructuralFeatures().get(3);
   }
 
   /**
@@ -677,7 +666,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getEvent_AutoCancel()
+  public EAttribute getEvent_Batch()
   {
     return (EAttribute)eventEClass.getEStructuralFeatures().get(4);
   }
@@ -688,7 +677,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getEvent_Drafts()
+  public EAttribute getEvent_AutoCancel()
   {
     return (EAttribute)eventEClass.getEStructuralFeatures().get(5);
   }
@@ -699,9 +688,9 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EReference getEvent_ExcludedBranches()
+  public EAttribute getEvent_Workflows()
   {
-    return (EReference)eventEClass.getEStructuralFeatures().get(6);
+    return (EAttribute)eventEClass.getEStructuralFeatures().get(6);
   }
 
   /**
@@ -710,7 +699,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getEvent_IncludedPaths()
+  public EAttribute getEvent_Drafts()
   {
     return (EAttribute)eventEClass.getEStructuralFeatures().get(7);
   }
@@ -721,9 +710,9 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getEvent_ExcludedPaths()
+  public EReference getEvent_ExcludedBranches()
   {
-    return (EAttribute)eventEClass.getEStructuralFeatures().get(8);
+    return (EReference)eventEClass.getEStructuralFeatures().get(8);
   }
 
   /**
@@ -732,7 +721,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getEvent_IncludedTags()
+  public EAttribute getEvent_IncludedPaths()
   {
     return (EAttribute)eventEClass.getEStructuralFeatures().get(9);
   }
@@ -743,7 +732,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getEvent_ExcludedTags()
+  public EAttribute getEvent_ExcludedPaths()
   {
     return (EAttribute)eventEClass.getEStructuralFeatures().get(10);
   }
@@ -754,9 +743,9 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EReference getEvent_TriggerSchedules()
+  public EAttribute getEvent_IncludedTags()
   {
-    return (EReference)eventEClass.getEStructuralFeatures().get(11);
+    return (EAttribute)eventEClass.getEStructuralFeatures().get(11);
   }
 
   /**
@@ -765,9 +754,53 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EReference getEvent_OtherEventParameterValues()
+  public EAttribute getEvent_ExcludedTags()
   {
-    return (EReference)eventEClass.getEStructuralFeatures().get(12);
+    return (EAttribute)eventEClass.getEStructuralFeatures().get(12);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EAttribute getEvent_ScheduleName()
+  {
+    return (EAttribute)eventEClass.getEStructuralFeatures().get(13);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EReference getEvent_TriggerSchedules()
+  {
+    return (EReference)eventEClass.getEStructuralFeatures().get(14);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EAttribute getEvent_WorkflowType()
+  {
+    return (EAttribute)eventEClass.getEStructuralFeatures().get(15);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EReference getEvent_WorkFlowActivities()
+  {
+    return (EReference)eventEClass.getEStructuralFeatures().get(16);
   }
 
   /**
@@ -889,6 +922,17 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
   public EAttribute getActivity_Name()
   {
     return (EAttribute)activityEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EAttribute getActivity_Activities()
+  {
+    return (EAttribute)activityEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -1117,61 +1161,6 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EClass getJobParameter()
-  {
-    return jobParameterEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EAttribute getJobParameter_Name()
-  {
-    return (EAttribute)jobParameterEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EAttribute getJobParameter_OtherName()
-  {
-    return (EAttribute)jobParameterEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EAttribute getJobParameter_Value()
-  {
-    return (EAttribute)jobParameterEClass.getEStructuralFeatures().get(2);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getJobParameter_SubParameters()
-  {
-    return (EReference)jobParameterEClass.getEStructuralFeatures().get(3);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
   public EClass getStep()
   {
     return stepEClass;
@@ -1238,7 +1227,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getAction_StepName()
+  public EAttribute getAction_ActionKeyword()
   {
     return (EAttribute)actionEClass.getEStructuralFeatures().get(0);
   }
@@ -1249,7 +1238,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getAction_ActionKeyword()
+  public EAttribute getAction_OtherKeyword()
   {
     return (EAttribute)actionEClass.getEStructuralFeatures().get(1);
   }
@@ -1260,20 +1249,9 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getAction_OtherKeyword()
-  {
-    return (EAttribute)actionEClass.getEStructuralFeatures().get(2);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
   public EAttribute getAction_ActionValue()
   {
-    return (EAttribute)actionEClass.getEStructuralFeatures().get(3);
+    return (EAttribute)actionEClass.getEStructuralFeatures().get(2);
   }
 
   /**
@@ -1304,9 +1282,9 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EReference getParameterValue_SubParameterValues()
+  public EAttribute getParameterValue_OtherName()
   {
-    return (EReference)parameterValueEClass.getEStructuralFeatures().get(1);
+    return (EAttribute)parameterValueEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -1318,6 +1296,39 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
   public EAttribute getParameterValue_Value()
   {
     return (EAttribute)parameterValueEClass.getEStructuralFeatures().get(2);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EReference getParameterValue_SubParameters()
+  {
+    return (EReference)parameterValueEClass.getEStructuralFeatures().get(3);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EEnum getPermission()
+  {
+    return permissionEEnum;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EEnum getPipelineEventKeyword()
+  {
+    return pipelineEventKeywordEEnum;
   }
 
   /**
@@ -1363,60 +1374,62 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
 
     // Create classes and their features
     pipelineEClass = createEClass(PIPELINE);
-    createEAttribute(pipelineEClass, PIPELINE__NAME);
-    createEAttribute(pipelineEClass, PIPELINE__RUN_NAME);
-    createEAttribute(pipelineEClass, PIPELINE__DEFAULT_SHELL_VALUE);
-    createEAttribute(pipelineEClass, PIPELINE__DEFAULT_WD_VALUE);
-    createEAttribute(pipelineEClass, PIPELINE__ENV);
-    createEAttribute(pipelineEClass, PIPELINE__ALL_PERMISSION);
-    createEAttribute(pipelineEClass, PIPELINE__IND_PERMISSIONS);
-    createEAttribute(pipelineEClass, PIPELINE__GROUP);
-    createEAttribute(pipelineEClass, PIPELINE__CANCEL_CONCURRENCE);
-    createEReference(pipelineEClass, PIPELINE__PIPELINE_PARAMETERS);
-    createEAttribute(pipelineEClass, PIPELINE__VM_NAME);
-    createEAttribute(pipelineEClass, PIPELINE__VM_IMAGE);
-    createEAttribute(pipelineEClass, PIPELINE__VM_DEMANDS);
-    createEReference(pipelineEClass, PIPELINE__RESOURCES);
-    createEAttribute(pipelineEClass, PIPELINE__VERSION);
-    createEReference(pipelineEClass, PIPELINE__PPL_VARIABLES);
-    createEReference(pipelineEClass, PIPELINE__EXTENDED_PARAMETER);
+    createEReference(pipelineEClass, PIPELINE__PIPELINE_CONFIGURATION);
+    createEReference(pipelineEClass, PIPELINE__TRIGGERS);
     createEAttribute(pipelineEClass, PIPELINE__JOB_OR_STAGE_VAR);
     createEReference(pipelineEClass, PIPELINE__STAGES);
     createEReference(pipelineEClass, PIPELINE__JOBS);
 
-    extendedParameterEClass = createEClass(EXTENDED_PARAMETER);
-    createEAttribute(extendedParameterEClass, EXTENDED_PARAMETER__TEMPLATE);
-    createEReference(extendedParameterEClass, EXTENDED_PARAMETER__EXTENDED_PARAMETER_VALUES);
+    configurationsEClass = createEClass(CONFIGURATIONS);
+    createEAttribute(configurationsEClass, CONFIGURATIONS__NAME);
+    createEAttribute(configurationsEClass, CONFIGURATIONS__RUN_NAME);
+    createEAttribute(configurationsEClass, CONFIGURATIONS__DEFAULT_SHELL_VALUE);
+    createEAttribute(configurationsEClass, CONFIGURATIONS__DEFAULT_WD_VALUE);
+    createEAttribute(configurationsEClass, CONFIGURATIONS__ENV);
+    createEAttribute(configurationsEClass, CONFIGURATIONS__ALL_PERMISSION);
+    createEAttribute(configurationsEClass, CONFIGURATIONS__IND_PERMISSIONS);
+    createEAttribute(configurationsEClass, CONFIGURATIONS__GROUP);
+    createEAttribute(configurationsEClass, CONFIGURATIONS__CANCEL_CONCURRENCE);
+    createEAttribute(configurationsEClass, CONFIGURATIONS__VM_NAME);
+    createEAttribute(configurationsEClass, CONFIGURATIONS__VM_IMAGE);
+    createEAttribute(configurationsEClass, CONFIGURATIONS__VM_DEMANDS);
+    createEReference(configurationsEClass, CONFIGURATIONS__RESOURCES);
+    createEAttribute(configurationsEClass, CONFIGURATIONS__VERSION);
+    createEReference(configurationsEClass, CONFIGURATIONS__PPL_VARIABLES);
+    createEReference(configurationsEClass, CONFIGURATIONS__PARAS);
+    createEAttribute(configurationsEClass, CONFIGURATIONS__EXTEND_OR_INCLUDE);
+    createEReference(configurationsEClass, CONFIGURATIONS__EXTENDED_PARAMETERS);
 
     variableEClass = createEClass(VARIABLE);
-    createEReference(variableEClass, VARIABLE__VARIABLE_VALUES);
-    createEAttribute(variableEClass, VARIABLE__GROUP);
+    createEAttribute(variableEClass, VARIABLE__VARIABLE_KEY);
+    createEAttribute(variableEClass, VARIABLE__VARIABLE_VALUE);
     createEAttribute(variableEClass, VARIABLE__NAME);
     createEAttribute(variableEClass, VARIABLE__VALUE);
     createEAttribute(variableEClass, VARIABLE__READONLY);
+    createEAttribute(variableEClass, VARIABLE__VARIABLES);
 
     resourceEClass = createEClass(RESOURCE);
     createEAttribute(resourceEClass, RESOURCE__RESOURCE_NAME);
     createEReference(resourceEClass, RESOURCE__RESOURCE_VALUES);
 
-    pipelineParameterEClass = createEClass(PIPELINE_PARAMETER);
-    createEAttribute(pipelineParameterEClass, PIPELINE_PARAMETER__NAME);
-    createEReference(pipelineParameterEClass, PIPELINE_PARAMETER__PARAMETER_VALUES);
-
     eventEClass = createEClass(EVENT);
     createEAttribute(eventEClass, EVENT__NAME);
+    createEAttribute(eventEClass, EVENT__SIMPLE_EVENT);
     createEReference(eventEClass, EVENT__INCLUDED_BRANCHES);
     createEReference(eventEClass, EVENT__ACTIVITIES);
     createEAttribute(eventEClass, EVENT__BATCH);
     createEAttribute(eventEClass, EVENT__AUTO_CANCEL);
+    createEAttribute(eventEClass, EVENT__WORKFLOWS);
     createEAttribute(eventEClass, EVENT__DRAFTS);
     createEReference(eventEClass, EVENT__EXCLUDED_BRANCHES);
     createEAttribute(eventEClass, EVENT__INCLUDED_PATHS);
     createEAttribute(eventEClass, EVENT__EXCLUDED_PATHS);
     createEAttribute(eventEClass, EVENT__INCLUDED_TAGS);
     createEAttribute(eventEClass, EVENT__EXCLUDED_TAGS);
+    createEAttribute(eventEClass, EVENT__SCHEDULE_NAME);
     createEReference(eventEClass, EVENT__TRIGGER_SCHEDULES);
-    createEReference(eventEClass, EVENT__OTHER_EVENT_PARAMETER_VALUES);
+    createEAttribute(eventEClass, EVENT__WORKFLOW_TYPE);
+    createEReference(eventEClass, EVENT__WORK_FLOW_ACTIVITIES);
 
     triggerScheduleEClass = createEClass(TRIGGER_SCHEDULE);
     createEAttribute(triggerScheduleEClass, TRIGGER_SCHEDULE__CRON_VALUE);
@@ -1431,6 +1444,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
 
     activityEClass = createEClass(ACTIVITY);
     createEAttribute(activityEClass, ACTIVITY__NAME);
+    createEAttribute(activityEClass, ACTIVITY__ACTIVITIES);
 
     stageEClass = createEClass(STAGE);
     createEAttribute(stageEClass, STAGE__NAME);
@@ -1454,12 +1468,6 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     createEReference(jobEClass, JOB__JOB_PARAMETER_VALUES);
     createEReference(jobEClass, JOB__STEPS);
 
-    jobParameterEClass = createEClass(JOB_PARAMETER);
-    createEAttribute(jobParameterEClass, JOB_PARAMETER__NAME);
-    createEAttribute(jobParameterEClass, JOB_PARAMETER__OTHER_NAME);
-    createEAttribute(jobParameterEClass, JOB_PARAMETER__VALUE);
-    createEReference(jobParameterEClass, JOB_PARAMETER__SUB_PARAMETERS);
-
     stepEClass = createEClass(STEP);
     createEReference(stepEClass, STEP__SUB_STEPS);
 
@@ -1468,17 +1476,19 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     createEAttribute(scriptEClass, SCRIPT__COMMAND);
 
     actionEClass = createEClass(ACTION);
-    createEAttribute(actionEClass, ACTION__STEP_NAME);
     createEAttribute(actionEClass, ACTION__ACTION_KEYWORD);
     createEAttribute(actionEClass, ACTION__OTHER_KEYWORD);
     createEAttribute(actionEClass, ACTION__ACTION_VALUE);
 
     parameterValueEClass = createEClass(PARAMETER_VALUE);
     createEAttribute(parameterValueEClass, PARAMETER_VALUE__NAME);
-    createEReference(parameterValueEClass, PARAMETER_VALUE__SUB_PARAMETER_VALUES);
+    createEAttribute(parameterValueEClass, PARAMETER_VALUE__OTHER_NAME);
     createEAttribute(parameterValueEClass, PARAMETER_VALUE__VALUE);
+    createEReference(parameterValueEClass, PARAMETER_VALUE__SUB_PARAMETERS);
 
     // Create enums
+    permissionEEnum = createEEnum(PERMISSION);
+    pipelineEventKeywordEEnum = createEEnum(PIPELINE_EVENT_KEYWORD);
     pipelineKeywordEEnum = createEEnum(PIPELINE_KEYWORD);
   }
 
@@ -1516,60 +1526,62 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
 
     // Initialize classes and features; add operations and parameters
     initEClass(pipelineEClass, Pipeline.class, "Pipeline", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getPipeline_Name(), ecorePackage.getEString(), "name", null, 0, 1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getPipeline_RunName(), ecorePackage.getEString(), "runName", null, 0, 1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getPipeline_DefaultShellValue(), ecorePackage.getEString(), "defaultShellValue", null, 0, 1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getPipeline_DefaultWDValue(), ecorePackage.getEString(), "defaultWDValue", null, 0, 1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getPipeline_Env(), ecorePackage.getEString(), "env", null, 0, -1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getPipeline_AllPermission(), ecorePackage.getEString(), "allPermission", null, 0, 1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getPipeline_IndPermissions(), ecorePackage.getEString(), "indPermissions", null, 0, -1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getPipeline_Group(), ecorePackage.getEString(), "group", null, 0, 1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getPipeline_CancelConcurrence(), ecorePackage.getEString(), "cancelConcurrence", null, 0, 1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getPipeline_PipelineParameters(), this.getPipelineParameter(), null, "pipelineParameters", null, 0, -1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getPipeline_VmName(), ecorePackage.getEString(), "vmName", null, 0, 1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getPipeline_VmImage(), ecorePackage.getEString(), "vmImage", null, 0, 1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getPipeline_VmDemands(), ecorePackage.getEString(), "vmDemands", null, 0, 1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getPipeline_Resources(), this.getResource(), null, "resources", null, 0, -1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getPipeline_Version(), ecorePackage.getEString(), "version", null, 0, 1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getPipeline_PplVariables(), this.getVariable(), null, "pplVariables", null, 0, -1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getPipeline_ExtendedParameter(), this.getExtendedParameter(), null, "extendedParameter", null, 0, 1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getPipeline_PipelineConfiguration(), this.getConfigurations(), null, "pipelineConfiguration", null, 0, 1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getPipeline_Triggers(), this.getEvent(), null, "triggers", null, 0, -1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getPipeline_JobOrStageVar(), ecorePackage.getEString(), "jobOrStageVar", null, 0, 1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getPipeline_Stages(), this.getStage(), null, "stages", null, 0, -1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getPipeline_Jobs(), this.getJob(), null, "jobs", null, 0, -1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-    initEClass(extendedParameterEClass, ExtendedParameter.class, "ExtendedParameter", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getExtendedParameter_Template(), ecorePackage.getEString(), "template", null, 0, 1, ExtendedParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getExtendedParameter_ExtendedParameterValues(), this.getParameterValue(), null, "extendedParameterValues", null, 0, -1, ExtendedParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEClass(configurationsEClass, Configurations.class, "Configurations", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getConfigurations_Name(), ecorePackage.getEString(), "name", null, 0, 1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getConfigurations_RunName(), ecorePackage.getEString(), "runName", null, 0, 1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getConfigurations_DefaultShellValue(), ecorePackage.getEString(), "defaultShellValue", null, 0, 1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getConfigurations_DefaultWDValue(), ecorePackage.getEString(), "defaultWDValue", null, 0, 1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getConfigurations_Env(), ecorePackage.getEString(), "env", null, 0, -1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getConfigurations_AllPermission(), ecorePackage.getEString(), "allPermission", null, 0, 1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getConfigurations_IndPermissions(), ecorePackage.getEString(), "indPermissions", null, 0, -1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getConfigurations_Group(), ecorePackage.getEString(), "group", null, 0, 1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getConfigurations_CancelConcurrence(), ecorePackage.getEString(), "cancelConcurrence", null, 0, 1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getConfigurations_VmName(), ecorePackage.getEString(), "vmName", null, 0, 1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getConfigurations_VmImage(), ecorePackage.getEString(), "vmImage", null, 0, 1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getConfigurations_VmDemands(), ecorePackage.getEString(), "vmDemands", null, 0, 1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getConfigurations_Resources(), this.getResource(), null, "resources", null, 0, -1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getConfigurations_Version(), ecorePackage.getEString(), "version", null, 0, 1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getConfigurations_PplVariables(), this.getVariable(), null, "pplVariables", null, 0, -1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getConfigurations_Paras(), this.getParameterValue(), null, "paras", null, 0, -1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getConfigurations_ExtendOrInclude(), ecorePackage.getEString(), "extendOrInclude", null, 0, 1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getConfigurations_ExtendedParameters(), this.getParameterValue(), null, "extendedParameters", null, 0, -1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(variableEClass, Variable.class, "Variable", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getVariable_VariableValues(), this.getParameterValue(), null, "variableValues", null, 0, -1, Variable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getVariable_Group(), ecorePackage.getEString(), "group", null, 0, 1, Variable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getVariable_VariableKey(), ecorePackage.getEString(), "variableKey", null, 0, 1, Variable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getVariable_VariableValue(), ecorePackage.getEString(), "variableValue", null, 0, 1, Variable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getVariable_Name(), ecorePackage.getEString(), "name", null, 0, 1, Variable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getVariable_Value(), ecorePackage.getEString(), "value", null, 0, 1, Variable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getVariable_Readonly(), ecorePackage.getEString(), "readonly", null, 0, 1, Variable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getVariable_Variables(), ecorePackage.getEString(), "variables", null, 0, -1, Variable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(resourceEClass, Resource.class, "Resource", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getResource_ResourceName(), ecorePackage.getEString(), "resourceName", null, 0, 1, Resource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getResource_ResourceValues(), this.getParameterValue(), null, "resourceValues", null, 0, -1, Resource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-    initEClass(pipelineParameterEClass, PipelineParameter.class, "PipelineParameter", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getPipelineParameter_Name(), ecorePackage.getEString(), "name", null, 0, 1, PipelineParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getPipelineParameter_ParameterValues(), this.getParameterValue(), null, "parameterValues", null, 0, -1, PipelineParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
     initEClass(eventEClass, Event.class, "Event", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getEvent_Name(), ecorePackage.getEString(), "name", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getEvent_Name(), this.getPipelineEventKeyword(), "name", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getEvent_SimpleEvent(), ecorePackage.getEString(), "simpleEvent", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getEvent_IncludedBranches(), this.getBranch(), null, "includedBranches", null, 0, -1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getEvent_Activities(), this.getActivity(), null, "activities", null, 0, -1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getEvent_Batch(), ecorePackage.getEString(), "batch", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getEvent_AutoCancel(), ecorePackage.getEString(), "autoCancel", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getEvent_Workflows(), ecorePackage.getEString(), "workflows", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getEvent_Drafts(), ecorePackage.getEString(), "drafts", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getEvent_ExcludedBranches(), this.getBranch(), null, "excludedBranches", null, 0, -1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getEvent_IncludedPaths(), ecorePackage.getEString(), "includedPaths", null, 0, -1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getEvent_ExcludedPaths(), ecorePackage.getEString(), "excludedPaths", null, 0, -1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getEvent_IncludedTags(), ecorePackage.getEString(), "includedTags", null, 0, -1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getEvent_ExcludedTags(), ecorePackage.getEString(), "excludedTags", null, 0, -1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getEvent_IncludedPaths(), ecorePackage.getEString(), "includedPaths", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getEvent_ExcludedPaths(), ecorePackage.getEString(), "excludedPaths", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getEvent_IncludedTags(), ecorePackage.getEString(), "includedTags", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getEvent_ExcludedTags(), ecorePackage.getEString(), "excludedTags", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getEvent_ScheduleName(), ecorePackage.getEString(), "scheduleName", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getEvent_TriggerSchedules(), this.getTriggerSchedule(), null, "triggerSchedules", null, 0, -1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getEvent_OtherEventParameterValues(), this.getParameterValue(), null, "otherEventParameterValues", null, 0, -1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getEvent_WorkflowType(), ecorePackage.getEString(), "workflowType", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getEvent_WorkFlowActivities(), this.getActivity(), null, "workFlowActivities", null, 0, -1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(triggerScheduleEClass, TriggerSchedule.class, "TriggerSchedule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getTriggerSchedule_CronValue(), ecorePackage.getEString(), "cronValue", null, 0, 1, TriggerSchedule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1584,6 +1596,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
 
     initEClass(activityEClass, Activity.class, "Activity", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getActivity_Name(), ecorePackage.getEString(), "name", null, 0, 1, Activity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getActivity_Activities(), ecorePackage.getEString(), "activities", null, 0, -1, Activity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(stageEClass, Stage.class, "Stage", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getStage_Name(), ecorePackage.getEString(), "name", null, 0, 1, Stage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1604,14 +1617,8 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     initEAttribute(getJob_JobName(), ecorePackage.getEString(), "jobName", null, 0, 1, Job.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getJob_DependKW(), ecorePackage.getEString(), "dependKW", null, 0, 1, Job.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getJob_References(), this.getJob(), null, "references", null, 0, -1, Job.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getJob_JobParameterValues(), this.getJobParameter(), null, "jobParameterValues", null, 0, -1, Job.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getJob_JobParameterValues(), this.getParameterValue(), null, "jobParameterValues", null, 0, -1, Job.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getJob_Steps(), this.getStep(), null, "steps", null, 0, -1, Job.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(jobParameterEClass, JobParameter.class, "JobParameter", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getJobParameter_Name(), this.getPipelineKeyword(), "name", null, 0, 1, JobParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getJobParameter_OtherName(), ecorePackage.getEString(), "otherName", null, 0, 1, JobParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getJobParameter_Value(), ecorePackage.getEString(), "value", null, 0, 1, JobParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getJobParameter_SubParameters(), this.getJobParameter(), null, "subParameters", null, 0, -1, JobParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(stepEClass, Step.class, "Step", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getStep_SubSteps(), this.getStep(), null, "subSteps", null, 0, -1, Step.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1621,64 +1628,180 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     initEAttribute(getScript_Command(), ecorePackage.getEString(), "command", null, 0, 1, Script.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(actionEClass, Action.class, "Action", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getAction_StepName(), ecorePackage.getEString(), "stepName", null, 0, 1, Action.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getAction_ActionKeyword(), this.getPipelineKeyword(), "actionKeyword", null, 0, 1, Action.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getAction_OtherKeyword(), ecorePackage.getEString(), "otherKeyword", null, 0, 1, Action.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getAction_ActionValue(), ecorePackage.getEString(), "actionValue", null, 0, 1, Action.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(parameterValueEClass, ParameterValue.class, "ParameterValue", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getParameterValue_Name(), ecorePackage.getEString(), "name", null, 0, 1, ParameterValue.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getParameterValue_SubParameterValues(), this.getParameterValue(), null, "subParameterValues", null, 0, -1, ParameterValue.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getParameterValue_Name(), this.getPipelineKeyword(), "name", null, 0, 1, ParameterValue.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getParameterValue_OtherName(), ecorePackage.getEString(), "otherName", null, 0, 1, ParameterValue.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getParameterValue_Value(), ecorePackage.getEString(), "value", null, 0, 1, ParameterValue.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getParameterValue_SubParameters(), this.getParameterValue(), null, "subParameters", null, 0, -1, ParameterValue.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     // Initialize enums and add enum literals
+    initEEnum(permissionEEnum, Permission.class, "Permission");
+    addEEnumLiteral(permissionEEnum, Permission.READ_ALL);
+    addEEnumLiteral(permissionEEnum, Permission.WRITE_ALL);
+    addEEnumLiteral(permissionEEnum, Permission.READ);
+    addEEnumLiteral(permissionEEnum, Permission.WRITE);
+    addEEnumLiteral(permissionEEnum, Permission.NONE);
+
+    initEEnum(pipelineEventKeywordEEnum, PipelineEventKeyword.class, "PipelineEventKeyword");
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_PUSH);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_PULL_REQUEST);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_WORKFLOW_DISPATCH);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_REPOSITORY_DISPATCH);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_CHECK_RUN);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_CHECK_SUITE);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_CREATE);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_DELETE);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_DEPLOYMENT);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_DEPLOYMENT_STATUS);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_FORK);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_GOLLUM);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_ISSUE_COMMENT);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_ISSUES);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_LABEL);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_MILESTONE);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_PAGE_BUILD);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_PROJECT);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_PROJECT_CARD);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_PROJECT_COLUMN);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_PUBLIC);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_PULL_REQUEST_REVIEW);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_PULL_REQUEST_REVIEW_COMMENT);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_PULL_REQUEST_TARGET);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_REGISTRY_PACKAGE);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_RELEASE);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_STATUS);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_WATCH);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_WORKFLOW_CALL);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_WORKFLOW_RUN);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_TRIGGER);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_PR);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_BRANCHES);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_TAGS);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_PATHS);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_AUTO_CANCEL);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_DRAFTS);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_ONLY);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_EXCEPT);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_RULES);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_WORKFLOW_RULES);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_PIPELINE_SCHEDULE);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_MERGE_REQUESTS);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_CHANGES);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_PIPELINES);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_DEFAULT);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_PULL_REQUESTS);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_CUSTOM);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_CONDITIONS);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_BRANCH_DELETED);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_BRANCH_CREATED);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_TAG_CREATED);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_TAG_DELETED);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_REPOSITORY_TRIGGER);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_SCHEDULED_TRIGGER);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_REMOTE_TRIGGER);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_BITBUCKET_TRIGGER);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_PLAN_BRANCH);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_CRON);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_NOTIFICATIONS);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_LOCK_BEHAVIOR);
+
     initEEnum(pipelineKeywordEEnum, PipelineKeyword.class, "PipelineKeyword");
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_NAME);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_ON);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_RUN_NAME);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_ON);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_DEFAULTS);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_RUN);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_SHELL);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_WORKING_DIRECTORY);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_ENV);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_PERMISSION);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_CONCURRENCY);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_GROUP);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_CANCEL_IN_PROGRESS);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_POOL);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_VM_IMAGE);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_DEMANDS);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_RESOURCES);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_VERSION);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_VARIABLES);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_PARAMETERS);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_EXTENDS);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_INCLUDE);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_TYPES);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_BATCH);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_AUTO_CANCEL);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_WORKFLOWS);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_DRAFTS);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_BRANCHES);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_BRANCHES_IGNORE);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_PATHS);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_PATHS_IGNORE);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_TAGS);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_TAGS_IGNORE);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_SCHEDULES);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_SCHEDULE);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_WORKFLOW_CALL);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_WORKFLOW_DISPATCH);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_CRON);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_DISPLAY_NAME);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_ALWAYS);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_STAGE);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_CONDITION);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_IS_SKIPPABLE);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_DEPENDS_ON);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_JOB);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_DEPLOYMENT);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_NEEDS);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_SCRIPT);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_BASH);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_PWSH);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_POWERSHELL);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_CHECKOUT);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_DOWNLOAD);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_GET_PACKAGE);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_PUBLISH);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_TASK);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_VALUE);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_READONLY);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_BUILDS);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_CONTAINERS);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_PIPELINES);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_REPOSITORIES);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_WEBHOOKS);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_PACKAGES);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_INPUTS);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_OUTPUTS);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_SECRETS);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_DESCRIPTION);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_REQUIRED);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_DEFAULT);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_TYPE);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_OPTIONS);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_IF);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_RUNS_ON);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_ENV);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_DEFAULTS);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_STRATEGY);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_MATRIX);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_CONTAINER);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_SERVICES);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_STEPS);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_USES);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_RUN);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_SHELL);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_WORKING_DIRECTORY);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_WITH);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_TIMEOUT_MINUTES);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_CONTINUE_ON_ERROR);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_CONDITION);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_ENVIRONMENT);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_ID);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_NEEDS);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_OUTPUTS);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_SECRETS);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_PERMISSIONS);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_CONCURRENCY);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_TIMEOUTS);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_DEFAULTS_RUN);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_WORKFLOW_DISPATCH);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_WORKFLOW_CALL);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_SCHEDULE);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_PUSH);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_PULL_REQUEST);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_PATHS);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_BRANCHES);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_TAGS);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_BRANCHES_IGNORE);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_PATHS_IGNORE);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_TAGS_IGNORE);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_CRON);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_REPOSITORY_DISPATCH);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_WORKFLOW_RUN);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_CHECKOUT);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_FILTERS);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_INCLUDE);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_EXCLUDE);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_FAIL_FAST);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_MAX_PARALLEL);
@@ -1687,17 +1810,9 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_PORTS);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_INHERIT);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_TRIGGER);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_POOL);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_DISPLAY_NAME);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_TASK);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_TEMPLATE);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_DEPENDS_ON);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_WORKSPACE);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_PARAMETERS);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_POOL_VM_IMAGE);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_RESOURCES);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_PIPELINE);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_STAGE);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_TIMEOUT_IN_MINUTES);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_CONTINUE_ON_ERR);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_RESOURCE_TYPE);
@@ -1706,7 +1821,6 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_ONLY);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_EXCEPT);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_IMAGE);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_VARIABLES);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_CACHE);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_ARTIFACTS);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_RETRIES);
@@ -1717,12 +1831,8 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_WHEN);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_ALLOW_FAILURE);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_DEPENDENCIES);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_EXTENDS);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_PIPELINES);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_DEFAULT);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_PULL_REQUESTS);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_STEP);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_SCRIPT);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_DEFINITIONS);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_CACHES);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_PARALLEL);
@@ -1736,9 +1846,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_JDK);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_LABELS);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_REPOSITORY);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_DEPLOYMENT);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_RELEASE);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_VERSION);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_DOCKER);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_AGENT);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_QUEUE);
@@ -1756,7 +1864,6 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_TRIGGER_RULES);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_RUN_POLICY);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_QUEUED);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_AUTO_CANCEL);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_NOTIFICATIONS);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_DEPLOY_TRIGGER);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_RELEASE_TRIGGER);
