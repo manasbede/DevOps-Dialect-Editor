@@ -312,8 +312,8 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		private final Keyword cParametersKeyword_10_0 = (Keyword)cGroup_10.eContents().get(0);
 		private final Group cGroup_10_1 = (Group)cGroup_10.eContents().get(1);
 		private final Keyword cHyphenMinusKeyword_10_1_0 = (Keyword)cGroup_10_1.eContents().get(0);
-		private final Assignment cParasAssignment_10_1_1 = (Assignment)cGroup_10_1.eContents().get(1);
-		private final RuleCall cParasParameterValueParserRuleCall_10_1_1_0 = (RuleCall)cParasAssignment_10_1_1.eContents().get(0);
+		private final Assignment cParameterValuesAssignment_10_1_1 = (Assignment)cGroup_10_1.eContents().get(1);
+		private final RuleCall cParameterValuesParameterValueParserRuleCall_10_1_1_0 = (RuleCall)cParameterValuesAssignment_10_1_1.eContents().get(0);
 		private final Group cGroup_11 = (Group)cUnorderedGroup.eContents().get(11);
 		private final Assignment cExtendOrIncludeAssignment_11_0 = (Assignment)cGroup_11.eContents().get(0);
 		private final Alternatives cExtendOrIncludeAlternatives_11_0_0 = (Alternatives)cExtendOrIncludeAssignment_11_0.eContents().get(0);
@@ -339,7 +339,7 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//    ('version:' version=VERSION)? &
 		//    // Common for GitHub Actions, Azure Devops, GitLab, CircleCI
 		//    ('variables:' (pplVariables+=Variable*)) ? &
-		//    ('parameters:'(('-'paras+=ParameterValue)*)) ? &
+		//    ('parameters:'(('-'parameterValues+=ParameterValue)*)) ? &
 		//    (extendOrInclude=('extends:'|'include:')(BEGIN (extendedParameters+=ParameterValue+) END))?
 		//;
 		@Override public ParserRule getRule() { return rule; }
@@ -357,7 +357,7 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//('version:' version=VERSION)? &
 		//// Common for GitHub Actions, Azure Devops, GitLab, CircleCI
 		//('variables:' (pplVariables+=Variable*)) ? &
-		//('parameters:'(('-'paras+=ParameterValue)*)) ? &
+		//('parameters:'(('-'parameterValues+=ParameterValue)*)) ? &
 		//(extendOrInclude=('extends:'|'include:')(BEGIN (extendedParameters+=ParameterValue+) END))?
 		public UnorderedGroup getUnorderedGroup() { return cUnorderedGroup; }
 		
@@ -658,23 +658,23 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//Variable
 		public RuleCall getPplVariablesVariableParserRuleCall_9_1_0() { return cPplVariablesVariableParserRuleCall_9_1_0; }
 		
-		//('parameters:'(('-'paras+=ParameterValue)*)) ?
+		//('parameters:'(('-'parameterValues+=ParameterValue)*)) ?
 		public Group getGroup_10() { return cGroup_10; }
 		
 		//'parameters:'
 		public Keyword getParametersKeyword_10_0() { return cParametersKeyword_10_0; }
 		
-		//(('-'paras+=ParameterValue)*)
+		//(('-'parameterValues+=ParameterValue)*)
 		public Group getGroup_10_1() { return cGroup_10_1; }
 		
 		//'-'
 		public Keyword getHyphenMinusKeyword_10_1_0() { return cHyphenMinusKeyword_10_1_0; }
 		
-		//paras+=ParameterValue
-		public Assignment getParasAssignment_10_1_1() { return cParasAssignment_10_1_1; }
+		//parameterValues+=ParameterValue
+		public Assignment getParameterValuesAssignment_10_1_1() { return cParameterValuesAssignment_10_1_1; }
 		
 		//ParameterValue
-		public RuleCall getParasParameterValueParserRuleCall_10_1_1_0() { return cParasParameterValueParserRuleCall_10_1_1_0; }
+		public RuleCall getParameterValuesParameterValueParserRuleCall_10_1_1_0() { return cParameterValuesParameterValueParserRuleCall_10_1_1_0; }
 		
 		//(extendOrInclude=('extends:'|'include:')(BEGIN (extendedParameters+=ParameterValue+) END))?
 		public Group getGroup_11() { return cGroup_11; }
@@ -1157,9 +1157,9 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//                ('drafts:' drafts=ID)? &
 		//                (('branches:')(((includedBranches+=Branch*)|('['includedBranches+=Branch (',' includedBranches+=Branch)*']'))|(BEGIN (includedBranches+=Branch*) (('include:')(includedBranches+=Branch*))? (('exclude:')(excludedBranches+=Branch*))? END)))? &
 		//                (('branches-ignore:')(((excludedBranches+=Branch*)|('['excludedBranches+=Branch (',' excludedBranches+=Branch)*']'))| (BEGIN (excludedBranches+=Branch*) END)))? &
-		//                (('paths:')(includedPaths=HyphenValues)? ((BEGIN (('include:')(includedPaths=HyphenValues))? (('exclude:')(excludedPaths=HyphenValues))? END)))? &
+		//                (('paths:')(includedPaths=HyphenValues)? ((BEGIN (('include:')(includedPaths=HyphenValues))? (('exclude:')(excludedPaths=HyphenValues))? END))?)? &
 		//                (('paths-ignore:')(excludedPaths=HyphenValues))? &
-		//                (('tags:')(includedTags=HyphenValues)? ((BEGIN (('include:')(includedTags=HyphenValues))? (('exclude:')(excludedTags=HyphenValues))? END)))? &
+		//                (('tags:')(includedTags=HyphenValues)? ((BEGIN (('include:')(includedTags=HyphenValues))? (('exclude:')(excludedTags=HyphenValues))? END))?)? &
 		//                (('tags-ignore:')(excludedTags=HyphenValues))?
 		//            )
 		//        END)?
@@ -1182,9 +1182,9 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//            ('drafts:' drafts=ID)? &
 		//            (('branches:')(((includedBranches+=Branch*)|('['includedBranches+=Branch (',' includedBranches+=Branch)*']'))|(BEGIN (includedBranches+=Branch*) (('include:')(includedBranches+=Branch*))? (('exclude:')(excludedBranches+=Branch*))? END)))? &
 		//            (('branches-ignore:')(((excludedBranches+=Branch*)|('['excludedBranches+=Branch (',' excludedBranches+=Branch)*']'))| (BEGIN (excludedBranches+=Branch*) END)))? &
-		//            (('paths:')(includedPaths=HyphenValues)? ((BEGIN (('include:')(includedPaths=HyphenValues))? (('exclude:')(excludedPaths=HyphenValues))? END)))? &
+		//            (('paths:')(includedPaths=HyphenValues)? ((BEGIN (('include:')(includedPaths=HyphenValues))? (('exclude:')(excludedPaths=HyphenValues))? END))?)? &
 		//            (('paths-ignore:')(excludedPaths=HyphenValues))? &
-		//            (('tags:')(includedTags=HyphenValues)? ((BEGIN (('include:')(includedTags=HyphenValues))? (('exclude:')(excludedTags=HyphenValues))? END)))? &
+		//            (('tags:')(includedTags=HyphenValues)? ((BEGIN (('include:')(includedTags=HyphenValues))? (('exclude:')(excludedTags=HyphenValues))? END))?)? &
 		//            (('tags-ignore:')(excludedTags=HyphenValues))?
 		//        )
 		//    END)?
@@ -1206,9 +1206,9 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//            ('drafts:' drafts=ID)? &
 		//            (('branches:')(((includedBranches+=Branch*)|('['includedBranches+=Branch (',' includedBranches+=Branch)*']'))|(BEGIN (includedBranches+=Branch*) (('include:')(includedBranches+=Branch*))? (('exclude:')(excludedBranches+=Branch*))? END)))? &
 		//            (('branches-ignore:')(((excludedBranches+=Branch*)|('['excludedBranches+=Branch (',' excludedBranches+=Branch)*']'))| (BEGIN (excludedBranches+=Branch*) END)))? &
-		//            (('paths:')(includedPaths=HyphenValues)? ((BEGIN (('include:')(includedPaths=HyphenValues))? (('exclude:')(excludedPaths=HyphenValues))? END)))? &
+		//            (('paths:')(includedPaths=HyphenValues)? ((BEGIN (('include:')(includedPaths=HyphenValues))? (('exclude:')(excludedPaths=HyphenValues))? END))?)? &
 		//            (('paths-ignore:')(excludedPaths=HyphenValues))? &
-		//            (('tags:')(includedTags=HyphenValues)? ((BEGIN (('include:')(includedTags=HyphenValues))? (('exclude:')(excludedTags=HyphenValues))? END)))? &
+		//            (('tags:')(includedTags=HyphenValues)? ((BEGIN (('include:')(includedTags=HyphenValues))? (('exclude:')(excludedTags=HyphenValues))? END))?)? &
 		//            (('tags-ignore:')(excludedTags=HyphenValues))?
 		//        )
 		//    END)?
@@ -1251,9 +1251,9 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//        ('drafts:' drafts=ID)? &
 		//        (('branches:')(((includedBranches+=Branch*)|('['includedBranches+=Branch (',' includedBranches+=Branch)*']'))|(BEGIN (includedBranches+=Branch*) (('include:')(includedBranches+=Branch*))? (('exclude:')(excludedBranches+=Branch*))? END)))? &
 		//        (('branches-ignore:')(((excludedBranches+=Branch*)|('['excludedBranches+=Branch (',' excludedBranches+=Branch)*']'))| (BEGIN (excludedBranches+=Branch*) END)))? &
-		//        (('paths:')(includedPaths=HyphenValues)? ((BEGIN (('include:')(includedPaths=HyphenValues))? (('exclude:')(excludedPaths=HyphenValues))? END)))? &
+		//        (('paths:')(includedPaths=HyphenValues)? ((BEGIN (('include:')(includedPaths=HyphenValues))? (('exclude:')(excludedPaths=HyphenValues))? END))?)? &
 		//        (('paths-ignore:')(excludedPaths=HyphenValues))? &
-		//        (('tags:')(includedTags=HyphenValues)? ((BEGIN (('include:')(includedTags=HyphenValues))? (('exclude:')(excludedTags=HyphenValues))? END)))? &
+		//        (('tags:')(includedTags=HyphenValues)? ((BEGIN (('include:')(includedTags=HyphenValues))? (('exclude:')(excludedTags=HyphenValues))? END))?)? &
 		//        (('tags-ignore:')(excludedTags=HyphenValues))?
 		//    )
 		//END)?
@@ -1299,9 +1299,9 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//    ('drafts:' drafts=ID)? &
 		//    (('branches:')(((includedBranches+=Branch*)|('['includedBranches+=Branch (',' includedBranches+=Branch)*']'))|(BEGIN (includedBranches+=Branch*) (('include:')(includedBranches+=Branch*))? (('exclude:')(excludedBranches+=Branch*))? END)))? &
 		//    (('branches-ignore:')(((excludedBranches+=Branch*)|('['excludedBranches+=Branch (',' excludedBranches+=Branch)*']'))| (BEGIN (excludedBranches+=Branch*) END)))? &
-		//    (('paths:')(includedPaths=HyphenValues)? ((BEGIN (('include:')(includedPaths=HyphenValues))? (('exclude:')(excludedPaths=HyphenValues))? END)))? &
+		//    (('paths:')(includedPaths=HyphenValues)? ((BEGIN (('include:')(includedPaths=HyphenValues))? (('exclude:')(excludedPaths=HyphenValues))? END))?)? &
 		//    (('paths-ignore:')(excludedPaths=HyphenValues))? &
-		//    (('tags:')(includedTags=HyphenValues)? ((BEGIN (('include:')(includedTags=HyphenValues))? (('exclude:')(excludedTags=HyphenValues))? END)))? &
+		//    (('tags:')(includedTags=HyphenValues)? ((BEGIN (('include:')(includedTags=HyphenValues))? (('exclude:')(excludedTags=HyphenValues))? END))?)? &
 		//    (('tags-ignore:')(excludedTags=HyphenValues))?
 		//)
 		public UnorderedGroup getUnorderedGroup_0_2_2() { return cUnorderedGroup_0_2_2; }
@@ -1498,7 +1498,7 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//END
 		public RuleCall getENDTerminalRuleCall_0_2_2_5_1_1_2() { return cENDTerminalRuleCall_0_2_2_5_1_1_2; }
 		
-		//(('paths:')(includedPaths=HyphenValues)? ((BEGIN (('include:')(includedPaths=HyphenValues))? (('exclude:')(excludedPaths=HyphenValues))? END)))?
+		//(('paths:')(includedPaths=HyphenValues)? ((BEGIN (('include:')(includedPaths=HyphenValues))? (('exclude:')(excludedPaths=HyphenValues))? END))?)?
 		public Group getGroup_0_2_2_6() { return cGroup_0_2_2_6; }
 		
 		//('paths:')
@@ -1510,7 +1510,7 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//HyphenValues
 		public RuleCall getIncludedPathsHyphenValuesParserRuleCall_0_2_2_6_1_0() { return cIncludedPathsHyphenValuesParserRuleCall_0_2_2_6_1_0; }
 		
-		//((BEGIN (('include:')(includedPaths=HyphenValues))? (('exclude:')(excludedPaths=HyphenValues))? END))
+		//((BEGIN (('include:')(includedPaths=HyphenValues))? (('exclude:')(excludedPaths=HyphenValues))? END))?
 		public Group getGroup_0_2_2_6_2() { return cGroup_0_2_2_6_2; }
 		
 		//BEGIN
@@ -1555,7 +1555,7 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//HyphenValues
 		public RuleCall getExcludedPathsHyphenValuesParserRuleCall_0_2_2_7_1_0() { return cExcludedPathsHyphenValuesParserRuleCall_0_2_2_7_1_0; }
 		
-		//(('tags:')(includedTags=HyphenValues)? ((BEGIN (('include:')(includedTags=HyphenValues))? (('exclude:')(excludedTags=HyphenValues))? END)))?
+		//(('tags:')(includedTags=HyphenValues)? ((BEGIN (('include:')(includedTags=HyphenValues))? (('exclude:')(excludedTags=HyphenValues))? END))?)?
 		public Group getGroup_0_2_2_8() { return cGroup_0_2_2_8; }
 		
 		//('tags:')
@@ -1567,7 +1567,7 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//HyphenValues
 		public RuleCall getIncludedTagsHyphenValuesParserRuleCall_0_2_2_8_1_0() { return cIncludedTagsHyphenValuesParserRuleCall_0_2_2_8_1_0; }
 		
-		//((BEGIN (('include:')(includedTags=HyphenValues))? (('exclude:')(excludedTags=HyphenValues))? END))
+		//((BEGIN (('include:')(includedTags=HyphenValues))? (('exclude:')(excludedTags=HyphenValues))? END))?
 		public Group getGroup_0_2_2_8_2() { return cGroup_0_2_2_8_2; }
 		
 		//BEGIN
@@ -5695,7 +5695,7 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 	//    ('version:' version=VERSION)? &
 	//    // Common for GitHub Actions, Azure Devops, GitLab, CircleCI
 	//    ('variables:' (pplVariables+=Variable*)) ? &
-	//    ('parameters:'(('-'paras+=ParameterValue)*)) ? &
+	//    ('parameters:'(('-'parameterValues+=ParameterValue)*)) ? &
 	//    (extendOrInclude=('extends:'|'include:')(BEGIN (extendedParameters+=ParameterValue+) END))?
 	//;
 	public ConfigurationsElements getConfigurationsAccess() {
@@ -5751,9 +5751,9 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 	//                ('drafts:' drafts=ID)? &
 	//                (('branches:')(((includedBranches+=Branch*)|('['includedBranches+=Branch (',' includedBranches+=Branch)*']'))|(BEGIN (includedBranches+=Branch*) (('include:')(includedBranches+=Branch*))? (('exclude:')(excludedBranches+=Branch*))? END)))? &
 	//                (('branches-ignore:')(((excludedBranches+=Branch*)|('['excludedBranches+=Branch (',' excludedBranches+=Branch)*']'))| (BEGIN (excludedBranches+=Branch*) END)))? &
-	//                (('paths:')(includedPaths=HyphenValues)? ((BEGIN (('include:')(includedPaths=HyphenValues))? (('exclude:')(excludedPaths=HyphenValues))? END)))? &
+	//                (('paths:')(includedPaths=HyphenValues)? ((BEGIN (('include:')(includedPaths=HyphenValues))? (('exclude:')(excludedPaths=HyphenValues))? END))?)? &
 	//                (('paths-ignore:')(excludedPaths=HyphenValues))? &
-	//                (('tags:')(includedTags=HyphenValues)? ((BEGIN (('include:')(includedTags=HyphenValues))? (('exclude:')(excludedTags=HyphenValues))? END)))? &
+	//                (('tags:')(includedTags=HyphenValues)? ((BEGIN (('include:')(includedTags=HyphenValues))? (('exclude:')(excludedTags=HyphenValues))? END))?)? &
 	//                (('tags-ignore:')(excludedTags=HyphenValues))?
 	//            )
 	//        END)?

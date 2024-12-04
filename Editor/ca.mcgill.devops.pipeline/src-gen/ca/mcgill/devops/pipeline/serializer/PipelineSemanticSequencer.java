@@ -148,7 +148,7 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *             resources+=Resource | 
 	 *             version=VERSION | 
 	 *             pplVariables+=Variable | 
-	 *             paras+=ParameterValue
+	 *             parameterValues+=ParameterValue
 	 *         )? 
 	 *         (vmName=ID (vmImage=ID | vmImage=STRING)?)? 
 	 *         ((extendOrInclude='extends:' | extendOrInclude='include:') extendedParameters+=ParameterValue+)? 

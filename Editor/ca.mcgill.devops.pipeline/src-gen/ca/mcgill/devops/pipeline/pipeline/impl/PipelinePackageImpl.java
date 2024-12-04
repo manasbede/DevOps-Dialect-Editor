@@ -468,7 +468,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EReference getConfigurations_Paras()
+  public EReference getConfigurations_ParameterValues()
   {
     return (EReference)configurationsEClass.getEStructuralFeatures().get(15);
   }
@@ -1396,7 +1396,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     createEReference(configurationsEClass, CONFIGURATIONS__RESOURCES);
     createEAttribute(configurationsEClass, CONFIGURATIONS__VERSION);
     createEReference(configurationsEClass, CONFIGURATIONS__PPL_VARIABLES);
-    createEReference(configurationsEClass, CONFIGURATIONS__PARAS);
+    createEReference(configurationsEClass, CONFIGURATIONS__PARAMETER_VALUES);
     createEAttribute(configurationsEClass, CONFIGURATIONS__EXTEND_OR_INCLUDE);
     createEReference(configurationsEClass, CONFIGURATIONS__EXTENDED_PARAMETERS);
 
@@ -1548,7 +1548,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     initEReference(getConfigurations_Resources(), this.getResource(), null, "resources", null, 0, -1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getConfigurations_Version(), ecorePackage.getEString(), "version", null, 0, 1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getConfigurations_PplVariables(), this.getVariable(), null, "pplVariables", null, 0, -1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getConfigurations_Paras(), this.getParameterValue(), null, "paras", null, 0, -1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getConfigurations_ParameterValues(), this.getParameterValue(), null, "parameterValues", null, 0, -1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getConfigurations_ExtendOrInclude(), ecorePackage.getEString(), "extendOrInclude", null, 0, 1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getConfigurations_ExtendedParameters(), this.getParameterValue(), null, "extendedParameters", null, 0, -1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 

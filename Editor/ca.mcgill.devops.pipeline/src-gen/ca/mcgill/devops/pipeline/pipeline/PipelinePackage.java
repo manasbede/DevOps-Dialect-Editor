@@ -268,13 +268,13 @@ public interface PipelinePackage extends EPackage
   int CONFIGURATIONS__PPL_VARIABLES = 14;
 
   /**
-   * The feature id for the '<em><b>Paras</b></em>' containment reference list.
+   * The feature id for the '<em><b>Parameter Values</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int CONFIGURATIONS__PARAS = 15;
+  int CONFIGURATIONS__PARAMETER_VALUES = 15;
 
   /**
    * The feature id for the '<em><b>Extend Or Include</b></em>' attribute.
@@ -1379,15 +1379,15 @@ public interface PipelinePackage extends EPackage
   EReference getConfigurations_PplVariables();
 
   /**
-   * Returns the meta object for the containment reference list '{@link ca.mcgill.devops.pipeline.pipeline.Configurations#getParas <em>Paras</em>}'.
+   * Returns the meta object for the containment reference list '{@link ca.mcgill.devops.pipeline.pipeline.Configurations#getParameterValues <em>Parameter Values</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Paras</em>'.
-   * @see ca.mcgill.devops.pipeline.pipeline.Configurations#getParas()
+   * @return the meta object for the containment reference list '<em>Parameter Values</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Configurations#getParameterValues()
    * @see #getConfigurations()
    * @generated
    */
-  EReference getConfigurations_Paras();
+  EReference getConfigurations_ParameterValues();
 
   /**
    * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Configurations#getExtendOrInclude <em>Extend Or Include</em>}'.
@@ -2447,12 +2447,12 @@ public interface PipelinePackage extends EPackage
     EReference CONFIGURATIONS__PPL_VARIABLES = eINSTANCE.getConfigurations_PplVariables();
 
     /**
-     * The meta object literal for the '<em><b>Paras</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Parameter Values</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference CONFIGURATIONS__PARAS = eINSTANCE.getConfigurations_Paras();
+    EReference CONFIGURATIONS__PARAMETER_VALUES = eINSTANCE.getConfigurations_ParameterValues();
 
     /**
      * The meta object literal for the '<em><b>Extend Or Include</b></em>' attribute feature.

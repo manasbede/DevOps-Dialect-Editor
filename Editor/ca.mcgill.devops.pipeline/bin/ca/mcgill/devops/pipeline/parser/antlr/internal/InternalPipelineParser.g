@@ -1031,17 +1031,17 @@ ruleConfigurations returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getConfigurationsAccess().getParasParameterValueParserRuleCall_10_1_1_0());
+											newCompositeNode(grammarAccess.getConfigurationsAccess().getParameterValuesParameterValueParserRuleCall_10_1_1_0());
 										}
-										lv_paras_53_0=ruleParameterValue
+										lv_parameterValues_53_0=ruleParameterValue
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getConfigurationsRule());
 											}
 											add(
 												$current,
-												"paras",
-												lv_paras_53_0,
+												"parameterValues",
+												lv_parameterValues_53_0,
 												"ca.mcgill.devops.pipeline.Pipeline.ParameterValue");
 											afterParserOrEnumRuleCall();
 										}
@@ -2186,7 +2186,7 @@ ruleEvent returns [EObject current=null]
 											{
 												newLeafNode(this_END_50, grammarAccess.getEventAccess().getENDTerminalRuleCall_0_2_2_6_2_3());
 											}
-										)
+										)?
 										))
 							{ 
 								getUnorderedGroupHelper().returnFromSelection(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2());
@@ -2314,7 +2314,7 @@ ruleEvent returns [EObject current=null]
 											{
 												newLeafNode(this_END_60, grammarAccess.getEventAccess().getENDTerminalRuleCall_0_2_2_8_2_3());
 											}
-										)
+										)?
 										))
 							{ 
 								getUnorderedGroupHelper().returnFromSelection(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2());

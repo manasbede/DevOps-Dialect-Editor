@@ -1001,7 +1001,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleConfigurations"
-    // InternalPipelineParser.g:316:1: ruleConfigurations returns [EObject current=null] : ( ( ( ( ({...}? => ( ({...}? => (otherlv_1= Name ( (lv_name_2_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= RunName ( (lv_runName_4_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( ( ( ({...}? => ( ({...}? => (otherlv_6= Defaults this_BEGIN_7= RULE_BEGIN otherlv_8= Run this_BEGIN_9= RULE_BEGIN (otherlv_10= Shell ( (lv_defaultShellValue_11_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_12= WorkingDirectory ( (lv_defaultWDValue_13_0= RULE_STRING ) ) )? this_END_14= RULE_END this_END_15= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Env this_BEGIN_17= RULE_BEGIN ( (otherlv_18= HyphenMinus )? ( (lv_env_19_0= ruleKeyValue ) ) )* this_END_20= RULE_END ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Permission ( ( (lv_allPermission_22_0= RULE_ID ) ) | (this_BEGIN_23= RULE_BEGIN ( (lv_indPermissions_24_0= ruleIndPermissionValue ) )* this_END_25= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_26= Concurrency (this_BEGIN_27= RULE_BEGIN (otherlv_28= Group ( ( (lv_group_29_1= RULE_ID | lv_group_29_2= RULE_COMPLEX_EXPRESSION ) ) ) ) (otherlv_30= CancelInProgress ( ( (lv_cancelConcurrence_31_1= RULE_ID | lv_cancelConcurrence_31_2= RULE_COMPLEX_EXPRESSION ) ) ) ) this_END_32= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= Pool ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_35= RULE_BEGIN (otherlv_36= Name ( (lv_vmName_37_0= RULE_ID ) ) ) (otherlv_38= VmImage ( ( (lv_vmImage_39_1= RULE_ID | lv_vmImage_39_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_40= Demands ( ( (lv_vmDemands_41_1= ruleAnyData | lv_vmDemands_41_2= ruleHyphenValues ) ) ) )? this_END_42= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Resources (this_BEGIN_44= RULE_BEGIN ( (lv_resources_45_0= ruleResource ) )* this_END_46= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_47= Version ( (lv_version_48_0= RULE_VERSION ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_49= Variables ( (lv_pplVariables_50_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_paras_53_0= ruleParameterValue ) ) )* ) ) ) ) | ({...}? => ( ({...}? => ( ( ( (lv_extendOrInclude_54_1= Extends | lv_extendOrInclude_54_2= Include ) ) ) (this_BEGIN_55= RULE_BEGIN ( (lv_extendedParameters_56_0= ruleParameterValue ) )+ this_END_57= RULE_END ) ) ) ) ) )* ) ) ) ;
+    // InternalPipelineParser.g:316:1: ruleConfigurations returns [EObject current=null] : ( ( ( ( ({...}? => ( ({...}? => (otherlv_1= Name ( (lv_name_2_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= RunName ( (lv_runName_4_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( ( ( ({...}? => ( ({...}? => (otherlv_6= Defaults this_BEGIN_7= RULE_BEGIN otherlv_8= Run this_BEGIN_9= RULE_BEGIN (otherlv_10= Shell ( (lv_defaultShellValue_11_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_12= WorkingDirectory ( (lv_defaultWDValue_13_0= RULE_STRING ) ) )? this_END_14= RULE_END this_END_15= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Env this_BEGIN_17= RULE_BEGIN ( (otherlv_18= HyphenMinus )? ( (lv_env_19_0= ruleKeyValue ) ) )* this_END_20= RULE_END ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Permission ( ( (lv_allPermission_22_0= RULE_ID ) ) | (this_BEGIN_23= RULE_BEGIN ( (lv_indPermissions_24_0= ruleIndPermissionValue ) )* this_END_25= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_26= Concurrency (this_BEGIN_27= RULE_BEGIN (otherlv_28= Group ( ( (lv_group_29_1= RULE_ID | lv_group_29_2= RULE_COMPLEX_EXPRESSION ) ) ) ) (otherlv_30= CancelInProgress ( ( (lv_cancelConcurrence_31_1= RULE_ID | lv_cancelConcurrence_31_2= RULE_COMPLEX_EXPRESSION ) ) ) ) this_END_32= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= Pool ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_35= RULE_BEGIN (otherlv_36= Name ( (lv_vmName_37_0= RULE_ID ) ) ) (otherlv_38= VmImage ( ( (lv_vmImage_39_1= RULE_ID | lv_vmImage_39_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_40= Demands ( ( (lv_vmDemands_41_1= ruleAnyData | lv_vmDemands_41_2= ruleHyphenValues ) ) ) )? this_END_42= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Resources (this_BEGIN_44= RULE_BEGIN ( (lv_resources_45_0= ruleResource ) )* this_END_46= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_47= Version ( (lv_version_48_0= RULE_VERSION ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_49= Variables ( (lv_pplVariables_50_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_parameterValues_53_0= ruleParameterValue ) ) )* ) ) ) ) | ({...}? => ( ({...}? => ( ( ( (lv_extendOrInclude_54_1= Extends | lv_extendOrInclude_54_2= Include ) ) ) (this_BEGIN_55= RULE_BEGIN ( (lv_extendedParameters_56_0= ruleParameterValue ) )+ this_END_57= RULE_END ) ) ) ) ) )* ) ) ) ;
     public final EObject ruleConfigurations() throws RecognitionException {
         EObject current = null;
 
@@ -1071,7 +1071,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
         EObject lv_pplVariables_50_0 = null;
 
-        EObject lv_paras_53_0 = null;
+        EObject lv_parameterValues_53_0 = null;
 
         EObject lv_extendedParameters_56_0 = null;
 
@@ -1080,22 +1080,22 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalPipelineParser.g:322:2: ( ( ( ( ( ({...}? => ( ({...}? => (otherlv_1= Name ( (lv_name_2_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= RunName ( (lv_runName_4_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( ( ( ({...}? => ( ({...}? => (otherlv_6= Defaults this_BEGIN_7= RULE_BEGIN otherlv_8= Run this_BEGIN_9= RULE_BEGIN (otherlv_10= Shell ( (lv_defaultShellValue_11_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_12= WorkingDirectory ( (lv_defaultWDValue_13_0= RULE_STRING ) ) )? this_END_14= RULE_END this_END_15= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Env this_BEGIN_17= RULE_BEGIN ( (otherlv_18= HyphenMinus )? ( (lv_env_19_0= ruleKeyValue ) ) )* this_END_20= RULE_END ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Permission ( ( (lv_allPermission_22_0= RULE_ID ) ) | (this_BEGIN_23= RULE_BEGIN ( (lv_indPermissions_24_0= ruleIndPermissionValue ) )* this_END_25= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_26= Concurrency (this_BEGIN_27= RULE_BEGIN (otherlv_28= Group ( ( (lv_group_29_1= RULE_ID | lv_group_29_2= RULE_COMPLEX_EXPRESSION ) ) ) ) (otherlv_30= CancelInProgress ( ( (lv_cancelConcurrence_31_1= RULE_ID | lv_cancelConcurrence_31_2= RULE_COMPLEX_EXPRESSION ) ) ) ) this_END_32= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= Pool ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_35= RULE_BEGIN (otherlv_36= Name ( (lv_vmName_37_0= RULE_ID ) ) ) (otherlv_38= VmImage ( ( (lv_vmImage_39_1= RULE_ID | lv_vmImage_39_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_40= Demands ( ( (lv_vmDemands_41_1= ruleAnyData | lv_vmDemands_41_2= ruleHyphenValues ) ) ) )? this_END_42= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Resources (this_BEGIN_44= RULE_BEGIN ( (lv_resources_45_0= ruleResource ) )* this_END_46= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_47= Version ( (lv_version_48_0= RULE_VERSION ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_49= Variables ( (lv_pplVariables_50_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_paras_53_0= ruleParameterValue ) ) )* ) ) ) ) | ({...}? => ( ({...}? => ( ( ( (lv_extendOrInclude_54_1= Extends | lv_extendOrInclude_54_2= Include ) ) ) (this_BEGIN_55= RULE_BEGIN ( (lv_extendedParameters_56_0= ruleParameterValue ) )+ this_END_57= RULE_END ) ) ) ) ) )* ) ) ) )
-            // InternalPipelineParser.g:323:2: ( ( ( ( ({...}? => ( ({...}? => (otherlv_1= Name ( (lv_name_2_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= RunName ( (lv_runName_4_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( ( ( ({...}? => ( ({...}? => (otherlv_6= Defaults this_BEGIN_7= RULE_BEGIN otherlv_8= Run this_BEGIN_9= RULE_BEGIN (otherlv_10= Shell ( (lv_defaultShellValue_11_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_12= WorkingDirectory ( (lv_defaultWDValue_13_0= RULE_STRING ) ) )? this_END_14= RULE_END this_END_15= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Env this_BEGIN_17= RULE_BEGIN ( (otherlv_18= HyphenMinus )? ( (lv_env_19_0= ruleKeyValue ) ) )* this_END_20= RULE_END ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Permission ( ( (lv_allPermission_22_0= RULE_ID ) ) | (this_BEGIN_23= RULE_BEGIN ( (lv_indPermissions_24_0= ruleIndPermissionValue ) )* this_END_25= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_26= Concurrency (this_BEGIN_27= RULE_BEGIN (otherlv_28= Group ( ( (lv_group_29_1= RULE_ID | lv_group_29_2= RULE_COMPLEX_EXPRESSION ) ) ) ) (otherlv_30= CancelInProgress ( ( (lv_cancelConcurrence_31_1= RULE_ID | lv_cancelConcurrence_31_2= RULE_COMPLEX_EXPRESSION ) ) ) ) this_END_32= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= Pool ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_35= RULE_BEGIN (otherlv_36= Name ( (lv_vmName_37_0= RULE_ID ) ) ) (otherlv_38= VmImage ( ( (lv_vmImage_39_1= RULE_ID | lv_vmImage_39_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_40= Demands ( ( (lv_vmDemands_41_1= ruleAnyData | lv_vmDemands_41_2= ruleHyphenValues ) ) ) )? this_END_42= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Resources (this_BEGIN_44= RULE_BEGIN ( (lv_resources_45_0= ruleResource ) )* this_END_46= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_47= Version ( (lv_version_48_0= RULE_VERSION ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_49= Variables ( (lv_pplVariables_50_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_paras_53_0= ruleParameterValue ) ) )* ) ) ) ) | ({...}? => ( ({...}? => ( ( ( (lv_extendOrInclude_54_1= Extends | lv_extendOrInclude_54_2= Include ) ) ) (this_BEGIN_55= RULE_BEGIN ( (lv_extendedParameters_56_0= ruleParameterValue ) )+ this_END_57= RULE_END ) ) ) ) ) )* ) ) )
+            // InternalPipelineParser.g:322:2: ( ( ( ( ( ({...}? => ( ({...}? => (otherlv_1= Name ( (lv_name_2_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= RunName ( (lv_runName_4_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( ( ( ({...}? => ( ({...}? => (otherlv_6= Defaults this_BEGIN_7= RULE_BEGIN otherlv_8= Run this_BEGIN_9= RULE_BEGIN (otherlv_10= Shell ( (lv_defaultShellValue_11_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_12= WorkingDirectory ( (lv_defaultWDValue_13_0= RULE_STRING ) ) )? this_END_14= RULE_END this_END_15= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Env this_BEGIN_17= RULE_BEGIN ( (otherlv_18= HyphenMinus )? ( (lv_env_19_0= ruleKeyValue ) ) )* this_END_20= RULE_END ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Permission ( ( (lv_allPermission_22_0= RULE_ID ) ) | (this_BEGIN_23= RULE_BEGIN ( (lv_indPermissions_24_0= ruleIndPermissionValue ) )* this_END_25= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_26= Concurrency (this_BEGIN_27= RULE_BEGIN (otherlv_28= Group ( ( (lv_group_29_1= RULE_ID | lv_group_29_2= RULE_COMPLEX_EXPRESSION ) ) ) ) (otherlv_30= CancelInProgress ( ( (lv_cancelConcurrence_31_1= RULE_ID | lv_cancelConcurrence_31_2= RULE_COMPLEX_EXPRESSION ) ) ) ) this_END_32= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= Pool ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_35= RULE_BEGIN (otherlv_36= Name ( (lv_vmName_37_0= RULE_ID ) ) ) (otherlv_38= VmImage ( ( (lv_vmImage_39_1= RULE_ID | lv_vmImage_39_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_40= Demands ( ( (lv_vmDemands_41_1= ruleAnyData | lv_vmDemands_41_2= ruleHyphenValues ) ) ) )? this_END_42= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Resources (this_BEGIN_44= RULE_BEGIN ( (lv_resources_45_0= ruleResource ) )* this_END_46= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_47= Version ( (lv_version_48_0= RULE_VERSION ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_49= Variables ( (lv_pplVariables_50_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_parameterValues_53_0= ruleParameterValue ) ) )* ) ) ) ) | ({...}? => ( ({...}? => ( ( ( (lv_extendOrInclude_54_1= Extends | lv_extendOrInclude_54_2= Include ) ) ) (this_BEGIN_55= RULE_BEGIN ( (lv_extendedParameters_56_0= ruleParameterValue ) )+ this_END_57= RULE_END ) ) ) ) ) )* ) ) ) )
+            // InternalPipelineParser.g:323:2: ( ( ( ( ({...}? => ( ({...}? => (otherlv_1= Name ( (lv_name_2_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= RunName ( (lv_runName_4_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( ( ( ({...}? => ( ({...}? => (otherlv_6= Defaults this_BEGIN_7= RULE_BEGIN otherlv_8= Run this_BEGIN_9= RULE_BEGIN (otherlv_10= Shell ( (lv_defaultShellValue_11_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_12= WorkingDirectory ( (lv_defaultWDValue_13_0= RULE_STRING ) ) )? this_END_14= RULE_END this_END_15= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Env this_BEGIN_17= RULE_BEGIN ( (otherlv_18= HyphenMinus )? ( (lv_env_19_0= ruleKeyValue ) ) )* this_END_20= RULE_END ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Permission ( ( (lv_allPermission_22_0= RULE_ID ) ) | (this_BEGIN_23= RULE_BEGIN ( (lv_indPermissions_24_0= ruleIndPermissionValue ) )* this_END_25= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_26= Concurrency (this_BEGIN_27= RULE_BEGIN (otherlv_28= Group ( ( (lv_group_29_1= RULE_ID | lv_group_29_2= RULE_COMPLEX_EXPRESSION ) ) ) ) (otherlv_30= CancelInProgress ( ( (lv_cancelConcurrence_31_1= RULE_ID | lv_cancelConcurrence_31_2= RULE_COMPLEX_EXPRESSION ) ) ) ) this_END_32= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= Pool ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_35= RULE_BEGIN (otherlv_36= Name ( (lv_vmName_37_0= RULE_ID ) ) ) (otherlv_38= VmImage ( ( (lv_vmImage_39_1= RULE_ID | lv_vmImage_39_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_40= Demands ( ( (lv_vmDemands_41_1= ruleAnyData | lv_vmDemands_41_2= ruleHyphenValues ) ) ) )? this_END_42= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Resources (this_BEGIN_44= RULE_BEGIN ( (lv_resources_45_0= ruleResource ) )* this_END_46= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_47= Version ( (lv_version_48_0= RULE_VERSION ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_49= Variables ( (lv_pplVariables_50_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_parameterValues_53_0= ruleParameterValue ) ) )* ) ) ) ) | ({...}? => ( ({...}? => ( ( ( (lv_extendOrInclude_54_1= Extends | lv_extendOrInclude_54_2= Include ) ) ) (this_BEGIN_55= RULE_BEGIN ( (lv_extendedParameters_56_0= ruleParameterValue ) )+ this_END_57= RULE_END ) ) ) ) ) )* ) ) )
             {
-            // InternalPipelineParser.g:323:2: ( ( ( ( ({...}? => ( ({...}? => (otherlv_1= Name ( (lv_name_2_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= RunName ( (lv_runName_4_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( ( ( ({...}? => ( ({...}? => (otherlv_6= Defaults this_BEGIN_7= RULE_BEGIN otherlv_8= Run this_BEGIN_9= RULE_BEGIN (otherlv_10= Shell ( (lv_defaultShellValue_11_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_12= WorkingDirectory ( (lv_defaultWDValue_13_0= RULE_STRING ) ) )? this_END_14= RULE_END this_END_15= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Env this_BEGIN_17= RULE_BEGIN ( (otherlv_18= HyphenMinus )? ( (lv_env_19_0= ruleKeyValue ) ) )* this_END_20= RULE_END ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Permission ( ( (lv_allPermission_22_0= RULE_ID ) ) | (this_BEGIN_23= RULE_BEGIN ( (lv_indPermissions_24_0= ruleIndPermissionValue ) )* this_END_25= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_26= Concurrency (this_BEGIN_27= RULE_BEGIN (otherlv_28= Group ( ( (lv_group_29_1= RULE_ID | lv_group_29_2= RULE_COMPLEX_EXPRESSION ) ) ) ) (otherlv_30= CancelInProgress ( ( (lv_cancelConcurrence_31_1= RULE_ID | lv_cancelConcurrence_31_2= RULE_COMPLEX_EXPRESSION ) ) ) ) this_END_32= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= Pool ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_35= RULE_BEGIN (otherlv_36= Name ( (lv_vmName_37_0= RULE_ID ) ) ) (otherlv_38= VmImage ( ( (lv_vmImage_39_1= RULE_ID | lv_vmImage_39_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_40= Demands ( ( (lv_vmDemands_41_1= ruleAnyData | lv_vmDemands_41_2= ruleHyphenValues ) ) ) )? this_END_42= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Resources (this_BEGIN_44= RULE_BEGIN ( (lv_resources_45_0= ruleResource ) )* this_END_46= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_47= Version ( (lv_version_48_0= RULE_VERSION ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_49= Variables ( (lv_pplVariables_50_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_paras_53_0= ruleParameterValue ) ) )* ) ) ) ) | ({...}? => ( ({...}? => ( ( ( (lv_extendOrInclude_54_1= Extends | lv_extendOrInclude_54_2= Include ) ) ) (this_BEGIN_55= RULE_BEGIN ( (lv_extendedParameters_56_0= ruleParameterValue ) )+ this_END_57= RULE_END ) ) ) ) ) )* ) ) )
-            // InternalPipelineParser.g:324:3: ( ( ( ({...}? => ( ({...}? => (otherlv_1= Name ( (lv_name_2_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= RunName ( (lv_runName_4_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( ( ( ({...}? => ( ({...}? => (otherlv_6= Defaults this_BEGIN_7= RULE_BEGIN otherlv_8= Run this_BEGIN_9= RULE_BEGIN (otherlv_10= Shell ( (lv_defaultShellValue_11_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_12= WorkingDirectory ( (lv_defaultWDValue_13_0= RULE_STRING ) ) )? this_END_14= RULE_END this_END_15= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Env this_BEGIN_17= RULE_BEGIN ( (otherlv_18= HyphenMinus )? ( (lv_env_19_0= ruleKeyValue ) ) )* this_END_20= RULE_END ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Permission ( ( (lv_allPermission_22_0= RULE_ID ) ) | (this_BEGIN_23= RULE_BEGIN ( (lv_indPermissions_24_0= ruleIndPermissionValue ) )* this_END_25= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_26= Concurrency (this_BEGIN_27= RULE_BEGIN (otherlv_28= Group ( ( (lv_group_29_1= RULE_ID | lv_group_29_2= RULE_COMPLEX_EXPRESSION ) ) ) ) (otherlv_30= CancelInProgress ( ( (lv_cancelConcurrence_31_1= RULE_ID | lv_cancelConcurrence_31_2= RULE_COMPLEX_EXPRESSION ) ) ) ) this_END_32= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= Pool ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_35= RULE_BEGIN (otherlv_36= Name ( (lv_vmName_37_0= RULE_ID ) ) ) (otherlv_38= VmImage ( ( (lv_vmImage_39_1= RULE_ID | lv_vmImage_39_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_40= Demands ( ( (lv_vmDemands_41_1= ruleAnyData | lv_vmDemands_41_2= ruleHyphenValues ) ) ) )? this_END_42= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Resources (this_BEGIN_44= RULE_BEGIN ( (lv_resources_45_0= ruleResource ) )* this_END_46= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_47= Version ( (lv_version_48_0= RULE_VERSION ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_49= Variables ( (lv_pplVariables_50_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_paras_53_0= ruleParameterValue ) ) )* ) ) ) ) | ({...}? => ( ({...}? => ( ( ( (lv_extendOrInclude_54_1= Extends | lv_extendOrInclude_54_2= Include ) ) ) (this_BEGIN_55= RULE_BEGIN ( (lv_extendedParameters_56_0= ruleParameterValue ) )+ this_END_57= RULE_END ) ) ) ) ) )* ) )
+            // InternalPipelineParser.g:323:2: ( ( ( ( ({...}? => ( ({...}? => (otherlv_1= Name ( (lv_name_2_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= RunName ( (lv_runName_4_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( ( ( ({...}? => ( ({...}? => (otherlv_6= Defaults this_BEGIN_7= RULE_BEGIN otherlv_8= Run this_BEGIN_9= RULE_BEGIN (otherlv_10= Shell ( (lv_defaultShellValue_11_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_12= WorkingDirectory ( (lv_defaultWDValue_13_0= RULE_STRING ) ) )? this_END_14= RULE_END this_END_15= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Env this_BEGIN_17= RULE_BEGIN ( (otherlv_18= HyphenMinus )? ( (lv_env_19_0= ruleKeyValue ) ) )* this_END_20= RULE_END ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Permission ( ( (lv_allPermission_22_0= RULE_ID ) ) | (this_BEGIN_23= RULE_BEGIN ( (lv_indPermissions_24_0= ruleIndPermissionValue ) )* this_END_25= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_26= Concurrency (this_BEGIN_27= RULE_BEGIN (otherlv_28= Group ( ( (lv_group_29_1= RULE_ID | lv_group_29_2= RULE_COMPLEX_EXPRESSION ) ) ) ) (otherlv_30= CancelInProgress ( ( (lv_cancelConcurrence_31_1= RULE_ID | lv_cancelConcurrence_31_2= RULE_COMPLEX_EXPRESSION ) ) ) ) this_END_32= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= Pool ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_35= RULE_BEGIN (otherlv_36= Name ( (lv_vmName_37_0= RULE_ID ) ) ) (otherlv_38= VmImage ( ( (lv_vmImage_39_1= RULE_ID | lv_vmImage_39_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_40= Demands ( ( (lv_vmDemands_41_1= ruleAnyData | lv_vmDemands_41_2= ruleHyphenValues ) ) ) )? this_END_42= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Resources (this_BEGIN_44= RULE_BEGIN ( (lv_resources_45_0= ruleResource ) )* this_END_46= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_47= Version ( (lv_version_48_0= RULE_VERSION ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_49= Variables ( (lv_pplVariables_50_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_parameterValues_53_0= ruleParameterValue ) ) )* ) ) ) ) | ({...}? => ( ({...}? => ( ( ( (lv_extendOrInclude_54_1= Extends | lv_extendOrInclude_54_2= Include ) ) ) (this_BEGIN_55= RULE_BEGIN ( (lv_extendedParameters_56_0= ruleParameterValue ) )+ this_END_57= RULE_END ) ) ) ) ) )* ) ) )
+            // InternalPipelineParser.g:324:3: ( ( ( ({...}? => ( ({...}? => (otherlv_1= Name ( (lv_name_2_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= RunName ( (lv_runName_4_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( ( ( ({...}? => ( ({...}? => (otherlv_6= Defaults this_BEGIN_7= RULE_BEGIN otherlv_8= Run this_BEGIN_9= RULE_BEGIN (otherlv_10= Shell ( (lv_defaultShellValue_11_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_12= WorkingDirectory ( (lv_defaultWDValue_13_0= RULE_STRING ) ) )? this_END_14= RULE_END this_END_15= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Env this_BEGIN_17= RULE_BEGIN ( (otherlv_18= HyphenMinus )? ( (lv_env_19_0= ruleKeyValue ) ) )* this_END_20= RULE_END ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Permission ( ( (lv_allPermission_22_0= RULE_ID ) ) | (this_BEGIN_23= RULE_BEGIN ( (lv_indPermissions_24_0= ruleIndPermissionValue ) )* this_END_25= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_26= Concurrency (this_BEGIN_27= RULE_BEGIN (otherlv_28= Group ( ( (lv_group_29_1= RULE_ID | lv_group_29_2= RULE_COMPLEX_EXPRESSION ) ) ) ) (otherlv_30= CancelInProgress ( ( (lv_cancelConcurrence_31_1= RULE_ID | lv_cancelConcurrence_31_2= RULE_COMPLEX_EXPRESSION ) ) ) ) this_END_32= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= Pool ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_35= RULE_BEGIN (otherlv_36= Name ( (lv_vmName_37_0= RULE_ID ) ) ) (otherlv_38= VmImage ( ( (lv_vmImage_39_1= RULE_ID | lv_vmImage_39_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_40= Demands ( ( (lv_vmDemands_41_1= ruleAnyData | lv_vmDemands_41_2= ruleHyphenValues ) ) ) )? this_END_42= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Resources (this_BEGIN_44= RULE_BEGIN ( (lv_resources_45_0= ruleResource ) )* this_END_46= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_47= Version ( (lv_version_48_0= RULE_VERSION ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_49= Variables ( (lv_pplVariables_50_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_parameterValues_53_0= ruleParameterValue ) ) )* ) ) ) ) | ({...}? => ( ({...}? => ( ( ( (lv_extendOrInclude_54_1= Extends | lv_extendOrInclude_54_2= Include ) ) ) (this_BEGIN_55= RULE_BEGIN ( (lv_extendedParameters_56_0= ruleParameterValue ) )+ this_END_57= RULE_END ) ) ) ) ) )* ) )
             {
-            // InternalPipelineParser.g:324:3: ( ( ( ({...}? => ( ({...}? => (otherlv_1= Name ( (lv_name_2_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= RunName ( (lv_runName_4_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( ( ( ({...}? => ( ({...}? => (otherlv_6= Defaults this_BEGIN_7= RULE_BEGIN otherlv_8= Run this_BEGIN_9= RULE_BEGIN (otherlv_10= Shell ( (lv_defaultShellValue_11_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_12= WorkingDirectory ( (lv_defaultWDValue_13_0= RULE_STRING ) ) )? this_END_14= RULE_END this_END_15= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Env this_BEGIN_17= RULE_BEGIN ( (otherlv_18= HyphenMinus )? ( (lv_env_19_0= ruleKeyValue ) ) )* this_END_20= RULE_END ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Permission ( ( (lv_allPermission_22_0= RULE_ID ) ) | (this_BEGIN_23= RULE_BEGIN ( (lv_indPermissions_24_0= ruleIndPermissionValue ) )* this_END_25= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_26= Concurrency (this_BEGIN_27= RULE_BEGIN (otherlv_28= Group ( ( (lv_group_29_1= RULE_ID | lv_group_29_2= RULE_COMPLEX_EXPRESSION ) ) ) ) (otherlv_30= CancelInProgress ( ( (lv_cancelConcurrence_31_1= RULE_ID | lv_cancelConcurrence_31_2= RULE_COMPLEX_EXPRESSION ) ) ) ) this_END_32= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= Pool ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_35= RULE_BEGIN (otherlv_36= Name ( (lv_vmName_37_0= RULE_ID ) ) ) (otherlv_38= VmImage ( ( (lv_vmImage_39_1= RULE_ID | lv_vmImage_39_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_40= Demands ( ( (lv_vmDemands_41_1= ruleAnyData | lv_vmDemands_41_2= ruleHyphenValues ) ) ) )? this_END_42= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Resources (this_BEGIN_44= RULE_BEGIN ( (lv_resources_45_0= ruleResource ) )* this_END_46= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_47= Version ( (lv_version_48_0= RULE_VERSION ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_49= Variables ( (lv_pplVariables_50_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_paras_53_0= ruleParameterValue ) ) )* ) ) ) ) | ({...}? => ( ({...}? => ( ( ( (lv_extendOrInclude_54_1= Extends | lv_extendOrInclude_54_2= Include ) ) ) (this_BEGIN_55= RULE_BEGIN ( (lv_extendedParameters_56_0= ruleParameterValue ) )+ this_END_57= RULE_END ) ) ) ) ) )* ) )
-            // InternalPipelineParser.g:325:4: ( ( ({...}? => ( ({...}? => (otherlv_1= Name ( (lv_name_2_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= RunName ( (lv_runName_4_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( ( ( ({...}? => ( ({...}? => (otherlv_6= Defaults this_BEGIN_7= RULE_BEGIN otherlv_8= Run this_BEGIN_9= RULE_BEGIN (otherlv_10= Shell ( (lv_defaultShellValue_11_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_12= WorkingDirectory ( (lv_defaultWDValue_13_0= RULE_STRING ) ) )? this_END_14= RULE_END this_END_15= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Env this_BEGIN_17= RULE_BEGIN ( (otherlv_18= HyphenMinus )? ( (lv_env_19_0= ruleKeyValue ) ) )* this_END_20= RULE_END ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Permission ( ( (lv_allPermission_22_0= RULE_ID ) ) | (this_BEGIN_23= RULE_BEGIN ( (lv_indPermissions_24_0= ruleIndPermissionValue ) )* this_END_25= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_26= Concurrency (this_BEGIN_27= RULE_BEGIN (otherlv_28= Group ( ( (lv_group_29_1= RULE_ID | lv_group_29_2= RULE_COMPLEX_EXPRESSION ) ) ) ) (otherlv_30= CancelInProgress ( ( (lv_cancelConcurrence_31_1= RULE_ID | lv_cancelConcurrence_31_2= RULE_COMPLEX_EXPRESSION ) ) ) ) this_END_32= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= Pool ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_35= RULE_BEGIN (otherlv_36= Name ( (lv_vmName_37_0= RULE_ID ) ) ) (otherlv_38= VmImage ( ( (lv_vmImage_39_1= RULE_ID | lv_vmImage_39_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_40= Demands ( ( (lv_vmDemands_41_1= ruleAnyData | lv_vmDemands_41_2= ruleHyphenValues ) ) ) )? this_END_42= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Resources (this_BEGIN_44= RULE_BEGIN ( (lv_resources_45_0= ruleResource ) )* this_END_46= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_47= Version ( (lv_version_48_0= RULE_VERSION ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_49= Variables ( (lv_pplVariables_50_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_paras_53_0= ruleParameterValue ) ) )* ) ) ) ) | ({...}? => ( ({...}? => ( ( ( (lv_extendOrInclude_54_1= Extends | lv_extendOrInclude_54_2= Include ) ) ) (this_BEGIN_55= RULE_BEGIN ( (lv_extendedParameters_56_0= ruleParameterValue ) )+ this_END_57= RULE_END ) ) ) ) ) )* )
+            // InternalPipelineParser.g:324:3: ( ( ( ({...}? => ( ({...}? => (otherlv_1= Name ( (lv_name_2_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= RunName ( (lv_runName_4_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( ( ( ({...}? => ( ({...}? => (otherlv_6= Defaults this_BEGIN_7= RULE_BEGIN otherlv_8= Run this_BEGIN_9= RULE_BEGIN (otherlv_10= Shell ( (lv_defaultShellValue_11_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_12= WorkingDirectory ( (lv_defaultWDValue_13_0= RULE_STRING ) ) )? this_END_14= RULE_END this_END_15= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Env this_BEGIN_17= RULE_BEGIN ( (otherlv_18= HyphenMinus )? ( (lv_env_19_0= ruleKeyValue ) ) )* this_END_20= RULE_END ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Permission ( ( (lv_allPermission_22_0= RULE_ID ) ) | (this_BEGIN_23= RULE_BEGIN ( (lv_indPermissions_24_0= ruleIndPermissionValue ) )* this_END_25= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_26= Concurrency (this_BEGIN_27= RULE_BEGIN (otherlv_28= Group ( ( (lv_group_29_1= RULE_ID | lv_group_29_2= RULE_COMPLEX_EXPRESSION ) ) ) ) (otherlv_30= CancelInProgress ( ( (lv_cancelConcurrence_31_1= RULE_ID | lv_cancelConcurrence_31_2= RULE_COMPLEX_EXPRESSION ) ) ) ) this_END_32= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= Pool ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_35= RULE_BEGIN (otherlv_36= Name ( (lv_vmName_37_0= RULE_ID ) ) ) (otherlv_38= VmImage ( ( (lv_vmImage_39_1= RULE_ID | lv_vmImage_39_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_40= Demands ( ( (lv_vmDemands_41_1= ruleAnyData | lv_vmDemands_41_2= ruleHyphenValues ) ) ) )? this_END_42= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Resources (this_BEGIN_44= RULE_BEGIN ( (lv_resources_45_0= ruleResource ) )* this_END_46= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_47= Version ( (lv_version_48_0= RULE_VERSION ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_49= Variables ( (lv_pplVariables_50_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_parameterValues_53_0= ruleParameterValue ) ) )* ) ) ) ) | ({...}? => ( ({...}? => ( ( ( (lv_extendOrInclude_54_1= Extends | lv_extendOrInclude_54_2= Include ) ) ) (this_BEGIN_55= RULE_BEGIN ( (lv_extendedParameters_56_0= ruleParameterValue ) )+ this_END_57= RULE_END ) ) ) ) ) )* ) )
+            // InternalPipelineParser.g:325:4: ( ( ({...}? => ( ({...}? => (otherlv_1= Name ( (lv_name_2_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= RunName ( (lv_runName_4_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( ( ( ({...}? => ( ({...}? => (otherlv_6= Defaults this_BEGIN_7= RULE_BEGIN otherlv_8= Run this_BEGIN_9= RULE_BEGIN (otherlv_10= Shell ( (lv_defaultShellValue_11_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_12= WorkingDirectory ( (lv_defaultWDValue_13_0= RULE_STRING ) ) )? this_END_14= RULE_END this_END_15= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Env this_BEGIN_17= RULE_BEGIN ( (otherlv_18= HyphenMinus )? ( (lv_env_19_0= ruleKeyValue ) ) )* this_END_20= RULE_END ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Permission ( ( (lv_allPermission_22_0= RULE_ID ) ) | (this_BEGIN_23= RULE_BEGIN ( (lv_indPermissions_24_0= ruleIndPermissionValue ) )* this_END_25= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_26= Concurrency (this_BEGIN_27= RULE_BEGIN (otherlv_28= Group ( ( (lv_group_29_1= RULE_ID | lv_group_29_2= RULE_COMPLEX_EXPRESSION ) ) ) ) (otherlv_30= CancelInProgress ( ( (lv_cancelConcurrence_31_1= RULE_ID | lv_cancelConcurrence_31_2= RULE_COMPLEX_EXPRESSION ) ) ) ) this_END_32= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= Pool ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_35= RULE_BEGIN (otherlv_36= Name ( (lv_vmName_37_0= RULE_ID ) ) ) (otherlv_38= VmImage ( ( (lv_vmImage_39_1= RULE_ID | lv_vmImage_39_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_40= Demands ( ( (lv_vmDemands_41_1= ruleAnyData | lv_vmDemands_41_2= ruleHyphenValues ) ) ) )? this_END_42= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Resources (this_BEGIN_44= RULE_BEGIN ( (lv_resources_45_0= ruleResource ) )* this_END_46= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_47= Version ( (lv_version_48_0= RULE_VERSION ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_49= Variables ( (lv_pplVariables_50_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_parameterValues_53_0= ruleParameterValue ) ) )* ) ) ) ) | ({...}? => ( ({...}? => ( ( ( (lv_extendOrInclude_54_1= Extends | lv_extendOrInclude_54_2= Include ) ) ) (this_BEGIN_55= RULE_BEGIN ( (lv_extendedParameters_56_0= ruleParameterValue ) )+ this_END_57= RULE_END ) ) ) ) ) )* )
             {
              
             			  getUnorderedGroupHelper().enter(grammarAccess.getConfigurationsAccess().getUnorderedGroup());
             			
-            // InternalPipelineParser.g:328:4: ( ( ({...}? => ( ({...}? => (otherlv_1= Name ( (lv_name_2_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= RunName ( (lv_runName_4_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( ( ( ({...}? => ( ({...}? => (otherlv_6= Defaults this_BEGIN_7= RULE_BEGIN otherlv_8= Run this_BEGIN_9= RULE_BEGIN (otherlv_10= Shell ( (lv_defaultShellValue_11_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_12= WorkingDirectory ( (lv_defaultWDValue_13_0= RULE_STRING ) ) )? this_END_14= RULE_END this_END_15= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Env this_BEGIN_17= RULE_BEGIN ( (otherlv_18= HyphenMinus )? ( (lv_env_19_0= ruleKeyValue ) ) )* this_END_20= RULE_END ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Permission ( ( (lv_allPermission_22_0= RULE_ID ) ) | (this_BEGIN_23= RULE_BEGIN ( (lv_indPermissions_24_0= ruleIndPermissionValue ) )* this_END_25= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_26= Concurrency (this_BEGIN_27= RULE_BEGIN (otherlv_28= Group ( ( (lv_group_29_1= RULE_ID | lv_group_29_2= RULE_COMPLEX_EXPRESSION ) ) ) ) (otherlv_30= CancelInProgress ( ( (lv_cancelConcurrence_31_1= RULE_ID | lv_cancelConcurrence_31_2= RULE_COMPLEX_EXPRESSION ) ) ) ) this_END_32= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= Pool ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_35= RULE_BEGIN (otherlv_36= Name ( (lv_vmName_37_0= RULE_ID ) ) ) (otherlv_38= VmImage ( ( (lv_vmImage_39_1= RULE_ID | lv_vmImage_39_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_40= Demands ( ( (lv_vmDemands_41_1= ruleAnyData | lv_vmDemands_41_2= ruleHyphenValues ) ) ) )? this_END_42= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Resources (this_BEGIN_44= RULE_BEGIN ( (lv_resources_45_0= ruleResource ) )* this_END_46= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_47= Version ( (lv_version_48_0= RULE_VERSION ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_49= Variables ( (lv_pplVariables_50_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_paras_53_0= ruleParameterValue ) ) )* ) ) ) ) | ({...}? => ( ({...}? => ( ( ( (lv_extendOrInclude_54_1= Extends | lv_extendOrInclude_54_2= Include ) ) ) (this_BEGIN_55= RULE_BEGIN ( (lv_extendedParameters_56_0= ruleParameterValue ) )+ this_END_57= RULE_END ) ) ) ) ) )* )
-            // InternalPipelineParser.g:329:5: ( ({...}? => ( ({...}? => (otherlv_1= Name ( (lv_name_2_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= RunName ( (lv_runName_4_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( ( ( ({...}? => ( ({...}? => (otherlv_6= Defaults this_BEGIN_7= RULE_BEGIN otherlv_8= Run this_BEGIN_9= RULE_BEGIN (otherlv_10= Shell ( (lv_defaultShellValue_11_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_12= WorkingDirectory ( (lv_defaultWDValue_13_0= RULE_STRING ) ) )? this_END_14= RULE_END this_END_15= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Env this_BEGIN_17= RULE_BEGIN ( (otherlv_18= HyphenMinus )? ( (lv_env_19_0= ruleKeyValue ) ) )* this_END_20= RULE_END ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Permission ( ( (lv_allPermission_22_0= RULE_ID ) ) | (this_BEGIN_23= RULE_BEGIN ( (lv_indPermissions_24_0= ruleIndPermissionValue ) )* this_END_25= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_26= Concurrency (this_BEGIN_27= RULE_BEGIN (otherlv_28= Group ( ( (lv_group_29_1= RULE_ID | lv_group_29_2= RULE_COMPLEX_EXPRESSION ) ) ) ) (otherlv_30= CancelInProgress ( ( (lv_cancelConcurrence_31_1= RULE_ID | lv_cancelConcurrence_31_2= RULE_COMPLEX_EXPRESSION ) ) ) ) this_END_32= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= Pool ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_35= RULE_BEGIN (otherlv_36= Name ( (lv_vmName_37_0= RULE_ID ) ) ) (otherlv_38= VmImage ( ( (lv_vmImage_39_1= RULE_ID | lv_vmImage_39_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_40= Demands ( ( (lv_vmDemands_41_1= ruleAnyData | lv_vmDemands_41_2= ruleHyphenValues ) ) ) )? this_END_42= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Resources (this_BEGIN_44= RULE_BEGIN ( (lv_resources_45_0= ruleResource ) )* this_END_46= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_47= Version ( (lv_version_48_0= RULE_VERSION ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_49= Variables ( (lv_pplVariables_50_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_paras_53_0= ruleParameterValue ) ) )* ) ) ) ) | ({...}? => ( ({...}? => ( ( ( (lv_extendOrInclude_54_1= Extends | lv_extendOrInclude_54_2= Include ) ) ) (this_BEGIN_55= RULE_BEGIN ( (lv_extendedParameters_56_0= ruleParameterValue ) )+ this_END_57= RULE_END ) ) ) ) ) )*
+            // InternalPipelineParser.g:328:4: ( ( ({...}? => ( ({...}? => (otherlv_1= Name ( (lv_name_2_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= RunName ( (lv_runName_4_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( ( ( ({...}? => ( ({...}? => (otherlv_6= Defaults this_BEGIN_7= RULE_BEGIN otherlv_8= Run this_BEGIN_9= RULE_BEGIN (otherlv_10= Shell ( (lv_defaultShellValue_11_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_12= WorkingDirectory ( (lv_defaultWDValue_13_0= RULE_STRING ) ) )? this_END_14= RULE_END this_END_15= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Env this_BEGIN_17= RULE_BEGIN ( (otherlv_18= HyphenMinus )? ( (lv_env_19_0= ruleKeyValue ) ) )* this_END_20= RULE_END ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Permission ( ( (lv_allPermission_22_0= RULE_ID ) ) | (this_BEGIN_23= RULE_BEGIN ( (lv_indPermissions_24_0= ruleIndPermissionValue ) )* this_END_25= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_26= Concurrency (this_BEGIN_27= RULE_BEGIN (otherlv_28= Group ( ( (lv_group_29_1= RULE_ID | lv_group_29_2= RULE_COMPLEX_EXPRESSION ) ) ) ) (otherlv_30= CancelInProgress ( ( (lv_cancelConcurrence_31_1= RULE_ID | lv_cancelConcurrence_31_2= RULE_COMPLEX_EXPRESSION ) ) ) ) this_END_32= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= Pool ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_35= RULE_BEGIN (otherlv_36= Name ( (lv_vmName_37_0= RULE_ID ) ) ) (otherlv_38= VmImage ( ( (lv_vmImage_39_1= RULE_ID | lv_vmImage_39_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_40= Demands ( ( (lv_vmDemands_41_1= ruleAnyData | lv_vmDemands_41_2= ruleHyphenValues ) ) ) )? this_END_42= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Resources (this_BEGIN_44= RULE_BEGIN ( (lv_resources_45_0= ruleResource ) )* this_END_46= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_47= Version ( (lv_version_48_0= RULE_VERSION ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_49= Variables ( (lv_pplVariables_50_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_parameterValues_53_0= ruleParameterValue ) ) )* ) ) ) ) | ({...}? => ( ({...}? => ( ( ( (lv_extendOrInclude_54_1= Extends | lv_extendOrInclude_54_2= Include ) ) ) (this_BEGIN_55= RULE_BEGIN ( (lv_extendedParameters_56_0= ruleParameterValue ) )+ this_END_57= RULE_END ) ) ) ) ) )* )
+            // InternalPipelineParser.g:329:5: ( ({...}? => ( ({...}? => (otherlv_1= Name ( (lv_name_2_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= RunName ( (lv_runName_4_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( ( ( ({...}? => ( ({...}? => (otherlv_6= Defaults this_BEGIN_7= RULE_BEGIN otherlv_8= Run this_BEGIN_9= RULE_BEGIN (otherlv_10= Shell ( (lv_defaultShellValue_11_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_12= WorkingDirectory ( (lv_defaultWDValue_13_0= RULE_STRING ) ) )? this_END_14= RULE_END this_END_15= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Env this_BEGIN_17= RULE_BEGIN ( (otherlv_18= HyphenMinus )? ( (lv_env_19_0= ruleKeyValue ) ) )* this_END_20= RULE_END ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Permission ( ( (lv_allPermission_22_0= RULE_ID ) ) | (this_BEGIN_23= RULE_BEGIN ( (lv_indPermissions_24_0= ruleIndPermissionValue ) )* this_END_25= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_26= Concurrency (this_BEGIN_27= RULE_BEGIN (otherlv_28= Group ( ( (lv_group_29_1= RULE_ID | lv_group_29_2= RULE_COMPLEX_EXPRESSION ) ) ) ) (otherlv_30= CancelInProgress ( ( (lv_cancelConcurrence_31_1= RULE_ID | lv_cancelConcurrence_31_2= RULE_COMPLEX_EXPRESSION ) ) ) ) this_END_32= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= Pool ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_35= RULE_BEGIN (otherlv_36= Name ( (lv_vmName_37_0= RULE_ID ) ) ) (otherlv_38= VmImage ( ( (lv_vmImage_39_1= RULE_ID | lv_vmImage_39_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_40= Demands ( ( (lv_vmDemands_41_1= ruleAnyData | lv_vmDemands_41_2= ruleHyphenValues ) ) ) )? this_END_42= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Resources (this_BEGIN_44= RULE_BEGIN ( (lv_resources_45_0= ruleResource ) )* this_END_46= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_47= Version ( (lv_version_48_0= RULE_VERSION ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_49= Variables ( (lv_pplVariables_50_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_parameterValues_53_0= ruleParameterValue ) ) )* ) ) ) ) | ({...}? => ( ({...}? => ( ( ( (lv_extendOrInclude_54_1= Extends | lv_extendOrInclude_54_2= Include ) ) ) (this_BEGIN_55= RULE_BEGIN ( (lv_extendedParameters_56_0= ruleParameterValue ) )+ this_END_57= RULE_END ) ) ) ) ) )*
             {
-            // InternalPipelineParser.g:329:5: ( ({...}? => ( ({...}? => (otherlv_1= Name ( (lv_name_2_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= RunName ( (lv_runName_4_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( ( ( ({...}? => ( ({...}? => (otherlv_6= Defaults this_BEGIN_7= RULE_BEGIN otherlv_8= Run this_BEGIN_9= RULE_BEGIN (otherlv_10= Shell ( (lv_defaultShellValue_11_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_12= WorkingDirectory ( (lv_defaultWDValue_13_0= RULE_STRING ) ) )? this_END_14= RULE_END this_END_15= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Env this_BEGIN_17= RULE_BEGIN ( (otherlv_18= HyphenMinus )? ( (lv_env_19_0= ruleKeyValue ) ) )* this_END_20= RULE_END ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Permission ( ( (lv_allPermission_22_0= RULE_ID ) ) | (this_BEGIN_23= RULE_BEGIN ( (lv_indPermissions_24_0= ruleIndPermissionValue ) )* this_END_25= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_26= Concurrency (this_BEGIN_27= RULE_BEGIN (otherlv_28= Group ( ( (lv_group_29_1= RULE_ID | lv_group_29_2= RULE_COMPLEX_EXPRESSION ) ) ) ) (otherlv_30= CancelInProgress ( ( (lv_cancelConcurrence_31_1= RULE_ID | lv_cancelConcurrence_31_2= RULE_COMPLEX_EXPRESSION ) ) ) ) this_END_32= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= Pool ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_35= RULE_BEGIN (otherlv_36= Name ( (lv_vmName_37_0= RULE_ID ) ) ) (otherlv_38= VmImage ( ( (lv_vmImage_39_1= RULE_ID | lv_vmImage_39_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_40= Demands ( ( (lv_vmDemands_41_1= ruleAnyData | lv_vmDemands_41_2= ruleHyphenValues ) ) ) )? this_END_42= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Resources (this_BEGIN_44= RULE_BEGIN ( (lv_resources_45_0= ruleResource ) )* this_END_46= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_47= Version ( (lv_version_48_0= RULE_VERSION ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_49= Variables ( (lv_pplVariables_50_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_paras_53_0= ruleParameterValue ) ) )* ) ) ) ) | ({...}? => ( ({...}? => ( ( ( (lv_extendOrInclude_54_1= Extends | lv_extendOrInclude_54_2= Include ) ) ) (this_BEGIN_55= RULE_BEGIN ( (lv_extendedParameters_56_0= ruleParameterValue ) )+ this_END_57= RULE_END ) ) ) ) ) )*
+            // InternalPipelineParser.g:329:5: ( ({...}? => ( ({...}? => (otherlv_1= Name ( (lv_name_2_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= RunName ( (lv_runName_4_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( ( ( ({...}? => ( ({...}? => (otherlv_6= Defaults this_BEGIN_7= RULE_BEGIN otherlv_8= Run this_BEGIN_9= RULE_BEGIN (otherlv_10= Shell ( (lv_defaultShellValue_11_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_12= WorkingDirectory ( (lv_defaultWDValue_13_0= RULE_STRING ) ) )? this_END_14= RULE_END this_END_15= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Env this_BEGIN_17= RULE_BEGIN ( (otherlv_18= HyphenMinus )? ( (lv_env_19_0= ruleKeyValue ) ) )* this_END_20= RULE_END ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Permission ( ( (lv_allPermission_22_0= RULE_ID ) ) | (this_BEGIN_23= RULE_BEGIN ( (lv_indPermissions_24_0= ruleIndPermissionValue ) )* this_END_25= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_26= Concurrency (this_BEGIN_27= RULE_BEGIN (otherlv_28= Group ( ( (lv_group_29_1= RULE_ID | lv_group_29_2= RULE_COMPLEX_EXPRESSION ) ) ) ) (otherlv_30= CancelInProgress ( ( (lv_cancelConcurrence_31_1= RULE_ID | lv_cancelConcurrence_31_2= RULE_COMPLEX_EXPRESSION ) ) ) ) this_END_32= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= Pool ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_35= RULE_BEGIN (otherlv_36= Name ( (lv_vmName_37_0= RULE_ID ) ) ) (otherlv_38= VmImage ( ( (lv_vmImage_39_1= RULE_ID | lv_vmImage_39_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_40= Demands ( ( (lv_vmDemands_41_1= ruleAnyData | lv_vmDemands_41_2= ruleHyphenValues ) ) ) )? this_END_42= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Resources (this_BEGIN_44= RULE_BEGIN ( (lv_resources_45_0= ruleResource ) )* this_END_46= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_47= Version ( (lv_version_48_0= RULE_VERSION ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_49= Variables ( (lv_pplVariables_50_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_parameterValues_53_0= ruleParameterValue ) ) )* ) ) ) ) | ({...}? => ( ({...}? => ( ( ( (lv_extendOrInclude_54_1= Extends | lv_extendOrInclude_54_2= Include ) ) ) (this_BEGIN_55= RULE_BEGIN ( (lv_extendedParameters_56_0= ruleParameterValue ) )+ this_END_57= RULE_END ) ) ) ) ) )*
             loop30:
             do {
                 int alt30=13;
@@ -2812,34 +2812,34 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             	    }
             	    break;
             	case 11 :
-            	    // InternalPipelineParser.g:1017:3: ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_paras_53_0= ruleParameterValue ) ) )* ) ) ) )
+            	    // InternalPipelineParser.g:1017:3: ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_parameterValues_53_0= ruleParameterValue ) ) )* ) ) ) )
             	    {
-            	    // InternalPipelineParser.g:1017:3: ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_paras_53_0= ruleParameterValue ) ) )* ) ) ) )
-            	    // InternalPipelineParser.g:1018:4: {...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_paras_53_0= ruleParameterValue ) ) )* ) ) )
+            	    // InternalPipelineParser.g:1017:3: ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_parameterValues_53_0= ruleParameterValue ) ) )* ) ) ) )
+            	    // InternalPipelineParser.g:1018:4: {...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_parameterValues_53_0= ruleParameterValue ) ) )* ) ) )
             	    {
             	    if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 10) ) {
             	        throw new FailedPredicateException(input, "ruleConfigurations", "getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 10)");
             	    }
-            	    // InternalPipelineParser.g:1018:109: ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_paras_53_0= ruleParameterValue ) ) )* ) ) )
-            	    // InternalPipelineParser.g:1019:5: ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_paras_53_0= ruleParameterValue ) ) )* ) )
+            	    // InternalPipelineParser.g:1018:109: ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_parameterValues_53_0= ruleParameterValue ) ) )* ) ) )
+            	    // InternalPipelineParser.g:1019:5: ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_parameterValues_53_0= ruleParameterValue ) ) )* ) )
             	    {
 
             	    					getUnorderedGroupHelper().select(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 10);
             	    				
-            	    // InternalPipelineParser.g:1022:8: ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_paras_53_0= ruleParameterValue ) ) )* ) )
-            	    // InternalPipelineParser.g:1022:9: {...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_paras_53_0= ruleParameterValue ) ) )* )
+            	    // InternalPipelineParser.g:1022:8: ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_parameterValues_53_0= ruleParameterValue ) ) )* ) )
+            	    // InternalPipelineParser.g:1022:9: {...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_parameterValues_53_0= ruleParameterValue ) ) )* )
             	    {
             	    if ( !((true)) ) {
             	        throw new FailedPredicateException(input, "ruleConfigurations", "true");
             	    }
-            	    // InternalPipelineParser.g:1022:18: (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_paras_53_0= ruleParameterValue ) ) )* )
-            	    // InternalPipelineParser.g:1022:19: otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_paras_53_0= ruleParameterValue ) ) )*
+            	    // InternalPipelineParser.g:1022:18: (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_parameterValues_53_0= ruleParameterValue ) ) )* )
+            	    // InternalPipelineParser.g:1022:19: otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_parameterValues_53_0= ruleParameterValue ) ) )*
             	    {
             	    otherlv_51=(Token)match(input,Parameters,FOLLOW_37); 
 
             	    								newLeafNode(otherlv_51, grammarAccess.getConfigurationsAccess().getParametersKeyword_10_0());
             	    							
-            	    // InternalPipelineParser.g:1026:8: (otherlv_52= HyphenMinus ( (lv_paras_53_0= ruleParameterValue ) ) )*
+            	    // InternalPipelineParser.g:1026:8: (otherlv_52= HyphenMinus ( (lv_parameterValues_53_0= ruleParameterValue ) ) )*
             	    loop27:
             	    do {
             	        int alt27=2;
@@ -2852,23 +2852,23 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
             	        switch (alt27) {
             	    	case 1 :
-            	    	    // InternalPipelineParser.g:1027:9: otherlv_52= HyphenMinus ( (lv_paras_53_0= ruleParameterValue ) )
+            	    	    // InternalPipelineParser.g:1027:9: otherlv_52= HyphenMinus ( (lv_parameterValues_53_0= ruleParameterValue ) )
             	    	    {
             	    	    otherlv_52=(Token)match(input,HyphenMinus,FOLLOW_38); 
 
             	    	    									newLeafNode(otherlv_52, grammarAccess.getConfigurationsAccess().getHyphenMinusKeyword_10_1_0());
             	    	    								
-            	    	    // InternalPipelineParser.g:1031:9: ( (lv_paras_53_0= ruleParameterValue ) )
-            	    	    // InternalPipelineParser.g:1032:10: (lv_paras_53_0= ruleParameterValue )
+            	    	    // InternalPipelineParser.g:1031:9: ( (lv_parameterValues_53_0= ruleParameterValue ) )
+            	    	    // InternalPipelineParser.g:1032:10: (lv_parameterValues_53_0= ruleParameterValue )
             	    	    {
-            	    	    // InternalPipelineParser.g:1032:10: (lv_paras_53_0= ruleParameterValue )
-            	    	    // InternalPipelineParser.g:1033:11: lv_paras_53_0= ruleParameterValue
+            	    	    // InternalPipelineParser.g:1032:10: (lv_parameterValues_53_0= ruleParameterValue )
+            	    	    // InternalPipelineParser.g:1033:11: lv_parameterValues_53_0= ruleParameterValue
             	    	    {
 
-            	    	    											newCompositeNode(grammarAccess.getConfigurationsAccess().getParasParameterValueParserRuleCall_10_1_1_0());
+            	    	    											newCompositeNode(grammarAccess.getConfigurationsAccess().getParameterValuesParameterValueParserRuleCall_10_1_1_0());
             	    	    										
             	    	    pushFollow(FOLLOW_37);
-            	    	    lv_paras_53_0=ruleParameterValue();
+            	    	    lv_parameterValues_53_0=ruleParameterValue();
 
             	    	    state._fsp--;
 
@@ -2878,8 +2878,8 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             	    	    											}
             	    	    											add(
             	    	    												current,
-            	    	    												"paras",
-            	    	    												lv_paras_53_0,
+            	    	    												"parameterValues",
+            	    	    												lv_parameterValues_53_0,
             	    	    												"ca.mcgill.devops.pipeline.Pipeline.ParameterValue");
             	    	    											afterParserOrEnumRuleCall();
             	    	    										
@@ -4156,7 +4156,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleEvent"
-    // InternalPipelineParser.g:1528:1: ruleEvent returns [EObject current=null] : ( ( ( ( (lv_name_0_0= rulePipelineEventKeyword ) ) | ( ( (lv_simpleEvent_1_0= RULE_ID ) ) (otherlv_2= Colon )? ) ) ( (lv_includedBranches_3_0= ruleBranch ) )* (this_BEGIN_4= RULE_BEGIN ( (otherlv_5= Types ( (lv_activities_6_0= ruleActivity ) ) ) | (this_BEGIN_7= RULE_BEGIN ( (lv_activities_8_0= ruleActivity ) ) this_END_9= RULE_END ) )? ( ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) ) ) this_END_63= RULE_END )? ) | ( ( ( ( (lv_scheduleName_64_1= Schedules | lv_scheduleName_64_2= Schedule ) ) ) ( (lv_triggerSchedules_65_0= ruleTriggerSchedule ) )* ) | ( ( ( (lv_workflowType_66_0= Workflow_call ) ) | otherlv_67= Workflow_dispatch ) (this_BEGIN_68= RULE_BEGIN ( (lv_workFlowActivities_69_0= ruleActivity ) )* this_END_70= RULE_END ) ) ) ) ;
+    // InternalPipelineParser.g:1528:1: ruleEvent returns [EObject current=null] : ( ( ( ( (lv_name_0_0= rulePipelineEventKeyword ) ) | ( ( (lv_simpleEvent_1_0= RULE_ID ) ) (otherlv_2= Colon )? ) ) ( (lv_includedBranches_3_0= ruleBranch ) )* (this_BEGIN_4= RULE_BEGIN ( (otherlv_5= Types ( (lv_activities_6_0= ruleActivity ) ) ) | (this_BEGIN_7= RULE_BEGIN ( (lv_activities_8_0= ruleActivity ) ) this_END_9= RULE_END ) )? ( ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) ) ) this_END_63= RULE_END )? ) | ( ( ( ( (lv_scheduleName_64_1= Schedules | lv_scheduleName_64_2= Schedule ) ) ) ( (lv_triggerSchedules_65_0= ruleTriggerSchedule ) )* ) | ( ( ( (lv_workflowType_66_0= Workflow_call ) ) | otherlv_67= Workflow_dispatch ) (this_BEGIN_68= RULE_BEGIN ( (lv_workFlowActivities_69_0= ruleActivity ) )* this_END_70= RULE_END ) ) ) ) ;
     public final EObject ruleEvent() throws RecognitionException {
         EObject current = null;
 
@@ -4261,18 +4261,18 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalPipelineParser.g:1534:2: ( ( ( ( ( (lv_name_0_0= rulePipelineEventKeyword ) ) | ( ( (lv_simpleEvent_1_0= RULE_ID ) ) (otherlv_2= Colon )? ) ) ( (lv_includedBranches_3_0= ruleBranch ) )* (this_BEGIN_4= RULE_BEGIN ( (otherlv_5= Types ( (lv_activities_6_0= ruleActivity ) ) ) | (this_BEGIN_7= RULE_BEGIN ( (lv_activities_8_0= ruleActivity ) ) this_END_9= RULE_END ) )? ( ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) ) ) this_END_63= RULE_END )? ) | ( ( ( ( (lv_scheduleName_64_1= Schedules | lv_scheduleName_64_2= Schedule ) ) ) ( (lv_triggerSchedules_65_0= ruleTriggerSchedule ) )* ) | ( ( ( (lv_workflowType_66_0= Workflow_call ) ) | otherlv_67= Workflow_dispatch ) (this_BEGIN_68= RULE_BEGIN ( (lv_workFlowActivities_69_0= ruleActivity ) )* this_END_70= RULE_END ) ) ) ) )
-            // InternalPipelineParser.g:1535:2: ( ( ( ( (lv_name_0_0= rulePipelineEventKeyword ) ) | ( ( (lv_simpleEvent_1_0= RULE_ID ) ) (otherlv_2= Colon )? ) ) ( (lv_includedBranches_3_0= ruleBranch ) )* (this_BEGIN_4= RULE_BEGIN ( (otherlv_5= Types ( (lv_activities_6_0= ruleActivity ) ) ) | (this_BEGIN_7= RULE_BEGIN ( (lv_activities_8_0= ruleActivity ) ) this_END_9= RULE_END ) )? ( ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) ) ) this_END_63= RULE_END )? ) | ( ( ( ( (lv_scheduleName_64_1= Schedules | lv_scheduleName_64_2= Schedule ) ) ) ( (lv_triggerSchedules_65_0= ruleTriggerSchedule ) )* ) | ( ( ( (lv_workflowType_66_0= Workflow_call ) ) | otherlv_67= Workflow_dispatch ) (this_BEGIN_68= RULE_BEGIN ( (lv_workFlowActivities_69_0= ruleActivity ) )* this_END_70= RULE_END ) ) ) )
+            // InternalPipelineParser.g:1534:2: ( ( ( ( ( (lv_name_0_0= rulePipelineEventKeyword ) ) | ( ( (lv_simpleEvent_1_0= RULE_ID ) ) (otherlv_2= Colon )? ) ) ( (lv_includedBranches_3_0= ruleBranch ) )* (this_BEGIN_4= RULE_BEGIN ( (otherlv_5= Types ( (lv_activities_6_0= ruleActivity ) ) ) | (this_BEGIN_7= RULE_BEGIN ( (lv_activities_8_0= ruleActivity ) ) this_END_9= RULE_END ) )? ( ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) ) ) this_END_63= RULE_END )? ) | ( ( ( ( (lv_scheduleName_64_1= Schedules | lv_scheduleName_64_2= Schedule ) ) ) ( (lv_triggerSchedules_65_0= ruleTriggerSchedule ) )* ) | ( ( ( (lv_workflowType_66_0= Workflow_call ) ) | otherlv_67= Workflow_dispatch ) (this_BEGIN_68= RULE_BEGIN ( (lv_workFlowActivities_69_0= ruleActivity ) )* this_END_70= RULE_END ) ) ) ) )
+            // InternalPipelineParser.g:1535:2: ( ( ( ( (lv_name_0_0= rulePipelineEventKeyword ) ) | ( ( (lv_simpleEvent_1_0= RULE_ID ) ) (otherlv_2= Colon )? ) ) ( (lv_includedBranches_3_0= ruleBranch ) )* (this_BEGIN_4= RULE_BEGIN ( (otherlv_5= Types ( (lv_activities_6_0= ruleActivity ) ) ) | (this_BEGIN_7= RULE_BEGIN ( (lv_activities_8_0= ruleActivity ) ) this_END_9= RULE_END ) )? ( ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) ) ) this_END_63= RULE_END )? ) | ( ( ( ( (lv_scheduleName_64_1= Schedules | lv_scheduleName_64_2= Schedule ) ) ) ( (lv_triggerSchedules_65_0= ruleTriggerSchedule ) )* ) | ( ( ( (lv_workflowType_66_0= Workflow_call ) ) | otherlv_67= Workflow_dispatch ) (this_BEGIN_68= RULE_BEGIN ( (lv_workFlowActivities_69_0= ruleActivity ) )* this_END_70= RULE_END ) ) ) )
             {
-            // InternalPipelineParser.g:1535:2: ( ( ( ( (lv_name_0_0= rulePipelineEventKeyword ) ) | ( ( (lv_simpleEvent_1_0= RULE_ID ) ) (otherlv_2= Colon )? ) ) ( (lv_includedBranches_3_0= ruleBranch ) )* (this_BEGIN_4= RULE_BEGIN ( (otherlv_5= Types ( (lv_activities_6_0= ruleActivity ) ) ) | (this_BEGIN_7= RULE_BEGIN ( (lv_activities_8_0= ruleActivity ) ) this_END_9= RULE_END ) )? ( ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) ) ) this_END_63= RULE_END )? ) | ( ( ( ( (lv_scheduleName_64_1= Schedules | lv_scheduleName_64_2= Schedule ) ) ) ( (lv_triggerSchedules_65_0= ruleTriggerSchedule ) )* ) | ( ( ( (lv_workflowType_66_0= Workflow_call ) ) | otherlv_67= Workflow_dispatch ) (this_BEGIN_68= RULE_BEGIN ( (lv_workFlowActivities_69_0= ruleActivity ) )* this_END_70= RULE_END ) ) ) )
-            int alt72=2;
-            alt72 = dfa72.predict(input);
-            switch (alt72) {
+            // InternalPipelineParser.g:1535:2: ( ( ( ( (lv_name_0_0= rulePipelineEventKeyword ) ) | ( ( (lv_simpleEvent_1_0= RULE_ID ) ) (otherlv_2= Colon )? ) ) ( (lv_includedBranches_3_0= ruleBranch ) )* (this_BEGIN_4= RULE_BEGIN ( (otherlv_5= Types ( (lv_activities_6_0= ruleActivity ) ) ) | (this_BEGIN_7= RULE_BEGIN ( (lv_activities_8_0= ruleActivity ) ) this_END_9= RULE_END ) )? ( ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) ) ) this_END_63= RULE_END )? ) | ( ( ( ( (lv_scheduleName_64_1= Schedules | lv_scheduleName_64_2= Schedule ) ) ) ( (lv_triggerSchedules_65_0= ruleTriggerSchedule ) )* ) | ( ( ( (lv_workflowType_66_0= Workflow_call ) ) | otherlv_67= Workflow_dispatch ) (this_BEGIN_68= RULE_BEGIN ( (lv_workFlowActivities_69_0= ruleActivity ) )* this_END_70= RULE_END ) ) ) )
+            int alt74=2;
+            alt74 = dfa74.predict(input);
+            switch (alt74) {
                 case 1 :
-                    // InternalPipelineParser.g:1536:3: ( ( ( (lv_name_0_0= rulePipelineEventKeyword ) ) | ( ( (lv_simpleEvent_1_0= RULE_ID ) ) (otherlv_2= Colon )? ) ) ( (lv_includedBranches_3_0= ruleBranch ) )* (this_BEGIN_4= RULE_BEGIN ( (otherlv_5= Types ( (lv_activities_6_0= ruleActivity ) ) ) | (this_BEGIN_7= RULE_BEGIN ( (lv_activities_8_0= ruleActivity ) ) this_END_9= RULE_END ) )? ( ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) ) ) this_END_63= RULE_END )? )
+                    // InternalPipelineParser.g:1536:3: ( ( ( (lv_name_0_0= rulePipelineEventKeyword ) ) | ( ( (lv_simpleEvent_1_0= RULE_ID ) ) (otherlv_2= Colon )? ) ) ( (lv_includedBranches_3_0= ruleBranch ) )* (this_BEGIN_4= RULE_BEGIN ( (otherlv_5= Types ( (lv_activities_6_0= ruleActivity ) ) ) | (this_BEGIN_7= RULE_BEGIN ( (lv_activities_8_0= ruleActivity ) ) this_END_9= RULE_END ) )? ( ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) ) ) this_END_63= RULE_END )? )
                     {
-                    // InternalPipelineParser.g:1536:3: ( ( ( (lv_name_0_0= rulePipelineEventKeyword ) ) | ( ( (lv_simpleEvent_1_0= RULE_ID ) ) (otherlv_2= Colon )? ) ) ( (lv_includedBranches_3_0= ruleBranch ) )* (this_BEGIN_4= RULE_BEGIN ( (otherlv_5= Types ( (lv_activities_6_0= ruleActivity ) ) ) | (this_BEGIN_7= RULE_BEGIN ( (lv_activities_8_0= ruleActivity ) ) this_END_9= RULE_END ) )? ( ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) ) ) this_END_63= RULE_END )? )
-                    // InternalPipelineParser.g:1537:4: ( ( (lv_name_0_0= rulePipelineEventKeyword ) ) | ( ( (lv_simpleEvent_1_0= RULE_ID ) ) (otherlv_2= Colon )? ) ) ( (lv_includedBranches_3_0= ruleBranch ) )* (this_BEGIN_4= RULE_BEGIN ( (otherlv_5= Types ( (lv_activities_6_0= ruleActivity ) ) ) | (this_BEGIN_7= RULE_BEGIN ( (lv_activities_8_0= ruleActivity ) ) this_END_9= RULE_END ) )? ( ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) ) ) this_END_63= RULE_END )?
+                    // InternalPipelineParser.g:1536:3: ( ( ( (lv_name_0_0= rulePipelineEventKeyword ) ) | ( ( (lv_simpleEvent_1_0= RULE_ID ) ) (otherlv_2= Colon )? ) ) ( (lv_includedBranches_3_0= ruleBranch ) )* (this_BEGIN_4= RULE_BEGIN ( (otherlv_5= Types ( (lv_activities_6_0= ruleActivity ) ) ) | (this_BEGIN_7= RULE_BEGIN ( (lv_activities_8_0= ruleActivity ) ) this_END_9= RULE_END ) )? ( ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) ) ) this_END_63= RULE_END )? )
+                    // InternalPipelineParser.g:1537:4: ( ( (lv_name_0_0= rulePipelineEventKeyword ) ) | ( ( (lv_simpleEvent_1_0= RULE_ID ) ) (otherlv_2= Colon )? ) ) ( (lv_includedBranches_3_0= ruleBranch ) )* (this_BEGIN_4= RULE_BEGIN ( (otherlv_5= Types ( (lv_activities_6_0= ruleActivity ) ) ) | (this_BEGIN_7= RULE_BEGIN ( (lv_activities_8_0= ruleActivity ) ) this_END_9= RULE_END ) )? ( ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) ) ) this_END_63= RULE_END )?
                     {
                     // InternalPipelineParser.g:1537:4: ( ( (lv_name_0_0= rulePipelineEventKeyword ) ) | ( ( (lv_simpleEvent_1_0= RULE_ID ) ) (otherlv_2= Colon )? ) )
                     int alt42=2;
@@ -4439,16 +4439,16 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                         }
                     } while (true);
 
-                    // InternalPipelineParser.g:1604:4: (this_BEGIN_4= RULE_BEGIN ( (otherlv_5= Types ( (lv_activities_6_0= ruleActivity ) ) ) | (this_BEGIN_7= RULE_BEGIN ( (lv_activities_8_0= ruleActivity ) ) this_END_9= RULE_END ) )? ( ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) ) ) this_END_63= RULE_END )?
-                    int alt66=2;
-                    int LA66_0 = input.LA(1);
+                    // InternalPipelineParser.g:1604:4: (this_BEGIN_4= RULE_BEGIN ( (otherlv_5= Types ( (lv_activities_6_0= ruleActivity ) ) ) | (this_BEGIN_7= RULE_BEGIN ( (lv_activities_8_0= ruleActivity ) ) this_END_9= RULE_END ) )? ( ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) ) ) this_END_63= RULE_END )?
+                    int alt68=2;
+                    int LA68_0 = input.LA(1);
 
-                    if ( (LA66_0==RULE_BEGIN) ) {
-                        alt66=1;
+                    if ( (LA68_0==RULE_BEGIN) ) {
+                        alt68=1;
                     }
-                    switch (alt66) {
+                    switch (alt68) {
                         case 1 :
-                            // InternalPipelineParser.g:1605:5: this_BEGIN_4= RULE_BEGIN ( (otherlv_5= Types ( (lv_activities_6_0= ruleActivity ) ) ) | (this_BEGIN_7= RULE_BEGIN ( (lv_activities_8_0= ruleActivity ) ) this_END_9= RULE_END ) )? ( ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) ) ) this_END_63= RULE_END
+                            // InternalPipelineParser.g:1605:5: this_BEGIN_4= RULE_BEGIN ( (otherlv_5= Types ( (lv_activities_6_0= ruleActivity ) ) ) | (this_BEGIN_7= RULE_BEGIN ( (lv_activities_8_0= ruleActivity ) ) this_END_9= RULE_END ) )? ( ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) ) ) this_END_63= RULE_END
                             {
                             this_BEGIN_4=(Token)match(input,RULE_BEGIN,FOLLOW_49); 
 
@@ -4566,24 +4566,24 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
                             }
 
-                            // InternalPipelineParser.g:1666:5: ( ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) ) )
-                            // InternalPipelineParser.g:1667:6: ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) )
+                            // InternalPipelineParser.g:1666:5: ( ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) ) )
+                            // InternalPipelineParser.g:1667:6: ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) )
                             {
-                            // InternalPipelineParser.g:1667:6: ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) )
-                            // InternalPipelineParser.g:1668:7: ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* )
+                            // InternalPipelineParser.g:1667:6: ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) )
+                            // InternalPipelineParser.g:1668:7: ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* )
                             {
                              
                             						  getUnorderedGroupHelper().enter(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2());
                             						
-                            // InternalPipelineParser.g:1671:7: ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* )
-                            // InternalPipelineParser.g:1672:8: ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )*
+                            // InternalPipelineParser.g:1671:7: ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* )
+                            // InternalPipelineParser.g:1672:8: ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )*
                             {
-                            // InternalPipelineParser.g:1672:8: ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )*
-                            loop65:
+                            // InternalPipelineParser.g:1672:8: ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )*
+                            loop67:
                             do {
-                                int alt65=11;
-                                alt65 = dfa65.predict(input);
-                                switch (alt65) {
+                                int alt67=11;
+                                alt67 = dfa67.predict(input);
+                                switch (alt67) {
                             	case 1 :
                             	    // InternalPipelineParser.g:1673:6: ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) )
                             	    {
@@ -5670,30 +5670,30 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                             	    }
                             	    break;
                             	case 7 :
-                            	    // InternalPipelineParser.g:2102:6: ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) ) ) ) )
+                            	    // InternalPipelineParser.g:2102:6: ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? ) ) ) )
                             	    {
-                            	    // InternalPipelineParser.g:2102:6: ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) ) ) ) )
-                            	    // InternalPipelineParser.g:2103:7: {...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) ) ) )
+                            	    // InternalPipelineParser.g:2102:6: ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? ) ) ) )
+                            	    // InternalPipelineParser.g:2103:7: {...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? ) ) )
                             	    {
                             	    if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 6) ) {
                             	        throw new FailedPredicateException(input, "ruleEvent", "getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 6)");
                             	    }
-                            	    // InternalPipelineParser.g:2103:108: ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) ) ) )
-                            	    // InternalPipelineParser.g:2104:8: ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) ) )
+                            	    // InternalPipelineParser.g:2103:108: ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? ) ) )
+                            	    // InternalPipelineParser.g:2104:8: ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? ) )
                             	    {
 
                             	    								getUnorderedGroupHelper().select(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 6);
                             	    							
-                            	    // InternalPipelineParser.g:2107:11: ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) ) )
-                            	    // InternalPipelineParser.g:2107:12: {...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) )
+                            	    // InternalPipelineParser.g:2107:11: ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? ) )
+                            	    // InternalPipelineParser.g:2107:12: {...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? )
                             	    {
                             	    if ( !((true)) ) {
                             	        throw new FailedPredicateException(input, "ruleEvent", "true");
                             	    }
-                            	    // InternalPipelineParser.g:2107:21: (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) )
-                            	    // InternalPipelineParser.g:2107:22: otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )
+                            	    // InternalPipelineParser.g:2107:21: (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? )
+                            	    // InternalPipelineParser.g:2107:22: otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )?
                             	    {
-                            	    otherlv_43=(Token)match(input,Paths,FOLLOW_33); 
+                            	    otherlv_43=(Token)match(input,Paths,FOLLOW_58); 
 
                             	    											newLeafNode(otherlv_43, grammarAccess.getEventAccess().getPathsKeyword_0_2_2_6_0());
                             	    										
@@ -5721,7 +5721,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
                             	            													newCompositeNode(grammarAccess.getEventAccess().getIncludedPathsHyphenValuesParserRuleCall_0_2_2_6_1_0());
                             	            												
-                            	            pushFollow(FOLLOW_16);
+                            	            pushFollow(FOLLOW_59);
                             	            lv_includedPaths_44_0=ruleHyphenValues();
 
                             	            state._fsp--;
@@ -5746,121 +5746,132 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
                             	    }
 
-                            	    // InternalPipelineParser.g:2130:11: (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )
-                            	    // InternalPipelineParser.g:2131:12: this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END
-                            	    {
-                            	    this_BEGIN_45=(Token)match(input,RULE_BEGIN,FOLLOW_58); 
+                            	    // InternalPipelineParser.g:2130:11: (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )?
+                            	    int alt62=2;
+                            	    int LA62_0 = input.LA(1);
 
-                            	    												newLeafNode(this_BEGIN_45, grammarAccess.getEventAccess().getBEGINTerminalRuleCall_0_2_2_6_2_0());
-                            	    											
-                            	    // InternalPipelineParser.g:2135:12: (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )?
-                            	    int alt60=2;
-                            	    int LA60_0 = input.LA(1);
-
-                            	    if ( (LA60_0==Include) ) {
-                            	        alt60=1;
+                            	    if ( (LA62_0==RULE_BEGIN) ) {
+                            	        alt62=1;
                             	    }
-                            	    switch (alt60) {
+                            	    switch (alt62) {
                             	        case 1 :
-                            	            // InternalPipelineParser.g:2136:13: otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) )
+                            	            // InternalPipelineParser.g:2131:12: this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END
                             	            {
-                            	            otherlv_46=(Token)match(input,Include,FOLLOW_33); 
+                            	            this_BEGIN_45=(Token)match(input,RULE_BEGIN,FOLLOW_60); 
 
-                            	            													newLeafNode(otherlv_46, grammarAccess.getEventAccess().getIncludeKeyword_0_2_2_6_2_1_0());
-                            	            												
-                            	            // InternalPipelineParser.g:2140:13: ( (lv_includedPaths_47_0= ruleHyphenValues ) )
-                            	            // InternalPipelineParser.g:2141:14: (lv_includedPaths_47_0= ruleHyphenValues )
-                            	            {
-                            	            // InternalPipelineParser.g:2141:14: (lv_includedPaths_47_0= ruleHyphenValues )
-                            	            // InternalPipelineParser.g:2142:15: lv_includedPaths_47_0= ruleHyphenValues
-                            	            {
+                            	            												newLeafNode(this_BEGIN_45, grammarAccess.getEventAccess().getBEGINTerminalRuleCall_0_2_2_6_2_0());
+                            	            											
+                            	            // InternalPipelineParser.g:2135:12: (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )?
+                            	            int alt60=2;
+                            	            int LA60_0 = input.LA(1);
 
-                            	            															newCompositeNode(grammarAccess.getEventAccess().getIncludedPathsHyphenValuesParserRuleCall_0_2_2_6_2_1_1_0());
-                            	            														
-                            	            pushFollow(FOLLOW_59);
-                            	            lv_includedPaths_47_0=ruleHyphenValues();
+                            	            if ( (LA60_0==Include) ) {
+                            	                alt60=1;
+                            	            }
+                            	            switch (alt60) {
+                            	                case 1 :
+                            	                    // InternalPipelineParser.g:2136:13: otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) )
+                            	                    {
+                            	                    otherlv_46=(Token)match(input,Include,FOLLOW_33); 
 
-                            	            state._fsp--;
+                            	                    													newLeafNode(otherlv_46, grammarAccess.getEventAccess().getIncludeKeyword_0_2_2_6_2_1_0());
+                            	                    												
+                            	                    // InternalPipelineParser.g:2140:13: ( (lv_includedPaths_47_0= ruleHyphenValues ) )
+                            	                    // InternalPipelineParser.g:2141:14: (lv_includedPaths_47_0= ruleHyphenValues )
+                            	                    {
+                            	                    // InternalPipelineParser.g:2141:14: (lv_includedPaths_47_0= ruleHyphenValues )
+                            	                    // InternalPipelineParser.g:2142:15: lv_includedPaths_47_0= ruleHyphenValues
+                            	                    {
+
+                            	                    															newCompositeNode(grammarAccess.getEventAccess().getIncludedPathsHyphenValuesParserRuleCall_0_2_2_6_2_1_1_0());
+                            	                    														
+                            	                    pushFollow(FOLLOW_61);
+                            	                    lv_includedPaths_47_0=ruleHyphenValues();
+
+                            	                    state._fsp--;
 
 
-                            	            															if (current==null) {
-                            	            																current = createModelElementForParent(grammarAccess.getEventRule());
-                            	            															}
-                            	            															set(
-                            	            																current,
-                            	            																"includedPaths",
-                            	            																lv_includedPaths_47_0,
-                            	            																"ca.mcgill.devops.pipeline.Pipeline.HyphenValues");
-                            	            															afterParserOrEnumRuleCall();
-                            	            														
+                            	                    															if (current==null) {
+                            	                    																current = createModelElementForParent(grammarAccess.getEventRule());
+                            	                    															}
+                            	                    															set(
+                            	                    																current,
+                            	                    																"includedPaths",
+                            	                    																lv_includedPaths_47_0,
+                            	                    																"ca.mcgill.devops.pipeline.Pipeline.HyphenValues");
+                            	                    															afterParserOrEnumRuleCall();
+                            	                    														
+
+                            	                    }
+
+
+                            	                    }
+
+
+                            	                    }
+                            	                    break;
 
                             	            }
 
+                            	            // InternalPipelineParser.g:2160:12: (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )?
+                            	            int alt61=2;
+                            	            int LA61_0 = input.LA(1);
+
+                            	            if ( (LA61_0==Exclude) ) {
+                            	                alt61=1;
+                            	            }
+                            	            switch (alt61) {
+                            	                case 1 :
+                            	                    // InternalPipelineParser.g:2161:13: otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) )
+                            	                    {
+                            	                    otherlv_48=(Token)match(input,Exclude,FOLLOW_33); 
+
+                            	                    													newLeafNode(otherlv_48, grammarAccess.getEventAccess().getExcludeKeyword_0_2_2_6_2_2_0());
+                            	                    												
+                            	                    // InternalPipelineParser.g:2165:13: ( (lv_excludedPaths_49_0= ruleHyphenValues ) )
+                            	                    // InternalPipelineParser.g:2166:14: (lv_excludedPaths_49_0= ruleHyphenValues )
+                            	                    {
+                            	                    // InternalPipelineParser.g:2166:14: (lv_excludedPaths_49_0= ruleHyphenValues )
+                            	                    // InternalPipelineParser.g:2167:15: lv_excludedPaths_49_0= ruleHyphenValues
+                            	                    {
+
+                            	                    															newCompositeNode(grammarAccess.getEventAccess().getExcludedPathsHyphenValuesParserRuleCall_0_2_2_6_2_2_1_0());
+                            	                    														
+                            	                    pushFollow(FOLLOW_20);
+                            	                    lv_excludedPaths_49_0=ruleHyphenValues();
+
+                            	                    state._fsp--;
+
+
+                            	                    															if (current==null) {
+                            	                    																current = createModelElementForParent(grammarAccess.getEventRule());
+                            	                    															}
+                            	                    															set(
+                            	                    																current,
+                            	                    																"excludedPaths",
+                            	                    																lv_excludedPaths_49_0,
+                            	                    																"ca.mcgill.devops.pipeline.Pipeline.HyphenValues");
+                            	                    															afterParserOrEnumRuleCall();
+                            	                    														
+
+                            	                    }
+
+
+                            	                    }
+
+
+                            	                    }
+                            	                    break;
 
                             	            }
 
+                            	            this_END_50=(Token)match(input,RULE_END,FOLLOW_51); 
+
+                            	            												newLeafNode(this_END_50, grammarAccess.getEventAccess().getENDTerminalRuleCall_0_2_2_6_2_3());
+                            	            											
 
                             	            }
                             	            break;
-
-                            	    }
-
-                            	    // InternalPipelineParser.g:2160:12: (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )?
-                            	    int alt61=2;
-                            	    int LA61_0 = input.LA(1);
-
-                            	    if ( (LA61_0==Exclude) ) {
-                            	        alt61=1;
-                            	    }
-                            	    switch (alt61) {
-                            	        case 1 :
-                            	            // InternalPipelineParser.g:2161:13: otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) )
-                            	            {
-                            	            otherlv_48=(Token)match(input,Exclude,FOLLOW_33); 
-
-                            	            													newLeafNode(otherlv_48, grammarAccess.getEventAccess().getExcludeKeyword_0_2_2_6_2_2_0());
-                            	            												
-                            	            // InternalPipelineParser.g:2165:13: ( (lv_excludedPaths_49_0= ruleHyphenValues ) )
-                            	            // InternalPipelineParser.g:2166:14: (lv_excludedPaths_49_0= ruleHyphenValues )
-                            	            {
-                            	            // InternalPipelineParser.g:2166:14: (lv_excludedPaths_49_0= ruleHyphenValues )
-                            	            // InternalPipelineParser.g:2167:15: lv_excludedPaths_49_0= ruleHyphenValues
-                            	            {
-
-                            	            															newCompositeNode(grammarAccess.getEventAccess().getExcludedPathsHyphenValuesParserRuleCall_0_2_2_6_2_2_1_0());
-                            	            														
-                            	            pushFollow(FOLLOW_20);
-                            	            lv_excludedPaths_49_0=ruleHyphenValues();
-
-                            	            state._fsp--;
-
-
-                            	            															if (current==null) {
-                            	            																current = createModelElementForParent(grammarAccess.getEventRule());
-                            	            															}
-                            	            															set(
-                            	            																current,
-                            	            																"excludedPaths",
-                            	            																lv_excludedPaths_49_0,
-                            	            																"ca.mcgill.devops.pipeline.Pipeline.HyphenValues");
-                            	            															afterParserOrEnumRuleCall();
-                            	            														
-
-                            	            }
-
-
-                            	            }
-
-
-                            	            }
-                            	            break;
-
-                            	    }
-
-                            	    this_END_50=(Token)match(input,RULE_END,FOLLOW_51); 
-
-                            	    												newLeafNode(this_END_50, grammarAccess.getEventAccess().getENDTerminalRuleCall_0_2_2_6_2_3());
-                            	    											
 
                             	    }
 
@@ -5960,48 +5971,48 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                             	    }
                             	    break;
                             	case 9 :
-                            	    // InternalPipelineParser.g:2230:6: ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) ) ) ) )
+                            	    // InternalPipelineParser.g:2230:6: ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? ) ) ) )
                             	    {
-                            	    // InternalPipelineParser.g:2230:6: ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) ) ) ) )
-                            	    // InternalPipelineParser.g:2231:7: {...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) ) ) )
+                            	    // InternalPipelineParser.g:2230:6: ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? ) ) ) )
+                            	    // InternalPipelineParser.g:2231:7: {...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? ) ) )
                             	    {
                             	    if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 8) ) {
                             	        throw new FailedPredicateException(input, "ruleEvent", "getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 8)");
                             	    }
-                            	    // InternalPipelineParser.g:2231:108: ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) ) ) )
-                            	    // InternalPipelineParser.g:2232:8: ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) ) )
+                            	    // InternalPipelineParser.g:2231:108: ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? ) ) )
+                            	    // InternalPipelineParser.g:2232:8: ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? ) )
                             	    {
 
                             	    								getUnorderedGroupHelper().select(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 8);
                             	    							
-                            	    // InternalPipelineParser.g:2235:11: ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) ) )
-                            	    // InternalPipelineParser.g:2235:12: {...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) )
+                            	    // InternalPipelineParser.g:2235:11: ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? ) )
+                            	    // InternalPipelineParser.g:2235:12: {...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? )
                             	    {
                             	    if ( !((true)) ) {
                             	        throw new FailedPredicateException(input, "ruleEvent", "true");
                             	    }
-                            	    // InternalPipelineParser.g:2235:21: (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) )
-                            	    // InternalPipelineParser.g:2235:22: otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )
+                            	    // InternalPipelineParser.g:2235:21: (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? )
+                            	    // InternalPipelineParser.g:2235:22: otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )?
                             	    {
-                            	    otherlv_53=(Token)match(input,Tags,FOLLOW_33); 
+                            	    otherlv_53=(Token)match(input,Tags,FOLLOW_58); 
 
                             	    											newLeafNode(otherlv_53, grammarAccess.getEventAccess().getTagsKeyword_0_2_2_8_0());
                             	    										
                             	    // InternalPipelineParser.g:2239:11: ( (lv_includedTags_54_0= ruleHyphenValues ) )?
-                            	    int alt62=2;
-                            	    int LA62_0 = input.LA(1);
+                            	    int alt63=2;
+                            	    int LA63_0 = input.LA(1);
 
-                            	    if ( (LA62_0==HyphenMinus) ) {
-                            	        alt62=1;
+                            	    if ( (LA63_0==HyphenMinus) ) {
+                            	        alt63=1;
                             	    }
-                            	    else if ( (LA62_0==RULE_BEGIN) ) {
-                            	        int LA62_2 = input.LA(2);
+                            	    else if ( (LA63_0==RULE_BEGIN) ) {
+                            	        int LA63_2 = input.LA(2);
 
-                            	        if ( (LA62_2==HyphenMinus) ) {
-                            	            alt62=1;
+                            	        if ( (LA63_2==HyphenMinus) ) {
+                            	            alt63=1;
                             	        }
                             	    }
-                            	    switch (alt62) {
+                            	    switch (alt63) {
                             	        case 1 :
                             	            // InternalPipelineParser.g:2240:12: (lv_includedTags_54_0= ruleHyphenValues )
                             	            {
@@ -6011,7 +6022,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
                             	            													newCompositeNode(grammarAccess.getEventAccess().getIncludedTagsHyphenValuesParserRuleCall_0_2_2_8_1_0());
                             	            												
-                            	            pushFollow(FOLLOW_16);
+                            	            pushFollow(FOLLOW_59);
                             	            lv_includedTags_54_0=ruleHyphenValues();
 
                             	            state._fsp--;
@@ -6036,121 +6047,132 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
                             	    }
 
-                            	    // InternalPipelineParser.g:2258:11: (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )
-                            	    // InternalPipelineParser.g:2259:12: this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END
-                            	    {
-                            	    this_BEGIN_55=(Token)match(input,RULE_BEGIN,FOLLOW_58); 
+                            	    // InternalPipelineParser.g:2258:11: (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )?
+                            	    int alt66=2;
+                            	    int LA66_0 = input.LA(1);
 
-                            	    												newLeafNode(this_BEGIN_55, grammarAccess.getEventAccess().getBEGINTerminalRuleCall_0_2_2_8_2_0());
-                            	    											
-                            	    // InternalPipelineParser.g:2263:12: (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )?
-                            	    int alt63=2;
-                            	    int LA63_0 = input.LA(1);
-
-                            	    if ( (LA63_0==Include) ) {
-                            	        alt63=1;
+                            	    if ( (LA66_0==RULE_BEGIN) ) {
+                            	        alt66=1;
                             	    }
-                            	    switch (alt63) {
+                            	    switch (alt66) {
                             	        case 1 :
-                            	            // InternalPipelineParser.g:2264:13: otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) )
+                            	            // InternalPipelineParser.g:2259:12: this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END
                             	            {
-                            	            otherlv_56=(Token)match(input,Include,FOLLOW_33); 
+                            	            this_BEGIN_55=(Token)match(input,RULE_BEGIN,FOLLOW_60); 
 
-                            	            													newLeafNode(otherlv_56, grammarAccess.getEventAccess().getIncludeKeyword_0_2_2_8_2_1_0());
-                            	            												
-                            	            // InternalPipelineParser.g:2268:13: ( (lv_includedTags_57_0= ruleHyphenValues ) )
-                            	            // InternalPipelineParser.g:2269:14: (lv_includedTags_57_0= ruleHyphenValues )
-                            	            {
-                            	            // InternalPipelineParser.g:2269:14: (lv_includedTags_57_0= ruleHyphenValues )
-                            	            // InternalPipelineParser.g:2270:15: lv_includedTags_57_0= ruleHyphenValues
-                            	            {
+                            	            												newLeafNode(this_BEGIN_55, grammarAccess.getEventAccess().getBEGINTerminalRuleCall_0_2_2_8_2_0());
+                            	            											
+                            	            // InternalPipelineParser.g:2263:12: (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )?
+                            	            int alt64=2;
+                            	            int LA64_0 = input.LA(1);
 
-                            	            															newCompositeNode(grammarAccess.getEventAccess().getIncludedTagsHyphenValuesParserRuleCall_0_2_2_8_2_1_1_0());
-                            	            														
-                            	            pushFollow(FOLLOW_59);
-                            	            lv_includedTags_57_0=ruleHyphenValues();
+                            	            if ( (LA64_0==Include) ) {
+                            	                alt64=1;
+                            	            }
+                            	            switch (alt64) {
+                            	                case 1 :
+                            	                    // InternalPipelineParser.g:2264:13: otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) )
+                            	                    {
+                            	                    otherlv_56=(Token)match(input,Include,FOLLOW_33); 
 
-                            	            state._fsp--;
+                            	                    													newLeafNode(otherlv_56, grammarAccess.getEventAccess().getIncludeKeyword_0_2_2_8_2_1_0());
+                            	                    												
+                            	                    // InternalPipelineParser.g:2268:13: ( (lv_includedTags_57_0= ruleHyphenValues ) )
+                            	                    // InternalPipelineParser.g:2269:14: (lv_includedTags_57_0= ruleHyphenValues )
+                            	                    {
+                            	                    // InternalPipelineParser.g:2269:14: (lv_includedTags_57_0= ruleHyphenValues )
+                            	                    // InternalPipelineParser.g:2270:15: lv_includedTags_57_0= ruleHyphenValues
+                            	                    {
+
+                            	                    															newCompositeNode(grammarAccess.getEventAccess().getIncludedTagsHyphenValuesParserRuleCall_0_2_2_8_2_1_1_0());
+                            	                    														
+                            	                    pushFollow(FOLLOW_61);
+                            	                    lv_includedTags_57_0=ruleHyphenValues();
+
+                            	                    state._fsp--;
 
 
-                            	            															if (current==null) {
-                            	            																current = createModelElementForParent(grammarAccess.getEventRule());
-                            	            															}
-                            	            															set(
-                            	            																current,
-                            	            																"includedTags",
-                            	            																lv_includedTags_57_0,
-                            	            																"ca.mcgill.devops.pipeline.Pipeline.HyphenValues");
-                            	            															afterParserOrEnumRuleCall();
-                            	            														
+                            	                    															if (current==null) {
+                            	                    																current = createModelElementForParent(grammarAccess.getEventRule());
+                            	                    															}
+                            	                    															set(
+                            	                    																current,
+                            	                    																"includedTags",
+                            	                    																lv_includedTags_57_0,
+                            	                    																"ca.mcgill.devops.pipeline.Pipeline.HyphenValues");
+                            	                    															afterParserOrEnumRuleCall();
+                            	                    														
+
+                            	                    }
+
+
+                            	                    }
+
+
+                            	                    }
+                            	                    break;
 
                             	            }
 
+                            	            // InternalPipelineParser.g:2288:12: (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )?
+                            	            int alt65=2;
+                            	            int LA65_0 = input.LA(1);
+
+                            	            if ( (LA65_0==Exclude) ) {
+                            	                alt65=1;
+                            	            }
+                            	            switch (alt65) {
+                            	                case 1 :
+                            	                    // InternalPipelineParser.g:2289:13: otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) )
+                            	                    {
+                            	                    otherlv_58=(Token)match(input,Exclude,FOLLOW_33); 
+
+                            	                    													newLeafNode(otherlv_58, grammarAccess.getEventAccess().getExcludeKeyword_0_2_2_8_2_2_0());
+                            	                    												
+                            	                    // InternalPipelineParser.g:2293:13: ( (lv_excludedTags_59_0= ruleHyphenValues ) )
+                            	                    // InternalPipelineParser.g:2294:14: (lv_excludedTags_59_0= ruleHyphenValues )
+                            	                    {
+                            	                    // InternalPipelineParser.g:2294:14: (lv_excludedTags_59_0= ruleHyphenValues )
+                            	                    // InternalPipelineParser.g:2295:15: lv_excludedTags_59_0= ruleHyphenValues
+                            	                    {
+
+                            	                    															newCompositeNode(grammarAccess.getEventAccess().getExcludedTagsHyphenValuesParserRuleCall_0_2_2_8_2_2_1_0());
+                            	                    														
+                            	                    pushFollow(FOLLOW_20);
+                            	                    lv_excludedTags_59_0=ruleHyphenValues();
+
+                            	                    state._fsp--;
+
+
+                            	                    															if (current==null) {
+                            	                    																current = createModelElementForParent(grammarAccess.getEventRule());
+                            	                    															}
+                            	                    															set(
+                            	                    																current,
+                            	                    																"excludedTags",
+                            	                    																lv_excludedTags_59_0,
+                            	                    																"ca.mcgill.devops.pipeline.Pipeline.HyphenValues");
+                            	                    															afterParserOrEnumRuleCall();
+                            	                    														
+
+                            	                    }
+
+
+                            	                    }
+
+
+                            	                    }
+                            	                    break;
 
                             	            }
 
+                            	            this_END_60=(Token)match(input,RULE_END,FOLLOW_51); 
+
+                            	            												newLeafNode(this_END_60, grammarAccess.getEventAccess().getENDTerminalRuleCall_0_2_2_8_2_3());
+                            	            											
 
                             	            }
                             	            break;
-
-                            	    }
-
-                            	    // InternalPipelineParser.g:2288:12: (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )?
-                            	    int alt64=2;
-                            	    int LA64_0 = input.LA(1);
-
-                            	    if ( (LA64_0==Exclude) ) {
-                            	        alt64=1;
-                            	    }
-                            	    switch (alt64) {
-                            	        case 1 :
-                            	            // InternalPipelineParser.g:2289:13: otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) )
-                            	            {
-                            	            otherlv_58=(Token)match(input,Exclude,FOLLOW_33); 
-
-                            	            													newLeafNode(otherlv_58, grammarAccess.getEventAccess().getExcludeKeyword_0_2_2_8_2_2_0());
-                            	            												
-                            	            // InternalPipelineParser.g:2293:13: ( (lv_excludedTags_59_0= ruleHyphenValues ) )
-                            	            // InternalPipelineParser.g:2294:14: (lv_excludedTags_59_0= ruleHyphenValues )
-                            	            {
-                            	            // InternalPipelineParser.g:2294:14: (lv_excludedTags_59_0= ruleHyphenValues )
-                            	            // InternalPipelineParser.g:2295:15: lv_excludedTags_59_0= ruleHyphenValues
-                            	            {
-
-                            	            															newCompositeNode(grammarAccess.getEventAccess().getExcludedTagsHyphenValuesParserRuleCall_0_2_2_8_2_2_1_0());
-                            	            														
-                            	            pushFollow(FOLLOW_20);
-                            	            lv_excludedTags_59_0=ruleHyphenValues();
-
-                            	            state._fsp--;
-
-
-                            	            															if (current==null) {
-                            	            																current = createModelElementForParent(grammarAccess.getEventRule());
-                            	            															}
-                            	            															set(
-                            	            																current,
-                            	            																"excludedTags",
-                            	            																lv_excludedTags_59_0,
-                            	            																"ca.mcgill.devops.pipeline.Pipeline.HyphenValues");
-                            	            															afterParserOrEnumRuleCall();
-                            	            														
-
-                            	            }
-
-
-                            	            }
-
-
-                            	            }
-                            	            break;
-
-                            	    }
-
-                            	    this_END_60=(Token)match(input,RULE_END,FOLLOW_51); 
-
-                            	    												newLeafNode(this_END_60, grammarAccess.getEventAccess().getENDTerminalRuleCall_0_2_2_8_2_3());
-                            	    											
 
                             	    }
 
@@ -6251,7 +6273,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                             	    break;
 
                             	default :
-                            	    break loop65;
+                            	    break loop67;
                                 }
                             } while (true);
 
@@ -6287,22 +6309,22 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     // InternalPipelineParser.g:2372:3: ( ( ( ( (lv_scheduleName_64_1= Schedules | lv_scheduleName_64_2= Schedule ) ) ) ( (lv_triggerSchedules_65_0= ruleTriggerSchedule ) )* ) | ( ( ( (lv_workflowType_66_0= Workflow_call ) ) | otherlv_67= Workflow_dispatch ) (this_BEGIN_68= RULE_BEGIN ( (lv_workFlowActivities_69_0= ruleActivity ) )* this_END_70= RULE_END ) ) )
                     {
                     // InternalPipelineParser.g:2372:3: ( ( ( ( (lv_scheduleName_64_1= Schedules | lv_scheduleName_64_2= Schedule ) ) ) ( (lv_triggerSchedules_65_0= ruleTriggerSchedule ) )* ) | ( ( ( (lv_workflowType_66_0= Workflow_call ) ) | otherlv_67= Workflow_dispatch ) (this_BEGIN_68= RULE_BEGIN ( (lv_workFlowActivities_69_0= ruleActivity ) )* this_END_70= RULE_END ) ) )
-                    int alt71=2;
-                    int LA71_0 = input.LA(1);
+                    int alt73=2;
+                    int LA73_0 = input.LA(1);
 
-                    if ( (LA71_0==Schedules||LA71_0==Schedule) ) {
-                        alt71=1;
+                    if ( (LA73_0==Schedules||LA73_0==Schedule) ) {
+                        alt73=1;
                     }
-                    else if ( (LA71_0==Workflow_dispatch||LA71_0==Workflow_call) ) {
-                        alt71=2;
+                    else if ( (LA73_0==Workflow_dispatch||LA73_0==Workflow_call) ) {
+                        alt73=2;
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("", 71, 0, input);
+                            new NoViableAltException("", 73, 0, input);
 
                         throw nvae;
                     }
-                    switch (alt71) {
+                    switch (alt73) {
                         case 1 :
                             // InternalPipelineParser.g:2373:4: ( ( ( (lv_scheduleName_64_1= Schedules | lv_scheduleName_64_2= Schedule ) ) ) ( (lv_triggerSchedules_65_0= ruleTriggerSchedule ) )* )
                             {
@@ -6316,22 +6338,22 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                             // InternalPipelineParser.g:2376:7: (lv_scheduleName_64_1= Schedules | lv_scheduleName_64_2= Schedule )
                             {
                             // InternalPipelineParser.g:2376:7: (lv_scheduleName_64_1= Schedules | lv_scheduleName_64_2= Schedule )
-                            int alt67=2;
-                            int LA67_0 = input.LA(1);
+                            int alt69=2;
+                            int LA69_0 = input.LA(1);
 
-                            if ( (LA67_0==Schedules) ) {
-                                alt67=1;
+                            if ( (LA69_0==Schedules) ) {
+                                alt69=1;
                             }
-                            else if ( (LA67_0==Schedule) ) {
-                                alt67=2;
+                            else if ( (LA69_0==Schedule) ) {
+                                alt69=2;
                             }
                             else {
                                 NoViableAltException nvae =
-                                    new NoViableAltException("", 67, 0, input);
+                                    new NoViableAltException("", 69, 0, input);
 
                                 throw nvae;
                             }
-                            switch (alt67) {
+                            switch (alt69) {
                                 case 1 :
                                     // InternalPipelineParser.g:2377:8: lv_scheduleName_64_1= Schedules
                                     {
@@ -6374,17 +6396,17 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                             }
 
                             // InternalPipelineParser.g:2401:5: ( (lv_triggerSchedules_65_0= ruleTriggerSchedule ) )*
-                            loop68:
+                            loop70:
                             do {
-                                int alt68=2;
-                                int LA68_0 = input.LA(1);
+                                int alt70=2;
+                                int LA70_0 = input.LA(1);
 
-                                if ( (LA68_0==HyphenMinus||LA68_0==RULE_BEGIN) ) {
-                                    alt68=1;
+                                if ( (LA70_0==HyphenMinus||LA70_0==RULE_BEGIN) ) {
+                                    alt70=1;
                                 }
 
 
-                                switch (alt68) {
+                                switch (alt70) {
                             	case 1 :
                             	    // InternalPipelineParser.g:2402:6: (lv_triggerSchedules_65_0= ruleTriggerSchedule )
                             	    {
@@ -6418,7 +6440,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                             	    break;
 
                             	default :
-                            	    break loop68;
+                            	    break loop70;
                                 }
                             } while (true);
 
@@ -6435,22 +6457,22 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                             // InternalPipelineParser.g:2423:5: ( ( (lv_workflowType_66_0= Workflow_call ) ) | otherlv_67= Workflow_dispatch ) (this_BEGIN_68= RULE_BEGIN ( (lv_workFlowActivities_69_0= ruleActivity ) )* this_END_70= RULE_END )
                             {
                             // InternalPipelineParser.g:2423:5: ( ( (lv_workflowType_66_0= Workflow_call ) ) | otherlv_67= Workflow_dispatch )
-                            int alt69=2;
-                            int LA69_0 = input.LA(1);
+                            int alt71=2;
+                            int LA71_0 = input.LA(1);
 
-                            if ( (LA69_0==Workflow_call) ) {
-                                alt69=1;
+                            if ( (LA71_0==Workflow_call) ) {
+                                alt71=1;
                             }
-                            else if ( (LA69_0==Workflow_dispatch) ) {
-                                alt69=2;
+                            else if ( (LA71_0==Workflow_dispatch) ) {
+                                alt71=2;
                             }
                             else {
                                 NoViableAltException nvae =
-                                    new NoViableAltException("", 69, 0, input);
+                                    new NoViableAltException("", 71, 0, input);
 
                                 throw nvae;
                             }
-                            switch (alt69) {
+                            switch (alt71) {
                                 case 1 :
                                     // InternalPipelineParser.g:2424:6: ( (lv_workflowType_66_0= Workflow_call ) )
                                     {
@@ -6495,22 +6517,22 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                             // InternalPipelineParser.g:2444:5: (this_BEGIN_68= RULE_BEGIN ( (lv_workFlowActivities_69_0= ruleActivity ) )* this_END_70= RULE_END )
                             // InternalPipelineParser.g:2445:6: this_BEGIN_68= RULE_BEGIN ( (lv_workFlowActivities_69_0= ruleActivity ) )* this_END_70= RULE_END
                             {
-                            this_BEGIN_68=(Token)match(input,RULE_BEGIN,FOLLOW_60); 
+                            this_BEGIN_68=(Token)match(input,RULE_BEGIN,FOLLOW_62); 
 
                             						newLeafNode(this_BEGIN_68, grammarAccess.getEventAccess().getBEGINTerminalRuleCall_1_1_1_0());
                             					
                             // InternalPipelineParser.g:2449:6: ( (lv_workFlowActivities_69_0= ruleActivity ) )*
-                            loop70:
+                            loop72:
                             do {
-                                int alt70=2;
-                                int LA70_0 = input.LA(1);
+                                int alt72=2;
+                                int LA72_0 = input.LA(1);
 
-                                if ( (LA70_0==Outputs||LA70_0==Secrets||LA70_0==Inputs||LA70_0==HyphenMinus||LA70_0==LeftSquareBracket||LA70_0==RULE_BEGIN) ) {
-                                    alt70=1;
+                                if ( (LA72_0==Outputs||LA72_0==Secrets||LA72_0==Inputs||LA72_0==HyphenMinus||LA72_0==LeftSquareBracket||LA72_0==RULE_BEGIN) ) {
+                                    alt72=1;
                                 }
 
 
-                                switch (alt70) {
+                                switch (alt72) {
                             	case 1 :
                             	    // InternalPipelineParser.g:2450:7: (lv_workFlowActivities_69_0= ruleActivity )
                             	    {
@@ -6520,7 +6542,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
                             	    								newCompositeNode(grammarAccess.getEventAccess().getWorkFlowActivitiesActivityParserRuleCall_1_1_1_1_0());
                             	    							
-                            	    pushFollow(FOLLOW_60);
+                            	    pushFollow(FOLLOW_62);
                             	    lv_workFlowActivities_69_0=ruleActivity();
 
                             	    state._fsp--;
@@ -6544,7 +6566,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                             	    break;
 
                             	default :
-                            	    break loop70;
+                            	    break loop72;
                                 }
                             } while (true);
 
@@ -6668,29 +6690,29 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             // InternalPipelineParser.g:2494:3: ( (otherlv_0= HyphenMinus otherlv_1= Cron ( (lv_cronValue_2_0= RULE_STRING ) ) ) | (this_BEGIN_3= RULE_BEGIN (otherlv_4= HyphenMinus otherlv_5= Cron ( (lv_cronValue_6_0= RULE_STRING ) ) ) this_END_7= RULE_END ) ) (this_BEGIN_8= RULE_BEGIN (otherlv_9= DisplayName ( (lv_displayName_10_0= ruleUnquotedString ) ) )? (otherlv_11= Branches (this_BEGIN_12= RULE_BEGIN (otherlv_13= Include ( (lv_includedBranches_14_0= ruleBranch ) )* )? (otherlv_15= Exclude ( (lv_excludedBranches_16_0= ruleBranch ) )* )? this_END_17= RULE_END ) ) ( ( ( ( ({...}? => ( ({...}? => (otherlv_19= Batch ( (lv_batch_20_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Always ( (lv_always_22_0= RULE_ID ) ) ) ) ) ) )* ) ) ) this_END_23= RULE_END )?
             {
             // InternalPipelineParser.g:2494:3: ( (otherlv_0= HyphenMinus otherlv_1= Cron ( (lv_cronValue_2_0= RULE_STRING ) ) ) | (this_BEGIN_3= RULE_BEGIN (otherlv_4= HyphenMinus otherlv_5= Cron ( (lv_cronValue_6_0= RULE_STRING ) ) ) this_END_7= RULE_END ) )
-            int alt73=2;
-            int LA73_0 = input.LA(1);
+            int alt75=2;
+            int LA75_0 = input.LA(1);
 
-            if ( (LA73_0==HyphenMinus) ) {
-                alt73=1;
+            if ( (LA75_0==HyphenMinus) ) {
+                alt75=1;
             }
-            else if ( (LA73_0==RULE_BEGIN) ) {
-                alt73=2;
+            else if ( (LA75_0==RULE_BEGIN) ) {
+                alt75=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 73, 0, input);
+                    new NoViableAltException("", 75, 0, input);
 
                 throw nvae;
             }
-            switch (alt73) {
+            switch (alt75) {
                 case 1 :
                     // InternalPipelineParser.g:2495:4: (otherlv_0= HyphenMinus otherlv_1= Cron ( (lv_cronValue_2_0= RULE_STRING ) ) )
                     {
                     // InternalPipelineParser.g:2495:4: (otherlv_0= HyphenMinus otherlv_1= Cron ( (lv_cronValue_2_0= RULE_STRING ) ) )
                     // InternalPipelineParser.g:2496:5: otherlv_0= HyphenMinus otherlv_1= Cron ( (lv_cronValue_2_0= RULE_STRING ) )
                     {
-                    otherlv_0=(Token)match(input,HyphenMinus,FOLLOW_61); 
+                    otherlv_0=(Token)match(input,HyphenMinus,FOLLOW_63); 
 
                     					newLeafNode(otherlv_0, grammarAccess.getTriggerScheduleAccess().getHyphenMinusKeyword_0_0_0());
                     				
@@ -6736,14 +6758,14 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     // InternalPipelineParser.g:2524:4: (this_BEGIN_3= RULE_BEGIN (otherlv_4= HyphenMinus otherlv_5= Cron ( (lv_cronValue_6_0= RULE_STRING ) ) ) this_END_7= RULE_END )
                     // InternalPipelineParser.g:2525:5: this_BEGIN_3= RULE_BEGIN (otherlv_4= HyphenMinus otherlv_5= Cron ( (lv_cronValue_6_0= RULE_STRING ) ) ) this_END_7= RULE_END
                     {
-                    this_BEGIN_3=(Token)match(input,RULE_BEGIN,FOLLOW_62); 
+                    this_BEGIN_3=(Token)match(input,RULE_BEGIN,FOLLOW_64); 
 
                     					newLeafNode(this_BEGIN_3, grammarAccess.getTriggerScheduleAccess().getBEGINTerminalRuleCall_0_1_0());
                     				
                     // InternalPipelineParser.g:2529:5: (otherlv_4= HyphenMinus otherlv_5= Cron ( (lv_cronValue_6_0= RULE_STRING ) ) )
                     // InternalPipelineParser.g:2530:6: otherlv_4= HyphenMinus otherlv_5= Cron ( (lv_cronValue_6_0= RULE_STRING ) )
                     {
-                    otherlv_4=(Token)match(input,HyphenMinus,FOLLOW_61); 
+                    otherlv_4=(Token)match(input,HyphenMinus,FOLLOW_63); 
 
                     						newLeafNode(otherlv_4, grammarAccess.getTriggerScheduleAccess().getHyphenMinusKeyword_0_1_1_0());
                     					
@@ -6794,32 +6816,32 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             }
 
             // InternalPipelineParser.g:2563:3: (this_BEGIN_8= RULE_BEGIN (otherlv_9= DisplayName ( (lv_displayName_10_0= ruleUnquotedString ) ) )? (otherlv_11= Branches (this_BEGIN_12= RULE_BEGIN (otherlv_13= Include ( (lv_includedBranches_14_0= ruleBranch ) )* )? (otherlv_15= Exclude ( (lv_excludedBranches_16_0= ruleBranch ) )* )? this_END_17= RULE_END ) ) ( ( ( ( ({...}? => ( ({...}? => (otherlv_19= Batch ( (lv_batch_20_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Always ( (lv_always_22_0= RULE_ID ) ) ) ) ) ) )* ) ) ) this_END_23= RULE_END )?
-            int alt80=2;
-            int LA80_0 = input.LA(1);
+            int alt82=2;
+            int LA82_0 = input.LA(1);
 
-            if ( (LA80_0==RULE_BEGIN) ) {
-                int LA80_1 = input.LA(2);
+            if ( (LA82_0==RULE_BEGIN) ) {
+                int LA82_1 = input.LA(2);
 
-                if ( (LA80_1==DisplayName||LA80_1==Branches) ) {
-                    alt80=1;
+                if ( (LA82_1==DisplayName||LA82_1==Branches) ) {
+                    alt82=1;
                 }
             }
-            switch (alt80) {
+            switch (alt82) {
                 case 1 :
                     // InternalPipelineParser.g:2564:4: this_BEGIN_8= RULE_BEGIN (otherlv_9= DisplayName ( (lv_displayName_10_0= ruleUnquotedString ) ) )? (otherlv_11= Branches (this_BEGIN_12= RULE_BEGIN (otherlv_13= Include ( (lv_includedBranches_14_0= ruleBranch ) )* )? (otherlv_15= Exclude ( (lv_excludedBranches_16_0= ruleBranch ) )* )? this_END_17= RULE_END ) ) ( ( ( ( ({...}? => ( ({...}? => (otherlv_19= Batch ( (lv_batch_20_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Always ( (lv_always_22_0= RULE_ID ) ) ) ) ) ) )* ) ) ) this_END_23= RULE_END
                     {
-                    this_BEGIN_8=(Token)match(input,RULE_BEGIN,FOLLOW_63); 
+                    this_BEGIN_8=(Token)match(input,RULE_BEGIN,FOLLOW_65); 
 
                     				newLeafNode(this_BEGIN_8, grammarAccess.getTriggerScheduleAccess().getBEGINTerminalRuleCall_1_0());
                     			
                     // InternalPipelineParser.g:2568:4: (otherlv_9= DisplayName ( (lv_displayName_10_0= ruleUnquotedString ) ) )?
-                    int alt74=2;
-                    int LA74_0 = input.LA(1);
+                    int alt76=2;
+                    int LA76_0 = input.LA(1);
 
-                    if ( (LA74_0==DisplayName) ) {
-                        alt74=1;
+                    if ( (LA76_0==DisplayName) ) {
+                        alt76=1;
                     }
-                    switch (alt74) {
+                    switch (alt76) {
                         case 1 :
                             // InternalPipelineParser.g:2569:5: otherlv_9= DisplayName ( (lv_displayName_10_0= ruleUnquotedString ) )
                             {
@@ -6836,7 +6858,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
                             							newCompositeNode(grammarAccess.getTriggerScheduleAccess().getDisplayNameUnquotedStringParserRuleCall_1_1_1_0());
                             						
-                            pushFollow(FOLLOW_64);
+                            pushFollow(FOLLOW_66);
                             lv_displayName_10_0=ruleUnquotedString();
 
                             state._fsp--;
@@ -6874,18 +6896,18 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     // InternalPipelineParser.g:2598:5: (this_BEGIN_12= RULE_BEGIN (otherlv_13= Include ( (lv_includedBranches_14_0= ruleBranch ) )* )? (otherlv_15= Exclude ( (lv_excludedBranches_16_0= ruleBranch ) )* )? this_END_17= RULE_END )
                     // InternalPipelineParser.g:2599:6: this_BEGIN_12= RULE_BEGIN (otherlv_13= Include ( (lv_includedBranches_14_0= ruleBranch ) )* )? (otherlv_15= Exclude ( (lv_excludedBranches_16_0= ruleBranch ) )* )? this_END_17= RULE_END
                     {
-                    this_BEGIN_12=(Token)match(input,RULE_BEGIN,FOLLOW_58); 
+                    this_BEGIN_12=(Token)match(input,RULE_BEGIN,FOLLOW_60); 
 
                     						newLeafNode(this_BEGIN_12, grammarAccess.getTriggerScheduleAccess().getBEGINTerminalRuleCall_1_2_1_0());
                     					
                     // InternalPipelineParser.g:2603:6: (otherlv_13= Include ( (lv_includedBranches_14_0= ruleBranch ) )* )?
-                    int alt76=2;
-                    int LA76_0 = input.LA(1);
+                    int alt78=2;
+                    int LA78_0 = input.LA(1);
 
-                    if ( (LA76_0==Include) ) {
-                        alt76=1;
+                    if ( (LA78_0==Include) ) {
+                        alt78=1;
                     }
-                    switch (alt76) {
+                    switch (alt78) {
                         case 1 :
                             // InternalPipelineParser.g:2604:7: otherlv_13= Include ( (lv_includedBranches_14_0= ruleBranch ) )*
                             {
@@ -6894,17 +6916,17 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                             							newLeafNode(otherlv_13, grammarAccess.getTriggerScheduleAccess().getIncludeKeyword_1_2_1_1_0());
                             						
                             // InternalPipelineParser.g:2608:7: ( (lv_includedBranches_14_0= ruleBranch ) )*
-                            loop75:
+                            loop77:
                             do {
-                                int alt75=2;
-                                int LA75_0 = input.LA(1);
+                                int alt77=2;
+                                int LA77_0 = input.LA(1);
 
-                                if ( (LA75_0==HyphenMinus||LA75_0==RULE_ID||LA75_0==RULE_STRING) ) {
-                                    alt75=1;
+                                if ( (LA77_0==HyphenMinus||LA77_0==RULE_ID||LA77_0==RULE_STRING) ) {
+                                    alt77=1;
                                 }
 
 
-                                switch (alt75) {
+                                switch (alt77) {
                             	case 1 :
                             	    // InternalPipelineParser.g:2609:8: (lv_includedBranches_14_0= ruleBranch )
                             	    {
@@ -6938,7 +6960,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                             	    break;
 
                             	default :
-                            	    break loop75;
+                            	    break loop77;
                                 }
                             } while (true);
 
@@ -6949,13 +6971,13 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalPipelineParser.g:2628:6: (otherlv_15= Exclude ( (lv_excludedBranches_16_0= ruleBranch ) )* )?
-                    int alt78=2;
-                    int LA78_0 = input.LA(1);
+                    int alt80=2;
+                    int LA80_0 = input.LA(1);
 
-                    if ( (LA78_0==Exclude) ) {
-                        alt78=1;
+                    if ( (LA80_0==Exclude) ) {
+                        alt80=1;
                     }
-                    switch (alt78) {
+                    switch (alt80) {
                         case 1 :
                             // InternalPipelineParser.g:2629:7: otherlv_15= Exclude ( (lv_excludedBranches_16_0= ruleBranch ) )*
                             {
@@ -6964,17 +6986,17 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                             							newLeafNode(otherlv_15, grammarAccess.getTriggerScheduleAccess().getExcludeKeyword_1_2_1_2_0());
                             						
                             // InternalPipelineParser.g:2633:7: ( (lv_excludedBranches_16_0= ruleBranch ) )*
-                            loop77:
+                            loop79:
                             do {
-                                int alt77=2;
-                                int LA77_0 = input.LA(1);
+                                int alt79=2;
+                                int LA79_0 = input.LA(1);
 
-                                if ( (LA77_0==HyphenMinus||LA77_0==RULE_ID||LA77_0==RULE_STRING) ) {
-                                    alt77=1;
+                                if ( (LA79_0==HyphenMinus||LA79_0==RULE_ID||LA79_0==RULE_STRING) ) {
+                                    alt79=1;
                                 }
 
 
-                                switch (alt77) {
+                                switch (alt79) {
                             	case 1 :
                             	    // InternalPipelineParser.g:2634:8: (lv_excludedBranches_16_0= ruleBranch )
                             	    {
@@ -7008,7 +7030,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                             	    break;
 
                             	default :
-                            	    break loop77;
+                            	    break loop79;
                                 }
                             } while (true);
 
@@ -7018,7 +7040,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    this_END_17=(Token)match(input,RULE_END,FOLLOW_65); 
+                    this_END_17=(Token)match(input,RULE_END,FOLLOW_67); 
 
                     						newLeafNode(this_END_17, grammarAccess.getTriggerScheduleAccess().getENDTerminalRuleCall_1_2_1_3());
                     					
@@ -7041,20 +7063,20 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     // InternalPipelineParser.g:2665:7: ( ({...}? => ( ({...}? => (otherlv_19= Batch ( (lv_batch_20_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Always ( (lv_always_22_0= RULE_ID ) ) ) ) ) ) )*
                     {
                     // InternalPipelineParser.g:2665:7: ( ({...}? => ( ({...}? => (otherlv_19= Batch ( (lv_batch_20_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Always ( (lv_always_22_0= RULE_ID ) ) ) ) ) ) )*
-                    loop79:
+                    loop81:
                     do {
-                        int alt79=3;
-                        int LA79_0 = input.LA(1);
+                        int alt81=3;
+                        int LA81_0 = input.LA(1);
 
-                        if ( LA79_0 == Batch && getUnorderedGroupHelper().canSelect(grammarAccess.getTriggerScheduleAccess().getUnorderedGroup_1_3(), 0) ) {
-                            alt79=1;
+                        if ( LA81_0 == Batch && getUnorderedGroupHelper().canSelect(grammarAccess.getTriggerScheduleAccess().getUnorderedGroup_1_3(), 0) ) {
+                            alt81=1;
                         }
-                        else if ( LA79_0 == Always && getUnorderedGroupHelper().canSelect(grammarAccess.getTriggerScheduleAccess().getUnorderedGroup_1_3(), 1) ) {
-                            alt79=2;
+                        else if ( LA81_0 == Always && getUnorderedGroupHelper().canSelect(grammarAccess.getTriggerScheduleAccess().getUnorderedGroup_1_3(), 1) ) {
+                            alt81=2;
                         }
 
 
-                        switch (alt79) {
+                        switch (alt81) {
                     	case 1 :
                     	    // InternalPipelineParser.g:2666:5: ({...}? => ( ({...}? => (otherlv_19= Batch ( (lv_batch_20_0= RULE_ID ) ) ) ) ) )
                     	    {
@@ -7089,7 +7111,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	    // InternalPipelineParser.g:2676:11: (lv_batch_20_0= RULE_ID )
                     	    // InternalPipelineParser.g:2677:12: lv_batch_20_0= RULE_ID
                     	    {
-                    	    lv_batch_20_0=(Token)match(input,RULE_ID,FOLLOW_65); 
+                    	    lv_batch_20_0=(Token)match(input,RULE_ID,FOLLOW_67); 
 
                     	    												newLeafNode(lv_batch_20_0, grammarAccess.getTriggerScheduleAccess().getBatchIDTerminalRuleCall_1_3_0_1_0());
                     	    											
@@ -7161,7 +7183,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	    // InternalPipelineParser.g:2709:11: (lv_always_22_0= RULE_ID )
                     	    // InternalPipelineParser.g:2710:12: lv_always_22_0= RULE_ID
                     	    {
-                    	    lv_always_22_0=(Token)match(input,RULE_ID,FOLLOW_65); 
+                    	    lv_always_22_0=(Token)match(input,RULE_ID,FOLLOW_67); 
 
                     	    												newLeafNode(lv_always_22_0, grammarAccess.getTriggerScheduleAccess().getAlwaysIDTerminalRuleCall_1_3_1_1_0());
                     	    											
@@ -7201,7 +7223,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop79;
+                    	    break loop81;
                         }
                     } while (true);
 
@@ -7305,13 +7327,13 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             // InternalPipelineParser.g:2763:3: (otherlv_0= HyphenMinus )? ( ( (lv_name_1_1= RULE_ID | lv_name_1_2= RULE_STRING ) ) )
             {
             // InternalPipelineParser.g:2763:3: (otherlv_0= HyphenMinus )?
-            int alt81=2;
-            int LA81_0 = input.LA(1);
+            int alt83=2;
+            int LA83_0 = input.LA(1);
 
-            if ( (LA81_0==HyphenMinus) ) {
-                alt81=1;
+            if ( (LA83_0==HyphenMinus) ) {
+                alt83=1;
             }
-            switch (alt81) {
+            switch (alt83) {
                 case 1 :
                     // InternalPipelineParser.g:2764:4: otherlv_0= HyphenMinus
                     {
@@ -7332,22 +7354,22 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             // InternalPipelineParser.g:2771:5: (lv_name_1_1= RULE_ID | lv_name_1_2= RULE_STRING )
             {
             // InternalPipelineParser.g:2771:5: (lv_name_1_1= RULE_ID | lv_name_1_2= RULE_STRING )
-            int alt82=2;
-            int LA82_0 = input.LA(1);
+            int alt84=2;
+            int LA84_0 = input.LA(1);
 
-            if ( (LA82_0==RULE_ID) ) {
-                alt82=1;
+            if ( (LA84_0==RULE_ID) ) {
+                alt84=1;
             }
-            else if ( (LA82_0==RULE_STRING) ) {
-                alt82=2;
+            else if ( (LA84_0==RULE_STRING) ) {
+                alt84=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 82, 0, input);
+                    new NoViableAltException("", 84, 0, input);
 
                 throw nvae;
             }
-            switch (alt82) {
+            switch (alt84) {
                 case 1 :
                     // InternalPipelineParser.g:2772:6: lv_name_1_1= RULE_ID
                     {
@@ -7480,22 +7502,22 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             // InternalPipelineParser.g:2822:2: ( ( ( (lv_name_0_1= ruleHyphenValues | lv_name_0_2= ruleArrayList ) ) ) | ( ( ( (lv_name_1_1= Inputs | lv_name_1_2= Outputs | lv_name_1_3= Secrets ) ) ) (this_BEGIN_2= RULE_BEGIN ( (lv_activities_3_0= ruleWorkFlowKeyValue ) )+ this_END_4= RULE_END ) ) )
             {
             // InternalPipelineParser.g:2822:2: ( ( ( (lv_name_0_1= ruleHyphenValues | lv_name_0_2= ruleArrayList ) ) ) | ( ( ( (lv_name_1_1= Inputs | lv_name_1_2= Outputs | lv_name_1_3= Secrets ) ) ) (this_BEGIN_2= RULE_BEGIN ( (lv_activities_3_0= ruleWorkFlowKeyValue ) )+ this_END_4= RULE_END ) ) )
-            int alt86=2;
-            int LA86_0 = input.LA(1);
+            int alt88=2;
+            int LA88_0 = input.LA(1);
 
-            if ( (LA86_0==HyphenMinus||LA86_0==LeftSquareBracket||LA86_0==RULE_BEGIN) ) {
-                alt86=1;
+            if ( (LA88_0==HyphenMinus||LA88_0==LeftSquareBracket||LA88_0==RULE_BEGIN) ) {
+                alt88=1;
             }
-            else if ( (LA86_0==Outputs||LA86_0==Secrets||LA86_0==Inputs) ) {
-                alt86=2;
+            else if ( (LA88_0==Outputs||LA88_0==Secrets||LA88_0==Inputs) ) {
+                alt88=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 86, 0, input);
+                    new NoViableAltException("", 88, 0, input);
 
                 throw nvae;
             }
-            switch (alt86) {
+            switch (alt88) {
                 case 1 :
                     // InternalPipelineParser.g:2823:3: ( ( (lv_name_0_1= ruleHyphenValues | lv_name_0_2= ruleArrayList ) ) )
                     {
@@ -7506,22 +7528,22 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     // InternalPipelineParser.g:2825:5: (lv_name_0_1= ruleHyphenValues | lv_name_0_2= ruleArrayList )
                     {
                     // InternalPipelineParser.g:2825:5: (lv_name_0_1= ruleHyphenValues | lv_name_0_2= ruleArrayList )
-                    int alt83=2;
-                    int LA83_0 = input.LA(1);
+                    int alt85=2;
+                    int LA85_0 = input.LA(1);
 
-                    if ( (LA83_0==HyphenMinus||LA83_0==RULE_BEGIN) ) {
-                        alt83=1;
+                    if ( (LA85_0==HyphenMinus||LA85_0==RULE_BEGIN) ) {
+                        alt85=1;
                     }
-                    else if ( (LA83_0==LeftSquareBracket) ) {
-                        alt83=2;
+                    else if ( (LA85_0==LeftSquareBracket) ) {
+                        alt85=2;
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("", 83, 0, input);
+                            new NoViableAltException("", 85, 0, input);
 
                         throw nvae;
                     }
-                    switch (alt83) {
+                    switch (alt85) {
                         case 1 :
                             // InternalPipelineParser.g:2826:6: lv_name_0_1= ruleHyphenValues
                             {
@@ -7597,31 +7619,31 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     // InternalPipelineParser.g:2864:6: (lv_name_1_1= Inputs | lv_name_1_2= Outputs | lv_name_1_3= Secrets )
                     {
                     // InternalPipelineParser.g:2864:6: (lv_name_1_1= Inputs | lv_name_1_2= Outputs | lv_name_1_3= Secrets )
-                    int alt84=3;
+                    int alt86=3;
                     switch ( input.LA(1) ) {
                     case Inputs:
                         {
-                        alt84=1;
+                        alt86=1;
                         }
                         break;
                     case Outputs:
                         {
-                        alt84=2;
+                        alt86=2;
                         }
                         break;
                     case Secrets:
                         {
-                        alt84=3;
+                        alt86=3;
                         }
                         break;
                     default:
                         NoViableAltException nvae =
-                            new NoViableAltException("", 84, 0, input);
+                            new NoViableAltException("", 86, 0, input);
 
                         throw nvae;
                     }
 
-                    switch (alt84) {
+                    switch (alt86) {
                         case 1 :
                             // InternalPipelineParser.g:2865:7: lv_name_1_1= Inputs
                             {
@@ -7687,18 +7709,18 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     					newLeafNode(this_BEGIN_2, grammarAccess.getActivityAccess().getBEGINTerminalRuleCall_1_1_0());
                     				
                     // InternalPipelineParser.g:2905:5: ( (lv_activities_3_0= ruleWorkFlowKeyValue ) )+
-                    int cnt85=0;
-                    loop85:
+                    int cnt87=0;
+                    loop87:
                     do {
-                        int alt85=2;
-                        int LA85_0 = input.LA(1);
+                        int alt87=2;
+                        int LA87_0 = input.LA(1);
 
-                        if ( (LA85_0==RULE_ID) ) {
-                            alt85=1;
+                        if ( (LA87_0==RULE_ID) ) {
+                            alt87=1;
                         }
 
 
-                        switch (alt85) {
+                        switch (alt87) {
                     	case 1 :
                     	    // InternalPipelineParser.g:2906:6: (lv_activities_3_0= ruleWorkFlowKeyValue )
                     	    {
@@ -7732,12 +7754,12 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    if ( cnt85 >= 1 ) break loop85;
+                    	    if ( cnt87 >= 1 ) break loop87;
                                 EarlyExitException eee =
-                                    new EarlyExitException(85, input);
+                                    new EarlyExitException(87, input);
                                 throw eee;
                         }
-                        cnt85++;
+                        cnt87++;
                     } while (true);
 
                     this_END_4=(Token)match(input,RULE_END,FOLLOW_2); 
@@ -7866,7 +7888,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             // InternalPipelineParser.g:2949:3: (otherlv_0= HyphenMinus otherlv_1= Stage ( (lv_name_2_0= ruleAnyData ) ) )
             // InternalPipelineParser.g:2950:4: otherlv_0= HyphenMinus otherlv_1= Stage ( (lv_name_2_0= ruleAnyData ) )
             {
-            otherlv_0=(Token)match(input,HyphenMinus,FOLLOW_66); 
+            otherlv_0=(Token)match(input,HyphenMinus,FOLLOW_68); 
 
             				newLeafNode(otherlv_0, grammarAccess.getStageAccess().getHyphenMinusKeyword_0_0());
             			
@@ -7883,7 +7905,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
             						newCompositeNode(grammarAccess.getStageAccess().getNameAnyDataParserRuleCall_0_2_0());
             					
-            pushFollow(FOLLOW_67);
+            pushFollow(FOLLOW_69);
             lv_name_2_0=ruleAnyData();
 
             state._fsp--;
@@ -7909,13 +7931,13 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             }
 
             // InternalPipelineParser.g:2978:3: ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_4= RULE_BEGIN (otherlv_5= DisplayName ( (lv_displayName_6_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Pool ( ( (lv_poolValue_8_0= ruleAnyData ) ) | ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_10= RULE_BEGIN (otherlv_11= Name ( (lv_vmName_12_0= RULE_ID ) ) ) (otherlv_13= VmImage ( ( (lv_vmImage_14_1= RULE_ID | lv_vmImage_14_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_15= Demands ( ( (lv_vmDemands_16_1= ruleAnyData | lv_vmDemands_16_2= ruleHyphenValues ) ) ) )? this_END_17= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_18= Condition ( (lv_conditionValue_19_0= ruleAnyData ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= IsSkippable ( (lv_isSkippable_21_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_22= Variables ( (lv_stageVariables_23_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= DependsOn ( (otherlv_25= RULE_ID ) )* ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_26= Jobs ( (lv_jobs_27_0= ruleJob ) )* ) this_END_28= RULE_END ) ) ) ) )+ {...}?) ) )?
-            int alt98=2;
-            int LA98_0 = input.LA(1);
+            int alt100=2;
+            int LA100_0 = input.LA(1);
 
-            if ( (LA98_0==IsSkippable||LA98_0==Condition||LA98_0==DependsOn||LA98_0==Variables||LA98_0==Jobs||LA98_0==Pool||LA98_0==RULE_BEGIN) ) {
-                alt98=1;
+            if ( (LA100_0==IsSkippable||LA100_0==Condition||LA100_0==DependsOn||LA100_0==Variables||LA100_0==Jobs||LA100_0==Pool||LA100_0==RULE_BEGIN) ) {
+                alt100=1;
             }
-            switch (alt98) {
+            switch (alt100) {
                 case 1 :
                     // InternalPipelineParser.g:2979:4: ( ( ( ({...}? => ( ({...}? => (this_BEGIN_4= RULE_BEGIN (otherlv_5= DisplayName ( (lv_displayName_6_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Pool ( ( (lv_poolValue_8_0= ruleAnyData ) ) | ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_10= RULE_BEGIN (otherlv_11= Name ( (lv_vmName_12_0= RULE_ID ) ) ) (otherlv_13= VmImage ( ( (lv_vmImage_14_1= RULE_ID | lv_vmImage_14_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_15= Demands ( ( (lv_vmDemands_16_1= ruleAnyData | lv_vmDemands_16_2= ruleHyphenValues ) ) ) )? this_END_17= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_18= Condition ( (lv_conditionValue_19_0= ruleAnyData ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= IsSkippable ( (lv_isSkippable_21_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_22= Variables ( (lv_stageVariables_23_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= DependsOn ( (otherlv_25= RULE_ID ) )* ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_26= Jobs ( (lv_jobs_27_0= ruleJob ) )* ) this_END_28= RULE_END ) ) ) ) )+ {...}?) )
                     {
@@ -7929,36 +7951,36 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     // InternalPipelineParser.g:2984:6: ( ({...}? => ( ({...}? => (this_BEGIN_4= RULE_BEGIN (otherlv_5= DisplayName ( (lv_displayName_6_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Pool ( ( (lv_poolValue_8_0= ruleAnyData ) ) | ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_10= RULE_BEGIN (otherlv_11= Name ( (lv_vmName_12_0= RULE_ID ) ) ) (otherlv_13= VmImage ( ( (lv_vmImage_14_1= RULE_ID | lv_vmImage_14_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_15= Demands ( ( (lv_vmDemands_16_1= ruleAnyData | lv_vmDemands_16_2= ruleHyphenValues ) ) ) )? this_END_17= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_18= Condition ( (lv_conditionValue_19_0= ruleAnyData ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= IsSkippable ( (lv_isSkippable_21_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_22= Variables ( (lv_stageVariables_23_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= DependsOn ( (otherlv_25= RULE_ID ) )* ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_26= Jobs ( (lv_jobs_27_0= ruleJob ) )* ) this_END_28= RULE_END ) ) ) ) )+ {...}?
                     {
                     // InternalPipelineParser.g:2984:6: ( ({...}? => ( ({...}? => (this_BEGIN_4= RULE_BEGIN (otherlv_5= DisplayName ( (lv_displayName_6_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Pool ( ( (lv_poolValue_8_0= ruleAnyData ) ) | ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_10= RULE_BEGIN (otherlv_11= Name ( (lv_vmName_12_0= RULE_ID ) ) ) (otherlv_13= VmImage ( ( (lv_vmImage_14_1= RULE_ID | lv_vmImage_14_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_15= Demands ( ( (lv_vmDemands_16_1= ruleAnyData | lv_vmDemands_16_2= ruleHyphenValues ) ) ) )? this_END_17= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_18= Condition ( (lv_conditionValue_19_0= ruleAnyData ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= IsSkippable ( (lv_isSkippable_21_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_22= Variables ( (lv_stageVariables_23_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= DependsOn ( (otherlv_25= RULE_ID ) )* ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_26= Jobs ( (lv_jobs_27_0= ruleJob ) )* ) this_END_28= RULE_END ) ) ) ) )+
-                    int cnt97=0;
-                    loop97:
+                    int cnt99=0;
+                    loop99:
                     do {
-                        int alt97=8;
-                        int LA97_0 = input.LA(1);
+                        int alt99=8;
+                        int LA99_0 = input.LA(1);
 
-                        if ( LA97_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 0) ) {
-                            alt97=1;
+                        if ( LA99_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 0) ) {
+                            alt99=1;
                         }
-                        else if ( LA97_0 == Pool && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 1) ) {
-                            alt97=2;
+                        else if ( LA99_0 == Pool && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 1) ) {
+                            alt99=2;
                         }
-                        else if ( LA97_0 == Condition && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 2) ) {
-                            alt97=3;
+                        else if ( LA99_0 == Condition && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 2) ) {
+                            alt99=3;
                         }
-                        else if ( LA97_0 == IsSkippable && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 3) ) {
-                            alt97=4;
+                        else if ( LA99_0 == IsSkippable && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 3) ) {
+                            alt99=4;
                         }
-                        else if ( LA97_0 == Variables && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 4) ) {
-                            alt97=5;
+                        else if ( LA99_0 == Variables && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 4) ) {
+                            alt99=5;
                         }
-                        else if ( LA97_0 == DependsOn && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 5) ) {
-                            alt97=6;
+                        else if ( LA99_0 == DependsOn && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 5) ) {
+                            alt99=6;
                         }
-                        else if ( LA97_0 == Jobs && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 6) ) {
-                            alt97=7;
+                        else if ( LA99_0 == Jobs && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 6) ) {
+                            alt99=7;
                         }
 
 
-                        switch (alt97) {
+                        switch (alt99) {
                     	case 1 :
                     	    // InternalPipelineParser.g:2985:4: ({...}? => ( ({...}? => (this_BEGIN_4= RULE_BEGIN (otherlv_5= DisplayName ( (lv_displayName_6_0= RULE_STRING ) ) )? ) ) ) )
                     	    {
@@ -7983,18 +8005,18 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	    // InternalPipelineParser.g:2990:19: (this_BEGIN_4= RULE_BEGIN (otherlv_5= DisplayName ( (lv_displayName_6_0= RULE_STRING ) ) )? )
                     	    // InternalPipelineParser.g:2990:20: this_BEGIN_4= RULE_BEGIN (otherlv_5= DisplayName ( (lv_displayName_6_0= RULE_STRING ) ) )?
                     	    {
-                    	    this_BEGIN_4=(Token)match(input,RULE_BEGIN,FOLLOW_68); 
+                    	    this_BEGIN_4=(Token)match(input,RULE_BEGIN,FOLLOW_70); 
 
                     	    									newLeafNode(this_BEGIN_4, grammarAccess.getStageAccess().getBEGINTerminalRuleCall_1_0_0());
                     	    								
                     	    // InternalPipelineParser.g:2994:9: (otherlv_5= DisplayName ( (lv_displayName_6_0= RULE_STRING ) ) )?
-                    	    int alt87=2;
-                    	    int LA87_0 = input.LA(1);
+                    	    int alt89=2;
+                    	    int LA89_0 = input.LA(1);
 
-                    	    if ( (LA87_0==DisplayName) ) {
-                    	        alt87=1;
+                    	    if ( (LA89_0==DisplayName) ) {
+                    	        alt89=1;
                     	    }
-                    	    switch (alt87) {
+                    	    switch (alt89) {
                     	        case 1 :
                     	            // InternalPipelineParser.g:2995:10: otherlv_5= DisplayName ( (lv_displayName_6_0= RULE_STRING ) )
                     	            {
@@ -8008,7 +8030,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	            // InternalPipelineParser.g:3000:11: (lv_displayName_6_0= RULE_STRING )
                     	            // InternalPipelineParser.g:3001:12: lv_displayName_6_0= RULE_STRING
                     	            {
-                    	            lv_displayName_6_0=(Token)match(input,RULE_STRING,FOLLOW_67); 
+                    	            lv_displayName_6_0=(Token)match(input,RULE_STRING,FOLLOW_69); 
 
                     	            												newLeafNode(lv_displayName_6_0, grammarAccess.getStageAccess().getDisplayNameSTRINGTerminalRuleCall_1_0_1_1_0());
                     	            											
@@ -8076,27 +8098,27 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	    // InternalPipelineParser.g:3029:19: (otherlv_7= Pool ( ( (lv_poolValue_8_0= ruleAnyData ) ) | ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_10= RULE_BEGIN (otherlv_11= Name ( (lv_vmName_12_0= RULE_ID ) ) ) (otherlv_13= VmImage ( ( (lv_vmImage_14_1= RULE_ID | lv_vmImage_14_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_15= Demands ( ( (lv_vmDemands_16_1= ruleAnyData | lv_vmDemands_16_2= ruleHyphenValues ) ) ) )? this_END_17= RULE_END ) ) ) ) )+ {...}?) ) ) ) )
                     	    // InternalPipelineParser.g:3029:20: otherlv_7= Pool ( ( (lv_poolValue_8_0= ruleAnyData ) ) | ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_10= RULE_BEGIN (otherlv_11= Name ( (lv_vmName_12_0= RULE_ID ) ) ) (otherlv_13= VmImage ( ( (lv_vmImage_14_1= RULE_ID | lv_vmImage_14_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_15= Demands ( ( (lv_vmDemands_16_1= ruleAnyData | lv_vmDemands_16_2= ruleHyphenValues ) ) ) )? this_END_17= RULE_END ) ) ) ) )+ {...}?) ) ) )
                     	    {
-                    	    otherlv_7=(Token)match(input,Pool,FOLLOW_69); 
+                    	    otherlv_7=(Token)match(input,Pool,FOLLOW_71); 
 
                     	    									newLeafNode(otherlv_7, grammarAccess.getStageAccess().getPoolKeyword_1_1_0());
                     	    								
                     	    // InternalPipelineParser.g:3033:9: ( ( (lv_poolValue_8_0= ruleAnyData ) ) | ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_10= RULE_BEGIN (otherlv_11= Name ( (lv_vmName_12_0= RULE_ID ) ) ) (otherlv_13= VmImage ( ( (lv_vmImage_14_1= RULE_ID | lv_vmImage_14_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_15= Demands ( ( (lv_vmDemands_16_1= ruleAnyData | lv_vmDemands_16_2= ruleHyphenValues ) ) ) )? this_END_17= RULE_END ) ) ) ) )+ {...}?) ) ) )
-                    	    int alt93=2;
-                    	    int LA93_0 = input.LA(1);
+                    	    int alt95=2;
+                    	    int LA95_0 = input.LA(1);
 
-                    	    if ( ((LA93_0>=RULE_COMPLEX_EXPRESSION && LA93_0<=RULE_VERSION)||LA93_0==RULE_ID||LA93_0==RULE_STRING) ) {
-                    	        alt93=1;
+                    	    if ( ((LA95_0>=RULE_COMPLEX_EXPRESSION && LA95_0<=RULE_VERSION)||LA95_0==RULE_ID||LA95_0==RULE_STRING) ) {
+                    	        alt95=1;
                     	    }
-                    	    else if ( (LA93_0==Demands||(LA93_0>=RULE_BEGIN && LA93_0<=RULE_END)) ) {
-                    	        alt93=2;
+                    	    else if ( (LA95_0==Demands||(LA95_0>=RULE_BEGIN && LA95_0<=RULE_END)) ) {
+                    	        alt95=2;
                     	    }
                     	    else {
                     	        NoViableAltException nvae =
-                    	            new NoViableAltException("", 93, 0, input);
+                    	            new NoViableAltException("", 95, 0, input);
 
                     	        throw nvae;
                     	    }
-                    	    switch (alt93) {
+                    	    switch (alt95) {
                     	        case 1 :
                     	            // InternalPipelineParser.g:3034:10: ( (lv_poolValue_8_0= ruleAnyData ) )
                     	            {
@@ -8109,7 +8131,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
                     	            												newCompositeNode(grammarAccess.getStageAccess().getPoolValueAnyDataParserRuleCall_1_1_1_0_0());
                     	            											
-                    	            pushFollow(FOLLOW_67);
+                    	            pushFollow(FOLLOW_69);
                     	            lv_poolValue_8_0=ruleAnyData();
 
                     	            state._fsp--;
@@ -8150,27 +8172,27 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	            // InternalPipelineParser.g:3060:13: ( ({...}? => ( ({...}? => (this_BEGIN_10= RULE_BEGIN (otherlv_11= Name ( (lv_vmName_12_0= RULE_ID ) ) ) (otherlv_13= VmImage ( ( (lv_vmImage_14_1= RULE_ID | lv_vmImage_14_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_15= Demands ( ( (lv_vmDemands_16_1= ruleAnyData | lv_vmDemands_16_2= ruleHyphenValues ) ) ) )? this_END_17= RULE_END ) ) ) ) )+ {...}?
                     	            {
                     	            // InternalPipelineParser.g:3060:13: ( ({...}? => ( ({...}? => (this_BEGIN_10= RULE_BEGIN (otherlv_11= Name ( (lv_vmName_12_0= RULE_ID ) ) ) (otherlv_13= VmImage ( ( (lv_vmImage_14_1= RULE_ID | lv_vmImage_14_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_15= Demands ( ( (lv_vmDemands_16_1= ruleAnyData | lv_vmDemands_16_2= ruleHyphenValues ) ) ) )? this_END_17= RULE_END ) ) ) ) )+
-                    	            int cnt92=0;
-                    	            loop92:
+                    	            int cnt94=0;
+                    	            loop94:
                     	            do {
-                    	                int alt92=3;
-                    	                int LA92_0 = input.LA(1);
+                    	                int alt94=3;
+                    	                int LA94_0 = input.LA(1);
 
-                    	                if ( (LA92_0==RULE_BEGIN) ) {
-                    	                    int LA92_2 = input.LA(2);
+                    	                if ( (LA94_0==RULE_BEGIN) ) {
+                    	                    int LA94_2 = input.LA(2);
 
-                    	                    if ( LA92_2 == Name && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1_1_1_1(), 0) ) {
-                    	                        alt92=1;
+                    	                    if ( LA94_2 == Name && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1_1_1_1(), 0) ) {
+                    	                        alt94=1;
                     	                    }
 
 
                     	                }
-                    	                else if ( ( LA92_0 == Demands || LA92_0 == RULE_END ) && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1_1_1_1(), 1) ) {
-                    	                    alt92=2;
+                    	                else if ( ( LA94_0 == Demands || LA94_0 == RULE_END ) && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1_1_1_1(), 1) ) {
+                    	                    alt94=2;
                     	                }
 
 
-                    	                switch (alt92) {
+                    	                switch (alt94) {
                     	            	case 1 :
                     	            	    // InternalPipelineParser.g:3061:11: ({...}? => ( ({...}? => (this_BEGIN_10= RULE_BEGIN (otherlv_11= Name ( (lv_vmName_12_0= RULE_ID ) ) ) (otherlv_13= VmImage ( ( (lv_vmImage_14_1= RULE_ID | lv_vmImage_14_2= RULE_STRING ) ) ) )? ) ) ) )
                     	            	    {
@@ -8212,7 +8234,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	            	    // InternalPipelineParser.g:3076:18: (lv_vmName_12_0= RULE_ID )
                     	            	    // InternalPipelineParser.g:3077:19: lv_vmName_12_0= RULE_ID
                     	            	    {
-                    	            	    lv_vmName_12_0=(Token)match(input,RULE_ID,FOLLOW_70); 
+                    	            	    lv_vmName_12_0=(Token)match(input,RULE_ID,FOLLOW_72); 
 
                     	            	    																			newLeafNode(lv_vmName_12_0, grammarAccess.getStageAccess().getVmNameIDTerminalRuleCall_1_1_1_1_0_1_1_0());
                     	            	    																		
@@ -8236,13 +8258,13 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	            	    }
 
                     	            	    // InternalPipelineParser.g:3094:16: (otherlv_13= VmImage ( ( (lv_vmImage_14_1= RULE_ID | lv_vmImage_14_2= RULE_STRING ) ) ) )?
-                    	            	    int alt89=2;
-                    	            	    int LA89_0 = input.LA(1);
+                    	            	    int alt91=2;
+                    	            	    int LA91_0 = input.LA(1);
 
-                    	            	    if ( (LA89_0==VmImage) ) {
-                    	            	        alt89=1;
+                    	            	    if ( (LA91_0==VmImage) ) {
+                    	            	        alt91=1;
                     	            	    }
-                    	            	    switch (alt89) {
+                    	            	    switch (alt91) {
                     	            	        case 1 :
                     	            	            // InternalPipelineParser.g:3095:17: otherlv_13= VmImage ( ( (lv_vmImage_14_1= RULE_ID | lv_vmImage_14_2= RULE_STRING ) ) )
                     	            	            {
@@ -8257,26 +8279,26 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	            	            // InternalPipelineParser.g:3101:19: (lv_vmImage_14_1= RULE_ID | lv_vmImage_14_2= RULE_STRING )
                     	            	            {
                     	            	            // InternalPipelineParser.g:3101:19: (lv_vmImage_14_1= RULE_ID | lv_vmImage_14_2= RULE_STRING )
-                    	            	            int alt88=2;
-                    	            	            int LA88_0 = input.LA(1);
+                    	            	            int alt90=2;
+                    	            	            int LA90_0 = input.LA(1);
 
-                    	            	            if ( (LA88_0==RULE_ID) ) {
-                    	            	                alt88=1;
+                    	            	            if ( (LA90_0==RULE_ID) ) {
+                    	            	                alt90=1;
                     	            	            }
-                    	            	            else if ( (LA88_0==RULE_STRING) ) {
-                    	            	                alt88=2;
+                    	            	            else if ( (LA90_0==RULE_STRING) ) {
+                    	            	                alt90=2;
                     	            	            }
                     	            	            else {
                     	            	                NoViableAltException nvae =
-                    	            	                    new NoViableAltException("", 88, 0, input);
+                    	            	                    new NoViableAltException("", 90, 0, input);
 
                     	            	                throw nvae;
                     	            	            }
-                    	            	            switch (alt88) {
+                    	            	            switch (alt90) {
                     	            	                case 1 :
                     	            	                    // InternalPipelineParser.g:3102:20: lv_vmImage_14_1= RULE_ID
                     	            	                    {
-                    	            	                    lv_vmImage_14_1=(Token)match(input,RULE_ID,FOLLOW_71); 
+                    	            	                    lv_vmImage_14_1=(Token)match(input,RULE_ID,FOLLOW_73); 
 
                     	            	                    																				newLeafNode(lv_vmImage_14_1, grammarAccess.getStageAccess().getVmImageIDTerminalRuleCall_1_1_1_1_0_2_1_0_0());
                     	            	                    																			
@@ -8296,7 +8318,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	            	                case 2 :
                     	            	                    // InternalPipelineParser.g:3117:20: lv_vmImage_14_2= RULE_STRING
                     	            	                    {
-                    	            	                    lv_vmImage_14_2=(Token)match(input,RULE_STRING,FOLLOW_71); 
+                    	            	                    lv_vmImage_14_2=(Token)match(input,RULE_STRING,FOLLOW_73); 
 
                     	            	                    																				newLeafNode(lv_vmImage_14_2, grammarAccess.getStageAccess().getVmImageSTRINGTerminalRuleCall_1_1_1_1_0_2_1_0_1());
                     	            	                    																			
@@ -8371,13 +8393,13 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	            	    // InternalPipelineParser.g:3146:27: (otherlv_15= Demands ( ( (lv_vmDemands_16_1= ruleAnyData | lv_vmDemands_16_2= ruleHyphenValues ) ) ) )? this_END_17= RULE_END
                     	            	    {
                     	            	    // InternalPipelineParser.g:3146:27: (otherlv_15= Demands ( ( (lv_vmDemands_16_1= ruleAnyData | lv_vmDemands_16_2= ruleHyphenValues ) ) ) )?
-                    	            	    int alt91=2;
-                    	            	    int LA91_0 = input.LA(1);
+                    	            	    int alt93=2;
+                    	            	    int LA93_0 = input.LA(1);
 
-                    	            	    if ( (LA91_0==Demands) ) {
-                    	            	        alt91=1;
+                    	            	    if ( (LA93_0==Demands) ) {
+                    	            	        alt93=1;
                     	            	    }
-                    	            	    switch (alt91) {
+                    	            	    switch (alt93) {
                     	            	        case 1 :
                     	            	            // InternalPipelineParser.g:3147:17: otherlv_15= Demands ( ( (lv_vmDemands_16_1= ruleAnyData | lv_vmDemands_16_2= ruleHyphenValues ) ) )
                     	            	            {
@@ -8392,22 +8414,22 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	            	            // InternalPipelineParser.g:3153:19: (lv_vmDemands_16_1= ruleAnyData | lv_vmDemands_16_2= ruleHyphenValues )
                     	            	            {
                     	            	            // InternalPipelineParser.g:3153:19: (lv_vmDemands_16_1= ruleAnyData | lv_vmDemands_16_2= ruleHyphenValues )
-                    	            	            int alt90=2;
-                    	            	            int LA90_0 = input.LA(1);
+                    	            	            int alt92=2;
+                    	            	            int LA92_0 = input.LA(1);
 
-                    	            	            if ( ((LA90_0>=RULE_COMPLEX_EXPRESSION && LA90_0<=RULE_VERSION)||LA90_0==RULE_ID||LA90_0==RULE_STRING) ) {
-                    	            	                alt90=1;
+                    	            	            if ( ((LA92_0>=RULE_COMPLEX_EXPRESSION && LA92_0<=RULE_VERSION)||LA92_0==RULE_ID||LA92_0==RULE_STRING) ) {
+                    	            	                alt92=1;
                     	            	            }
-                    	            	            else if ( (LA90_0==HyphenMinus||LA90_0==RULE_BEGIN) ) {
-                    	            	                alt90=2;
+                    	            	            else if ( (LA92_0==HyphenMinus||LA92_0==RULE_BEGIN) ) {
+                    	            	                alt92=2;
                     	            	            }
                     	            	            else {
                     	            	                NoViableAltException nvae =
-                    	            	                    new NoViableAltException("", 90, 0, input);
+                    	            	                    new NoViableAltException("", 92, 0, input);
 
                     	            	                throw nvae;
                     	            	            }
-                    	            	            switch (alt90) {
+                    	            	            switch (alt92) {
                     	            	                case 1 :
                     	            	                    // InternalPipelineParser.g:3154:20: lv_vmDemands_16_1= ruleAnyData
                     	            	                    {
@@ -8473,7 +8495,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
                     	            	    }
 
-                    	            	    this_END_17=(Token)match(input,RULE_END,FOLLOW_71); 
+                    	            	    this_END_17=(Token)match(input,RULE_END,FOLLOW_73); 
 
                     	            	    																newLeafNode(this_END_17, grammarAccess.getStageAccess().getENDTerminalRuleCall_1_1_1_1_1_1());
                     	            	    															
@@ -8497,12 +8519,12 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	            	    break;
 
                     	            	default :
-                    	            	    if ( cnt92 >= 1 ) break loop92;
+                    	            	    if ( cnt94 >= 1 ) break loop94;
                     	                        EarlyExitException eee =
-                    	                            new EarlyExitException(92, input);
+                    	                            new EarlyExitException(94, input);
                     	                        throw eee;
                     	                }
-                    	                cnt92++;
+                    	                cnt94++;
                     	            } while (true);
 
                     	            if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getStageAccess().getUnorderedGroup_1_1_1_1()) ) {
@@ -8581,7 +8603,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
                     	    											newCompositeNode(grammarAccess.getStageAccess().getConditionValueAnyDataParserRuleCall_1_2_1_0());
                     	    										
-                    	    pushFollow(FOLLOW_67);
+                    	    pushFollow(FOLLOW_69);
                     	    lv_conditionValue_19_0=ruleAnyData();
 
                     	    state._fsp--;
@@ -8655,7 +8677,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	    // InternalPipelineParser.g:3258:10: (lv_isSkippable_21_0= RULE_ID )
                     	    // InternalPipelineParser.g:3259:11: lv_isSkippable_21_0= RULE_ID
                     	    {
-                    	    lv_isSkippable_21_0=(Token)match(input,RULE_ID,FOLLOW_67); 
+                    	    lv_isSkippable_21_0=(Token)match(input,RULE_ID,FOLLOW_69); 
 
                     	    											newLeafNode(lv_isSkippable_21_0, grammarAccess.getStageAccess().getIsSkippableIDTerminalRuleCall_1_3_1_0());
                     	    										
@@ -8717,37 +8739,37 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	    // InternalPipelineParser.g:3286:19: (otherlv_22= Variables ( (lv_stageVariables_23_0= ruleVariable ) )* )
                     	    // InternalPipelineParser.g:3286:20: otherlv_22= Variables ( (lv_stageVariables_23_0= ruleVariable ) )*
                     	    {
-                    	    otherlv_22=(Token)match(input,Variables,FOLLOW_72); 
+                    	    otherlv_22=(Token)match(input,Variables,FOLLOW_74); 
 
                     	    									newLeafNode(otherlv_22, grammarAccess.getStageAccess().getVariablesKeyword_1_4_0());
                     	    								
                     	    // InternalPipelineParser.g:3290:9: ( (lv_stageVariables_23_0= ruleVariable ) )*
-                    	    loop94:
+                    	    loop96:
                     	    do {
-                    	        int alt94=2;
-                    	        int LA94_0 = input.LA(1);
+                    	        int alt96=2;
+                    	        int LA96_0 = input.LA(1);
 
-                    	        if ( (LA94_0==HyphenMinus) ) {
-                    	            int LA94_2 = input.LA(2);
+                    	        if ( (LA96_0==HyphenMinus) ) {
+                    	            int LA96_2 = input.LA(2);
 
-                    	            if ( (LA94_2==Group||LA94_2==Name) ) {
-                    	                alt94=1;
+                    	            if ( (LA96_2==Group||LA96_2==Name) ) {
+                    	                alt96=1;
                     	            }
 
 
                     	        }
-                    	        else if ( (LA94_0==RULE_BEGIN) ) {
-                    	            int LA94_3 = input.LA(2);
+                    	        else if ( (LA96_0==RULE_BEGIN) ) {
+                    	            int LA96_3 = input.LA(2);
 
-                    	            if ( (LA94_3==RULE_ID) ) {
-                    	                alt94=1;
+                    	            if ( (LA96_3==RULE_ID) ) {
+                    	                alt96=1;
                     	            }
 
 
                     	        }
 
 
-                    	        switch (alt94) {
+                    	        switch (alt96) {
                     	    	case 1 :
                     	    	    // InternalPipelineParser.g:3291:10: (lv_stageVariables_23_0= ruleVariable )
                     	    	    {
@@ -8757,7 +8779,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
                     	    	    											newCompositeNode(grammarAccess.getStageAccess().getStageVariablesVariableParserRuleCall_1_4_1_0());
                     	    	    										
-                    	    	    pushFollow(FOLLOW_72);
+                    	    	    pushFollow(FOLLOW_74);
                     	    	    lv_stageVariables_23_0=ruleVariable();
 
                     	    	    state._fsp--;
@@ -8781,7 +8803,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	    	    break;
 
                     	    	default :
-                    	    	    break loop94;
+                    	    	    break loop96;
                     	        }
                     	    } while (true);
 
@@ -8827,22 +8849,22 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	    // InternalPipelineParser.g:3320:19: (otherlv_24= DependsOn ( (otherlv_25= RULE_ID ) )* )
                     	    // InternalPipelineParser.g:3320:20: otherlv_24= DependsOn ( (otherlv_25= RULE_ID ) )*
                     	    {
-                    	    otherlv_24=(Token)match(input,DependsOn,FOLLOW_73); 
+                    	    otherlv_24=(Token)match(input,DependsOn,FOLLOW_75); 
 
                     	    									newLeafNode(otherlv_24, grammarAccess.getStageAccess().getDependsOnKeyword_1_5_0());
                     	    								
                     	    // InternalPipelineParser.g:3324:9: ( (otherlv_25= RULE_ID ) )*
-                    	    loop95:
+                    	    loop97:
                     	    do {
-                    	        int alt95=2;
-                    	        int LA95_0 = input.LA(1);
+                    	        int alt97=2;
+                    	        int LA97_0 = input.LA(1);
 
-                    	        if ( (LA95_0==RULE_ID) ) {
-                    	            alt95=1;
+                    	        if ( (LA97_0==RULE_ID) ) {
+                    	            alt97=1;
                     	        }
 
 
-                    	        switch (alt95) {
+                    	        switch (alt97) {
                     	    	case 1 :
                     	    	    // InternalPipelineParser.g:3325:10: (otherlv_25= RULE_ID )
                     	    	    {
@@ -8854,7 +8876,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	    	    												current = createModelElement(grammarAccess.getStageRule());
                     	    	    											}
                     	    	    										
-                    	    	    otherlv_25=(Token)match(input,RULE_ID,FOLLOW_73); 
+                    	    	    otherlv_25=(Token)match(input,RULE_ID,FOLLOW_75); 
 
                     	    	    											newLeafNode(otherlv_25, grammarAccess.getStageAccess().getDependsOnStageCrossReference_1_5_1_0());
                     	    	    										
@@ -8866,7 +8888,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	    	    break;
 
                     	    	default :
-                    	    	    break loop95;
+                    	    	    break loop97;
                     	        }
                     	    } while (true);
 
@@ -8920,17 +8942,17 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	    										newLeafNode(otherlv_26, grammarAccess.getStageAccess().getJobsKeyword_1_6_0_0());
                     	    									
                     	    // InternalPipelineParser.g:3353:10: ( (lv_jobs_27_0= ruleJob ) )*
-                    	    loop96:
+                    	    loop98:
                     	    do {
-                    	        int alt96=2;
-                    	        int LA96_0 = input.LA(1);
+                    	        int alt98=2;
+                    	        int LA98_0 = input.LA(1);
 
-                    	        if ( (LA96_0==HyphenMinus||LA96_0==RULE_ID||LA96_0==RULE_STRING) ) {
-                    	            alt96=1;
+                    	        if ( (LA98_0==HyphenMinus||LA98_0==RULE_ID||LA98_0==RULE_STRING) ) {
+                    	            alt98=1;
                     	        }
 
 
-                    	        switch (alt96) {
+                    	        switch (alt98) {
                     	    	case 1 :
                     	    	    // InternalPipelineParser.g:3354:11: (lv_jobs_27_0= ruleJob )
                     	    	    {
@@ -8964,14 +8986,14 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	    	    break;
 
                     	    	default :
-                    	    	    break loop96;
+                    	    	    break loop98;
                     	        }
                     	    } while (true);
 
 
                     	    }
 
-                    	    this_END_28=(Token)match(input,RULE_END,FOLLOW_67); 
+                    	    this_END_28=(Token)match(input,RULE_END,FOLLOW_69); 
 
                     	    									newLeafNode(this_END_28, grammarAccess.getStageAccess().getENDTerminalRuleCall_1_6_1());
                     	    								
@@ -8995,12 +9017,12 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    if ( cnt97 >= 1 ) break loop97;
+                    	    if ( cnt99 >= 1 ) break loop99;
                                 EarlyExitException eee =
-                                    new EarlyExitException(97, input);
+                                    new EarlyExitException(99, input);
                                 throw eee;
                         }
-                        cnt97++;
+                        cnt99++;
                     } while (true);
 
                     if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getStageAccess().getUnorderedGroup_1()) ) {
@@ -9123,37 +9145,37 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             // InternalPipelineParser.g:3411:4: (otherlv_0= HyphenMinus (otherlv_1= Job | otherlv_2= Deployment ) )? ( ( (lv_name_3_1= RULE_ID | lv_name_3_2= RULE_STRING ) ) ) (otherlv_4= Colon )?
             {
             // InternalPipelineParser.g:3411:4: (otherlv_0= HyphenMinus (otherlv_1= Job | otherlv_2= Deployment ) )?
-            int alt100=2;
-            int LA100_0 = input.LA(1);
+            int alt102=2;
+            int LA102_0 = input.LA(1);
 
-            if ( (LA100_0==HyphenMinus) ) {
-                alt100=1;
+            if ( (LA102_0==HyphenMinus) ) {
+                alt102=1;
             }
-            switch (alt100) {
+            switch (alt102) {
                 case 1 :
                     // InternalPipelineParser.g:3412:5: otherlv_0= HyphenMinus (otherlv_1= Job | otherlv_2= Deployment )
                     {
-                    otherlv_0=(Token)match(input,HyphenMinus,FOLLOW_74); 
+                    otherlv_0=(Token)match(input,HyphenMinus,FOLLOW_76); 
 
                     					newLeafNode(otherlv_0, grammarAccess.getJobAccess().getHyphenMinusKeyword_0_0_0());
                     				
                     // InternalPipelineParser.g:3416:5: (otherlv_1= Job | otherlv_2= Deployment )
-                    int alt99=2;
-                    int LA99_0 = input.LA(1);
+                    int alt101=2;
+                    int LA101_0 = input.LA(1);
 
-                    if ( (LA99_0==Job) ) {
-                        alt99=1;
+                    if ( (LA101_0==Job) ) {
+                        alt101=1;
                     }
-                    else if ( (LA99_0==Deployment) ) {
-                        alt99=2;
+                    else if ( (LA101_0==Deployment) ) {
+                        alt101=2;
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("", 99, 0, input);
+                            new NoViableAltException("", 101, 0, input);
 
                         throw nvae;
                     }
-                    switch (alt99) {
+                    switch (alt101) {
                         case 1 :
                             // InternalPipelineParser.g:3417:6: otherlv_1= Job
                             {
@@ -9190,26 +9212,26 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             // InternalPipelineParser.g:3430:6: (lv_name_3_1= RULE_ID | lv_name_3_2= RULE_STRING )
             {
             // InternalPipelineParser.g:3430:6: (lv_name_3_1= RULE_ID | lv_name_3_2= RULE_STRING )
-            int alt101=2;
-            int LA101_0 = input.LA(1);
+            int alt103=2;
+            int LA103_0 = input.LA(1);
 
-            if ( (LA101_0==RULE_ID) ) {
-                alt101=1;
+            if ( (LA103_0==RULE_ID) ) {
+                alt103=1;
             }
-            else if ( (LA101_0==RULE_STRING) ) {
-                alt101=2;
+            else if ( (LA103_0==RULE_STRING) ) {
+                alt103=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 101, 0, input);
+                    new NoViableAltException("", 103, 0, input);
 
                 throw nvae;
             }
-            switch (alt101) {
+            switch (alt103) {
                 case 1 :
                     // InternalPipelineParser.g:3431:7: lv_name_3_1= RULE_ID
                     {
-                    lv_name_3_1=(Token)match(input,RULE_ID,FOLLOW_75); 
+                    lv_name_3_1=(Token)match(input,RULE_ID,FOLLOW_77); 
 
                     							newLeafNode(lv_name_3_1, grammarAccess.getJobAccess().getNameIDTerminalRuleCall_0_1_0_0());
                     						
@@ -9229,7 +9251,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                 case 2 :
                     // InternalPipelineParser.g:3446:7: lv_name_3_2= RULE_STRING
                     {
-                    lv_name_3_2=(Token)match(input,RULE_STRING,FOLLOW_75); 
+                    lv_name_3_2=(Token)match(input,RULE_STRING,FOLLOW_77); 
 
                     							newLeafNode(lv_name_3_2, grammarAccess.getJobAccess().getNameSTRINGTerminalRuleCall_0_1_0_1());
                     						
@@ -9256,17 +9278,17 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             }
 
             // InternalPipelineParser.g:3463:4: (otherlv_4= Colon )?
-            int alt102=2;
-            int LA102_0 = input.LA(1);
+            int alt104=2;
+            int LA104_0 = input.LA(1);
 
-            if ( (LA102_0==Colon) ) {
-                alt102=1;
+            if ( (LA104_0==Colon) ) {
+                alt104=1;
             }
-            switch (alt102) {
+            switch (alt104) {
                 case 1 :
                     // InternalPipelineParser.g:3464:5: otherlv_4= Colon
                     {
-                    otherlv_4=(Token)match(input,Colon,FOLLOW_76); 
+                    otherlv_4=(Token)match(input,Colon,FOLLOW_78); 
 
                     					newLeafNode(otherlv_4, grammarAccess.getJobAccess().getColonKeyword_0_2());
                     				
@@ -9292,12 +9314,12 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             // InternalPipelineParser.g:3476:6: ( ({...}? => ( ({...}? => (this_BEGIN_6= RULE_BEGIN ( ( ( (lv_nameKW_7_1= Name | lv_nameKW_7_2= DisplayName ) ) ) ( (lv_jobName_8_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( ( ( (lv_dependKW_9_1= Needs | lv_dependKW_9_2= DependsOn ) ) ) ( ( (otherlv_10= RULE_ID ) ) | (otherlv_11= LeftSquareBracket ( (otherlv_12= RULE_ID ) ) (otherlv_13= Comma ( (otherlv_14= RULE_ID ) ) )* otherlv_15= RightSquareBracket ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( (lv_jobParameterValues_16_0= ruleParameterValue ) )* (otherlv_17= Steps ( (lv_steps_18_0= ruleStep ) )* )? this_END_19= RULE_END ) ) ) ) )+ {...}?
             {
             // InternalPipelineParser.g:3476:6: ( ({...}? => ( ({...}? => (this_BEGIN_6= RULE_BEGIN ( ( ( (lv_nameKW_7_1= Name | lv_nameKW_7_2= DisplayName ) ) ) ( (lv_jobName_8_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( ( ( (lv_dependKW_9_1= Needs | lv_dependKW_9_2= DependsOn ) ) ) ( ( (otherlv_10= RULE_ID ) ) | (otherlv_11= LeftSquareBracket ( (otherlv_12= RULE_ID ) ) (otherlv_13= Comma ( (otherlv_14= RULE_ID ) ) )* otherlv_15= RightSquareBracket ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( (lv_jobParameterValues_16_0= ruleParameterValue ) )* (otherlv_17= Steps ( (lv_steps_18_0= ruleStep ) )* )? this_END_19= RULE_END ) ) ) ) )+
-            int cnt111=0;
-            loop111:
+            int cnt113=0;
+            loop113:
             do {
-                int alt111=4;
-                alt111 = dfa111.predict(input);
-                switch (alt111) {
+                int alt113=4;
+                alt113 = dfa113.predict(input);
+                switch (alt113) {
             	case 1 :
             	    // InternalPipelineParser.g:3477:4: ({...}? => ( ({...}? => (this_BEGIN_6= RULE_BEGIN ( ( ( (lv_nameKW_7_1= Name | lv_nameKW_7_2= DisplayName ) ) ) ( (lv_jobName_8_0= RULE_STRING ) ) )? ) ) ) )
             	    {
@@ -9322,29 +9344,29 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             	    // InternalPipelineParser.g:3482:19: (this_BEGIN_6= RULE_BEGIN ( ( ( (lv_nameKW_7_1= Name | lv_nameKW_7_2= DisplayName ) ) ) ( (lv_jobName_8_0= RULE_STRING ) ) )? )
             	    // InternalPipelineParser.g:3482:20: this_BEGIN_6= RULE_BEGIN ( ( ( (lv_nameKW_7_1= Name | lv_nameKW_7_2= DisplayName ) ) ) ( (lv_jobName_8_0= RULE_STRING ) ) )?
             	    {
-            	    this_BEGIN_6=(Token)match(input,RULE_BEGIN,FOLLOW_77); 
+            	    this_BEGIN_6=(Token)match(input,RULE_BEGIN,FOLLOW_79); 
 
             	    									newLeafNode(this_BEGIN_6, grammarAccess.getJobAccess().getBEGINTerminalRuleCall_1_0_0());
             	    								
             	    // InternalPipelineParser.g:3486:9: ( ( ( (lv_nameKW_7_1= Name | lv_nameKW_7_2= DisplayName ) ) ) ( (lv_jobName_8_0= RULE_STRING ) ) )?
-            	    int alt104=2;
-            	    int LA104_0 = input.LA(1);
+            	    int alt106=2;
+            	    int LA106_0 = input.LA(1);
 
-            	    if ( (LA104_0==Name) ) {
-            	        int LA104_1 = input.LA(2);
+            	    if ( (LA106_0==Name) ) {
+            	        int LA106_1 = input.LA(2);
 
-            	        if ( (LA104_1==RULE_STRING) ) {
-            	            alt104=1;
+            	        if ( (LA106_1==RULE_STRING) ) {
+            	            alt106=1;
             	        }
             	    }
-            	    else if ( (LA104_0==DisplayName) ) {
-            	        int LA104_2 = input.LA(2);
+            	    else if ( (LA106_0==DisplayName) ) {
+            	        int LA106_2 = input.LA(2);
 
-            	        if ( (LA104_2==RULE_STRING) ) {
-            	            alt104=1;
+            	        if ( (LA106_2==RULE_STRING) ) {
+            	            alt106=1;
             	        }
             	    }
-            	    switch (alt104) {
+            	    switch (alt106) {
             	        case 1 :
             	            // InternalPipelineParser.g:3487:10: ( ( (lv_nameKW_7_1= Name | lv_nameKW_7_2= DisplayName ) ) ) ( (lv_jobName_8_0= RULE_STRING ) )
             	            {
@@ -9355,22 +9377,22 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             	            // InternalPipelineParser.g:3489:12: (lv_nameKW_7_1= Name | lv_nameKW_7_2= DisplayName )
             	            {
             	            // InternalPipelineParser.g:3489:12: (lv_nameKW_7_1= Name | lv_nameKW_7_2= DisplayName )
-            	            int alt103=2;
-            	            int LA103_0 = input.LA(1);
+            	            int alt105=2;
+            	            int LA105_0 = input.LA(1);
 
-            	            if ( (LA103_0==Name) ) {
-            	                alt103=1;
+            	            if ( (LA105_0==Name) ) {
+            	                alt105=1;
             	            }
-            	            else if ( (LA103_0==DisplayName) ) {
-            	                alt103=2;
+            	            else if ( (LA105_0==DisplayName) ) {
+            	                alt105=2;
             	            }
             	            else {
             	                NoViableAltException nvae =
-            	                    new NoViableAltException("", 103, 0, input);
+            	                    new NoViableAltException("", 105, 0, input);
 
             	                throw nvae;
             	            }
-            	            switch (alt103) {
+            	            switch (alt105) {
             	                case 1 :
             	                    // InternalPipelineParser.g:3490:13: lv_nameKW_7_1= Name
             	                    {
@@ -9418,7 +9440,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             	            // InternalPipelineParser.g:3515:11: (lv_jobName_8_0= RULE_STRING )
             	            // InternalPipelineParser.g:3516:12: lv_jobName_8_0= RULE_STRING
             	            {
-            	            lv_jobName_8_0=(Token)match(input,RULE_STRING,FOLLOW_77); 
+            	            lv_jobName_8_0=(Token)match(input,RULE_STRING,FOLLOW_79); 
 
             	            												newLeafNode(lv_jobName_8_0, grammarAccess.getJobAccess().getJobNameSTRINGTerminalRuleCall_1_0_1_1_0());
             	            											
@@ -9493,26 +9515,26 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             	    // InternalPipelineParser.g:3546:11: (lv_dependKW_9_1= Needs | lv_dependKW_9_2= DependsOn )
             	    {
             	    // InternalPipelineParser.g:3546:11: (lv_dependKW_9_1= Needs | lv_dependKW_9_2= DependsOn )
-            	    int alt105=2;
-            	    int LA105_0 = input.LA(1);
+            	    int alt107=2;
+            	    int LA107_0 = input.LA(1);
 
-            	    if ( (LA105_0==Needs) ) {
-            	        alt105=1;
+            	    if ( (LA107_0==Needs) ) {
+            	        alt107=1;
             	    }
-            	    else if ( (LA105_0==DependsOn) ) {
-            	        alt105=2;
+            	    else if ( (LA107_0==DependsOn) ) {
+            	        alt107=2;
             	    }
             	    else {
             	        NoViableAltException nvae =
-            	            new NoViableAltException("", 105, 0, input);
+            	            new NoViableAltException("", 107, 0, input);
 
             	        throw nvae;
             	    }
-            	    switch (alt105) {
+            	    switch (alt107) {
             	        case 1 :
             	            // InternalPipelineParser.g:3547:12: lv_dependKW_9_1= Needs
             	            {
-            	            lv_dependKW_9_1=(Token)match(input,Needs,FOLLOW_78); 
+            	            lv_dependKW_9_1=(Token)match(input,Needs,FOLLOW_80); 
 
             	            												newLeafNode(lv_dependKW_9_1, grammarAccess.getJobAccess().getDependKWNeedsKeyword_1_1_0_0_0());
             	            											
@@ -9528,7 +9550,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             	        case 2 :
             	            // InternalPipelineParser.g:3558:12: lv_dependKW_9_2= DependsOn
             	            {
-            	            lv_dependKW_9_2=(Token)match(input,DependsOn,FOLLOW_78); 
+            	            lv_dependKW_9_2=(Token)match(input,DependsOn,FOLLOW_80); 
 
             	            												newLeafNode(lv_dependKW_9_2, grammarAccess.getJobAccess().getDependKWDependsOnKeyword_1_1_0_0_1());
             	            											
@@ -9551,22 +9573,22 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             	    }
 
             	    // InternalPipelineParser.g:3571:9: ( ( (otherlv_10= RULE_ID ) ) | (otherlv_11= LeftSquareBracket ( (otherlv_12= RULE_ID ) ) (otherlv_13= Comma ( (otherlv_14= RULE_ID ) ) )* otherlv_15= RightSquareBracket ) )
-            	    int alt107=2;
-            	    int LA107_0 = input.LA(1);
+            	    int alt109=2;
+            	    int LA109_0 = input.LA(1);
 
-            	    if ( (LA107_0==RULE_ID) ) {
-            	        alt107=1;
+            	    if ( (LA109_0==RULE_ID) ) {
+            	        alt109=1;
             	    }
-            	    else if ( (LA107_0==LeftSquareBracket) ) {
-            	        alt107=2;
+            	    else if ( (LA109_0==LeftSquareBracket) ) {
+            	        alt109=2;
             	    }
             	    else {
             	        NoViableAltException nvae =
-            	            new NoViableAltException("", 107, 0, input);
+            	            new NoViableAltException("", 109, 0, input);
 
             	        throw nvae;
             	    }
-            	    switch (alt107) {
+            	    switch (alt109) {
             	        case 1 :
             	            // InternalPipelineParser.g:3572:10: ( (otherlv_10= RULE_ID ) )
             	            {
@@ -9581,7 +9603,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             	            													current = createModelElement(grammarAccess.getJobRule());
             	            												}
             	            											
-            	            otherlv_10=(Token)match(input,RULE_ID,FOLLOW_77); 
+            	            otherlv_10=(Token)match(input,RULE_ID,FOLLOW_79); 
 
             	            												newLeafNode(otherlv_10, grammarAccess.getJobAccess().getReferencesJobCrossReference_1_1_1_0_0());
             	            											
@@ -9626,17 +9648,17 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             	            }
 
             	            // InternalPipelineParser.g:3604:11: (otherlv_13= Comma ( (otherlv_14= RULE_ID ) ) )*
-            	            loop106:
+            	            loop108:
             	            do {
-            	                int alt106=2;
-            	                int LA106_0 = input.LA(1);
+            	                int alt108=2;
+            	                int LA108_0 = input.LA(1);
 
-            	                if ( (LA106_0==Comma) ) {
-            	                    alt106=1;
+            	                if ( (LA108_0==Comma) ) {
+            	                    alt108=1;
             	                }
 
 
-            	                switch (alt106) {
+            	                switch (alt108) {
             	            	case 1 :
             	            	    // InternalPipelineParser.g:3605:12: otherlv_13= Comma ( (otherlv_14= RULE_ID ) )
             	            	    {
@@ -9670,11 +9692,11 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             	            	    break;
 
             	            	default :
-            	            	    break loop106;
+            	            	    break loop108;
             	                }
             	            } while (true);
 
-            	            otherlv_15=(Token)match(input,RightSquareBracket,FOLLOW_77); 
+            	            otherlv_15=(Token)match(input,RightSquareBracket,FOLLOW_79); 
 
             	            											newLeafNode(otherlv_15, grammarAccess.getJobAccess().getRightSquareBracketKeyword_1_1_1_1_3());
             	            										
@@ -9730,28 +9752,25 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             	    // InternalPipelineParser.g:3640:20: ( (lv_jobParameterValues_16_0= ruleParameterValue ) )* (otherlv_17= Steps ( (lv_steps_18_0= ruleStep ) )* )? this_END_19= RULE_END
             	    {
             	    // InternalPipelineParser.g:3640:20: ( (lv_jobParameterValues_16_0= ruleParameterValue ) )*
-            	    loop108:
+            	    loop110:
             	    do {
-            	        int alt108=2;
-            	        int LA108_0 = input.LA(1);
+            	        int alt110=2;
+            	        int LA110_0 = input.LA(1);
 
-            	        if ( (LA108_0==Steps) ) {
-            	            int LA108_1 = input.LA(2);
+            	        if ( (LA110_0==Steps) ) {
+            	            int LA110_1 = input.LA(2);
 
-            	            if ( (LA108_1==LeftSquareBracket||(LA108_1>=RULE_COMPLEX_EXPRESSION && LA108_1<=RULE_BEGIN)||LA108_1==RULE_ID||LA108_1==RULE_STRING) ) {
-            	                alt108=1;
-            	            }
-            	            else if ( (LA108_1==HyphenMinus) ) {
-            	                int LA108_4 = input.LA(3);
+            	            if ( (LA110_1==HyphenMinus) ) {
+            	                int LA110_4 = input.LA(3);
 
-            	                if ( ((LA108_4>=RULE_COMPLEX_EXPRESSION && LA108_4<=RULE_VERSION)||LA108_4==RULE_STRING) ) {
-            	                    alt108=1;
+            	                if ( ((LA110_4>=RULE_COMPLEX_EXPRESSION && LA110_4<=RULE_VERSION)||LA110_4==RULE_STRING) ) {
+            	                    alt110=1;
             	                }
-            	                else if ( (LA108_4==RULE_ID) ) {
-            	                    int LA108_5 = input.LA(4);
+            	                else if ( (LA110_4==RULE_ID) ) {
+            	                    int LA110_5 = input.LA(4);
 
-            	                    if ( ((LA108_5>=Repository_dispatch && LA108_5<=ContinueOnError_1)||(LA108_5>=Workflow_dispatch && LA108_5<=WorkingDirectory)||(LA108_5>=TimeoutInMinutes && LA108_5<=TimeoutMinutes)||LA108_5==ReleaseTrigger||(LA108_5>=Allow_failure && LA108_5<=DeployTrigger)||(LA108_5>=Notifications && LA108_5<=PathsIgnore)||(LA108_5>=Pull_request && LA108_5<=Workflow_run)||(LA108_5>=Concurrency && LA108_5<=GetPackage)||(LA108_5>=Parameters && LA108_5<=Permission)||(LA108_5>=Powershell && LA108_5<=Artifacts)||(LA108_5>=Condition && LA108_5<=FailFast)||(LA108_5>=Pipelines && LA108_5<=RunPolicy)||(LA108_5>=Schedules && LA108_5<=Workspace)||(LA108_5>=Branches && LA108_5<=PreBuild)||(LA108_5>=Readonly && LA108_5<=Webhooks)||(LA108_5>=Command && LA108_5<=Caches)||(LA108_5>=Docker && LA108_5<=Except)||LA108_5==Inputs||(LA108_5>=Labels && LA108_5<=Policy)||LA108_5==Queued||(LA108_5>=Script && LA108_5<=Stages)||(LA108_5>=Agent && LA108_5<=Image)||(LA108_5>=Needs && LA108_5<=Value)||(LA108_5>=Auth && LA108_5<=Cron)||LA108_5==Name||(LA108_5>=Only && LA108_5<=Pwsh)||(LA108_5>=Step && LA108_5<=With)||(LA108_5>=Env && LA108_5<=Job)||(LA108_5>=Run && LA108_5<=On)||LA108_5==HyphenMinus||LA108_5==RULE_COMPLEX_EXPRESSION||(LA108_5>=RULE_BEGIN && LA108_5<=RULE_ID)) ) {
-            	                        alt108=1;
+            	                    if ( ((LA110_5>=Repository_dispatch && LA110_5<=ContinueOnError_1)||(LA110_5>=Workflow_dispatch && LA110_5<=WorkingDirectory)||(LA110_5>=TimeoutInMinutes && LA110_5<=TimeoutMinutes)||LA110_5==ReleaseTrigger||(LA110_5>=Allow_failure && LA110_5<=DeployTrigger)||(LA110_5>=Notifications && LA110_5<=PathsIgnore)||(LA110_5>=Pull_request && LA110_5<=Workflow_run)||(LA110_5>=Concurrency && LA110_5<=GetPackage)||(LA110_5>=Parameters && LA110_5<=Permission)||(LA110_5>=Powershell && LA110_5<=Artifacts)||(LA110_5>=Condition && LA110_5<=FailFast)||(LA110_5>=Pipelines && LA110_5<=RunPolicy)||(LA110_5>=Schedules && LA110_5<=Workspace)||(LA110_5>=Branches && LA110_5<=PreBuild)||(LA110_5>=Readonly && LA110_5<=Webhooks)||(LA110_5>=Command && LA110_5<=Caches)||(LA110_5>=Docker && LA110_5<=Except)||LA110_5==Inputs||(LA110_5>=Labels && LA110_5<=Policy)||LA110_5==Queued||(LA110_5>=Script && LA110_5<=Stages)||(LA110_5>=Agent && LA110_5<=Image)||(LA110_5>=Needs && LA110_5<=Value)||(LA110_5>=Auth && LA110_5<=Cron)||LA110_5==Name||(LA110_5>=Only && LA110_5<=Pwsh)||(LA110_5>=Step && LA110_5<=With)||(LA110_5>=Env && LA110_5<=Job)||(LA110_5>=Run && LA110_5<=On)||LA110_5==HyphenMinus||LA110_5==RULE_COMPLEX_EXPRESSION||(LA110_5>=RULE_BEGIN && LA110_5<=RULE_ID)) ) {
+            	                        alt110=1;
             	                    }
 
 
@@ -9759,15 +9778,18 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
 
             	            }
+            	            else if ( (LA110_1==LeftSquareBracket||(LA110_1>=RULE_COMPLEX_EXPRESSION && LA110_1<=RULE_BEGIN)||LA110_1==RULE_ID||LA110_1==RULE_STRING) ) {
+            	                alt110=1;
+            	            }
 
 
             	        }
-            	        else if ( ((LA108_0>=Repository_dispatch && LA108_0<=ContinueOnError_1)||(LA108_0>=Workflow_dispatch && LA108_0<=WorkingDirectory)||(LA108_0>=TimeoutInMinutes && LA108_0<=TimeoutMinutes)||LA108_0==ReleaseTrigger||(LA108_0>=Allow_failure && LA108_0<=DeployTrigger)||(LA108_0>=Notifications && LA108_0<=PathsIgnore)||(LA108_0>=Pull_request && LA108_0<=Workflow_run)||(LA108_0>=Concurrency && LA108_0<=GetPackage)||(LA108_0>=Parameters && LA108_0<=Permission)||(LA108_0>=Powershell && LA108_0<=Artifacts)||(LA108_0>=Condition && LA108_0<=FailFast)||(LA108_0>=Pipelines && LA108_0<=RunPolicy)||(LA108_0>=Schedules && LA108_0<=Workspace)||(LA108_0>=Branches && LA108_0<=PreBuild)||(LA108_0>=Readonly && LA108_0<=Webhooks)||(LA108_0>=Command && LA108_0<=Caches)||(LA108_0>=Docker && LA108_0<=Except)||LA108_0==Inputs||(LA108_0>=Labels && LA108_0<=Policy)||LA108_0==Queued||(LA108_0>=Script && LA108_0<=Stages)||(LA108_0>=Agent && LA108_0<=Image)||(LA108_0>=Needs && LA108_0<=Stage)||(LA108_0>=Tasks && LA108_0<=Value)||(LA108_0>=Auth && LA108_0<=Cron)||LA108_0==Name||(LA108_0>=Only && LA108_0<=Pwsh)||(LA108_0>=Step && LA108_0<=With)||(LA108_0>=Env && LA108_0<=Job)||(LA108_0>=Run && LA108_0<=On)||LA108_0==RULE_COMPLEX_EXPRESSION||LA108_0==RULE_ID) ) {
-            	            alt108=1;
+            	        else if ( ((LA110_0>=Repository_dispatch && LA110_0<=ContinueOnError_1)||(LA110_0>=Workflow_dispatch && LA110_0<=WorkingDirectory)||(LA110_0>=TimeoutInMinutes && LA110_0<=TimeoutMinutes)||LA110_0==ReleaseTrigger||(LA110_0>=Allow_failure && LA110_0<=DeployTrigger)||(LA110_0>=Notifications && LA110_0<=PathsIgnore)||(LA110_0>=Pull_request && LA110_0<=Workflow_run)||(LA110_0>=Concurrency && LA110_0<=GetPackage)||(LA110_0>=Parameters && LA110_0<=Permission)||(LA110_0>=Powershell && LA110_0<=Artifacts)||(LA110_0>=Condition && LA110_0<=FailFast)||(LA110_0>=Pipelines && LA110_0<=RunPolicy)||(LA110_0>=Schedules && LA110_0<=Workspace)||(LA110_0>=Branches && LA110_0<=PreBuild)||(LA110_0>=Readonly && LA110_0<=Webhooks)||(LA110_0>=Command && LA110_0<=Caches)||(LA110_0>=Docker && LA110_0<=Except)||LA110_0==Inputs||(LA110_0>=Labels && LA110_0<=Policy)||LA110_0==Queued||(LA110_0>=Script && LA110_0<=Stages)||(LA110_0>=Agent && LA110_0<=Image)||(LA110_0>=Needs && LA110_0<=Stage)||(LA110_0>=Tasks && LA110_0<=Value)||(LA110_0>=Auth && LA110_0<=Cron)||LA110_0==Name||(LA110_0>=Only && LA110_0<=Pwsh)||(LA110_0>=Step && LA110_0<=With)||(LA110_0>=Env && LA110_0<=Job)||(LA110_0>=Run && LA110_0<=On)||LA110_0==RULE_COMPLEX_EXPRESSION||LA110_0==RULE_ID) ) {
+            	            alt110=1;
             	        }
 
 
-            	        switch (alt108) {
+            	        switch (alt110) {
             	    	case 1 :
             	    	    // InternalPipelineParser.g:3641:10: (lv_jobParameterValues_16_0= ruleParameterValue )
             	    	    {
@@ -9801,18 +9823,18 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             	    	    break;
 
             	    	default :
-            	    	    break loop108;
+            	    	    break loop110;
             	        }
             	    } while (true);
 
             	    // InternalPipelineParser.g:3659:9: (otherlv_17= Steps ( (lv_steps_18_0= ruleStep ) )* )?
-            	    int alt110=2;
-            	    int LA110_0 = input.LA(1);
+            	    int alt112=2;
+            	    int LA112_0 = input.LA(1);
 
-            	    if ( (LA110_0==Steps) ) {
-            	        alt110=1;
+            	    if ( (LA112_0==Steps) ) {
+            	        alt112=1;
             	    }
-            	    switch (alt110) {
+            	    switch (alt112) {
             	        case 1 :
             	            // InternalPipelineParser.g:3660:10: otherlv_17= Steps ( (lv_steps_18_0= ruleStep ) )*
             	            {
@@ -9821,17 +9843,17 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             	            										newLeafNode(otherlv_17, grammarAccess.getJobAccess().getStepsKeyword_1_2_1_0());
             	            									
             	            // InternalPipelineParser.g:3664:10: ( (lv_steps_18_0= ruleStep ) )*
-            	            loop109:
+            	            loop111:
             	            do {
-            	                int alt109=2;
-            	                int LA109_0 = input.LA(1);
+            	                int alt111=2;
+            	                int LA111_0 = input.LA(1);
 
-            	                if ( (LA109_0==HyphenMinus) ) {
-            	                    alt109=1;
+            	                if ( (LA111_0==HyphenMinus) ) {
+            	                    alt111=1;
             	                }
 
 
-            	                switch (alt109) {
+            	                switch (alt111) {
             	            	case 1 :
             	            	    // InternalPipelineParser.g:3665:11: (lv_steps_18_0= ruleStep )
             	            	    {
@@ -9865,7 +9887,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             	            	    break;
 
             	            	default :
-            	            	    break loop109;
+            	            	    break loop111;
             	                }
             	            } while (true);
 
@@ -9875,7 +9897,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
             	    }
 
-            	    this_END_19=(Token)match(input,RULE_END,FOLLOW_77); 
+            	    this_END_19=(Token)match(input,RULE_END,FOLLOW_79); 
 
             	    									newLeafNode(this_END_19, grammarAccess.getJobAccess().getENDTerminalRuleCall_1_2_2());
             	    								
@@ -9899,12 +9921,12 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt111 >= 1 ) break loop111;
+            	    if ( cnt113 >= 1 ) break loop113;
                         EarlyExitException eee =
-                            new EarlyExitException(111, input);
+                            new EarlyExitException(113, input);
                         throw eee;
                 }
-                cnt111++;
+                cnt113++;
             } while (true);
 
             if ( ! getUnorderedGroupHelper().canLeave(grammarAccess.getJobAccess().getUnorderedGroup_1()) ) {
@@ -10001,14 +10023,14 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             // InternalPipelineParser.g:3720:2: (otherlv_0= HyphenMinus (this_Action_1= ruleAction | this_Script_2= ruleScript ) )
             // InternalPipelineParser.g:3721:3: otherlv_0= HyphenMinus (this_Action_1= ruleAction | this_Script_2= ruleScript )
             {
-            otherlv_0=(Token)match(input,HyphenMinus,FOLLOW_79); 
+            otherlv_0=(Token)match(input,HyphenMinus,FOLLOW_81); 
 
             			newLeafNode(otherlv_0, grammarAccess.getStepAccess().getHyphenMinusKeyword_0());
             		
             // InternalPipelineParser.g:3725:3: (this_Action_1= ruleAction | this_Script_2= ruleScript )
-            int alt112=2;
-            alt112 = dfa112.predict(input);
-            switch (alt112) {
+            int alt114=2;
+            alt114 = dfa114.predict(input);
+            switch (alt114) {
                 case 1 :
                     // InternalPipelineParser.g:3726:4: this_Action_1= ruleAction
                     {
@@ -10156,70 +10178,70 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             // InternalPipelineParser.g:3766:6: (lv_name_0_1= Run | lv_name_0_2= Script | lv_name_0_3= Bash | lv_name_0_4= Pwsh | lv_name_0_5= Powershell | lv_name_0_6= Checkout | lv_name_0_7= Download | lv_name_0_8= GetPackage | lv_name_0_9= Publish | lv_name_0_10= Task )
             {
             // InternalPipelineParser.g:3766:6: (lv_name_0_1= Run | lv_name_0_2= Script | lv_name_0_3= Bash | lv_name_0_4= Pwsh | lv_name_0_5= Powershell | lv_name_0_6= Checkout | lv_name_0_7= Download | lv_name_0_8= GetPackage | lv_name_0_9= Publish | lv_name_0_10= Task )
-            int alt113=10;
+            int alt115=10;
             switch ( input.LA(1) ) {
             case Run:
                 {
-                alt113=1;
+                alt115=1;
                 }
                 break;
             case Script:
                 {
-                alt113=2;
+                alt115=2;
                 }
                 break;
             case Bash:
                 {
-                alt113=3;
+                alt115=3;
                 }
                 break;
             case Pwsh:
                 {
-                alt113=4;
+                alt115=4;
                 }
                 break;
             case Powershell:
                 {
-                alt113=5;
+                alt115=5;
                 }
                 break;
             case Checkout:
                 {
-                alt113=6;
+                alt115=6;
                 }
                 break;
             case Download:
                 {
-                alt113=7;
+                alt115=7;
                 }
                 break;
             case GetPackage:
                 {
-                alt113=8;
+                alt115=8;
                 }
                 break;
             case Publish:
                 {
-                alt113=9;
+                alt115=9;
                 }
                 break;
             case Task:
                 {
-                alt113=10;
+                alt115=10;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 113, 0, input);
+                    new NoViableAltException("", 115, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt113) {
+            switch (alt115) {
                 case 1 :
                     // InternalPipelineParser.g:3767:7: lv_name_0_1= Run
                     {
-                    lv_name_0_1=(Token)match(input,Run,FOLLOW_80); 
+                    lv_name_0_1=(Token)match(input,Run,FOLLOW_82); 
 
                     							newLeafNode(lv_name_0_1, grammarAccess.getScriptAccess().getNameRunKeyword_0_0_0_0());
                     						
@@ -10235,7 +10257,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                 case 2 :
                     // InternalPipelineParser.g:3778:7: lv_name_0_2= Script
                     {
-                    lv_name_0_2=(Token)match(input,Script,FOLLOW_80); 
+                    lv_name_0_2=(Token)match(input,Script,FOLLOW_82); 
 
                     							newLeafNode(lv_name_0_2, grammarAccess.getScriptAccess().getNameScriptKeyword_0_0_0_1());
                     						
@@ -10251,7 +10273,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                 case 3 :
                     // InternalPipelineParser.g:3789:7: lv_name_0_3= Bash
                     {
-                    lv_name_0_3=(Token)match(input,Bash,FOLLOW_80); 
+                    lv_name_0_3=(Token)match(input,Bash,FOLLOW_82); 
 
                     							newLeafNode(lv_name_0_3, grammarAccess.getScriptAccess().getNameBashKeyword_0_0_0_2());
                     						
@@ -10267,7 +10289,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                 case 4 :
                     // InternalPipelineParser.g:3800:7: lv_name_0_4= Pwsh
                     {
-                    lv_name_0_4=(Token)match(input,Pwsh,FOLLOW_80); 
+                    lv_name_0_4=(Token)match(input,Pwsh,FOLLOW_82); 
 
                     							newLeafNode(lv_name_0_4, grammarAccess.getScriptAccess().getNamePwshKeyword_0_0_0_3());
                     						
@@ -10283,7 +10305,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                 case 5 :
                     // InternalPipelineParser.g:3811:7: lv_name_0_5= Powershell
                     {
-                    lv_name_0_5=(Token)match(input,Powershell,FOLLOW_80); 
+                    lv_name_0_5=(Token)match(input,Powershell,FOLLOW_82); 
 
                     							newLeafNode(lv_name_0_5, grammarAccess.getScriptAccess().getNamePowershellKeyword_0_0_0_4());
                     						
@@ -10299,7 +10321,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                 case 6 :
                     // InternalPipelineParser.g:3822:7: lv_name_0_6= Checkout
                     {
-                    lv_name_0_6=(Token)match(input,Checkout,FOLLOW_80); 
+                    lv_name_0_6=(Token)match(input,Checkout,FOLLOW_82); 
 
                     							newLeafNode(lv_name_0_6, grammarAccess.getScriptAccess().getNameCheckoutKeyword_0_0_0_5());
                     						
@@ -10315,7 +10337,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                 case 7 :
                     // InternalPipelineParser.g:3833:7: lv_name_0_7= Download
                     {
-                    lv_name_0_7=(Token)match(input,Download,FOLLOW_80); 
+                    lv_name_0_7=(Token)match(input,Download,FOLLOW_82); 
 
                     							newLeafNode(lv_name_0_7, grammarAccess.getScriptAccess().getNameDownloadKeyword_0_0_0_6());
                     						
@@ -10331,7 +10353,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                 case 8 :
                     // InternalPipelineParser.g:3844:7: lv_name_0_8= GetPackage
                     {
-                    lv_name_0_8=(Token)match(input,GetPackage,FOLLOW_80); 
+                    lv_name_0_8=(Token)match(input,GetPackage,FOLLOW_82); 
 
                     							newLeafNode(lv_name_0_8, grammarAccess.getScriptAccess().getNameGetPackageKeyword_0_0_0_7());
                     						
@@ -10347,7 +10369,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                 case 9 :
                     // InternalPipelineParser.g:3855:7: lv_name_0_9= Publish
                     {
-                    lv_name_0_9=(Token)match(input,Publish,FOLLOW_80); 
+                    lv_name_0_9=(Token)match(input,Publish,FOLLOW_82); 
 
                     							newLeafNode(lv_name_0_9, grammarAccess.getScriptAccess().getNamePublishKeyword_0_0_0_8());
                     						
@@ -10363,7 +10385,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                 case 10 :
                     // InternalPipelineParser.g:3866:7: lv_name_0_10= Task
                     {
-                    lv_name_0_10=(Token)match(input,Task,FOLLOW_80); 
+                    lv_name_0_10=(Token)match(input,Task,FOLLOW_82); 
 
                     							newLeafNode(lv_name_0_10, grammarAccess.getScriptAccess().getNameTaskKeyword_0_0_0_9());
                     						
@@ -10386,22 +10408,22 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             }
 
             // InternalPipelineParser.g:3879:4: ( ( (lv_command_1_0= ruleAnyData ) ) | ( (otherlv_2= VerticalLine | otherlv_3= GreaterThanSignHyphenMinus ) this_BEGIN_4= RULE_BEGIN ( (lv_command_5_0= ruleAnyData ) ) this_END_6= RULE_END ) )
-            int alt115=2;
-            int LA115_0 = input.LA(1);
+            int alt117=2;
+            int LA117_0 = input.LA(1);
 
-            if ( ((LA115_0>=RULE_COMPLEX_EXPRESSION && LA115_0<=RULE_VERSION)||LA115_0==RULE_ID||LA115_0==RULE_STRING) ) {
-                alt115=1;
+            if ( ((LA117_0>=RULE_COMPLEX_EXPRESSION && LA117_0<=RULE_VERSION)||LA117_0==RULE_ID||LA117_0==RULE_STRING) ) {
+                alt117=1;
             }
-            else if ( (LA115_0==GreaterThanSignHyphenMinus||LA115_0==VerticalLine) ) {
-                alt115=2;
+            else if ( (LA117_0==GreaterThanSignHyphenMinus||LA117_0==VerticalLine) ) {
+                alt117=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 115, 0, input);
+                    new NoViableAltException("", 117, 0, input);
 
                 throw nvae;
             }
-            switch (alt115) {
+            switch (alt117) {
                 case 1 :
                     // InternalPipelineParser.g:3880:5: ( (lv_command_1_0= ruleAnyData ) )
                     {
@@ -10446,22 +10468,22 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     // InternalPipelineParser.g:3901:6: (otherlv_2= VerticalLine | otherlv_3= GreaterThanSignHyphenMinus ) this_BEGIN_4= RULE_BEGIN ( (lv_command_5_0= ruleAnyData ) ) this_END_6= RULE_END
                     {
                     // InternalPipelineParser.g:3901:6: (otherlv_2= VerticalLine | otherlv_3= GreaterThanSignHyphenMinus )
-                    int alt114=2;
-                    int LA114_0 = input.LA(1);
+                    int alt116=2;
+                    int LA116_0 = input.LA(1);
 
-                    if ( (LA114_0==VerticalLine) ) {
-                        alt114=1;
+                    if ( (LA116_0==VerticalLine) ) {
+                        alt116=1;
                     }
-                    else if ( (LA114_0==GreaterThanSignHyphenMinus) ) {
-                        alt114=2;
+                    else if ( (LA116_0==GreaterThanSignHyphenMinus) ) {
+                        alt116=2;
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("", 114, 0, input);
+                            new NoViableAltException("", 116, 0, input);
 
                         throw nvae;
                     }
-                    switch (alt114) {
+                    switch (alt116) {
                         case 1 :
                             // InternalPipelineParser.g:3902:7: otherlv_2= VerticalLine
                             {
@@ -10537,32 +10559,32 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             }
 
             // InternalPipelineParser.g:3942:3: (this_BEGIN_7= RULE_BEGIN ( ( (lv_subSteps_8_1= ruleAction | lv_subSteps_8_2= ruleScript ) ) )* this_END_9= RULE_END )?
-            int alt118=2;
-            int LA118_0 = input.LA(1);
+            int alt120=2;
+            int LA120_0 = input.LA(1);
 
-            if ( (LA118_0==RULE_BEGIN) ) {
-                alt118=1;
+            if ( (LA120_0==RULE_BEGIN) ) {
+                alt120=1;
             }
-            switch (alt118) {
+            switch (alt120) {
                 case 1 :
                     // InternalPipelineParser.g:3943:4: this_BEGIN_7= RULE_BEGIN ( ( (lv_subSteps_8_1= ruleAction | lv_subSteps_8_2= ruleScript ) ) )* this_END_9= RULE_END
                     {
-                    this_BEGIN_7=(Token)match(input,RULE_BEGIN,FOLLOW_81); 
+                    this_BEGIN_7=(Token)match(input,RULE_BEGIN,FOLLOW_83); 
 
                     				newLeafNode(this_BEGIN_7, grammarAccess.getScriptAccess().getBEGINTerminalRuleCall_1_0());
                     			
                     // InternalPipelineParser.g:3947:4: ( ( (lv_subSteps_8_1= ruleAction | lv_subSteps_8_2= ruleScript ) ) )*
-                    loop117:
+                    loop119:
                     do {
-                        int alt117=2;
-                        int LA117_0 = input.LA(1);
+                        int alt119=2;
+                        int LA119_0 = input.LA(1);
 
-                        if ( ((LA117_0>=Repository_dispatch && LA117_0<=ContinueOnError_1)||(LA117_0>=Workflow_dispatch && LA117_0<=WorkingDirectory)||(LA117_0>=TimeoutInMinutes && LA117_0<=TimeoutMinutes)||LA117_0==ReleaseTrigger||(LA117_0>=Allow_failure && LA117_0<=DeployTrigger)||(LA117_0>=Notifications && LA117_0<=PathsIgnore)||(LA117_0>=Pull_request && LA117_0<=Workflow_run)||(LA117_0>=Concurrency && LA117_0<=GetPackage)||(LA117_0>=Parameters && LA117_0<=Permission)||(LA117_0>=Powershell && LA117_0<=Artifacts)||(LA117_0>=Condition && LA117_0<=FailFast)||(LA117_0>=Pipelines && LA117_0<=RunPolicy)||(LA117_0>=Schedules && LA117_0<=Workspace)||(LA117_0>=Branches && LA117_0<=PreBuild)||(LA117_0>=Readonly && LA117_0<=Webhooks)||(LA117_0>=Command && LA117_0<=Caches)||(LA117_0>=Docker && LA117_0<=Except)||LA117_0==Inputs||(LA117_0>=Labels && LA117_0<=Policy)||LA117_0==Queued||(LA117_0>=Script && LA117_0<=Stages)||(LA117_0>=Agent && LA117_0<=Image)||(LA117_0>=Needs && LA117_0<=Value)||(LA117_0>=Auth && LA117_0<=Cron)||LA117_0==Name||(LA117_0>=Only && LA117_0<=Pwsh)||(LA117_0>=Step && LA117_0<=With)||(LA117_0>=Env && LA117_0<=Job)||(LA117_0>=Run && LA117_0<=On)||LA117_0==RULE_ID) ) {
-                            alt117=1;
+                        if ( ((LA119_0>=Repository_dispatch && LA119_0<=ContinueOnError_1)||(LA119_0>=Workflow_dispatch && LA119_0<=WorkingDirectory)||(LA119_0>=TimeoutInMinutes && LA119_0<=TimeoutMinutes)||LA119_0==ReleaseTrigger||(LA119_0>=Allow_failure && LA119_0<=DeployTrigger)||(LA119_0>=Notifications && LA119_0<=PathsIgnore)||(LA119_0>=Pull_request && LA119_0<=Workflow_run)||(LA119_0>=Concurrency && LA119_0<=GetPackage)||(LA119_0>=Parameters && LA119_0<=Permission)||(LA119_0>=Powershell && LA119_0<=Artifacts)||(LA119_0>=Condition && LA119_0<=FailFast)||(LA119_0>=Pipelines && LA119_0<=RunPolicy)||(LA119_0>=Schedules && LA119_0<=Workspace)||(LA119_0>=Branches && LA119_0<=PreBuild)||(LA119_0>=Readonly && LA119_0<=Webhooks)||(LA119_0>=Command && LA119_0<=Caches)||(LA119_0>=Docker && LA119_0<=Except)||LA119_0==Inputs||(LA119_0>=Labels && LA119_0<=Policy)||LA119_0==Queued||(LA119_0>=Script && LA119_0<=Stages)||(LA119_0>=Agent && LA119_0<=Image)||(LA119_0>=Needs && LA119_0<=Value)||(LA119_0>=Auth && LA119_0<=Cron)||LA119_0==Name||(LA119_0>=Only && LA119_0<=Pwsh)||(LA119_0>=Step && LA119_0<=With)||(LA119_0>=Env && LA119_0<=Job)||(LA119_0>=Run && LA119_0<=On)||LA119_0==RULE_ID) ) {
+                            alt119=1;
                         }
 
 
-                        switch (alt117) {
+                        switch (alt119) {
                     	case 1 :
                     	    // InternalPipelineParser.g:3948:5: ( (lv_subSteps_8_1= ruleAction | lv_subSteps_8_2= ruleScript ) )
                     	    {
@@ -10570,16 +10592,16 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	    // InternalPipelineParser.g:3949:6: (lv_subSteps_8_1= ruleAction | lv_subSteps_8_2= ruleScript )
                     	    {
                     	    // InternalPipelineParser.g:3949:6: (lv_subSteps_8_1= ruleAction | lv_subSteps_8_2= ruleScript )
-                    	    int alt116=2;
-                    	    alt116 = dfa116.predict(input);
-                    	    switch (alt116) {
+                    	    int alt118=2;
+                    	    alt118 = dfa118.predict(input);
+                    	    switch (alt118) {
                     	        case 1 :
                     	            // InternalPipelineParser.g:3950:7: lv_subSteps_8_1= ruleAction
                     	            {
 
                     	            							newCompositeNode(grammarAccess.getScriptAccess().getSubStepsActionParserRuleCall_1_1_0_0());
                     	            						
-                    	            pushFollow(FOLLOW_81);
+                    	            pushFollow(FOLLOW_83);
                     	            lv_subSteps_8_1=ruleAction();
 
                     	            state._fsp--;
@@ -10604,7 +10626,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
                     	            							newCompositeNode(grammarAccess.getScriptAccess().getSubStepsScriptParserRuleCall_1_1_0_1());
                     	            						
-                    	            pushFollow(FOLLOW_81);
+                    	            pushFollow(FOLLOW_83);
                     	            lv_subSteps_8_2=ruleScript();
 
                     	            state._fsp--;
@@ -10634,7 +10656,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop117;
+                    	    break loop119;
                         }
                     } while (true);
 
@@ -10738,22 +10760,22 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             // InternalPipelineParser.g:4009:4: ( ( (lv_actionKeyword_0_0= rulePipelineKeyword ) ) | ( ( (lv_otherKeyword_1_0= RULE_ID ) ) otherlv_2= Colon ) ) ( (lv_actionValue_3_0= ruleAnyData ) )?
             {
             // InternalPipelineParser.g:4009:4: ( ( (lv_actionKeyword_0_0= rulePipelineKeyword ) ) | ( ( (lv_otherKeyword_1_0= RULE_ID ) ) otherlv_2= Colon ) )
-            int alt119=2;
-            int LA119_0 = input.LA(1);
+            int alt121=2;
+            int LA121_0 = input.LA(1);
 
-            if ( ((LA119_0>=Repository_dispatch && LA119_0<=ContinueOnError_1)||(LA119_0>=Workflow_dispatch && LA119_0<=WorkingDirectory)||(LA119_0>=TimeoutInMinutes && LA119_0<=TimeoutMinutes)||LA119_0==ReleaseTrigger||(LA119_0>=Allow_failure && LA119_0<=DeployTrigger)||(LA119_0>=Notifications && LA119_0<=PathsIgnore)||(LA119_0>=Pull_request && LA119_0<=Workflow_run)||(LA119_0>=Concurrency && LA119_0<=GetPackage)||(LA119_0>=Parameters && LA119_0<=Permission)||(LA119_0>=Powershell && LA119_0<=Artifacts)||(LA119_0>=Condition && LA119_0<=FailFast)||(LA119_0>=Pipelines && LA119_0<=RunPolicy)||(LA119_0>=Schedules && LA119_0<=Workspace)||(LA119_0>=Branches && LA119_0<=PreBuild)||(LA119_0>=Readonly && LA119_0<=Webhooks)||(LA119_0>=Command && LA119_0<=Caches)||(LA119_0>=Docker && LA119_0<=Except)||LA119_0==Inputs||(LA119_0>=Labels && LA119_0<=Policy)||LA119_0==Queued||(LA119_0>=Script && LA119_0<=Stages)||(LA119_0>=Agent && LA119_0<=Image)||(LA119_0>=Needs && LA119_0<=Value)||(LA119_0>=Auth && LA119_0<=Cron)||LA119_0==Name||(LA119_0>=Only && LA119_0<=Pwsh)||(LA119_0>=Step && LA119_0<=With)||(LA119_0>=Env && LA119_0<=Job)||(LA119_0>=Run && LA119_0<=On)) ) {
-                alt119=1;
+            if ( ((LA121_0>=Repository_dispatch && LA121_0<=ContinueOnError_1)||(LA121_0>=Workflow_dispatch && LA121_0<=WorkingDirectory)||(LA121_0>=TimeoutInMinutes && LA121_0<=TimeoutMinutes)||LA121_0==ReleaseTrigger||(LA121_0>=Allow_failure && LA121_0<=DeployTrigger)||(LA121_0>=Notifications && LA121_0<=PathsIgnore)||(LA121_0>=Pull_request && LA121_0<=Workflow_run)||(LA121_0>=Concurrency && LA121_0<=GetPackage)||(LA121_0>=Parameters && LA121_0<=Permission)||(LA121_0>=Powershell && LA121_0<=Artifacts)||(LA121_0>=Condition && LA121_0<=FailFast)||(LA121_0>=Pipelines && LA121_0<=RunPolicy)||(LA121_0>=Schedules && LA121_0<=Workspace)||(LA121_0>=Branches && LA121_0<=PreBuild)||(LA121_0>=Readonly && LA121_0<=Webhooks)||(LA121_0>=Command && LA121_0<=Caches)||(LA121_0>=Docker && LA121_0<=Except)||LA121_0==Inputs||(LA121_0>=Labels && LA121_0<=Policy)||LA121_0==Queued||(LA121_0>=Script && LA121_0<=Stages)||(LA121_0>=Agent && LA121_0<=Image)||(LA121_0>=Needs && LA121_0<=Value)||(LA121_0>=Auth && LA121_0<=Cron)||LA121_0==Name||(LA121_0>=Only && LA121_0<=Pwsh)||(LA121_0>=Step && LA121_0<=With)||(LA121_0>=Env && LA121_0<=Job)||(LA121_0>=Run && LA121_0<=On)) ) {
+                alt121=1;
             }
-            else if ( (LA119_0==RULE_ID) ) {
-                alt119=2;
+            else if ( (LA121_0==RULE_ID) ) {
+                alt121=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 119, 0, input);
+                    new NoViableAltException("", 121, 0, input);
 
                 throw nvae;
             }
-            switch (alt119) {
+            switch (alt121) {
                 case 1 :
                     // InternalPipelineParser.g:4010:5: ( (lv_actionKeyword_0_0= rulePipelineKeyword ) )
                     {
@@ -10766,7 +10788,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
                     							newCompositeNode(grammarAccess.getActionAccess().getActionKeywordPipelineKeywordEnumRuleCall_0_0_0_0());
                     						
-                    pushFollow(FOLLOW_82);
+                    pushFollow(FOLLOW_84);
                     lv_actionKeyword_0_0=rulePipelineKeyword();
 
                     state._fsp--;
@@ -10823,7 +10845,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_2=(Token)match(input,Colon,FOLLOW_82); 
+                    otherlv_2=(Token)match(input,Colon,FOLLOW_84); 
 
                     						newLeafNode(otherlv_2, grammarAccess.getActionAccess().getColonKeyword_0_0_1_1());
                     					
@@ -10837,20 +10859,20 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             }
 
             // InternalPipelineParser.g:4055:4: ( (lv_actionValue_3_0= ruleAnyData ) )?
-            int alt120=2;
-            int LA120_0 = input.LA(1);
+            int alt122=2;
+            int LA122_0 = input.LA(1);
 
-            if ( ((LA120_0>=RULE_COMPLEX_EXPRESSION && LA120_0<=RULE_VERSION)||LA120_0==RULE_STRING) ) {
-                alt120=1;
+            if ( ((LA122_0>=RULE_COMPLEX_EXPRESSION && LA122_0<=RULE_VERSION)||LA122_0==RULE_STRING) ) {
+                alt122=1;
             }
-            else if ( (LA120_0==RULE_ID) ) {
-                int LA120_2 = input.LA(2);
+            else if ( (LA122_0==RULE_ID) ) {
+                int LA122_2 = input.LA(2);
 
-                if ( (LA120_2==EOF||(LA120_2>=Repository_dispatch && LA120_2<=ContinueOnError_1)||(LA120_2>=Workflow_dispatch && LA120_2<=WorkingDirectory)||(LA120_2>=TimeoutInMinutes && LA120_2<=TimeoutMinutes)||LA120_2==ReleaseTrigger||(LA120_2>=Allow_failure && LA120_2<=DeployTrigger)||(LA120_2>=Notifications && LA120_2<=PathsIgnore)||(LA120_2>=Pull_request && LA120_2<=Workflow_run)||(LA120_2>=Concurrency && LA120_2<=GetPackage)||(LA120_2>=Parameters && LA120_2<=Permission)||(LA120_2>=Powershell && LA120_2<=Artifacts)||(LA120_2>=Condition && LA120_2<=FailFast)||(LA120_2>=Pipelines && LA120_2<=RunPolicy)||(LA120_2>=Schedules && LA120_2<=Workspace)||(LA120_2>=Branches && LA120_2<=PreBuild)||(LA120_2>=Readonly && LA120_2<=Webhooks)||(LA120_2>=Command && LA120_2<=Caches)||(LA120_2>=Docker && LA120_2<=Except)||LA120_2==Inputs||(LA120_2>=Labels && LA120_2<=Policy)||LA120_2==Queued||(LA120_2>=Script && LA120_2<=Stages)||(LA120_2>=Agent && LA120_2<=Image)||(LA120_2>=Needs && LA120_2<=Value)||(LA120_2>=Auth && LA120_2<=Cron)||LA120_2==Name||(LA120_2>=Only && LA120_2<=Pwsh)||(LA120_2>=Step && LA120_2<=With)||(LA120_2>=Env && LA120_2<=Job)||(LA120_2>=Run && LA120_2<=On)||LA120_2==HyphenMinus||(LA120_2>=RULE_BEGIN && LA120_2<=RULE_ID)) ) {
-                    alt120=1;
+                if ( (LA122_2==EOF||(LA122_2>=Repository_dispatch && LA122_2<=ContinueOnError_1)||(LA122_2>=Workflow_dispatch && LA122_2<=WorkingDirectory)||(LA122_2>=TimeoutInMinutes && LA122_2<=TimeoutMinutes)||LA122_2==ReleaseTrigger||(LA122_2>=Allow_failure && LA122_2<=DeployTrigger)||(LA122_2>=Notifications && LA122_2<=PathsIgnore)||(LA122_2>=Pull_request && LA122_2<=Workflow_run)||(LA122_2>=Concurrency && LA122_2<=GetPackage)||(LA122_2>=Parameters && LA122_2<=Permission)||(LA122_2>=Powershell && LA122_2<=Artifacts)||(LA122_2>=Condition && LA122_2<=FailFast)||(LA122_2>=Pipelines && LA122_2<=RunPolicy)||(LA122_2>=Schedules && LA122_2<=Workspace)||(LA122_2>=Branches && LA122_2<=PreBuild)||(LA122_2>=Readonly && LA122_2<=Webhooks)||(LA122_2>=Command && LA122_2<=Caches)||(LA122_2>=Docker && LA122_2<=Except)||LA122_2==Inputs||(LA122_2>=Labels && LA122_2<=Policy)||LA122_2==Queued||(LA122_2>=Script && LA122_2<=Stages)||(LA122_2>=Agent && LA122_2<=Image)||(LA122_2>=Needs && LA122_2<=Value)||(LA122_2>=Auth && LA122_2<=Cron)||LA122_2==Name||(LA122_2>=Only && LA122_2<=Pwsh)||(LA122_2>=Step && LA122_2<=With)||(LA122_2>=Env && LA122_2<=Job)||(LA122_2>=Run && LA122_2<=On)||LA122_2==HyphenMinus||(LA122_2>=RULE_BEGIN && LA122_2<=RULE_ID)) ) {
+                    alt122=1;
                 }
             }
-            switch (alt120) {
+            switch (alt122) {
                 case 1 :
                     // InternalPipelineParser.g:4056:5: (lv_actionValue_3_0= ruleAnyData )
                     {
@@ -10889,32 +10911,32 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             }
 
             // InternalPipelineParser.g:4075:3: (this_BEGIN_4= RULE_BEGIN ( ( (lv_subSteps_5_1= ruleAction | lv_subSteps_5_2= ruleScript ) ) )* this_END_6= RULE_END )?
-            int alt123=2;
-            int LA123_0 = input.LA(1);
+            int alt125=2;
+            int LA125_0 = input.LA(1);
 
-            if ( (LA123_0==RULE_BEGIN) ) {
-                alt123=1;
+            if ( (LA125_0==RULE_BEGIN) ) {
+                alt125=1;
             }
-            switch (alt123) {
+            switch (alt125) {
                 case 1 :
                     // InternalPipelineParser.g:4076:4: this_BEGIN_4= RULE_BEGIN ( ( (lv_subSteps_5_1= ruleAction | lv_subSteps_5_2= ruleScript ) ) )* this_END_6= RULE_END
                     {
-                    this_BEGIN_4=(Token)match(input,RULE_BEGIN,FOLLOW_81); 
+                    this_BEGIN_4=(Token)match(input,RULE_BEGIN,FOLLOW_83); 
 
                     				newLeafNode(this_BEGIN_4, grammarAccess.getActionAccess().getBEGINTerminalRuleCall_1_0());
                     			
                     // InternalPipelineParser.g:4080:4: ( ( (lv_subSteps_5_1= ruleAction | lv_subSteps_5_2= ruleScript ) ) )*
-                    loop122:
+                    loop124:
                     do {
-                        int alt122=2;
-                        int LA122_0 = input.LA(1);
+                        int alt124=2;
+                        int LA124_0 = input.LA(1);
 
-                        if ( ((LA122_0>=Repository_dispatch && LA122_0<=ContinueOnError_1)||(LA122_0>=Workflow_dispatch && LA122_0<=WorkingDirectory)||(LA122_0>=TimeoutInMinutes && LA122_0<=TimeoutMinutes)||LA122_0==ReleaseTrigger||(LA122_0>=Allow_failure && LA122_0<=DeployTrigger)||(LA122_0>=Notifications && LA122_0<=PathsIgnore)||(LA122_0>=Pull_request && LA122_0<=Workflow_run)||(LA122_0>=Concurrency && LA122_0<=GetPackage)||(LA122_0>=Parameters && LA122_0<=Permission)||(LA122_0>=Powershell && LA122_0<=Artifacts)||(LA122_0>=Condition && LA122_0<=FailFast)||(LA122_0>=Pipelines && LA122_0<=RunPolicy)||(LA122_0>=Schedules && LA122_0<=Workspace)||(LA122_0>=Branches && LA122_0<=PreBuild)||(LA122_0>=Readonly && LA122_0<=Webhooks)||(LA122_0>=Command && LA122_0<=Caches)||(LA122_0>=Docker && LA122_0<=Except)||LA122_0==Inputs||(LA122_0>=Labels && LA122_0<=Policy)||LA122_0==Queued||(LA122_0>=Script && LA122_0<=Stages)||(LA122_0>=Agent && LA122_0<=Image)||(LA122_0>=Needs && LA122_0<=Value)||(LA122_0>=Auth && LA122_0<=Cron)||LA122_0==Name||(LA122_0>=Only && LA122_0<=Pwsh)||(LA122_0>=Step && LA122_0<=With)||(LA122_0>=Env && LA122_0<=Job)||(LA122_0>=Run && LA122_0<=On)||LA122_0==RULE_ID) ) {
-                            alt122=1;
+                        if ( ((LA124_0>=Repository_dispatch && LA124_0<=ContinueOnError_1)||(LA124_0>=Workflow_dispatch && LA124_0<=WorkingDirectory)||(LA124_0>=TimeoutInMinutes && LA124_0<=TimeoutMinutes)||LA124_0==ReleaseTrigger||(LA124_0>=Allow_failure && LA124_0<=DeployTrigger)||(LA124_0>=Notifications && LA124_0<=PathsIgnore)||(LA124_0>=Pull_request && LA124_0<=Workflow_run)||(LA124_0>=Concurrency && LA124_0<=GetPackage)||(LA124_0>=Parameters && LA124_0<=Permission)||(LA124_0>=Powershell && LA124_0<=Artifacts)||(LA124_0>=Condition && LA124_0<=FailFast)||(LA124_0>=Pipelines && LA124_0<=RunPolicy)||(LA124_0>=Schedules && LA124_0<=Workspace)||(LA124_0>=Branches && LA124_0<=PreBuild)||(LA124_0>=Readonly && LA124_0<=Webhooks)||(LA124_0>=Command && LA124_0<=Caches)||(LA124_0>=Docker && LA124_0<=Except)||LA124_0==Inputs||(LA124_0>=Labels && LA124_0<=Policy)||LA124_0==Queued||(LA124_0>=Script && LA124_0<=Stages)||(LA124_0>=Agent && LA124_0<=Image)||(LA124_0>=Needs && LA124_0<=Value)||(LA124_0>=Auth && LA124_0<=Cron)||LA124_0==Name||(LA124_0>=Only && LA124_0<=Pwsh)||(LA124_0>=Step && LA124_0<=With)||(LA124_0>=Env && LA124_0<=Job)||(LA124_0>=Run && LA124_0<=On)||LA124_0==RULE_ID) ) {
+                            alt124=1;
                         }
 
 
-                        switch (alt122) {
+                        switch (alt124) {
                     	case 1 :
                     	    // InternalPipelineParser.g:4081:5: ( (lv_subSteps_5_1= ruleAction | lv_subSteps_5_2= ruleScript ) )
                     	    {
@@ -10922,16 +10944,16 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	    // InternalPipelineParser.g:4082:6: (lv_subSteps_5_1= ruleAction | lv_subSteps_5_2= ruleScript )
                     	    {
                     	    // InternalPipelineParser.g:4082:6: (lv_subSteps_5_1= ruleAction | lv_subSteps_5_2= ruleScript )
-                    	    int alt121=2;
-                    	    alt121 = dfa121.predict(input);
-                    	    switch (alt121) {
+                    	    int alt123=2;
+                    	    alt123 = dfa123.predict(input);
+                    	    switch (alt123) {
                     	        case 1 :
                     	            // InternalPipelineParser.g:4083:7: lv_subSteps_5_1= ruleAction
                     	            {
 
                     	            							newCompositeNode(grammarAccess.getActionAccess().getSubStepsActionParserRuleCall_1_1_0_0());
                     	            						
-                    	            pushFollow(FOLLOW_81);
+                    	            pushFollow(FOLLOW_83);
                     	            lv_subSteps_5_1=ruleAction();
 
                     	            state._fsp--;
@@ -10956,7 +10978,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
                     	            							newCompositeNode(grammarAccess.getActionAccess().getSubStepsScriptParserRuleCall_1_1_0_1());
                     	            						
-                    	            pushFollow(FOLLOW_81);
+                    	            pushFollow(FOLLOW_83);
                     	            lv_subSteps_5_2=ruleScript();
 
                     	            state._fsp--;
@@ -10986,7 +11008,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop122;
+                    	    break loop124;
                         }
                     } while (true);
 
@@ -11096,22 +11118,22 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             // InternalPipelineParser.g:4141:3: ( ( (lv_name_0_0= rulePipelineKeyword ) ) | ( ( ( (lv_otherName_1_1= RULE_ID | lv_otherName_1_2= RULE_COMPLEX_EXPRESSION ) ) ) otherlv_2= Colon ) ) ( ( ( ( (lv_value_3_1= ruleAnyData | lv_value_3_2= ruleArrayList | lv_value_3_3= ruleHyphenValues ) ) ) (this_BEGIN_4= RULE_BEGIN ( (otherlv_5= HyphenMinus )? ( (lv_subParameters_6_0= ruleParameterValue ) ) )* this_END_7= RULE_END )? ) | (this_BEGIN_8= RULE_BEGIN ( (otherlv_9= HyphenMinus )? ( (lv_subParameters_10_0= ruleParameterValue ) ) )* this_END_11= RULE_END ) )
             {
             // InternalPipelineParser.g:4141:3: ( ( (lv_name_0_0= rulePipelineKeyword ) ) | ( ( ( (lv_otherName_1_1= RULE_ID | lv_otherName_1_2= RULE_COMPLEX_EXPRESSION ) ) ) otherlv_2= Colon ) )
-            int alt125=2;
-            int LA125_0 = input.LA(1);
+            int alt127=2;
+            int LA127_0 = input.LA(1);
 
-            if ( ((LA125_0>=Repository_dispatch && LA125_0<=ContinueOnError_1)||(LA125_0>=Workflow_dispatch && LA125_0<=WorkingDirectory)||(LA125_0>=TimeoutInMinutes && LA125_0<=TimeoutMinutes)||LA125_0==ReleaseTrigger||(LA125_0>=Allow_failure && LA125_0<=DeployTrigger)||(LA125_0>=Notifications && LA125_0<=PathsIgnore)||(LA125_0>=Pull_request && LA125_0<=Workflow_run)||(LA125_0>=Concurrency && LA125_0<=GetPackage)||(LA125_0>=Parameters && LA125_0<=Permission)||(LA125_0>=Powershell && LA125_0<=Artifacts)||(LA125_0>=Condition && LA125_0<=FailFast)||(LA125_0>=Pipelines && LA125_0<=RunPolicy)||(LA125_0>=Schedules && LA125_0<=Workspace)||(LA125_0>=Branches && LA125_0<=PreBuild)||(LA125_0>=Readonly && LA125_0<=Webhooks)||(LA125_0>=Command && LA125_0<=Caches)||(LA125_0>=Docker && LA125_0<=Except)||LA125_0==Inputs||(LA125_0>=Labels && LA125_0<=Policy)||LA125_0==Queued||(LA125_0>=Script && LA125_0<=Stages)||(LA125_0>=Agent && LA125_0<=Image)||(LA125_0>=Needs && LA125_0<=Value)||(LA125_0>=Auth && LA125_0<=Cron)||LA125_0==Name||(LA125_0>=Only && LA125_0<=Pwsh)||(LA125_0>=Step && LA125_0<=With)||(LA125_0>=Env && LA125_0<=Job)||(LA125_0>=Run && LA125_0<=On)) ) {
-                alt125=1;
+            if ( ((LA127_0>=Repository_dispatch && LA127_0<=ContinueOnError_1)||(LA127_0>=Workflow_dispatch && LA127_0<=WorkingDirectory)||(LA127_0>=TimeoutInMinutes && LA127_0<=TimeoutMinutes)||LA127_0==ReleaseTrigger||(LA127_0>=Allow_failure && LA127_0<=DeployTrigger)||(LA127_0>=Notifications && LA127_0<=PathsIgnore)||(LA127_0>=Pull_request && LA127_0<=Workflow_run)||(LA127_0>=Concurrency && LA127_0<=GetPackage)||(LA127_0>=Parameters && LA127_0<=Permission)||(LA127_0>=Powershell && LA127_0<=Artifacts)||(LA127_0>=Condition && LA127_0<=FailFast)||(LA127_0>=Pipelines && LA127_0<=RunPolicy)||(LA127_0>=Schedules && LA127_0<=Workspace)||(LA127_0>=Branches && LA127_0<=PreBuild)||(LA127_0>=Readonly && LA127_0<=Webhooks)||(LA127_0>=Command && LA127_0<=Caches)||(LA127_0>=Docker && LA127_0<=Except)||LA127_0==Inputs||(LA127_0>=Labels && LA127_0<=Policy)||LA127_0==Queued||(LA127_0>=Script && LA127_0<=Stages)||(LA127_0>=Agent && LA127_0<=Image)||(LA127_0>=Needs && LA127_0<=Value)||(LA127_0>=Auth && LA127_0<=Cron)||LA127_0==Name||(LA127_0>=Only && LA127_0<=Pwsh)||(LA127_0>=Step && LA127_0<=With)||(LA127_0>=Env && LA127_0<=Job)||(LA127_0>=Run && LA127_0<=On)) ) {
+                alt127=1;
             }
-            else if ( (LA125_0==RULE_COMPLEX_EXPRESSION||LA125_0==RULE_ID) ) {
-                alt125=2;
+            else if ( (LA127_0==RULE_COMPLEX_EXPRESSION||LA127_0==RULE_ID) ) {
+                alt127=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 125, 0, input);
+                    new NoViableAltException("", 127, 0, input);
 
                 throw nvae;
             }
-            switch (alt125) {
+            switch (alt127) {
                 case 1 :
                     // InternalPipelineParser.g:4142:4: ( (lv_name_0_0= rulePipelineKeyword ) )
                     {
@@ -11162,22 +11184,22 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     // InternalPipelineParser.g:4165:7: (lv_otherName_1_1= RULE_ID | lv_otherName_1_2= RULE_COMPLEX_EXPRESSION )
                     {
                     // InternalPipelineParser.g:4165:7: (lv_otherName_1_1= RULE_ID | lv_otherName_1_2= RULE_COMPLEX_EXPRESSION )
-                    int alt124=2;
-                    int LA124_0 = input.LA(1);
+                    int alt126=2;
+                    int LA126_0 = input.LA(1);
 
-                    if ( (LA124_0==RULE_ID) ) {
-                        alt124=1;
+                    if ( (LA126_0==RULE_ID) ) {
+                        alt126=1;
                     }
-                    else if ( (LA124_0==RULE_COMPLEX_EXPRESSION) ) {
-                        alt124=2;
+                    else if ( (LA126_0==RULE_COMPLEX_EXPRESSION) ) {
+                        alt126=2;
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("", 124, 0, input);
+                            new NoViableAltException("", 126, 0, input);
 
                         throw nvae;
                     }
-                    switch (alt124) {
+                    switch (alt126) {
                         case 1 :
                             // InternalPipelineParser.g:4166:8: lv_otherName_1_1= RULE_ID
                             {
@@ -11241,17 +11263,62 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             }
 
             // InternalPipelineParser.g:4204:3: ( ( ( ( (lv_value_3_1= ruleAnyData | lv_value_3_2= ruleArrayList | lv_value_3_3= ruleHyphenValues ) ) ) (this_BEGIN_4= RULE_BEGIN ( (otherlv_5= HyphenMinus )? ( (lv_subParameters_6_0= ruleParameterValue ) ) )* this_END_7= RULE_END )? ) | (this_BEGIN_8= RULE_BEGIN ( (otherlv_9= HyphenMinus )? ( (lv_subParameters_10_0= ruleParameterValue ) ) )* this_END_11= RULE_END ) )
-            int alt132=2;
-            int LA132_0 = input.LA(1);
+            int alt134=2;
+            int LA134_0 = input.LA(1);
 
-            if ( (LA132_0==HyphenMinus||LA132_0==LeftSquareBracket||(LA132_0>=RULE_COMPLEX_EXPRESSION && LA132_0<=RULE_VERSION)||LA132_0==RULE_ID||LA132_0==RULE_STRING) ) {
-                alt132=1;
+            if ( (LA134_0==HyphenMinus||LA134_0==LeftSquareBracket||(LA134_0>=RULE_COMPLEX_EXPRESSION && LA134_0<=RULE_VERSION)||LA134_0==RULE_ID||LA134_0==RULE_STRING) ) {
+                alt134=1;
             }
-            else if ( (LA132_0==RULE_BEGIN) ) {
-                int LA132_2 = input.LA(2);
+            else if ( (LA134_0==RULE_BEGIN) ) {
+                int LA134_2 = input.LA(2);
 
-                if ( (LA132_2==HyphenMinus) ) {
+                if ( (LA134_2==HyphenMinus) ) {
                     switch ( input.LA(3) ) {
+                    case RULE_HEX_INT:
+                    case RULE_INT:
+                    case RULE_FLOAT_LITERAL:
+                    case RULE_VERSION:
+                    case RULE_STRING:
+                        {
+                        alt134=1;
+                        }
+                        break;
+                    case RULE_ID:
+                        {
+                        int LA134_5 = input.LA(4);
+
+                        if ( (LA134_5==HyphenMinus||LA134_5==RULE_END) ) {
+                            alt134=1;
+                        }
+                        else if ( (LA134_5==Colon) ) {
+                            alt134=2;
+                        }
+                        else {
+                            NoViableAltException nvae =
+                                new NoViableAltException("", 134, 5, input);
+
+                            throw nvae;
+                        }
+                        }
+                        break;
+                    case RULE_COMPLEX_EXPRESSION:
+                        {
+                        int LA134_6 = input.LA(4);
+
+                        if ( (LA134_6==HyphenMinus||LA134_6==RULE_END) ) {
+                            alt134=1;
+                        }
+                        else if ( (LA134_6==Colon) ) {
+                            alt134=2;
+                        }
+                        else {
+                            NoViableAltException nvae =
+                                new NoViableAltException("", 134, 6, input);
+
+                            throw nvae;
+                        }
+                        }
+                        break;
                     case Repository_dispatch:
                     case CancelInProgress:
                     case ContinueOnError_1:
@@ -11412,79 +11479,34 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     case If:
                     case On:
                         {
-                        alt132=2;
-                        }
-                        break;
-                    case RULE_ID:
-                        {
-                        int LA132_5 = input.LA(4);
-
-                        if ( (LA132_5==Colon) ) {
-                            alt132=2;
-                        }
-                        else if ( (LA132_5==HyphenMinus||LA132_5==RULE_END) ) {
-                            alt132=1;
-                        }
-                        else {
-                            NoViableAltException nvae =
-                                new NoViableAltException("", 132, 5, input);
-
-                            throw nvae;
-                        }
-                        }
-                        break;
-                    case RULE_COMPLEX_EXPRESSION:
-                        {
-                        int LA132_6 = input.LA(4);
-
-                        if ( (LA132_6==HyphenMinus||LA132_6==RULE_END) ) {
-                            alt132=1;
-                        }
-                        else if ( (LA132_6==Colon) ) {
-                            alt132=2;
-                        }
-                        else {
-                            NoViableAltException nvae =
-                                new NoViableAltException("", 132, 6, input);
-
-                            throw nvae;
-                        }
-                        }
-                        break;
-                    case RULE_HEX_INT:
-                    case RULE_INT:
-                    case RULE_FLOAT_LITERAL:
-                    case RULE_VERSION:
-                    case RULE_STRING:
-                        {
-                        alt132=1;
+                        alt134=2;
                         }
                         break;
                     default:
                         NoViableAltException nvae =
-                            new NoViableAltException("", 132, 3, input);
+                            new NoViableAltException("", 134, 3, input);
 
                         throw nvae;
                     }
 
                 }
-                else if ( ((LA132_2>=Repository_dispatch && LA132_2<=ContinueOnError_1)||(LA132_2>=Workflow_dispatch && LA132_2<=WorkingDirectory)||(LA132_2>=TimeoutInMinutes && LA132_2<=TimeoutMinutes)||LA132_2==ReleaseTrigger||(LA132_2>=Allow_failure && LA132_2<=DeployTrigger)||(LA132_2>=Notifications && LA132_2<=PathsIgnore)||(LA132_2>=Pull_request && LA132_2<=Workflow_run)||(LA132_2>=Concurrency && LA132_2<=GetPackage)||(LA132_2>=Parameters && LA132_2<=Permission)||(LA132_2>=Powershell && LA132_2<=Artifacts)||(LA132_2>=Condition && LA132_2<=FailFast)||(LA132_2>=Pipelines && LA132_2<=RunPolicy)||(LA132_2>=Schedules && LA132_2<=Workspace)||(LA132_2>=Branches && LA132_2<=PreBuild)||(LA132_2>=Readonly && LA132_2<=Webhooks)||(LA132_2>=Command && LA132_2<=Caches)||(LA132_2>=Docker && LA132_2<=Except)||LA132_2==Inputs||(LA132_2>=Labels && LA132_2<=Policy)||LA132_2==Queued||(LA132_2>=Script && LA132_2<=Stages)||(LA132_2>=Agent && LA132_2<=Image)||(LA132_2>=Needs && LA132_2<=Value)||(LA132_2>=Auth && LA132_2<=Cron)||LA132_2==Name||(LA132_2>=Only && LA132_2<=Pwsh)||(LA132_2>=Step && LA132_2<=With)||(LA132_2>=Env && LA132_2<=Job)||(LA132_2>=Run && LA132_2<=On)||LA132_2==RULE_COMPLEX_EXPRESSION||(LA132_2>=RULE_END && LA132_2<=RULE_ID)) ) {
-                    alt132=2;
+                else if ( ((LA134_2>=Repository_dispatch && LA134_2<=ContinueOnError_1)||(LA134_2>=Workflow_dispatch && LA134_2<=WorkingDirectory)||(LA134_2>=TimeoutInMinutes && LA134_2<=TimeoutMinutes)||LA134_2==ReleaseTrigger||(LA134_2>=Allow_failure && LA134_2<=DeployTrigger)||(LA134_2>=Notifications && LA134_2<=PathsIgnore)||(LA134_2>=Pull_request && LA134_2<=Workflow_run)||(LA134_2>=Concurrency && LA134_2<=GetPackage)||(LA134_2>=Parameters && LA134_2<=Permission)||(LA134_2>=Powershell && LA134_2<=Artifacts)||(LA134_2>=Condition && LA134_2<=FailFast)||(LA134_2>=Pipelines && LA134_2<=RunPolicy)||(LA134_2>=Schedules && LA134_2<=Workspace)||(LA134_2>=Branches && LA134_2<=PreBuild)||(LA134_2>=Readonly && LA134_2<=Webhooks)||(LA134_2>=Command && LA134_2<=Caches)||(LA134_2>=Docker && LA134_2<=Except)||LA134_2==Inputs||(LA134_2>=Labels && LA134_2<=Policy)||LA134_2==Queued||(LA134_2>=Script && LA134_2<=Stages)||(LA134_2>=Agent && LA134_2<=Image)||(LA134_2>=Needs && LA134_2<=Value)||(LA134_2>=Auth && LA134_2<=Cron)||LA134_2==Name||(LA134_2>=Only && LA134_2<=Pwsh)||(LA134_2>=Step && LA134_2<=With)||(LA134_2>=Env && LA134_2<=Job)||(LA134_2>=Run && LA134_2<=On)||LA134_2==RULE_COMPLEX_EXPRESSION||(LA134_2>=RULE_END && LA134_2<=RULE_ID)) ) {
+                    alt134=2;
                 }
                 else {
                     NoViableAltException nvae =
-                        new NoViableAltException("", 132, 2, input);
+                        new NoViableAltException("", 134, 2, input);
 
                     throw nvae;
                 }
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 132, 0, input);
+                    new NoViableAltException("", 134, 0, input);
 
                 throw nvae;
             }
-            switch (alt132) {
+            switch (alt134) {
                 case 1 :
                     // InternalPipelineParser.g:4205:4: ( ( ( (lv_value_3_1= ruleAnyData | lv_value_3_2= ruleArrayList | lv_value_3_3= ruleHyphenValues ) ) ) (this_BEGIN_4= RULE_BEGIN ( (otherlv_5= HyphenMinus )? ( (lv_subParameters_6_0= ruleParameterValue ) ) )* this_END_7= RULE_END )? )
                     {
@@ -11498,7 +11520,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     // InternalPipelineParser.g:4208:7: (lv_value_3_1= ruleAnyData | lv_value_3_2= ruleArrayList | lv_value_3_3= ruleHyphenValues )
                     {
                     // InternalPipelineParser.g:4208:7: (lv_value_3_1= ruleAnyData | lv_value_3_2= ruleArrayList | lv_value_3_3= ruleHyphenValues )
-                    int alt126=3;
+                    int alt128=3;
                     switch ( input.LA(1) ) {
                     case RULE_COMPLEX_EXPRESSION:
                     case RULE_HEX_INT:
@@ -11508,28 +11530,28 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     case RULE_ID:
                     case RULE_STRING:
                         {
-                        alt126=1;
+                        alt128=1;
                         }
                         break;
                     case LeftSquareBracket:
                         {
-                        alt126=2;
+                        alt128=2;
                         }
                         break;
                     case HyphenMinus:
                     case RULE_BEGIN:
                         {
-                        alt126=3;
+                        alt128=3;
                         }
                         break;
                     default:
                         NoViableAltException nvae =
-                            new NoViableAltException("", 126, 0, input);
+                            new NoViableAltException("", 128, 0, input);
 
                         throw nvae;
                     }
 
-                    switch (alt126) {
+                    switch (alt128) {
                         case 1 :
                             // InternalPipelineParser.g:4209:8: lv_value_3_1= ruleAnyData
                             {
@@ -11615,43 +11637,43 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
 
                     // InternalPipelineParser.g:4259:5: (this_BEGIN_4= RULE_BEGIN ( (otherlv_5= HyphenMinus )? ( (lv_subParameters_6_0= ruleParameterValue ) ) )* this_END_7= RULE_END )?
-                    int alt129=2;
-                    int LA129_0 = input.LA(1);
+                    int alt131=2;
+                    int LA131_0 = input.LA(1);
 
-                    if ( (LA129_0==RULE_BEGIN) ) {
-                        alt129=1;
+                    if ( (LA131_0==RULE_BEGIN) ) {
+                        alt131=1;
                     }
-                    switch (alt129) {
+                    switch (alt131) {
                         case 1 :
                             // InternalPipelineParser.g:4260:6: this_BEGIN_4= RULE_BEGIN ( (otherlv_5= HyphenMinus )? ( (lv_subParameters_6_0= ruleParameterValue ) ) )* this_END_7= RULE_END
                             {
-                            this_BEGIN_4=(Token)match(input,RULE_BEGIN,FOLLOW_83); 
+                            this_BEGIN_4=(Token)match(input,RULE_BEGIN,FOLLOW_85); 
 
                             						newLeafNode(this_BEGIN_4, grammarAccess.getParameterValueAccess().getBEGINTerminalRuleCall_1_0_1_0());
                             					
                             // InternalPipelineParser.g:4264:6: ( (otherlv_5= HyphenMinus )? ( (lv_subParameters_6_0= ruleParameterValue ) ) )*
-                            loop128:
+                            loop130:
                             do {
-                                int alt128=2;
-                                int LA128_0 = input.LA(1);
+                                int alt130=2;
+                                int LA130_0 = input.LA(1);
 
-                                if ( ((LA128_0>=Repository_dispatch && LA128_0<=ContinueOnError_1)||(LA128_0>=Workflow_dispatch && LA128_0<=WorkingDirectory)||(LA128_0>=TimeoutInMinutes && LA128_0<=TimeoutMinutes)||LA128_0==ReleaseTrigger||(LA128_0>=Allow_failure && LA128_0<=DeployTrigger)||(LA128_0>=Notifications && LA128_0<=PathsIgnore)||(LA128_0>=Pull_request && LA128_0<=Workflow_run)||(LA128_0>=Concurrency && LA128_0<=GetPackage)||(LA128_0>=Parameters && LA128_0<=Permission)||(LA128_0>=Powershell && LA128_0<=Artifacts)||(LA128_0>=Condition && LA128_0<=FailFast)||(LA128_0>=Pipelines && LA128_0<=RunPolicy)||(LA128_0>=Schedules && LA128_0<=Workspace)||(LA128_0>=Branches && LA128_0<=PreBuild)||(LA128_0>=Readonly && LA128_0<=Webhooks)||(LA128_0>=Command && LA128_0<=Caches)||(LA128_0>=Docker && LA128_0<=Except)||LA128_0==Inputs||(LA128_0>=Labels && LA128_0<=Policy)||LA128_0==Queued||(LA128_0>=Script && LA128_0<=Stages)||(LA128_0>=Agent && LA128_0<=Image)||(LA128_0>=Needs && LA128_0<=Value)||(LA128_0>=Auth && LA128_0<=Cron)||LA128_0==Name||(LA128_0>=Only && LA128_0<=Pwsh)||(LA128_0>=Step && LA128_0<=With)||(LA128_0>=Env && LA128_0<=Job)||(LA128_0>=Run && LA128_0<=On)||LA128_0==HyphenMinus||LA128_0==RULE_COMPLEX_EXPRESSION||LA128_0==RULE_ID) ) {
-                                    alt128=1;
+                                if ( ((LA130_0>=Repository_dispatch && LA130_0<=ContinueOnError_1)||(LA130_0>=Workflow_dispatch && LA130_0<=WorkingDirectory)||(LA130_0>=TimeoutInMinutes && LA130_0<=TimeoutMinutes)||LA130_0==ReleaseTrigger||(LA130_0>=Allow_failure && LA130_0<=DeployTrigger)||(LA130_0>=Notifications && LA130_0<=PathsIgnore)||(LA130_0>=Pull_request && LA130_0<=Workflow_run)||(LA130_0>=Concurrency && LA130_0<=GetPackage)||(LA130_0>=Parameters && LA130_0<=Permission)||(LA130_0>=Powershell && LA130_0<=Artifacts)||(LA130_0>=Condition && LA130_0<=FailFast)||(LA130_0>=Pipelines && LA130_0<=RunPolicy)||(LA130_0>=Schedules && LA130_0<=Workspace)||(LA130_0>=Branches && LA130_0<=PreBuild)||(LA130_0>=Readonly && LA130_0<=Webhooks)||(LA130_0>=Command && LA130_0<=Caches)||(LA130_0>=Docker && LA130_0<=Except)||LA130_0==Inputs||(LA130_0>=Labels && LA130_0<=Policy)||LA130_0==Queued||(LA130_0>=Script && LA130_0<=Stages)||(LA130_0>=Agent && LA130_0<=Image)||(LA130_0>=Needs && LA130_0<=Value)||(LA130_0>=Auth && LA130_0<=Cron)||LA130_0==Name||(LA130_0>=Only && LA130_0<=Pwsh)||(LA130_0>=Step && LA130_0<=With)||(LA130_0>=Env && LA130_0<=Job)||(LA130_0>=Run && LA130_0<=On)||LA130_0==HyphenMinus||LA130_0==RULE_COMPLEX_EXPRESSION||LA130_0==RULE_ID) ) {
+                                    alt130=1;
                                 }
 
 
-                                switch (alt128) {
+                                switch (alt130) {
                             	case 1 :
                             	    // InternalPipelineParser.g:4265:7: (otherlv_5= HyphenMinus )? ( (lv_subParameters_6_0= ruleParameterValue ) )
                             	    {
                             	    // InternalPipelineParser.g:4265:7: (otherlv_5= HyphenMinus )?
-                            	    int alt127=2;
-                            	    int LA127_0 = input.LA(1);
+                            	    int alt129=2;
+                            	    int LA129_0 = input.LA(1);
 
-                            	    if ( (LA127_0==HyphenMinus) ) {
-                            	        alt127=1;
+                            	    if ( (LA129_0==HyphenMinus) ) {
+                            	        alt129=1;
                             	    }
-                            	    switch (alt127) {
+                            	    switch (alt129) {
                             	        case 1 :
                             	            // InternalPipelineParser.g:4266:8: otherlv_5= HyphenMinus
                             	            {
@@ -11674,7 +11696,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
                             	    									newCompositeNode(grammarAccess.getParameterValueAccess().getSubParametersParameterValueParserRuleCall_1_0_1_1_1_0());
                             	    								
-                            	    pushFollow(FOLLOW_83);
+                            	    pushFollow(FOLLOW_85);
                             	    lv_subParameters_6_0=ruleParameterValue();
 
                             	    state._fsp--;
@@ -11701,7 +11723,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                             	    break;
 
                             	default :
-                            	    break loop128;
+                            	    break loop130;
                                 }
                             } while (true);
 
@@ -11727,33 +11749,33 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     // InternalPipelineParser.g:4298:4: (this_BEGIN_8= RULE_BEGIN ( (otherlv_9= HyphenMinus )? ( (lv_subParameters_10_0= ruleParameterValue ) ) )* this_END_11= RULE_END )
                     // InternalPipelineParser.g:4299:5: this_BEGIN_8= RULE_BEGIN ( (otherlv_9= HyphenMinus )? ( (lv_subParameters_10_0= ruleParameterValue ) ) )* this_END_11= RULE_END
                     {
-                    this_BEGIN_8=(Token)match(input,RULE_BEGIN,FOLLOW_83); 
+                    this_BEGIN_8=(Token)match(input,RULE_BEGIN,FOLLOW_85); 
 
                     					newLeafNode(this_BEGIN_8, grammarAccess.getParameterValueAccess().getBEGINTerminalRuleCall_1_1_0());
                     				
                     // InternalPipelineParser.g:4303:5: ( (otherlv_9= HyphenMinus )? ( (lv_subParameters_10_0= ruleParameterValue ) ) )*
-                    loop131:
+                    loop133:
                     do {
-                        int alt131=2;
-                        int LA131_0 = input.LA(1);
+                        int alt133=2;
+                        int LA133_0 = input.LA(1);
 
-                        if ( ((LA131_0>=Repository_dispatch && LA131_0<=ContinueOnError_1)||(LA131_0>=Workflow_dispatch && LA131_0<=WorkingDirectory)||(LA131_0>=TimeoutInMinutes && LA131_0<=TimeoutMinutes)||LA131_0==ReleaseTrigger||(LA131_0>=Allow_failure && LA131_0<=DeployTrigger)||(LA131_0>=Notifications && LA131_0<=PathsIgnore)||(LA131_0>=Pull_request && LA131_0<=Workflow_run)||(LA131_0>=Concurrency && LA131_0<=GetPackage)||(LA131_0>=Parameters && LA131_0<=Permission)||(LA131_0>=Powershell && LA131_0<=Artifacts)||(LA131_0>=Condition && LA131_0<=FailFast)||(LA131_0>=Pipelines && LA131_0<=RunPolicy)||(LA131_0>=Schedules && LA131_0<=Workspace)||(LA131_0>=Branches && LA131_0<=PreBuild)||(LA131_0>=Readonly && LA131_0<=Webhooks)||(LA131_0>=Command && LA131_0<=Caches)||(LA131_0>=Docker && LA131_0<=Except)||LA131_0==Inputs||(LA131_0>=Labels && LA131_0<=Policy)||LA131_0==Queued||(LA131_0>=Script && LA131_0<=Stages)||(LA131_0>=Agent && LA131_0<=Image)||(LA131_0>=Needs && LA131_0<=Value)||(LA131_0>=Auth && LA131_0<=Cron)||LA131_0==Name||(LA131_0>=Only && LA131_0<=Pwsh)||(LA131_0>=Step && LA131_0<=With)||(LA131_0>=Env && LA131_0<=Job)||(LA131_0>=Run && LA131_0<=On)||LA131_0==HyphenMinus||LA131_0==RULE_COMPLEX_EXPRESSION||LA131_0==RULE_ID) ) {
-                            alt131=1;
+                        if ( ((LA133_0>=Repository_dispatch && LA133_0<=ContinueOnError_1)||(LA133_0>=Workflow_dispatch && LA133_0<=WorkingDirectory)||(LA133_0>=TimeoutInMinutes && LA133_0<=TimeoutMinutes)||LA133_0==ReleaseTrigger||(LA133_0>=Allow_failure && LA133_0<=DeployTrigger)||(LA133_0>=Notifications && LA133_0<=PathsIgnore)||(LA133_0>=Pull_request && LA133_0<=Workflow_run)||(LA133_0>=Concurrency && LA133_0<=GetPackage)||(LA133_0>=Parameters && LA133_0<=Permission)||(LA133_0>=Powershell && LA133_0<=Artifacts)||(LA133_0>=Condition && LA133_0<=FailFast)||(LA133_0>=Pipelines && LA133_0<=RunPolicy)||(LA133_0>=Schedules && LA133_0<=Workspace)||(LA133_0>=Branches && LA133_0<=PreBuild)||(LA133_0>=Readonly && LA133_0<=Webhooks)||(LA133_0>=Command && LA133_0<=Caches)||(LA133_0>=Docker && LA133_0<=Except)||LA133_0==Inputs||(LA133_0>=Labels && LA133_0<=Policy)||LA133_0==Queued||(LA133_0>=Script && LA133_0<=Stages)||(LA133_0>=Agent && LA133_0<=Image)||(LA133_0>=Needs && LA133_0<=Value)||(LA133_0>=Auth && LA133_0<=Cron)||LA133_0==Name||(LA133_0>=Only && LA133_0<=Pwsh)||(LA133_0>=Step && LA133_0<=With)||(LA133_0>=Env && LA133_0<=Job)||(LA133_0>=Run && LA133_0<=On)||LA133_0==HyphenMinus||LA133_0==RULE_COMPLEX_EXPRESSION||LA133_0==RULE_ID) ) {
+                            alt133=1;
                         }
 
 
-                        switch (alt131) {
+                        switch (alt133) {
                     	case 1 :
                     	    // InternalPipelineParser.g:4304:6: (otherlv_9= HyphenMinus )? ( (lv_subParameters_10_0= ruleParameterValue ) )
                     	    {
                     	    // InternalPipelineParser.g:4304:6: (otherlv_9= HyphenMinus )?
-                    	    int alt130=2;
-                    	    int LA130_0 = input.LA(1);
+                    	    int alt132=2;
+                    	    int LA132_0 = input.LA(1);
 
-                    	    if ( (LA130_0==HyphenMinus) ) {
-                    	        alt130=1;
+                    	    if ( (LA132_0==HyphenMinus) ) {
+                    	        alt132=1;
                     	    }
-                    	    switch (alt130) {
+                    	    switch (alt132) {
                     	        case 1 :
                     	            // InternalPipelineParser.g:4305:7: otherlv_9= HyphenMinus
                     	            {
@@ -11776,7 +11798,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
                     	    								newCompositeNode(grammarAccess.getParameterValueAccess().getSubParametersParameterValueParserRuleCall_1_1_1_1_0());
                     	    							
-                    	    pushFollow(FOLLOW_83);
+                    	    pushFollow(FOLLOW_85);
                     	    lv_subParameters_10_0=ruleParameterValue();
 
                     	    state._fsp--;
@@ -11803,7 +11825,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop131;
+                    	    break loop133;
                         }
                     } while (true);
 
@@ -11902,51 +11924,51 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             // InternalPipelineParser.g:4354:2: (this_STRING_0= RULE_STRING | this_Number_1= ruleNumber | this_FloatingPoint_2= ruleFloatingPoint | this_SimpleWord_3= ruleSimpleWord | this_COMPLEX_EXPRESSION_4= RULE_COMPLEX_EXPRESSION | this_VERSION_5= RULE_VERSION | this_HEX_INT_6= RULE_HEX_INT )
             {
             // InternalPipelineParser.g:4354:2: (this_STRING_0= RULE_STRING | this_Number_1= ruleNumber | this_FloatingPoint_2= ruleFloatingPoint | this_SimpleWord_3= ruleSimpleWord | this_COMPLEX_EXPRESSION_4= RULE_COMPLEX_EXPRESSION | this_VERSION_5= RULE_VERSION | this_HEX_INT_6= RULE_HEX_INT )
-            int alt133=7;
+            int alt135=7;
             switch ( input.LA(1) ) {
             case RULE_STRING:
                 {
-                alt133=1;
+                alt135=1;
                 }
                 break;
             case RULE_INT:
                 {
-                alt133=2;
+                alt135=2;
                 }
                 break;
             case RULE_FLOAT_LITERAL:
                 {
-                alt133=3;
+                alt135=3;
                 }
                 break;
             case RULE_ID:
                 {
-                alt133=4;
+                alt135=4;
                 }
                 break;
             case RULE_COMPLEX_EXPRESSION:
                 {
-                alt133=5;
+                alt135=5;
                 }
                 break;
             case RULE_VERSION:
                 {
-                alt133=6;
+                alt135=6;
                 }
                 break;
             case RULE_HEX_INT:
                 {
-                alt133=7;
+                alt135=7;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 133, 0, input);
+                    new NoViableAltException("", 135, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt133) {
+            switch (alt135) {
                 case 1 :
                     // InternalPipelineParser.g:4355:3: this_STRING_0= RULE_STRING
                     {
@@ -12162,7 +12184,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             // InternalPipelineParser.g:4452:3: (this_BEGIN_2= RULE_BEGIN ( (kw= Description | kw= Required | kw= Default | kw= Type | kw= Options ) (this_AnyData_8= ruleAnyData | this_HyphenValues_9= ruleHyphenValues ) )+ this_END_10= RULE_END )
             // InternalPipelineParser.g:4453:4: this_BEGIN_2= RULE_BEGIN ( (kw= Description | kw= Required | kw= Default | kw= Type | kw= Options ) (this_AnyData_8= ruleAnyData | this_HyphenValues_9= ruleHyphenValues ) )+ this_END_10= RULE_END
             {
-            this_BEGIN_2=(Token)match(input,RULE_BEGIN,FOLLOW_84); 
+            this_BEGIN_2=(Token)match(input,RULE_BEGIN,FOLLOW_86); 
 
             				current.merge(this_BEGIN_2);
             			
@@ -12170,57 +12192,57 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             				newLeafNode(this_BEGIN_2, grammarAccess.getWorkFlowKeyValueAccess().getBEGINTerminalRuleCall_1_0());
             			
             // InternalPipelineParser.g:4460:4: ( (kw= Description | kw= Required | kw= Default | kw= Type | kw= Options ) (this_AnyData_8= ruleAnyData | this_HyphenValues_9= ruleHyphenValues ) )+
-            int cnt136=0;
-            loop136:
+            int cnt138=0;
+            loop138:
             do {
-                int alt136=2;
-                int LA136_0 = input.LA(1);
+                int alt138=2;
+                int LA138_0 = input.LA(1);
 
-                if ( (LA136_0==Description||LA136_0==Required||LA136_0==Default||LA136_0==Options||LA136_0==Type) ) {
-                    alt136=1;
+                if ( (LA138_0==Description||LA138_0==Required||LA138_0==Default||LA138_0==Options||LA138_0==Type) ) {
+                    alt138=1;
                 }
 
 
-                switch (alt136) {
+                switch (alt138) {
             	case 1 :
             	    // InternalPipelineParser.g:4461:5: (kw= Description | kw= Required | kw= Default | kw= Type | kw= Options ) (this_AnyData_8= ruleAnyData | this_HyphenValues_9= ruleHyphenValues )
             	    {
             	    // InternalPipelineParser.g:4461:5: (kw= Description | kw= Required | kw= Default | kw= Type | kw= Options )
-            	    int alt134=5;
+            	    int alt136=5;
             	    switch ( input.LA(1) ) {
             	    case Description:
             	        {
-            	        alt134=1;
+            	        alt136=1;
             	        }
             	        break;
             	    case Required:
             	        {
-            	        alt134=2;
+            	        alt136=2;
             	        }
             	        break;
             	    case Default:
             	        {
-            	        alt134=3;
+            	        alt136=3;
             	        }
             	        break;
             	    case Type:
             	        {
-            	        alt134=4;
+            	        alt136=4;
             	        }
             	        break;
             	    case Options:
             	        {
-            	        alt134=5;
+            	        alt136=5;
             	        }
             	        break;
             	    default:
             	        NoViableAltException nvae =
-            	            new NoViableAltException("", 134, 0, input);
+            	            new NoViableAltException("", 136, 0, input);
 
             	        throw nvae;
             	    }
 
-            	    switch (alt134) {
+            	    switch (alt136) {
             	        case 1 :
             	            // InternalPipelineParser.g:4462:6: kw= Description
             	            {
@@ -12280,29 +12302,29 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             	    }
 
             	    // InternalPipelineParser.g:4492:5: (this_AnyData_8= ruleAnyData | this_HyphenValues_9= ruleHyphenValues )
-            	    int alt135=2;
-            	    int LA135_0 = input.LA(1);
+            	    int alt137=2;
+            	    int LA137_0 = input.LA(1);
 
-            	    if ( ((LA135_0>=RULE_COMPLEX_EXPRESSION && LA135_0<=RULE_VERSION)||LA135_0==RULE_ID||LA135_0==RULE_STRING) ) {
-            	        alt135=1;
+            	    if ( ((LA137_0>=RULE_COMPLEX_EXPRESSION && LA137_0<=RULE_VERSION)||LA137_0==RULE_ID||LA137_0==RULE_STRING) ) {
+            	        alt137=1;
             	    }
-            	    else if ( (LA135_0==HyphenMinus||LA135_0==RULE_BEGIN) ) {
-            	        alt135=2;
+            	    else if ( (LA137_0==HyphenMinus||LA137_0==RULE_BEGIN) ) {
+            	        alt137=2;
             	    }
             	    else {
             	        NoViableAltException nvae =
-            	            new NoViableAltException("", 135, 0, input);
+            	            new NoViableAltException("", 137, 0, input);
 
             	        throw nvae;
             	    }
-            	    switch (alt135) {
+            	    switch (alt137) {
             	        case 1 :
             	            // InternalPipelineParser.g:4493:6: this_AnyData_8= ruleAnyData
             	            {
 
             	            						newCompositeNode(grammarAccess.getWorkFlowKeyValueAccess().getAnyDataParserRuleCall_1_1_1_0());
             	            					
-            	            pushFollow(FOLLOW_85);
+            	            pushFollow(FOLLOW_87);
             	            this_AnyData_8=ruleAnyData();
 
             	            state._fsp--;
@@ -12322,7 +12344,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
             	            						newCompositeNode(grammarAccess.getWorkFlowKeyValueAccess().getHyphenValuesParserRuleCall_1_1_1_1());
             	            					
-            	            pushFollow(FOLLOW_85);
+            	            pushFollow(FOLLOW_87);
             	            this_HyphenValues_9=ruleHyphenValues();
 
             	            state._fsp--;
@@ -12344,12 +12366,12 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt136 >= 1 ) break loop136;
+            	    if ( cnt138 >= 1 ) break loop138;
                         EarlyExitException eee =
-                            new EarlyExitException(136, input);
+                            new EarlyExitException(138, input);
                         throw eee;
                 }
-                cnt136++;
+                cnt138++;
             } while (true);
 
             this_END_10=(Token)match(input,RULE_END,FOLLOW_2); 
@@ -12455,22 +12477,22 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             			newLeafNode(kw, grammarAccess.getKeyValueAccess().getColonKeyword_1());
             		
             // InternalPipelineParser.g:4555:3: (this_AnyData_2= ruleAnyData | this_HyphenValues_3= ruleHyphenValues )
-            int alt137=2;
-            int LA137_0 = input.LA(1);
+            int alt139=2;
+            int LA139_0 = input.LA(1);
 
-            if ( ((LA137_0>=RULE_COMPLEX_EXPRESSION && LA137_0<=RULE_VERSION)||LA137_0==RULE_ID||LA137_0==RULE_STRING) ) {
-                alt137=1;
+            if ( ((LA139_0>=RULE_COMPLEX_EXPRESSION && LA139_0<=RULE_VERSION)||LA139_0==RULE_ID||LA139_0==RULE_STRING) ) {
+                alt139=1;
             }
-            else if ( (LA137_0==HyphenMinus||LA137_0==RULE_BEGIN) ) {
-                alt137=2;
+            else if ( (LA139_0==HyphenMinus||LA139_0==RULE_BEGIN) ) {
+                alt139=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 137, 0, input);
+                    new NoViableAltException("", 139, 0, input);
 
                 throw nvae;
             }
-            switch (alt137) {
+            switch (alt139) {
                 case 1 :
                     // InternalPipelineParser.g:4556:4: this_AnyData_2= ruleAnyData
                     {
@@ -12597,37 +12619,37 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
             			newLeafNode(this_ID_0, grammarAccess.getIndPermissionValueAccess().getIDTerminalRuleCall_0());
             		
-            kw=(Token)match(input,Colon,FOLLOW_86); 
+            kw=(Token)match(input,Colon,FOLLOW_88); 
 
             			current.merge(kw);
             			newLeafNode(kw, grammarAccess.getIndPermissionValueAccess().getColonKeyword_1());
             		
             // InternalPipelineParser.g:4609:3: (kw= Read | kw= Write | kw= None )
-            int alt138=3;
+            int alt140=3;
             switch ( input.LA(1) ) {
             case Read:
                 {
-                alt138=1;
+                alt140=1;
                 }
                 break;
             case Write:
                 {
-                alt138=2;
+                alt140=2;
                 }
                 break;
             case None:
                 {
-                alt138=3;
+                alt140=3;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 138, 0, input);
+                    new NoViableAltException("", 140, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt138) {
+            switch (alt140) {
                 case 1 :
                     // InternalPipelineParser.g:4610:4: kw= Read
                     {
@@ -12742,7 +12764,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             // InternalPipelineParser.g:4646:2: (this_ID_0= RULE_ID (this_ID_1= RULE_ID | this_INT_2= RULE_INT | this_COMPLEX_EXPRESSION_3= RULE_COMPLEX_EXPRESSION )* )
             // InternalPipelineParser.g:4647:3: this_ID_0= RULE_ID (this_ID_1= RULE_ID | this_INT_2= RULE_INT | this_COMPLEX_EXPRESSION_3= RULE_COMPLEX_EXPRESSION )*
             {
-            this_ID_0=(Token)match(input,RULE_ID,FOLLOW_87); 
+            this_ID_0=(Token)match(input,RULE_ID,FOLLOW_89); 
 
             			current.merge(this_ID_0);
             		
@@ -12750,33 +12772,33 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             			newLeafNode(this_ID_0, grammarAccess.getUnquotedStringAccess().getIDTerminalRuleCall_0());
             		
             // InternalPipelineParser.g:4654:3: (this_ID_1= RULE_ID | this_INT_2= RULE_INT | this_COMPLEX_EXPRESSION_3= RULE_COMPLEX_EXPRESSION )*
-            loop139:
+            loop141:
             do {
-                int alt139=4;
+                int alt141=4;
                 switch ( input.LA(1) ) {
                 case RULE_ID:
                     {
-                    alt139=1;
+                    alt141=1;
                     }
                     break;
                 case RULE_INT:
                     {
-                    alt139=2;
+                    alt141=2;
                     }
                     break;
                 case RULE_COMPLEX_EXPRESSION:
                     {
-                    alt139=3;
+                    alt141=3;
                     }
                     break;
 
                 }
 
-                switch (alt139) {
+                switch (alt141) {
             	case 1 :
             	    // InternalPipelineParser.g:4655:4: this_ID_1= RULE_ID
             	    {
-            	    this_ID_1=(Token)match(input,RULE_ID,FOLLOW_87); 
+            	    this_ID_1=(Token)match(input,RULE_ID,FOLLOW_89); 
 
             	    				current.merge(this_ID_1);
             	    			
@@ -12789,7 +12811,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             	case 2 :
             	    // InternalPipelineParser.g:4663:4: this_INT_2= RULE_INT
             	    {
-            	    this_INT_2=(Token)match(input,RULE_INT,FOLLOW_87); 
+            	    this_INT_2=(Token)match(input,RULE_INT,FOLLOW_89); 
 
             	    				current.merge(this_INT_2);
             	    			
@@ -12802,7 +12824,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             	case 3 :
             	    // InternalPipelineParser.g:4671:4: this_COMPLEX_EXPRESSION_3= RULE_COMPLEX_EXPRESSION
             	    {
-            	    this_COMPLEX_EXPRESSION_3=(Token)match(input,RULE_COMPLEX_EXPRESSION,FOLLOW_87); 
+            	    this_COMPLEX_EXPRESSION_3=(Token)match(input,RULE_COMPLEX_EXPRESSION,FOLLOW_89); 
 
             	    				current.merge(this_COMPLEX_EXPRESSION_3);
             	    			
@@ -12814,7 +12836,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop139;
+            	    break loop141;
                 }
             } while (true);
 
@@ -12897,38 +12919,38 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             // InternalPipelineParser.g:4697:2: ( (kw= HyphenMinus this_AnyData_1= ruleAnyData )+ | (this_BEGIN_2= RULE_BEGIN (kw= HyphenMinus this_AnyData_4= ruleAnyData )+ this_END_5= RULE_END ) )
             {
             // InternalPipelineParser.g:4697:2: ( (kw= HyphenMinus this_AnyData_1= ruleAnyData )+ | (this_BEGIN_2= RULE_BEGIN (kw= HyphenMinus this_AnyData_4= ruleAnyData )+ this_END_5= RULE_END ) )
-            int alt142=2;
-            int LA142_0 = input.LA(1);
+            int alt144=2;
+            int LA144_0 = input.LA(1);
 
-            if ( (LA142_0==HyphenMinus) ) {
-                alt142=1;
+            if ( (LA144_0==HyphenMinus) ) {
+                alt144=1;
             }
-            else if ( (LA142_0==RULE_BEGIN) ) {
-                alt142=2;
+            else if ( (LA144_0==RULE_BEGIN) ) {
+                alt144=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 142, 0, input);
+                    new NoViableAltException("", 144, 0, input);
 
                 throw nvae;
             }
-            switch (alt142) {
+            switch (alt144) {
                 case 1 :
                     // InternalPipelineParser.g:4698:3: (kw= HyphenMinus this_AnyData_1= ruleAnyData )+
                     {
                     // InternalPipelineParser.g:4698:3: (kw= HyphenMinus this_AnyData_1= ruleAnyData )+
-                    int cnt140=0;
-                    loop140:
+                    int cnt142=0;
+                    loop142:
                     do {
-                        int alt140=2;
-                        int LA140_0 = input.LA(1);
+                        int alt142=2;
+                        int LA142_0 = input.LA(1);
 
-                        if ( (LA140_0==HyphenMinus) ) {
-                            alt140=1;
+                        if ( (LA142_0==HyphenMinus) ) {
+                            alt142=1;
                         }
 
 
-                        switch (alt140) {
+                        switch (alt142) {
                     	case 1 :
                     	    // InternalPipelineParser.g:4699:4: kw= HyphenMinus this_AnyData_1= ruleAnyData
                     	    {
@@ -12956,12 +12978,12 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    if ( cnt140 >= 1 ) break loop140;
+                    	    if ( cnt142 >= 1 ) break loop142;
                                 EarlyExitException eee =
-                                    new EarlyExitException(140, input);
+                                    new EarlyExitException(142, input);
                                 throw eee;
                         }
-                        cnt140++;
+                        cnt142++;
                     } while (true);
 
 
@@ -12973,7 +12995,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     // InternalPipelineParser.g:4716:3: (this_BEGIN_2= RULE_BEGIN (kw= HyphenMinus this_AnyData_4= ruleAnyData )+ this_END_5= RULE_END )
                     // InternalPipelineParser.g:4717:4: this_BEGIN_2= RULE_BEGIN (kw= HyphenMinus this_AnyData_4= ruleAnyData )+ this_END_5= RULE_END
                     {
-                    this_BEGIN_2=(Token)match(input,RULE_BEGIN,FOLLOW_62); 
+                    this_BEGIN_2=(Token)match(input,RULE_BEGIN,FOLLOW_64); 
 
                     				current.merge(this_BEGIN_2);
                     			
@@ -12981,18 +13003,18 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     				newLeafNode(this_BEGIN_2, grammarAccess.getHyphenValuesAccess().getBEGINTerminalRuleCall_1_0());
                     			
                     // InternalPipelineParser.g:4724:4: (kw= HyphenMinus this_AnyData_4= ruleAnyData )+
-                    int cnt141=0;
-                    loop141:
+                    int cnt143=0;
+                    loop143:
                     do {
-                        int alt141=2;
-                        int LA141_0 = input.LA(1);
+                        int alt143=2;
+                        int LA143_0 = input.LA(1);
 
-                        if ( (LA141_0==HyphenMinus) ) {
-                            alt141=1;
+                        if ( (LA143_0==HyphenMinus) ) {
+                            alt143=1;
                         }
 
 
-                        switch (alt141) {
+                        switch (alt143) {
                     	case 1 :
                     	    // InternalPipelineParser.g:4725:5: kw= HyphenMinus this_AnyData_4= ruleAnyData
                     	    {
@@ -13020,12 +13042,12 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    if ( cnt141 >= 1 ) break loop141;
+                    	    if ( cnt143 >= 1 ) break loop143;
                                 EarlyExitException eee =
-                                    new EarlyExitException(141, input);
+                                    new EarlyExitException(143, input);
                                 throw eee;
                         }
-                        cnt141++;
+                        cnt143++;
                     } while (true);
 
                     this_END_5=(Token)match(input,RULE_END,FOLLOW_2); 
@@ -13348,19 +13370,19 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             // InternalPipelineParser.g:4839:2: (kw= LeftSquareBracket (this_AnyData_1= ruleAnyData (kw= Comma this_AnyData_3= ruleAnyData )* )? kw= RightSquareBracket )
             // InternalPipelineParser.g:4840:3: kw= LeftSquareBracket (this_AnyData_1= ruleAnyData (kw= Comma this_AnyData_3= ruleAnyData )* )? kw= RightSquareBracket
             {
-            kw=(Token)match(input,LeftSquareBracket,FOLLOW_88); 
+            kw=(Token)match(input,LeftSquareBracket,FOLLOW_90); 
 
             			current.merge(kw);
             			newLeafNode(kw, grammarAccess.getArrayListAccess().getLeftSquareBracketKeyword_0());
             		
             // InternalPipelineParser.g:4845:3: (this_AnyData_1= ruleAnyData (kw= Comma this_AnyData_3= ruleAnyData )* )?
-            int alt144=2;
-            int LA144_0 = input.LA(1);
+            int alt146=2;
+            int LA146_0 = input.LA(1);
 
-            if ( ((LA144_0>=RULE_COMPLEX_EXPRESSION && LA144_0<=RULE_VERSION)||LA144_0==RULE_ID||LA144_0==RULE_STRING) ) {
-                alt144=1;
+            if ( ((LA146_0>=RULE_COMPLEX_EXPRESSION && LA146_0<=RULE_VERSION)||LA146_0==RULE_ID||LA146_0==RULE_STRING) ) {
+                alt146=1;
             }
-            switch (alt144) {
+            switch (alt146) {
                 case 1 :
                     // InternalPipelineParser.g:4846:4: this_AnyData_1= ruleAnyData (kw= Comma this_AnyData_3= ruleAnyData )*
                     {
@@ -13379,17 +13401,17 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     				afterParserOrEnumRuleCall();
                     			
                     // InternalPipelineParser.g:4856:4: (kw= Comma this_AnyData_3= ruleAnyData )*
-                    loop143:
+                    loop145:
                     do {
-                        int alt143=2;
-                        int LA143_0 = input.LA(1);
+                        int alt145=2;
+                        int LA145_0 = input.LA(1);
 
-                        if ( (LA143_0==Comma) ) {
-                            alt143=1;
+                        if ( (LA145_0==Comma) ) {
+                            alt145=1;
                         }
 
 
-                        switch (alt143) {
+                        switch (alt145) {
                     	case 1 :
                     	    // InternalPipelineParser.g:4857:5: kw= Comma this_AnyData_3= ruleAnyData
                     	    {
@@ -13417,7 +13439,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop143;
+                    	    break loop145;
                         }
                     } while (true);
 
@@ -13529,321 +13551,321 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             // InternalPipelineParser.g:4890:2: ( (enumLiteral_0= Push ) | (enumLiteral_1= Pull_request ) | (enumLiteral_2= Workflow_dispatch ) | (enumLiteral_3= Repository_dispatch ) | (enumLiteral_4= Check_run ) | (enumLiteral_5= Check_suite ) | (enumLiteral_6= Create ) | (enumLiteral_7= Delete ) | (enumLiteral_8= Deployment ) | (enumLiteral_9= Deployment_status ) | (enumLiteral_10= Fork ) | (enumLiteral_11= Gollum ) | (enumLiteral_12= Issue_comment ) | (enumLiteral_13= Issues ) | (enumLiteral_14= Label ) | (enumLiteral_15= Milestone ) | (enumLiteral_16= Page_build ) | (enumLiteral_17= Project ) | (enumLiteral_18= Project_card ) | (enumLiteral_19= Project_column ) | (enumLiteral_20= Public ) | (enumLiteral_21= Pull_request_review ) | (enumLiteral_22= Pull_request_review_comment ) | (enumLiteral_23= Pull_request_target ) | (enumLiteral_24= Registry_package ) | (enumLiteral_25= Release ) | (enumLiteral_26= Status ) | (enumLiteral_27= Watch ) | (enumLiteral_28= Workflow_call ) | (enumLiteral_29= Workflow_run ) | (enumLiteral_30= Trigger ) | (enumLiteral_31= Pr ) | (enumLiteral_32= Branches ) | (enumLiteral_33= Tags ) | (enumLiteral_34= Paths ) | (enumLiteral_35= AutoCancel ) | (enumLiteral_36= Drafts ) | (enumLiteral_37= Only ) | (enumLiteral_38= Except ) | (enumLiteral_39= Rules ) | (enumLiteral_40= WorkflowRules ) | (enumLiteral_41= Pipeline_schedule ) | (enumLiteral_42= Merge_requests ) | (enumLiteral_43= Changes ) | (enumLiteral_44= Pipelines ) | (enumLiteral_45= Default ) | (enumLiteral_46= PullRequests ) | (enumLiteral_47= Custom ) | (enumLiteral_48= Conditions ) | (enumLiteral_49= BitbucketBranchDeleted ) | (enumLiteral_50= BitbucketBranchCreated ) | (enumLiteral_51= BitbucketTagCreated ) | (enumLiteral_52= BitbucketTagDeleted ) | (enumLiteral_53= Repository ) | (enumLiteral_54= Scheduled ) | (enumLiteral_55= Remote ) | (enumLiteral_56= Bitbucket ) | (enumLiteral_57= PlanBranch ) | (enumLiteral_58= Cron ) | (enumLiteral_59= Notifications ) | (enumLiteral_60= LockBehavior ) )
             {
             // InternalPipelineParser.g:4890:2: ( (enumLiteral_0= Push ) | (enumLiteral_1= Pull_request ) | (enumLiteral_2= Workflow_dispatch ) | (enumLiteral_3= Repository_dispatch ) | (enumLiteral_4= Check_run ) | (enumLiteral_5= Check_suite ) | (enumLiteral_6= Create ) | (enumLiteral_7= Delete ) | (enumLiteral_8= Deployment ) | (enumLiteral_9= Deployment_status ) | (enumLiteral_10= Fork ) | (enumLiteral_11= Gollum ) | (enumLiteral_12= Issue_comment ) | (enumLiteral_13= Issues ) | (enumLiteral_14= Label ) | (enumLiteral_15= Milestone ) | (enumLiteral_16= Page_build ) | (enumLiteral_17= Project ) | (enumLiteral_18= Project_card ) | (enumLiteral_19= Project_column ) | (enumLiteral_20= Public ) | (enumLiteral_21= Pull_request_review ) | (enumLiteral_22= Pull_request_review_comment ) | (enumLiteral_23= Pull_request_target ) | (enumLiteral_24= Registry_package ) | (enumLiteral_25= Release ) | (enumLiteral_26= Status ) | (enumLiteral_27= Watch ) | (enumLiteral_28= Workflow_call ) | (enumLiteral_29= Workflow_run ) | (enumLiteral_30= Trigger ) | (enumLiteral_31= Pr ) | (enumLiteral_32= Branches ) | (enumLiteral_33= Tags ) | (enumLiteral_34= Paths ) | (enumLiteral_35= AutoCancel ) | (enumLiteral_36= Drafts ) | (enumLiteral_37= Only ) | (enumLiteral_38= Except ) | (enumLiteral_39= Rules ) | (enumLiteral_40= WorkflowRules ) | (enumLiteral_41= Pipeline_schedule ) | (enumLiteral_42= Merge_requests ) | (enumLiteral_43= Changes ) | (enumLiteral_44= Pipelines ) | (enumLiteral_45= Default ) | (enumLiteral_46= PullRequests ) | (enumLiteral_47= Custom ) | (enumLiteral_48= Conditions ) | (enumLiteral_49= BitbucketBranchDeleted ) | (enumLiteral_50= BitbucketBranchCreated ) | (enumLiteral_51= BitbucketTagCreated ) | (enumLiteral_52= BitbucketTagDeleted ) | (enumLiteral_53= Repository ) | (enumLiteral_54= Scheduled ) | (enumLiteral_55= Remote ) | (enumLiteral_56= Bitbucket ) | (enumLiteral_57= PlanBranch ) | (enumLiteral_58= Cron ) | (enumLiteral_59= Notifications ) | (enumLiteral_60= LockBehavior ) )
-            int alt145=61;
+            int alt147=61;
             switch ( input.LA(1) ) {
             case Push:
                 {
-                alt145=1;
+                alt147=1;
                 }
                 break;
             case Pull_request:
                 {
-                alt145=2;
+                alt147=2;
                 }
                 break;
             case Workflow_dispatch:
                 {
-                alt145=3;
+                alt147=3;
                 }
                 break;
             case Repository_dispatch:
                 {
-                alt145=4;
+                alt147=4;
                 }
                 break;
             case Check_run:
                 {
-                alt145=5;
+                alt147=5;
                 }
                 break;
             case Check_suite:
                 {
-                alt145=6;
+                alt147=6;
                 }
                 break;
             case Create:
                 {
-                alt145=7;
+                alt147=7;
                 }
                 break;
             case Delete:
                 {
-                alt145=8;
+                alt147=8;
                 }
                 break;
             case Deployment:
                 {
-                alt145=9;
+                alt147=9;
                 }
                 break;
             case Deployment_status:
                 {
-                alt145=10;
+                alt147=10;
                 }
                 break;
             case Fork:
                 {
-                alt145=11;
+                alt147=11;
                 }
                 break;
             case Gollum:
                 {
-                alt145=12;
+                alt147=12;
                 }
                 break;
             case Issue_comment:
                 {
-                alt145=13;
+                alt147=13;
                 }
                 break;
             case Issues:
                 {
-                alt145=14;
+                alt147=14;
                 }
                 break;
             case Label:
                 {
-                alt145=15;
+                alt147=15;
                 }
                 break;
             case Milestone:
                 {
-                alt145=16;
+                alt147=16;
                 }
                 break;
             case Page_build:
                 {
-                alt145=17;
+                alt147=17;
                 }
                 break;
             case Project:
                 {
-                alt145=18;
+                alt147=18;
                 }
                 break;
             case Project_card:
                 {
-                alt145=19;
+                alt147=19;
                 }
                 break;
             case Project_column:
                 {
-                alt145=20;
+                alt147=20;
                 }
                 break;
             case Public:
                 {
-                alt145=21;
+                alt147=21;
                 }
                 break;
             case Pull_request_review:
                 {
-                alt145=22;
+                alt147=22;
                 }
                 break;
             case Pull_request_review_comment:
                 {
-                alt145=23;
+                alt147=23;
                 }
                 break;
             case Pull_request_target:
                 {
-                alt145=24;
+                alt147=24;
                 }
                 break;
             case Registry_package:
                 {
-                alt145=25;
+                alt147=25;
                 }
                 break;
             case Release:
                 {
-                alt145=26;
+                alt147=26;
                 }
                 break;
             case Status:
                 {
-                alt145=27;
+                alt147=27;
                 }
                 break;
             case Watch:
                 {
-                alt145=28;
+                alt147=28;
                 }
                 break;
             case Workflow_call:
                 {
-                alt145=29;
+                alt147=29;
                 }
                 break;
             case Workflow_run:
                 {
-                alt145=30;
+                alt147=30;
                 }
                 break;
             case Trigger:
                 {
-                alt145=31;
+                alt147=31;
                 }
                 break;
             case Pr:
                 {
-                alt145=32;
+                alt147=32;
                 }
                 break;
             case Branches:
                 {
-                alt145=33;
+                alt147=33;
                 }
                 break;
             case Tags:
                 {
-                alt145=34;
+                alt147=34;
                 }
                 break;
             case Paths:
                 {
-                alt145=35;
+                alt147=35;
                 }
                 break;
             case AutoCancel:
                 {
-                alt145=36;
+                alt147=36;
                 }
                 break;
             case Drafts:
                 {
-                alt145=37;
+                alt147=37;
                 }
                 break;
             case Only:
                 {
-                alt145=38;
+                alt147=38;
                 }
                 break;
             case Except:
                 {
-                alt145=39;
+                alt147=39;
                 }
                 break;
             case Rules:
                 {
-                alt145=40;
+                alt147=40;
                 }
                 break;
             case WorkflowRules:
                 {
-                alt145=41;
+                alt147=41;
                 }
                 break;
             case Pipeline_schedule:
                 {
-                alt145=42;
+                alt147=42;
                 }
                 break;
             case Merge_requests:
                 {
-                alt145=43;
+                alt147=43;
                 }
                 break;
             case Changes:
                 {
-                alt145=44;
+                alt147=44;
                 }
                 break;
             case Pipelines:
                 {
-                alt145=45;
+                alt147=45;
                 }
                 break;
             case Default:
                 {
-                alt145=46;
+                alt147=46;
                 }
                 break;
             case PullRequests:
                 {
-                alt145=47;
+                alt147=47;
                 }
                 break;
             case Custom:
                 {
-                alt145=48;
+                alt147=48;
                 }
                 break;
             case Conditions:
                 {
-                alt145=49;
+                alt147=49;
                 }
                 break;
             case BitbucketBranchDeleted:
                 {
-                alt145=50;
+                alt147=50;
                 }
                 break;
             case BitbucketBranchCreated:
                 {
-                alt145=51;
+                alt147=51;
                 }
                 break;
             case BitbucketTagCreated:
                 {
-                alt145=52;
+                alt147=52;
                 }
                 break;
             case BitbucketTagDeleted:
                 {
-                alt145=53;
+                alt147=53;
                 }
                 break;
             case Repository:
                 {
-                alt145=54;
+                alt147=54;
                 }
                 break;
             case Scheduled:
                 {
-                alt145=55;
+                alt147=55;
                 }
                 break;
             case Remote:
                 {
-                alt145=56;
+                alt147=56;
                 }
                 break;
             case Bitbucket:
                 {
-                alt145=57;
+                alt147=57;
                 }
                 break;
             case PlanBranch:
                 {
-                alt145=58;
+                alt147=58;
                 }
                 break;
             case Cron:
                 {
-                alt145=59;
+                alt147=59;
                 }
                 break;
             case Notifications:
                 {
-                alt145=60;
+                alt147=60;
                 }
                 break;
             case LockBehavior:
                 {
-                alt145=61;
+                alt147=61;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 145, 0, input);
+                    new NoViableAltException("", 147, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt145) {
+            switch (alt147) {
                 case 1 :
                     // InternalPipelineParser.g:4891:3: (enumLiteral_0= Push )
                     {
@@ -15076,811 +15098,811 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             // InternalPipelineParser.g:5389:2: ( (enumLiteral_0= Name ) | (enumLiteral_1= RunName ) | (enumLiteral_2= On ) | (enumLiteral_3= Defaults ) | (enumLiteral_4= Run ) | (enumLiteral_5= Shell ) | (enumLiteral_6= WorkingDirectory ) | (enumLiteral_7= Env ) | (enumLiteral_8= Permission ) | (enumLiteral_9= Concurrency ) | (enumLiteral_10= Group ) | (enumLiteral_11= CancelInProgress ) | (enumLiteral_12= Pool ) | (enumLiteral_13= VmImage ) | (enumLiteral_14= Demands ) | (enumLiteral_15= Resources ) | (enumLiteral_16= Version ) | (enumLiteral_17= Variables ) | (enumLiteral_18= Parameters ) | (enumLiteral_19= Extends ) | (enumLiteral_20= Include ) | (enumLiteral_21= Types ) | (enumLiteral_22= Batch ) | (enumLiteral_23= AutoCancel ) | (enumLiteral_24= Workflows ) | (enumLiteral_25= Drafts ) | (enumLiteral_26= Branches ) | (enumLiteral_27= BranchesIgnore ) | (enumLiteral_28= Paths ) | (enumLiteral_29= PathsIgnore ) | (enumLiteral_30= Tags ) | (enumLiteral_31= TagsIgnore ) | (enumLiteral_32= Schedules ) | (enumLiteral_33= Schedule ) | (enumLiteral_34= Workflow_call ) | (enumLiteral_35= Workflow_dispatch ) | (enumLiteral_36= Cron ) | (enumLiteral_37= DisplayName ) | (enumLiteral_38= Always ) | (enumLiteral_39= Stage ) | (enumLiteral_40= Condition ) | (enumLiteral_41= IsSkippable ) | (enumLiteral_42= DependsOn ) | (enumLiteral_43= Job ) | (enumLiteral_44= Deployment ) | (enumLiteral_45= Needs ) | (enumLiteral_46= Script ) | (enumLiteral_47= Bash ) | (enumLiteral_48= Pwsh ) | (enumLiteral_49= Powershell ) | (enumLiteral_50= Checkout ) | (enumLiteral_51= Download ) | (enumLiteral_52= GetPackage ) | (enumLiteral_53= Publish ) | (enumLiteral_54= Task ) | (enumLiteral_55= Value ) | (enumLiteral_56= Readonly ) | (enumLiteral_57= Builds ) | (enumLiteral_58= Containers ) | (enumLiteral_59= Pipelines ) | (enumLiteral_60= Repositories ) | (enumLiteral_61= Webhooks ) | (enumLiteral_62= Packages ) | (enumLiteral_63= Inputs ) | (enumLiteral_64= Outputs ) | (enumLiteral_65= Secrets ) | (enumLiteral_66= Description ) | (enumLiteral_67= Required ) | (enumLiteral_68= Default ) | (enumLiteral_69= Type ) | (enumLiteral_70= Options ) | (enumLiteral_71= If ) | (enumLiteral_72= RunsOn ) | (enumLiteral_73= Strategy ) | (enumLiteral_74= Matrix ) | (enumLiteral_75= Container ) | (enumLiteral_76= Services ) | (enumLiteral_77= Steps ) | (enumLiteral_78= Uses ) | (enumLiteral_79= With ) | (enumLiteral_80= TimeoutMinutes ) | (enumLiteral_81= ContinueOnError_1 ) | (enumLiteral_82= Environment ) | (enumLiteral_83= Id ) | (enumLiteral_84= Permissions ) | (enumLiteral_85= Timeouts ) | (enumLiteral_86= DefaultsRun ) | (enumLiteral_87= Push ) | (enumLiteral_88= Pull_request ) | (enumLiteral_89= Repository_dispatch ) | (enumLiteral_90= Workflow_run ) | (enumLiteral_91= Filters ) | (enumLiteral_92= Exclude ) | (enumLiteral_93= FailFast ) | (enumLiteral_94= MaxParallel ) | (enumLiteral_95= ContainerImage ) | (enumLiteral_96= Credentials ) | (enumLiteral_97= Ports ) | (enumLiteral_98= Inherit ) | (enumLiteral_99= Trigger ) | (enumLiteral_100= Template ) | (enumLiteral_101= Workspace ) | (enumLiteral_102= Pipeline ) | (enumLiteral_103= TimeoutInMinutes ) | (enumLiteral_104= ContinueOnError ) | (enumLiteral_105= ResourceType ) | (enumLiteral_106= ResourceName ) | (enumLiteral_107= Stages ) | (enumLiteral_108= Only ) | (enumLiteral_109= Except ) | (enumLiteral_110= Image ) | (enumLiteral_111= Cache ) | (enumLiteral_112= Artifacts ) | (enumLiteral_113= Retries ) | (enumLiteral_114= Rules ) | (enumLiteral_115= Before_script ) | (enumLiteral_116= After_script ) | (enumLiteral_117= Timeout ) | (enumLiteral_118= When ) | (enumLiteral_119= Allow_failure ) | (enumLiteral_120= Dependencies ) | (enumLiteral_121= PullRequests ) | (enumLiteral_122= Step ) | (enumLiteral_123= Definitions ) | (enumLiteral_124= Caches ) | (enumLiteral_125= Parallel ) | (enumLiteral_126= Conditions ) | (enumLiteral_127= MaxTime ) | (enumLiteral_128= Project ) | (enumLiteral_129= Plan ) | (enumLiteral_130= Tasks ) | (enumLiteral_131= Requirements ) | (enumLiteral_132= Final ) | (enumLiteral_133= Jdk ) | (enumLiteral_134= Labels ) | (enumLiteral_135= Repository ) | (enumLiteral_136= Release ) | (enumLiteral_137= Docker ) | (enumLiteral_138= Agent ) | (enumLiteral_139= Queue ) | (enumLiteral_140= Snapshot ) | (enumLiteral_141= Policy ) | (enumLiteral_142= Approvals ) | (enumLiteral_143= PreBuild ) | (enumLiteral_144= PostBuild ) | (enumLiteral_145= Ssh ) | (enumLiteral_146= Auth ) | (enumLiteral_147= Storage ) | (enumLiteral_148= Endpoints ) | (enumLiteral_149= Command ) | (enumLiteral_150= Provisioner ) | (enumLiteral_151= TriggerRules ) | (enumLiteral_152= RunPolicy ) | (enumLiteral_153= Queued ) | (enumLiteral_154= Notifications ) | (enumLiteral_155= DeployTrigger ) | (enumLiteral_156= ReleaseTrigger ) | (enumLiteral_157= LockBehavior ) | (enumLiteral_158= ReviewStage ) )
             {
             // InternalPipelineParser.g:5389:2: ( (enumLiteral_0= Name ) | (enumLiteral_1= RunName ) | (enumLiteral_2= On ) | (enumLiteral_3= Defaults ) | (enumLiteral_4= Run ) | (enumLiteral_5= Shell ) | (enumLiteral_6= WorkingDirectory ) | (enumLiteral_7= Env ) | (enumLiteral_8= Permission ) | (enumLiteral_9= Concurrency ) | (enumLiteral_10= Group ) | (enumLiteral_11= CancelInProgress ) | (enumLiteral_12= Pool ) | (enumLiteral_13= VmImage ) | (enumLiteral_14= Demands ) | (enumLiteral_15= Resources ) | (enumLiteral_16= Version ) | (enumLiteral_17= Variables ) | (enumLiteral_18= Parameters ) | (enumLiteral_19= Extends ) | (enumLiteral_20= Include ) | (enumLiteral_21= Types ) | (enumLiteral_22= Batch ) | (enumLiteral_23= AutoCancel ) | (enumLiteral_24= Workflows ) | (enumLiteral_25= Drafts ) | (enumLiteral_26= Branches ) | (enumLiteral_27= BranchesIgnore ) | (enumLiteral_28= Paths ) | (enumLiteral_29= PathsIgnore ) | (enumLiteral_30= Tags ) | (enumLiteral_31= TagsIgnore ) | (enumLiteral_32= Schedules ) | (enumLiteral_33= Schedule ) | (enumLiteral_34= Workflow_call ) | (enumLiteral_35= Workflow_dispatch ) | (enumLiteral_36= Cron ) | (enumLiteral_37= DisplayName ) | (enumLiteral_38= Always ) | (enumLiteral_39= Stage ) | (enumLiteral_40= Condition ) | (enumLiteral_41= IsSkippable ) | (enumLiteral_42= DependsOn ) | (enumLiteral_43= Job ) | (enumLiteral_44= Deployment ) | (enumLiteral_45= Needs ) | (enumLiteral_46= Script ) | (enumLiteral_47= Bash ) | (enumLiteral_48= Pwsh ) | (enumLiteral_49= Powershell ) | (enumLiteral_50= Checkout ) | (enumLiteral_51= Download ) | (enumLiteral_52= GetPackage ) | (enumLiteral_53= Publish ) | (enumLiteral_54= Task ) | (enumLiteral_55= Value ) | (enumLiteral_56= Readonly ) | (enumLiteral_57= Builds ) | (enumLiteral_58= Containers ) | (enumLiteral_59= Pipelines ) | (enumLiteral_60= Repositories ) | (enumLiteral_61= Webhooks ) | (enumLiteral_62= Packages ) | (enumLiteral_63= Inputs ) | (enumLiteral_64= Outputs ) | (enumLiteral_65= Secrets ) | (enumLiteral_66= Description ) | (enumLiteral_67= Required ) | (enumLiteral_68= Default ) | (enumLiteral_69= Type ) | (enumLiteral_70= Options ) | (enumLiteral_71= If ) | (enumLiteral_72= RunsOn ) | (enumLiteral_73= Strategy ) | (enumLiteral_74= Matrix ) | (enumLiteral_75= Container ) | (enumLiteral_76= Services ) | (enumLiteral_77= Steps ) | (enumLiteral_78= Uses ) | (enumLiteral_79= With ) | (enumLiteral_80= TimeoutMinutes ) | (enumLiteral_81= ContinueOnError_1 ) | (enumLiteral_82= Environment ) | (enumLiteral_83= Id ) | (enumLiteral_84= Permissions ) | (enumLiteral_85= Timeouts ) | (enumLiteral_86= DefaultsRun ) | (enumLiteral_87= Push ) | (enumLiteral_88= Pull_request ) | (enumLiteral_89= Repository_dispatch ) | (enumLiteral_90= Workflow_run ) | (enumLiteral_91= Filters ) | (enumLiteral_92= Exclude ) | (enumLiteral_93= FailFast ) | (enumLiteral_94= MaxParallel ) | (enumLiteral_95= ContainerImage ) | (enumLiteral_96= Credentials ) | (enumLiteral_97= Ports ) | (enumLiteral_98= Inherit ) | (enumLiteral_99= Trigger ) | (enumLiteral_100= Template ) | (enumLiteral_101= Workspace ) | (enumLiteral_102= Pipeline ) | (enumLiteral_103= TimeoutInMinutes ) | (enumLiteral_104= ContinueOnError ) | (enumLiteral_105= ResourceType ) | (enumLiteral_106= ResourceName ) | (enumLiteral_107= Stages ) | (enumLiteral_108= Only ) | (enumLiteral_109= Except ) | (enumLiteral_110= Image ) | (enumLiteral_111= Cache ) | (enumLiteral_112= Artifacts ) | (enumLiteral_113= Retries ) | (enumLiteral_114= Rules ) | (enumLiteral_115= Before_script ) | (enumLiteral_116= After_script ) | (enumLiteral_117= Timeout ) | (enumLiteral_118= When ) | (enumLiteral_119= Allow_failure ) | (enumLiteral_120= Dependencies ) | (enumLiteral_121= PullRequests ) | (enumLiteral_122= Step ) | (enumLiteral_123= Definitions ) | (enumLiteral_124= Caches ) | (enumLiteral_125= Parallel ) | (enumLiteral_126= Conditions ) | (enumLiteral_127= MaxTime ) | (enumLiteral_128= Project ) | (enumLiteral_129= Plan ) | (enumLiteral_130= Tasks ) | (enumLiteral_131= Requirements ) | (enumLiteral_132= Final ) | (enumLiteral_133= Jdk ) | (enumLiteral_134= Labels ) | (enumLiteral_135= Repository ) | (enumLiteral_136= Release ) | (enumLiteral_137= Docker ) | (enumLiteral_138= Agent ) | (enumLiteral_139= Queue ) | (enumLiteral_140= Snapshot ) | (enumLiteral_141= Policy ) | (enumLiteral_142= Approvals ) | (enumLiteral_143= PreBuild ) | (enumLiteral_144= PostBuild ) | (enumLiteral_145= Ssh ) | (enumLiteral_146= Auth ) | (enumLiteral_147= Storage ) | (enumLiteral_148= Endpoints ) | (enumLiteral_149= Command ) | (enumLiteral_150= Provisioner ) | (enumLiteral_151= TriggerRules ) | (enumLiteral_152= RunPolicy ) | (enumLiteral_153= Queued ) | (enumLiteral_154= Notifications ) | (enumLiteral_155= DeployTrigger ) | (enumLiteral_156= ReleaseTrigger ) | (enumLiteral_157= LockBehavior ) | (enumLiteral_158= ReviewStage ) )
-            int alt146=159;
+            int alt148=159;
             switch ( input.LA(1) ) {
             case Name:
                 {
-                alt146=1;
+                alt148=1;
                 }
                 break;
             case RunName:
                 {
-                alt146=2;
+                alt148=2;
                 }
                 break;
             case On:
                 {
-                alt146=3;
+                alt148=3;
                 }
                 break;
             case Defaults:
                 {
-                alt146=4;
+                alt148=4;
                 }
                 break;
             case Run:
                 {
-                alt146=5;
+                alt148=5;
                 }
                 break;
             case Shell:
                 {
-                alt146=6;
+                alt148=6;
                 }
                 break;
             case WorkingDirectory:
                 {
-                alt146=7;
+                alt148=7;
                 }
                 break;
             case Env:
                 {
-                alt146=8;
+                alt148=8;
                 }
                 break;
             case Permission:
                 {
-                alt146=9;
+                alt148=9;
                 }
                 break;
             case Concurrency:
                 {
-                alt146=10;
+                alt148=10;
                 }
                 break;
             case Group:
                 {
-                alt146=11;
+                alt148=11;
                 }
                 break;
             case CancelInProgress:
                 {
-                alt146=12;
+                alt148=12;
                 }
                 break;
             case Pool:
                 {
-                alt146=13;
+                alt148=13;
                 }
                 break;
             case VmImage:
                 {
-                alt146=14;
+                alt148=14;
                 }
                 break;
             case Demands:
                 {
-                alt146=15;
+                alt148=15;
                 }
                 break;
             case Resources:
                 {
-                alt146=16;
+                alt148=16;
                 }
                 break;
             case Version:
                 {
-                alt146=17;
+                alt148=17;
                 }
                 break;
             case Variables:
                 {
-                alt146=18;
+                alt148=18;
                 }
                 break;
             case Parameters:
                 {
-                alt146=19;
+                alt148=19;
                 }
                 break;
             case Extends:
                 {
-                alt146=20;
+                alt148=20;
                 }
                 break;
             case Include:
                 {
-                alt146=21;
+                alt148=21;
                 }
                 break;
             case Types:
                 {
-                alt146=22;
+                alt148=22;
                 }
                 break;
             case Batch:
                 {
-                alt146=23;
+                alt148=23;
                 }
                 break;
             case AutoCancel:
                 {
-                alt146=24;
+                alt148=24;
                 }
                 break;
             case Workflows:
                 {
-                alt146=25;
+                alt148=25;
                 }
                 break;
             case Drafts:
                 {
-                alt146=26;
+                alt148=26;
                 }
                 break;
             case Branches:
                 {
-                alt146=27;
+                alt148=27;
                 }
                 break;
             case BranchesIgnore:
                 {
-                alt146=28;
+                alt148=28;
                 }
                 break;
             case Paths:
                 {
-                alt146=29;
+                alt148=29;
                 }
                 break;
             case PathsIgnore:
                 {
-                alt146=30;
+                alt148=30;
                 }
                 break;
             case Tags:
                 {
-                alt146=31;
+                alt148=31;
                 }
                 break;
             case TagsIgnore:
                 {
-                alt146=32;
+                alt148=32;
                 }
                 break;
             case Schedules:
                 {
-                alt146=33;
+                alt148=33;
                 }
                 break;
             case Schedule:
                 {
-                alt146=34;
+                alt148=34;
                 }
                 break;
             case Workflow_call:
                 {
-                alt146=35;
+                alt148=35;
                 }
                 break;
             case Workflow_dispatch:
                 {
-                alt146=36;
+                alt148=36;
                 }
                 break;
             case Cron:
                 {
-                alt146=37;
+                alt148=37;
                 }
                 break;
             case DisplayName:
                 {
-                alt146=38;
+                alt148=38;
                 }
                 break;
             case Always:
                 {
-                alt146=39;
+                alt148=39;
                 }
                 break;
             case Stage:
                 {
-                alt146=40;
+                alt148=40;
                 }
                 break;
             case Condition:
                 {
-                alt146=41;
+                alt148=41;
                 }
                 break;
             case IsSkippable:
                 {
-                alt146=42;
+                alt148=42;
                 }
                 break;
             case DependsOn:
                 {
-                alt146=43;
+                alt148=43;
                 }
                 break;
             case Job:
                 {
-                alt146=44;
+                alt148=44;
                 }
                 break;
             case Deployment:
                 {
-                alt146=45;
+                alt148=45;
                 }
                 break;
             case Needs:
                 {
-                alt146=46;
+                alt148=46;
                 }
                 break;
             case Script:
                 {
-                alt146=47;
+                alt148=47;
                 }
                 break;
             case Bash:
                 {
-                alt146=48;
+                alt148=48;
                 }
                 break;
             case Pwsh:
                 {
-                alt146=49;
+                alt148=49;
                 }
                 break;
             case Powershell:
                 {
-                alt146=50;
+                alt148=50;
                 }
                 break;
             case Checkout:
                 {
-                alt146=51;
+                alt148=51;
                 }
                 break;
             case Download:
                 {
-                alt146=52;
+                alt148=52;
                 }
                 break;
             case GetPackage:
                 {
-                alt146=53;
+                alt148=53;
                 }
                 break;
             case Publish:
                 {
-                alt146=54;
+                alt148=54;
                 }
                 break;
             case Task:
                 {
-                alt146=55;
+                alt148=55;
                 }
                 break;
             case Value:
                 {
-                alt146=56;
+                alt148=56;
                 }
                 break;
             case Readonly:
                 {
-                alt146=57;
+                alt148=57;
                 }
                 break;
             case Builds:
                 {
-                alt146=58;
+                alt148=58;
                 }
                 break;
             case Containers:
                 {
-                alt146=59;
+                alt148=59;
                 }
                 break;
             case Pipelines:
                 {
-                alt146=60;
+                alt148=60;
                 }
                 break;
             case Repositories:
                 {
-                alt146=61;
+                alt148=61;
                 }
                 break;
             case Webhooks:
                 {
-                alt146=62;
+                alt148=62;
                 }
                 break;
             case Packages:
                 {
-                alt146=63;
+                alt148=63;
                 }
                 break;
             case Inputs:
                 {
-                alt146=64;
+                alt148=64;
                 }
                 break;
             case Outputs:
                 {
-                alt146=65;
+                alt148=65;
                 }
                 break;
             case Secrets:
                 {
-                alt146=66;
+                alt148=66;
                 }
                 break;
             case Description:
                 {
-                alt146=67;
+                alt148=67;
                 }
                 break;
             case Required:
                 {
-                alt146=68;
+                alt148=68;
                 }
                 break;
             case Default:
                 {
-                alt146=69;
+                alt148=69;
                 }
                 break;
             case Type:
                 {
-                alt146=70;
+                alt148=70;
                 }
                 break;
             case Options:
                 {
-                alt146=71;
+                alt148=71;
                 }
                 break;
             case If:
                 {
-                alt146=72;
+                alt148=72;
                 }
                 break;
             case RunsOn:
                 {
-                alt146=73;
+                alt148=73;
                 }
                 break;
             case Strategy:
                 {
-                alt146=74;
+                alt148=74;
                 }
                 break;
             case Matrix:
                 {
-                alt146=75;
+                alt148=75;
                 }
                 break;
             case Container:
                 {
-                alt146=76;
+                alt148=76;
                 }
                 break;
             case Services:
                 {
-                alt146=77;
+                alt148=77;
                 }
                 break;
             case Steps:
                 {
-                alt146=78;
+                alt148=78;
                 }
                 break;
             case Uses:
                 {
-                alt146=79;
+                alt148=79;
                 }
                 break;
             case With:
                 {
-                alt146=80;
+                alt148=80;
                 }
                 break;
             case TimeoutMinutes:
                 {
-                alt146=81;
+                alt148=81;
                 }
                 break;
             case ContinueOnError_1:
                 {
-                alt146=82;
+                alt148=82;
                 }
                 break;
             case Environment:
                 {
-                alt146=83;
+                alt148=83;
                 }
                 break;
             case Id:
                 {
-                alt146=84;
+                alt148=84;
                 }
                 break;
             case Permissions:
                 {
-                alt146=85;
+                alt148=85;
                 }
                 break;
             case Timeouts:
                 {
-                alt146=86;
+                alt148=86;
                 }
                 break;
             case DefaultsRun:
                 {
-                alt146=87;
+                alt148=87;
                 }
                 break;
             case Push:
                 {
-                alt146=88;
+                alt148=88;
                 }
                 break;
             case Pull_request:
                 {
-                alt146=89;
+                alt148=89;
                 }
                 break;
             case Repository_dispatch:
                 {
-                alt146=90;
+                alt148=90;
                 }
                 break;
             case Workflow_run:
                 {
-                alt146=91;
+                alt148=91;
                 }
                 break;
             case Filters:
                 {
-                alt146=92;
+                alt148=92;
                 }
                 break;
             case Exclude:
                 {
-                alt146=93;
+                alt148=93;
                 }
                 break;
             case FailFast:
                 {
-                alt146=94;
+                alt148=94;
                 }
                 break;
             case MaxParallel:
                 {
-                alt146=95;
+                alt148=95;
                 }
                 break;
             case ContainerImage:
                 {
-                alt146=96;
+                alt148=96;
                 }
                 break;
             case Credentials:
                 {
-                alt146=97;
+                alt148=97;
                 }
                 break;
             case Ports:
                 {
-                alt146=98;
+                alt148=98;
                 }
                 break;
             case Inherit:
                 {
-                alt146=99;
+                alt148=99;
                 }
                 break;
             case Trigger:
                 {
-                alt146=100;
+                alt148=100;
                 }
                 break;
             case Template:
                 {
-                alt146=101;
+                alt148=101;
                 }
                 break;
             case Workspace:
                 {
-                alt146=102;
+                alt148=102;
                 }
                 break;
             case Pipeline:
                 {
-                alt146=103;
+                alt148=103;
                 }
                 break;
             case TimeoutInMinutes:
                 {
-                alt146=104;
+                alt148=104;
                 }
                 break;
             case ContinueOnError:
                 {
-                alt146=105;
+                alt148=105;
                 }
                 break;
             case ResourceType:
                 {
-                alt146=106;
+                alt148=106;
                 }
                 break;
             case ResourceName:
                 {
-                alt146=107;
+                alt148=107;
                 }
                 break;
             case Stages:
                 {
-                alt146=108;
+                alt148=108;
                 }
                 break;
             case Only:
                 {
-                alt146=109;
+                alt148=109;
                 }
                 break;
             case Except:
                 {
-                alt146=110;
+                alt148=110;
                 }
                 break;
             case Image:
                 {
-                alt146=111;
+                alt148=111;
                 }
                 break;
             case Cache:
                 {
-                alt146=112;
+                alt148=112;
                 }
                 break;
             case Artifacts:
                 {
-                alt146=113;
+                alt148=113;
                 }
                 break;
             case Retries:
                 {
-                alt146=114;
+                alt148=114;
                 }
                 break;
             case Rules:
                 {
-                alt146=115;
+                alt148=115;
                 }
                 break;
             case Before_script:
                 {
-                alt146=116;
+                alt148=116;
                 }
                 break;
             case After_script:
                 {
-                alt146=117;
+                alt148=117;
                 }
                 break;
             case Timeout:
                 {
-                alt146=118;
+                alt148=118;
                 }
                 break;
             case When:
                 {
-                alt146=119;
+                alt148=119;
                 }
                 break;
             case Allow_failure:
                 {
-                alt146=120;
+                alt148=120;
                 }
                 break;
             case Dependencies:
                 {
-                alt146=121;
+                alt148=121;
                 }
                 break;
             case PullRequests:
                 {
-                alt146=122;
+                alt148=122;
                 }
                 break;
             case Step:
                 {
-                alt146=123;
+                alt148=123;
                 }
                 break;
             case Definitions:
                 {
-                alt146=124;
+                alt148=124;
                 }
                 break;
             case Caches:
                 {
-                alt146=125;
+                alt148=125;
                 }
                 break;
             case Parallel:
                 {
-                alt146=126;
+                alt148=126;
                 }
                 break;
             case Conditions:
                 {
-                alt146=127;
+                alt148=127;
                 }
                 break;
             case MaxTime:
                 {
-                alt146=128;
+                alt148=128;
                 }
                 break;
             case Project:
                 {
-                alt146=129;
+                alt148=129;
                 }
                 break;
             case Plan:
                 {
-                alt146=130;
+                alt148=130;
                 }
                 break;
             case Tasks:
                 {
-                alt146=131;
+                alt148=131;
                 }
                 break;
             case Requirements:
                 {
-                alt146=132;
+                alt148=132;
                 }
                 break;
             case Final:
                 {
-                alt146=133;
+                alt148=133;
                 }
                 break;
             case Jdk:
                 {
-                alt146=134;
+                alt148=134;
                 }
                 break;
             case Labels:
                 {
-                alt146=135;
+                alt148=135;
                 }
                 break;
             case Repository:
                 {
-                alt146=136;
+                alt148=136;
                 }
                 break;
             case Release:
                 {
-                alt146=137;
+                alt148=137;
                 }
                 break;
             case Docker:
                 {
-                alt146=138;
+                alt148=138;
                 }
                 break;
             case Agent:
                 {
-                alt146=139;
+                alt148=139;
                 }
                 break;
             case Queue:
                 {
-                alt146=140;
+                alt148=140;
                 }
                 break;
             case Snapshot:
                 {
-                alt146=141;
+                alt148=141;
                 }
                 break;
             case Policy:
                 {
-                alt146=142;
+                alt148=142;
                 }
                 break;
             case Approvals:
                 {
-                alt146=143;
+                alt148=143;
                 }
                 break;
             case PreBuild:
                 {
-                alt146=144;
+                alt148=144;
                 }
                 break;
             case PostBuild:
                 {
-                alt146=145;
+                alt148=145;
                 }
                 break;
             case Ssh:
                 {
-                alt146=146;
+                alt148=146;
                 }
                 break;
             case Auth:
                 {
-                alt146=147;
+                alt148=147;
                 }
                 break;
             case Storage:
                 {
-                alt146=148;
+                alt148=148;
                 }
                 break;
             case Endpoints:
                 {
-                alt146=149;
+                alt148=149;
                 }
                 break;
             case Command:
                 {
-                alt146=150;
+                alt148=150;
                 }
                 break;
             case Provisioner:
                 {
-                alt146=151;
+                alt148=151;
                 }
                 break;
             case TriggerRules:
                 {
-                alt146=152;
+                alt148=152;
                 }
                 break;
             case RunPolicy:
                 {
-                alt146=153;
+                alt148=153;
                 }
                 break;
             case Queued:
                 {
-                alt146=154;
+                alt148=154;
                 }
                 break;
             case Notifications:
                 {
-                alt146=155;
+                alt148=155;
                 }
                 break;
             case DeployTrigger:
                 {
-                alt146=156;
+                alt148=156;
                 }
                 break;
             case ReleaseTrigger:
                 {
-                alt146=157;
+                alt148=157;
                 }
                 break;
             case LockBehavior:
                 {
-                alt146=158;
+                alt148=158;
                 }
                 break;
             case ReviewStage:
                 {
-                alt146=159;
+                alt148=159;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 146, 0, input);
+                    new NoViableAltException("", 148, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt146) {
+            switch (alt148) {
                 case 1 :
                     // InternalPipelineParser.g:5390:3: (enumLiteral_0= Name )
                     {
@@ -18609,12 +18631,12 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
 
     protected DFA30 dfa30 = new DFA30(this);
-    protected DFA72 dfa72 = new DFA72(this);
-    protected DFA65 dfa65 = new DFA65(this);
-    protected DFA111 dfa111 = new DFA111(this);
-    protected DFA112 dfa112 = new DFA112(this);
-    protected DFA116 dfa116 = new DFA116(this);
-    protected DFA121 dfa121 = new DFA121(this);
+    protected DFA74 dfa74 = new DFA74(this);
+    protected DFA67 dfa67 = new DFA67(this);
+    protected DFA113 dfa113 = new DFA113(this);
+    protected DFA114 dfa114 = new DFA114(this);
+    protected DFA118 dfa118 = new DFA118(this);
+    protected DFA123 dfa123 = new DFA123(this);
     static final String dfa_1s = "\16\uffff";
     static final String dfa_2s = "\1\1\15\uffff";
     static final String dfa_3s = "\1\4\15\uffff";
@@ -18660,7 +18682,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             this.transition = dfa_7;
         }
         public String getDescription() {
-            return "()* loopback of 329:5: ( ({...}? => ( ({...}? => (otherlv_1= Name ( (lv_name_2_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= RunName ( (lv_runName_4_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( ( ( ({...}? => ( ({...}? => (otherlv_6= Defaults this_BEGIN_7= RULE_BEGIN otherlv_8= Run this_BEGIN_9= RULE_BEGIN (otherlv_10= Shell ( (lv_defaultShellValue_11_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_12= WorkingDirectory ( (lv_defaultWDValue_13_0= RULE_STRING ) ) )? this_END_14= RULE_END this_END_15= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Env this_BEGIN_17= RULE_BEGIN ( (otherlv_18= HyphenMinus )? ( (lv_env_19_0= ruleKeyValue ) ) )* this_END_20= RULE_END ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Permission ( ( (lv_allPermission_22_0= RULE_ID ) ) | (this_BEGIN_23= RULE_BEGIN ( (lv_indPermissions_24_0= ruleIndPermissionValue ) )* this_END_25= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_26= Concurrency (this_BEGIN_27= RULE_BEGIN (otherlv_28= Group ( ( (lv_group_29_1= RULE_ID | lv_group_29_2= RULE_COMPLEX_EXPRESSION ) ) ) ) (otherlv_30= CancelInProgress ( ( (lv_cancelConcurrence_31_1= RULE_ID | lv_cancelConcurrence_31_2= RULE_COMPLEX_EXPRESSION ) ) ) ) this_END_32= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= Pool ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_35= RULE_BEGIN (otherlv_36= Name ( (lv_vmName_37_0= RULE_ID ) ) ) (otherlv_38= VmImage ( ( (lv_vmImage_39_1= RULE_ID | lv_vmImage_39_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_40= Demands ( ( (lv_vmDemands_41_1= ruleAnyData | lv_vmDemands_41_2= ruleHyphenValues ) ) ) )? this_END_42= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Resources (this_BEGIN_44= RULE_BEGIN ( (lv_resources_45_0= ruleResource ) )* this_END_46= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_47= Version ( (lv_version_48_0= RULE_VERSION ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_49= Variables ( (lv_pplVariables_50_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_paras_53_0= ruleParameterValue ) ) )* ) ) ) ) | ({...}? => ( ({...}? => ( ( ( (lv_extendOrInclude_54_1= Extends | lv_extendOrInclude_54_2= Include ) ) ) (this_BEGIN_55= RULE_BEGIN ( (lv_extendedParameters_56_0= ruleParameterValue ) )+ this_END_57= RULE_END ) ) ) ) ) )*";
+            return "()* loopback of 329:5: ( ({...}? => ( ({...}? => (otherlv_1= Name ( (lv_name_2_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_3= RunName ( (lv_runName_4_0= ruleUnquotedString ) ) ) ) ) ) | ({...}? => ( ({...}? => ( ( ( ( ({...}? => ( ({...}? => (otherlv_6= Defaults this_BEGIN_7= RULE_BEGIN otherlv_8= Run this_BEGIN_9= RULE_BEGIN (otherlv_10= Shell ( (lv_defaultShellValue_11_0= RULE_STRING ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_12= WorkingDirectory ( (lv_defaultWDValue_13_0= RULE_STRING ) ) )? this_END_14= RULE_END this_END_15= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Env this_BEGIN_17= RULE_BEGIN ( (otherlv_18= HyphenMinus )? ( (lv_env_19_0= ruleKeyValue ) ) )* this_END_20= RULE_END ) ) ) ) | ({...}? => ( ({...}? => (otherlv_21= Permission ( ( (lv_allPermission_22_0= RULE_ID ) ) | (this_BEGIN_23= RULE_BEGIN ( (lv_indPermissions_24_0= ruleIndPermissionValue ) )* this_END_25= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_26= Concurrency (this_BEGIN_27= RULE_BEGIN (otherlv_28= Group ( ( (lv_group_29_1= RULE_ID | lv_group_29_2= RULE_COMPLEX_EXPRESSION ) ) ) ) (otherlv_30= CancelInProgress ( ( (lv_cancelConcurrence_31_1= RULE_ID | lv_cancelConcurrence_31_2= RULE_COMPLEX_EXPRESSION ) ) ) ) this_END_32= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= Pool ( ( ( ( ({...}? => ( ({...}? => (this_BEGIN_35= RULE_BEGIN (otherlv_36= Name ( (lv_vmName_37_0= RULE_ID ) ) ) (otherlv_38= VmImage ( ( (lv_vmImage_39_1= RULE_ID | lv_vmImage_39_2= RULE_STRING ) ) ) )? ) ) ) ) | ({...}? => ( ({...}? => ( (otherlv_40= Demands ( ( (lv_vmDemands_41_1= ruleAnyData | lv_vmDemands_41_2= ruleHyphenValues ) ) ) )? this_END_42= RULE_END ) ) ) ) )+ {...}?) ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Resources (this_BEGIN_44= RULE_BEGIN ( (lv_resources_45_0= ruleResource ) )* this_END_46= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_47= Version ( (lv_version_48_0= RULE_VERSION ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_49= Variables ( (lv_pplVariables_50_0= ruleVariable ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= Parameters (otherlv_52= HyphenMinus ( (lv_parameterValues_53_0= ruleParameterValue ) ) )* ) ) ) ) | ({...}? => ( ({...}? => ( ( ( (lv_extendOrInclude_54_1= Extends | lv_extendOrInclude_54_2= Include ) ) ) (this_BEGIN_55= RULE_BEGIN ( (lv_extendedParameters_56_0= ruleParameterValue ) )+ this_END_57= RULE_END ) ) ) ) ) )*";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -18744,11 +18766,11 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
     static final short[] dfa_13 = DFA.unpackEncodedString(dfa_13s);
     static final short[][] dfa_14 = unpackEncodedStringArray(dfa_14s);
 
-    class DFA72 extends DFA {
+    class DFA74 extends DFA {
 
-        public DFA72(BaseRecognizer recognizer) {
+        public DFA74(BaseRecognizer recognizer) {
             this.recognizer = recognizer;
-            this.decisionNumber = 72;
+            this.decisionNumber = 74;
             this.eot = dfa_8;
             this.eof = dfa_9;
             this.min = dfa_10;
@@ -18758,7 +18780,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             this.transition = dfa_14;
         }
         public String getDescription() {
-            return "1535:2: ( ( ( ( (lv_name_0_0= rulePipelineEventKeyword ) ) | ( ( (lv_simpleEvent_1_0= RULE_ID ) ) (otherlv_2= Colon )? ) ) ( (lv_includedBranches_3_0= ruleBranch ) )* (this_BEGIN_4= RULE_BEGIN ( (otherlv_5= Types ( (lv_activities_6_0= ruleActivity ) ) ) | (this_BEGIN_7= RULE_BEGIN ( (lv_activities_8_0= ruleActivity ) ) this_END_9= RULE_END ) )? ( ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) ) ) this_END_63= RULE_END )? ) | ( ( ( ( (lv_scheduleName_64_1= Schedules | lv_scheduleName_64_2= Schedule ) ) ) ( (lv_triggerSchedules_65_0= ruleTriggerSchedule ) )* ) | ( ( ( (lv_workflowType_66_0= Workflow_call ) ) | otherlv_67= Workflow_dispatch ) (this_BEGIN_68= RULE_BEGIN ( (lv_workFlowActivities_69_0= ruleActivity ) )* this_END_70= RULE_END ) ) ) )";
+            return "1535:2: ( ( ( ( (lv_name_0_0= rulePipelineEventKeyword ) ) | ( ( (lv_simpleEvent_1_0= RULE_ID ) ) (otherlv_2= Colon )? ) ) ( (lv_includedBranches_3_0= ruleBranch ) )* (this_BEGIN_4= RULE_BEGIN ( (otherlv_5= Types ( (lv_activities_6_0= ruleActivity ) ) ) | (this_BEGIN_7= RULE_BEGIN ( (lv_activities_8_0= ruleActivity ) ) this_END_9= RULE_END ) )? ( ( ( ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )* ) ) ) this_END_63= RULE_END )? ) | ( ( ( ( (lv_scheduleName_64_1= Schedules | lv_scheduleName_64_2= Schedule ) ) ) ( (lv_triggerSchedules_65_0= ruleTriggerSchedule ) )* ) | ( ( ( (lv_workflowType_66_0= Workflow_call ) ) | otherlv_67= Workflow_dispatch ) (this_BEGIN_68= RULE_BEGIN ( (lv_workFlowActivities_69_0= ruleActivity ) )* this_END_70= RULE_END ) ) ) )";
         }
     }
     static final String dfa_15s = "\14\uffff";
@@ -18788,11 +18810,11 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
     static final short[] dfa_19 = DFA.unpackEncodedString(dfa_19s);
     static final short[][] dfa_20 = unpackEncodedStringArray(dfa_20s);
 
-    class DFA65 extends DFA {
+    class DFA67 extends DFA {
 
-        public DFA65(BaseRecognizer recognizer) {
+        public DFA67(BaseRecognizer recognizer) {
             this.recognizer = recognizer;
-            this.decisionNumber = 65;
+            this.decisionNumber = 67;
             this.eot = dfa_15;
             this.eof = dfa_15;
             this.min = dfa_16;
@@ -18802,48 +18824,48 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             this.transition = dfa_20;
         }
         public String getDescription() {
-            return "()* loopback of 1672:8: ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )*";
+            return "()* loopback of 1672:8: ( ({...}? => ( ({...}? => (otherlv_11= Batch ( (lv_batch_12_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= AutoCancel ( (lv_autoCancel_14_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_15= Workflows ( (lv_workflows_16_0= ruleArrayList ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Drafts ( (lv_drafts_18_0= RULE_ID ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_19= Branches ( ( ( (lv_includedBranches_20_0= ruleBranch ) )* | (otherlv_21= LeftSquareBracket ( (lv_includedBranches_22_0= ruleBranch ) ) (otherlv_23= Comma ( (lv_includedBranches_24_0= ruleBranch ) ) )* otherlv_25= RightSquareBracket ) ) | (this_BEGIN_26= RULE_BEGIN ( (lv_includedBranches_27_0= ruleBranch ) )* (otherlv_28= Include ( (lv_includedBranches_29_0= ruleBranch ) )* )? (otherlv_30= Exclude ( (lv_excludedBranches_31_0= ruleBranch ) )* )? this_END_32= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_33= BranchesIgnore ( ( ( (lv_excludedBranches_34_0= ruleBranch ) )* | (otherlv_35= LeftSquareBracket ( (lv_excludedBranches_36_0= ruleBranch ) ) (otherlv_37= Comma ( (lv_excludedBranches_38_0= ruleBranch ) ) )* otherlv_39= RightSquareBracket ) ) | (this_BEGIN_40= RULE_BEGIN ( (lv_excludedBranches_41_0= ruleBranch ) )* this_END_42= RULE_END ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_43= Paths ( (lv_includedPaths_44_0= ruleHyphenValues ) )? (this_BEGIN_45= RULE_BEGIN (otherlv_46= Include ( (lv_includedPaths_47_0= ruleHyphenValues ) ) )? (otherlv_48= Exclude ( (lv_excludedPaths_49_0= ruleHyphenValues ) ) )? this_END_50= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_51= PathsIgnore ( (lv_excludedPaths_52_0= ruleHyphenValues ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_53= Tags ( (lv_includedTags_54_0= ruleHyphenValues ) )? (this_BEGIN_55= RULE_BEGIN (otherlv_56= Include ( (lv_includedTags_57_0= ruleHyphenValues ) ) )? (otherlv_58= Exclude ( (lv_excludedTags_59_0= ruleHyphenValues ) ) )? this_END_60= RULE_END )? ) ) ) ) | ({...}? => ( ({...}? => (otherlv_61= TagsIgnore ( (lv_excludedTags_62_0= ruleHyphenValues ) ) ) ) ) ) )*";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA65_0 = input.LA(1);
+                        int LA67_0 = input.LA(1);
 
                          
-                        int index65_0 = input.index();
+                        int index67_0 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (LA65_0==RULE_END) ) {s = 1;}
+                        if ( (LA67_0==RULE_END) ) {s = 1;}
 
-                        else if ( LA65_0 == Batch && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 0) ) {s = 2;}
+                        else if ( LA67_0 == Batch && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 0) ) {s = 2;}
 
-                        else if ( LA65_0 == AutoCancel && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 1) ) {s = 3;}
+                        else if ( LA67_0 == AutoCancel && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 1) ) {s = 3;}
 
-                        else if ( LA65_0 == Workflows && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 2) ) {s = 4;}
+                        else if ( LA67_0 == Workflows && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 2) ) {s = 4;}
 
-                        else if ( LA65_0 == Drafts && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 3) ) {s = 5;}
+                        else if ( LA67_0 == Drafts && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 3) ) {s = 5;}
 
-                        else if ( LA65_0 == Branches && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 4) ) {s = 6;}
+                        else if ( LA67_0 == Branches && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 4) ) {s = 6;}
 
-                        else if ( LA65_0 == BranchesIgnore && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 5) ) {s = 7;}
+                        else if ( LA67_0 == BranchesIgnore && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 5) ) {s = 7;}
 
-                        else if ( LA65_0 == Paths && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 6) ) {s = 8;}
+                        else if ( LA67_0 == Paths && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 6) ) {s = 8;}
 
-                        else if ( LA65_0 == PathsIgnore && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 7) ) {s = 9;}
+                        else if ( LA67_0 == PathsIgnore && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 7) ) {s = 9;}
 
-                        else if ( LA65_0 == Tags && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 8) ) {s = 10;}
+                        else if ( LA67_0 == Tags && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 8) ) {s = 10;}
 
-                        else if ( LA65_0 == TagsIgnore && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 9) ) {s = 11;}
+                        else if ( LA67_0 == TagsIgnore && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 9) ) {s = 11;}
 
                          
-                        input.seek(index65_0);
+                        input.seek(index67_0);
                         if ( s>=0 ) return s;
                         break;
             }
             NoViableAltException nvae =
-                new NoViableAltException(getDescription(), 65, _s, input);
+                new NoViableAltException(getDescription(), 67, _s, input);
             error(nvae);
             throw nvae;
         }
@@ -19033,11 +19055,11 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
     static final short[] dfa_26 = DFA.unpackEncodedString(dfa_26s);
     static final short[][] dfa_27 = unpackEncodedStringArray(dfa_27s);
 
-    class DFA111 extends DFA {
+    class DFA113 extends DFA {
 
-        public DFA111(BaseRecognizer recognizer) {
+        public DFA113(BaseRecognizer recognizer) {
             this.recognizer = recognizer;
-            this.decisionNumber = 111;
+            this.decisionNumber = 113;
             this.eot = dfa_21;
             this.eof = dfa_22;
             this.min = dfa_23;
@@ -19054,35 +19076,35 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA111_0 = input.LA(1);
+                        int LA113_0 = input.LA(1);
 
                          
-                        int index111_0 = input.index();
+                        int index113_0 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (LA111_0==RULE_END) ) {s = 1;}
+                        if ( (LA113_0==RULE_END) ) {s = 1;}
 
-                        else if ( (LA111_0==EOF||LA111_0==HyphenMinus||LA111_0==RULE_STRING) ) {s = 2;}
+                        else if ( (LA113_0==EOF||LA113_0==HyphenMinus||LA113_0==RULE_STRING) ) {s = 2;}
 
-                        else if ( (LA111_0==RULE_ID) ) {s = 3;}
+                        else if ( (LA113_0==RULE_ID) ) {s = 3;}
 
-                        else if ( LA111_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 0) ) {s = 6;}
+                        else if ( LA113_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 0) ) {s = 6;}
 
-                        else if ( LA111_0 == Needs && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 7;}
+                        else if ( LA113_0 == Needs && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 7;}
 
-                        else if ( LA111_0 == DependsOn && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 8;}
+                        else if ( LA113_0 == DependsOn && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 8;}
 
-                        else if ( ( LA111_0 >= Repository_dispatch && LA111_0 <= ContinueOnError_1 || LA111_0 >= Workflow_dispatch && LA111_0 <= WorkingDirectory || LA111_0 >= TimeoutInMinutes && LA111_0 <= TimeoutMinutes || LA111_0 == ReleaseTrigger || LA111_0 >= Allow_failure && LA111_0 <= DeployTrigger || LA111_0 >= Notifications && LA111_0 <= PathsIgnore || LA111_0 >= Pull_request && LA111_0 <= Workflow_run || LA111_0 >= Concurrency && LA111_0 <= GetPackage || LA111_0 >= Parameters && LA111_0 <= Permission || LA111_0 >= Powershell && LA111_0 <= Artifacts || LA111_0 >= Condition && LA111_0 <= Container || LA111_0 >= Endpoints && LA111_0 <= FailFast || LA111_0 >= Pipelines && LA111_0 <= RunPolicy || LA111_0 >= Schedules && LA111_0 <= Workspace || LA111_0 >= Branches && LA111_0 <= PreBuild || LA111_0 >= Readonly && LA111_0 <= Webhooks || LA111_0 >= Command && LA111_0 <= Caches || LA111_0 >= Docker && LA111_0 <= Except || LA111_0 == Inputs || LA111_0 >= Labels && LA111_0 <= Policy || LA111_0 == Queued || LA111_0 >= Script && LA111_0 <= Stages || LA111_0 >= Agent && LA111_0 <= Image || LA111_0 >= Paths && LA111_0 <= Value || LA111_0 >= Auth && LA111_0 <= Cron || LA111_0 == Name || LA111_0 >= Only && LA111_0 <= Pwsh || LA111_0 >= Step && LA111_0 <= With || LA111_0 >= Env && LA111_0 <= Job || LA111_0 >= Run && LA111_0 <= On || LA111_0 == RULE_COMPLEX_EXPRESSION ) && getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 9;}
+                        else if ( ( LA113_0 >= Repository_dispatch && LA113_0 <= ContinueOnError_1 || LA113_0 >= Workflow_dispatch && LA113_0 <= WorkingDirectory || LA113_0 >= TimeoutInMinutes && LA113_0 <= TimeoutMinutes || LA113_0 == ReleaseTrigger || LA113_0 >= Allow_failure && LA113_0 <= DeployTrigger || LA113_0 >= Notifications && LA113_0 <= PathsIgnore || LA113_0 >= Pull_request && LA113_0 <= Workflow_run || LA113_0 >= Concurrency && LA113_0 <= GetPackage || LA113_0 >= Parameters && LA113_0 <= Permission || LA113_0 >= Powershell && LA113_0 <= Artifacts || LA113_0 >= Condition && LA113_0 <= Container || LA113_0 >= Endpoints && LA113_0 <= FailFast || LA113_0 >= Pipelines && LA113_0 <= RunPolicy || LA113_0 >= Schedules && LA113_0 <= Workspace || LA113_0 >= Branches && LA113_0 <= PreBuild || LA113_0 >= Readonly && LA113_0 <= Webhooks || LA113_0 >= Command && LA113_0 <= Caches || LA113_0 >= Docker && LA113_0 <= Except || LA113_0 == Inputs || LA113_0 >= Labels && LA113_0 <= Policy || LA113_0 == Queued || LA113_0 >= Script && LA113_0 <= Stages || LA113_0 >= Agent && LA113_0 <= Image || LA113_0 >= Paths && LA113_0 <= Value || LA113_0 >= Auth && LA113_0 <= Cron || LA113_0 == Name || LA113_0 >= Only && LA113_0 <= Pwsh || LA113_0 >= Step && LA113_0 <= With || LA113_0 >= Env && LA113_0 <= Job || LA113_0 >= Run && LA113_0 <= On || LA113_0 == RULE_COMPLEX_EXPRESSION ) && getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 9;}
 
                          
-                        input.seek(index111_0);
+                        input.seek(index113_0);
                         if ( s>=0 ) return s;
                         break;
                     case 1 : 
-                        int LA111_1 = input.LA(1);
+                        int LA113_1 = input.LA(1);
 
                          
-                        int index111_1 = input.index();
+                        int index113_1 = input.index();
                         input.rewind();
                         s = -1;
                         if ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 9;}
@@ -19090,14 +19112,14 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getJobAccess().getUnorderedGroup_1()) ) {s = 2;}
 
                          
-                        input.seek(index111_1);
+                        input.seek(index113_1);
                         if ( s>=0 ) return s;
                         break;
                     case 2 : 
-                        int LA111_3 = input.LA(1);
+                        int LA113_3 = input.LA(1);
 
                          
-                        int index111_3 = input.index();
+                        int index113_3 = input.index();
                         input.rewind();
                         s = -1;
                         if ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 9;}
@@ -19105,14 +19127,14 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getJobAccess().getUnorderedGroup_1()) ) {s = 2;}
 
                          
-                        input.seek(index111_3);
+                        input.seek(index113_3);
                         if ( s>=0 ) return s;
                         break;
                     case 3 : 
-                        int LA111_7 = input.LA(1);
+                        int LA113_7 = input.LA(1);
 
                          
-                        int index111_7 = input.index();
+                        int index113_7 = input.index();
                         input.rewind();
                         s = -1;
                         if ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) {s = 167;}
@@ -19120,14 +19142,14 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                         else if ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 9;}
 
                          
-                        input.seek(index111_7);
+                        input.seek(index113_7);
                         if ( s>=0 ) return s;
                         break;
                     case 4 : 
-                        int LA111_8 = input.LA(1);
+                        int LA113_8 = input.LA(1);
 
                          
-                        int index111_8 = input.index();
+                        int index113_8 = input.index();
                         input.rewind();
                         s = -1;
                         if ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) {s = 167;}
@@ -19135,12 +19157,12 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                         else if ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 9;}
 
                          
-                        input.seek(index111_8);
+                        input.seek(index113_8);
                         if ( s>=0 ) return s;
                         break;
             }
             NoViableAltException nvae =
-                new NoViableAltException(getDescription(), 111, _s, input);
+                new NoViableAltException(getDescription(), 113, _s, input);
             error(nvae);
             throw nvae;
         }
@@ -19182,11 +19204,11 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
     static final short[] dfa_33 = DFA.unpackEncodedString(dfa_33s);
     static final short[][] dfa_34 = unpackEncodedStringArray(dfa_34s);
 
-    class DFA112 extends DFA {
+    class DFA114 extends DFA {
 
-        public DFA112(BaseRecognizer recognizer) {
+        public DFA114(BaseRecognizer recognizer) {
             this.recognizer = recognizer;
-            this.decisionNumber = 112;
+            this.decisionNumber = 114;
             this.eot = dfa_28;
             this.eof = dfa_29;
             this.min = dfa_30;
@@ -19225,11 +19247,11 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
     static final char[] dfa_35 = DFA.unpackEncodedStringToUnsignedChars(dfa_35s);
     static final short[][] dfa_36 = unpackEncodedStringArray(dfa_36s);
 
-    class DFA116 extends DFA {
+    class DFA118 extends DFA {
 
-        public DFA116(BaseRecognizer recognizer) {
+        public DFA118(BaseRecognizer recognizer) {
             this.recognizer = recognizer;
-            this.decisionNumber = 116;
+            this.decisionNumber = 118;
             this.eot = dfa_28;
             this.eof = dfa_28;
             this.min = dfa_35;
@@ -19243,11 +19265,11 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
         }
     }
 
-    class DFA121 extends DFA {
+    class DFA123 extends DFA {
 
-        public DFA121(BaseRecognizer recognizer) {
+        public DFA123(BaseRecognizer recognizer) {
             this.recognizer = recognizer;
-            this.decisionNumber = 121;
+            this.decisionNumber = 123;
             this.eot = dfa_28;
             this.eof = dfa_28;
             this.min = dfa_35;
@@ -19319,36 +19341,38 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_55 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000120020000L});
     public static final BitSet FOLLOW_56 = new BitSet(new long[]{0x0000000000000000L,0x0090000000000000L,0x0000000000000000L,0x0000000130020000L});
     public static final BitSet FOLLOW_57 = new BitSet(new long[]{0x0000000000000000L,0x0010000000000000L,0x0000000000000000L,0x0000000130020000L});
-    public static final BitSet FOLLOW_58 = new BitSet(new long[]{0x0000000000000000L,0x0090000000000000L,0x0000000000000000L,0x0000000010000000L});
-    public static final BitSet FOLLOW_59 = new BitSet(new long[]{0x0000000000000000L,0x0010000000000000L,0x0000000000000000L,0x0000000010000000L});
-    public static final BitSet FOLLOW_60 = new BitSet(new long[]{0x0000000000000000L,0x0400000000000000L,0x0000000000010001L,0x000000013FCA0000L});
-    public static final BitSet FOLLOW_61 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0002000000000000L});
-    public static final BitSet FOLLOW_62 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000020000L});
-    public static final BitSet FOLLOW_63 = new BitSet(new long[]{0x0040000000000000L,0x0000000010000000L});
-    public static final BitSet FOLLOW_64 = new BitSet(new long[]{0x0000000000000000L,0x0000000010000000L});
-    public static final BitSet FOLLOW_65 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000010000040L,0x0000000010000000L});
-    public static final BitSet FOLLOW_66 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000010000000000L});
-    public static final BitSet FOLLOW_67 = new BitSet(new long[]{0x0100000000000002L,0x0000000001005000L,0x0108000000000000L,0x0000000008000000L});
-    public static final BitSet FOLLOW_68 = new BitSet(new long[]{0x0140000000000002L,0x0000000001005000L,0x0108000000000000L,0x0000000008000000L});
-    public static final BitSet FOLLOW_69 = new BitSet(new long[]{0x0000000000000000L,0x0008000000000000L,0x0000000000000000L,0x000000013FC00000L});
-    public static final BitSet FOLLOW_70 = new BitSet(new long[]{0x0100000000000002L,0x0008000001005000L,0x0108000000000020L,0x0000000018000000L});
-    public static final BitSet FOLLOW_71 = new BitSet(new long[]{0x0100000000000002L,0x0008000001005000L,0x0108000000000000L,0x0000000018000000L});
-    public static final BitSet FOLLOW_72 = new BitSet(new long[]{0x0100000000000002L,0x0000000001005000L,0x0108000000000000L,0x0000000008020000L});
-    public static final BitSet FOLLOW_73 = new BitSet(new long[]{0x0100000000000002L,0x0000000001005000L,0x0108000000000000L,0x0000000028000000L});
-    public static final BitSet FOLLOW_74 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000001L,0x0000000000000000L,0x0000000000000040L});
-    public static final BitSet FOLLOW_75 = new BitSet(new long[]{0xFFFDFDFF74FB3800L,0xFFFEFFDFF7BDF3DBL,0xF7D39FFDFB5D71FFL,0x0000000038443E77L});
-    public static final BitSet FOLLOW_76 = new BitSet(new long[]{0xFFFDFDFF74FB3800L,0xFFFEFFDFF7BDF3DBL,0xF7D39FFDFB5D71FFL,0x0000000038403E77L});
-    public static final BitSet FOLLOW_77 = new BitSet(new long[]{0xFFFDFDFF74FB3802L,0xFFFEFFDFF7BDF3DBL,0xF7D39FFDFB5D71FFL,0x0000000038403E77L});
-    public static final BitSet FOLLOW_78 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000020080000L});
-    public static final BitSet FOLLOW_79 = new BitSet(new long[]{0xFFFDFDFF74FB3800L,0xFFFEFFDFF7BDF3DBL,0xF7D39FFDFB5D71FFL,0x0000000020003E77L});
-    public static final BitSet FOLLOW_80 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000127E08000L});
-    public static final BitSet FOLLOW_81 = new BitSet(new long[]{0xFFFDFDFF74FB3800L,0xFFFEFFDFF7BDF3DBL,0xF7D39FFDFB5D71FFL,0x0000000030003E77L});
-    public static final BitSet FOLLOW_82 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000000L,0x0000000000000000L,0x000000012FC00000L});
-    public static final BitSet FOLLOW_83 = new BitSet(new long[]{0xFFFDFDFF74FB3800L,0xFFFEFFDFF7BDF3DBL,0xF7D39FFDFB5D71FFL,0x0000000030423E77L});
-    public static final BitSet FOLLOW_84 = new BitSet(new long[]{0x0020000000000000L,0x0204008000000000L,0x8000000000000000L});
-    public static final BitSet FOLLOW_85 = new BitSet(new long[]{0x0020000000000000L,0x0204008000000000L,0x8000000000000000L,0x0000000010000000L});
-    public static final BitSet FOLLOW_86 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000188L});
-    public static final BitSet FOLLOW_87 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000000L,0x0000000000000000L,0x0000000021400000L});
-    public static final BitSet FOLLOW_88 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000127D00000L});
+    public static final BitSet FOLLOW_58 = new BitSet(new long[]{0x3000010000100000L,0x0000000012000000L,0x2000000810002000L,0x000000013FC20000L});
+    public static final BitSet FOLLOW_59 = new BitSet(new long[]{0x3000010000100000L,0x0000000012000000L,0x2000000810002000L,0x0000000018000000L});
+    public static final BitSet FOLLOW_60 = new BitSet(new long[]{0x0000000000000000L,0x0090000000000000L,0x0000000000000000L,0x0000000010000000L});
+    public static final BitSet FOLLOW_61 = new BitSet(new long[]{0x0000000000000000L,0x0010000000000000L,0x0000000000000000L,0x0000000010000000L});
+    public static final BitSet FOLLOW_62 = new BitSet(new long[]{0x0000000000000000L,0x0400000000000000L,0x0000000000010001L,0x000000013FCA0000L});
+    public static final BitSet FOLLOW_63 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0002000000000000L});
+    public static final BitSet FOLLOW_64 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000020000L});
+    public static final BitSet FOLLOW_65 = new BitSet(new long[]{0x0040000000000000L,0x0000000010000000L});
+    public static final BitSet FOLLOW_66 = new BitSet(new long[]{0x0000000000000000L,0x0000000010000000L});
+    public static final BitSet FOLLOW_67 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000010000040L,0x0000000010000000L});
+    public static final BitSet FOLLOW_68 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000010000000000L});
+    public static final BitSet FOLLOW_69 = new BitSet(new long[]{0x0100000000000002L,0x0000000001005000L,0x0108000000000000L,0x0000000008000000L});
+    public static final BitSet FOLLOW_70 = new BitSet(new long[]{0x0140000000000002L,0x0000000001005000L,0x0108000000000000L,0x0000000008000000L});
+    public static final BitSet FOLLOW_71 = new BitSet(new long[]{0x0000000000000000L,0x0008000000000000L,0x0000000000000000L,0x000000013FC00000L});
+    public static final BitSet FOLLOW_72 = new BitSet(new long[]{0x0100000000000002L,0x0008000001005000L,0x0108000000000020L,0x0000000018000000L});
+    public static final BitSet FOLLOW_73 = new BitSet(new long[]{0x0100000000000002L,0x0008000001005000L,0x0108000000000000L,0x0000000018000000L});
+    public static final BitSet FOLLOW_74 = new BitSet(new long[]{0x0100000000000002L,0x0000000001005000L,0x0108000000000000L,0x0000000008020000L});
+    public static final BitSet FOLLOW_75 = new BitSet(new long[]{0x0100000000000002L,0x0000000001005000L,0x0108000000000000L,0x0000000028000000L});
+    public static final BitSet FOLLOW_76 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000001L,0x0000000000000000L,0x0000000000000040L});
+    public static final BitSet FOLLOW_77 = new BitSet(new long[]{0xFFFDFDFF74FB3800L,0xFFFEFFDFF7BDF3DBL,0xF7D39FFDFB5D71FFL,0x0000000038443E77L});
+    public static final BitSet FOLLOW_78 = new BitSet(new long[]{0xFFFDFDFF74FB3800L,0xFFFEFFDFF7BDF3DBL,0xF7D39FFDFB5D71FFL,0x0000000038403E77L});
+    public static final BitSet FOLLOW_79 = new BitSet(new long[]{0xFFFDFDFF74FB3802L,0xFFFEFFDFF7BDF3DBL,0xF7D39FFDFB5D71FFL,0x0000000038403E77L});
+    public static final BitSet FOLLOW_80 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000020080000L});
+    public static final BitSet FOLLOW_81 = new BitSet(new long[]{0xFFFDFDFF74FB3800L,0xFFFEFFDFF7BDF3DBL,0xF7D39FFDFB5D71FFL,0x0000000020003E77L});
+    public static final BitSet FOLLOW_82 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000127E08000L});
+    public static final BitSet FOLLOW_83 = new BitSet(new long[]{0xFFFDFDFF74FB3800L,0xFFFEFFDFF7BDF3DBL,0xF7D39FFDFB5D71FFL,0x0000000030003E77L});
+    public static final BitSet FOLLOW_84 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000000L,0x0000000000000000L,0x000000012FC00000L});
+    public static final BitSet FOLLOW_85 = new BitSet(new long[]{0xFFFDFDFF74FB3800L,0xFFFEFFDFF7BDF3DBL,0xF7D39FFDFB5D71FFL,0x0000000030423E77L});
+    public static final BitSet FOLLOW_86 = new BitSet(new long[]{0x0020000000000000L,0x0204008000000000L,0x8000000000000000L});
+    public static final BitSet FOLLOW_87 = new BitSet(new long[]{0x0020000000000000L,0x0204008000000000L,0x8000000000000000L,0x0000000010000000L});
+    public static final BitSet FOLLOW_88 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000000000188L});
+    public static final BitSet FOLLOW_89 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000000L,0x0000000000000000L,0x0000000021400000L});
+    public static final BitSet FOLLOW_90 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000127D00000L});
 
 }

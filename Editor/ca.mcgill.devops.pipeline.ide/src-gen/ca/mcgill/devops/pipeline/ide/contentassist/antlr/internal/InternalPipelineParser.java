@@ -20280,31 +20280,31 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Configurations__Group_10_1__1__Impl"
-    // InternalPipelineParser.g:5793:1: rule__Configurations__Group_10_1__1__Impl : ( ( rule__Configurations__ParasAssignment_10_1_1 ) ) ;
+    // InternalPipelineParser.g:5793:1: rule__Configurations__Group_10_1__1__Impl : ( ( rule__Configurations__ParameterValuesAssignment_10_1_1 ) ) ;
     public final void rule__Configurations__Group_10_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPipelineParser.g:5797:1: ( ( ( rule__Configurations__ParasAssignment_10_1_1 ) ) )
-            // InternalPipelineParser.g:5798:1: ( ( rule__Configurations__ParasAssignment_10_1_1 ) )
+            // InternalPipelineParser.g:5797:1: ( ( ( rule__Configurations__ParameterValuesAssignment_10_1_1 ) ) )
+            // InternalPipelineParser.g:5798:1: ( ( rule__Configurations__ParameterValuesAssignment_10_1_1 ) )
             {
-            // InternalPipelineParser.g:5798:1: ( ( rule__Configurations__ParasAssignment_10_1_1 ) )
-            // InternalPipelineParser.g:5799:2: ( rule__Configurations__ParasAssignment_10_1_1 )
+            // InternalPipelineParser.g:5798:1: ( ( rule__Configurations__ParameterValuesAssignment_10_1_1 ) )
+            // InternalPipelineParser.g:5799:2: ( rule__Configurations__ParameterValuesAssignment_10_1_1 )
             {
-             before(grammarAccess.getConfigurationsAccess().getParasAssignment_10_1_1()); 
-            // InternalPipelineParser.g:5800:2: ( rule__Configurations__ParasAssignment_10_1_1 )
-            // InternalPipelineParser.g:5800:3: rule__Configurations__ParasAssignment_10_1_1
+             before(grammarAccess.getConfigurationsAccess().getParameterValuesAssignment_10_1_1()); 
+            // InternalPipelineParser.g:5800:2: ( rule__Configurations__ParameterValuesAssignment_10_1_1 )
+            // InternalPipelineParser.g:5800:3: rule__Configurations__ParameterValuesAssignment_10_1_1
             {
             pushFollow(FOLLOW_2);
-            rule__Configurations__ParasAssignment_10_1_1();
+            rule__Configurations__ParameterValuesAssignment_10_1_1();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getConfigurationsAccess().getParasAssignment_10_1_1()); 
+             after(grammarAccess.getConfigurationsAccess().getParameterValuesAssignment_10_1_1()); 
 
             }
 
@@ -27990,27 +27990,38 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Event__Group_0_2_2_6__2__Impl"
-    // InternalPipelineParser.g:8345:1: rule__Event__Group_0_2_2_6__2__Impl : ( ( rule__Event__Group_0_2_2_6_2__0 ) ) ;
+    // InternalPipelineParser.g:8345:1: rule__Event__Group_0_2_2_6__2__Impl : ( ( rule__Event__Group_0_2_2_6_2__0 )? ) ;
     public final void rule__Event__Group_0_2_2_6__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPipelineParser.g:8349:1: ( ( ( rule__Event__Group_0_2_2_6_2__0 ) ) )
-            // InternalPipelineParser.g:8350:1: ( ( rule__Event__Group_0_2_2_6_2__0 ) )
+            // InternalPipelineParser.g:8349:1: ( ( ( rule__Event__Group_0_2_2_6_2__0 )? ) )
+            // InternalPipelineParser.g:8350:1: ( ( rule__Event__Group_0_2_2_6_2__0 )? )
             {
-            // InternalPipelineParser.g:8350:1: ( ( rule__Event__Group_0_2_2_6_2__0 ) )
-            // InternalPipelineParser.g:8351:2: ( rule__Event__Group_0_2_2_6_2__0 )
+            // InternalPipelineParser.g:8350:1: ( ( rule__Event__Group_0_2_2_6_2__0 )? )
+            // InternalPipelineParser.g:8351:2: ( rule__Event__Group_0_2_2_6_2__0 )?
             {
              before(grammarAccess.getEventAccess().getGroup_0_2_2_6_2()); 
-            // InternalPipelineParser.g:8352:2: ( rule__Event__Group_0_2_2_6_2__0 )
-            // InternalPipelineParser.g:8352:3: rule__Event__Group_0_2_2_6_2__0
-            {
-            pushFollow(FOLLOW_2);
-            rule__Event__Group_0_2_2_6_2__0();
+            // InternalPipelineParser.g:8352:2: ( rule__Event__Group_0_2_2_6_2__0 )?
+            int alt98=2;
+            int LA98_0 = input.LA(1);
 
-            state._fsp--;
+            if ( (LA98_0==RULE_BEGIN) ) {
+                alt98=1;
+            }
+            switch (alt98) {
+                case 1 :
+                    // InternalPipelineParser.g:8352:3: rule__Event__Group_0_2_2_6_2__0
+                    {
+                    pushFollow(FOLLOW_2);
+                    rule__Event__Group_0_2_2_6_2__0();
 
+                    state._fsp--;
+
+
+                    }
+                    break;
 
             }
 
@@ -28164,13 +28175,13 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getEventAccess().getGroup_0_2_2_6_2_1()); 
             // InternalPipelineParser.g:8407:2: ( rule__Event__Group_0_2_2_6_2_1__0 )?
-            int alt98=2;
-            int LA98_0 = input.LA(1);
+            int alt99=2;
+            int LA99_0 = input.LA(1);
 
-            if ( (LA98_0==Include) ) {
-                alt98=1;
+            if ( (LA99_0==Include) ) {
+                alt99=1;
             }
-            switch (alt98) {
+            switch (alt99) {
                 case 1 :
                     // InternalPipelineParser.g:8407:3: rule__Event__Group_0_2_2_6_2_1__0
                     {
@@ -28260,13 +28271,13 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getEventAccess().getGroup_0_2_2_6_2_2()); 
             // InternalPipelineParser.g:8434:2: ( rule__Event__Group_0_2_2_6_2_2__0 )?
-            int alt99=2;
-            int LA99_0 = input.LA(1);
+            int alt100=2;
+            int LA100_0 = input.LA(1);
 
-            if ( (LA99_0==Exclude) ) {
-                alt99=1;
+            if ( (LA100_0==Exclude) ) {
+                alt100=1;
             }
-            switch (alt99) {
+            switch (alt100) {
                 case 1 :
                     // InternalPipelineParser.g:8434:3: rule__Event__Group_0_2_2_6_2_2__0
                     {
@@ -28966,20 +28977,20 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getEventAccess().getIncludedTagsAssignment_0_2_2_8_1()); 
             // InternalPipelineParser.g:8677:2: ( rule__Event__IncludedTagsAssignment_0_2_2_8_1 )?
-            int alt100=2;
-            int LA100_0 = input.LA(1);
+            int alt101=2;
+            int LA101_0 = input.LA(1);
 
-            if ( (LA100_0==HyphenMinus) ) {
-                alt100=1;
+            if ( (LA101_0==HyphenMinus) ) {
+                alt101=1;
             }
-            else if ( (LA100_0==RULE_BEGIN) ) {
-                int LA100_2 = input.LA(2);
+            else if ( (LA101_0==RULE_BEGIN) ) {
+                int LA101_2 = input.LA(2);
 
-                if ( (LA100_2==HyphenMinus) ) {
-                    alt100=1;
+                if ( (LA101_2==HyphenMinus) ) {
+                    alt101=1;
                 }
             }
-            switch (alt100) {
+            switch (alt101) {
                 case 1 :
                     // InternalPipelineParser.g:8677:3: rule__Event__IncludedTagsAssignment_0_2_2_8_1
                     {
@@ -29050,27 +29061,38 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Event__Group_0_2_2_8__2__Impl"
-    // InternalPipelineParser.g:8696:1: rule__Event__Group_0_2_2_8__2__Impl : ( ( rule__Event__Group_0_2_2_8_2__0 ) ) ;
+    // InternalPipelineParser.g:8696:1: rule__Event__Group_0_2_2_8__2__Impl : ( ( rule__Event__Group_0_2_2_8_2__0 )? ) ;
     public final void rule__Event__Group_0_2_2_8__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalPipelineParser.g:8700:1: ( ( ( rule__Event__Group_0_2_2_8_2__0 ) ) )
-            // InternalPipelineParser.g:8701:1: ( ( rule__Event__Group_0_2_2_8_2__0 ) )
+            // InternalPipelineParser.g:8700:1: ( ( ( rule__Event__Group_0_2_2_8_2__0 )? ) )
+            // InternalPipelineParser.g:8701:1: ( ( rule__Event__Group_0_2_2_8_2__0 )? )
             {
-            // InternalPipelineParser.g:8701:1: ( ( rule__Event__Group_0_2_2_8_2__0 ) )
-            // InternalPipelineParser.g:8702:2: ( rule__Event__Group_0_2_2_8_2__0 )
+            // InternalPipelineParser.g:8701:1: ( ( rule__Event__Group_0_2_2_8_2__0 )? )
+            // InternalPipelineParser.g:8702:2: ( rule__Event__Group_0_2_2_8_2__0 )?
             {
              before(grammarAccess.getEventAccess().getGroup_0_2_2_8_2()); 
-            // InternalPipelineParser.g:8703:2: ( rule__Event__Group_0_2_2_8_2__0 )
-            // InternalPipelineParser.g:8703:3: rule__Event__Group_0_2_2_8_2__0
-            {
-            pushFollow(FOLLOW_2);
-            rule__Event__Group_0_2_2_8_2__0();
+            // InternalPipelineParser.g:8703:2: ( rule__Event__Group_0_2_2_8_2__0 )?
+            int alt102=2;
+            int LA102_0 = input.LA(1);
 
-            state._fsp--;
+            if ( (LA102_0==RULE_BEGIN) ) {
+                alt102=1;
+            }
+            switch (alt102) {
+                case 1 :
+                    // InternalPipelineParser.g:8703:3: rule__Event__Group_0_2_2_8_2__0
+                    {
+                    pushFollow(FOLLOW_2);
+                    rule__Event__Group_0_2_2_8_2__0();
 
+                    state._fsp--;
+
+
+                    }
+                    break;
 
             }
 
@@ -29224,13 +29246,13 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getEventAccess().getGroup_0_2_2_8_2_1()); 
             // InternalPipelineParser.g:8758:2: ( rule__Event__Group_0_2_2_8_2_1__0 )?
-            int alt101=2;
-            int LA101_0 = input.LA(1);
+            int alt103=2;
+            int LA103_0 = input.LA(1);
 
-            if ( (LA101_0==Include) ) {
-                alt101=1;
+            if ( (LA103_0==Include) ) {
+                alt103=1;
             }
-            switch (alt101) {
+            switch (alt103) {
                 case 1 :
                     // InternalPipelineParser.g:8758:3: rule__Event__Group_0_2_2_8_2_1__0
                     {
@@ -29320,13 +29342,13 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getEventAccess().getGroup_0_2_2_8_2_2()); 
             // InternalPipelineParser.g:8785:2: ( rule__Event__Group_0_2_2_8_2_2__0 )?
-            int alt102=2;
-            int LA102_0 = input.LA(1);
+            int alt104=2;
+            int LA104_0 = input.LA(1);
 
-            if ( (LA102_0==Exclude) ) {
-                alt102=1;
+            if ( (LA104_0==Exclude) ) {
+                alt104=1;
             }
-            switch (alt102) {
+            switch (alt104) {
                 case 1 :
                     // InternalPipelineParser.g:8785:3: rule__Event__Group_0_2_2_8_2_2__0
                     {
@@ -30031,17 +30053,17 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getEventAccess().getTriggerSchedulesAssignment_1_0_1()); 
             // InternalPipelineParser.g:9027:2: ( rule__Event__TriggerSchedulesAssignment_1_0_1 )*
-            loop103:
+            loop105:
             do {
-                int alt103=2;
-                int LA103_0 = input.LA(1);
+                int alt105=2;
+                int LA105_0 = input.LA(1);
 
-                if ( (LA103_0==HyphenMinus||LA103_0==RULE_BEGIN) ) {
-                    alt103=1;
+                if ( (LA105_0==HyphenMinus||LA105_0==RULE_BEGIN) ) {
+                    alt105=1;
                 }
 
 
-                switch (alt103) {
+                switch (alt105) {
             	case 1 :
             	    // InternalPipelineParser.g:9027:3: rule__Event__TriggerSchedulesAssignment_1_0_1
             	    {
@@ -30055,7 +30077,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop103;
+            	    break loop105;
                 }
             } while (true);
 
@@ -30374,17 +30396,17 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getEventAccess().getWorkFlowActivitiesAssignment_1_1_1_1()); 
             // InternalPipelineParser.g:9136:2: ( rule__Event__WorkFlowActivitiesAssignment_1_1_1_1 )*
-            loop104:
+            loop106:
             do {
-                int alt104=2;
-                int LA104_0 = input.LA(1);
+                int alt106=2;
+                int LA106_0 = input.LA(1);
 
-                if ( (LA104_0==Outputs||LA104_0==Secrets||LA104_0==Inputs||LA104_0==HyphenMinus||LA104_0==LeftSquareBracket||LA104_0==RULE_BEGIN) ) {
-                    alt104=1;
+                if ( (LA106_0==Outputs||LA106_0==Secrets||LA106_0==Inputs||LA106_0==HyphenMinus||LA106_0==LeftSquareBracket||LA106_0==RULE_BEGIN) ) {
+                    alt106=1;
                 }
 
 
-                switch (alt104) {
+                switch (alt106) {
             	case 1 :
             	    // InternalPipelineParser.g:9136:3: rule__Event__WorkFlowActivitiesAssignment_1_1_1_1
             	    {
@@ -30398,7 +30420,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop104;
+            	    break loop106;
                 }
             } while (true);
 
@@ -30627,17 +30649,17 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getTriggerScheduleAccess().getGroup_1()); 
             // InternalPipelineParser.g:9216:2: ( rule__TriggerSchedule__Group_1__0 )?
-            int alt105=2;
-            int LA105_0 = input.LA(1);
+            int alt107=2;
+            int LA107_0 = input.LA(1);
 
-            if ( (LA105_0==RULE_BEGIN) ) {
-                int LA105_1 = input.LA(2);
+            if ( (LA107_0==RULE_BEGIN) ) {
+                int LA107_1 = input.LA(2);
 
-                if ( (LA105_1==DisplayName||LA105_1==Branches) ) {
-                    alt105=1;
+                if ( (LA107_1==DisplayName||LA107_1==Branches) ) {
+                    alt107=1;
                 }
             }
-            switch (alt105) {
+            switch (alt107) {
                 case 1 :
                     // InternalPipelineParser.g:9216:3: rule__TriggerSchedule__Group_1__0
                     {
@@ -31492,13 +31514,13 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getTriggerScheduleAccess().getGroup_1_1()); 
             // InternalPipelineParser.g:9514:2: ( rule__TriggerSchedule__Group_1_1__0 )?
-            int alt106=2;
-            int LA106_0 = input.LA(1);
+            int alt108=2;
+            int LA108_0 = input.LA(1);
 
-            if ( (LA106_0==DisplayName) ) {
-                alt106=1;
+            if ( (LA108_0==DisplayName) ) {
+                alt108=1;
             }
-            switch (alt106) {
+            switch (alt108) {
                 case 1 :
                     // InternalPipelineParser.g:9514:3: rule__TriggerSchedule__Group_1_1__0
                     {
@@ -32213,13 +32235,13 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getTriggerScheduleAccess().getGroup_1_2_1_1()); 
             // InternalPipelineParser.g:9757:2: ( rule__TriggerSchedule__Group_1_2_1_1__0 )?
-            int alt107=2;
-            int LA107_0 = input.LA(1);
+            int alt109=2;
+            int LA109_0 = input.LA(1);
 
-            if ( (LA107_0==Include) ) {
-                alt107=1;
+            if ( (LA109_0==Include) ) {
+                alt109=1;
             }
-            switch (alt107) {
+            switch (alt109) {
                 case 1 :
                     // InternalPipelineParser.g:9757:3: rule__TriggerSchedule__Group_1_2_1_1__0
                     {
@@ -32309,13 +32331,13 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getTriggerScheduleAccess().getGroup_1_2_1_2()); 
             // InternalPipelineParser.g:9784:2: ( rule__TriggerSchedule__Group_1_2_1_2__0 )?
-            int alt108=2;
-            int LA108_0 = input.LA(1);
+            int alt110=2;
+            int LA110_0 = input.LA(1);
 
-            if ( (LA108_0==Exclude) ) {
-                alt108=1;
+            if ( (LA110_0==Exclude) ) {
+                alt110=1;
             }
-            switch (alt108) {
+            switch (alt110) {
                 case 1 :
                     // InternalPipelineParser.g:9784:3: rule__TriggerSchedule__Group_1_2_1_2__0
                     {
@@ -32545,17 +32567,17 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getTriggerScheduleAccess().getIncludedBranchesAssignment_1_2_1_1_1()); 
             // InternalPipelineParser.g:9864:2: ( rule__TriggerSchedule__IncludedBranchesAssignment_1_2_1_1_1 )*
-            loop109:
+            loop111:
             do {
-                int alt109=2;
-                int LA109_0 = input.LA(1);
+                int alt111=2;
+                int LA111_0 = input.LA(1);
 
-                if ( (LA109_0==HyphenMinus||LA109_0==RULE_ID||LA109_0==RULE_STRING) ) {
-                    alt109=1;
+                if ( (LA111_0==HyphenMinus||LA111_0==RULE_ID||LA111_0==RULE_STRING) ) {
+                    alt111=1;
                 }
 
 
-                switch (alt109) {
+                switch (alt111) {
             	case 1 :
             	    // InternalPipelineParser.g:9864:3: rule__TriggerSchedule__IncludedBranchesAssignment_1_2_1_1_1
             	    {
@@ -32569,7 +32591,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop109;
+            	    break loop111;
                 }
             } while (true);
 
@@ -32718,17 +32740,17 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getTriggerScheduleAccess().getExcludedBranchesAssignment_1_2_1_2_1()); 
             // InternalPipelineParser.g:9918:2: ( rule__TriggerSchedule__ExcludedBranchesAssignment_1_2_1_2_1 )*
-            loop110:
+            loop112:
             do {
-                int alt110=2;
-                int LA110_0 = input.LA(1);
+                int alt112=2;
+                int LA112_0 = input.LA(1);
 
-                if ( (LA110_0==HyphenMinus||LA110_0==RULE_ID||LA110_0==RULE_STRING) ) {
-                    alt110=1;
+                if ( (LA112_0==HyphenMinus||LA112_0==RULE_ID||LA112_0==RULE_STRING) ) {
+                    alt112=1;
                 }
 
 
-                switch (alt110) {
+                switch (alt112) {
             	case 1 :
             	    // InternalPipelineParser.g:9918:3: rule__TriggerSchedule__ExcludedBranchesAssignment_1_2_1_2_1
             	    {
@@ -32742,7 +32764,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop110;
+            	    break loop112;
                 }
             } while (true);
 
@@ -33131,13 +33153,13 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getBranchAccess().getHyphenMinusKeyword_0()); 
             // InternalPipelineParser.g:10054:2: ( HyphenMinus )?
-            int alt111=2;
-            int LA111_0 = input.LA(1);
+            int alt113=2;
+            int LA113_0 = input.LA(1);
 
-            if ( (LA111_0==HyphenMinus) ) {
-                alt111=1;
+            if ( (LA113_0==HyphenMinus) ) {
+                alt113=1;
             }
-            switch (alt111) {
+            switch (alt113) {
                 case 1 :
                     // InternalPipelineParser.g:10054:3: HyphenMinus
                     {
@@ -33565,17 +33587,17 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getActivityAccess().getActivitiesAssignment_1_1_1()); 
             // InternalPipelineParser.g:10195:3: ( rule__Activity__ActivitiesAssignment_1_1_1 )*
-            loop112:
+            loop114:
             do {
-                int alt112=2;
-                int LA112_0 = input.LA(1);
+                int alt114=2;
+                int LA114_0 = input.LA(1);
 
-                if ( (LA112_0==RULE_ID) ) {
-                    alt112=1;
+                if ( (LA114_0==RULE_ID) ) {
+                    alt114=1;
                 }
 
 
-                switch (alt112) {
+                switch (alt114) {
             	case 1 :
             	    // InternalPipelineParser.g:10195:4: rule__Activity__ActivitiesAssignment_1_1_1
             	    {
@@ -33589,7 +33611,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop112;
+            	    break loop114;
                 }
             } while (true);
 
@@ -33821,31 +33843,31 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getStageAccess().getUnorderedGroup_1()); 
             // InternalPipelineParser.g:10276:2: ( rule__Stage__UnorderedGroup_1 )?
-            int alt113=2;
-            int LA113_0 = input.LA(1);
+            int alt115=2;
+            int LA115_0 = input.LA(1);
 
-            if ( LA113_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 0) ) {
-                alt113=1;
+            if ( LA115_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 0) ) {
+                alt115=1;
             }
-            else if ( LA113_0 == Pool && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 1) ) {
-                alt113=1;
+            else if ( LA115_0 == Pool && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 1) ) {
+                alt115=1;
             }
-            else if ( LA113_0 == Condition && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 2) ) {
-                alt113=1;
+            else if ( LA115_0 == Condition && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 2) ) {
+                alt115=1;
             }
-            else if ( LA113_0 == IsSkippable && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 3) ) {
-                alt113=1;
+            else if ( LA115_0 == IsSkippable && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 3) ) {
+                alt115=1;
             }
-            else if ( LA113_0 == Variables && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 4) ) {
-                alt113=1;
+            else if ( LA115_0 == Variables && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 4) ) {
+                alt115=1;
             }
-            else if ( LA113_0 == DependsOn && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 5) ) {
-                alt113=1;
+            else if ( LA115_0 == DependsOn && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 5) ) {
+                alt115=1;
             }
-            else if ( LA113_0 == Jobs && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 6) ) {
-                alt113=1;
+            else if ( LA115_0 == Jobs && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 6) ) {
+                alt115=1;
             }
-            switch (alt113) {
+            switch (alt115) {
                 case 1 :
                     // InternalPipelineParser.g:10276:3: rule__Stage__UnorderedGroup_1
                     {
@@ -34235,13 +34257,13 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getStageAccess().getGroup_1_0_1()); 
             // InternalPipelineParser.g:10411:2: ( rule__Stage__Group_1_0_1__0 )?
-            int alt114=2;
-            int LA114_0 = input.LA(1);
+            int alt116=2;
+            int LA116_0 = input.LA(1);
 
-            if ( (LA114_0==DisplayName) ) {
-                alt114=1;
+            if ( (LA116_0==DisplayName) ) {
+                alt116=1;
             }
-            switch (alt114) {
+            switch (alt116) {
                 case 1 :
                     // InternalPipelineParser.g:10411:3: rule__Stage__Group_1_0_1__0
                     {
@@ -34796,13 +34818,13 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getStageAccess().getGroup_1_1_1_1_0_2()); 
             // InternalPipelineParser.g:10600:2: ( rule__Stage__Group_1_1_1_1_0_2__0 )?
-            int alt115=2;
-            int LA115_0 = input.LA(1);
+            int alt117=2;
+            int LA117_0 = input.LA(1);
 
-            if ( (LA115_0==VmImage) ) {
-                alt115=1;
+            if ( (LA117_0==VmImage) ) {
+                alt117=1;
             }
-            switch (alt115) {
+            switch (alt117) {
                 case 1 :
                     // InternalPipelineParser.g:10600:3: rule__Stage__Group_1_1_1_1_0_2__0
                     {
@@ -35202,13 +35224,13 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getStageAccess().getGroup_1_1_1_1_1_0()); 
             // InternalPipelineParser.g:10736:2: ( rule__Stage__Group_1_1_1_1_1_0__0 )?
-            int alt116=2;
-            int LA116_0 = input.LA(1);
+            int alt118=2;
+            int LA118_0 = input.LA(1);
 
-            if ( (LA116_0==Demands) ) {
-                alt116=1;
+            if ( (LA118_0==Demands) ) {
+                alt118=1;
             }
-            switch (alt116) {
+            switch (alt118) {
                 case 1 :
                     // InternalPipelineParser.g:10736:3: rule__Stage__Group_1_1_1_1_1_0__0
                     {
@@ -35903,32 +35925,32 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getStageAccess().getStageVariablesAssignment_1_4_1()); 
             // InternalPipelineParser.g:10978:2: ( rule__Stage__StageVariablesAssignment_1_4_1 )*
-            loop117:
+            loop119:
             do {
-                int alt117=2;
-                int LA117_0 = input.LA(1);
+                int alt119=2;
+                int LA119_0 = input.LA(1);
 
-                if ( (LA117_0==RULE_BEGIN) ) {
-                    int LA117_1 = input.LA(2);
+                if ( (LA119_0==RULE_BEGIN) ) {
+                    int LA119_1 = input.LA(2);
 
-                    if ( (LA117_1==RULE_ID) ) {
-                        alt117=1;
+                    if ( (LA119_1==RULE_ID) ) {
+                        alt119=1;
                     }
 
 
                 }
-                else if ( (LA117_0==HyphenMinus) ) {
-                    int LA117_3 = input.LA(2);
+                else if ( (LA119_0==HyphenMinus) ) {
+                    int LA119_3 = input.LA(2);
 
-                    if ( (LA117_3==Group||LA117_3==Name) ) {
-                        alt117=1;
+                    if ( (LA119_3==Group||LA119_3==Name) ) {
+                        alt119=1;
                     }
 
 
                 }
 
 
-                switch (alt117) {
+                switch (alt119) {
             	case 1 :
             	    // InternalPipelineParser.g:10978:3: rule__Stage__StageVariablesAssignment_1_4_1
             	    {
@@ -35942,7 +35964,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop117;
+            	    break loop119;
                 }
             } while (true);
 
@@ -36091,17 +36113,17 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getStageAccess().getDependsOnAssignment_1_5_1()); 
             // InternalPipelineParser.g:11032:2: ( rule__Stage__DependsOnAssignment_1_5_1 )*
-            loop118:
+            loop120:
             do {
-                int alt118=2;
-                int LA118_0 = input.LA(1);
+                int alt120=2;
+                int LA120_0 = input.LA(1);
 
-                if ( (LA118_0==RULE_ID) ) {
-                    alt118=1;
+                if ( (LA120_0==RULE_ID) ) {
+                    alt120=1;
                 }
 
 
-                switch (alt118) {
+                switch (alt120) {
             	case 1 :
             	    // InternalPipelineParser.g:11032:3: rule__Stage__DependsOnAssignment_1_5_1
             	    {
@@ -36115,7 +36137,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop118;
+            	    break loop120;
                 }
             } while (true);
 
@@ -36419,17 +36441,17 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getStageAccess().getJobsAssignment_1_6_0_1()); 
             // InternalPipelineParser.g:11140:2: ( rule__Stage__JobsAssignment_1_6_0_1 )*
-            loop119:
+            loop121:
             do {
-                int alt119=2;
-                int LA119_0 = input.LA(1);
+                int alt121=2;
+                int LA121_0 = input.LA(1);
 
-                if ( (LA119_0==HyphenMinus||LA119_0==RULE_ID||LA119_0==RULE_STRING) ) {
-                    alt119=1;
+                if ( (LA121_0==HyphenMinus||LA121_0==RULE_ID||LA121_0==RULE_STRING) ) {
+                    alt121=1;
                 }
 
 
-                switch (alt119) {
+                switch (alt121) {
             	case 1 :
             	    // InternalPipelineParser.g:11140:3: rule__Stage__JobsAssignment_1_6_0_1
             	    {
@@ -36443,7 +36465,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop119;
+            	    break loop121;
                 }
             } while (true);
 
@@ -36687,13 +36709,13 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getJobAccess().getGroup_0_0()); 
             // InternalPipelineParser.g:11222:2: ( rule__Job__Group_0_0__0 )?
-            int alt120=2;
-            int LA120_0 = input.LA(1);
+            int alt122=2;
+            int LA122_0 = input.LA(1);
 
-            if ( (LA120_0==HyphenMinus) ) {
-                alt120=1;
+            if ( (LA122_0==HyphenMinus) ) {
+                alt122=1;
             }
-            switch (alt120) {
+            switch (alt122) {
                 case 1 :
                     // InternalPipelineParser.g:11222:3: rule__Job__Group_0_0__0
                     {
@@ -36863,13 +36885,13 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getJobAccess().getColonKeyword_0_2()); 
             // InternalPipelineParser.g:11275:2: ( Colon )?
-            int alt121=2;
-            int LA121_0 = input.LA(1);
+            int alt123=2;
+            int LA123_0 = input.LA(1);
 
-            if ( (LA121_0==Colon) ) {
-                alt121=1;
+            if ( (LA123_0==Colon) ) {
+                alt123=1;
             }
-            switch (alt121) {
+            switch (alt123) {
                 case 1 :
                     // InternalPipelineParser.g:11275:3: Colon
                     {
@@ -37180,24 +37202,24 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getJobAccess().getGroup_1_0_1()); 
             // InternalPipelineParser.g:11383:2: ( rule__Job__Group_1_0_1__0 )?
-            int alt122=2;
-            int LA122_0 = input.LA(1);
+            int alt124=2;
+            int LA124_0 = input.LA(1);
 
-            if ( (LA122_0==Name) ) {
-                int LA122_1 = input.LA(2);
+            if ( (LA124_0==Name) ) {
+                int LA124_1 = input.LA(2);
 
-                if ( (LA122_1==RULE_STRING) ) {
-                    alt122=1;
+                if ( (LA124_1==RULE_STRING) ) {
+                    alt124=1;
                 }
             }
-            else if ( (LA122_0==DisplayName) ) {
-                int LA122_2 = input.LA(2);
+            else if ( (LA124_0==DisplayName) ) {
+                int LA124_2 = input.LA(2);
 
-                if ( (LA122_2==RULE_STRING) ) {
-                    alt122=1;
+                if ( (LA124_2==RULE_STRING) ) {
+                    alt124=1;
                 }
             }
-            switch (alt122) {
+            switch (alt124) {
                 case 1 :
                     // InternalPipelineParser.g:11383:3: rule__Job__Group_1_0_1__0
                     {
@@ -37777,17 +37799,17 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getJobAccess().getGroup_1_1_1_1_2()); 
             // InternalPipelineParser.g:11573:2: ( rule__Job__Group_1_1_1_1_2__0 )*
-            loop123:
+            loop125:
             do {
-                int alt123=2;
-                int LA123_0 = input.LA(1);
+                int alt125=2;
+                int LA125_0 = input.LA(1);
 
-                if ( (LA123_0==Comma) ) {
-                    alt123=1;
+                if ( (LA125_0==Comma) ) {
+                    alt125=1;
                 }
 
 
-                switch (alt123) {
+                switch (alt125) {
             	case 1 :
             	    // InternalPipelineParser.g:11573:3: rule__Job__Group_1_1_1_1_2__0
             	    {
@@ -37801,7 +37823,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop123;
+            	    break loop125;
                 }
             } while (true);
 
@@ -38105,44 +38127,44 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getJobAccess().getJobParameterValuesAssignment_1_2_0()); 
             // InternalPipelineParser.g:11681:2: ( rule__Job__JobParameterValuesAssignment_1_2_0 )*
-            loop124:
+            loop126:
             do {
-                int alt124=2;
-                int LA124_0 = input.LA(1);
+                int alt126=2;
+                int LA126_0 = input.LA(1);
 
-                if ( (LA124_0==Steps) ) {
-                    int LA124_1 = input.LA(2);
+                if ( (LA126_0==Steps) ) {
+                    int LA126_1 = input.LA(2);
 
-                    if ( (LA124_1==HyphenMinus) ) {
-                        int LA124_4 = input.LA(3);
+                    if ( (LA126_1==HyphenMinus) ) {
+                        int LA126_4 = input.LA(3);
 
-                        if ( (LA124_4==RULE_ID) ) {
-                            int LA124_5 = input.LA(4);
+                        if ( (LA126_4==RULE_ID) ) {
+                            int LA126_5 = input.LA(4);
 
-                            if ( ((LA124_5>=Repository_dispatch && LA124_5<=ContinueOnError_1)||(LA124_5>=Workflow_dispatch && LA124_5<=WorkingDirectory)||(LA124_5>=TimeoutInMinutes && LA124_5<=TimeoutMinutes)||LA124_5==ReleaseTrigger||(LA124_5>=Allow_failure && LA124_5<=DeployTrigger)||(LA124_5>=Notifications && LA124_5<=PathsIgnore)||(LA124_5>=Pull_request && LA124_5<=Workflow_run)||(LA124_5>=Concurrency && LA124_5<=GetPackage)||(LA124_5>=Parameters && LA124_5<=Permission)||(LA124_5>=Powershell && LA124_5<=Artifacts)||(LA124_5>=Condition && LA124_5<=FailFast)||(LA124_5>=Pipelines && LA124_5<=RunPolicy)||(LA124_5>=Schedules && LA124_5<=Workspace)||(LA124_5>=Branches && LA124_5<=PreBuild)||(LA124_5>=Readonly && LA124_5<=Webhooks)||(LA124_5>=Command && LA124_5<=Caches)||(LA124_5>=Docker && LA124_5<=Except)||LA124_5==Inputs||(LA124_5>=Labels && LA124_5<=Policy)||LA124_5==Queued||(LA124_5>=Script && LA124_5<=Stages)||(LA124_5>=Agent && LA124_5<=Image)||(LA124_5>=Needs && LA124_5<=Value)||(LA124_5>=Auth && LA124_5<=Cron)||LA124_5==Name||(LA124_5>=Only && LA124_5<=Pwsh)||(LA124_5>=Step && LA124_5<=With)||(LA124_5>=Env && LA124_5<=Job)||(LA124_5>=Run && LA124_5<=On)||LA124_5==HyphenMinus||LA124_5==RULE_COMPLEX_EXPRESSION||(LA124_5>=RULE_BEGIN && LA124_5<=RULE_ID)) ) {
-                                alt124=1;
+                            if ( ((LA126_5>=Repository_dispatch && LA126_5<=ContinueOnError_1)||(LA126_5>=Workflow_dispatch && LA126_5<=WorkingDirectory)||(LA126_5>=TimeoutInMinutes && LA126_5<=TimeoutMinutes)||LA126_5==ReleaseTrigger||(LA126_5>=Allow_failure && LA126_5<=DeployTrigger)||(LA126_5>=Notifications && LA126_5<=PathsIgnore)||(LA126_5>=Pull_request && LA126_5<=Workflow_run)||(LA126_5>=Concurrency && LA126_5<=GetPackage)||(LA126_5>=Parameters && LA126_5<=Permission)||(LA126_5>=Powershell && LA126_5<=Artifacts)||(LA126_5>=Condition && LA126_5<=FailFast)||(LA126_5>=Pipelines && LA126_5<=RunPolicy)||(LA126_5>=Schedules && LA126_5<=Workspace)||(LA126_5>=Branches && LA126_5<=PreBuild)||(LA126_5>=Readonly && LA126_5<=Webhooks)||(LA126_5>=Command && LA126_5<=Caches)||(LA126_5>=Docker && LA126_5<=Except)||LA126_5==Inputs||(LA126_5>=Labels && LA126_5<=Policy)||LA126_5==Queued||(LA126_5>=Script && LA126_5<=Stages)||(LA126_5>=Agent && LA126_5<=Image)||(LA126_5>=Needs && LA126_5<=Value)||(LA126_5>=Auth && LA126_5<=Cron)||LA126_5==Name||(LA126_5>=Only && LA126_5<=Pwsh)||(LA126_5>=Step && LA126_5<=With)||(LA126_5>=Env && LA126_5<=Job)||(LA126_5>=Run && LA126_5<=On)||LA126_5==HyphenMinus||LA126_5==RULE_COMPLEX_EXPRESSION||(LA126_5>=RULE_BEGIN && LA126_5<=RULE_ID)) ) {
+                                alt126=1;
                             }
 
 
                         }
-                        else if ( ((LA124_4>=RULE_COMPLEX_EXPRESSION && LA124_4<=RULE_VERSION)||LA124_4==RULE_STRING) ) {
-                            alt124=1;
+                        else if ( ((LA126_4>=RULE_COMPLEX_EXPRESSION && LA126_4<=RULE_VERSION)||LA126_4==RULE_STRING) ) {
+                            alt126=1;
                         }
 
 
                     }
-                    else if ( (LA124_1==LeftSquareBracket||(LA124_1>=RULE_COMPLEX_EXPRESSION && LA124_1<=RULE_BEGIN)||LA124_1==RULE_ID||LA124_1==RULE_STRING) ) {
-                        alt124=1;
+                    else if ( (LA126_1==LeftSquareBracket||(LA126_1>=RULE_COMPLEX_EXPRESSION && LA126_1<=RULE_BEGIN)||LA126_1==RULE_ID||LA126_1==RULE_STRING) ) {
+                        alt126=1;
                     }
 
 
                 }
-                else if ( ((LA124_0>=Repository_dispatch && LA124_0<=ContinueOnError_1)||(LA124_0>=Workflow_dispatch && LA124_0<=WorkingDirectory)||(LA124_0>=TimeoutInMinutes && LA124_0<=TimeoutMinutes)||LA124_0==ReleaseTrigger||(LA124_0>=Allow_failure && LA124_0<=DeployTrigger)||(LA124_0>=Notifications && LA124_0<=PathsIgnore)||(LA124_0>=Pull_request && LA124_0<=Workflow_run)||(LA124_0>=Concurrency && LA124_0<=GetPackage)||(LA124_0>=Parameters && LA124_0<=Permission)||(LA124_0>=Powershell && LA124_0<=Artifacts)||(LA124_0>=Condition && LA124_0<=FailFast)||(LA124_0>=Pipelines && LA124_0<=RunPolicy)||(LA124_0>=Schedules && LA124_0<=Workspace)||(LA124_0>=Branches && LA124_0<=PreBuild)||(LA124_0>=Readonly && LA124_0<=Webhooks)||(LA124_0>=Command && LA124_0<=Caches)||(LA124_0>=Docker && LA124_0<=Except)||LA124_0==Inputs||(LA124_0>=Labels && LA124_0<=Policy)||LA124_0==Queued||(LA124_0>=Script && LA124_0<=Stages)||(LA124_0>=Agent && LA124_0<=Image)||(LA124_0>=Needs && LA124_0<=Stage)||(LA124_0>=Tasks && LA124_0<=Value)||(LA124_0>=Auth && LA124_0<=Cron)||LA124_0==Name||(LA124_0>=Only && LA124_0<=Pwsh)||(LA124_0>=Step && LA124_0<=With)||(LA124_0>=Env && LA124_0<=Job)||(LA124_0>=Run && LA124_0<=On)||LA124_0==RULE_COMPLEX_EXPRESSION||LA124_0==RULE_ID) ) {
-                    alt124=1;
+                else if ( ((LA126_0>=Repository_dispatch && LA126_0<=ContinueOnError_1)||(LA126_0>=Workflow_dispatch && LA126_0<=WorkingDirectory)||(LA126_0>=TimeoutInMinutes && LA126_0<=TimeoutMinutes)||LA126_0==ReleaseTrigger||(LA126_0>=Allow_failure && LA126_0<=DeployTrigger)||(LA126_0>=Notifications && LA126_0<=PathsIgnore)||(LA126_0>=Pull_request && LA126_0<=Workflow_run)||(LA126_0>=Concurrency && LA126_0<=GetPackage)||(LA126_0>=Parameters && LA126_0<=Permission)||(LA126_0>=Powershell && LA126_0<=Artifacts)||(LA126_0>=Condition && LA126_0<=FailFast)||(LA126_0>=Pipelines && LA126_0<=RunPolicy)||(LA126_0>=Schedules && LA126_0<=Workspace)||(LA126_0>=Branches && LA126_0<=PreBuild)||(LA126_0>=Readonly && LA126_0<=Webhooks)||(LA126_0>=Command && LA126_0<=Caches)||(LA126_0>=Docker && LA126_0<=Except)||LA126_0==Inputs||(LA126_0>=Labels && LA126_0<=Policy)||LA126_0==Queued||(LA126_0>=Script && LA126_0<=Stages)||(LA126_0>=Agent && LA126_0<=Image)||(LA126_0>=Needs && LA126_0<=Stage)||(LA126_0>=Tasks && LA126_0<=Value)||(LA126_0>=Auth && LA126_0<=Cron)||LA126_0==Name||(LA126_0>=Only && LA126_0<=Pwsh)||(LA126_0>=Step && LA126_0<=With)||(LA126_0>=Env && LA126_0<=Job)||(LA126_0>=Run && LA126_0<=On)||LA126_0==RULE_COMPLEX_EXPRESSION||LA126_0==RULE_ID) ) {
+                    alt126=1;
                 }
 
 
-                switch (alt124) {
+                switch (alt126) {
             	case 1 :
             	    // InternalPipelineParser.g:11681:3: rule__Job__JobParameterValuesAssignment_1_2_0
             	    {
@@ -38156,7 +38178,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop124;
+            	    break loop126;
                 }
             } while (true);
 
@@ -38235,13 +38257,13 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getJobAccess().getGroup_1_2_1()); 
             // InternalPipelineParser.g:11708:2: ( rule__Job__Group_1_2_1__0 )?
-            int alt125=2;
-            int LA125_0 = input.LA(1);
+            int alt127=2;
+            int LA127_0 = input.LA(1);
 
-            if ( (LA125_0==Steps) ) {
-                alt125=1;
+            if ( (LA127_0==Steps) ) {
+                alt127=1;
             }
-            switch (alt125) {
+            switch (alt127) {
                 case 1 :
                     // InternalPipelineParser.g:11708:3: rule__Job__Group_1_2_1__0
                     {
@@ -38471,17 +38493,17 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getJobAccess().getStepsAssignment_1_2_1_1()); 
             // InternalPipelineParser.g:11788:2: ( rule__Job__StepsAssignment_1_2_1_1 )*
-            loop126:
+            loop128:
             do {
-                int alt126=2;
-                int LA126_0 = input.LA(1);
+                int alt128=2;
+                int LA128_0 = input.LA(1);
 
-                if ( (LA126_0==HyphenMinus) ) {
-                    alt126=1;
+                if ( (LA128_0==HyphenMinus) ) {
+                    alt128=1;
                 }
 
 
-                switch (alt126) {
+                switch (alt128) {
             	case 1 :
             	    // InternalPipelineParser.g:11788:3: rule__Job__StepsAssignment_1_2_1_1
             	    {
@@ -38495,7 +38517,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop126;
+            	    break loop128;
                 }
             } while (true);
 
@@ -38809,13 +38831,13 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getScriptAccess().getGroup_1()); 
             // InternalPipelineParser.g:11896:2: ( rule__Script__Group_1__0 )?
-            int alt127=2;
-            int LA127_0 = input.LA(1);
+            int alt129=2;
+            int LA129_0 = input.LA(1);
 
-            if ( (LA127_0==RULE_BEGIN) ) {
-                alt127=1;
+            if ( (LA129_0==RULE_BEGIN) ) {
+                alt129=1;
             }
-            switch (alt127) {
+            switch (alt129) {
                 case 1 :
                     // InternalPipelineParser.g:11896:3: rule__Script__Group_1__0
                     {
@@ -39460,17 +39482,17 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getScriptAccess().getSubStepsAssignment_1_1()); 
             // InternalPipelineParser.g:12113:2: ( rule__Script__SubStepsAssignment_1_1 )*
-            loop128:
+            loop130:
             do {
-                int alt128=2;
-                int LA128_0 = input.LA(1);
+                int alt130=2;
+                int LA130_0 = input.LA(1);
 
-                if ( ((LA128_0>=Repository_dispatch && LA128_0<=ContinueOnError_1)||(LA128_0>=Workflow_dispatch && LA128_0<=WorkingDirectory)||(LA128_0>=TimeoutInMinutes && LA128_0<=TimeoutMinutes)||LA128_0==ReleaseTrigger||(LA128_0>=Allow_failure && LA128_0<=DeployTrigger)||(LA128_0>=Notifications && LA128_0<=PathsIgnore)||(LA128_0>=Pull_request && LA128_0<=Workflow_run)||(LA128_0>=Concurrency && LA128_0<=GetPackage)||(LA128_0>=Parameters && LA128_0<=Permission)||(LA128_0>=Powershell && LA128_0<=Artifacts)||(LA128_0>=Condition && LA128_0<=FailFast)||(LA128_0>=Pipelines && LA128_0<=RunPolicy)||(LA128_0>=Schedules && LA128_0<=Workspace)||(LA128_0>=Branches && LA128_0<=PreBuild)||(LA128_0>=Readonly && LA128_0<=Webhooks)||(LA128_0>=Command && LA128_0<=Caches)||(LA128_0>=Docker && LA128_0<=Except)||LA128_0==Inputs||(LA128_0>=Labels && LA128_0<=Policy)||LA128_0==Queued||(LA128_0>=Script && LA128_0<=Stages)||(LA128_0>=Agent && LA128_0<=Image)||(LA128_0>=Needs && LA128_0<=Value)||(LA128_0>=Auth && LA128_0<=Cron)||LA128_0==Name||(LA128_0>=Only && LA128_0<=Pwsh)||(LA128_0>=Step && LA128_0<=With)||(LA128_0>=Env && LA128_0<=Job)||(LA128_0>=Run && LA128_0<=On)||LA128_0==RULE_ID) ) {
-                    alt128=1;
+                if ( ((LA130_0>=Repository_dispatch && LA130_0<=ContinueOnError_1)||(LA130_0>=Workflow_dispatch && LA130_0<=WorkingDirectory)||(LA130_0>=TimeoutInMinutes && LA130_0<=TimeoutMinutes)||LA130_0==ReleaseTrigger||(LA130_0>=Allow_failure && LA130_0<=DeployTrigger)||(LA130_0>=Notifications && LA130_0<=PathsIgnore)||(LA130_0>=Pull_request && LA130_0<=Workflow_run)||(LA130_0>=Concurrency && LA130_0<=GetPackage)||(LA130_0>=Parameters && LA130_0<=Permission)||(LA130_0>=Powershell && LA130_0<=Artifacts)||(LA130_0>=Condition && LA130_0<=FailFast)||(LA130_0>=Pipelines && LA130_0<=RunPolicy)||(LA130_0>=Schedules && LA130_0<=Workspace)||(LA130_0>=Branches && LA130_0<=PreBuild)||(LA130_0>=Readonly && LA130_0<=Webhooks)||(LA130_0>=Command && LA130_0<=Caches)||(LA130_0>=Docker && LA130_0<=Except)||LA130_0==Inputs||(LA130_0>=Labels && LA130_0<=Policy)||LA130_0==Queued||(LA130_0>=Script && LA130_0<=Stages)||(LA130_0>=Agent && LA130_0<=Image)||(LA130_0>=Needs && LA130_0<=Value)||(LA130_0>=Auth && LA130_0<=Cron)||LA130_0==Name||(LA130_0>=Only && LA130_0<=Pwsh)||(LA130_0>=Step && LA130_0<=With)||(LA130_0>=Env && LA130_0<=Job)||(LA130_0>=Run && LA130_0<=On)||LA130_0==RULE_ID) ) {
+                    alt130=1;
                 }
 
 
-                switch (alt128) {
+                switch (alt130) {
             	case 1 :
             	    // InternalPipelineParser.g:12113:3: rule__Script__SubStepsAssignment_1_1
             	    {
@@ -39484,7 +39506,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop128;
+            	    break loop130;
                 }
             } while (true);
 
@@ -39713,13 +39735,13 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getActionAccess().getGroup_1()); 
             // InternalPipelineParser.g:12193:2: ( rule__Action__Group_1__0 )?
-            int alt129=2;
-            int LA129_0 = input.LA(1);
+            int alt131=2;
+            int LA131_0 = input.LA(1);
 
-            if ( (LA129_0==RULE_BEGIN) ) {
-                alt129=1;
+            if ( (LA131_0==RULE_BEGIN) ) {
+                alt131=1;
             }
-            switch (alt129) {
+            switch (alt131) {
                 case 1 :
                     // InternalPipelineParser.g:12193:3: rule__Action__Group_1__0
                     {
@@ -39889,20 +39911,20 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getActionAccess().getActionValueAssignment_0_1()); 
             // InternalPipelineParser.g:12247:2: ( rule__Action__ActionValueAssignment_0_1 )?
-            int alt130=2;
-            int LA130_0 = input.LA(1);
+            int alt132=2;
+            int LA132_0 = input.LA(1);
 
-            if ( ((LA130_0>=RULE_COMPLEX_EXPRESSION && LA130_0<=RULE_VERSION)||LA130_0==RULE_STRING) ) {
-                alt130=1;
+            if ( ((LA132_0>=RULE_COMPLEX_EXPRESSION && LA132_0<=RULE_VERSION)||LA132_0==RULE_STRING) ) {
+                alt132=1;
             }
-            else if ( (LA130_0==RULE_ID) ) {
-                int LA130_2 = input.LA(2);
+            else if ( (LA132_0==RULE_ID) ) {
+                int LA132_2 = input.LA(2);
 
-                if ( (LA130_2==EOF||(LA130_2>=Repository_dispatch && LA130_2<=ContinueOnError_1)||(LA130_2>=Workflow_dispatch && LA130_2<=WorkingDirectory)||(LA130_2>=TimeoutInMinutes && LA130_2<=TimeoutMinutes)||LA130_2==ReleaseTrigger||(LA130_2>=Allow_failure && LA130_2<=DeployTrigger)||(LA130_2>=Notifications && LA130_2<=PathsIgnore)||(LA130_2>=Pull_request && LA130_2<=Workflow_run)||(LA130_2>=Concurrency && LA130_2<=GetPackage)||(LA130_2>=Parameters && LA130_2<=Permission)||(LA130_2>=Powershell && LA130_2<=Artifacts)||(LA130_2>=Condition && LA130_2<=FailFast)||(LA130_2>=Pipelines && LA130_2<=RunPolicy)||(LA130_2>=Schedules && LA130_2<=Workspace)||(LA130_2>=Branches && LA130_2<=PreBuild)||(LA130_2>=Readonly && LA130_2<=Webhooks)||(LA130_2>=Command && LA130_2<=Caches)||(LA130_2>=Docker && LA130_2<=Except)||LA130_2==Inputs||(LA130_2>=Labels && LA130_2<=Policy)||LA130_2==Queued||(LA130_2>=Script && LA130_2<=Stages)||(LA130_2>=Agent && LA130_2<=Image)||(LA130_2>=Needs && LA130_2<=Value)||(LA130_2>=Auth && LA130_2<=Cron)||LA130_2==Name||(LA130_2>=Only && LA130_2<=Pwsh)||(LA130_2>=Step && LA130_2<=With)||(LA130_2>=Env && LA130_2<=Job)||(LA130_2>=Run && LA130_2<=On)||LA130_2==HyphenMinus||(LA130_2>=RULE_BEGIN && LA130_2<=RULE_ID)) ) {
-                    alt130=1;
+                if ( (LA132_2==EOF||(LA132_2>=Repository_dispatch && LA132_2<=ContinueOnError_1)||(LA132_2>=Workflow_dispatch && LA132_2<=WorkingDirectory)||(LA132_2>=TimeoutInMinutes && LA132_2<=TimeoutMinutes)||LA132_2==ReleaseTrigger||(LA132_2>=Allow_failure && LA132_2<=DeployTrigger)||(LA132_2>=Notifications && LA132_2<=PathsIgnore)||(LA132_2>=Pull_request && LA132_2<=Workflow_run)||(LA132_2>=Concurrency && LA132_2<=GetPackage)||(LA132_2>=Parameters && LA132_2<=Permission)||(LA132_2>=Powershell && LA132_2<=Artifacts)||(LA132_2>=Condition && LA132_2<=FailFast)||(LA132_2>=Pipelines && LA132_2<=RunPolicy)||(LA132_2>=Schedules && LA132_2<=Workspace)||(LA132_2>=Branches && LA132_2<=PreBuild)||(LA132_2>=Readonly && LA132_2<=Webhooks)||(LA132_2>=Command && LA132_2<=Caches)||(LA132_2>=Docker && LA132_2<=Except)||LA132_2==Inputs||(LA132_2>=Labels && LA132_2<=Policy)||LA132_2==Queued||(LA132_2>=Script && LA132_2<=Stages)||(LA132_2>=Agent && LA132_2<=Image)||(LA132_2>=Needs && LA132_2<=Value)||(LA132_2>=Auth && LA132_2<=Cron)||LA132_2==Name||(LA132_2>=Only && LA132_2<=Pwsh)||(LA132_2>=Step && LA132_2<=With)||(LA132_2>=Env && LA132_2<=Job)||(LA132_2>=Run && LA132_2<=On)||LA132_2==HyphenMinus||(LA132_2>=RULE_BEGIN && LA132_2<=RULE_ID)) ) {
+                    alt132=1;
                 }
             }
-            switch (alt130) {
+            switch (alt132) {
                 case 1 :
                     // InternalPipelineParser.g:12247:3: rule__Action__ActionValueAssignment_0_1
                     {
@@ -40222,17 +40244,17 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getActionAccess().getSubStepsAssignment_1_1()); 
             // InternalPipelineParser.g:12356:2: ( rule__Action__SubStepsAssignment_1_1 )*
-            loop131:
+            loop133:
             do {
-                int alt131=2;
-                int LA131_0 = input.LA(1);
+                int alt133=2;
+                int LA133_0 = input.LA(1);
 
-                if ( ((LA131_0>=Repository_dispatch && LA131_0<=ContinueOnError_1)||(LA131_0>=Workflow_dispatch && LA131_0<=WorkingDirectory)||(LA131_0>=TimeoutInMinutes && LA131_0<=TimeoutMinutes)||LA131_0==ReleaseTrigger||(LA131_0>=Allow_failure && LA131_0<=DeployTrigger)||(LA131_0>=Notifications && LA131_0<=PathsIgnore)||(LA131_0>=Pull_request && LA131_0<=Workflow_run)||(LA131_0>=Concurrency && LA131_0<=GetPackage)||(LA131_0>=Parameters && LA131_0<=Permission)||(LA131_0>=Powershell && LA131_0<=Artifacts)||(LA131_0>=Condition && LA131_0<=FailFast)||(LA131_0>=Pipelines && LA131_0<=RunPolicy)||(LA131_0>=Schedules && LA131_0<=Workspace)||(LA131_0>=Branches && LA131_0<=PreBuild)||(LA131_0>=Readonly && LA131_0<=Webhooks)||(LA131_0>=Command && LA131_0<=Caches)||(LA131_0>=Docker && LA131_0<=Except)||LA131_0==Inputs||(LA131_0>=Labels && LA131_0<=Policy)||LA131_0==Queued||(LA131_0>=Script && LA131_0<=Stages)||(LA131_0>=Agent && LA131_0<=Image)||(LA131_0>=Needs && LA131_0<=Value)||(LA131_0>=Auth && LA131_0<=Cron)||LA131_0==Name||(LA131_0>=Only && LA131_0<=Pwsh)||(LA131_0>=Step && LA131_0<=With)||(LA131_0>=Env && LA131_0<=Job)||(LA131_0>=Run && LA131_0<=On)||LA131_0==RULE_ID) ) {
-                    alt131=1;
+                if ( ((LA133_0>=Repository_dispatch && LA133_0<=ContinueOnError_1)||(LA133_0>=Workflow_dispatch && LA133_0<=WorkingDirectory)||(LA133_0>=TimeoutInMinutes && LA133_0<=TimeoutMinutes)||LA133_0==ReleaseTrigger||(LA133_0>=Allow_failure && LA133_0<=DeployTrigger)||(LA133_0>=Notifications && LA133_0<=PathsIgnore)||(LA133_0>=Pull_request && LA133_0<=Workflow_run)||(LA133_0>=Concurrency && LA133_0<=GetPackage)||(LA133_0>=Parameters && LA133_0<=Permission)||(LA133_0>=Powershell && LA133_0<=Artifacts)||(LA133_0>=Condition && LA133_0<=FailFast)||(LA133_0>=Pipelines && LA133_0<=RunPolicy)||(LA133_0>=Schedules && LA133_0<=Workspace)||(LA133_0>=Branches && LA133_0<=PreBuild)||(LA133_0>=Readonly && LA133_0<=Webhooks)||(LA133_0>=Command && LA133_0<=Caches)||(LA133_0>=Docker && LA133_0<=Except)||LA133_0==Inputs||(LA133_0>=Labels && LA133_0<=Policy)||LA133_0==Queued||(LA133_0>=Script && LA133_0<=Stages)||(LA133_0>=Agent && LA133_0<=Image)||(LA133_0>=Needs && LA133_0<=Value)||(LA133_0>=Auth && LA133_0<=Cron)||LA133_0==Name||(LA133_0>=Only && LA133_0<=Pwsh)||(LA133_0>=Step && LA133_0<=With)||(LA133_0>=Env && LA133_0<=Job)||(LA133_0>=Run && LA133_0<=On)||LA133_0==RULE_ID) ) {
+                    alt133=1;
                 }
 
 
-                switch (alt131) {
+                switch (alt133) {
             	case 1 :
             	    // InternalPipelineParser.g:12356:3: rule__Action__SubStepsAssignment_1_1
             	    {
@@ -40246,7 +40268,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop131;
+            	    break loop133;
                 }
             } while (true);
 
@@ -40795,13 +40817,13 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getParameterValueAccess().getGroup_1_0_1()); 
             // InternalPipelineParser.g:12544:2: ( rule__ParameterValue__Group_1_0_1__0 )?
-            int alt132=2;
-            int LA132_0 = input.LA(1);
+            int alt134=2;
+            int LA134_0 = input.LA(1);
 
-            if ( (LA132_0==RULE_BEGIN) ) {
-                alt132=1;
+            if ( (LA134_0==RULE_BEGIN) ) {
+                alt134=1;
             }
-            switch (alt132) {
+            switch (alt134) {
                 case 1 :
                     // InternalPipelineParser.g:12544:3: rule__ParameterValue__Group_1_0_1__0
                     {
@@ -40966,17 +40988,17 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getParameterValueAccess().getGroup_1_0_1_1()); 
             // InternalPipelineParser.g:12599:2: ( rule__ParameterValue__Group_1_0_1_1__0 )*
-            loop133:
+            loop135:
             do {
-                int alt133=2;
-                int LA133_0 = input.LA(1);
+                int alt135=2;
+                int LA135_0 = input.LA(1);
 
-                if ( ((LA133_0>=Repository_dispatch && LA133_0<=ContinueOnError_1)||(LA133_0>=Workflow_dispatch && LA133_0<=WorkingDirectory)||(LA133_0>=TimeoutInMinutes && LA133_0<=TimeoutMinutes)||LA133_0==ReleaseTrigger||(LA133_0>=Allow_failure && LA133_0<=DeployTrigger)||(LA133_0>=Notifications && LA133_0<=PathsIgnore)||(LA133_0>=Pull_request && LA133_0<=Workflow_run)||(LA133_0>=Concurrency && LA133_0<=GetPackage)||(LA133_0>=Parameters && LA133_0<=Permission)||(LA133_0>=Powershell && LA133_0<=Artifacts)||(LA133_0>=Condition && LA133_0<=FailFast)||(LA133_0>=Pipelines && LA133_0<=RunPolicy)||(LA133_0>=Schedules && LA133_0<=Workspace)||(LA133_0>=Branches && LA133_0<=PreBuild)||(LA133_0>=Readonly && LA133_0<=Webhooks)||(LA133_0>=Command && LA133_0<=Caches)||(LA133_0>=Docker && LA133_0<=Except)||LA133_0==Inputs||(LA133_0>=Labels && LA133_0<=Policy)||LA133_0==Queued||(LA133_0>=Script && LA133_0<=Stages)||(LA133_0>=Agent && LA133_0<=Image)||(LA133_0>=Needs && LA133_0<=Value)||(LA133_0>=Auth && LA133_0<=Cron)||LA133_0==Name||(LA133_0>=Only && LA133_0<=Pwsh)||(LA133_0>=Step && LA133_0<=With)||(LA133_0>=Env && LA133_0<=Job)||(LA133_0>=Run && LA133_0<=On)||LA133_0==HyphenMinus||LA133_0==RULE_COMPLEX_EXPRESSION||LA133_0==RULE_ID) ) {
-                    alt133=1;
+                if ( ((LA135_0>=Repository_dispatch && LA135_0<=ContinueOnError_1)||(LA135_0>=Workflow_dispatch && LA135_0<=WorkingDirectory)||(LA135_0>=TimeoutInMinutes && LA135_0<=TimeoutMinutes)||LA135_0==ReleaseTrigger||(LA135_0>=Allow_failure && LA135_0<=DeployTrigger)||(LA135_0>=Notifications && LA135_0<=PathsIgnore)||(LA135_0>=Pull_request && LA135_0<=Workflow_run)||(LA135_0>=Concurrency && LA135_0<=GetPackage)||(LA135_0>=Parameters && LA135_0<=Permission)||(LA135_0>=Powershell && LA135_0<=Artifacts)||(LA135_0>=Condition && LA135_0<=FailFast)||(LA135_0>=Pipelines && LA135_0<=RunPolicy)||(LA135_0>=Schedules && LA135_0<=Workspace)||(LA135_0>=Branches && LA135_0<=PreBuild)||(LA135_0>=Readonly && LA135_0<=Webhooks)||(LA135_0>=Command && LA135_0<=Caches)||(LA135_0>=Docker && LA135_0<=Except)||LA135_0==Inputs||(LA135_0>=Labels && LA135_0<=Policy)||LA135_0==Queued||(LA135_0>=Script && LA135_0<=Stages)||(LA135_0>=Agent && LA135_0<=Image)||(LA135_0>=Needs && LA135_0<=Value)||(LA135_0>=Auth && LA135_0<=Cron)||LA135_0==Name||(LA135_0>=Only && LA135_0<=Pwsh)||(LA135_0>=Step && LA135_0<=With)||(LA135_0>=Env && LA135_0<=Job)||(LA135_0>=Run && LA135_0<=On)||LA135_0==HyphenMinus||LA135_0==RULE_COMPLEX_EXPRESSION||LA135_0==RULE_ID) ) {
+                    alt135=1;
                 }
 
 
-                switch (alt133) {
+                switch (alt135) {
             	case 1 :
             	    // InternalPipelineParser.g:12599:3: rule__ParameterValue__Group_1_0_1_1__0
             	    {
@@ -40990,7 +41012,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop133;
+            	    break loop135;
                 }
             } while (true);
 
@@ -41139,13 +41161,13 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getParameterValueAccess().getHyphenMinusKeyword_1_0_1_1_0()); 
             // InternalPipelineParser.g:12653:2: ( HyphenMinus )?
-            int alt134=2;
-            int LA134_0 = input.LA(1);
+            int alt136=2;
+            int LA136_0 = input.LA(1);
 
-            if ( (LA134_0==HyphenMinus) ) {
-                alt134=1;
+            if ( (LA136_0==HyphenMinus) ) {
+                alt136=1;
             }
-            switch (alt134) {
+            switch (alt136) {
                 case 1 :
                     // InternalPipelineParser.g:12653:3: HyphenMinus
                     {
@@ -41386,17 +41408,17 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getParameterValueAccess().getGroup_1_1_1()); 
             // InternalPipelineParser.g:12734:2: ( rule__ParameterValue__Group_1_1_1__0 )*
-            loop135:
+            loop137:
             do {
-                int alt135=2;
-                int LA135_0 = input.LA(1);
+                int alt137=2;
+                int LA137_0 = input.LA(1);
 
-                if ( ((LA135_0>=Repository_dispatch && LA135_0<=ContinueOnError_1)||(LA135_0>=Workflow_dispatch && LA135_0<=WorkingDirectory)||(LA135_0>=TimeoutInMinutes && LA135_0<=TimeoutMinutes)||LA135_0==ReleaseTrigger||(LA135_0>=Allow_failure && LA135_0<=DeployTrigger)||(LA135_0>=Notifications && LA135_0<=PathsIgnore)||(LA135_0>=Pull_request && LA135_0<=Workflow_run)||(LA135_0>=Concurrency && LA135_0<=GetPackage)||(LA135_0>=Parameters && LA135_0<=Permission)||(LA135_0>=Powershell && LA135_0<=Artifacts)||(LA135_0>=Condition && LA135_0<=FailFast)||(LA135_0>=Pipelines && LA135_0<=RunPolicy)||(LA135_0>=Schedules && LA135_0<=Workspace)||(LA135_0>=Branches && LA135_0<=PreBuild)||(LA135_0>=Readonly && LA135_0<=Webhooks)||(LA135_0>=Command && LA135_0<=Caches)||(LA135_0>=Docker && LA135_0<=Except)||LA135_0==Inputs||(LA135_0>=Labels && LA135_0<=Policy)||LA135_0==Queued||(LA135_0>=Script && LA135_0<=Stages)||(LA135_0>=Agent && LA135_0<=Image)||(LA135_0>=Needs && LA135_0<=Value)||(LA135_0>=Auth && LA135_0<=Cron)||LA135_0==Name||(LA135_0>=Only && LA135_0<=Pwsh)||(LA135_0>=Step && LA135_0<=With)||(LA135_0>=Env && LA135_0<=Job)||(LA135_0>=Run && LA135_0<=On)||LA135_0==HyphenMinus||LA135_0==RULE_COMPLEX_EXPRESSION||LA135_0==RULE_ID) ) {
-                    alt135=1;
+                if ( ((LA137_0>=Repository_dispatch && LA137_0<=ContinueOnError_1)||(LA137_0>=Workflow_dispatch && LA137_0<=WorkingDirectory)||(LA137_0>=TimeoutInMinutes && LA137_0<=TimeoutMinutes)||LA137_0==ReleaseTrigger||(LA137_0>=Allow_failure && LA137_0<=DeployTrigger)||(LA137_0>=Notifications && LA137_0<=PathsIgnore)||(LA137_0>=Pull_request && LA137_0<=Workflow_run)||(LA137_0>=Concurrency && LA137_0<=GetPackage)||(LA137_0>=Parameters && LA137_0<=Permission)||(LA137_0>=Powershell && LA137_0<=Artifacts)||(LA137_0>=Condition && LA137_0<=FailFast)||(LA137_0>=Pipelines && LA137_0<=RunPolicy)||(LA137_0>=Schedules && LA137_0<=Workspace)||(LA137_0>=Branches && LA137_0<=PreBuild)||(LA137_0>=Readonly && LA137_0<=Webhooks)||(LA137_0>=Command && LA137_0<=Caches)||(LA137_0>=Docker && LA137_0<=Except)||LA137_0==Inputs||(LA137_0>=Labels && LA137_0<=Policy)||LA137_0==Queued||(LA137_0>=Script && LA137_0<=Stages)||(LA137_0>=Agent && LA137_0<=Image)||(LA137_0>=Needs && LA137_0<=Value)||(LA137_0>=Auth && LA137_0<=Cron)||LA137_0==Name||(LA137_0>=Only && LA137_0<=Pwsh)||(LA137_0>=Step && LA137_0<=With)||(LA137_0>=Env && LA137_0<=Job)||(LA137_0>=Run && LA137_0<=On)||LA137_0==HyphenMinus||LA137_0==RULE_COMPLEX_EXPRESSION||LA137_0==RULE_ID) ) {
+                    alt137=1;
                 }
 
 
-                switch (alt135) {
+                switch (alt137) {
             	case 1 :
             	    // InternalPipelineParser.g:12734:3: rule__ParameterValue__Group_1_1_1__0
             	    {
@@ -41410,7 +41432,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop135;
+            	    break loop137;
                 }
             } while (true);
 
@@ -41559,13 +41581,13 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getParameterValueAccess().getHyphenMinusKeyword_1_1_1_0()); 
             // InternalPipelineParser.g:12788:2: ( HyphenMinus )?
-            int alt136=2;
-            int LA136_0 = input.LA(1);
+            int alt138=2;
+            int LA138_0 = input.LA(1);
 
-            if ( (LA136_0==HyphenMinus) ) {
-                alt136=1;
+            if ( (LA138_0==HyphenMinus) ) {
+                alt138=1;
             }
-            switch (alt136) {
+            switch (alt138) {
                 case 1 :
                     // InternalPipelineParser.g:12788:3: HyphenMinus
                     {
@@ -42138,17 +42160,17 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getWorkFlowKeyValueAccess().getGroup_1_1()); 
             // InternalPipelineParser.g:12983:3: ( rule__WorkFlowKeyValue__Group_1_1__0 )*
-            loop137:
+            loop139:
             do {
-                int alt137=2;
-                int LA137_0 = input.LA(1);
+                int alt139=2;
+                int LA139_0 = input.LA(1);
 
-                if ( (LA137_0==Description||LA137_0==Required||LA137_0==Default||LA137_0==Options||LA137_0==Type) ) {
-                    alt137=1;
+                if ( (LA139_0==Description||LA139_0==Required||LA139_0==Default||LA139_0==Options||LA139_0==Type) ) {
+                    alt139=1;
                 }
 
 
-                switch (alt137) {
+                switch (alt139) {
             	case 1 :
             	    // InternalPipelineParser.g:12983:4: rule__WorkFlowKeyValue__Group_1_1__0
             	    {
@@ -42162,7 +42184,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop137;
+            	    break loop139;
                 }
             } while (true);
 
@@ -43009,17 +43031,17 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getUnquotedStringAccess().getAlternatives_1()); 
             // InternalPipelineParser.g:13280:2: ( rule__UnquotedString__Alternatives_1 )*
-            loop138:
+            loop140:
             do {
-                int alt138=2;
-                int LA138_0 = input.LA(1);
+                int alt140=2;
+                int LA140_0 = input.LA(1);
 
-                if ( (LA138_0==RULE_COMPLEX_EXPRESSION||LA138_0==RULE_INT||LA138_0==RULE_ID) ) {
-                    alt138=1;
+                if ( (LA140_0==RULE_COMPLEX_EXPRESSION||LA140_0==RULE_INT||LA140_0==RULE_ID) ) {
+                    alt140=1;
                 }
 
 
-                switch (alt138) {
+                switch (alt140) {
             	case 1 :
             	    // InternalPipelineParser.g:13280:3: rule__UnquotedString__Alternatives_1
             	    {
@@ -43033,7 +43055,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop138;
+            	    break loop140;
                 }
             } while (true);
 
@@ -43358,17 +43380,17 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getHyphenValuesAccess().getGroup_1_1()); 
             // InternalPipelineParser.g:13395:3: ( rule__HyphenValues__Group_1_1__0 )*
-            loop139:
+            loop141:
             do {
-                int alt139=2;
-                int LA139_0 = input.LA(1);
+                int alt141=2;
+                int LA141_0 = input.LA(1);
 
-                if ( (LA139_0==HyphenMinus) ) {
-                    alt139=1;
+                if ( (LA141_0==HyphenMinus) ) {
+                    alt141=1;
                 }
 
 
-                switch (alt139) {
+                switch (alt141) {
             	case 1 :
             	    // InternalPipelineParser.g:13395:4: rule__HyphenValues__Group_1_1__0
             	    {
@@ -43382,7 +43404,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop139;
+            	    break loop141;
                 }
             } while (true);
 
@@ -43758,13 +43780,13 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getArrayListAccess().getGroup_1()); 
             // InternalPipelineParser.g:13531:2: ( rule__ArrayList__Group_1__0 )?
-            int alt140=2;
-            int LA140_0 = input.LA(1);
+            int alt142=2;
+            int LA142_0 = input.LA(1);
 
-            if ( ((LA140_0>=RULE_COMPLEX_EXPRESSION && LA140_0<=RULE_VERSION)||LA140_0==RULE_ID||LA140_0==RULE_STRING) ) {
-                alt140=1;
+            if ( ((LA142_0>=RULE_COMPLEX_EXPRESSION && LA142_0<=RULE_VERSION)||LA142_0==RULE_ID||LA142_0==RULE_STRING) ) {
+                alt142=1;
             }
-            switch (alt140) {
+            switch (alt142) {
                 case 1 :
                     // InternalPipelineParser.g:13531:3: rule__ArrayList__Group_1__0
                     {
@@ -43998,17 +44020,17 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             {
              before(grammarAccess.getArrayListAccess().getGroup_1_1()); 
             // InternalPipelineParser.g:13611:2: ( rule__ArrayList__Group_1_1__0 )*
-            loop141:
+            loop143:
             do {
-                int alt141=2;
-                int LA141_0 = input.LA(1);
+                int alt143=2;
+                int LA143_0 = input.LA(1);
 
-                if ( (LA141_0==Comma) ) {
-                    alt141=1;
+                if ( (LA143_0==Comma) ) {
+                    alt143=1;
                 }
 
 
-                switch (alt141) {
+                switch (alt143) {
             	case 1 :
             	    // InternalPipelineParser.g:13611:3: rule__ArrayList__Group_1_1__0
             	    {
@@ -44022,7 +44044,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop141;
+            	    break loop143;
                 }
             } while (true);
 
@@ -44209,9 +44231,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             // InternalPipelineParser.g:13680:2: ( rule__Configurations__UnorderedGroup__0 )?
             {
             // InternalPipelineParser.g:13680:2: ( rule__Configurations__UnorderedGroup__0 )?
-            int alt142=2;
-            alt142 = dfa142.predict(input);
-            switch (alt142) {
+            int alt144=2;
+            alt144 = dfa144.predict(input);
+            switch (alt144) {
                 case 1 :
                     // InternalPipelineParser.g:13680:2: rule__Configurations__UnorderedGroup__0
                     {
@@ -44257,9 +44279,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             // InternalPipelineParser.g:13694:3: ( ({...}? => ( ( ( rule__Configurations__Group_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_1__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__UnorderedGroup_2 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_3__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_4__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_5__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_6__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_7__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_8__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_9__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_10__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_11__0 ) ) ) ) )
             {
             // InternalPipelineParser.g:13694:3: ( ({...}? => ( ( ( rule__Configurations__Group_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_1__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__UnorderedGroup_2 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_3__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_4__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_5__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_6__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_7__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_8__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_9__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_10__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_11__0 ) ) ) ) )
-            int alt143=12;
-            alt143 = dfa143.predict(input);
-            switch (alt143) {
+            int alt145=12;
+            alt145 = dfa145.predict(input);
+            switch (alt145) {
                 case 1 :
                     // InternalPipelineParser.g:13695:3: ({...}? => ( ( ( rule__Configurations__Group_0__0 ) ) ) )
                     {
@@ -44851,9 +44873,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:13889:2: ( rule__Configurations__UnorderedGroup__1 )?
-            int alt144=2;
-            alt144 = dfa144.predict(input);
-            switch (alt144) {
+            int alt146=2;
+            alt146 = dfa146.predict(input);
+            switch (alt146) {
                 case 1 :
                     // InternalPipelineParser.g:13889:2: rule__Configurations__UnorderedGroup__1
                     {
@@ -44902,9 +44924,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:13901:2: ( rule__Configurations__UnorderedGroup__2 )?
-            int alt145=2;
-            alt145 = dfa145.predict(input);
-            switch (alt145) {
+            int alt147=2;
+            alt147 = dfa147.predict(input);
+            switch (alt147) {
                 case 1 :
                     // InternalPipelineParser.g:13901:2: rule__Configurations__UnorderedGroup__2
                     {
@@ -44953,9 +44975,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:13913:2: ( rule__Configurations__UnorderedGroup__3 )?
-            int alt146=2;
-            alt146 = dfa146.predict(input);
-            switch (alt146) {
+            int alt148=2;
+            alt148 = dfa148.predict(input);
+            switch (alt148) {
                 case 1 :
                     // InternalPipelineParser.g:13913:2: rule__Configurations__UnorderedGroup__3
                     {
@@ -45004,9 +45026,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:13925:2: ( rule__Configurations__UnorderedGroup__4 )?
-            int alt147=2;
-            alt147 = dfa147.predict(input);
-            switch (alt147) {
+            int alt149=2;
+            alt149 = dfa149.predict(input);
+            switch (alt149) {
                 case 1 :
                     // InternalPipelineParser.g:13925:2: rule__Configurations__UnorderedGroup__4
                     {
@@ -45055,9 +45077,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:13937:2: ( rule__Configurations__UnorderedGroup__5 )?
-            int alt148=2;
-            alt148 = dfa148.predict(input);
-            switch (alt148) {
+            int alt150=2;
+            alt150 = dfa150.predict(input);
+            switch (alt150) {
                 case 1 :
                     // InternalPipelineParser.g:13937:2: rule__Configurations__UnorderedGroup__5
                     {
@@ -45106,9 +45128,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:13949:2: ( rule__Configurations__UnorderedGroup__6 )?
-            int alt149=2;
-            alt149 = dfa149.predict(input);
-            switch (alt149) {
+            int alt151=2;
+            alt151 = dfa151.predict(input);
+            switch (alt151) {
                 case 1 :
                     // InternalPipelineParser.g:13949:2: rule__Configurations__UnorderedGroup__6
                     {
@@ -45157,9 +45179,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:13961:2: ( rule__Configurations__UnorderedGroup__7 )?
-            int alt150=2;
-            alt150 = dfa150.predict(input);
-            switch (alt150) {
+            int alt152=2;
+            alt152 = dfa152.predict(input);
+            switch (alt152) {
                 case 1 :
                     // InternalPipelineParser.g:13961:2: rule__Configurations__UnorderedGroup__7
                     {
@@ -45208,9 +45230,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:13973:2: ( rule__Configurations__UnorderedGroup__8 )?
-            int alt151=2;
-            alt151 = dfa151.predict(input);
-            switch (alt151) {
+            int alt153=2;
+            alt153 = dfa153.predict(input);
+            switch (alt153) {
                 case 1 :
                     // InternalPipelineParser.g:13973:2: rule__Configurations__UnorderedGroup__8
                     {
@@ -45259,9 +45281,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:13985:2: ( rule__Configurations__UnorderedGroup__9 )?
-            int alt152=2;
-            alt152 = dfa152.predict(input);
-            switch (alt152) {
+            int alt154=2;
+            alt154 = dfa154.predict(input);
+            switch (alt154) {
                 case 1 :
                     // InternalPipelineParser.g:13985:2: rule__Configurations__UnorderedGroup__9
                     {
@@ -45310,9 +45332,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:13997:2: ( rule__Configurations__UnorderedGroup__10 )?
-            int alt153=2;
-            alt153 = dfa153.predict(input);
-            switch (alt153) {
+            int alt155=2;
+            alt155 = dfa155.predict(input);
+            switch (alt155) {
                 case 1 :
                     // InternalPipelineParser.g:13997:2: rule__Configurations__UnorderedGroup__10
                     {
@@ -45361,9 +45383,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:14009:2: ( rule__Configurations__UnorderedGroup__11 )?
-            int alt154=2;
-            alt154 = dfa154.predict(input);
-            switch (alt154) {
+            int alt156=2;
+            alt156 = dfa156.predict(input);
+            switch (alt156) {
                 case 1 :
                     // InternalPipelineParser.g:14009:2: rule__Configurations__UnorderedGroup__11
                     {
@@ -45479,22 +45501,22 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             // InternalPipelineParser.g:14047:3: ( ({...}? => ( ( ( rule__Configurations__Group_2_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_2_1__0 ) ) ) ) )
             {
             // InternalPipelineParser.g:14047:3: ( ({...}? => ( ( ( rule__Configurations__Group_2_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_2_1__0 ) ) ) ) )
-            int alt155=2;
-            int LA155_0 = input.LA(1);
+            int alt157=2;
+            int LA157_0 = input.LA(1);
 
-            if ( LA155_0 == Defaults && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_2(), 0) ) {
-                alt155=1;
+            if ( LA157_0 == Defaults && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_2(), 0) ) {
+                alt157=1;
             }
-            else if ( ( LA155_0 == WorkingDirectory || LA155_0 == RULE_END ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_2(), 1) ) {
-                alt155=2;
+            else if ( ( LA157_0 == WorkingDirectory || LA157_0 == RULE_END ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_2(), 1) ) {
+                alt157=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 155, 0, input);
+                    new NoViableAltException("", 157, 0, input);
 
                 throw nvae;
             }
-            switch (alt155) {
+            switch (alt157) {
                 case 1 :
                     // InternalPipelineParser.g:14048:3: ({...}? => ( ( ( rule__Configurations__Group_2_0__0 ) ) ) )
                     {
@@ -45626,9 +45648,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:14092:2: ( rule__Configurations__UnorderedGroup_2__1 )?
-            int alt156=2;
-            alt156 = dfa156.predict(input);
-            switch (alt156) {
+            int alt158=2;
+            alt158 = dfa158.predict(input);
+            switch (alt158) {
                 case 1 :
                     // InternalPipelineParser.g:14092:2: rule__Configurations__UnorderedGroup_2__1
                     {
@@ -45744,22 +45766,22 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             // InternalPipelineParser.g:14130:3: ( ({...}? => ( ( ( rule__Configurations__Group_6_1_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_6_1_1__0 ) ) ) ) )
             {
             // InternalPipelineParser.g:14130:3: ( ({...}? => ( ( ( rule__Configurations__Group_6_1_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_6_1_1__0 ) ) ) ) )
-            int alt157=2;
-            int LA157_0 = input.LA(1);
+            int alt159=2;
+            int LA159_0 = input.LA(1);
 
-            if ( LA157_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 0) ) {
-                alt157=1;
+            if ( LA159_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 0) ) {
+                alt159=1;
             }
-            else if ( ( LA157_0 == Demands || LA157_0 == RULE_END ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {
-                alt157=2;
+            else if ( ( LA159_0 == Demands || LA159_0 == RULE_END ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {
+                alt159=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 157, 0, input);
+                    new NoViableAltException("", 159, 0, input);
 
                 throw nvae;
             }
-            switch (alt157) {
+            switch (alt159) {
                 case 1 :
                     // InternalPipelineParser.g:14131:3: ({...}? => ( ( ( rule__Configurations__Group_6_1_0__0 ) ) ) )
                     {
@@ -45891,9 +45913,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:14175:2: ( rule__Configurations__UnorderedGroup_6_1__1 )?
-            int alt158=2;
-            alt158 = dfa158.predict(input);
-            switch (alt158) {
+            int alt160=2;
+            alt160 = dfa160.predict(input);
+            switch (alt160) {
                 case 1 :
                     // InternalPipelineParser.g:14175:2: rule__Configurations__UnorderedGroup_6_1__1
                     {
@@ -45971,9 +45993,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             // InternalPipelineParser.g:14199:2: ( rule__Event__UnorderedGroup_0_2_2__0 )?
             {
             // InternalPipelineParser.g:14199:2: ( rule__Event__UnorderedGroup_0_2_2__0 )?
-            int alt159=2;
-            alt159 = dfa159.predict(input);
-            switch (alt159) {
+            int alt161=2;
+            alt161 = dfa161.predict(input);
+            switch (alt161) {
                 case 1 :
                     // InternalPipelineParser.g:14199:2: rule__Event__UnorderedGroup_0_2_2__0
                     {
@@ -46019,9 +46041,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             // InternalPipelineParser.g:14213:3: ( ({...}? => ( ( ( rule__Event__Group_0_2_2_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_1__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_2__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_3__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_4__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_5__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_6__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_7__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_8__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_9__0 ) ) ) ) )
             {
             // InternalPipelineParser.g:14213:3: ( ({...}? => ( ( ( rule__Event__Group_0_2_2_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_1__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_2__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_3__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_4__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_5__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_6__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_7__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_8__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_9__0 ) ) ) ) )
-            int alt160=10;
-            alt160 = dfa160.predict(input);
-            switch (alt160) {
+            int alt162=10;
+            alt162 = dfa162.predict(input);
+            switch (alt162) {
                 case 1 :
                     // InternalPipelineParser.g:14214:3: ({...}? => ( ( ( rule__Event__Group_0_2_2_0__0 ) ) ) )
                     {
@@ -46521,9 +46543,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:14378:2: ( rule__Event__UnorderedGroup_0_2_2__1 )?
-            int alt161=2;
-            alt161 = dfa161.predict(input);
-            switch (alt161) {
+            int alt163=2;
+            alt163 = dfa163.predict(input);
+            switch (alt163) {
                 case 1 :
                     // InternalPipelineParser.g:14378:2: rule__Event__UnorderedGroup_0_2_2__1
                     {
@@ -46572,9 +46594,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:14390:2: ( rule__Event__UnorderedGroup_0_2_2__2 )?
-            int alt162=2;
-            alt162 = dfa162.predict(input);
-            switch (alt162) {
+            int alt164=2;
+            alt164 = dfa164.predict(input);
+            switch (alt164) {
                 case 1 :
                     // InternalPipelineParser.g:14390:2: rule__Event__UnorderedGroup_0_2_2__2
                     {
@@ -46623,9 +46645,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:14402:2: ( rule__Event__UnorderedGroup_0_2_2__3 )?
-            int alt163=2;
-            alt163 = dfa163.predict(input);
-            switch (alt163) {
+            int alt165=2;
+            alt165 = dfa165.predict(input);
+            switch (alt165) {
                 case 1 :
                     // InternalPipelineParser.g:14402:2: rule__Event__UnorderedGroup_0_2_2__3
                     {
@@ -46674,9 +46696,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:14414:2: ( rule__Event__UnorderedGroup_0_2_2__4 )?
-            int alt164=2;
-            alt164 = dfa164.predict(input);
-            switch (alt164) {
+            int alt166=2;
+            alt166 = dfa166.predict(input);
+            switch (alt166) {
                 case 1 :
                     // InternalPipelineParser.g:14414:2: rule__Event__UnorderedGroup_0_2_2__4
                     {
@@ -46725,9 +46747,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:14426:2: ( rule__Event__UnorderedGroup_0_2_2__5 )?
-            int alt165=2;
-            alt165 = dfa165.predict(input);
-            switch (alt165) {
+            int alt167=2;
+            alt167 = dfa167.predict(input);
+            switch (alt167) {
                 case 1 :
                     // InternalPipelineParser.g:14426:2: rule__Event__UnorderedGroup_0_2_2__5
                     {
@@ -46776,9 +46798,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:14438:2: ( rule__Event__UnorderedGroup_0_2_2__6 )?
-            int alt166=2;
-            alt166 = dfa166.predict(input);
-            switch (alt166) {
+            int alt168=2;
+            alt168 = dfa168.predict(input);
+            switch (alt168) {
                 case 1 :
                     // InternalPipelineParser.g:14438:2: rule__Event__UnorderedGroup_0_2_2__6
                     {
@@ -46827,9 +46849,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:14450:2: ( rule__Event__UnorderedGroup_0_2_2__7 )?
-            int alt167=2;
-            alt167 = dfa167.predict(input);
-            switch (alt167) {
+            int alt169=2;
+            alt169 = dfa169.predict(input);
+            switch (alt169) {
                 case 1 :
                     // InternalPipelineParser.g:14450:2: rule__Event__UnorderedGroup_0_2_2__7
                     {
@@ -46878,9 +46900,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:14462:2: ( rule__Event__UnorderedGroup_0_2_2__8 )?
-            int alt168=2;
-            alt168 = dfa168.predict(input);
-            switch (alt168) {
+            int alt170=2;
+            alt170 = dfa170.predict(input);
+            switch (alt170) {
                 case 1 :
                     // InternalPipelineParser.g:14462:2: rule__Event__UnorderedGroup_0_2_2__8
                     {
@@ -46929,9 +46951,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:14474:2: ( rule__Event__UnorderedGroup_0_2_2__9 )?
-            int alt169=2;
-            alt169 = dfa169.predict(input);
-            switch (alt169) {
+            int alt171=2;
+            alt171 = dfa171.predict(input);
+            switch (alt171) {
                 case 1 :
                     // InternalPipelineParser.g:14474:2: rule__Event__UnorderedGroup_0_2_2__9
                     {
@@ -47009,16 +47031,16 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             // InternalPipelineParser.g:14498:2: ( rule__TriggerSchedule__UnorderedGroup_1_3__0 )?
             {
             // InternalPipelineParser.g:14498:2: ( rule__TriggerSchedule__UnorderedGroup_1_3__0 )?
-            int alt170=2;
-            int LA170_0 = input.LA(1);
+            int alt172=2;
+            int LA172_0 = input.LA(1);
 
-            if ( LA170_0 == Batch && getUnorderedGroupHelper().canSelect(grammarAccess.getTriggerScheduleAccess().getUnorderedGroup_1_3(), 0) ) {
-                alt170=1;
+            if ( LA172_0 == Batch && getUnorderedGroupHelper().canSelect(grammarAccess.getTriggerScheduleAccess().getUnorderedGroup_1_3(), 0) ) {
+                alt172=1;
             }
-            else if ( LA170_0 == Always && getUnorderedGroupHelper().canSelect(grammarAccess.getTriggerScheduleAccess().getUnorderedGroup_1_3(), 1) ) {
-                alt170=1;
+            else if ( LA172_0 == Always && getUnorderedGroupHelper().canSelect(grammarAccess.getTriggerScheduleAccess().getUnorderedGroup_1_3(), 1) ) {
+                alt172=1;
             }
-            switch (alt170) {
+            switch (alt172) {
                 case 1 :
                     // InternalPipelineParser.g:14498:2: rule__TriggerSchedule__UnorderedGroup_1_3__0
                     {
@@ -47064,22 +47086,22 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             // InternalPipelineParser.g:14512:3: ( ({...}? => ( ( ( rule__TriggerSchedule__Group_1_3_0__0 ) ) ) ) | ({...}? => ( ( ( rule__TriggerSchedule__Group_1_3_1__0 ) ) ) ) )
             {
             // InternalPipelineParser.g:14512:3: ( ({...}? => ( ( ( rule__TriggerSchedule__Group_1_3_0__0 ) ) ) ) | ({...}? => ( ( ( rule__TriggerSchedule__Group_1_3_1__0 ) ) ) ) )
-            int alt171=2;
-            int LA171_0 = input.LA(1);
+            int alt173=2;
+            int LA173_0 = input.LA(1);
 
-            if ( LA171_0 == Batch && getUnorderedGroupHelper().canSelect(grammarAccess.getTriggerScheduleAccess().getUnorderedGroup_1_3(), 0) ) {
-                alt171=1;
+            if ( LA173_0 == Batch && getUnorderedGroupHelper().canSelect(grammarAccess.getTriggerScheduleAccess().getUnorderedGroup_1_3(), 0) ) {
+                alt173=1;
             }
-            else if ( LA171_0 == Always && getUnorderedGroupHelper().canSelect(grammarAccess.getTriggerScheduleAccess().getUnorderedGroup_1_3(), 1) ) {
-                alt171=2;
+            else if ( LA173_0 == Always && getUnorderedGroupHelper().canSelect(grammarAccess.getTriggerScheduleAccess().getUnorderedGroup_1_3(), 1) ) {
+                alt173=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 171, 0, input);
+                    new NoViableAltException("", 173, 0, input);
 
                 throw nvae;
             }
-            switch (alt171) {
+            switch (alt173) {
                 case 1 :
                     // InternalPipelineParser.g:14513:3: ({...}? => ( ( ( rule__TriggerSchedule__Group_1_3_0__0 ) ) ) )
                     {
@@ -47211,16 +47233,16 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:14557:2: ( rule__TriggerSchedule__UnorderedGroup_1_3__1 )?
-            int alt172=2;
-            int LA172_0 = input.LA(1);
+            int alt174=2;
+            int LA174_0 = input.LA(1);
 
-            if ( LA172_0 == Batch && getUnorderedGroupHelper().canSelect(grammarAccess.getTriggerScheduleAccess().getUnorderedGroup_1_3(), 0) ) {
-                alt172=1;
+            if ( LA174_0 == Batch && getUnorderedGroupHelper().canSelect(grammarAccess.getTriggerScheduleAccess().getUnorderedGroup_1_3(), 0) ) {
+                alt174=1;
             }
-            else if ( LA172_0 == Always && getUnorderedGroupHelper().canSelect(grammarAccess.getTriggerScheduleAccess().getUnorderedGroup_1_3(), 1) ) {
-                alt172=1;
+            else if ( LA174_0 == Always && getUnorderedGroupHelper().canSelect(grammarAccess.getTriggerScheduleAccess().getUnorderedGroup_1_3(), 1) ) {
+                alt174=1;
             }
-            switch (alt172) {
+            switch (alt174) {
                 case 1 :
                     // InternalPipelineParser.g:14557:2: rule__TriggerSchedule__UnorderedGroup_1_3__1
                     {
@@ -47336,37 +47358,37 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             // InternalPipelineParser.g:14595:3: ( ({...}? => ( ( ( rule__Stage__Group_1_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Stage__Group_1_1__0 ) ) ) ) | ({...}? => ( ( ( rule__Stage__Group_1_2__0 ) ) ) ) | ({...}? => ( ( ( rule__Stage__Group_1_3__0 ) ) ) ) | ({...}? => ( ( ( rule__Stage__Group_1_4__0 ) ) ) ) | ({...}? => ( ( ( rule__Stage__Group_1_5__0 ) ) ) ) | ({...}? => ( ( ( rule__Stage__Group_1_6__0 ) ) ) ) )
             {
             // InternalPipelineParser.g:14595:3: ( ({...}? => ( ( ( rule__Stage__Group_1_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Stage__Group_1_1__0 ) ) ) ) | ({...}? => ( ( ( rule__Stage__Group_1_2__0 ) ) ) ) | ({...}? => ( ( ( rule__Stage__Group_1_3__0 ) ) ) ) | ({...}? => ( ( ( rule__Stage__Group_1_4__0 ) ) ) ) | ({...}? => ( ( ( rule__Stage__Group_1_5__0 ) ) ) ) | ({...}? => ( ( ( rule__Stage__Group_1_6__0 ) ) ) ) )
-            int alt173=7;
-            int LA173_0 = input.LA(1);
+            int alt175=7;
+            int LA175_0 = input.LA(1);
 
-            if ( LA173_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 0) ) {
-                alt173=1;
+            if ( LA175_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 0) ) {
+                alt175=1;
             }
-            else if ( LA173_0 == Pool && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 1) ) {
-                alt173=2;
+            else if ( LA175_0 == Pool && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 1) ) {
+                alt175=2;
             }
-            else if ( LA173_0 == Condition && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 2) ) {
-                alt173=3;
+            else if ( LA175_0 == Condition && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 2) ) {
+                alt175=3;
             }
-            else if ( LA173_0 == IsSkippable && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 3) ) {
-                alt173=4;
+            else if ( LA175_0 == IsSkippable && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 3) ) {
+                alt175=4;
             }
-            else if ( LA173_0 == Variables && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 4) ) {
-                alt173=5;
+            else if ( LA175_0 == Variables && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 4) ) {
+                alt175=5;
             }
-            else if ( LA173_0 == DependsOn && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 5) ) {
-                alt173=6;
+            else if ( LA175_0 == DependsOn && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 5) ) {
+                alt175=6;
             }
-            else if ( LA173_0 == Jobs && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 6) ) {
-                alt173=7;
+            else if ( LA175_0 == Jobs && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 6) ) {
+                alt175=7;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 173, 0, input);
+                    new NoViableAltException("", 175, 0, input);
 
                 throw nvae;
             }
-            switch (alt173) {
+            switch (alt175) {
                 case 1 :
                     // InternalPipelineParser.g:14596:3: ({...}? => ( ( ( rule__Stage__Group_1_0__0 ) ) ) )
                     {
@@ -47728,31 +47750,31 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:14715:2: ( rule__Stage__UnorderedGroup_1__1 )?
-            int alt174=2;
-            int LA174_0 = input.LA(1);
+            int alt176=2;
+            int LA176_0 = input.LA(1);
 
-            if ( LA174_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 0) ) {
-                alt174=1;
+            if ( LA176_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 0) ) {
+                alt176=1;
             }
-            else if ( LA174_0 == Pool && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 1) ) {
-                alt174=1;
+            else if ( LA176_0 == Pool && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 1) ) {
+                alt176=1;
             }
-            else if ( LA174_0 == Condition && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 2) ) {
-                alt174=1;
+            else if ( LA176_0 == Condition && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 2) ) {
+                alt176=1;
             }
-            else if ( LA174_0 == IsSkippable && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 3) ) {
-                alt174=1;
+            else if ( LA176_0 == IsSkippable && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 3) ) {
+                alt176=1;
             }
-            else if ( LA174_0 == Variables && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 4) ) {
-                alt174=1;
+            else if ( LA176_0 == Variables && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 4) ) {
+                alt176=1;
             }
-            else if ( LA174_0 == DependsOn && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 5) ) {
-                alt174=1;
+            else if ( LA176_0 == DependsOn && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 5) ) {
+                alt176=1;
             }
-            else if ( LA174_0 == Jobs && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 6) ) {
-                alt174=1;
+            else if ( LA176_0 == Jobs && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 6) ) {
+                alt176=1;
             }
-            switch (alt174) {
+            switch (alt176) {
                 case 1 :
                     // InternalPipelineParser.g:14715:2: rule__Stage__UnorderedGroup_1__1
                     {
@@ -47801,31 +47823,31 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:14727:2: ( rule__Stage__UnorderedGroup_1__2 )?
-            int alt175=2;
-            int LA175_0 = input.LA(1);
+            int alt177=2;
+            int LA177_0 = input.LA(1);
 
-            if ( LA175_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 0) ) {
-                alt175=1;
+            if ( LA177_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 0) ) {
+                alt177=1;
             }
-            else if ( LA175_0 == Pool && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 1) ) {
-                alt175=1;
+            else if ( LA177_0 == Pool && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 1) ) {
+                alt177=1;
             }
-            else if ( LA175_0 == Condition && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 2) ) {
-                alt175=1;
+            else if ( LA177_0 == Condition && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 2) ) {
+                alt177=1;
             }
-            else if ( LA175_0 == IsSkippable && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 3) ) {
-                alt175=1;
+            else if ( LA177_0 == IsSkippable && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 3) ) {
+                alt177=1;
             }
-            else if ( LA175_0 == Variables && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 4) ) {
-                alt175=1;
+            else if ( LA177_0 == Variables && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 4) ) {
+                alt177=1;
             }
-            else if ( LA175_0 == DependsOn && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 5) ) {
-                alt175=1;
+            else if ( LA177_0 == DependsOn && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 5) ) {
+                alt177=1;
             }
-            else if ( LA175_0 == Jobs && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 6) ) {
-                alt175=1;
+            else if ( LA177_0 == Jobs && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 6) ) {
+                alt177=1;
             }
-            switch (alt175) {
+            switch (alt177) {
                 case 1 :
                     // InternalPipelineParser.g:14727:2: rule__Stage__UnorderedGroup_1__2
                     {
@@ -47874,31 +47896,31 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:14739:2: ( rule__Stage__UnorderedGroup_1__3 )?
-            int alt176=2;
-            int LA176_0 = input.LA(1);
+            int alt178=2;
+            int LA178_0 = input.LA(1);
 
-            if ( LA176_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 0) ) {
-                alt176=1;
+            if ( LA178_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 0) ) {
+                alt178=1;
             }
-            else if ( LA176_0 == Pool && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 1) ) {
-                alt176=1;
+            else if ( LA178_0 == Pool && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 1) ) {
+                alt178=1;
             }
-            else if ( LA176_0 == Condition && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 2) ) {
-                alt176=1;
+            else if ( LA178_0 == Condition && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 2) ) {
+                alt178=1;
             }
-            else if ( LA176_0 == IsSkippable && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 3) ) {
-                alt176=1;
+            else if ( LA178_0 == IsSkippable && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 3) ) {
+                alt178=1;
             }
-            else if ( LA176_0 == Variables && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 4) ) {
-                alt176=1;
+            else if ( LA178_0 == Variables && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 4) ) {
+                alt178=1;
             }
-            else if ( LA176_0 == DependsOn && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 5) ) {
-                alt176=1;
+            else if ( LA178_0 == DependsOn && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 5) ) {
+                alt178=1;
             }
-            else if ( LA176_0 == Jobs && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 6) ) {
-                alt176=1;
+            else if ( LA178_0 == Jobs && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 6) ) {
+                alt178=1;
             }
-            switch (alt176) {
+            switch (alt178) {
                 case 1 :
                     // InternalPipelineParser.g:14739:2: rule__Stage__UnorderedGroup_1__3
                     {
@@ -47947,31 +47969,31 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:14751:2: ( rule__Stage__UnorderedGroup_1__4 )?
-            int alt177=2;
-            int LA177_0 = input.LA(1);
+            int alt179=2;
+            int LA179_0 = input.LA(1);
 
-            if ( LA177_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 0) ) {
-                alt177=1;
+            if ( LA179_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 0) ) {
+                alt179=1;
             }
-            else if ( LA177_0 == Pool && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 1) ) {
-                alt177=1;
+            else if ( LA179_0 == Pool && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 1) ) {
+                alt179=1;
             }
-            else if ( LA177_0 == Condition && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 2) ) {
-                alt177=1;
+            else if ( LA179_0 == Condition && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 2) ) {
+                alt179=1;
             }
-            else if ( LA177_0 == IsSkippable && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 3) ) {
-                alt177=1;
+            else if ( LA179_0 == IsSkippable && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 3) ) {
+                alt179=1;
             }
-            else if ( LA177_0 == Variables && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 4) ) {
-                alt177=1;
+            else if ( LA179_0 == Variables && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 4) ) {
+                alt179=1;
             }
-            else if ( LA177_0 == DependsOn && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 5) ) {
-                alt177=1;
+            else if ( LA179_0 == DependsOn && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 5) ) {
+                alt179=1;
             }
-            else if ( LA177_0 == Jobs && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 6) ) {
-                alt177=1;
+            else if ( LA179_0 == Jobs && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 6) ) {
+                alt179=1;
             }
-            switch (alt177) {
+            switch (alt179) {
                 case 1 :
                     // InternalPipelineParser.g:14751:2: rule__Stage__UnorderedGroup_1__4
                     {
@@ -48020,31 +48042,31 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:14763:2: ( rule__Stage__UnorderedGroup_1__5 )?
-            int alt178=2;
-            int LA178_0 = input.LA(1);
+            int alt180=2;
+            int LA180_0 = input.LA(1);
 
-            if ( LA178_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 0) ) {
-                alt178=1;
+            if ( LA180_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 0) ) {
+                alt180=1;
             }
-            else if ( LA178_0 == Pool && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 1) ) {
-                alt178=1;
+            else if ( LA180_0 == Pool && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 1) ) {
+                alt180=1;
             }
-            else if ( LA178_0 == Condition && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 2) ) {
-                alt178=1;
+            else if ( LA180_0 == Condition && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 2) ) {
+                alt180=1;
             }
-            else if ( LA178_0 == IsSkippable && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 3) ) {
-                alt178=1;
+            else if ( LA180_0 == IsSkippable && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 3) ) {
+                alt180=1;
             }
-            else if ( LA178_0 == Variables && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 4) ) {
-                alt178=1;
+            else if ( LA180_0 == Variables && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 4) ) {
+                alt180=1;
             }
-            else if ( LA178_0 == DependsOn && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 5) ) {
-                alt178=1;
+            else if ( LA180_0 == DependsOn && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 5) ) {
+                alt180=1;
             }
-            else if ( LA178_0 == Jobs && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 6) ) {
-                alt178=1;
+            else if ( LA180_0 == Jobs && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 6) ) {
+                alt180=1;
             }
-            switch (alt178) {
+            switch (alt180) {
                 case 1 :
                     // InternalPipelineParser.g:14763:2: rule__Stage__UnorderedGroup_1__5
                     {
@@ -48093,31 +48115,31 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:14775:2: ( rule__Stage__UnorderedGroup_1__6 )?
-            int alt179=2;
-            int LA179_0 = input.LA(1);
+            int alt181=2;
+            int LA181_0 = input.LA(1);
 
-            if ( LA179_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 0) ) {
-                alt179=1;
+            if ( LA181_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 0) ) {
+                alt181=1;
             }
-            else if ( LA179_0 == Pool && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 1) ) {
-                alt179=1;
+            else if ( LA181_0 == Pool && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 1) ) {
+                alt181=1;
             }
-            else if ( LA179_0 == Condition && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 2) ) {
-                alt179=1;
+            else if ( LA181_0 == Condition && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 2) ) {
+                alt181=1;
             }
-            else if ( LA179_0 == IsSkippable && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 3) ) {
-                alt179=1;
+            else if ( LA181_0 == IsSkippable && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 3) ) {
+                alt181=1;
             }
-            else if ( LA179_0 == Variables && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 4) ) {
-                alt179=1;
+            else if ( LA181_0 == Variables && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 4) ) {
+                alt181=1;
             }
-            else if ( LA179_0 == DependsOn && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 5) ) {
-                alt179=1;
+            else if ( LA181_0 == DependsOn && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 5) ) {
+                alt181=1;
             }
-            else if ( LA179_0 == Jobs && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 6) ) {
-                alt179=1;
+            else if ( LA181_0 == Jobs && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1(), 6) ) {
+                alt181=1;
             }
-            switch (alt179) {
+            switch (alt181) {
                 case 1 :
                     // InternalPipelineParser.g:14775:2: rule__Stage__UnorderedGroup_1__6
                     {
@@ -48233,22 +48255,22 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             // InternalPipelineParser.g:14813:3: ( ({...}? => ( ( ( rule__Stage__Group_1_1_1_1_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Stage__Group_1_1_1_1_1__0 ) ) ) ) )
             {
             // InternalPipelineParser.g:14813:3: ( ({...}? => ( ( ( rule__Stage__Group_1_1_1_1_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Stage__Group_1_1_1_1_1__0 ) ) ) ) )
-            int alt180=2;
-            int LA180_0 = input.LA(1);
+            int alt182=2;
+            int LA182_0 = input.LA(1);
 
-            if ( LA180_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1_1_1_1(), 0) ) {
-                alt180=1;
+            if ( LA182_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1_1_1_1(), 0) ) {
+                alt182=1;
             }
-            else if ( ( LA180_0 == Demands || LA180_0 == RULE_END ) && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1_1_1_1(), 1) ) {
-                alt180=2;
+            else if ( ( LA182_0 == Demands || LA182_0 == RULE_END ) && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1_1_1_1(), 1) ) {
+                alt182=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 180, 0, input);
+                    new NoViableAltException("", 182, 0, input);
 
                 throw nvae;
             }
-            switch (alt180) {
+            switch (alt182) {
                 case 1 :
                     // InternalPipelineParser.g:14814:3: ({...}? => ( ( ( rule__Stage__Group_1_1_1_1_0__0 ) ) ) )
                     {
@@ -48380,20 +48402,20 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:14858:2: ( rule__Stage__UnorderedGroup_1_1_1_1__1 )?
-            int alt181=2;
-            int LA181_0 = input.LA(1);
+            int alt183=2;
+            int LA183_0 = input.LA(1);
 
-            if ( (LA181_0==RULE_BEGIN) ) {
-                int LA181_1 = input.LA(2);
+            if ( (LA183_0==RULE_BEGIN) ) {
+                int LA183_1 = input.LA(2);
 
-                if ( LA181_1 == Name && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1_1_1_1(), 0) ) {
-                    alt181=1;
+                if ( LA183_1 == Name && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1_1_1_1(), 0) ) {
+                    alt183=1;
                 }
             }
-            else if ( ( LA181_0 == Demands || LA181_0 == RULE_END ) && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1_1_1_1(), 1) ) {
-                alt181=1;
+            else if ( ( LA183_0 == Demands || LA183_0 == RULE_END ) && getUnorderedGroupHelper().canSelect(grammarAccess.getStageAccess().getUnorderedGroup_1_1_1_1(), 1) ) {
+                alt183=1;
             }
-            switch (alt181) {
+            switch (alt183) {
                 case 1 :
                     // InternalPipelineParser.g:14858:2: rule__Stage__UnorderedGroup_1_1_1_1__1
                     {
@@ -48509,9 +48531,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             // InternalPipelineParser.g:14896:3: ( ({...}? => ( ( ( rule__Job__Group_1_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Job__Group_1_1__0 ) ) ) ) | ({...}? => ( ( ( rule__Job__Group_1_2__0 ) ) ) ) )
             {
             // InternalPipelineParser.g:14896:3: ( ({...}? => ( ( ( rule__Job__Group_1_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Job__Group_1_1__0 ) ) ) ) | ({...}? => ( ( ( rule__Job__Group_1_2__0 ) ) ) ) )
-            int alt182=3;
-            alt182 = dfa182.predict(input);
-            switch (alt182) {
+            int alt184=3;
+            alt184 = dfa184.predict(input);
+            switch (alt184) {
                 case 1 :
                     // InternalPipelineParser.g:14897:3: ({...}? => ( ( ( rule__Job__Group_1_0__0 ) ) ) )
                     {
@@ -48689,9 +48711,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:14956:2: ( rule__Job__UnorderedGroup_1__1 )?
-            int alt183=2;
-            alt183 = dfa183.predict(input);
-            switch (alt183) {
+            int alt185=2;
+            alt185 = dfa185.predict(input);
+            switch (alt185) {
                 case 1 :
                     // InternalPipelineParser.g:14956:2: rule__Job__UnorderedGroup_1__1
                     {
@@ -48740,9 +48762,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             state._fsp--;
 
             // InternalPipelineParser.g:14968:2: ( rule__Job__UnorderedGroup_1__2 )?
-            int alt184=2;
-            alt184 = dfa184.predict(input);
-            switch (alt184) {
+            int alt186=2;
+            alt186 = dfa186.predict(input);
+            switch (alt186) {
                 case 1 :
                     // InternalPipelineParser.g:14968:2: rule__Job__UnorderedGroup_1__2
                     {
@@ -49802,9 +49824,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "rule__Configurations__PplVariablesAssignment_9_1"
 
 
-    // $ANTLR start "rule__Configurations__ParasAssignment_10_1_1"
-    // InternalPipelineParser.g:15346:1: rule__Configurations__ParasAssignment_10_1_1 : ( ruleParameterValue ) ;
-    public final void rule__Configurations__ParasAssignment_10_1_1() throws RecognitionException {
+    // $ANTLR start "rule__Configurations__ParameterValuesAssignment_10_1_1"
+    // InternalPipelineParser.g:15346:1: rule__Configurations__ParameterValuesAssignment_10_1_1 : ( ruleParameterValue ) ;
+    public final void rule__Configurations__ParameterValuesAssignment_10_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
@@ -49815,13 +49837,13 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             // InternalPipelineParser.g:15351:2: ( ruleParameterValue )
             // InternalPipelineParser.g:15352:3: ruleParameterValue
             {
-             before(grammarAccess.getConfigurationsAccess().getParasParameterValueParserRuleCall_10_1_1_0()); 
+             before(grammarAccess.getConfigurationsAccess().getParameterValuesParameterValueParserRuleCall_10_1_1_0()); 
             pushFollow(FOLLOW_2);
             ruleParameterValue();
 
             state._fsp--;
 
-             after(grammarAccess.getConfigurationsAccess().getParasParameterValueParserRuleCall_10_1_1_0()); 
+             after(grammarAccess.getConfigurationsAccess().getParameterValuesParameterValueParserRuleCall_10_1_1_0()); 
 
             }
 
@@ -49840,7 +49862,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "rule__Configurations__ParasAssignment_10_1_1"
+    // $ANTLR end "rule__Configurations__ParameterValuesAssignment_10_1_1"
 
 
     // $ANTLR start "rule__Configurations__ExtendOrIncludeAssignment_11_0"
@@ -53469,8 +53491,6 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
     protected DFA48 dfa48 = new DFA48(this);
     protected DFA50 dfa50 = new DFA50(this);
     protected DFA61 dfa61 = new DFA61(this);
-    protected DFA142 dfa142 = new DFA142(this);
-    protected DFA143 dfa143 = new DFA143(this);
     protected DFA144 dfa144 = new DFA144(this);
     protected DFA145 dfa145 = new DFA145(this);
     protected DFA146 dfa146 = new DFA146(this);
@@ -53482,9 +53502,9 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
     protected DFA152 dfa152 = new DFA152(this);
     protected DFA153 dfa153 = new DFA153(this);
     protected DFA154 dfa154 = new DFA154(this);
+    protected DFA155 dfa155 = new DFA155(this);
     protected DFA156 dfa156 = new DFA156(this);
     protected DFA158 dfa158 = new DFA158(this);
-    protected DFA159 dfa159 = new DFA159(this);
     protected DFA160 dfa160 = new DFA160(this);
     protected DFA161 dfa161 = new DFA161(this);
     protected DFA162 dfa162 = new DFA162(this);
@@ -53495,9 +53515,11 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
     protected DFA167 dfa167 = new DFA167(this);
     protected DFA168 dfa168 = new DFA168(this);
     protected DFA169 dfa169 = new DFA169(this);
-    protected DFA182 dfa182 = new DFA182(this);
-    protected DFA183 dfa183 = new DFA183(this);
+    protected DFA170 dfa170 = new DFA170(this);
+    protected DFA171 dfa171 = new DFA171(this);
     protected DFA184 dfa184 = new DFA184(this);
+    protected DFA185 dfa185 = new DFA185(this);
+    protected DFA186 dfa186 = new DFA186(this);
     static final String dfa_1s = "\31\uffff";
     static final String dfa_2s = "\2\uffff\2\1\25\uffff";
     static final String dfa_3s = "\1\4\1\uffff\2\4\1\uffff\1\24\1\172\1\uffff\1\u00d6\7\u00d1\1\u00d6\1\24\7\u00d1";
@@ -53510,7 +53532,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             "\10\1\2\uffff\3\1\1\uffff\1\1\5\uffff\2\1\1\uffff\1\1\3\uffff\4\1\3\uffff\1\1\2\uffff\2\1\5\uffff\2\1\13\uffff\2\1\1\uffff\1\1\1\uffff\1\1\2\uffff\1\1\1\uffff\1\1\2\uffff\2\1\5\uffff\2\1\3\uffff\2\1\4\uffff\1\1\14\uffff\1\1\6\uffff\1\1\1\uffff\1\1\10\uffff\1\1\1\uffff\1\1\5\uffff\1\1\5\uffff\3\1\1\uffff\3\1\1\uffff\1\1\3\uffff\1\1\1\uffff\1\1\1\uffff\2\1\6\uffff\1\1\1\uffff\1\1\2\uffff\1\1\6\uffff\1\1\3\uffff\3\1\2\uffff\1\1\2\uffff\1\1\3\uffff\1\1\20\uffff\1\1\1\uffff\2\1\2\uffff\1\1\6\uffff\1\5\2\1\2\uffff\1\1",
             "\10\1\2\uffff\3\1\1\uffff\1\1\5\uffff\2\1\1\uffff\1\1\3\uffff\4\1\3\uffff\1\1\2\uffff\2\1\5\uffff\2\1\13\uffff\2\1\1\uffff\1\1\1\uffff\1\1\2\uffff\1\1\1\uffff\1\1\2\uffff\2\1\5\uffff\2\1\3\uffff\2\1\4\uffff\1\1\14\uffff\1\1\6\uffff\1\1\1\uffff\1\1\10\uffff\1\1\1\uffff\1\1\5\uffff\1\1\5\uffff\3\1\1\uffff\3\1\1\uffff\1\1\3\uffff\1\1\1\uffff\1\1\1\uffff\2\1\6\uffff\1\1\1\uffff\1\1\2\uffff\1\1\6\uffff\1\1\3\uffff\3\1\2\uffff\1\1\2\uffff\1\1\3\uffff\1\1\20\uffff\1\1\1\uffff\2\1\2\uffff\1\1\6\uffff\1\5\2\1\2\uffff\1\1",
             "",
-            "\1\7\23\uffff\1\7\23\uffff\2\7\33\uffff\1\7\2\uffff\1\7\35\uffff\1\4\5\uffff\1\4\14\uffff\1\7\2\uffff\1\4\13\uffff\1\7\6\uffff\1\7\7\uffff\1\7\21\uffff\1\7\23\uffff\1\4\1\uffff\1\4\7\uffff\1\6\1\7",
+            "\1\1\23\uffff\1\1\23\uffff\2\1\33\uffff\1\1\2\uffff\1\1\35\uffff\1\4\5\uffff\1\4\14\uffff\1\1\2\uffff\1\4\13\uffff\1\1\6\uffff\1\1\7\uffff\1\1\21\uffff\1\1\23\uffff\1\4\1\uffff\1\4\7\uffff\1\6\1\7",
             "\1\7\5\uffff\1\7\17\uffff\1\7\100\uffff\1\10\1\uffff\1\7\7\uffff\1\7",
             "",
             "\1\15\1\17\1\12\1\13\1\16\2\uffff\1\14\2\uffff\1\11",
@@ -53747,161 +53769,6 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
     static final short[] dfa_29 = DFA.unpackEncodedString(dfa_29s);
     static final short[][] dfa_30 = unpackEncodedStringArray(dfa_30s);
 
-    class DFA142 extends DFA {
-
-        public DFA142(BaseRecognizer recognizer) {
-            this.recognizer = recognizer;
-            this.decisionNumber = 142;
-            this.eot = dfa_24;
-            this.eof = dfa_25;
-            this.min = dfa_26;
-            this.max = dfa_27;
-            this.accept = dfa_28;
-            this.special = dfa_29;
-            this.transition = dfa_30;
-        }
-        public String getDescription() {
-            return "13680:2: ( rule__Configurations__UnorderedGroup__0 )?";
-        }
-        public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
-            TokenStream input = (TokenStream)_input;
-        	int _s = s;
-            switch ( s ) {
-                    case 0 : 
-                        int LA142_0 = input.LA(1);
-
-                         
-                        int index142_0 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( LA142_0 == Name && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 0) ) {s = 1;}
-
-                        else if ( LA142_0 == RunName && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 1) ) {s = 2;}
-
-                        else if ( ( LA142_0 == WorkingDirectory || LA142_0 == Defaults || LA142_0 == RULE_END ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 2) ) {s = 3;}
-
-                        else if ( LA142_0 == Env && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 3) ) {s = 4;}
-
-                        else if ( LA142_0 == Permission && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 4) ) {s = 5;}
-
-                        else if ( LA142_0 == Concurrency && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 5) ) {s = 6;}
-
-                        else if ( LA142_0 == Pool && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 6) ) {s = 7;}
-
-                        else if ( LA142_0 == Resources && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 7) ) {s = 8;}
-
-                        else if ( LA142_0 == Version && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 8) ) {s = 9;}
-
-                        else if ( LA142_0 == Variables && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 9) ) {s = 10;}
-
-                        else if ( LA142_0 == Parameters && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 10) ) {s = 11;}
-
-                        else if ( ( LA142_0 == Extends || LA142_0 == Include ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 11) ) {s = 12;}
-
-                        else if ( (LA142_0==EOF||(LA142_0>=Pull_request_review_comment && LA142_0<=Repository_dispatch)||(LA142_0>=Deployment_status && LA142_0<=Workflow_dispatch)||LA142_0==Registry_package||(LA142_0>=Merge_requests && LA142_0<=Project_column)||LA142_0==WorkflowRules||(LA142_0>=Issue_comment && LA142_0<=Workflow_call)||LA142_0==LockBehavior||(LA142_0>=Project_card && LA142_0<=Pull_request)||(LA142_0>=Workflow_run && LA142_0<=Check_suite)||(LA142_0>=AutoCancel && LA142_0<=Conditions)||LA142_0==Deployment||LA142_0==Page_build||LA142_0==PlanBranch||LA142_0==Repository||(LA142_0>=Bitbucket && LA142_0<=Check_run)||(LA142_0>=Milestone && LA142_0<=Pipelines)||(LA142_0>=Scheduled && LA142_0<=Schedules)||LA142_0==Branches||LA142_0==Schedule||LA142_0==Changes||LA142_0==Default||LA142_0==Project||LA142_0==Release||LA142_0==Trigger||(LA142_0>=Create && LA142_0<=Delete)||(LA142_0>=Drafts && LA142_0<=Gollum)||LA142_0==Issues||LA142_0==Public||LA142_0==Remote||(LA142_0>=Stages && LA142_0<=Status)||LA142_0==Label||LA142_0==Paths||LA142_0==Rules||LA142_0==Watch||(LA142_0>=Cron && LA142_0<=Jobs)||LA142_0==Only||LA142_0==Push||LA142_0==Tags||(LA142_0>=On && LA142_0<=Pr)||LA142_0==RULE_ID) ) {s = 13;}
-
-                         
-                        input.seek(index142_0);
-                        if ( s>=0 ) return s;
-                        break;
-            }
-            NoViableAltException nvae =
-                new NoViableAltException(getDescription(), 142, _s, input);
-            error(nvae);
-            throw nvae;
-        }
-    }
-    static final String dfa_31s = "\15\uffff";
-    static final String dfa_32s = "\1\21\14\uffff";
-    static final String dfa_33s = "\1\u00dc\14\uffff";
-    static final String dfa_34s = "\1\uffff\1\1\1\2\1\3\1\4\1\5\1\6\1\7\1\10\1\11\1\12\1\13\1\14";
-    static final String dfa_35s = "\1\0\14\uffff}>";
-    static final String[] dfa_36s = {
-            "\1\3\40\uffff\1\6\20\uffff\1\13\1\5\17\uffff\1\10\3\uffff\1\12\5\uffff\1\3\11\uffff\1\2\14\uffff\1\14\1\uffff\1\14\14\uffff\1\11\57\uffff\1\1\3\uffff\1\7\13\uffff\1\4\27\uffff\1\3",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-    };
-
-    static final short[] dfa_31 = DFA.unpackEncodedString(dfa_31s);
-    static final char[] dfa_32 = DFA.unpackEncodedStringToUnsignedChars(dfa_32s);
-    static final char[] dfa_33 = DFA.unpackEncodedStringToUnsignedChars(dfa_33s);
-    static final short[] dfa_34 = DFA.unpackEncodedString(dfa_34s);
-    static final short[] dfa_35 = DFA.unpackEncodedString(dfa_35s);
-    static final short[][] dfa_36 = unpackEncodedStringArray(dfa_36s);
-
-    class DFA143 extends DFA {
-
-        public DFA143(BaseRecognizer recognizer) {
-            this.recognizer = recognizer;
-            this.decisionNumber = 143;
-            this.eot = dfa_31;
-            this.eof = dfa_31;
-            this.min = dfa_32;
-            this.max = dfa_33;
-            this.accept = dfa_34;
-            this.special = dfa_35;
-            this.transition = dfa_36;
-        }
-        public String getDescription() {
-            return "13694:3: ( ({...}? => ( ( ( rule__Configurations__Group_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_1__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__UnorderedGroup_2 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_3__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_4__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_5__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_6__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_7__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_8__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_9__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_10__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_11__0 ) ) ) ) )";
-        }
-        public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
-            TokenStream input = (TokenStream)_input;
-        	int _s = s;
-            switch ( s ) {
-                    case 0 : 
-                        int LA143_0 = input.LA(1);
-
-                         
-                        int index143_0 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( LA143_0 == Name && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 0) ) {s = 1;}
-
-                        else if ( LA143_0 == RunName && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 1) ) {s = 2;}
-
-                        else if ( ( LA143_0 == WorkingDirectory || LA143_0 == Defaults || LA143_0 == RULE_END ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 2) ) {s = 3;}
-
-                        else if ( LA143_0 == Env && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 3) ) {s = 4;}
-
-                        else if ( LA143_0 == Permission && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 4) ) {s = 5;}
-
-                        else if ( LA143_0 == Concurrency && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 5) ) {s = 6;}
-
-                        else if ( LA143_0 == Pool && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 6) ) {s = 7;}
-
-                        else if ( LA143_0 == Resources && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 7) ) {s = 8;}
-
-                        else if ( LA143_0 == Version && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 8) ) {s = 9;}
-
-                        else if ( LA143_0 == Variables && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 9) ) {s = 10;}
-
-                        else if ( LA143_0 == Parameters && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 10) ) {s = 11;}
-
-                        else if ( ( LA143_0 == Extends || LA143_0 == Include ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 11) ) {s = 12;}
-
-                         
-                        input.seek(index143_0);
-                        if ( s>=0 ) return s;
-                        break;
-            }
-            NoViableAltException nvae =
-                new NoViableAltException(getDescription(), 143, _s, input);
-            error(nvae);
-            throw nvae;
-        }
-    }
-
     class DFA144 extends DFA {
 
         public DFA144(BaseRecognizer recognizer) {
@@ -53916,7 +53783,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             this.transition = dfa_30;
         }
         public String getDescription() {
-            return "13889:2: ( rule__Configurations__UnorderedGroup__1 )?";
+            return "13680:2: ( rule__Configurations__UnorderedGroup__0 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -53966,22 +53833,49 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             throw nvae;
         }
     }
+    static final String dfa_31s = "\15\uffff";
+    static final String dfa_32s = "\1\21\14\uffff";
+    static final String dfa_33s = "\1\u00dc\14\uffff";
+    static final String dfa_34s = "\1\uffff\1\1\1\2\1\3\1\4\1\5\1\6\1\7\1\10\1\11\1\12\1\13\1\14";
+    static final String dfa_35s = "\1\0\14\uffff}>";
+    static final String[] dfa_36s = {
+            "\1\3\40\uffff\1\6\20\uffff\1\13\1\5\17\uffff\1\10\3\uffff\1\12\5\uffff\1\3\11\uffff\1\2\14\uffff\1\14\1\uffff\1\14\14\uffff\1\11\57\uffff\1\1\3\uffff\1\7\13\uffff\1\4\27\uffff\1\3",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+    };
+
+    static final short[] dfa_31 = DFA.unpackEncodedString(dfa_31s);
+    static final char[] dfa_32 = DFA.unpackEncodedStringToUnsignedChars(dfa_32s);
+    static final char[] dfa_33 = DFA.unpackEncodedStringToUnsignedChars(dfa_33s);
+    static final short[] dfa_34 = DFA.unpackEncodedString(dfa_34s);
+    static final short[] dfa_35 = DFA.unpackEncodedString(dfa_35s);
+    static final short[][] dfa_36 = unpackEncodedStringArray(dfa_36s);
 
     class DFA145 extends DFA {
 
         public DFA145(BaseRecognizer recognizer) {
             this.recognizer = recognizer;
             this.decisionNumber = 145;
-            this.eot = dfa_24;
-            this.eof = dfa_25;
-            this.min = dfa_26;
-            this.max = dfa_27;
-            this.accept = dfa_28;
-            this.special = dfa_29;
-            this.transition = dfa_30;
+            this.eot = dfa_31;
+            this.eof = dfa_31;
+            this.min = dfa_32;
+            this.max = dfa_33;
+            this.accept = dfa_34;
+            this.special = dfa_35;
+            this.transition = dfa_36;
         }
         public String getDescription() {
-            return "13901:2: ( rule__Configurations__UnorderedGroup__2 )?";
+            return "13694:3: ( ({...}? => ( ( ( rule__Configurations__Group_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_1__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__UnorderedGroup_2 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_3__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_4__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_5__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_6__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_7__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_8__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_9__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_10__0 ) ) ) ) | ({...}? => ( ( ( rule__Configurations__Group_11__0 ) ) ) ) )";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -54018,8 +53912,6 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
 
                         else if ( ( LA145_0 == Extends || LA145_0 == Include ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 11) ) {s = 12;}
 
-                        else if ( (LA145_0==EOF||(LA145_0>=Pull_request_review_comment && LA145_0<=Repository_dispatch)||(LA145_0>=Deployment_status && LA145_0<=Workflow_dispatch)||LA145_0==Registry_package||(LA145_0>=Merge_requests && LA145_0<=Project_column)||LA145_0==WorkflowRules||(LA145_0>=Issue_comment && LA145_0<=Workflow_call)||LA145_0==LockBehavior||(LA145_0>=Project_card && LA145_0<=Pull_request)||(LA145_0>=Workflow_run && LA145_0<=Check_suite)||(LA145_0>=AutoCancel && LA145_0<=Conditions)||LA145_0==Deployment||LA145_0==Page_build||LA145_0==PlanBranch||LA145_0==Repository||(LA145_0>=Bitbucket && LA145_0<=Check_run)||(LA145_0>=Milestone && LA145_0<=Pipelines)||(LA145_0>=Scheduled && LA145_0<=Schedules)||LA145_0==Branches||LA145_0==Schedule||LA145_0==Changes||LA145_0==Default||LA145_0==Project||LA145_0==Release||LA145_0==Trigger||(LA145_0>=Create && LA145_0<=Delete)||(LA145_0>=Drafts && LA145_0<=Gollum)||LA145_0==Issues||LA145_0==Public||LA145_0==Remote||(LA145_0>=Stages && LA145_0<=Status)||LA145_0==Label||LA145_0==Paths||LA145_0==Rules||LA145_0==Watch||(LA145_0>=Cron && LA145_0<=Jobs)||LA145_0==Only||LA145_0==Push||LA145_0==Tags||(LA145_0>=On && LA145_0<=Pr)||LA145_0==RULE_ID) ) {s = 13;}
-
                          
                         input.seek(index145_0);
                         if ( s>=0 ) return s;
@@ -54046,7 +53938,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             this.transition = dfa_30;
         }
         public String getDescription() {
-            return "13913:2: ( rule__Configurations__UnorderedGroup__3 )?";
+            return "13889:2: ( rule__Configurations__UnorderedGroup__1 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -54111,7 +54003,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             this.transition = dfa_30;
         }
         public String getDescription() {
-            return "13925:2: ( rule__Configurations__UnorderedGroup__4 )?";
+            return "13901:2: ( rule__Configurations__UnorderedGroup__2 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -54176,7 +54068,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             this.transition = dfa_30;
         }
         public String getDescription() {
-            return "13937:2: ( rule__Configurations__UnorderedGroup__5 )?";
+            return "13913:2: ( rule__Configurations__UnorderedGroup__3 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -54241,7 +54133,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             this.transition = dfa_30;
         }
         public String getDescription() {
-            return "13949:2: ( rule__Configurations__UnorderedGroup__6 )?";
+            return "13925:2: ( rule__Configurations__UnorderedGroup__4 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -54306,7 +54198,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             this.transition = dfa_30;
         }
         public String getDescription() {
-            return "13961:2: ( rule__Configurations__UnorderedGroup__7 )?";
+            return "13937:2: ( rule__Configurations__UnorderedGroup__5 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -54371,7 +54263,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             this.transition = dfa_30;
         }
         public String getDescription() {
-            return "13973:2: ( rule__Configurations__UnorderedGroup__8 )?";
+            return "13949:2: ( rule__Configurations__UnorderedGroup__6 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -54436,7 +54328,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             this.transition = dfa_30;
         }
         public String getDescription() {
-            return "13985:2: ( rule__Configurations__UnorderedGroup__9 )?";
+            return "13961:2: ( rule__Configurations__UnorderedGroup__7 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -54501,7 +54393,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             this.transition = dfa_30;
         }
         public String getDescription() {
-            return "13997:2: ( rule__Configurations__UnorderedGroup__10 )?";
+            return "13973:2: ( rule__Configurations__UnorderedGroup__8 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -54566,7 +54458,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             this.transition = dfa_30;
         }
         public String getDescription() {
-            return "14009:2: ( rule__Configurations__UnorderedGroup__11 )?";
+            return "13985:2: ( rule__Configurations__UnorderedGroup__9 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -54616,12 +54508,142 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             throw nvae;
         }
     }
+
+    class DFA155 extends DFA {
+
+        public DFA155(BaseRecognizer recognizer) {
+            this.recognizer = recognizer;
+            this.decisionNumber = 155;
+            this.eot = dfa_24;
+            this.eof = dfa_25;
+            this.min = dfa_26;
+            this.max = dfa_27;
+            this.accept = dfa_28;
+            this.special = dfa_29;
+            this.transition = dfa_30;
+        }
+        public String getDescription() {
+            return "13997:2: ( rule__Configurations__UnorderedGroup__10 )?";
+        }
+        public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
+            TokenStream input = (TokenStream)_input;
+        	int _s = s;
+            switch ( s ) {
+                    case 0 : 
+                        int LA155_0 = input.LA(1);
+
+                         
+                        int index155_0 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( LA155_0 == Name && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 0) ) {s = 1;}
+
+                        else if ( LA155_0 == RunName && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 1) ) {s = 2;}
+
+                        else if ( ( LA155_0 == WorkingDirectory || LA155_0 == Defaults || LA155_0 == RULE_END ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 2) ) {s = 3;}
+
+                        else if ( LA155_0 == Env && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 3) ) {s = 4;}
+
+                        else if ( LA155_0 == Permission && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 4) ) {s = 5;}
+
+                        else if ( LA155_0 == Concurrency && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 5) ) {s = 6;}
+
+                        else if ( LA155_0 == Pool && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 6) ) {s = 7;}
+
+                        else if ( LA155_0 == Resources && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 7) ) {s = 8;}
+
+                        else if ( LA155_0 == Version && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 8) ) {s = 9;}
+
+                        else if ( LA155_0 == Variables && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 9) ) {s = 10;}
+
+                        else if ( LA155_0 == Parameters && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 10) ) {s = 11;}
+
+                        else if ( ( LA155_0 == Extends || LA155_0 == Include ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 11) ) {s = 12;}
+
+                        else if ( (LA155_0==EOF||(LA155_0>=Pull_request_review_comment && LA155_0<=Repository_dispatch)||(LA155_0>=Deployment_status && LA155_0<=Workflow_dispatch)||LA155_0==Registry_package||(LA155_0>=Merge_requests && LA155_0<=Project_column)||LA155_0==WorkflowRules||(LA155_0>=Issue_comment && LA155_0<=Workflow_call)||LA155_0==LockBehavior||(LA155_0>=Project_card && LA155_0<=Pull_request)||(LA155_0>=Workflow_run && LA155_0<=Check_suite)||(LA155_0>=AutoCancel && LA155_0<=Conditions)||LA155_0==Deployment||LA155_0==Page_build||LA155_0==PlanBranch||LA155_0==Repository||(LA155_0>=Bitbucket && LA155_0<=Check_run)||(LA155_0>=Milestone && LA155_0<=Pipelines)||(LA155_0>=Scheduled && LA155_0<=Schedules)||LA155_0==Branches||LA155_0==Schedule||LA155_0==Changes||LA155_0==Default||LA155_0==Project||LA155_0==Release||LA155_0==Trigger||(LA155_0>=Create && LA155_0<=Delete)||(LA155_0>=Drafts && LA155_0<=Gollum)||LA155_0==Issues||LA155_0==Public||LA155_0==Remote||(LA155_0>=Stages && LA155_0<=Status)||LA155_0==Label||LA155_0==Paths||LA155_0==Rules||LA155_0==Watch||(LA155_0>=Cron && LA155_0<=Jobs)||LA155_0==Only||LA155_0==Push||LA155_0==Tags||(LA155_0>=On && LA155_0<=Pr)||LA155_0==RULE_ID) ) {s = 13;}
+
+                         
+                        input.seek(index155_0);
+                        if ( s>=0 ) return s;
+                        break;
+            }
+            NoViableAltException nvae =
+                new NoViableAltException(getDescription(), 155, _s, input);
+            error(nvae);
+            throw nvae;
+        }
+    }
+
+    class DFA156 extends DFA {
+
+        public DFA156(BaseRecognizer recognizer) {
+            this.recognizer = recognizer;
+            this.decisionNumber = 156;
+            this.eot = dfa_24;
+            this.eof = dfa_25;
+            this.min = dfa_26;
+            this.max = dfa_27;
+            this.accept = dfa_28;
+            this.special = dfa_29;
+            this.transition = dfa_30;
+        }
+        public String getDescription() {
+            return "14009:2: ( rule__Configurations__UnorderedGroup__11 )?";
+        }
+        public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
+            TokenStream input = (TokenStream)_input;
+        	int _s = s;
+            switch ( s ) {
+                    case 0 : 
+                        int LA156_0 = input.LA(1);
+
+                         
+                        int index156_0 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( LA156_0 == Name && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 0) ) {s = 1;}
+
+                        else if ( LA156_0 == RunName && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 1) ) {s = 2;}
+
+                        else if ( ( LA156_0 == WorkingDirectory || LA156_0 == Defaults || LA156_0 == RULE_END ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 2) ) {s = 3;}
+
+                        else if ( LA156_0 == Env && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 3) ) {s = 4;}
+
+                        else if ( LA156_0 == Permission && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 4) ) {s = 5;}
+
+                        else if ( LA156_0 == Concurrency && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 5) ) {s = 6;}
+
+                        else if ( LA156_0 == Pool && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 6) ) {s = 7;}
+
+                        else if ( LA156_0 == Resources && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 7) ) {s = 8;}
+
+                        else if ( LA156_0 == Version && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 8) ) {s = 9;}
+
+                        else if ( LA156_0 == Variables && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 9) ) {s = 10;}
+
+                        else if ( LA156_0 == Parameters && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 10) ) {s = 11;}
+
+                        else if ( ( LA156_0 == Extends || LA156_0 == Include ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 11) ) {s = 12;}
+
+                        else if ( (LA156_0==EOF||(LA156_0>=Pull_request_review_comment && LA156_0<=Repository_dispatch)||(LA156_0>=Deployment_status && LA156_0<=Workflow_dispatch)||LA156_0==Registry_package||(LA156_0>=Merge_requests && LA156_0<=Project_column)||LA156_0==WorkflowRules||(LA156_0>=Issue_comment && LA156_0<=Workflow_call)||LA156_0==LockBehavior||(LA156_0>=Project_card && LA156_0<=Pull_request)||(LA156_0>=Workflow_run && LA156_0<=Check_suite)||(LA156_0>=AutoCancel && LA156_0<=Conditions)||LA156_0==Deployment||LA156_0==Page_build||LA156_0==PlanBranch||LA156_0==Repository||(LA156_0>=Bitbucket && LA156_0<=Check_run)||(LA156_0>=Milestone && LA156_0<=Pipelines)||(LA156_0>=Scheduled && LA156_0<=Schedules)||LA156_0==Branches||LA156_0==Schedule||LA156_0==Changes||LA156_0==Default||LA156_0==Project||LA156_0==Release||LA156_0==Trigger||(LA156_0>=Create && LA156_0<=Delete)||(LA156_0>=Drafts && LA156_0<=Gollum)||LA156_0==Issues||LA156_0==Public||LA156_0==Remote||(LA156_0>=Stages && LA156_0<=Status)||LA156_0==Label||LA156_0==Paths||LA156_0==Rules||LA156_0==Watch||(LA156_0>=Cron && LA156_0<=Jobs)||LA156_0==Only||LA156_0==Push||LA156_0==Tags||(LA156_0>=On && LA156_0<=Pr)||LA156_0==RULE_ID) ) {s = 13;}
+
+                         
+                        input.seek(index156_0);
+                        if ( s>=0 ) return s;
+                        break;
+            }
+            NoViableAltException nvae =
+                new NoViableAltException(getDescription(), 156, _s, input);
+            error(nvae);
+            throw nvae;
+        }
+    }
     static final String dfa_37s = "\13\uffff";
     static final String dfa_38s = "\1\4\12\uffff";
     static final String dfa_39s = "\1\4\1\u00db\1\u00e0\1\u00dc\1\uffff\1\u00c9\1\u00dc\1\0\1\u00db\1\uffff\1\0";
     static final String dfa_40s = "\1\u00dd\1\u00db\1\u00e0\1\u00dc\1\uffff\1\u00c9\1\u00dc\1\0\1\u00db\1\uffff\1\0";
     static final String dfa_41s = "\4\uffff\1\2\4\uffff\1\1\1\uffff";
-    static final String dfa_42s = "\7\uffff\1\1\2\uffff\1\0}>";
+    static final String dfa_42s = "\7\uffff\1\0\2\uffff\1\1}>";
     static final String[] dfa_43s = {
             "\10\4\2\uffff\3\4\1\2\1\4\5\uffff\2\4\1\uffff\1\4\3\uffff\4\4\3\uffff\1\4\2\uffff\2\4\5\uffff\3\4\12\uffff\2\4\1\uffff\1\4\1\uffff\4\4\1\uffff\1\4\2\uffff\2\4\5\uffff\2\4\1\uffff\1\4\1\uffff\3\4\3\uffff\1\4\1\uffff\1\1\11\uffff\2\4\6\uffff\1\4\1\uffff\1\4\2\uffff\1\4\1\uffff\1\4\3\uffff\1\4\1\uffff\1\4\5\uffff\2\4\4\uffff\3\4\1\uffff\3\4\1\uffff\1\4\3\uffff\1\4\1\uffff\1\4\1\uffff\2\4\6\uffff\1\4\1\uffff\1\4\2\uffff\1\4\6\uffff\1\4\3\uffff\4\4\1\uffff\1\4\1\uffff\2\4\3\uffff\1\4\6\uffff\1\4\10\uffff\2\4\15\uffff\1\3\1\4",
             "\1\5",
@@ -54644,11 +54666,11 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
     static final short[] dfa_42 = DFA.unpackEncodedString(dfa_42s);
     static final short[][] dfa_43 = unpackEncodedStringArray(dfa_43s);
 
-    class DFA156 extends DFA {
+    class DFA158 extends DFA {
 
-        public DFA156(BaseRecognizer recognizer) {
+        public DFA158(BaseRecognizer recognizer) {
             this.recognizer = recognizer;
-            this.decisionNumber = 156;
+            this.decisionNumber = 158;
             this.eot = dfa_37;
             this.eof = dfa_38;
             this.min = dfa_39;
@@ -54665,25 +54687,10 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA156_10 = input.LA(1);
+                        int LA158_7 = input.LA(1);
 
                          
-                        int index156_10 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_2(), 0) ) {s = 9;}
-
-                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getConfigurationsAccess().getUnorderedGroup_2()) ) {s = 4;}
-
-                         
-                        input.seek(index156_10);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
-                        int LA156_7 = input.LA(1);
-
-                         
-                        int index156_7 = input.index();
+                        int index158_7 = input.index();
                         input.rewind();
                         s = -1;
                         if ( getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_2(), 1) ) {s = 9;}
@@ -54691,12 +54698,27 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getConfigurationsAccess().getUnorderedGroup_2()) ) {s = 4;}
 
                          
-                        input.seek(index156_7);
+                        input.seek(index158_7);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 1 : 
+                        int LA158_10 = input.LA(1);
+
+                         
+                        int index158_10 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_2(), 0) ) {s = 9;}
+
+                        else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getConfigurationsAccess().getUnorderedGroup_2()) ) {s = 4;}
+
+                         
+                        input.seek(index158_10);
                         if ( s>=0 ) return s;
                         break;
             }
             NoViableAltException nvae =
-                new NoViableAltException(getDescription(), 156, _s, input);
+                new NoViableAltException(getDescription(), 158, _s, input);
             error(nvae);
             throw nvae;
         }
@@ -54706,7 +54728,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
     static final String dfa_46s = "\1\4\2\uffff\1\4\1\uffff\53\4";
     static final String dfa_47s = "\1\u00dd\2\uffff\1\u00dd\1\uffff\53\u00dd";
     static final String dfa_48s = "\1\uffff\2\1\1\uffff\1\2\53\uffff";
-    static final String dfa_49s = "\1\1\2\uffff\1\11\2\uffff\1\22\1\uffff\1\23\1\uffff\1\26\1\uffff\1\6\1\uffff\1\10\1\uffff\1\4\1\uffff\1\0\1\uffff\1\20\1\uffff\1\3\1\uffff\1\12\1\uffff\1\17\1\uffff\1\27\1\uffff\1\24\1\uffff\1\14\1\uffff\1\2\1\uffff\1\25\1\uffff\1\7\1\uffff\1\21\1\uffff\1\15\1\uffff\1\16\1\uffff\1\13\1\5}>";
+    static final String dfa_49s = "\1\10\2\uffff\1\1\2\uffff\1\5\1\uffff\1\24\1\uffff\1\25\1\uffff\1\6\1\uffff\1\14\1\uffff\1\21\1\uffff\1\27\1\uffff\1\23\1\uffff\1\11\1\uffff\1\3\1\uffff\1\12\1\uffff\1\4\1\uffff\1\13\1\uffff\1\16\1\uffff\1\15\1\uffff\1\17\1\uffff\1\26\1\uffff\1\7\1\uffff\1\2\1\uffff\1\0\1\uffff\1\22\1\20}>";
     static final String[] dfa_50s = {
             "\10\4\2\uffff\5\4\5\uffff\2\4\1\uffff\1\4\3\uffff\4\4\3\uffff\1\4\2\uffff\2\4\5\uffff\3\4\12\uffff\2\4\1\uffff\1\4\1\uffff\4\4\1\uffff\1\4\2\uffff\2\4\5\uffff\2\4\1\uffff\1\4\1\uffff\3\4\3\uffff\1\4\1\uffff\1\4\11\uffff\2\4\6\uffff\1\4\1\uffff\1\4\1\2\1\uffff\1\4\1\uffff\1\4\3\uffff\1\4\1\uffff\1\4\5\uffff\2\4\4\uffff\3\4\1\uffff\3\4\1\uffff\1\4\3\uffff\1\4\1\uffff\1\4\1\uffff\2\4\6\uffff\1\4\1\uffff\1\4\2\uffff\1\4\6\uffff\1\4\3\uffff\4\4\1\uffff\1\4\1\uffff\2\4\3\uffff\1\4\6\uffff\1\4\10\uffff\2\4\14\uffff\1\1\1\3\1\4",
             "",
@@ -54766,11 +54788,11 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
     static final short[] dfa_49 = DFA.unpackEncodedString(dfa_49s);
     static final short[][] dfa_50 = unpackEncodedStringArray(dfa_50s);
 
-    class DFA158 extends DFA {
+    class DFA160 extends DFA {
 
-        public DFA158(BaseRecognizer recognizer) {
+        public DFA160(BaseRecognizer recognizer) {
             this.recognizer = recognizer;
-            this.decisionNumber = 158;
+            this.decisionNumber = 160;
             this.eot = dfa_44;
             this.eof = dfa_45;
             this.min = dfa_46;
@@ -54787,372 +54809,372 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA158_18 = input.LA(1);
+                        int LA160_44 = input.LA(1);
 
                          
-                        int index158_18 = input.index();
+                        int index160_44 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (LA158_18==RULE_END) ) {s = 19;}
+                        if ( (LA160_44==RULE_END) ) {s = 45;}
 
-                        else if ( ( LA158_18 == EOF || LA158_18 >= Pull_request_review_comment && LA158_18 <= Repository_dispatch || LA158_18 >= Deployment_status && LA158_18 <= Registry_package || LA158_18 >= Merge_requests && LA158_18 <= Project_column || LA158_18 == WorkflowRules || LA158_18 >= Issue_comment && LA158_18 <= Workflow_call || LA158_18 == LockBehavior || LA158_18 >= Project_card && LA158_18 <= Pull_request || LA158_18 >= Workflow_run && LA158_18 <= Concurrency || LA158_18 >= AutoCancel && LA158_18 <= Conditions || LA158_18 == Deployment || LA158_18 >= Page_build && LA158_18 <= PlanBranch || LA158_18 == Repository || LA158_18 >= Bitbucket && LA158_18 <= Check_run || LA158_18 >= Milestone && LA158_18 <= Pipelines || LA158_18 == Resources || LA158_18 >= Scheduled && LA158_18 <= Variables || LA158_18 == Branches || LA158_18 == Defaults || LA158_18 >= RunName && LA158_18 <= Schedule || LA158_18 == Changes || LA158_18 == Default || LA158_18 == Extends || LA158_18 == Include || LA158_18 == Project || LA158_18 == Release || LA158_18 >= Trigger && LA158_18 <= Version || LA158_18 >= Create && LA158_18 <= Delete || LA158_18 >= Drafts && LA158_18 <= Gollum || LA158_18 == Issues || LA158_18 == Public || LA158_18 == Remote || LA158_18 >= Stages && LA158_18 <= Status || LA158_18 == Label || LA158_18 == Paths || LA158_18 == Rules || LA158_18 == Watch || LA158_18 >= Cron && LA158_18 <= Name || LA158_18 == Only || LA158_18 >= Pool && LA158_18 <= Push || LA158_18 == Tags || LA158_18 == Env || LA158_18 >= On && LA158_18 <= Pr || LA158_18 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
+                        else if ( ( LA160_44 == EOF || LA160_44 >= Pull_request_review_comment && LA160_44 <= Repository_dispatch || LA160_44 >= Deployment_status && LA160_44 <= Registry_package || LA160_44 >= Merge_requests && LA160_44 <= Project_column || LA160_44 == WorkflowRules || LA160_44 >= Issue_comment && LA160_44 <= Workflow_call || LA160_44 == LockBehavior || LA160_44 >= Project_card && LA160_44 <= Pull_request || LA160_44 >= Workflow_run && LA160_44 <= Concurrency || LA160_44 >= AutoCancel && LA160_44 <= Conditions || LA160_44 == Deployment || LA160_44 >= Page_build && LA160_44 <= PlanBranch || LA160_44 == Repository || LA160_44 >= Bitbucket && LA160_44 <= Check_run || LA160_44 >= Milestone && LA160_44 <= Pipelines || LA160_44 == Resources || LA160_44 >= Scheduled && LA160_44 <= Variables || LA160_44 == Branches || LA160_44 == Defaults || LA160_44 >= RunName && LA160_44 <= Schedule || LA160_44 == Changes || LA160_44 == Default || LA160_44 == Extends || LA160_44 == Include || LA160_44 == Project || LA160_44 == Release || LA160_44 >= Trigger && LA160_44 <= Version || LA160_44 >= Create && LA160_44 <= Delete || LA160_44 >= Drafts && LA160_44 <= Gollum || LA160_44 == Issues || LA160_44 == Public || LA160_44 == Remote || LA160_44 >= Stages && LA160_44 <= Status || LA160_44 == Label || LA160_44 == Paths || LA160_44 == Rules || LA160_44 == Watch || LA160_44 >= Cron && LA160_44 <= Name || LA160_44 == Only || LA160_44 >= Pool && LA160_44 <= Push || LA160_44 == Tags || LA160_44 == Env || LA160_44 >= On && LA160_44 <= Pr || LA160_44 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
 
                          
-                        input.seek(index158_18);
+                        input.seek(index160_44);
                         if ( s>=0 ) return s;
                         break;
                     case 1 : 
-                        int LA158_0 = input.LA(1);
+                        int LA160_3 = input.LA(1);
 
                          
-                        int index158_0 = input.index();
+                        int index160_3 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( LA158_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 0) ) {s = 1;}
+                        if ( (LA160_3==RULE_END) ) {s = 5;}
 
-                        else if ( LA158_0 == Demands && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
-
-                        else if ( (LA158_0==RULE_END) ) {s = 3;}
-
-                        else if ( (LA158_0==EOF||(LA158_0>=Pull_request_review_comment && LA158_0<=Repository_dispatch)||(LA158_0>=Deployment_status && LA158_0<=Registry_package)||(LA158_0>=Merge_requests && LA158_0<=Project_column)||LA158_0==WorkflowRules||(LA158_0>=Issue_comment && LA158_0<=Workflow_call)||LA158_0==LockBehavior||(LA158_0>=Project_card && LA158_0<=Pull_request)||(LA158_0>=Workflow_run && LA158_0<=Concurrency)||(LA158_0>=AutoCancel && LA158_0<=Conditions)||LA158_0==Deployment||(LA158_0>=Page_build && LA158_0<=PlanBranch)||LA158_0==Repository||(LA158_0>=Bitbucket && LA158_0<=Check_run)||(LA158_0>=Milestone && LA158_0<=Pipelines)||LA158_0==Resources||(LA158_0>=Scheduled && LA158_0<=Variables)||LA158_0==Branches||LA158_0==Defaults||(LA158_0>=RunName && LA158_0<=Schedule)||LA158_0==Changes||LA158_0==Default||LA158_0==Extends||LA158_0==Include||LA158_0==Project||LA158_0==Release||(LA158_0>=Trigger && LA158_0<=Version)||(LA158_0>=Create && LA158_0<=Delete)||(LA158_0>=Drafts && LA158_0<=Gollum)||LA158_0==Issues||LA158_0==Public||LA158_0==Remote||(LA158_0>=Stages && LA158_0<=Status)||LA158_0==Label||LA158_0==Paths||LA158_0==Rules||LA158_0==Watch||(LA158_0>=Cron && LA158_0<=Name)||LA158_0==Only||(LA158_0>=Pool && LA158_0<=Push)||LA158_0==Tags||LA158_0==Env||(LA158_0>=On && LA158_0<=Pr)||LA158_0==RULE_ID) ) {s = 4;}
+                        else if ( ( LA160_3 == EOF || LA160_3 >= Pull_request_review_comment && LA160_3 <= Repository_dispatch || LA160_3 >= Deployment_status && LA160_3 <= Registry_package || LA160_3 >= Merge_requests && LA160_3 <= Project_column || LA160_3 == WorkflowRules || LA160_3 >= Issue_comment && LA160_3 <= Workflow_call || LA160_3 == LockBehavior || LA160_3 >= Project_card && LA160_3 <= Pull_request || LA160_3 >= Workflow_run && LA160_3 <= Concurrency || LA160_3 >= AutoCancel && LA160_3 <= Conditions || LA160_3 == Deployment || LA160_3 >= Page_build && LA160_3 <= PlanBranch || LA160_3 == Repository || LA160_3 >= Bitbucket && LA160_3 <= Check_run || LA160_3 >= Milestone && LA160_3 <= Pipelines || LA160_3 == Resources || LA160_3 >= Scheduled && LA160_3 <= Variables || LA160_3 == Branches || LA160_3 == Defaults || LA160_3 >= RunName && LA160_3 <= Schedule || LA160_3 == Changes || LA160_3 == Default || LA160_3 == Extends || LA160_3 == Include || LA160_3 == Project || LA160_3 == Release || LA160_3 >= Trigger && LA160_3 <= Version || LA160_3 >= Create && LA160_3 <= Delete || LA160_3 >= Drafts && LA160_3 <= Gollum || LA160_3 == Issues || LA160_3 == Public || LA160_3 == Remote || LA160_3 >= Stages && LA160_3 <= Status || LA160_3 == Label || LA160_3 == Paths || LA160_3 == Rules || LA160_3 == Watch || LA160_3 >= Cron && LA160_3 <= Name || LA160_3 == Only || LA160_3 >= Pool && LA160_3 <= Push || LA160_3 == Tags || LA160_3 == Env || LA160_3 >= On && LA160_3 <= Pr || LA160_3 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
 
                          
-                        input.seek(index158_0);
+                        input.seek(index160_3);
                         if ( s>=0 ) return s;
                         break;
                     case 2 : 
-                        int LA158_34 = input.LA(1);
+                        int LA160_42 = input.LA(1);
 
                          
-                        int index158_34 = input.index();
+                        int index160_42 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( ( LA158_34 == EOF || LA158_34 >= Pull_request_review_comment && LA158_34 <= Repository_dispatch || LA158_34 >= Deployment_status && LA158_34 <= Registry_package || LA158_34 >= Merge_requests && LA158_34 <= Project_column || LA158_34 == WorkflowRules || LA158_34 >= Issue_comment && LA158_34 <= Workflow_call || LA158_34 == LockBehavior || LA158_34 >= Project_card && LA158_34 <= Pull_request || LA158_34 >= Workflow_run && LA158_34 <= Concurrency || LA158_34 >= AutoCancel && LA158_34 <= Conditions || LA158_34 == Deployment || LA158_34 >= Page_build && LA158_34 <= PlanBranch || LA158_34 == Repository || LA158_34 >= Bitbucket && LA158_34 <= Check_run || LA158_34 >= Milestone && LA158_34 <= Pipelines || LA158_34 == Resources || LA158_34 >= Scheduled && LA158_34 <= Variables || LA158_34 == Branches || LA158_34 == Defaults || LA158_34 >= RunName && LA158_34 <= Schedule || LA158_34 == Changes || LA158_34 == Default || LA158_34 == Extends || LA158_34 == Include || LA158_34 == Project || LA158_34 == Release || LA158_34 >= Trigger && LA158_34 <= Version || LA158_34 >= Create && LA158_34 <= Delete || LA158_34 >= Drafts && LA158_34 <= Gollum || LA158_34 == Issues || LA158_34 == Public || LA158_34 == Remote || LA158_34 >= Stages && LA158_34 <= Status || LA158_34 == Label || LA158_34 == Paths || LA158_34 == Rules || LA158_34 == Watch || LA158_34 >= Cron && LA158_34 <= Name || LA158_34 == Only || LA158_34 >= Pool && LA158_34 <= Push || LA158_34 == Tags || LA158_34 == Env || LA158_34 >= On && LA158_34 <= Pr || LA158_34 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
+                        if ( (LA160_42==RULE_END) ) {s = 43;}
 
-                        else if ( (LA158_34==RULE_END) ) {s = 35;}
+                        else if ( ( LA160_42 == EOF || LA160_42 >= Pull_request_review_comment && LA160_42 <= Repository_dispatch || LA160_42 >= Deployment_status && LA160_42 <= Registry_package || LA160_42 >= Merge_requests && LA160_42 <= Project_column || LA160_42 == WorkflowRules || LA160_42 >= Issue_comment && LA160_42 <= Workflow_call || LA160_42 == LockBehavior || LA160_42 >= Project_card && LA160_42 <= Pull_request || LA160_42 >= Workflow_run && LA160_42 <= Concurrency || LA160_42 >= AutoCancel && LA160_42 <= Conditions || LA160_42 == Deployment || LA160_42 >= Page_build && LA160_42 <= PlanBranch || LA160_42 == Repository || LA160_42 >= Bitbucket && LA160_42 <= Check_run || LA160_42 >= Milestone && LA160_42 <= Pipelines || LA160_42 == Resources || LA160_42 >= Scheduled && LA160_42 <= Variables || LA160_42 == Branches || LA160_42 == Defaults || LA160_42 >= RunName && LA160_42 <= Schedule || LA160_42 == Changes || LA160_42 == Default || LA160_42 == Extends || LA160_42 == Include || LA160_42 == Project || LA160_42 == Release || LA160_42 >= Trigger && LA160_42 <= Version || LA160_42 >= Create && LA160_42 <= Delete || LA160_42 >= Drafts && LA160_42 <= Gollum || LA160_42 == Issues || LA160_42 == Public || LA160_42 == Remote || LA160_42 >= Stages && LA160_42 <= Status || LA160_42 == Label || LA160_42 == Paths || LA160_42 == Rules || LA160_42 == Watch || LA160_42 >= Cron && LA160_42 <= Name || LA160_42 == Only || LA160_42 >= Pool && LA160_42 <= Push || LA160_42 == Tags || LA160_42 == Env || LA160_42 >= On && LA160_42 <= Pr || LA160_42 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
 
                          
-                        input.seek(index158_34);
+                        input.seek(index160_42);
                         if ( s>=0 ) return s;
                         break;
                     case 3 : 
-                        int LA158_22 = input.LA(1);
+                        int LA160_24 = input.LA(1);
 
                          
-                        int index158_22 = input.index();
+                        int index160_24 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( ( LA158_22 == EOF || LA158_22 >= Pull_request_review_comment && LA158_22 <= Repository_dispatch || LA158_22 >= Deployment_status && LA158_22 <= Registry_package || LA158_22 >= Merge_requests && LA158_22 <= Project_column || LA158_22 == WorkflowRules || LA158_22 >= Issue_comment && LA158_22 <= Workflow_call || LA158_22 == LockBehavior || LA158_22 >= Project_card && LA158_22 <= Pull_request || LA158_22 >= Workflow_run && LA158_22 <= Concurrency || LA158_22 >= AutoCancel && LA158_22 <= Conditions || LA158_22 == Deployment || LA158_22 >= Page_build && LA158_22 <= PlanBranch || LA158_22 == Repository || LA158_22 >= Bitbucket && LA158_22 <= Check_run || LA158_22 >= Milestone && LA158_22 <= Pipelines || LA158_22 == Resources || LA158_22 >= Scheduled && LA158_22 <= Variables || LA158_22 == Branches || LA158_22 == Defaults || LA158_22 >= RunName && LA158_22 <= Schedule || LA158_22 == Changes || LA158_22 == Default || LA158_22 == Extends || LA158_22 == Include || LA158_22 == Project || LA158_22 == Release || LA158_22 >= Trigger && LA158_22 <= Version || LA158_22 >= Create && LA158_22 <= Delete || LA158_22 >= Drafts && LA158_22 <= Gollum || LA158_22 == Issues || LA158_22 == Public || LA158_22 == Remote || LA158_22 >= Stages && LA158_22 <= Status || LA158_22 == Label || LA158_22 == Paths || LA158_22 == Rules || LA158_22 == Watch || LA158_22 >= Cron && LA158_22 <= Name || LA158_22 == Only || LA158_22 >= Pool && LA158_22 <= Push || LA158_22 == Tags || LA158_22 == Env || LA158_22 >= On && LA158_22 <= Pr || LA158_22 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
+                        if ( ( LA160_24 == EOF || LA160_24 >= Pull_request_review_comment && LA160_24 <= Repository_dispatch || LA160_24 >= Deployment_status && LA160_24 <= Registry_package || LA160_24 >= Merge_requests && LA160_24 <= Project_column || LA160_24 == WorkflowRules || LA160_24 >= Issue_comment && LA160_24 <= Workflow_call || LA160_24 == LockBehavior || LA160_24 >= Project_card && LA160_24 <= Pull_request || LA160_24 >= Workflow_run && LA160_24 <= Concurrency || LA160_24 >= AutoCancel && LA160_24 <= Conditions || LA160_24 == Deployment || LA160_24 >= Page_build && LA160_24 <= PlanBranch || LA160_24 == Repository || LA160_24 >= Bitbucket && LA160_24 <= Check_run || LA160_24 >= Milestone && LA160_24 <= Pipelines || LA160_24 == Resources || LA160_24 >= Scheduled && LA160_24 <= Variables || LA160_24 == Branches || LA160_24 == Defaults || LA160_24 >= RunName && LA160_24 <= Schedule || LA160_24 == Changes || LA160_24 == Default || LA160_24 == Extends || LA160_24 == Include || LA160_24 == Project || LA160_24 == Release || LA160_24 >= Trigger && LA160_24 <= Version || LA160_24 >= Create && LA160_24 <= Delete || LA160_24 >= Drafts && LA160_24 <= Gollum || LA160_24 == Issues || LA160_24 == Public || LA160_24 == Remote || LA160_24 >= Stages && LA160_24 <= Status || LA160_24 == Label || LA160_24 == Paths || LA160_24 == Rules || LA160_24 == Watch || LA160_24 >= Cron && LA160_24 <= Name || LA160_24 == Only || LA160_24 >= Pool && LA160_24 <= Push || LA160_24 == Tags || LA160_24 == Env || LA160_24 >= On && LA160_24 <= Pr || LA160_24 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
 
-                        else if ( (LA158_22==RULE_END) ) {s = 23;}
+                        else if ( (LA160_24==RULE_END) ) {s = 25;}
 
                          
-                        input.seek(index158_22);
+                        input.seek(index160_24);
                         if ( s>=0 ) return s;
                         break;
                     case 4 : 
-                        int LA158_16 = input.LA(1);
+                        int LA160_28 = input.LA(1);
 
                          
-                        int index158_16 = input.index();
+                        int index160_28 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (LA158_16==RULE_END) ) {s = 17;}
+                        if ( ( LA160_28 == EOF || LA160_28 >= Pull_request_review_comment && LA160_28 <= Repository_dispatch || LA160_28 >= Deployment_status && LA160_28 <= Registry_package || LA160_28 >= Merge_requests && LA160_28 <= Project_column || LA160_28 == WorkflowRules || LA160_28 >= Issue_comment && LA160_28 <= Workflow_call || LA160_28 == LockBehavior || LA160_28 >= Project_card && LA160_28 <= Pull_request || LA160_28 >= Workflow_run && LA160_28 <= Concurrency || LA160_28 >= AutoCancel && LA160_28 <= Conditions || LA160_28 == Deployment || LA160_28 >= Page_build && LA160_28 <= PlanBranch || LA160_28 == Repository || LA160_28 >= Bitbucket && LA160_28 <= Check_run || LA160_28 >= Milestone && LA160_28 <= Pipelines || LA160_28 == Resources || LA160_28 >= Scheduled && LA160_28 <= Variables || LA160_28 == Branches || LA160_28 == Defaults || LA160_28 >= RunName && LA160_28 <= Schedule || LA160_28 == Changes || LA160_28 == Default || LA160_28 == Extends || LA160_28 == Include || LA160_28 == Project || LA160_28 == Release || LA160_28 >= Trigger && LA160_28 <= Version || LA160_28 >= Create && LA160_28 <= Delete || LA160_28 >= Drafts && LA160_28 <= Gollum || LA160_28 == Issues || LA160_28 == Public || LA160_28 == Remote || LA160_28 >= Stages && LA160_28 <= Status || LA160_28 == Label || LA160_28 == Paths || LA160_28 == Rules || LA160_28 == Watch || LA160_28 >= Cron && LA160_28 <= Name || LA160_28 == Only || LA160_28 >= Pool && LA160_28 <= Push || LA160_28 == Tags || LA160_28 == Env || LA160_28 >= On && LA160_28 <= Pr || LA160_28 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
 
-                        else if ( ( LA158_16 == EOF || LA158_16 >= Pull_request_review_comment && LA158_16 <= Repository_dispatch || LA158_16 >= Deployment_status && LA158_16 <= Registry_package || LA158_16 >= Merge_requests && LA158_16 <= Project_column || LA158_16 == WorkflowRules || LA158_16 >= Issue_comment && LA158_16 <= Workflow_call || LA158_16 == LockBehavior || LA158_16 >= Project_card && LA158_16 <= Pull_request || LA158_16 >= Workflow_run && LA158_16 <= Concurrency || LA158_16 >= AutoCancel && LA158_16 <= Conditions || LA158_16 == Deployment || LA158_16 >= Page_build && LA158_16 <= PlanBranch || LA158_16 == Repository || LA158_16 >= Bitbucket && LA158_16 <= Check_run || LA158_16 >= Milestone && LA158_16 <= Pipelines || LA158_16 == Resources || LA158_16 >= Scheduled && LA158_16 <= Variables || LA158_16 == Branches || LA158_16 == Defaults || LA158_16 >= RunName && LA158_16 <= Schedule || LA158_16 == Changes || LA158_16 == Default || LA158_16 == Extends || LA158_16 == Include || LA158_16 == Project || LA158_16 == Release || LA158_16 >= Trigger && LA158_16 <= Version || LA158_16 >= Create && LA158_16 <= Delete || LA158_16 >= Drafts && LA158_16 <= Gollum || LA158_16 == Issues || LA158_16 == Public || LA158_16 == Remote || LA158_16 >= Stages && LA158_16 <= Status || LA158_16 == Label || LA158_16 == Paths || LA158_16 == Rules || LA158_16 == Watch || LA158_16 >= Cron && LA158_16 <= Name || LA158_16 == Only || LA158_16 >= Pool && LA158_16 <= Push || LA158_16 == Tags || LA158_16 == Env || LA158_16 >= On && LA158_16 <= Pr || LA158_16 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
+                        else if ( (LA160_28==RULE_END) ) {s = 29;}
 
                          
-                        input.seek(index158_16);
+                        input.seek(index160_28);
                         if ( s>=0 ) return s;
                         break;
                     case 5 : 
-                        int LA158_47 = input.LA(1);
+                        int LA160_6 = input.LA(1);
 
                          
-                        int index158_47 = input.index();
+                        int index160_6 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (LA158_47==EOF||(LA158_47>=Pull_request_review_comment && LA158_47<=Repository_dispatch)||(LA158_47>=Deployment_status && LA158_47<=Workflow_dispatch)||LA158_47==Registry_package||(LA158_47>=Merge_requests && LA158_47<=Project_column)||LA158_47==WorkflowRules||(LA158_47>=Issue_comment && LA158_47<=Workflow_call)||LA158_47==LockBehavior||(LA158_47>=Project_card && LA158_47<=Pull_request)||(LA158_47>=Workflow_run && LA158_47<=Check_suite)||(LA158_47>=AutoCancel && LA158_47<=Conditions)||LA158_47==Deployment||LA158_47==Page_build||LA158_47==PlanBranch||LA158_47==Repository||(LA158_47>=Bitbucket && LA158_47<=Check_run)||(LA158_47>=Milestone && LA158_47<=Pipelines)||(LA158_47>=Scheduled && LA158_47<=Schedules)||LA158_47==Branches||LA158_47==Schedule||LA158_47==Changes||LA158_47==Default||LA158_47==Project||LA158_47==Release||LA158_47==Trigger||(LA158_47>=Create && LA158_47<=Delete)||(LA158_47>=Drafts && LA158_47<=Gollum)||LA158_47==Issues||LA158_47==Public||LA158_47==Remote||(LA158_47>=Stages && LA158_47<=Status)||LA158_47==Label||LA158_47==Paths||LA158_47==Rules||LA158_47==Watch||(LA158_47>=Cron && LA158_47<=Jobs)||LA158_47==Only||LA158_47==Push||LA158_47==Tags||(LA158_47>=On && LA158_47<=Pr)||LA158_47==RULE_ID) ) {s = 4;}
+                        if ( (LA160_6==RULE_END) ) {s = 7;}
 
-                        else if ( LA158_47 == RULE_END && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
+                        else if ( ( LA160_6 == EOF || LA160_6 >= Pull_request_review_comment && LA160_6 <= Repository_dispatch || LA160_6 >= Deployment_status && LA160_6 <= Registry_package || LA160_6 >= Merge_requests && LA160_6 <= Project_column || LA160_6 == WorkflowRules || LA160_6 >= Issue_comment && LA160_6 <= Workflow_call || LA160_6 == LockBehavior || LA160_6 >= Project_card && LA160_6 <= Pull_request || LA160_6 >= Workflow_run && LA160_6 <= Concurrency || LA160_6 >= AutoCancel && LA160_6 <= Conditions || LA160_6 == Deployment || LA160_6 >= Page_build && LA160_6 <= PlanBranch || LA160_6 == Repository || LA160_6 >= Bitbucket && LA160_6 <= Check_run || LA160_6 >= Milestone && LA160_6 <= Pipelines || LA160_6 == Resources || LA160_6 >= Scheduled && LA160_6 <= Variables || LA160_6 == Branches || LA160_6 == Defaults || LA160_6 >= RunName && LA160_6 <= Schedule || LA160_6 == Changes || LA160_6 == Default || LA160_6 == Extends || LA160_6 == Include || LA160_6 == Project || LA160_6 == Release || LA160_6 >= Trigger && LA160_6 <= Version || LA160_6 >= Create && LA160_6 <= Delete || LA160_6 >= Drafts && LA160_6 <= Gollum || LA160_6 == Issues || LA160_6 == Public || LA160_6 == Remote || LA160_6 >= Stages && LA160_6 <= Status || LA160_6 == Label || LA160_6 == Paths || LA160_6 == Rules || LA160_6 == Watch || LA160_6 >= Cron && LA160_6 <= Name || LA160_6 == Only || LA160_6 >= Pool && LA160_6 <= Push || LA160_6 == Tags || LA160_6 == Env || LA160_6 >= On && LA160_6 <= Pr || LA160_6 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
 
                          
-                        input.seek(index158_47);
+                        input.seek(index160_6);
                         if ( s>=0 ) return s;
                         break;
                     case 6 : 
-                        int LA158_12 = input.LA(1);
+                        int LA160_12 = input.LA(1);
 
                          
-                        int index158_12 = input.index();
+                        int index160_12 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (LA158_12==RULE_END) ) {s = 13;}
+                        if ( ( LA160_12 == EOF || LA160_12 >= Pull_request_review_comment && LA160_12 <= Repository_dispatch || LA160_12 >= Deployment_status && LA160_12 <= Registry_package || LA160_12 >= Merge_requests && LA160_12 <= Project_column || LA160_12 == WorkflowRules || LA160_12 >= Issue_comment && LA160_12 <= Workflow_call || LA160_12 == LockBehavior || LA160_12 >= Project_card && LA160_12 <= Pull_request || LA160_12 >= Workflow_run && LA160_12 <= Concurrency || LA160_12 >= AutoCancel && LA160_12 <= Conditions || LA160_12 == Deployment || LA160_12 >= Page_build && LA160_12 <= PlanBranch || LA160_12 == Repository || LA160_12 >= Bitbucket && LA160_12 <= Check_run || LA160_12 >= Milestone && LA160_12 <= Pipelines || LA160_12 == Resources || LA160_12 >= Scheduled && LA160_12 <= Variables || LA160_12 == Branches || LA160_12 == Defaults || LA160_12 >= RunName && LA160_12 <= Schedule || LA160_12 == Changes || LA160_12 == Default || LA160_12 == Extends || LA160_12 == Include || LA160_12 == Project || LA160_12 == Release || LA160_12 >= Trigger && LA160_12 <= Version || LA160_12 >= Create && LA160_12 <= Delete || LA160_12 >= Drafts && LA160_12 <= Gollum || LA160_12 == Issues || LA160_12 == Public || LA160_12 == Remote || LA160_12 >= Stages && LA160_12 <= Status || LA160_12 == Label || LA160_12 == Paths || LA160_12 == Rules || LA160_12 == Watch || LA160_12 >= Cron && LA160_12 <= Name || LA160_12 == Only || LA160_12 >= Pool && LA160_12 <= Push || LA160_12 == Tags || LA160_12 == Env || LA160_12 >= On && LA160_12 <= Pr || LA160_12 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
 
-                        else if ( ( LA158_12 == EOF || LA158_12 >= Pull_request_review_comment && LA158_12 <= Repository_dispatch || LA158_12 >= Deployment_status && LA158_12 <= Registry_package || LA158_12 >= Merge_requests && LA158_12 <= Project_column || LA158_12 == WorkflowRules || LA158_12 >= Issue_comment && LA158_12 <= Workflow_call || LA158_12 == LockBehavior || LA158_12 >= Project_card && LA158_12 <= Pull_request || LA158_12 >= Workflow_run && LA158_12 <= Concurrency || LA158_12 >= AutoCancel && LA158_12 <= Conditions || LA158_12 == Deployment || LA158_12 >= Page_build && LA158_12 <= PlanBranch || LA158_12 == Repository || LA158_12 >= Bitbucket && LA158_12 <= Check_run || LA158_12 >= Milestone && LA158_12 <= Pipelines || LA158_12 == Resources || LA158_12 >= Scheduled && LA158_12 <= Variables || LA158_12 == Branches || LA158_12 == Defaults || LA158_12 >= RunName && LA158_12 <= Schedule || LA158_12 == Changes || LA158_12 == Default || LA158_12 == Extends || LA158_12 == Include || LA158_12 == Project || LA158_12 == Release || LA158_12 >= Trigger && LA158_12 <= Version || LA158_12 >= Create && LA158_12 <= Delete || LA158_12 >= Drafts && LA158_12 <= Gollum || LA158_12 == Issues || LA158_12 == Public || LA158_12 == Remote || LA158_12 >= Stages && LA158_12 <= Status || LA158_12 == Label || LA158_12 == Paths || LA158_12 == Rules || LA158_12 == Watch || LA158_12 >= Cron && LA158_12 <= Name || LA158_12 == Only || LA158_12 >= Pool && LA158_12 <= Push || LA158_12 == Tags || LA158_12 == Env || LA158_12 >= On && LA158_12 <= Pr || LA158_12 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
+                        else if ( (LA160_12==RULE_END) ) {s = 13;}
 
                          
-                        input.seek(index158_12);
+                        input.seek(index160_12);
                         if ( s>=0 ) return s;
                         break;
                     case 7 : 
-                        int LA158_38 = input.LA(1);
+                        int LA160_40 = input.LA(1);
 
                          
-                        int index158_38 = input.index();
+                        int index160_40 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (LA158_38==RULE_END) ) {s = 39;}
+                        if ( (LA160_40==RULE_END) ) {s = 41;}
 
-                        else if ( ( LA158_38 == EOF || LA158_38 >= Pull_request_review_comment && LA158_38 <= Repository_dispatch || LA158_38 >= Deployment_status && LA158_38 <= Registry_package || LA158_38 >= Merge_requests && LA158_38 <= Project_column || LA158_38 == WorkflowRules || LA158_38 >= Issue_comment && LA158_38 <= Workflow_call || LA158_38 == LockBehavior || LA158_38 >= Project_card && LA158_38 <= Pull_request || LA158_38 >= Workflow_run && LA158_38 <= Concurrency || LA158_38 >= AutoCancel && LA158_38 <= Conditions || LA158_38 == Deployment || LA158_38 >= Page_build && LA158_38 <= PlanBranch || LA158_38 == Repository || LA158_38 >= Bitbucket && LA158_38 <= Check_run || LA158_38 >= Milestone && LA158_38 <= Pipelines || LA158_38 == Resources || LA158_38 >= Scheduled && LA158_38 <= Variables || LA158_38 == Branches || LA158_38 == Defaults || LA158_38 >= RunName && LA158_38 <= Schedule || LA158_38 == Changes || LA158_38 == Default || LA158_38 == Extends || LA158_38 == Include || LA158_38 == Project || LA158_38 == Release || LA158_38 >= Trigger && LA158_38 <= Version || LA158_38 >= Create && LA158_38 <= Delete || LA158_38 >= Drafts && LA158_38 <= Gollum || LA158_38 == Issues || LA158_38 == Public || LA158_38 == Remote || LA158_38 >= Stages && LA158_38 <= Status || LA158_38 == Label || LA158_38 == Paths || LA158_38 == Rules || LA158_38 == Watch || LA158_38 >= Cron && LA158_38 <= Name || LA158_38 == Only || LA158_38 >= Pool && LA158_38 <= Push || LA158_38 == Tags || LA158_38 == Env || LA158_38 >= On && LA158_38 <= Pr || LA158_38 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
+                        else if ( ( LA160_40 == EOF || LA160_40 >= Pull_request_review_comment && LA160_40 <= Repository_dispatch || LA160_40 >= Deployment_status && LA160_40 <= Registry_package || LA160_40 >= Merge_requests && LA160_40 <= Project_column || LA160_40 == WorkflowRules || LA160_40 >= Issue_comment && LA160_40 <= Workflow_call || LA160_40 == LockBehavior || LA160_40 >= Project_card && LA160_40 <= Pull_request || LA160_40 >= Workflow_run && LA160_40 <= Concurrency || LA160_40 >= AutoCancel && LA160_40 <= Conditions || LA160_40 == Deployment || LA160_40 >= Page_build && LA160_40 <= PlanBranch || LA160_40 == Repository || LA160_40 >= Bitbucket && LA160_40 <= Check_run || LA160_40 >= Milestone && LA160_40 <= Pipelines || LA160_40 == Resources || LA160_40 >= Scheduled && LA160_40 <= Variables || LA160_40 == Branches || LA160_40 == Defaults || LA160_40 >= RunName && LA160_40 <= Schedule || LA160_40 == Changes || LA160_40 == Default || LA160_40 == Extends || LA160_40 == Include || LA160_40 == Project || LA160_40 == Release || LA160_40 >= Trigger && LA160_40 <= Version || LA160_40 >= Create && LA160_40 <= Delete || LA160_40 >= Drafts && LA160_40 <= Gollum || LA160_40 == Issues || LA160_40 == Public || LA160_40 == Remote || LA160_40 >= Stages && LA160_40 <= Status || LA160_40 == Label || LA160_40 == Paths || LA160_40 == Rules || LA160_40 == Watch || LA160_40 >= Cron && LA160_40 <= Name || LA160_40 == Only || LA160_40 >= Pool && LA160_40 <= Push || LA160_40 == Tags || LA160_40 == Env || LA160_40 >= On && LA160_40 <= Pr || LA160_40 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
 
                          
-                        input.seek(index158_38);
+                        input.seek(index160_40);
                         if ( s>=0 ) return s;
                         break;
                     case 8 : 
-                        int LA158_14 = input.LA(1);
+                        int LA160_0 = input.LA(1);
 
                          
-                        int index158_14 = input.index();
+                        int index160_0 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (LA158_14==RULE_END) ) {s = 15;}
+                        if ( LA160_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 0) ) {s = 1;}
 
-                        else if ( ( LA158_14 == EOF || LA158_14 >= Pull_request_review_comment && LA158_14 <= Repository_dispatch || LA158_14 >= Deployment_status && LA158_14 <= Registry_package || LA158_14 >= Merge_requests && LA158_14 <= Project_column || LA158_14 == WorkflowRules || LA158_14 >= Issue_comment && LA158_14 <= Workflow_call || LA158_14 == LockBehavior || LA158_14 >= Project_card && LA158_14 <= Pull_request || LA158_14 >= Workflow_run && LA158_14 <= Concurrency || LA158_14 >= AutoCancel && LA158_14 <= Conditions || LA158_14 == Deployment || LA158_14 >= Page_build && LA158_14 <= PlanBranch || LA158_14 == Repository || LA158_14 >= Bitbucket && LA158_14 <= Check_run || LA158_14 >= Milestone && LA158_14 <= Pipelines || LA158_14 == Resources || LA158_14 >= Scheduled && LA158_14 <= Variables || LA158_14 == Branches || LA158_14 == Defaults || LA158_14 >= RunName && LA158_14 <= Schedule || LA158_14 == Changes || LA158_14 == Default || LA158_14 == Extends || LA158_14 == Include || LA158_14 == Project || LA158_14 == Release || LA158_14 >= Trigger && LA158_14 <= Version || LA158_14 >= Create && LA158_14 <= Delete || LA158_14 >= Drafts && LA158_14 <= Gollum || LA158_14 == Issues || LA158_14 == Public || LA158_14 == Remote || LA158_14 >= Stages && LA158_14 <= Status || LA158_14 == Label || LA158_14 == Paths || LA158_14 == Rules || LA158_14 == Watch || LA158_14 >= Cron && LA158_14 <= Name || LA158_14 == Only || LA158_14 >= Pool && LA158_14 <= Push || LA158_14 == Tags || LA158_14 == Env || LA158_14 >= On && LA158_14 <= Pr || LA158_14 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
+                        else if ( LA160_0 == Demands && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
+
+                        else if ( (LA160_0==RULE_END) ) {s = 3;}
+
+                        else if ( (LA160_0==EOF||(LA160_0>=Pull_request_review_comment && LA160_0<=Repository_dispatch)||(LA160_0>=Deployment_status && LA160_0<=Registry_package)||(LA160_0>=Merge_requests && LA160_0<=Project_column)||LA160_0==WorkflowRules||(LA160_0>=Issue_comment && LA160_0<=Workflow_call)||LA160_0==LockBehavior||(LA160_0>=Project_card && LA160_0<=Pull_request)||(LA160_0>=Workflow_run && LA160_0<=Concurrency)||(LA160_0>=AutoCancel && LA160_0<=Conditions)||LA160_0==Deployment||(LA160_0>=Page_build && LA160_0<=PlanBranch)||LA160_0==Repository||(LA160_0>=Bitbucket && LA160_0<=Check_run)||(LA160_0>=Milestone && LA160_0<=Pipelines)||LA160_0==Resources||(LA160_0>=Scheduled && LA160_0<=Variables)||LA160_0==Branches||LA160_0==Defaults||(LA160_0>=RunName && LA160_0<=Schedule)||LA160_0==Changes||LA160_0==Default||LA160_0==Extends||LA160_0==Include||LA160_0==Project||LA160_0==Release||(LA160_0>=Trigger && LA160_0<=Version)||(LA160_0>=Create && LA160_0<=Delete)||(LA160_0>=Drafts && LA160_0<=Gollum)||LA160_0==Issues||LA160_0==Public||LA160_0==Remote||(LA160_0>=Stages && LA160_0<=Status)||LA160_0==Label||LA160_0==Paths||LA160_0==Rules||LA160_0==Watch||(LA160_0>=Cron && LA160_0<=Name)||LA160_0==Only||(LA160_0>=Pool && LA160_0<=Push)||LA160_0==Tags||LA160_0==Env||(LA160_0>=On && LA160_0<=Pr)||LA160_0==RULE_ID) ) {s = 4;}
 
                          
-                        input.seek(index158_14);
+                        input.seek(index160_0);
                         if ( s>=0 ) return s;
                         break;
                     case 9 : 
-                        int LA158_3 = input.LA(1);
+                        int LA160_22 = input.LA(1);
 
                          
-                        int index158_3 = input.index();
+                        int index160_22 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (LA158_3==RULE_END) ) {s = 5;}
+                        if ( ( LA160_22 == EOF || LA160_22 >= Pull_request_review_comment && LA160_22 <= Repository_dispatch || LA160_22 >= Deployment_status && LA160_22 <= Registry_package || LA160_22 >= Merge_requests && LA160_22 <= Project_column || LA160_22 == WorkflowRules || LA160_22 >= Issue_comment && LA160_22 <= Workflow_call || LA160_22 == LockBehavior || LA160_22 >= Project_card && LA160_22 <= Pull_request || LA160_22 >= Workflow_run && LA160_22 <= Concurrency || LA160_22 >= AutoCancel && LA160_22 <= Conditions || LA160_22 == Deployment || LA160_22 >= Page_build && LA160_22 <= PlanBranch || LA160_22 == Repository || LA160_22 >= Bitbucket && LA160_22 <= Check_run || LA160_22 >= Milestone && LA160_22 <= Pipelines || LA160_22 == Resources || LA160_22 >= Scheduled && LA160_22 <= Variables || LA160_22 == Branches || LA160_22 == Defaults || LA160_22 >= RunName && LA160_22 <= Schedule || LA160_22 == Changes || LA160_22 == Default || LA160_22 == Extends || LA160_22 == Include || LA160_22 == Project || LA160_22 == Release || LA160_22 >= Trigger && LA160_22 <= Version || LA160_22 >= Create && LA160_22 <= Delete || LA160_22 >= Drafts && LA160_22 <= Gollum || LA160_22 == Issues || LA160_22 == Public || LA160_22 == Remote || LA160_22 >= Stages && LA160_22 <= Status || LA160_22 == Label || LA160_22 == Paths || LA160_22 == Rules || LA160_22 == Watch || LA160_22 >= Cron && LA160_22 <= Name || LA160_22 == Only || LA160_22 >= Pool && LA160_22 <= Push || LA160_22 == Tags || LA160_22 == Env || LA160_22 >= On && LA160_22 <= Pr || LA160_22 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
 
-                        else if ( ( LA158_3 == EOF || LA158_3 >= Pull_request_review_comment && LA158_3 <= Repository_dispatch || LA158_3 >= Deployment_status && LA158_3 <= Registry_package || LA158_3 >= Merge_requests && LA158_3 <= Project_column || LA158_3 == WorkflowRules || LA158_3 >= Issue_comment && LA158_3 <= Workflow_call || LA158_3 == LockBehavior || LA158_3 >= Project_card && LA158_3 <= Pull_request || LA158_3 >= Workflow_run && LA158_3 <= Concurrency || LA158_3 >= AutoCancel && LA158_3 <= Conditions || LA158_3 == Deployment || LA158_3 >= Page_build && LA158_3 <= PlanBranch || LA158_3 == Repository || LA158_3 >= Bitbucket && LA158_3 <= Check_run || LA158_3 >= Milestone && LA158_3 <= Pipelines || LA158_3 == Resources || LA158_3 >= Scheduled && LA158_3 <= Variables || LA158_3 == Branches || LA158_3 == Defaults || LA158_3 >= RunName && LA158_3 <= Schedule || LA158_3 == Changes || LA158_3 == Default || LA158_3 == Extends || LA158_3 == Include || LA158_3 == Project || LA158_3 == Release || LA158_3 >= Trigger && LA158_3 <= Version || LA158_3 >= Create && LA158_3 <= Delete || LA158_3 >= Drafts && LA158_3 <= Gollum || LA158_3 == Issues || LA158_3 == Public || LA158_3 == Remote || LA158_3 >= Stages && LA158_3 <= Status || LA158_3 == Label || LA158_3 == Paths || LA158_3 == Rules || LA158_3 == Watch || LA158_3 >= Cron && LA158_3 <= Name || LA158_3 == Only || LA158_3 >= Pool && LA158_3 <= Push || LA158_3 == Tags || LA158_3 == Env || LA158_3 >= On && LA158_3 <= Pr || LA158_3 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
+                        else if ( (LA160_22==RULE_END) ) {s = 23;}
 
                          
-                        input.seek(index158_3);
+                        input.seek(index160_22);
                         if ( s>=0 ) return s;
                         break;
                     case 10 : 
-                        int LA158_24 = input.LA(1);
+                        int LA160_26 = input.LA(1);
 
                          
-                        int index158_24 = input.index();
+                        int index160_26 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( ( LA158_24 == EOF || LA158_24 >= Pull_request_review_comment && LA158_24 <= Repository_dispatch || LA158_24 >= Deployment_status && LA158_24 <= Registry_package || LA158_24 >= Merge_requests && LA158_24 <= Project_column || LA158_24 == WorkflowRules || LA158_24 >= Issue_comment && LA158_24 <= Workflow_call || LA158_24 == LockBehavior || LA158_24 >= Project_card && LA158_24 <= Pull_request || LA158_24 >= Workflow_run && LA158_24 <= Concurrency || LA158_24 >= AutoCancel && LA158_24 <= Conditions || LA158_24 == Deployment || LA158_24 >= Page_build && LA158_24 <= PlanBranch || LA158_24 == Repository || LA158_24 >= Bitbucket && LA158_24 <= Check_run || LA158_24 >= Milestone && LA158_24 <= Pipelines || LA158_24 == Resources || LA158_24 >= Scheduled && LA158_24 <= Variables || LA158_24 == Branches || LA158_24 == Defaults || LA158_24 >= RunName && LA158_24 <= Schedule || LA158_24 == Changes || LA158_24 == Default || LA158_24 == Extends || LA158_24 == Include || LA158_24 == Project || LA158_24 == Release || LA158_24 >= Trigger && LA158_24 <= Version || LA158_24 >= Create && LA158_24 <= Delete || LA158_24 >= Drafts && LA158_24 <= Gollum || LA158_24 == Issues || LA158_24 == Public || LA158_24 == Remote || LA158_24 >= Stages && LA158_24 <= Status || LA158_24 == Label || LA158_24 == Paths || LA158_24 == Rules || LA158_24 == Watch || LA158_24 >= Cron && LA158_24 <= Name || LA158_24 == Only || LA158_24 >= Pool && LA158_24 <= Push || LA158_24 == Tags || LA158_24 == Env || LA158_24 >= On && LA158_24 <= Pr || LA158_24 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
+                        if ( ( LA160_26 == EOF || LA160_26 >= Pull_request_review_comment && LA160_26 <= Repository_dispatch || LA160_26 >= Deployment_status && LA160_26 <= Registry_package || LA160_26 >= Merge_requests && LA160_26 <= Project_column || LA160_26 == WorkflowRules || LA160_26 >= Issue_comment && LA160_26 <= Workflow_call || LA160_26 == LockBehavior || LA160_26 >= Project_card && LA160_26 <= Pull_request || LA160_26 >= Workflow_run && LA160_26 <= Concurrency || LA160_26 >= AutoCancel && LA160_26 <= Conditions || LA160_26 == Deployment || LA160_26 >= Page_build && LA160_26 <= PlanBranch || LA160_26 == Repository || LA160_26 >= Bitbucket && LA160_26 <= Check_run || LA160_26 >= Milestone && LA160_26 <= Pipelines || LA160_26 == Resources || LA160_26 >= Scheduled && LA160_26 <= Variables || LA160_26 == Branches || LA160_26 == Defaults || LA160_26 >= RunName && LA160_26 <= Schedule || LA160_26 == Changes || LA160_26 == Default || LA160_26 == Extends || LA160_26 == Include || LA160_26 == Project || LA160_26 == Release || LA160_26 >= Trigger && LA160_26 <= Version || LA160_26 >= Create && LA160_26 <= Delete || LA160_26 >= Drafts && LA160_26 <= Gollum || LA160_26 == Issues || LA160_26 == Public || LA160_26 == Remote || LA160_26 >= Stages && LA160_26 <= Status || LA160_26 == Label || LA160_26 == Paths || LA160_26 == Rules || LA160_26 == Watch || LA160_26 >= Cron && LA160_26 <= Name || LA160_26 == Only || LA160_26 >= Pool && LA160_26 <= Push || LA160_26 == Tags || LA160_26 == Env || LA160_26 >= On && LA160_26 <= Pr || LA160_26 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
 
-                        else if ( (LA158_24==RULE_END) ) {s = 25;}
+                        else if ( (LA160_26==RULE_END) ) {s = 27;}
 
                          
-                        input.seek(index158_24);
+                        input.seek(index160_26);
                         if ( s>=0 ) return s;
                         break;
                     case 11 : 
-                        int LA158_46 = input.LA(1);
+                        int LA160_30 = input.LA(1);
 
                          
-                        int index158_46 = input.index();
+                        int index160_30 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( ( LA158_46 == EOF || LA158_46 >= Pull_request_review_comment && LA158_46 <= Repository_dispatch || LA158_46 >= Deployment_status && LA158_46 <= Registry_package || LA158_46 >= Merge_requests && LA158_46 <= Project_column || LA158_46 == WorkflowRules || LA158_46 >= Issue_comment && LA158_46 <= Workflow_call || LA158_46 == LockBehavior || LA158_46 >= Project_card && LA158_46 <= Pull_request || LA158_46 >= Workflow_run && LA158_46 <= Check_suite || LA158_46 >= AutoCancel && LA158_46 <= Conditions || LA158_46 == Deployment || LA158_46 == Page_build || LA158_46 == PlanBranch || LA158_46 == Repository || LA158_46 >= Bitbucket && LA158_46 <= Check_run || LA158_46 >= Milestone && LA158_46 <= Pipelines || LA158_46 >= Scheduled && LA158_46 <= Schedules || LA158_46 == Branches || LA158_46 == Defaults || LA158_46 == Schedule || LA158_46 == Changes || LA158_46 == Default || LA158_46 == Project || LA158_46 == Release || LA158_46 == Trigger || LA158_46 >= Create && LA158_46 <= Delete || LA158_46 >= Drafts && LA158_46 <= Gollum || LA158_46 == Issues || LA158_46 == Public || LA158_46 == Remote || LA158_46 >= Stages && LA158_46 <= Status || LA158_46 == Label || LA158_46 == Paths || LA158_46 == Rules || LA158_46 == Watch || LA158_46 >= Cron && LA158_46 <= Jobs || LA158_46 == Only || LA158_46 == Push || LA158_46 == Tags || LA158_46 >= On && LA158_46 <= Pr || LA158_46 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
+                        if ( ( LA160_30 == EOF || LA160_30 >= Pull_request_review_comment && LA160_30 <= Repository_dispatch || LA160_30 >= Deployment_status && LA160_30 <= Registry_package || LA160_30 >= Merge_requests && LA160_30 <= Project_column || LA160_30 == WorkflowRules || LA160_30 >= Issue_comment && LA160_30 <= Workflow_call || LA160_30 == LockBehavior || LA160_30 >= Project_card && LA160_30 <= Pull_request || LA160_30 >= Workflow_run && LA160_30 <= Concurrency || LA160_30 >= AutoCancel && LA160_30 <= Conditions || LA160_30 == Deployment || LA160_30 >= Page_build && LA160_30 <= PlanBranch || LA160_30 == Repository || LA160_30 >= Bitbucket && LA160_30 <= Check_run || LA160_30 >= Milestone && LA160_30 <= Pipelines || LA160_30 == Resources || LA160_30 >= Scheduled && LA160_30 <= Variables || LA160_30 == Branches || LA160_30 == Defaults || LA160_30 >= RunName && LA160_30 <= Schedule || LA160_30 == Changes || LA160_30 == Default || LA160_30 == Extends || LA160_30 == Include || LA160_30 == Project || LA160_30 == Release || LA160_30 >= Trigger && LA160_30 <= Version || LA160_30 >= Create && LA160_30 <= Delete || LA160_30 >= Drafts && LA160_30 <= Gollum || LA160_30 == Issues || LA160_30 == Public || LA160_30 == Remote || LA160_30 >= Stages && LA160_30 <= Status || LA160_30 == Label || LA160_30 == Paths || LA160_30 == Rules || LA160_30 == Watch || LA160_30 >= Cron && LA160_30 <= Name || LA160_30 == Only || LA160_30 >= Pool && LA160_30 <= Push || LA160_30 == Tags || LA160_30 == Env || LA160_30 >= On && LA160_30 <= Pr || LA160_30 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
 
-                        else if ( (LA158_46==RULE_END) ) {s = 47;}
+                        else if ( (LA160_30==RULE_END) ) {s = 31;}
 
                          
-                        input.seek(index158_46);
+                        input.seek(index160_30);
                         if ( s>=0 ) return s;
                         break;
                     case 12 : 
-                        int LA158_32 = input.LA(1);
+                        int LA160_14 = input.LA(1);
 
                          
-                        int index158_32 = input.index();
+                        int index160_14 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( ( LA158_32 == EOF || LA158_32 >= Pull_request_review_comment && LA158_32 <= Repository_dispatch || LA158_32 >= Deployment_status && LA158_32 <= Registry_package || LA158_32 >= Merge_requests && LA158_32 <= Project_column || LA158_32 == WorkflowRules || LA158_32 >= Issue_comment && LA158_32 <= Workflow_call || LA158_32 == LockBehavior || LA158_32 >= Project_card && LA158_32 <= Pull_request || LA158_32 >= Workflow_run && LA158_32 <= Concurrency || LA158_32 >= AutoCancel && LA158_32 <= Conditions || LA158_32 == Deployment || LA158_32 >= Page_build && LA158_32 <= PlanBranch || LA158_32 == Repository || LA158_32 >= Bitbucket && LA158_32 <= Check_run || LA158_32 >= Milestone && LA158_32 <= Pipelines || LA158_32 == Resources || LA158_32 >= Scheduled && LA158_32 <= Variables || LA158_32 == Branches || LA158_32 == Defaults || LA158_32 >= RunName && LA158_32 <= Schedule || LA158_32 == Changes || LA158_32 == Default || LA158_32 == Extends || LA158_32 == Include || LA158_32 == Project || LA158_32 == Release || LA158_32 >= Trigger && LA158_32 <= Version || LA158_32 >= Create && LA158_32 <= Delete || LA158_32 >= Drafts && LA158_32 <= Gollum || LA158_32 == Issues || LA158_32 == Public || LA158_32 == Remote || LA158_32 >= Stages && LA158_32 <= Status || LA158_32 == Label || LA158_32 == Paths || LA158_32 == Rules || LA158_32 == Watch || LA158_32 >= Cron && LA158_32 <= Name || LA158_32 == Only || LA158_32 >= Pool && LA158_32 <= Push || LA158_32 == Tags || LA158_32 == Env || LA158_32 >= On && LA158_32 <= Pr || LA158_32 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
+                        if ( ( LA160_14 == EOF || LA160_14 >= Pull_request_review_comment && LA160_14 <= Repository_dispatch || LA160_14 >= Deployment_status && LA160_14 <= Registry_package || LA160_14 >= Merge_requests && LA160_14 <= Project_column || LA160_14 == WorkflowRules || LA160_14 >= Issue_comment && LA160_14 <= Workflow_call || LA160_14 == LockBehavior || LA160_14 >= Project_card && LA160_14 <= Pull_request || LA160_14 >= Workflow_run && LA160_14 <= Concurrency || LA160_14 >= AutoCancel && LA160_14 <= Conditions || LA160_14 == Deployment || LA160_14 >= Page_build && LA160_14 <= PlanBranch || LA160_14 == Repository || LA160_14 >= Bitbucket && LA160_14 <= Check_run || LA160_14 >= Milestone && LA160_14 <= Pipelines || LA160_14 == Resources || LA160_14 >= Scheduled && LA160_14 <= Variables || LA160_14 == Branches || LA160_14 == Defaults || LA160_14 >= RunName && LA160_14 <= Schedule || LA160_14 == Changes || LA160_14 == Default || LA160_14 == Extends || LA160_14 == Include || LA160_14 == Project || LA160_14 == Release || LA160_14 >= Trigger && LA160_14 <= Version || LA160_14 >= Create && LA160_14 <= Delete || LA160_14 >= Drafts && LA160_14 <= Gollum || LA160_14 == Issues || LA160_14 == Public || LA160_14 == Remote || LA160_14 >= Stages && LA160_14 <= Status || LA160_14 == Label || LA160_14 == Paths || LA160_14 == Rules || LA160_14 == Watch || LA160_14 >= Cron && LA160_14 <= Name || LA160_14 == Only || LA160_14 >= Pool && LA160_14 <= Push || LA160_14 == Tags || LA160_14 == Env || LA160_14 >= On && LA160_14 <= Pr || LA160_14 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
 
-                        else if ( (LA158_32==RULE_END) ) {s = 33;}
+                        else if ( (LA160_14==RULE_END) ) {s = 15;}
 
                          
-                        input.seek(index158_32);
+                        input.seek(index160_14);
                         if ( s>=0 ) return s;
                         break;
                     case 13 : 
-                        int LA158_42 = input.LA(1);
+                        int LA160_34 = input.LA(1);
 
                          
-                        int index158_42 = input.index();
+                        int index160_34 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( ( LA158_42 == EOF || LA158_42 >= Pull_request_review_comment && LA158_42 <= Repository_dispatch || LA158_42 >= Deployment_status && LA158_42 <= Registry_package || LA158_42 >= Merge_requests && LA158_42 <= Project_column || LA158_42 == WorkflowRules || LA158_42 >= Issue_comment && LA158_42 <= Workflow_call || LA158_42 == LockBehavior || LA158_42 >= Project_card && LA158_42 <= Pull_request || LA158_42 >= Workflow_run && LA158_42 <= Concurrency || LA158_42 >= AutoCancel && LA158_42 <= Conditions || LA158_42 == Deployment || LA158_42 >= Page_build && LA158_42 <= PlanBranch || LA158_42 == Repository || LA158_42 >= Bitbucket && LA158_42 <= Check_run || LA158_42 >= Milestone && LA158_42 <= Pipelines || LA158_42 == Resources || LA158_42 >= Scheduled && LA158_42 <= Variables || LA158_42 == Branches || LA158_42 == Defaults || LA158_42 >= RunName && LA158_42 <= Schedule || LA158_42 == Changes || LA158_42 == Default || LA158_42 == Extends || LA158_42 == Include || LA158_42 == Project || LA158_42 == Release || LA158_42 >= Trigger && LA158_42 <= Version || LA158_42 >= Create && LA158_42 <= Delete || LA158_42 >= Drafts && LA158_42 <= Gollum || LA158_42 == Issues || LA158_42 == Public || LA158_42 == Remote || LA158_42 >= Stages && LA158_42 <= Status || LA158_42 == Label || LA158_42 == Paths || LA158_42 == Rules || LA158_42 == Watch || LA158_42 >= Cron && LA158_42 <= Name || LA158_42 == Only || LA158_42 >= Pool && LA158_42 <= Push || LA158_42 == Tags || LA158_42 == Env || LA158_42 >= On && LA158_42 <= Pr || LA158_42 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
+                        if ( (LA160_34==RULE_END) ) {s = 35;}
 
-                        else if ( (LA158_42==RULE_END) ) {s = 43;}
+                        else if ( ( LA160_34 == EOF || LA160_34 >= Pull_request_review_comment && LA160_34 <= Repository_dispatch || LA160_34 >= Deployment_status && LA160_34 <= Registry_package || LA160_34 >= Merge_requests && LA160_34 <= Project_column || LA160_34 == WorkflowRules || LA160_34 >= Issue_comment && LA160_34 <= Workflow_call || LA160_34 == LockBehavior || LA160_34 >= Project_card && LA160_34 <= Pull_request || LA160_34 >= Workflow_run && LA160_34 <= Concurrency || LA160_34 >= AutoCancel && LA160_34 <= Conditions || LA160_34 == Deployment || LA160_34 >= Page_build && LA160_34 <= PlanBranch || LA160_34 == Repository || LA160_34 >= Bitbucket && LA160_34 <= Check_run || LA160_34 >= Milestone && LA160_34 <= Pipelines || LA160_34 == Resources || LA160_34 >= Scheduled && LA160_34 <= Variables || LA160_34 == Branches || LA160_34 == Defaults || LA160_34 >= RunName && LA160_34 <= Schedule || LA160_34 == Changes || LA160_34 == Default || LA160_34 == Extends || LA160_34 == Include || LA160_34 == Project || LA160_34 == Release || LA160_34 >= Trigger && LA160_34 <= Version || LA160_34 >= Create && LA160_34 <= Delete || LA160_34 >= Drafts && LA160_34 <= Gollum || LA160_34 == Issues || LA160_34 == Public || LA160_34 == Remote || LA160_34 >= Stages && LA160_34 <= Status || LA160_34 == Label || LA160_34 == Paths || LA160_34 == Rules || LA160_34 == Watch || LA160_34 >= Cron && LA160_34 <= Name || LA160_34 == Only || LA160_34 >= Pool && LA160_34 <= Push || LA160_34 == Tags || LA160_34 == Env || LA160_34 >= On && LA160_34 <= Pr || LA160_34 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
 
                          
-                        input.seek(index158_42);
+                        input.seek(index160_34);
                         if ( s>=0 ) return s;
                         break;
                     case 14 : 
-                        int LA158_44 = input.LA(1);
+                        int LA160_32 = input.LA(1);
 
                          
-                        int index158_44 = input.index();
+                        int index160_32 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( ( LA158_44 == EOF || LA158_44 >= Pull_request_review_comment && LA158_44 <= Repository_dispatch || LA158_44 >= Deployment_status && LA158_44 <= Registry_package || LA158_44 >= Merge_requests && LA158_44 <= Project_column || LA158_44 == WorkflowRules || LA158_44 >= Issue_comment && LA158_44 <= Workflow_call || LA158_44 == LockBehavior || LA158_44 >= Project_card && LA158_44 <= Pull_request || LA158_44 >= Workflow_run && LA158_44 <= Concurrency || LA158_44 >= AutoCancel && LA158_44 <= Conditions || LA158_44 == Deployment || LA158_44 >= Page_build && LA158_44 <= PlanBranch || LA158_44 == Repository || LA158_44 >= Bitbucket && LA158_44 <= Check_run || LA158_44 >= Milestone && LA158_44 <= Pipelines || LA158_44 == Resources || LA158_44 >= Scheduled && LA158_44 <= Variables || LA158_44 == Branches || LA158_44 == Defaults || LA158_44 >= RunName && LA158_44 <= Schedule || LA158_44 == Changes || LA158_44 == Default || LA158_44 == Extends || LA158_44 == Include || LA158_44 == Project || LA158_44 == Release || LA158_44 >= Trigger && LA158_44 <= Version || LA158_44 >= Create && LA158_44 <= Delete || LA158_44 >= Drafts && LA158_44 <= Gollum || LA158_44 == Issues || LA158_44 == Public || LA158_44 == Remote || LA158_44 >= Stages && LA158_44 <= Status || LA158_44 == Label || LA158_44 == Paths || LA158_44 == Rules || LA158_44 == Watch || LA158_44 >= Cron && LA158_44 <= Name || LA158_44 == Only || LA158_44 >= Pool && LA158_44 <= Push || LA158_44 == Tags || LA158_44 == Env || LA158_44 >= On && LA158_44 <= Pr || LA158_44 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
+                        if ( (LA160_32==RULE_END) ) {s = 33;}
 
-                        else if ( (LA158_44==RULE_END) ) {s = 45;}
+                        else if ( ( LA160_32 == EOF || LA160_32 >= Pull_request_review_comment && LA160_32 <= Repository_dispatch || LA160_32 >= Deployment_status && LA160_32 <= Registry_package || LA160_32 >= Merge_requests && LA160_32 <= Project_column || LA160_32 == WorkflowRules || LA160_32 >= Issue_comment && LA160_32 <= Workflow_call || LA160_32 == LockBehavior || LA160_32 >= Project_card && LA160_32 <= Pull_request || LA160_32 >= Workflow_run && LA160_32 <= Concurrency || LA160_32 >= AutoCancel && LA160_32 <= Conditions || LA160_32 == Deployment || LA160_32 >= Page_build && LA160_32 <= PlanBranch || LA160_32 == Repository || LA160_32 >= Bitbucket && LA160_32 <= Check_run || LA160_32 >= Milestone && LA160_32 <= Pipelines || LA160_32 == Resources || LA160_32 >= Scheduled && LA160_32 <= Variables || LA160_32 == Branches || LA160_32 == Defaults || LA160_32 >= RunName && LA160_32 <= Schedule || LA160_32 == Changes || LA160_32 == Default || LA160_32 == Extends || LA160_32 == Include || LA160_32 == Project || LA160_32 == Release || LA160_32 >= Trigger && LA160_32 <= Version || LA160_32 >= Create && LA160_32 <= Delete || LA160_32 >= Drafts && LA160_32 <= Gollum || LA160_32 == Issues || LA160_32 == Public || LA160_32 == Remote || LA160_32 >= Stages && LA160_32 <= Status || LA160_32 == Label || LA160_32 == Paths || LA160_32 == Rules || LA160_32 == Watch || LA160_32 >= Cron && LA160_32 <= Name || LA160_32 == Only || LA160_32 >= Pool && LA160_32 <= Push || LA160_32 == Tags || LA160_32 == Env || LA160_32 >= On && LA160_32 <= Pr || LA160_32 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
 
                          
-                        input.seek(index158_44);
+                        input.seek(index160_32);
                         if ( s>=0 ) return s;
                         break;
                     case 15 : 
-                        int LA158_26 = input.LA(1);
+                        int LA160_36 = input.LA(1);
 
                          
-                        int index158_26 = input.index();
+                        int index160_36 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( ( LA158_26 == EOF || LA158_26 >= Pull_request_review_comment && LA158_26 <= Repository_dispatch || LA158_26 >= Deployment_status && LA158_26 <= Registry_package || LA158_26 >= Merge_requests && LA158_26 <= Project_column || LA158_26 == WorkflowRules || LA158_26 >= Issue_comment && LA158_26 <= Workflow_call || LA158_26 == LockBehavior || LA158_26 >= Project_card && LA158_26 <= Pull_request || LA158_26 >= Workflow_run && LA158_26 <= Concurrency || LA158_26 >= AutoCancel && LA158_26 <= Conditions || LA158_26 == Deployment || LA158_26 >= Page_build && LA158_26 <= PlanBranch || LA158_26 == Repository || LA158_26 >= Bitbucket && LA158_26 <= Check_run || LA158_26 >= Milestone && LA158_26 <= Pipelines || LA158_26 == Resources || LA158_26 >= Scheduled && LA158_26 <= Variables || LA158_26 == Branches || LA158_26 == Defaults || LA158_26 >= RunName && LA158_26 <= Schedule || LA158_26 == Changes || LA158_26 == Default || LA158_26 == Extends || LA158_26 == Include || LA158_26 == Project || LA158_26 == Release || LA158_26 >= Trigger && LA158_26 <= Version || LA158_26 >= Create && LA158_26 <= Delete || LA158_26 >= Drafts && LA158_26 <= Gollum || LA158_26 == Issues || LA158_26 == Public || LA158_26 == Remote || LA158_26 >= Stages && LA158_26 <= Status || LA158_26 == Label || LA158_26 == Paths || LA158_26 == Rules || LA158_26 == Watch || LA158_26 >= Cron && LA158_26 <= Name || LA158_26 == Only || LA158_26 >= Pool && LA158_26 <= Push || LA158_26 == Tags || LA158_26 == Env || LA158_26 >= On && LA158_26 <= Pr || LA158_26 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
+                        if ( (LA160_36==RULE_END) ) {s = 37;}
 
-                        else if ( (LA158_26==RULE_END) ) {s = 27;}
+                        else if ( ( LA160_36 == EOF || LA160_36 >= Pull_request_review_comment && LA160_36 <= Repository_dispatch || LA160_36 >= Deployment_status && LA160_36 <= Registry_package || LA160_36 >= Merge_requests && LA160_36 <= Project_column || LA160_36 == WorkflowRules || LA160_36 >= Issue_comment && LA160_36 <= Workflow_call || LA160_36 == LockBehavior || LA160_36 >= Project_card && LA160_36 <= Pull_request || LA160_36 >= Workflow_run && LA160_36 <= Concurrency || LA160_36 >= AutoCancel && LA160_36 <= Conditions || LA160_36 == Deployment || LA160_36 >= Page_build && LA160_36 <= PlanBranch || LA160_36 == Repository || LA160_36 >= Bitbucket && LA160_36 <= Check_run || LA160_36 >= Milestone && LA160_36 <= Pipelines || LA160_36 == Resources || LA160_36 >= Scheduled && LA160_36 <= Variables || LA160_36 == Branches || LA160_36 == Defaults || LA160_36 >= RunName && LA160_36 <= Schedule || LA160_36 == Changes || LA160_36 == Default || LA160_36 == Extends || LA160_36 == Include || LA160_36 == Project || LA160_36 == Release || LA160_36 >= Trigger && LA160_36 <= Version || LA160_36 >= Create && LA160_36 <= Delete || LA160_36 >= Drafts && LA160_36 <= Gollum || LA160_36 == Issues || LA160_36 == Public || LA160_36 == Remote || LA160_36 >= Stages && LA160_36 <= Status || LA160_36 == Label || LA160_36 == Paths || LA160_36 == Rules || LA160_36 == Watch || LA160_36 >= Cron && LA160_36 <= Name || LA160_36 == Only || LA160_36 >= Pool && LA160_36 <= Push || LA160_36 == Tags || LA160_36 == Env || LA160_36 >= On && LA160_36 <= Pr || LA160_36 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
 
                          
-                        input.seek(index158_26);
+                        input.seek(index160_36);
                         if ( s>=0 ) return s;
                         break;
                     case 16 : 
-                        int LA158_20 = input.LA(1);
+                        int LA160_47 = input.LA(1);
 
                          
-                        int index158_20 = input.index();
+                        int index160_47 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( ( LA158_20 == EOF || LA158_20 >= Pull_request_review_comment && LA158_20 <= Repository_dispatch || LA158_20 >= Deployment_status && LA158_20 <= Registry_package || LA158_20 >= Merge_requests && LA158_20 <= Project_column || LA158_20 == WorkflowRules || LA158_20 >= Issue_comment && LA158_20 <= Workflow_call || LA158_20 == LockBehavior || LA158_20 >= Project_card && LA158_20 <= Pull_request || LA158_20 >= Workflow_run && LA158_20 <= Concurrency || LA158_20 >= AutoCancel && LA158_20 <= Conditions || LA158_20 == Deployment || LA158_20 >= Page_build && LA158_20 <= PlanBranch || LA158_20 == Repository || LA158_20 >= Bitbucket && LA158_20 <= Check_run || LA158_20 >= Milestone && LA158_20 <= Pipelines || LA158_20 == Resources || LA158_20 >= Scheduled && LA158_20 <= Variables || LA158_20 == Branches || LA158_20 == Defaults || LA158_20 >= RunName && LA158_20 <= Schedule || LA158_20 == Changes || LA158_20 == Default || LA158_20 == Extends || LA158_20 == Include || LA158_20 == Project || LA158_20 == Release || LA158_20 >= Trigger && LA158_20 <= Version || LA158_20 >= Create && LA158_20 <= Delete || LA158_20 >= Drafts && LA158_20 <= Gollum || LA158_20 == Issues || LA158_20 == Public || LA158_20 == Remote || LA158_20 >= Stages && LA158_20 <= Status || LA158_20 == Label || LA158_20 == Paths || LA158_20 == Rules || LA158_20 == Watch || LA158_20 >= Cron && LA158_20 <= Name || LA158_20 == Only || LA158_20 >= Pool && LA158_20 <= Push || LA158_20 == Tags || LA158_20 == Env || LA158_20 >= On && LA158_20 <= Pr || LA158_20 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
+                        if ( LA160_47 == RULE_END && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
 
-                        else if ( (LA158_20==RULE_END) ) {s = 21;}
+                        else if ( (LA160_47==EOF||(LA160_47>=Pull_request_review_comment && LA160_47<=Repository_dispatch)||(LA160_47>=Deployment_status && LA160_47<=Workflow_dispatch)||LA160_47==Registry_package||(LA160_47>=Merge_requests && LA160_47<=Project_column)||LA160_47==WorkflowRules||(LA160_47>=Issue_comment && LA160_47<=Workflow_call)||LA160_47==LockBehavior||(LA160_47>=Project_card && LA160_47<=Pull_request)||(LA160_47>=Workflow_run && LA160_47<=Check_suite)||(LA160_47>=AutoCancel && LA160_47<=Conditions)||LA160_47==Deployment||LA160_47==Page_build||LA160_47==PlanBranch||LA160_47==Repository||(LA160_47>=Bitbucket && LA160_47<=Check_run)||(LA160_47>=Milestone && LA160_47<=Pipelines)||(LA160_47>=Scheduled && LA160_47<=Schedules)||LA160_47==Branches||LA160_47==Schedule||LA160_47==Changes||LA160_47==Default||LA160_47==Project||LA160_47==Release||LA160_47==Trigger||(LA160_47>=Create && LA160_47<=Delete)||(LA160_47>=Drafts && LA160_47<=Gollum)||LA160_47==Issues||LA160_47==Public||LA160_47==Remote||(LA160_47>=Stages && LA160_47<=Status)||LA160_47==Label||LA160_47==Paths||LA160_47==Rules||LA160_47==Watch||(LA160_47>=Cron && LA160_47<=Jobs)||LA160_47==Only||LA160_47==Push||LA160_47==Tags||(LA160_47>=On && LA160_47<=Pr)||LA160_47==RULE_ID) ) {s = 4;}
 
                          
-                        input.seek(index158_20);
+                        input.seek(index160_47);
                         if ( s>=0 ) return s;
                         break;
                     case 17 : 
-                        int LA158_40 = input.LA(1);
+                        int LA160_16 = input.LA(1);
 
                          
-                        int index158_40 = input.index();
+                        int index160_16 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( ( LA158_40 == EOF || LA158_40 >= Pull_request_review_comment && LA158_40 <= Repository_dispatch || LA158_40 >= Deployment_status && LA158_40 <= Registry_package || LA158_40 >= Merge_requests && LA158_40 <= Project_column || LA158_40 == WorkflowRules || LA158_40 >= Issue_comment && LA158_40 <= Workflow_call || LA158_40 == LockBehavior || LA158_40 >= Project_card && LA158_40 <= Pull_request || LA158_40 >= Workflow_run && LA158_40 <= Concurrency || LA158_40 >= AutoCancel && LA158_40 <= Conditions || LA158_40 == Deployment || LA158_40 >= Page_build && LA158_40 <= PlanBranch || LA158_40 == Repository || LA158_40 >= Bitbucket && LA158_40 <= Check_run || LA158_40 >= Milestone && LA158_40 <= Pipelines || LA158_40 == Resources || LA158_40 >= Scheduled && LA158_40 <= Variables || LA158_40 == Branches || LA158_40 == Defaults || LA158_40 >= RunName && LA158_40 <= Schedule || LA158_40 == Changes || LA158_40 == Default || LA158_40 == Extends || LA158_40 == Include || LA158_40 == Project || LA158_40 == Release || LA158_40 >= Trigger && LA158_40 <= Version || LA158_40 >= Create && LA158_40 <= Delete || LA158_40 >= Drafts && LA158_40 <= Gollum || LA158_40 == Issues || LA158_40 == Public || LA158_40 == Remote || LA158_40 >= Stages && LA158_40 <= Status || LA158_40 == Label || LA158_40 == Paths || LA158_40 == Rules || LA158_40 == Watch || LA158_40 >= Cron && LA158_40 <= Name || LA158_40 == Only || LA158_40 >= Pool && LA158_40 <= Push || LA158_40 == Tags || LA158_40 == Env || LA158_40 >= On && LA158_40 <= Pr || LA158_40 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
+                        if ( ( LA160_16 == EOF || LA160_16 >= Pull_request_review_comment && LA160_16 <= Repository_dispatch || LA160_16 >= Deployment_status && LA160_16 <= Registry_package || LA160_16 >= Merge_requests && LA160_16 <= Project_column || LA160_16 == WorkflowRules || LA160_16 >= Issue_comment && LA160_16 <= Workflow_call || LA160_16 == LockBehavior || LA160_16 >= Project_card && LA160_16 <= Pull_request || LA160_16 >= Workflow_run && LA160_16 <= Concurrency || LA160_16 >= AutoCancel && LA160_16 <= Conditions || LA160_16 == Deployment || LA160_16 >= Page_build && LA160_16 <= PlanBranch || LA160_16 == Repository || LA160_16 >= Bitbucket && LA160_16 <= Check_run || LA160_16 >= Milestone && LA160_16 <= Pipelines || LA160_16 == Resources || LA160_16 >= Scheduled && LA160_16 <= Variables || LA160_16 == Branches || LA160_16 == Defaults || LA160_16 >= RunName && LA160_16 <= Schedule || LA160_16 == Changes || LA160_16 == Default || LA160_16 == Extends || LA160_16 == Include || LA160_16 == Project || LA160_16 == Release || LA160_16 >= Trigger && LA160_16 <= Version || LA160_16 >= Create && LA160_16 <= Delete || LA160_16 >= Drafts && LA160_16 <= Gollum || LA160_16 == Issues || LA160_16 == Public || LA160_16 == Remote || LA160_16 >= Stages && LA160_16 <= Status || LA160_16 == Label || LA160_16 == Paths || LA160_16 == Rules || LA160_16 == Watch || LA160_16 >= Cron && LA160_16 <= Name || LA160_16 == Only || LA160_16 >= Pool && LA160_16 <= Push || LA160_16 == Tags || LA160_16 == Env || LA160_16 >= On && LA160_16 <= Pr || LA160_16 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
 
-                        else if ( (LA158_40==RULE_END) ) {s = 41;}
+                        else if ( (LA160_16==RULE_END) ) {s = 17;}
 
                          
-                        input.seek(index158_40);
+                        input.seek(index160_16);
                         if ( s>=0 ) return s;
                         break;
                     case 18 : 
-                        int LA158_6 = input.LA(1);
+                        int LA160_46 = input.LA(1);
 
                          
-                        int index158_6 = input.index();
+                        int index160_46 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (LA158_6==RULE_END) ) {s = 7;}
+                        if ( (LA160_46==RULE_END) ) {s = 47;}
 
-                        else if ( ( LA158_6 == EOF || LA158_6 >= Pull_request_review_comment && LA158_6 <= Repository_dispatch || LA158_6 >= Deployment_status && LA158_6 <= Registry_package || LA158_6 >= Merge_requests && LA158_6 <= Project_column || LA158_6 == WorkflowRules || LA158_6 >= Issue_comment && LA158_6 <= Workflow_call || LA158_6 == LockBehavior || LA158_6 >= Project_card && LA158_6 <= Pull_request || LA158_6 >= Workflow_run && LA158_6 <= Concurrency || LA158_6 >= AutoCancel && LA158_6 <= Conditions || LA158_6 == Deployment || LA158_6 >= Page_build && LA158_6 <= PlanBranch || LA158_6 == Repository || LA158_6 >= Bitbucket && LA158_6 <= Check_run || LA158_6 >= Milestone && LA158_6 <= Pipelines || LA158_6 == Resources || LA158_6 >= Scheduled && LA158_6 <= Variables || LA158_6 == Branches || LA158_6 == Defaults || LA158_6 >= RunName && LA158_6 <= Schedule || LA158_6 == Changes || LA158_6 == Default || LA158_6 == Extends || LA158_6 == Include || LA158_6 == Project || LA158_6 == Release || LA158_6 >= Trigger && LA158_6 <= Version || LA158_6 >= Create && LA158_6 <= Delete || LA158_6 >= Drafts && LA158_6 <= Gollum || LA158_6 == Issues || LA158_6 == Public || LA158_6 == Remote || LA158_6 >= Stages && LA158_6 <= Status || LA158_6 == Label || LA158_6 == Paths || LA158_6 == Rules || LA158_6 == Watch || LA158_6 >= Cron && LA158_6 <= Name || LA158_6 == Only || LA158_6 >= Pool && LA158_6 <= Push || LA158_6 == Tags || LA158_6 == Env || LA158_6 >= On && LA158_6 <= Pr || LA158_6 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
+                        else if ( ( LA160_46 == EOF || LA160_46 >= Pull_request_review_comment && LA160_46 <= Repository_dispatch || LA160_46 >= Deployment_status && LA160_46 <= Registry_package || LA160_46 >= Merge_requests && LA160_46 <= Project_column || LA160_46 == WorkflowRules || LA160_46 >= Issue_comment && LA160_46 <= Workflow_call || LA160_46 == LockBehavior || LA160_46 >= Project_card && LA160_46 <= Pull_request || LA160_46 >= Workflow_run && LA160_46 <= Check_suite || LA160_46 >= AutoCancel && LA160_46 <= Conditions || LA160_46 == Deployment || LA160_46 == Page_build || LA160_46 == PlanBranch || LA160_46 == Repository || LA160_46 >= Bitbucket && LA160_46 <= Check_run || LA160_46 >= Milestone && LA160_46 <= Pipelines || LA160_46 >= Scheduled && LA160_46 <= Schedules || LA160_46 == Branches || LA160_46 == Defaults || LA160_46 == Schedule || LA160_46 == Changes || LA160_46 == Default || LA160_46 == Project || LA160_46 == Release || LA160_46 == Trigger || LA160_46 >= Create && LA160_46 <= Delete || LA160_46 >= Drafts && LA160_46 <= Gollum || LA160_46 == Issues || LA160_46 == Public || LA160_46 == Remote || LA160_46 >= Stages && LA160_46 <= Status || LA160_46 == Label || LA160_46 == Paths || LA160_46 == Rules || LA160_46 == Watch || LA160_46 >= Cron && LA160_46 <= Jobs || LA160_46 == Only || LA160_46 == Push || LA160_46 == Tags || LA160_46 >= On && LA160_46 <= Pr || LA160_46 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
 
                          
-                        input.seek(index158_6);
+                        input.seek(index160_46);
                         if ( s>=0 ) return s;
                         break;
                     case 19 : 
-                        int LA158_8 = input.LA(1);
+                        int LA160_20 = input.LA(1);
 
                          
-                        int index158_8 = input.index();
+                        int index160_20 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (LA158_8==RULE_END) ) {s = 9;}
+                        if ( ( LA160_20 == EOF || LA160_20 >= Pull_request_review_comment && LA160_20 <= Repository_dispatch || LA160_20 >= Deployment_status && LA160_20 <= Registry_package || LA160_20 >= Merge_requests && LA160_20 <= Project_column || LA160_20 == WorkflowRules || LA160_20 >= Issue_comment && LA160_20 <= Workflow_call || LA160_20 == LockBehavior || LA160_20 >= Project_card && LA160_20 <= Pull_request || LA160_20 >= Workflow_run && LA160_20 <= Concurrency || LA160_20 >= AutoCancel && LA160_20 <= Conditions || LA160_20 == Deployment || LA160_20 >= Page_build && LA160_20 <= PlanBranch || LA160_20 == Repository || LA160_20 >= Bitbucket && LA160_20 <= Check_run || LA160_20 >= Milestone && LA160_20 <= Pipelines || LA160_20 == Resources || LA160_20 >= Scheduled && LA160_20 <= Variables || LA160_20 == Branches || LA160_20 == Defaults || LA160_20 >= RunName && LA160_20 <= Schedule || LA160_20 == Changes || LA160_20 == Default || LA160_20 == Extends || LA160_20 == Include || LA160_20 == Project || LA160_20 == Release || LA160_20 >= Trigger && LA160_20 <= Version || LA160_20 >= Create && LA160_20 <= Delete || LA160_20 >= Drafts && LA160_20 <= Gollum || LA160_20 == Issues || LA160_20 == Public || LA160_20 == Remote || LA160_20 >= Stages && LA160_20 <= Status || LA160_20 == Label || LA160_20 == Paths || LA160_20 == Rules || LA160_20 == Watch || LA160_20 >= Cron && LA160_20 <= Name || LA160_20 == Only || LA160_20 >= Pool && LA160_20 <= Push || LA160_20 == Tags || LA160_20 == Env || LA160_20 >= On && LA160_20 <= Pr || LA160_20 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
 
-                        else if ( ( LA158_8 == EOF || LA158_8 >= Pull_request_review_comment && LA158_8 <= Repository_dispatch || LA158_8 >= Deployment_status && LA158_8 <= Registry_package || LA158_8 >= Merge_requests && LA158_8 <= Project_column || LA158_8 == WorkflowRules || LA158_8 >= Issue_comment && LA158_8 <= Workflow_call || LA158_8 == LockBehavior || LA158_8 >= Project_card && LA158_8 <= Pull_request || LA158_8 >= Workflow_run && LA158_8 <= Concurrency || LA158_8 >= AutoCancel && LA158_8 <= Conditions || LA158_8 == Deployment || LA158_8 >= Page_build && LA158_8 <= PlanBranch || LA158_8 == Repository || LA158_8 >= Bitbucket && LA158_8 <= Check_run || LA158_8 >= Milestone && LA158_8 <= Pipelines || LA158_8 == Resources || LA158_8 >= Scheduled && LA158_8 <= Variables || LA158_8 == Branches || LA158_8 == Defaults || LA158_8 >= RunName && LA158_8 <= Schedule || LA158_8 == Changes || LA158_8 == Default || LA158_8 == Extends || LA158_8 == Include || LA158_8 == Project || LA158_8 == Release || LA158_8 >= Trigger && LA158_8 <= Version || LA158_8 >= Create && LA158_8 <= Delete || LA158_8 >= Drafts && LA158_8 <= Gollum || LA158_8 == Issues || LA158_8 == Public || LA158_8 == Remote || LA158_8 >= Stages && LA158_8 <= Status || LA158_8 == Label || LA158_8 == Paths || LA158_8 == Rules || LA158_8 == Watch || LA158_8 >= Cron && LA158_8 <= Name || LA158_8 == Only || LA158_8 >= Pool && LA158_8 <= Push || LA158_8 == Tags || LA158_8 == Env || LA158_8 >= On && LA158_8 <= Pr || LA158_8 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
+                        else if ( (LA160_20==RULE_END) ) {s = 21;}
 
                          
-                        input.seek(index158_8);
+                        input.seek(index160_20);
                         if ( s>=0 ) return s;
                         break;
                     case 20 : 
-                        int LA158_30 = input.LA(1);
+                        int LA160_8 = input.LA(1);
 
                          
-                        int index158_30 = input.index();
+                        int index160_8 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( ( LA158_30 == EOF || LA158_30 >= Pull_request_review_comment && LA158_30 <= Repository_dispatch || LA158_30 >= Deployment_status && LA158_30 <= Registry_package || LA158_30 >= Merge_requests && LA158_30 <= Project_column || LA158_30 == WorkflowRules || LA158_30 >= Issue_comment && LA158_30 <= Workflow_call || LA158_30 == LockBehavior || LA158_30 >= Project_card && LA158_30 <= Pull_request || LA158_30 >= Workflow_run && LA158_30 <= Concurrency || LA158_30 >= AutoCancel && LA158_30 <= Conditions || LA158_30 == Deployment || LA158_30 >= Page_build && LA158_30 <= PlanBranch || LA158_30 == Repository || LA158_30 >= Bitbucket && LA158_30 <= Check_run || LA158_30 >= Milestone && LA158_30 <= Pipelines || LA158_30 == Resources || LA158_30 >= Scheduled && LA158_30 <= Variables || LA158_30 == Branches || LA158_30 == Defaults || LA158_30 >= RunName && LA158_30 <= Schedule || LA158_30 == Changes || LA158_30 == Default || LA158_30 == Extends || LA158_30 == Include || LA158_30 == Project || LA158_30 == Release || LA158_30 >= Trigger && LA158_30 <= Version || LA158_30 >= Create && LA158_30 <= Delete || LA158_30 >= Drafts && LA158_30 <= Gollum || LA158_30 == Issues || LA158_30 == Public || LA158_30 == Remote || LA158_30 >= Stages && LA158_30 <= Status || LA158_30 == Label || LA158_30 == Paths || LA158_30 == Rules || LA158_30 == Watch || LA158_30 >= Cron && LA158_30 <= Name || LA158_30 == Only || LA158_30 >= Pool && LA158_30 <= Push || LA158_30 == Tags || LA158_30 == Env || LA158_30 >= On && LA158_30 <= Pr || LA158_30 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
+                        if ( (LA160_8==RULE_END) ) {s = 9;}
 
-                        else if ( (LA158_30==RULE_END) ) {s = 31;}
+                        else if ( ( LA160_8 == EOF || LA160_8 >= Pull_request_review_comment && LA160_8 <= Repository_dispatch || LA160_8 >= Deployment_status && LA160_8 <= Registry_package || LA160_8 >= Merge_requests && LA160_8 <= Project_column || LA160_8 == WorkflowRules || LA160_8 >= Issue_comment && LA160_8 <= Workflow_call || LA160_8 == LockBehavior || LA160_8 >= Project_card && LA160_8 <= Pull_request || LA160_8 >= Workflow_run && LA160_8 <= Concurrency || LA160_8 >= AutoCancel && LA160_8 <= Conditions || LA160_8 == Deployment || LA160_8 >= Page_build && LA160_8 <= PlanBranch || LA160_8 == Repository || LA160_8 >= Bitbucket && LA160_8 <= Check_run || LA160_8 >= Milestone && LA160_8 <= Pipelines || LA160_8 == Resources || LA160_8 >= Scheduled && LA160_8 <= Variables || LA160_8 == Branches || LA160_8 == Defaults || LA160_8 >= RunName && LA160_8 <= Schedule || LA160_8 == Changes || LA160_8 == Default || LA160_8 == Extends || LA160_8 == Include || LA160_8 == Project || LA160_8 == Release || LA160_8 >= Trigger && LA160_8 <= Version || LA160_8 >= Create && LA160_8 <= Delete || LA160_8 >= Drafts && LA160_8 <= Gollum || LA160_8 == Issues || LA160_8 == Public || LA160_8 == Remote || LA160_8 >= Stages && LA160_8 <= Status || LA160_8 == Label || LA160_8 == Paths || LA160_8 == Rules || LA160_8 == Watch || LA160_8 >= Cron && LA160_8 <= Name || LA160_8 == Only || LA160_8 >= Pool && LA160_8 <= Push || LA160_8 == Tags || LA160_8 == Env || LA160_8 >= On && LA160_8 <= Pr || LA160_8 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
 
                          
-                        input.seek(index158_30);
+                        input.seek(index160_8);
                         if ( s>=0 ) return s;
                         break;
                     case 21 : 
-                        int LA158_36 = input.LA(1);
+                        int LA160_10 = input.LA(1);
 
                          
-                        int index158_36 = input.index();
+                        int index160_10 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (LA158_36==RULE_END) ) {s = 37;}
+                        if ( (LA160_10==RULE_END) ) {s = 11;}
 
-                        else if ( ( LA158_36 == EOF || LA158_36 >= Pull_request_review_comment && LA158_36 <= Repository_dispatch || LA158_36 >= Deployment_status && LA158_36 <= Registry_package || LA158_36 >= Merge_requests && LA158_36 <= Project_column || LA158_36 == WorkflowRules || LA158_36 >= Issue_comment && LA158_36 <= Workflow_call || LA158_36 == LockBehavior || LA158_36 >= Project_card && LA158_36 <= Pull_request || LA158_36 >= Workflow_run && LA158_36 <= Concurrency || LA158_36 >= AutoCancel && LA158_36 <= Conditions || LA158_36 == Deployment || LA158_36 >= Page_build && LA158_36 <= PlanBranch || LA158_36 == Repository || LA158_36 >= Bitbucket && LA158_36 <= Check_run || LA158_36 >= Milestone && LA158_36 <= Pipelines || LA158_36 == Resources || LA158_36 >= Scheduled && LA158_36 <= Variables || LA158_36 == Branches || LA158_36 == Defaults || LA158_36 >= RunName && LA158_36 <= Schedule || LA158_36 == Changes || LA158_36 == Default || LA158_36 == Extends || LA158_36 == Include || LA158_36 == Project || LA158_36 == Release || LA158_36 >= Trigger && LA158_36 <= Version || LA158_36 >= Create && LA158_36 <= Delete || LA158_36 >= Drafts && LA158_36 <= Gollum || LA158_36 == Issues || LA158_36 == Public || LA158_36 == Remote || LA158_36 >= Stages && LA158_36 <= Status || LA158_36 == Label || LA158_36 == Paths || LA158_36 == Rules || LA158_36 == Watch || LA158_36 >= Cron && LA158_36 <= Name || LA158_36 == Only || LA158_36 >= Pool && LA158_36 <= Push || LA158_36 == Tags || LA158_36 == Env || LA158_36 >= On && LA158_36 <= Pr || LA158_36 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
+                        else if ( ( LA160_10 == EOF || LA160_10 >= Pull_request_review_comment && LA160_10 <= Repository_dispatch || LA160_10 >= Deployment_status && LA160_10 <= Registry_package || LA160_10 >= Merge_requests && LA160_10 <= Project_column || LA160_10 == WorkflowRules || LA160_10 >= Issue_comment && LA160_10 <= Workflow_call || LA160_10 == LockBehavior || LA160_10 >= Project_card && LA160_10 <= Pull_request || LA160_10 >= Workflow_run && LA160_10 <= Concurrency || LA160_10 >= AutoCancel && LA160_10 <= Conditions || LA160_10 == Deployment || LA160_10 >= Page_build && LA160_10 <= PlanBranch || LA160_10 == Repository || LA160_10 >= Bitbucket && LA160_10 <= Check_run || LA160_10 >= Milestone && LA160_10 <= Pipelines || LA160_10 == Resources || LA160_10 >= Scheduled && LA160_10 <= Variables || LA160_10 == Branches || LA160_10 == Defaults || LA160_10 >= RunName && LA160_10 <= Schedule || LA160_10 == Changes || LA160_10 == Default || LA160_10 == Extends || LA160_10 == Include || LA160_10 == Project || LA160_10 == Release || LA160_10 >= Trigger && LA160_10 <= Version || LA160_10 >= Create && LA160_10 <= Delete || LA160_10 >= Drafts && LA160_10 <= Gollum || LA160_10 == Issues || LA160_10 == Public || LA160_10 == Remote || LA160_10 >= Stages && LA160_10 <= Status || LA160_10 == Label || LA160_10 == Paths || LA160_10 == Rules || LA160_10 == Watch || LA160_10 >= Cron && LA160_10 <= Name || LA160_10 == Only || LA160_10 >= Pool && LA160_10 <= Push || LA160_10 == Tags || LA160_10 == Env || LA160_10 >= On && LA160_10 <= Pr || LA160_10 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
 
                          
-                        input.seek(index158_36);
+                        input.seek(index160_10);
                         if ( s>=0 ) return s;
                         break;
                     case 22 : 
-                        int LA158_10 = input.LA(1);
+                        int LA160_38 = input.LA(1);
 
                          
-                        int index158_10 = input.index();
+                        int index160_38 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (LA158_10==RULE_END) ) {s = 11;}
+                        if ( (LA160_38==RULE_END) ) {s = 39;}
 
-                        else if ( ( LA158_10 == EOF || LA158_10 >= Pull_request_review_comment && LA158_10 <= Repository_dispatch || LA158_10 >= Deployment_status && LA158_10 <= Registry_package || LA158_10 >= Merge_requests && LA158_10 <= Project_column || LA158_10 == WorkflowRules || LA158_10 >= Issue_comment && LA158_10 <= Workflow_call || LA158_10 == LockBehavior || LA158_10 >= Project_card && LA158_10 <= Pull_request || LA158_10 >= Workflow_run && LA158_10 <= Concurrency || LA158_10 >= AutoCancel && LA158_10 <= Conditions || LA158_10 == Deployment || LA158_10 >= Page_build && LA158_10 <= PlanBranch || LA158_10 == Repository || LA158_10 >= Bitbucket && LA158_10 <= Check_run || LA158_10 >= Milestone && LA158_10 <= Pipelines || LA158_10 == Resources || LA158_10 >= Scheduled && LA158_10 <= Variables || LA158_10 == Branches || LA158_10 == Defaults || LA158_10 >= RunName && LA158_10 <= Schedule || LA158_10 == Changes || LA158_10 == Default || LA158_10 == Extends || LA158_10 == Include || LA158_10 == Project || LA158_10 == Release || LA158_10 >= Trigger && LA158_10 <= Version || LA158_10 >= Create && LA158_10 <= Delete || LA158_10 >= Drafts && LA158_10 <= Gollum || LA158_10 == Issues || LA158_10 == Public || LA158_10 == Remote || LA158_10 >= Stages && LA158_10 <= Status || LA158_10 == Label || LA158_10 == Paths || LA158_10 == Rules || LA158_10 == Watch || LA158_10 >= Cron && LA158_10 <= Name || LA158_10 == Only || LA158_10 >= Pool && LA158_10 <= Push || LA158_10 == Tags || LA158_10 == Env || LA158_10 >= On && LA158_10 <= Pr || LA158_10 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
+                        else if ( ( LA160_38 == EOF || LA160_38 >= Pull_request_review_comment && LA160_38 <= Repository_dispatch || LA160_38 >= Deployment_status && LA160_38 <= Registry_package || LA160_38 >= Merge_requests && LA160_38 <= Project_column || LA160_38 == WorkflowRules || LA160_38 >= Issue_comment && LA160_38 <= Workflow_call || LA160_38 == LockBehavior || LA160_38 >= Project_card && LA160_38 <= Pull_request || LA160_38 >= Workflow_run && LA160_38 <= Concurrency || LA160_38 >= AutoCancel && LA160_38 <= Conditions || LA160_38 == Deployment || LA160_38 >= Page_build && LA160_38 <= PlanBranch || LA160_38 == Repository || LA160_38 >= Bitbucket && LA160_38 <= Check_run || LA160_38 >= Milestone && LA160_38 <= Pipelines || LA160_38 == Resources || LA160_38 >= Scheduled && LA160_38 <= Variables || LA160_38 == Branches || LA160_38 == Defaults || LA160_38 >= RunName && LA160_38 <= Schedule || LA160_38 == Changes || LA160_38 == Default || LA160_38 == Extends || LA160_38 == Include || LA160_38 == Project || LA160_38 == Release || LA160_38 >= Trigger && LA160_38 <= Version || LA160_38 >= Create && LA160_38 <= Delete || LA160_38 >= Drafts && LA160_38 <= Gollum || LA160_38 == Issues || LA160_38 == Public || LA160_38 == Remote || LA160_38 >= Stages && LA160_38 <= Status || LA160_38 == Label || LA160_38 == Paths || LA160_38 == Rules || LA160_38 == Watch || LA160_38 >= Cron && LA160_38 <= Name || LA160_38 == Only || LA160_38 >= Pool && LA160_38 <= Push || LA160_38 == Tags || LA160_38 == Env || LA160_38 >= On && LA160_38 <= Pr || LA160_38 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
 
                          
-                        input.seek(index158_10);
+                        input.seek(index160_38);
                         if ( s>=0 ) return s;
                         break;
                     case 23 : 
-                        int LA158_28 = input.LA(1);
+                        int LA160_18 = input.LA(1);
 
                          
-                        int index158_28 = input.index();
+                        int index160_18 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( ( LA158_28 == EOF || LA158_28 >= Pull_request_review_comment && LA158_28 <= Repository_dispatch || LA158_28 >= Deployment_status && LA158_28 <= Registry_package || LA158_28 >= Merge_requests && LA158_28 <= Project_column || LA158_28 == WorkflowRules || LA158_28 >= Issue_comment && LA158_28 <= Workflow_call || LA158_28 == LockBehavior || LA158_28 >= Project_card && LA158_28 <= Pull_request || LA158_28 >= Workflow_run && LA158_28 <= Concurrency || LA158_28 >= AutoCancel && LA158_28 <= Conditions || LA158_28 == Deployment || LA158_28 >= Page_build && LA158_28 <= PlanBranch || LA158_28 == Repository || LA158_28 >= Bitbucket && LA158_28 <= Check_run || LA158_28 >= Milestone && LA158_28 <= Pipelines || LA158_28 == Resources || LA158_28 >= Scheduled && LA158_28 <= Variables || LA158_28 == Branches || LA158_28 == Defaults || LA158_28 >= RunName && LA158_28 <= Schedule || LA158_28 == Changes || LA158_28 == Default || LA158_28 == Extends || LA158_28 == Include || LA158_28 == Project || LA158_28 == Release || LA158_28 >= Trigger && LA158_28 <= Version || LA158_28 >= Create && LA158_28 <= Delete || LA158_28 >= Drafts && LA158_28 <= Gollum || LA158_28 == Issues || LA158_28 == Public || LA158_28 == Remote || LA158_28 >= Stages && LA158_28 <= Status || LA158_28 == Label || LA158_28 == Paths || LA158_28 == Rules || LA158_28 == Watch || LA158_28 >= Cron && LA158_28 <= Name || LA158_28 == Only || LA158_28 >= Pool && LA158_28 <= Push || LA158_28 == Tags || LA158_28 == Env || LA158_28 >= On && LA158_28 <= Pr || LA158_28 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
+                        if ( ( LA160_18 == EOF || LA160_18 >= Pull_request_review_comment && LA160_18 <= Repository_dispatch || LA160_18 >= Deployment_status && LA160_18 <= Registry_package || LA160_18 >= Merge_requests && LA160_18 <= Project_column || LA160_18 == WorkflowRules || LA160_18 >= Issue_comment && LA160_18 <= Workflow_call || LA160_18 == LockBehavior || LA160_18 >= Project_card && LA160_18 <= Pull_request || LA160_18 >= Workflow_run && LA160_18 <= Concurrency || LA160_18 >= AutoCancel && LA160_18 <= Conditions || LA160_18 == Deployment || LA160_18 >= Page_build && LA160_18 <= PlanBranch || LA160_18 == Repository || LA160_18 >= Bitbucket && LA160_18 <= Check_run || LA160_18 >= Milestone && LA160_18 <= Pipelines || LA160_18 == Resources || LA160_18 >= Scheduled && LA160_18 <= Variables || LA160_18 == Branches || LA160_18 == Defaults || LA160_18 >= RunName && LA160_18 <= Schedule || LA160_18 == Changes || LA160_18 == Default || LA160_18 == Extends || LA160_18 == Include || LA160_18 == Project || LA160_18 == Release || LA160_18 >= Trigger && LA160_18 <= Version || LA160_18 >= Create && LA160_18 <= Delete || LA160_18 >= Drafts && LA160_18 <= Gollum || LA160_18 == Issues || LA160_18 == Public || LA160_18 == Remote || LA160_18 >= Stages && LA160_18 <= Status || LA160_18 == Label || LA160_18 == Paths || LA160_18 == Rules || LA160_18 == Watch || LA160_18 >= Cron && LA160_18 <= Name || LA160_18 == Only || LA160_18 >= Pool && LA160_18 <= Push || LA160_18 == Tags || LA160_18 == Env || LA160_18 >= On && LA160_18 <= Pr || LA160_18 == RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {s = 2;}
 
-                        else if ( (LA158_28==RULE_END) ) {s = 29;}
+                        else if ( (LA160_18==RULE_END) ) {s = 19;}
 
                          
-                        input.seek(index158_28);
+                        input.seek(index160_18);
                         if ( s>=0 ) return s;
                         break;
             }
             NoViableAltException nvae =
-                new NoViableAltException(getDescription(), 158, _s, input);
+                new NoViableAltException(getDescription(), 160, _s, input);
             error(nvae);
             throw nvae;
         }
@@ -55184,148 +55206,6 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
     static final short[] dfa_55 = DFA.unpackEncodedString(dfa_55s);
     static final short[][] dfa_56 = unpackEncodedStringArray(dfa_56s);
 
-    class DFA159 extends DFA {
-
-        public DFA159(BaseRecognizer recognizer) {
-            this.recognizer = recognizer;
-            this.decisionNumber = 159;
-            this.eot = dfa_51;
-            this.eof = dfa_51;
-            this.min = dfa_52;
-            this.max = dfa_53;
-            this.accept = dfa_54;
-            this.special = dfa_55;
-            this.transition = dfa_56;
-        }
-        public String getDescription() {
-            return "14199:2: ( rule__Event__UnorderedGroup_0_2_2__0 )?";
-        }
-        public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
-            TokenStream input = (TokenStream)_input;
-        	int _s = s;
-            switch ( s ) {
-                    case 0 : 
-                        int LA159_0 = input.LA(1);
-
-                         
-                        int index159_0 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( LA159_0 == Batch && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 0) ) {s = 1;}
-
-                        else if ( LA159_0 == AutoCancel && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 1) ) {s = 2;}
-
-                        else if ( LA159_0 == Workflows && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 2) ) {s = 3;}
-
-                        else if ( LA159_0 == Drafts && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 3) ) {s = 4;}
-
-                        else if ( LA159_0 == Branches && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 4) ) {s = 5;}
-
-                        else if ( LA159_0 == BranchesIgnore && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 5) ) {s = 6;}
-
-                        else if ( LA159_0 == Paths && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 6) ) {s = 7;}
-
-                        else if ( LA159_0 == PathsIgnore && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 7) ) {s = 8;}
-
-                        else if ( LA159_0 == Tags && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 8) ) {s = 9;}
-
-                        else if ( LA159_0 == TagsIgnore && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 9) ) {s = 10;}
-
-                        else if ( (LA159_0==RULE_END) ) {s = 11;}
-
-                         
-                        input.seek(index159_0);
-                        if ( s>=0 ) return s;
-                        break;
-            }
-            NoViableAltException nvae =
-                new NoViableAltException(getDescription(), 159, _s, input);
-            error(nvae);
-            throw nvae;
-        }
-    }
-    static final String dfa_57s = "\1\24\12\uffff";
-    static final String dfa_58s = "\1\u00bd\12\uffff";
-    static final String dfa_59s = "\1\uffff\1\1\1\2\1\3\1\4\1\5\1\6\1\7\1\10\1\11\1\12";
-    static final String dfa_60s = "\1\0\12\uffff}>";
-    static final String[] dfa_61s = {
-            "\1\6\23\uffff\1\10\23\uffff\1\12\1\2\33\uffff\1\3\2\uffff\1\5\60\uffff\1\4\16\uffff\1\1\6\uffff\1\7\31\uffff\1\11",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-    };
-    static final char[] dfa_57 = DFA.unpackEncodedStringToUnsignedChars(dfa_57s);
-    static final char[] dfa_58 = DFA.unpackEncodedStringToUnsignedChars(dfa_58s);
-    static final short[] dfa_59 = DFA.unpackEncodedString(dfa_59s);
-    static final short[] dfa_60 = DFA.unpackEncodedString(dfa_60s);
-    static final short[][] dfa_61 = unpackEncodedStringArray(dfa_61s);
-
-    class DFA160 extends DFA {
-
-        public DFA160(BaseRecognizer recognizer) {
-            this.recognizer = recognizer;
-            this.decisionNumber = 160;
-            this.eot = dfa_37;
-            this.eof = dfa_37;
-            this.min = dfa_57;
-            this.max = dfa_58;
-            this.accept = dfa_59;
-            this.special = dfa_60;
-            this.transition = dfa_61;
-        }
-        public String getDescription() {
-            return "14213:3: ( ({...}? => ( ( ( rule__Event__Group_0_2_2_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_1__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_2__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_3__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_4__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_5__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_6__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_7__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_8__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_9__0 ) ) ) ) )";
-        }
-        public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
-            TokenStream input = (TokenStream)_input;
-        	int _s = s;
-            switch ( s ) {
-                    case 0 : 
-                        int LA160_0 = input.LA(1);
-
-                         
-                        int index160_0 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( LA160_0 == Batch && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 0) ) {s = 1;}
-
-                        else if ( LA160_0 == AutoCancel && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 1) ) {s = 2;}
-
-                        else if ( LA160_0 == Workflows && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 2) ) {s = 3;}
-
-                        else if ( LA160_0 == Drafts && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 3) ) {s = 4;}
-
-                        else if ( LA160_0 == Branches && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 4) ) {s = 5;}
-
-                        else if ( LA160_0 == BranchesIgnore && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 5) ) {s = 6;}
-
-                        else if ( LA160_0 == Paths && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 6) ) {s = 7;}
-
-                        else if ( LA160_0 == PathsIgnore && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 7) ) {s = 8;}
-
-                        else if ( LA160_0 == Tags && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 8) ) {s = 9;}
-
-                        else if ( LA160_0 == TagsIgnore && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 9) ) {s = 10;}
-
-                         
-                        input.seek(index160_0);
-                        if ( s>=0 ) return s;
-                        break;
-            }
-            NoViableAltException nvae =
-                new NoViableAltException(getDescription(), 160, _s, input);
-            error(nvae);
-            throw nvae;
-        }
-    }
-
     class DFA161 extends DFA {
 
         public DFA161(BaseRecognizer recognizer) {
@@ -55340,7 +55220,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             this.transition = dfa_56;
         }
         public String getDescription() {
-            return "14378:2: ( rule__Event__UnorderedGroup_0_2_2__1 )?";
+            return "14199:2: ( rule__Event__UnorderedGroup_0_2_2__0 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -55386,22 +55266,44 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             throw nvae;
         }
     }
+    static final String dfa_57s = "\1\24\12\uffff";
+    static final String dfa_58s = "\1\u00bd\12\uffff";
+    static final String dfa_59s = "\1\uffff\1\1\1\2\1\3\1\4\1\5\1\6\1\7\1\10\1\11\1\12";
+    static final String dfa_60s = "\1\0\12\uffff}>";
+    static final String[] dfa_61s = {
+            "\1\6\23\uffff\1\10\23\uffff\1\12\1\2\33\uffff\1\3\2\uffff\1\5\60\uffff\1\4\16\uffff\1\1\6\uffff\1\7\31\uffff\1\11",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+    };
+    static final char[] dfa_57 = DFA.unpackEncodedStringToUnsignedChars(dfa_57s);
+    static final char[] dfa_58 = DFA.unpackEncodedStringToUnsignedChars(dfa_58s);
+    static final short[] dfa_59 = DFA.unpackEncodedString(dfa_59s);
+    static final short[] dfa_60 = DFA.unpackEncodedString(dfa_60s);
+    static final short[][] dfa_61 = unpackEncodedStringArray(dfa_61s);
 
     class DFA162 extends DFA {
 
         public DFA162(BaseRecognizer recognizer) {
             this.recognizer = recognizer;
             this.decisionNumber = 162;
-            this.eot = dfa_51;
-            this.eof = dfa_51;
-            this.min = dfa_52;
-            this.max = dfa_53;
-            this.accept = dfa_54;
-            this.special = dfa_55;
-            this.transition = dfa_56;
+            this.eot = dfa_37;
+            this.eof = dfa_37;
+            this.min = dfa_57;
+            this.max = dfa_58;
+            this.accept = dfa_59;
+            this.special = dfa_60;
+            this.transition = dfa_61;
         }
         public String getDescription() {
-            return "14390:2: ( rule__Event__UnorderedGroup_0_2_2__2 )?";
+            return "14213:3: ( ({...}? => ( ( ( rule__Event__Group_0_2_2_0__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_1__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_2__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_3__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_4__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_5__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_6__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_7__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_8__0 ) ) ) ) | ({...}? => ( ( ( rule__Event__Group_0_2_2_9__0 ) ) ) ) )";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -55434,8 +55336,6 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
 
                         else if ( LA162_0 == TagsIgnore && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 9) ) {s = 10;}
 
-                        else if ( (LA162_0==RULE_END) ) {s = 11;}
-
                          
                         input.seek(index162_0);
                         if ( s>=0 ) return s;
@@ -55462,7 +55362,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             this.transition = dfa_56;
         }
         public String getDescription() {
-            return "14402:2: ( rule__Event__UnorderedGroup_0_2_2__3 )?";
+            return "14378:2: ( rule__Event__UnorderedGroup_0_2_2__1 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -55523,7 +55423,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             this.transition = dfa_56;
         }
         public String getDescription() {
-            return "14414:2: ( rule__Event__UnorderedGroup_0_2_2__4 )?";
+            return "14390:2: ( rule__Event__UnorderedGroup_0_2_2__2 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -55584,7 +55484,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             this.transition = dfa_56;
         }
         public String getDescription() {
-            return "14426:2: ( rule__Event__UnorderedGroup_0_2_2__5 )?";
+            return "14402:2: ( rule__Event__UnorderedGroup_0_2_2__3 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -55645,7 +55545,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             this.transition = dfa_56;
         }
         public String getDescription() {
-            return "14438:2: ( rule__Event__UnorderedGroup_0_2_2__6 )?";
+            return "14414:2: ( rule__Event__UnorderedGroup_0_2_2__4 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -55706,7 +55606,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             this.transition = dfa_56;
         }
         public String getDescription() {
-            return "14450:2: ( rule__Event__UnorderedGroup_0_2_2__7 )?";
+            return "14426:2: ( rule__Event__UnorderedGroup_0_2_2__5 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -55767,7 +55667,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             this.transition = dfa_56;
         }
         public String getDescription() {
-            return "14462:2: ( rule__Event__UnorderedGroup_0_2_2__8 )?";
+            return "14438:2: ( rule__Event__UnorderedGroup_0_2_2__6 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -55828,7 +55728,7 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             this.transition = dfa_56;
         }
         public String getDescription() {
-            return "14474:2: ( rule__Event__UnorderedGroup_0_2_2__9 )?";
+            return "14450:2: ( rule__Event__UnorderedGroup_0_2_2__7 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -55874,10 +55774,132 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
             throw nvae;
         }
     }
+
+    class DFA170 extends DFA {
+
+        public DFA170(BaseRecognizer recognizer) {
+            this.recognizer = recognizer;
+            this.decisionNumber = 170;
+            this.eot = dfa_51;
+            this.eof = dfa_51;
+            this.min = dfa_52;
+            this.max = dfa_53;
+            this.accept = dfa_54;
+            this.special = dfa_55;
+            this.transition = dfa_56;
+        }
+        public String getDescription() {
+            return "14462:2: ( rule__Event__UnorderedGroup_0_2_2__8 )?";
+        }
+        public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
+            TokenStream input = (TokenStream)_input;
+        	int _s = s;
+            switch ( s ) {
+                    case 0 : 
+                        int LA170_0 = input.LA(1);
+
+                         
+                        int index170_0 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( LA170_0 == Batch && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 0) ) {s = 1;}
+
+                        else if ( LA170_0 == AutoCancel && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 1) ) {s = 2;}
+
+                        else if ( LA170_0 == Workflows && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 2) ) {s = 3;}
+
+                        else if ( LA170_0 == Drafts && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 3) ) {s = 4;}
+
+                        else if ( LA170_0 == Branches && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 4) ) {s = 5;}
+
+                        else if ( LA170_0 == BranchesIgnore && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 5) ) {s = 6;}
+
+                        else if ( LA170_0 == Paths && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 6) ) {s = 7;}
+
+                        else if ( LA170_0 == PathsIgnore && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 7) ) {s = 8;}
+
+                        else if ( LA170_0 == Tags && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 8) ) {s = 9;}
+
+                        else if ( LA170_0 == TagsIgnore && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 9) ) {s = 10;}
+
+                        else if ( (LA170_0==RULE_END) ) {s = 11;}
+
+                         
+                        input.seek(index170_0);
+                        if ( s>=0 ) return s;
+                        break;
+            }
+            NoViableAltException nvae =
+                new NoViableAltException(getDescription(), 170, _s, input);
+            error(nvae);
+            throw nvae;
+        }
+    }
+
+    class DFA171 extends DFA {
+
+        public DFA171(BaseRecognizer recognizer) {
+            this.recognizer = recognizer;
+            this.decisionNumber = 171;
+            this.eot = dfa_51;
+            this.eof = dfa_51;
+            this.min = dfa_52;
+            this.max = dfa_53;
+            this.accept = dfa_54;
+            this.special = dfa_55;
+            this.transition = dfa_56;
+        }
+        public String getDescription() {
+            return "14474:2: ( rule__Event__UnorderedGroup_0_2_2__9 )?";
+        }
+        public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
+            TokenStream input = (TokenStream)_input;
+        	int _s = s;
+            switch ( s ) {
+                    case 0 : 
+                        int LA171_0 = input.LA(1);
+
+                         
+                        int index171_0 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( LA171_0 == Batch && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 0) ) {s = 1;}
+
+                        else if ( LA171_0 == AutoCancel && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 1) ) {s = 2;}
+
+                        else if ( LA171_0 == Workflows && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 2) ) {s = 3;}
+
+                        else if ( LA171_0 == Drafts && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 3) ) {s = 4;}
+
+                        else if ( LA171_0 == Branches && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 4) ) {s = 5;}
+
+                        else if ( LA171_0 == BranchesIgnore && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 5) ) {s = 6;}
+
+                        else if ( LA171_0 == Paths && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 6) ) {s = 7;}
+
+                        else if ( LA171_0 == PathsIgnore && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 7) ) {s = 8;}
+
+                        else if ( LA171_0 == Tags && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 8) ) {s = 9;}
+
+                        else if ( LA171_0 == TagsIgnore && getUnorderedGroupHelper().canSelect(grammarAccess.getEventAccess().getUnorderedGroup_0_2_2(), 9) ) {s = 10;}
+
+                        else if ( (LA171_0==RULE_END) ) {s = 11;}
+
+                         
+                        input.seek(index171_0);
+                        if ( s>=0 ) return s;
+                        break;
+            }
+            NoViableAltException nvae =
+                new NoViableAltException(getDescription(), 171, _s, input);
+            error(nvae);
+            throw nvae;
+        }
+    }
     static final String dfa_62s = "\1\13\1\uffff\2\u00d1\1\uffff\1\0\1\u00d4\1\uffff\1\u00d0\1\u00d6\1\0\1\u00d0";
     static final String dfa_63s = "\1\u00dd\1\uffff\2\u00e0\1\uffff\1\0\1\u00e0\1\uffff\1\u00d4\1\u00e0\1\0\1\u00d4";
     static final String dfa_64s = "\1\uffff\1\1\2\uffff\1\3\2\uffff\1\2\4\uffff";
-    static final String dfa_65s = "\1\4\1\uffff\1\7\1\6\1\uffff\1\1\1\0\1\uffff\1\2\1\5\1\3\1\10}>";
+    static final String dfa_65s = "\1\2\1\uffff\1\3\1\1\1\uffff\1\4\1\5\1\uffff\1\0\1\10\1\6\1\7}>";
     static final String[] dfa_66s = {
             "\3\4\2\uffff\2\4\1\uffff\5\4\2\uffff\1\4\1\uffff\3\4\1\uffff\11\4\1\uffff\7\4\1\uffff\20\4\1\uffff\2\4\1\uffff\4\4\2\uffff\2\4\1\3\2\4\1\uffff\4\4\1\uffff\4\4\1\uffff\11\4\1\uffff\12\4\1\uffff\30\4\3\uffff\3\4\1\uffff\1\4\1\uffff\3\4\1\uffff\1\4\1\uffff\2\4\1\uffff\6\4\1\uffff\1\2\12\4\2\uffff\3\4\2\uffff\1\4\1\uffff\5\4\1\uffff\7\4\1\uffff\3\4\2\uffff\5\4\10\uffff\1\4\4\uffff\1\1\2\4",
             "",
@@ -55898,11 +55920,11 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
     static final short[] dfa_65 = DFA.unpackEncodedString(dfa_65s);
     static final short[][] dfa_66 = unpackEncodedStringArray(dfa_66s);
 
-    class DFA182 extends DFA {
+    class DFA184 extends DFA {
 
-        public DFA182(BaseRecognizer recognizer) {
+        public DFA184(BaseRecognizer recognizer) {
             this.recognizer = recognizer;
-            this.decisionNumber = 182;
+            this.decisionNumber = 184;
             this.eot = dfa_51;
             this.eof = dfa_51;
             this.min = dfa_62;
@@ -55919,55 +55941,78 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA182_6 = input.LA(1);
+                        int LA184_8 = input.LA(1);
 
                          
-                        int index182_6 = input.index();
+                        int index184_8 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( LA182_6 == RULE_ID && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 8;}
+                        if ( LA184_8 == Comma && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 9;}
 
-                        else if ( ( LA182_6 == RightSquareBracket || LA182_6 >= RULE_COMPLEX_EXPRESSION && LA182_6 <= RULE_VERSION || LA182_6 == RULE_STRING ) && getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 4;}
+                        else if ( LA184_8 == RightSquareBracket && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 10;}
 
                          
-                        input.seek(index182_6);
+                        input.seek(index184_8);
                         if ( s>=0 ) return s;
                         break;
                     case 1 : 
-                        int LA182_5 = input.LA(1);
+                        int LA184_3 = input.LA(1);
 
                          
-                        int index182_5 = input.index();
+                        int index184_3 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) {s = 7;}
+                        if ( LA184_3 == RULE_ID && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 5;}
 
-                        else if ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 4;}
+                        else if ( LA184_3 == LeftSquareBracket && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 6;}
+
+                        else if ( ( LA184_3 == HyphenMinus || LA184_3 >= RULE_COMPLEX_EXPRESSION && LA184_3 <= RULE_BEGIN || LA184_3 == RULE_STRING ) && getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 4;}
 
                          
-                        input.seek(index182_5);
+                        input.seek(index184_3);
                         if ( s>=0 ) return s;
                         break;
                     case 2 : 
-                        int LA182_8 = input.LA(1);
+                        int LA184_0 = input.LA(1);
 
                          
-                        int index182_8 = input.index();
+                        int index184_0 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( LA182_8 == Comma && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 9;}
+                        if ( LA184_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 0) ) {s = 1;}
 
-                        else if ( LA182_8 == RightSquareBracket && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 10;}
+                        else if ( LA184_0 == Needs && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 2;}
+
+                        else if ( LA184_0 == DependsOn && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 3;}
+
+                        else if ( ( LA184_0 >= Repository_dispatch && LA184_0 <= ContinueOnError_1 || LA184_0 >= Workflow_dispatch && LA184_0 <= WorkingDirectory || LA184_0 >= TimeoutInMinutes && LA184_0 <= TimeoutMinutes || LA184_0 == ReleaseTrigger || LA184_0 >= Allow_failure && LA184_0 <= DeployTrigger || LA184_0 >= Notifications && LA184_0 <= PathsIgnore || LA184_0 >= Pull_request && LA184_0 <= Workflow_run || LA184_0 >= Concurrency && LA184_0 <= GetPackage || LA184_0 >= Parameters && LA184_0 <= Permission || LA184_0 >= Powershell && LA184_0 <= Artifacts || LA184_0 >= Condition && LA184_0 <= Container || LA184_0 >= Endpoints && LA184_0 <= FailFast || LA184_0 >= Pipelines && LA184_0 <= RunPolicy || LA184_0 >= Schedules && LA184_0 <= Workspace || LA184_0 >= Branches && LA184_0 <= PreBuild || LA184_0 >= Readonly && LA184_0 <= Webhooks || LA184_0 >= Command && LA184_0 <= Caches || LA184_0 >= Docker && LA184_0 <= Except || LA184_0 == Inputs || LA184_0 >= Labels && LA184_0 <= Policy || LA184_0 == Queued || LA184_0 >= Script && LA184_0 <= Stages || LA184_0 >= Agent && LA184_0 <= Image || LA184_0 >= Paths && LA184_0 <= Value || LA184_0 >= Auth && LA184_0 <= Cron || LA184_0 == Name || LA184_0 >= Only && LA184_0 <= Pwsh || LA184_0 >= Step && LA184_0 <= With || LA184_0 >= Env && LA184_0 <= Job || LA184_0 >= Run && LA184_0 <= On || LA184_0 == RULE_COMPLEX_EXPRESSION || LA184_0 >= RULE_END && LA184_0 <= RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 4;}
 
                          
-                        input.seek(index182_8);
+                        input.seek(index184_0);
                         if ( s>=0 ) return s;
                         break;
                     case 3 : 
-                        int LA182_10 = input.LA(1);
+                        int LA184_2 = input.LA(1);
 
                          
-                        int index182_10 = input.index();
+                        int index184_2 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( ( LA184_2 == HyphenMinus || LA184_2 >= RULE_COMPLEX_EXPRESSION && LA184_2 <= RULE_BEGIN || LA184_2 == RULE_STRING ) && getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 4;}
+
+                        else if ( LA184_2 == RULE_ID && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 5;}
+
+                        else if ( LA184_2 == LeftSquareBracket && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 6;}
+
+                         
+                        input.seek(index184_2);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 4 : 
+                        int LA184_5 = input.LA(1);
+
+                         
+                        int index184_5 = input.index();
                         input.rewind();
                         s = -1;
                         if ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) {s = 7;}
@@ -55975,95 +56020,72 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
                         else if ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 4;}
 
                          
-                        input.seek(index182_10);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 4 : 
-                        int LA182_0 = input.LA(1);
-
-                         
-                        int index182_0 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( LA182_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 0) ) {s = 1;}
-
-                        else if ( LA182_0 == Needs && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 2;}
-
-                        else if ( LA182_0 == DependsOn && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 3;}
-
-                        else if ( ( LA182_0 >= Repository_dispatch && LA182_0 <= ContinueOnError_1 || LA182_0 >= Workflow_dispatch && LA182_0 <= WorkingDirectory || LA182_0 >= TimeoutInMinutes && LA182_0 <= TimeoutMinutes || LA182_0 == ReleaseTrigger || LA182_0 >= Allow_failure && LA182_0 <= DeployTrigger || LA182_0 >= Notifications && LA182_0 <= PathsIgnore || LA182_0 >= Pull_request && LA182_0 <= Workflow_run || LA182_0 >= Concurrency && LA182_0 <= GetPackage || LA182_0 >= Parameters && LA182_0 <= Permission || LA182_0 >= Powershell && LA182_0 <= Artifacts || LA182_0 >= Condition && LA182_0 <= Container || LA182_0 >= Endpoints && LA182_0 <= FailFast || LA182_0 >= Pipelines && LA182_0 <= RunPolicy || LA182_0 >= Schedules && LA182_0 <= Workspace || LA182_0 >= Branches && LA182_0 <= PreBuild || LA182_0 >= Readonly && LA182_0 <= Webhooks || LA182_0 >= Command && LA182_0 <= Caches || LA182_0 >= Docker && LA182_0 <= Except || LA182_0 == Inputs || LA182_0 >= Labels && LA182_0 <= Policy || LA182_0 == Queued || LA182_0 >= Script && LA182_0 <= Stages || LA182_0 >= Agent && LA182_0 <= Image || LA182_0 >= Paths && LA182_0 <= Value || LA182_0 >= Auth && LA182_0 <= Cron || LA182_0 == Name || LA182_0 >= Only && LA182_0 <= Pwsh || LA182_0 >= Step && LA182_0 <= With || LA182_0 >= Env && LA182_0 <= Job || LA182_0 >= Run && LA182_0 <= On || LA182_0 == RULE_COMPLEX_EXPRESSION || LA182_0 >= RULE_END && LA182_0 <= RULE_ID ) && getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 4;}
-
-                         
-                        input.seek(index182_0);
+                        input.seek(index184_5);
                         if ( s>=0 ) return s;
                         break;
                     case 5 : 
-                        int LA182_9 = input.LA(1);
+                        int LA184_6 = input.LA(1);
 
                          
-                        int index182_9 = input.index();
+                        int index184_6 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( ( LA182_9 >= RULE_COMPLEX_EXPRESSION && LA182_9 <= RULE_VERSION || LA182_9 == RULE_STRING ) && getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 4;}
+                        if ( ( LA184_6 == RightSquareBracket || LA184_6 >= RULE_COMPLEX_EXPRESSION && LA184_6 <= RULE_VERSION || LA184_6 == RULE_STRING ) && getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 4;}
 
-                        else if ( LA182_9 == RULE_ID && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 11;}
+                        else if ( LA184_6 == RULE_ID && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 8;}
 
                          
-                        input.seek(index182_9);
+                        input.seek(index184_6);
                         if ( s>=0 ) return s;
                         break;
                     case 6 : 
-                        int LA182_3 = input.LA(1);
+                        int LA184_10 = input.LA(1);
 
                          
-                        int index182_3 = input.index();
+                        int index184_10 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( ( LA182_3 == HyphenMinus || LA182_3 >= RULE_COMPLEX_EXPRESSION && LA182_3 <= RULE_BEGIN || LA182_3 == RULE_STRING ) && getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 4;}
+                        if ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) {s = 7;}
 
-                        else if ( LA182_3 == RULE_ID && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 5;}
-
-                        else if ( LA182_3 == LeftSquareBracket && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 6;}
+                        else if ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 4;}
 
                          
-                        input.seek(index182_3);
+                        input.seek(index184_10);
                         if ( s>=0 ) return s;
                         break;
                     case 7 : 
-                        int LA182_2 = input.LA(1);
+                        int LA184_11 = input.LA(1);
 
                          
-                        int index182_2 = input.index();
+                        int index184_11 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( LA182_2 == RULE_ID && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 5;}
+                        if ( LA184_11 == RightSquareBracket && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 10;}
 
-                        else if ( LA182_2 == LeftSquareBracket && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 6;}
-
-                        else if ( ( LA182_2 == HyphenMinus || LA182_2 >= RULE_COMPLEX_EXPRESSION && LA182_2 <= RULE_BEGIN || LA182_2 == RULE_STRING ) && getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 4;}
+                        else if ( LA184_11 == Comma && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 9;}
 
                          
-                        input.seek(index182_2);
+                        input.seek(index184_11);
                         if ( s>=0 ) return s;
                         break;
                     case 8 : 
-                        int LA182_11 = input.LA(1);
+                        int LA184_9 = input.LA(1);
 
                          
-                        int index182_11 = input.index();
+                        int index184_9 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( LA182_11 == RightSquareBracket && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 10;}
+                        if ( LA184_9 == RULE_ID && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 11;}
 
-                        else if ( LA182_11 == Comma && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 9;}
+                        else if ( ( LA184_9 >= RULE_COMPLEX_EXPRESSION && LA184_9 <= RULE_VERSION || LA184_9 == RULE_STRING ) && getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 4;}
 
                          
-                        input.seek(index182_11);
+                        input.seek(index184_9);
                         if ( s>=0 ) return s;
                         break;
             }
             NoViableAltException nvae =
-                new NoViableAltException(getDescription(), 182, _s, input);
+                new NoViableAltException(getDescription(), 184, _s, input);
             error(nvae);
             throw nvae;
         }
@@ -56252,11 +56274,11 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
     static final short[] dfa_72 = DFA.unpackEncodedString(dfa_72s);
     static final short[][] dfa_73 = unpackEncodedStringArray(dfa_73s);
 
-    class DFA183 extends DFA {
+    class DFA185 extends DFA {
 
-        public DFA183(BaseRecognizer recognizer) {
+        public DFA185(BaseRecognizer recognizer) {
             this.recognizer = recognizer;
-            this.decisionNumber = 183;
+            this.decisionNumber = 185;
             this.eot = dfa_67;
             this.eof = dfa_68;
             this.min = dfa_69;
@@ -56273,35 +56295,35 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA183_0 = input.LA(1);
+                        int LA185_0 = input.LA(1);
 
                          
-                        int index183_0 = input.index();
+                        int index185_0 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( LA183_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 0) ) {s = 1;}
+                        if ( LA185_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 0) ) {s = 1;}
 
-                        else if ( LA183_0 == Needs && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 2;}
+                        else if ( LA185_0 == Needs && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 2;}
 
-                        else if ( LA183_0 == DependsOn && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 3;}
+                        else if ( LA185_0 == DependsOn && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 3;}
 
-                        else if ( ( LA183_0 >= Repository_dispatch && LA183_0 <= ContinueOnError_1 || LA183_0 >= Workflow_dispatch && LA183_0 <= WorkingDirectory || LA183_0 >= TimeoutInMinutes && LA183_0 <= TimeoutMinutes || LA183_0 == ReleaseTrigger || LA183_0 >= Allow_failure && LA183_0 <= DeployTrigger || LA183_0 >= Notifications && LA183_0 <= PathsIgnore || LA183_0 >= Pull_request && LA183_0 <= Workflow_run || LA183_0 >= Concurrency && LA183_0 <= GetPackage || LA183_0 >= Parameters && LA183_0 <= Permission || LA183_0 >= Powershell && LA183_0 <= Artifacts || LA183_0 >= Condition && LA183_0 <= Container || LA183_0 >= Endpoints && LA183_0 <= FailFast || LA183_0 >= Pipelines && LA183_0 <= RunPolicy || LA183_0 >= Schedules && LA183_0 <= Workspace || LA183_0 >= Branches && LA183_0 <= PreBuild || LA183_0 >= Readonly && LA183_0 <= Webhooks || LA183_0 >= Command && LA183_0 <= Caches || LA183_0 >= Docker && LA183_0 <= Except || LA183_0 == Inputs || LA183_0 >= Labels && LA183_0 <= Policy || LA183_0 == Queued || LA183_0 >= Script && LA183_0 <= Stages || LA183_0 >= Agent && LA183_0 <= Image || LA183_0 >= Paths && LA183_0 <= Value || LA183_0 >= Auth && LA183_0 <= Cron || LA183_0 == Name || LA183_0 >= Only && LA183_0 <= Pwsh || LA183_0 >= Step && LA183_0 <= With || LA183_0 >= Env && LA183_0 <= Job || LA183_0 >= Run && LA183_0 <= On || LA183_0 == RULE_COMPLEX_EXPRESSION ) && getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 4;}
+                        else if ( ( LA185_0 >= Repository_dispatch && LA185_0 <= ContinueOnError_1 || LA185_0 >= Workflow_dispatch && LA185_0 <= WorkingDirectory || LA185_0 >= TimeoutInMinutes && LA185_0 <= TimeoutMinutes || LA185_0 == ReleaseTrigger || LA185_0 >= Allow_failure && LA185_0 <= DeployTrigger || LA185_0 >= Notifications && LA185_0 <= PathsIgnore || LA185_0 >= Pull_request && LA185_0 <= Workflow_run || LA185_0 >= Concurrency && LA185_0 <= GetPackage || LA185_0 >= Parameters && LA185_0 <= Permission || LA185_0 >= Powershell && LA185_0 <= Artifacts || LA185_0 >= Condition && LA185_0 <= Container || LA185_0 >= Endpoints && LA185_0 <= FailFast || LA185_0 >= Pipelines && LA185_0 <= RunPolicy || LA185_0 >= Schedules && LA185_0 <= Workspace || LA185_0 >= Branches && LA185_0 <= PreBuild || LA185_0 >= Readonly && LA185_0 <= Webhooks || LA185_0 >= Command && LA185_0 <= Caches || LA185_0 >= Docker && LA185_0 <= Except || LA185_0 == Inputs || LA185_0 >= Labels && LA185_0 <= Policy || LA185_0 == Queued || LA185_0 >= Script && LA185_0 <= Stages || LA185_0 >= Agent && LA185_0 <= Image || LA185_0 >= Paths && LA185_0 <= Value || LA185_0 >= Auth && LA185_0 <= Cron || LA185_0 == Name || LA185_0 >= Only && LA185_0 <= Pwsh || LA185_0 >= Step && LA185_0 <= With || LA185_0 >= Env && LA185_0 <= Job || LA185_0 >= Run && LA185_0 <= On || LA185_0 == RULE_COMPLEX_EXPRESSION ) && getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 4;}
 
-                        else if ( (LA183_0==RULE_ID) ) {s = 161;}
+                        else if ( (LA185_0==RULE_ID) ) {s = 161;}
 
-                        else if ( (LA183_0==RULE_END) ) {s = 163;}
+                        else if ( (LA185_0==RULE_END) ) {s = 163;}
 
-                        else if ( (LA183_0==EOF||LA183_0==HyphenMinus||LA183_0==RULE_STRING) ) {s = 164;}
+                        else if ( (LA185_0==EOF||LA185_0==HyphenMinus||LA185_0==RULE_STRING) ) {s = 164;}
 
                          
-                        input.seek(index183_0);
+                        input.seek(index185_0);
                         if ( s>=0 ) return s;
                         break;
                     case 1 : 
-                        int LA183_161 = input.LA(1);
+                        int LA185_161 = input.LA(1);
 
                          
-                        int index183_161 = input.index();
+                        int index185_161 = input.index();
                         input.rewind();
                         s = -1;
                         if ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 4;}
@@ -56309,14 +56331,14 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getJobAccess().getUnorderedGroup_1()) ) {s = 164;}
 
                          
-                        input.seek(index183_161);
+                        input.seek(index185_161);
                         if ( s>=0 ) return s;
                         break;
                     case 2 : 
-                        int LA183_163 = input.LA(1);
+                        int LA185_163 = input.LA(1);
 
                          
-                        int index183_163 = input.index();
+                        int index185_163 = input.index();
                         input.rewind();
                         s = -1;
                         if ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 4;}
@@ -56324,22 +56346,22 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getJobAccess().getUnorderedGroup_1()) ) {s = 164;}
 
                          
-                        input.seek(index183_163);
+                        input.seek(index185_163);
                         if ( s>=0 ) return s;
                         break;
             }
             NoViableAltException nvae =
-                new NoViableAltException(getDescription(), 183, _s, input);
+                new NoViableAltException(getDescription(), 185, _s, input);
             error(nvae);
             throw nvae;
         }
     }
 
-    class DFA184 extends DFA {
+    class DFA186 extends DFA {
 
-        public DFA184(BaseRecognizer recognizer) {
+        public DFA186(BaseRecognizer recognizer) {
             this.recognizer = recognizer;
-            this.decisionNumber = 184;
+            this.decisionNumber = 186;
             this.eot = dfa_67;
             this.eof = dfa_68;
             this.min = dfa_69;
@@ -56356,35 +56378,35 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA184_0 = input.LA(1);
+                        int LA186_0 = input.LA(1);
 
                          
-                        int index184_0 = input.index();
+                        int index186_0 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( LA184_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 0) ) {s = 1;}
+                        if ( LA186_0 == RULE_BEGIN && getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 0) ) {s = 1;}
 
-                        else if ( LA184_0 == Needs && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 2;}
+                        else if ( LA186_0 == Needs && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 2;}
 
-                        else if ( LA184_0 == DependsOn && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 3;}
+                        else if ( LA186_0 == DependsOn && ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) || getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 1) ) ) {s = 3;}
 
-                        else if ( ( LA184_0 >= Repository_dispatch && LA184_0 <= ContinueOnError_1 || LA184_0 >= Workflow_dispatch && LA184_0 <= WorkingDirectory || LA184_0 >= TimeoutInMinutes && LA184_0 <= TimeoutMinutes || LA184_0 == ReleaseTrigger || LA184_0 >= Allow_failure && LA184_0 <= DeployTrigger || LA184_0 >= Notifications && LA184_0 <= PathsIgnore || LA184_0 >= Pull_request && LA184_0 <= Workflow_run || LA184_0 >= Concurrency && LA184_0 <= GetPackage || LA184_0 >= Parameters && LA184_0 <= Permission || LA184_0 >= Powershell && LA184_0 <= Artifacts || LA184_0 >= Condition && LA184_0 <= Container || LA184_0 >= Endpoints && LA184_0 <= FailFast || LA184_0 >= Pipelines && LA184_0 <= RunPolicy || LA184_0 >= Schedules && LA184_0 <= Workspace || LA184_0 >= Branches && LA184_0 <= PreBuild || LA184_0 >= Readonly && LA184_0 <= Webhooks || LA184_0 >= Command && LA184_0 <= Caches || LA184_0 >= Docker && LA184_0 <= Except || LA184_0 == Inputs || LA184_0 >= Labels && LA184_0 <= Policy || LA184_0 == Queued || LA184_0 >= Script && LA184_0 <= Stages || LA184_0 >= Agent && LA184_0 <= Image || LA184_0 >= Paths && LA184_0 <= Value || LA184_0 >= Auth && LA184_0 <= Cron || LA184_0 == Name || LA184_0 >= Only && LA184_0 <= Pwsh || LA184_0 >= Step && LA184_0 <= With || LA184_0 >= Env && LA184_0 <= Job || LA184_0 >= Run && LA184_0 <= On || LA184_0 == RULE_COMPLEX_EXPRESSION ) && getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 4;}
+                        else if ( ( LA186_0 >= Repository_dispatch && LA186_0 <= ContinueOnError_1 || LA186_0 >= Workflow_dispatch && LA186_0 <= WorkingDirectory || LA186_0 >= TimeoutInMinutes && LA186_0 <= TimeoutMinutes || LA186_0 == ReleaseTrigger || LA186_0 >= Allow_failure && LA186_0 <= DeployTrigger || LA186_0 >= Notifications && LA186_0 <= PathsIgnore || LA186_0 >= Pull_request && LA186_0 <= Workflow_run || LA186_0 >= Concurrency && LA186_0 <= GetPackage || LA186_0 >= Parameters && LA186_0 <= Permission || LA186_0 >= Powershell && LA186_0 <= Artifacts || LA186_0 >= Condition && LA186_0 <= Container || LA186_0 >= Endpoints && LA186_0 <= FailFast || LA186_0 >= Pipelines && LA186_0 <= RunPolicy || LA186_0 >= Schedules && LA186_0 <= Workspace || LA186_0 >= Branches && LA186_0 <= PreBuild || LA186_0 >= Readonly && LA186_0 <= Webhooks || LA186_0 >= Command && LA186_0 <= Caches || LA186_0 >= Docker && LA186_0 <= Except || LA186_0 == Inputs || LA186_0 >= Labels && LA186_0 <= Policy || LA186_0 == Queued || LA186_0 >= Script && LA186_0 <= Stages || LA186_0 >= Agent && LA186_0 <= Image || LA186_0 >= Paths && LA186_0 <= Value || LA186_0 >= Auth && LA186_0 <= Cron || LA186_0 == Name || LA186_0 >= Only && LA186_0 <= Pwsh || LA186_0 >= Step && LA186_0 <= With || LA186_0 >= Env && LA186_0 <= Job || LA186_0 >= Run && LA186_0 <= On || LA186_0 == RULE_COMPLEX_EXPRESSION ) && getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 4;}
 
-                        else if ( (LA184_0==RULE_ID) ) {s = 161;}
+                        else if ( (LA186_0==RULE_ID) ) {s = 161;}
 
-                        else if ( (LA184_0==RULE_END) ) {s = 163;}
+                        else if ( (LA186_0==RULE_END) ) {s = 163;}
 
-                        else if ( (LA184_0==EOF||LA184_0==HyphenMinus||LA184_0==RULE_STRING) ) {s = 164;}
+                        else if ( (LA186_0==EOF||LA186_0==HyphenMinus||LA186_0==RULE_STRING) ) {s = 164;}
 
                          
-                        input.seek(index184_0);
+                        input.seek(index186_0);
                         if ( s>=0 ) return s;
                         break;
                     case 1 : 
-                        int LA184_161 = input.LA(1);
+                        int LA186_161 = input.LA(1);
 
                          
-                        int index184_161 = input.index();
+                        int index186_161 = input.index();
                         input.rewind();
                         s = -1;
                         if ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 4;}
@@ -56392,14 +56414,14 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getJobAccess().getUnorderedGroup_1()) ) {s = 164;}
 
                          
-                        input.seek(index184_161);
+                        input.seek(index186_161);
                         if ( s>=0 ) return s;
                         break;
                     case 2 : 
-                        int LA184_163 = input.LA(1);
+                        int LA186_163 = input.LA(1);
 
                          
-                        int index184_163 = input.index();
+                        int index186_163 = input.index();
                         input.rewind();
                         s = -1;
                         if ( getUnorderedGroupHelper().canSelect(grammarAccess.getJobAccess().getUnorderedGroup_1(), 2) ) {s = 4;}
@@ -56407,12 +56429,12 @@ public class InternalPipelineParser extends AbstractInternalContentAssistParser 
                         else if ( getUnorderedGroupHelper().canLeave(grammarAccess.getJobAccess().getUnorderedGroup_1()) ) {s = 164;}
 
                          
-                        input.seek(index184_163);
+                        input.seek(index186_163);
                         if ( s>=0 ) return s;
                         break;
             }
             NoViableAltException nvae =
-                new NoViableAltException(getDescription(), 184, _s, input);
+                new NoViableAltException(getDescription(), 186, _s, input);
             error(nvae);
             throw nvae;
         }

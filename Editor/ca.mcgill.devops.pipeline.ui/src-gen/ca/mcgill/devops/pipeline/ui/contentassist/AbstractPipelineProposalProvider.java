@@ -84,7 +84,7 @@ public abstract class AbstractPipelineProposalProvider extends TerminalsProposal
 	public void completeConfigurations_PplVariables(EObject model, Assignment assignment, ContentAssistContext context, ICompletionProposalAcceptor acceptor) {
 		completeRuleCall(((RuleCall)assignment.getTerminal()), context, acceptor);
 	}
-	public void completeConfigurations_Paras(EObject model, Assignment assignment, ContentAssistContext context, ICompletionProposalAcceptor acceptor) {
+	public void completeConfigurations_ParameterValues(EObject model, Assignment assignment, ContentAssistContext context, ICompletionProposalAcceptor acceptor) {
 		completeRuleCall(((RuleCall)assignment.getTerminal()), context, acceptor);
 	}
 	public void completeConfigurations_ExtendOrInclude(EObject model, Assignment assignment, ContentAssistContext context, ICompletionProposalAcceptor acceptor) {

@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Configurations#getResources <em>Resources</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Configurations#getVersion <em>Version</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Configurations#getPplVariables <em>Ppl Variables</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Configurations#getParas <em>Paras</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Configurations#getParameterValues <em>Parameter Values</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Configurations#getExtendOrInclude <em>Extend Or Include</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Configurations#getExtendedParameters <em>Extended Parameters</em>}</li>
  * </ul>
@@ -333,16 +333,16 @@ public interface Configurations extends EObject
   EList<Variable> getPplVariables();
 
   /**
-   * Returns the value of the '<em><b>Paras</b></em>' containment reference list.
+   * Returns the value of the '<em><b>Parameter Values</b></em>' containment reference list.
    * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.ParameterValue}.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Paras</em>' containment reference list.
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getConfigurations_Paras()
+   * @return the value of the '<em>Parameter Values</em>' containment reference list.
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getConfigurations_ParameterValues()
    * @model containment="true"
    * @generated
    */
-  EList<ParameterValue> getParas();
+  EList<ParameterValue> getParameterValues();
 
   /**
    * Returns the value of the '<em><b>Extend Or Include</b></em>' attribute.

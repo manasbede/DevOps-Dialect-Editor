@@ -266,7 +266,7 @@ public class PipelineParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getConfigurationsAccess().getResourcesAssignment_7_1_1(), "rule__Configurations__ResourcesAssignment_7_1_1");
 			builder.put(grammarAccess.getConfigurationsAccess().getVersionAssignment_8_1(), "rule__Configurations__VersionAssignment_8_1");
 			builder.put(grammarAccess.getConfigurationsAccess().getPplVariablesAssignment_9_1(), "rule__Configurations__PplVariablesAssignment_9_1");
-			builder.put(grammarAccess.getConfigurationsAccess().getParasAssignment_10_1_1(), "rule__Configurations__ParasAssignment_10_1_1");
+			builder.put(grammarAccess.getConfigurationsAccess().getParameterValuesAssignment_10_1_1(), "rule__Configurations__ParameterValuesAssignment_10_1_1");
 			builder.put(grammarAccess.getConfigurationsAccess().getExtendOrIncludeAssignment_11_0(), "rule__Configurations__ExtendOrIncludeAssignment_11_0");
 			builder.put(grammarAccess.getConfigurationsAccess().getExtendedParametersAssignment_11_1_1(), "rule__Configurations__ExtendedParametersAssignment_11_1_1");
 			builder.put(grammarAccess.getVariableAccess().getVariableKeyAssignment_0_0_1_0(), "rule__Variable__VariableKeyAssignment_0_0_1_0");

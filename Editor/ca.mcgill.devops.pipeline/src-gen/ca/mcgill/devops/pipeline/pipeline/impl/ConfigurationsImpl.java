@@ -49,7 +49,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationsImpl#getResources <em>Resources</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationsImpl#getVersion <em>Version</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationsImpl#getPplVariables <em>Ppl Variables</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationsImpl#getParas <em>Paras</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationsImpl#getParameterValues <em>Parameter Values</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationsImpl#getExtendOrInclude <em>Extend Or Include</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationsImpl#getExtendedParameters <em>Extended Parameters</em>}</li>
  * </ul>
@@ -319,14 +319,14 @@ public class ConfigurationsImpl extends MinimalEObjectImpl.Container implements 
   protected EList<Variable> pplVariables;
 
   /**
-   * The cached value of the '{@link #getParas() <em>Paras</em>}' containment reference list.
+   * The cached value of the '{@link #getParameterValues() <em>Parameter Values</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getParas()
+   * @see #getParameterValues()
    * @generated
    * @ordered
    */
-  protected EList<ParameterValue> paras;
+  protected EList<ParameterValue> parameterValues;
 
   /**
    * The default value of the '{@link #getExtendOrInclude() <em>Extend Or Include</em>}' attribute.
@@ -720,13 +720,13 @@ public class ConfigurationsImpl extends MinimalEObjectImpl.Container implements 
    * @generated
    */
   @Override
-  public EList<ParameterValue> getParas()
+  public EList<ParameterValue> getParameterValues()
   {
-    if (paras == null)
+    if (parameterValues == null)
     {
-      paras = new EObjectContainmentEList<ParameterValue>(ParameterValue.class, this, PipelinePackage.CONFIGURATIONS__PARAS);
+      parameterValues = new EObjectContainmentEList<ParameterValue>(ParameterValue.class, this, PipelinePackage.CONFIGURATIONS__PARAMETER_VALUES);
     }
-    return paras;
+    return parameterValues;
   }
 
   /**
@@ -783,8 +783,8 @@ public class ConfigurationsImpl extends MinimalEObjectImpl.Container implements 
         return ((InternalEList<?>)getResources()).basicRemove(otherEnd, msgs);
       case PipelinePackage.CONFIGURATIONS__PPL_VARIABLES:
         return ((InternalEList<?>)getPplVariables()).basicRemove(otherEnd, msgs);
-      case PipelinePackage.CONFIGURATIONS__PARAS:
-        return ((InternalEList<?>)getParas()).basicRemove(otherEnd, msgs);
+      case PipelinePackage.CONFIGURATIONS__PARAMETER_VALUES:
+        return ((InternalEList<?>)getParameterValues()).basicRemove(otherEnd, msgs);
       case PipelinePackage.CONFIGURATIONS__EXTENDED_PARAMETERS:
         return ((InternalEList<?>)getExtendedParameters()).basicRemove(otherEnd, msgs);
     }
@@ -831,8 +831,8 @@ public class ConfigurationsImpl extends MinimalEObjectImpl.Container implements 
         return getVersion();
       case PipelinePackage.CONFIGURATIONS__PPL_VARIABLES:
         return getPplVariables();
-      case PipelinePackage.CONFIGURATIONS__PARAS:
-        return getParas();
+      case PipelinePackage.CONFIGURATIONS__PARAMETER_VALUES:
+        return getParameterValues();
       case PipelinePackage.CONFIGURATIONS__EXTEND_OR_INCLUDE:
         return getExtendOrInclude();
       case PipelinePackage.CONFIGURATIONS__EXTENDED_PARAMETERS:
@@ -901,9 +901,9 @@ public class ConfigurationsImpl extends MinimalEObjectImpl.Container implements 
         getPplVariables().clear();
         getPplVariables().addAll((Collection<? extends Variable>)newValue);
         return;
-      case PipelinePackage.CONFIGURATIONS__PARAS:
-        getParas().clear();
-        getParas().addAll((Collection<? extends ParameterValue>)newValue);
+      case PipelinePackage.CONFIGURATIONS__PARAMETER_VALUES:
+        getParameterValues().clear();
+        getParameterValues().addAll((Collection<? extends ParameterValue>)newValue);
         return;
       case PipelinePackage.CONFIGURATIONS__EXTEND_OR_INCLUDE:
         setExtendOrInclude((String)newValue);
@@ -971,8 +971,8 @@ public class ConfigurationsImpl extends MinimalEObjectImpl.Container implements 
       case PipelinePackage.CONFIGURATIONS__PPL_VARIABLES:
         getPplVariables().clear();
         return;
-      case PipelinePackage.CONFIGURATIONS__PARAS:
-        getParas().clear();
+      case PipelinePackage.CONFIGURATIONS__PARAMETER_VALUES:
+        getParameterValues().clear();
         return;
       case PipelinePackage.CONFIGURATIONS__EXTEND_OR_INCLUDE:
         setExtendOrInclude(EXTEND_OR_INCLUDE_EDEFAULT);
@@ -1024,8 +1024,8 @@ public class ConfigurationsImpl extends MinimalEObjectImpl.Container implements 
         return VERSION_EDEFAULT == null ? version != null : !VERSION_EDEFAULT.equals(version);
       case PipelinePackage.CONFIGURATIONS__PPL_VARIABLES:
         return pplVariables != null && !pplVariables.isEmpty();
-      case PipelinePackage.CONFIGURATIONS__PARAS:
-        return paras != null && !paras.isEmpty();
+      case PipelinePackage.CONFIGURATIONS__PARAMETER_VALUES:
+        return parameterValues != null && !parameterValues.isEmpty();
       case PipelinePackage.CONFIGURATIONS__EXTEND_OR_INCLUDE:
         return EXTEND_OR_INCLUDE_EDEFAULT == null ? extendOrInclude != null : !EXTEND_OR_INCLUDE_EDEFAULT.equals(extendOrInclude);
       case PipelinePackage.CONFIGURATIONS__EXTENDED_PARAMETERS:
