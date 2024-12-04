@@ -3,7 +3,6 @@
  */
 package ca.mcgill.devops.pipeline.pipeline.impl;
 
-import ca.mcgill.devops.pipeline.pipeline.Event;
 import ca.mcgill.devops.pipeline.pipeline.ExtendedParameter;
 import ca.mcgill.devops.pipeline.pipeline.Job;
 import ca.mcgill.devops.pipeline.pipeline.Pipeline;
@@ -55,7 +54,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getVersion <em>Version</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getPplVariables <em>Ppl Variables</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getExtendedParameter <em>Extended Parameter</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getTriggers <em>Triggers</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getJobOrStageVar <em>Job Or Stage Var</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getStages <em>Stages</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.PipelineImpl#getJobs <em>Jobs</em>}</li>
@@ -344,16 +342,6 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
    * @ordered
    */
   protected ExtendedParameter extendedParameter;
-
-  /**
-   * The cached value of the '{@link #getTriggers() <em>Triggers</em>}' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getTriggers()
-   * @generated
-   * @ordered
-   */
-  protected EList<Event> triggers;
 
   /**
    * The default value of the '{@link #getJobOrStageVar() <em>Job Or Stage Var</em>}' attribute.
@@ -822,21 +810,6 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
    * @generated
    */
   @Override
-  public EList<Event> getTriggers()
-  {
-    if (triggers == null)
-    {
-      triggers = new EObjectContainmentEList<Event>(Event.class, this, PipelinePackage.PIPELINE__TRIGGERS);
-    }
-    return triggers;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
   public String getJobOrStageVar()
   {
     return jobOrStageVar;
@@ -904,8 +877,6 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
         return ((InternalEList<?>)getPplVariables()).basicRemove(otherEnd, msgs);
       case PipelinePackage.PIPELINE__EXTENDED_PARAMETER:
         return basicSetExtendedParameter(null, msgs);
-      case PipelinePackage.PIPELINE__TRIGGERS:
-        return ((InternalEList<?>)getTriggers()).basicRemove(otherEnd, msgs);
       case PipelinePackage.PIPELINE__STAGES:
         return ((InternalEList<?>)getStages()).basicRemove(otherEnd, msgs);
       case PipelinePackage.PIPELINE__JOBS:
@@ -958,8 +929,6 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
         return getPplVariables();
       case PipelinePackage.PIPELINE__EXTENDED_PARAMETER:
         return getExtendedParameter();
-      case PipelinePackage.PIPELINE__TRIGGERS:
-        return getTriggers();
       case PipelinePackage.PIPELINE__JOB_OR_STAGE_VAR:
         return getJobOrStageVar();
       case PipelinePackage.PIPELINE__STAGES:
@@ -1037,10 +1006,6 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
       case PipelinePackage.PIPELINE__EXTENDED_PARAMETER:
         setExtendedParameter((ExtendedParameter)newValue);
         return;
-      case PipelinePackage.PIPELINE__TRIGGERS:
-        getTriggers().clear();
-        getTriggers().addAll((Collection<? extends Event>)newValue);
-        return;
       case PipelinePackage.PIPELINE__JOB_OR_STAGE_VAR:
         setJobOrStageVar((String)newValue);
         return;
@@ -1117,9 +1082,6 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
       case PipelinePackage.PIPELINE__EXTENDED_PARAMETER:
         setExtendedParameter((ExtendedParameter)null);
         return;
-      case PipelinePackage.PIPELINE__TRIGGERS:
-        getTriggers().clear();
-        return;
       case PipelinePackage.PIPELINE__JOB_OR_STAGE_VAR:
         setJobOrStageVar(JOB_OR_STAGE_VAR_EDEFAULT);
         return;
@@ -1177,8 +1139,6 @@ public class PipelineImpl extends MinimalEObjectImpl.Container implements Pipeli
         return pplVariables != null && !pplVariables.isEmpty();
       case PipelinePackage.PIPELINE__EXTENDED_PARAMETER:
         return extendedParameter != null;
-      case PipelinePackage.PIPELINE__TRIGGERS:
-        return triggers != null && !triggers.isEmpty();
       case PipelinePackage.PIPELINE__JOB_OR_STAGE_VAR:
         return JOB_OR_STAGE_VAR_EDEFAULT == null ? jobOrStageVar != null : !JOB_OR_STAGE_VAR_EDEFAULT.equals(jobOrStageVar);
       case PipelinePackage.PIPELINE__STAGES:

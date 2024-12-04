@@ -34,7 +34,7 @@
 
 ## Metamodel
 Version 2.0 Metamodel
-![Metamodel](Version-2-Metamodel.png)
+![Metamodel](Version-2-Metamodel.PNG)
 
 ## Dataset Preparation
 

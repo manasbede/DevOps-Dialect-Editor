@@ -33,7 +33,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getVersion <em>Version</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getPplVariables <em>Ppl Variables</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getExtendedParameter <em>Extended Parameter</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getTriggers <em>Triggers</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getJobOrStageVar <em>Job Or Stage Var</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getStages <em>Stages</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getJobs <em>Jobs</em>}</li>
@@ -368,18 +367,6 @@ public interface Pipeline extends EObject
    * @generated
    */
   void setExtendedParameter(ExtendedParameter value);
-
-  /**
-   * Returns the value of the '<em><b>Triggers</b></em>' containment reference list.
-   * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.Event}.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Triggers</em>' containment reference list.
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getPipeline_Triggers()
-   * @model containment="true"
-   * @generated
-   */
-  EList<Event> getTriggers();
 
   /**
    * Returns the value of the '<em><b>Job Or Stage Var</b></em>' attribute.

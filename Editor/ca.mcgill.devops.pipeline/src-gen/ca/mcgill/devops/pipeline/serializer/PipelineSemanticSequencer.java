@@ -299,13 +299,8 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *             extendedParameter=ExtendedParameter
 	 *         )? 
 	 *         (vmName=ID (vmImage=ID | vmImage=STRING)?)? 
-	 *         ((group=ID | group=COMPLEX_EXPRESSION) (cancelConcurrence=ID | cancelConcurrence=COMPLEX_EXPRESSION))? 
-	 *         (
-	 *             pipelineParameters+=PipelineParameter* 
-	 *             ((triggers+=Event* (triggers+=Event | (triggers+=Event triggers+=Event*))?) | triggers+=Event+)? 
-	 *             (jobOrStageVar='stages:' | jobOrStageVar='jobs:') 
-	 *             (stages+=Stage+ | jobs+=Job+)?
-	 *         )?
+	 *         (pipelineParameters+=PipelineParameter* (jobOrStageVar='stages:' | jobOrStageVar='jobs:') (stages+=Stage+ | jobs+=Job+)?)? 
+	 *         ((group=ID | group=COMPLEX_EXPRESSION) (cancelConcurrence=ID | cancelConcurrence=COMPLEX_EXPRESSION))?
 	 *     )+
 	 * </pre>
 	 */

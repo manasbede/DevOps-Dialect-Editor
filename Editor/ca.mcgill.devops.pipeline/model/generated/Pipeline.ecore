@@ -26,8 +26,6 @@
         eType="#//Variable" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="extendedParameter" eType="#//ExtendedParameter"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="triggers" upperBound="-1"
-        eType="#//Event" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="jobOrStageVar" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="stages" upperBound="-1"
         eType="#//Stage" containment="true"/>
