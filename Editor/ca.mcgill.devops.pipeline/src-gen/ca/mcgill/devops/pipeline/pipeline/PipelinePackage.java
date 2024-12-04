@@ -222,22 +222,13 @@ public interface PipelinePackage extends EPackage
   int PIPELINE__EXTENDED_PARAMETER = 16;
 
   /**
-   * The feature id for the '<em><b>Triggers</b></em>' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PIPELINE__TRIGGERS = 17;
-
-  /**
    * The feature id for the '<em><b>Job Or Stage Var</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int PIPELINE__JOB_OR_STAGE_VAR = 18;
+  int PIPELINE__JOB_OR_STAGE_VAR = 17;
 
   /**
    * The feature id for the '<em><b>Stages</b></em>' containment reference list.
@@ -246,7 +237,7 @@ public interface PipelinePackage extends EPackage
    * @generated
    * @ordered
    */
-  int PIPELINE__STAGES = 19;
+  int PIPELINE__STAGES = 18;
 
   /**
    * The feature id for the '<em><b>Jobs</b></em>' containment reference list.
@@ -255,7 +246,7 @@ public interface PipelinePackage extends EPackage
    * @generated
    * @ordered
    */
-  int PIPELINE__JOBS = 20;
+  int PIPELINE__JOBS = 19;
 
   /**
    * The number of structural features of the '<em>Pipeline</em>' class.
@@ -264,7 +255,7 @@ public interface PipelinePackage extends EPackage
    * @generated
    * @ordered
    */
-  int PIPELINE_FEATURE_COUNT = 21;
+  int PIPELINE_FEATURE_COUNT = 20;
 
   /**
    * The meta object id for the '{@link ca.mcgill.devops.pipeline.pipeline.impl.ExtendedParameterImpl <em>Extended Parameter</em>}' class.
@@ -1354,17 +1345,6 @@ public interface PipelinePackage extends EPackage
   EReference getPipeline_ExtendedParameter();
 
   /**
-   * Returns the meta object for the containment reference list '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getTriggers <em>Triggers</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Triggers</em>'.
-   * @see ca.mcgill.devops.pipeline.pipeline.Pipeline#getTriggers()
-   * @see #getPipeline()
-   * @generated
-   */
-  EReference getPipeline_Triggers();
-
-  /**
    * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Pipeline#getJobOrStageVar <em>Job Or Stage Var</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -2429,14 +2409,6 @@ public interface PipelinePackage extends EPackage
      * @generated
      */
     EReference PIPELINE__EXTENDED_PARAMETER = eINSTANCE.getPipeline_ExtendedParameter();
-
-    /**
-     * The meta object literal for the '<em><b>Triggers</b></em>' containment reference list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference PIPELINE__TRIGGERS = eINSTANCE.getPipeline_Triggers();
 
     /**
      * The meta object literal for the '<em><b>Job Or Stage Var</b></em>' attribute feature.

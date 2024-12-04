@@ -83,7 +83,6 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	protected AbstractElementAlias match_Pipeline_ENDTerminalRuleCall_7_1_1_1_a;
 	protected AbstractElementAlias match_Pipeline_ENDTerminalRuleCall_7_1_1_1_p;
 	protected AbstractElementAlias match_Pipeline_HyphenMinusKeyword_3_2_0_q;
-	protected AbstractElementAlias match_Pipeline_OnKeyword_12_1_0_0_q;
 	protected AbstractElementAlias match_Pipeline___BEGINTerminalRuleCall_4_1_1_0_ENDTerminalRuleCall_4_1_1_2___VariablesKeyword_10_0_q___ENDTerminalRuleCall_2_1_1_ENDTerminalRuleCall_2_1_2__q___PoolKeyword_7_0_ENDTerminalRuleCall_7_1_1_1_p__q___EnvKeyword_3_0_BEGINTerminalRuleCall_3_1_ENDTerminalRuleCall_3_3__q___ResourcesKeyword_8_0_BEGINTerminalRuleCall_8_1_0_ENDTerminalRuleCall_8_1_2__q___DefaultsKeyword_2_0_0_BEGINTerminalRuleCall_2_0_1_RunKeyword_2_0_2_BEGINTerminalRuleCall_2_0_3__q__p_PermissionKeyword_4_0__a;
 	protected AbstractElementAlias match_Pipeline___ENDTerminalRuleCall_2_1_1_ENDTerminalRuleCall_2_1_2___VariablesKeyword_10_0_q___PermissionKeyword_4_0_BEGINTerminalRuleCall_4_1_1_0_ENDTerminalRuleCall_4_1_1_2__q___EnvKeyword_3_0_BEGINTerminalRuleCall_3_1_ENDTerminalRuleCall_3_3__q___ResourcesKeyword_8_0_BEGINTerminalRuleCall_8_1_0_ENDTerminalRuleCall_8_1_2__q___DefaultsKeyword_2_0_0_BEGINTerminalRuleCall_2_0_1_RunKeyword_2_0_2_BEGINTerminalRuleCall_2_0_3__q___PoolKeyword_7_0_ENDTerminalRuleCall_7_1_1_1_a__q__p__p;
 	protected AbstractElementAlias match_Pipeline___ENDTerminalRuleCall_2_1_1_ENDTerminalRuleCall_2_1_2___VariablesKeyword_10_0_q___PoolKeyword_7_0_ENDTerminalRuleCall_7_1_1_1_p__q___EnvKeyword_3_0_BEGINTerminalRuleCall_3_1_ENDTerminalRuleCall_3_3__q___ResourcesKeyword_8_0_BEGINTerminalRuleCall_8_1_0_ENDTerminalRuleCall_8_1_2__q___DefaultsKeyword_2_0_0_BEGINTerminalRuleCall_2_0_1_RunKeyword_2_0_2_BEGINTerminalRuleCall_2_0_3__q___PermissionKeyword_4_0_BEGINTerminalRuleCall_4_1_1_0_ENDTerminalRuleCall_4_1_1_2__q__p__p;
@@ -260,7 +259,6 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	private void init1() {
 		match_Pipeline_HyphenMinusKeyword_3_2_0_q = new TokenAlias(false, true, grammarAccess.getPipelineAccess().getHyphenMinusKeyword_3_2_0());
-		match_Pipeline_OnKeyword_12_1_0_0_q = new TokenAlias(false, true, grammarAccess.getPipelineAccess().getOnKeyword_12_1_0_0());
 		match_Pipeline___BEGINTerminalRuleCall_4_1_1_0_ENDTerminalRuleCall_4_1_1_2___VariablesKeyword_10_0_q___ENDTerminalRuleCall_2_1_1_ENDTerminalRuleCall_2_1_2__q___PoolKeyword_7_0_ENDTerminalRuleCall_7_1_1_1_p__q___EnvKeyword_3_0_BEGINTerminalRuleCall_3_1_ENDTerminalRuleCall_3_3__q___ResourcesKeyword_8_0_BEGINTerminalRuleCall_8_1_0_ENDTerminalRuleCall_8_1_2__q___DefaultsKeyword_2_0_0_BEGINTerminalRuleCall_2_0_1_RunKeyword_2_0_2_BEGINTerminalRuleCall_2_0_3__q__p_PermissionKeyword_4_0__a = new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_4_1_1_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_4_1_1_2()), new GroupAlias(true, false, new TokenAlias(false, true, grammarAccess.getPipelineAccess().getVariablesKeyword_10_0()), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_2())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getPoolKeyword_7_0()), new TokenAlias(true, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_7_1_1_1())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getEnvKeyword_3_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_3_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_3_3())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getResourcesKeyword_8_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_8_1_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_8_1_2())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getDefaultsKeyword_2_0_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_0_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getRunKeyword_2_0_2()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_0_3()))), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getPermissionKeyword_4_0()));
 		match_Pipeline___ENDTerminalRuleCall_2_1_1_ENDTerminalRuleCall_2_1_2___VariablesKeyword_10_0_q___PermissionKeyword_4_0_BEGINTerminalRuleCall_4_1_1_0_ENDTerminalRuleCall_4_1_1_2__q___EnvKeyword_3_0_BEGINTerminalRuleCall_3_1_ENDTerminalRuleCall_3_3__q___ResourcesKeyword_8_0_BEGINTerminalRuleCall_8_1_0_ENDTerminalRuleCall_8_1_2__q___DefaultsKeyword_2_0_0_BEGINTerminalRuleCall_2_0_1_RunKeyword_2_0_2_BEGINTerminalRuleCall_2_0_3__q___PoolKeyword_7_0_ENDTerminalRuleCall_7_1_1_1_a__q__p__p = new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_2()), new GroupAlias(true, false, new TokenAlias(false, true, grammarAccess.getPipelineAccess().getVariablesKeyword_10_0()), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getPermissionKeyword_4_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_4_1_1_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_4_1_1_2())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getEnvKeyword_3_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_3_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_3_3())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getResourcesKeyword_8_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_8_1_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_8_1_2())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getDefaultsKeyword_2_0_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_0_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getRunKeyword_2_0_2()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_0_3())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getPoolKeyword_7_0()), new TokenAlias(true, true, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_7_1_1_1()))));
 		match_Pipeline___ENDTerminalRuleCall_2_1_1_ENDTerminalRuleCall_2_1_2___VariablesKeyword_10_0_q___PoolKeyword_7_0_ENDTerminalRuleCall_7_1_1_1_p__q___EnvKeyword_3_0_BEGINTerminalRuleCall_3_1_ENDTerminalRuleCall_3_3__q___ResourcesKeyword_8_0_BEGINTerminalRuleCall_8_1_0_ENDTerminalRuleCall_8_1_2__q___DefaultsKeyword_2_0_0_BEGINTerminalRuleCall_2_0_1_RunKeyword_2_0_2_BEGINTerminalRuleCall_2_0_3__q___PermissionKeyword_4_0_BEGINTerminalRuleCall_4_1_1_0_ENDTerminalRuleCall_4_1_1_2__q__p__p = new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_2()), new GroupAlias(true, false, new TokenAlias(false, true, grammarAccess.getPipelineAccess().getVariablesKeyword_10_0()), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getPoolKeyword_7_0()), new TokenAlias(true, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_7_1_1_1())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getEnvKeyword_3_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_3_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_3_3())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getResourcesKeyword_8_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_8_1_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_8_1_2())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getDefaultsKeyword_2_0_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_0_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getRunKeyword_2_0_2()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_0_3())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getPermissionKeyword_4_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_4_1_1_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_4_1_1_2()))));
@@ -319,10 +317,10 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 		match_Pipeline___VariablesKeyword_10_0_q___ENDTerminalRuleCall_2_1_1_ENDTerminalRuleCall_2_1_2__q___PermissionKeyword_4_0_BEGINTerminalRuleCall_4_1_1_0_ENDTerminalRuleCall_4_1_1_2__q___ResourcesKeyword_8_0_BEGINTerminalRuleCall_8_1_0_ENDTerminalRuleCall_8_1_2__q___DefaultsKeyword_2_0_0_BEGINTerminalRuleCall_2_0_1_RunKeyword_2_0_2_BEGINTerminalRuleCall_2_0_3__q___PoolKeyword_7_0_ENDTerminalRuleCall_7_1_1_1_p__q__p = new GroupAlias(true, false, new TokenAlias(false, true, grammarAccess.getPipelineAccess().getVariablesKeyword_10_0()), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_2())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getPermissionKeyword_4_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_4_1_1_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_4_1_1_2())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getResourcesKeyword_8_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_8_1_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_8_1_2())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getDefaultsKeyword_2_0_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_0_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getRunKeyword_2_0_2()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_0_3())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getPoolKeyword_7_0()), new TokenAlias(true, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_7_1_1_1())));
 		match_Pipeline___VariablesKeyword_10_0_q___ENDTerminalRuleCall_2_1_1_ENDTerminalRuleCall_2_1_2__q___PoolKeyword_7_0_ENDTerminalRuleCall_7_1_1_1_p__q___EnvKeyword_3_0_BEGINTerminalRuleCall_3_1_ENDTerminalRuleCall_3_3__q___DefaultsKeyword_2_0_0_BEGINTerminalRuleCall_2_0_1_RunKeyword_2_0_2_BEGINTerminalRuleCall_2_0_3__q___PermissionKeyword_4_0_BEGINTerminalRuleCall_4_1_1_0_ENDTerminalRuleCall_4_1_1_2__q__p = new GroupAlias(true, false, new TokenAlias(false, true, grammarAccess.getPipelineAccess().getVariablesKeyword_10_0()), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_2())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getPoolKeyword_7_0()), new TokenAlias(true, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_7_1_1_1())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getEnvKeyword_3_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_3_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_3_3())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getDefaultsKeyword_2_0_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_0_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getRunKeyword_2_0_2()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_0_3())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getPermissionKeyword_4_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_4_1_1_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_4_1_1_2())));
 		match_Pipeline___VariablesKeyword_10_0_q___ENDTerminalRuleCall_2_1_1_ENDTerminalRuleCall_2_1_2__q___PoolKeyword_7_0_ENDTerminalRuleCall_7_1_1_1_p__q___EnvKeyword_3_0_BEGINTerminalRuleCall_3_1_ENDTerminalRuleCall_3_3__q___DefaultsKeyword_2_0_0_BEGINTerminalRuleCall_2_0_1_RunKeyword_2_0_2_BEGINTerminalRuleCall_2_0_3__q___ResourcesKeyword_8_0_BEGINTerminalRuleCall_8_1_0_ENDTerminalRuleCall_8_1_2__q__p = new GroupAlias(true, false, new TokenAlias(false, true, grammarAccess.getPipelineAccess().getVariablesKeyword_10_0()), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_2())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getPoolKeyword_7_0()), new TokenAlias(true, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_7_1_1_1())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getEnvKeyword_3_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_3_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_3_3())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getDefaultsKeyword_2_0_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_0_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getRunKeyword_2_0_2()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_0_3())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getResourcesKeyword_8_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_8_1_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_8_1_2())));
+		match_Pipeline___VariablesKeyword_10_0_q___ENDTerminalRuleCall_2_1_1_ENDTerminalRuleCall_2_1_2__q___PoolKeyword_7_0_ENDTerminalRuleCall_7_1_1_1_p__q___EnvKeyword_3_0_BEGINTerminalRuleCall_3_1_ENDTerminalRuleCall_3_3__q___ResourcesKeyword_8_0_BEGINTerminalRuleCall_8_1_0_ENDTerminalRuleCall_8_1_2__q___DefaultsKeyword_2_0_0_BEGINTerminalRuleCall_2_0_1_RunKeyword_2_0_2_BEGINTerminalRuleCall_2_0_3__q__p = new GroupAlias(true, false, new TokenAlias(false, true, grammarAccess.getPipelineAccess().getVariablesKeyword_10_0()), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_2())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getPoolKeyword_7_0()), new TokenAlias(true, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_7_1_1_1())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getEnvKeyword_3_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_3_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_3_3())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getResourcesKeyword_8_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_8_1_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_8_1_2())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getDefaultsKeyword_2_0_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_0_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getRunKeyword_2_0_2()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_0_3())));
 	}
 	
 	private void init2() {
-		match_Pipeline___VariablesKeyword_10_0_q___ENDTerminalRuleCall_2_1_1_ENDTerminalRuleCall_2_1_2__q___PoolKeyword_7_0_ENDTerminalRuleCall_7_1_1_1_p__q___EnvKeyword_3_0_BEGINTerminalRuleCall_3_1_ENDTerminalRuleCall_3_3__q___ResourcesKeyword_8_0_BEGINTerminalRuleCall_8_1_0_ENDTerminalRuleCall_8_1_2__q___DefaultsKeyword_2_0_0_BEGINTerminalRuleCall_2_0_1_RunKeyword_2_0_2_BEGINTerminalRuleCall_2_0_3__q__p = new GroupAlias(true, false, new TokenAlias(false, true, grammarAccess.getPipelineAccess().getVariablesKeyword_10_0()), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_2())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getPoolKeyword_7_0()), new TokenAlias(true, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_7_1_1_1())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getEnvKeyword_3_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_3_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_3_3())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getResourcesKeyword_8_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_8_1_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_8_1_2())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getDefaultsKeyword_2_0_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_0_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getRunKeyword_2_0_2()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_0_3())));
 		match_Pipeline___VariablesKeyword_10_0_q___ENDTerminalRuleCall_2_1_1_ENDTerminalRuleCall_2_1_2__q___PoolKeyword_7_0_ENDTerminalRuleCall_7_1_1_1_p__q___PermissionKeyword_4_0_BEGINTerminalRuleCall_4_1_1_0_ENDTerminalRuleCall_4_1_1_2__q___DefaultsKeyword_2_0_0_BEGINTerminalRuleCall_2_0_1_RunKeyword_2_0_2_BEGINTerminalRuleCall_2_0_3__q___EnvKeyword_3_0_BEGINTerminalRuleCall_3_1_ENDTerminalRuleCall_3_3__q__p = new GroupAlias(true, false, new TokenAlias(false, true, grammarAccess.getPipelineAccess().getVariablesKeyword_10_0()), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_2())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getPoolKeyword_7_0()), new TokenAlias(true, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_7_1_1_1())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getPermissionKeyword_4_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_4_1_1_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_4_1_1_2())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getDefaultsKeyword_2_0_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_0_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getRunKeyword_2_0_2()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_0_3())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getEnvKeyword_3_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_3_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_3_3())));
 		match_Pipeline___VariablesKeyword_10_0_q___ENDTerminalRuleCall_2_1_1_ENDTerminalRuleCall_2_1_2__q___PoolKeyword_7_0_ENDTerminalRuleCall_7_1_1_1_p__q___PermissionKeyword_4_0_BEGINTerminalRuleCall_4_1_1_0_ENDTerminalRuleCall_4_1_1_2__q___DefaultsKeyword_2_0_0_BEGINTerminalRuleCall_2_0_1_RunKeyword_2_0_2_BEGINTerminalRuleCall_2_0_3__q___ResourcesKeyword_8_0_BEGINTerminalRuleCall_8_1_0_ENDTerminalRuleCall_8_1_2__q__p = new GroupAlias(true, false, new TokenAlias(false, true, grammarAccess.getPipelineAccess().getVariablesKeyword_10_0()), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_2())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getPoolKeyword_7_0()), new TokenAlias(true, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_7_1_1_1())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getPermissionKeyword_4_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_4_1_1_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_4_1_1_2())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getDefaultsKeyword_2_0_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_0_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getRunKeyword_2_0_2()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_0_3())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getResourcesKeyword_8_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_8_1_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_8_1_2())));
 		match_Pipeline___VariablesKeyword_10_0_q___ENDTerminalRuleCall_2_1_1_ENDTerminalRuleCall_2_1_2__q___PoolKeyword_7_0_ENDTerminalRuleCall_7_1_1_1_p__q___PermissionKeyword_4_0_BEGINTerminalRuleCall_4_1_1_0_ENDTerminalRuleCall_4_1_1_2__q___EnvKeyword_3_0_BEGINTerminalRuleCall_3_1_ENDTerminalRuleCall_3_3__q___DefaultsKeyword_2_0_0_BEGINTerminalRuleCall_2_0_1_RunKeyword_2_0_2_BEGINTerminalRuleCall_2_0_3__q__p = new GroupAlias(true, false, new TokenAlias(false, true, grammarAccess.getPipelineAccess().getVariablesKeyword_10_0()), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_2_1_2())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getPoolKeyword_7_0()), new TokenAlias(true, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_7_1_1_1())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getPermissionKeyword_4_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_4_1_1_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_4_1_1_2())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getEnvKeyword_3_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_3_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getENDTerminalRuleCall_3_3())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPipelineAccess().getDefaultsKeyword_2_0_0()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_0_1()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getRunKeyword_2_0_2()), new TokenAlias(false, false, grammarAccess.getPipelineAccess().getBEGINTerminalRuleCall_2_0_3())));
@@ -528,8 +526,6 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 				emit_Pipeline_ENDTerminalRuleCall_7_1_1_1_p(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_Pipeline_HyphenMinusKeyword_3_2_0_q.equals(syntax))
 				emit_Pipeline_HyphenMinusKeyword_3_2_0_q(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_Pipeline_OnKeyword_12_1_0_0_q.equals(syntax))
-				emit_Pipeline_OnKeyword_12_1_0_0_q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_Pipeline___BEGINTerminalRuleCall_4_1_1_0_ENDTerminalRuleCall_4_1_1_2___VariablesKeyword_10_0_q___ENDTerminalRuleCall_2_1_1_ENDTerminalRuleCall_2_1_2__q___PoolKeyword_7_0_ENDTerminalRuleCall_7_1_1_1_p__q___EnvKeyword_3_0_BEGINTerminalRuleCall_3_1_ENDTerminalRuleCall_3_3__q___ResourcesKeyword_8_0_BEGINTerminalRuleCall_8_1_0_ENDTerminalRuleCall_8_1_2__q___DefaultsKeyword_2_0_0_BEGINTerminalRuleCall_2_0_1_RunKeyword_2_0_2_BEGINTerminalRuleCall_2_0_3__q__p_PermissionKeyword_4_0__a.equals(syntax))
 				emit_Pipeline___BEGINTerminalRuleCall_4_1_1_0_ENDTerminalRuleCall_4_1_1_2___VariablesKeyword_10_0_q___ENDTerminalRuleCall_2_1_1_ENDTerminalRuleCall_2_1_2__q___PoolKeyword_7_0_ENDTerminalRuleCall_7_1_1_1_p__q___EnvKeyword_3_0_BEGINTerminalRuleCall_3_1_ENDTerminalRuleCall_3_3__q___ResourcesKeyword_8_0_BEGINTerminalRuleCall_8_1_0_ENDTerminalRuleCall_8_1_2__q___DefaultsKeyword_2_0_0_BEGINTerminalRuleCall_2_0_1_RunKeyword_2_0_2_BEGINTerminalRuleCall_2_0_3__q__p_PermissionKeyword_4_0__a(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_Pipeline___ENDTerminalRuleCall_2_1_1_ENDTerminalRuleCall_2_1_2___VariablesKeyword_10_0_q___PermissionKeyword_4_0_BEGINTerminalRuleCall_4_1_1_0_ENDTerminalRuleCall_4_1_1_2__q___EnvKeyword_3_0_BEGINTerminalRuleCall_3_1_ENDTerminalRuleCall_3_3__q___ResourcesKeyword_8_0_BEGINTerminalRuleCall_8_1_0_ENDTerminalRuleCall_8_1_2__q___DefaultsKeyword_2_0_0_BEGINTerminalRuleCall_2_0_1_RunKeyword_2_0_2_BEGINTerminalRuleCall_2_0_3__q___PoolKeyword_7_0_ENDTerminalRuleCall_7_1_1_1_a__q__p__p.equals(syntax))
@@ -2552,36 +2548,6 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         vmImage=ID 
 	 *         (ambiguity) 
 	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
-	 *         'on:' 
-	 *         '[' 
-	 *         triggers+=Event
-	 *     )
-	 *     (
-	 *         vmImage=ID 
-	 *         (ambiguity) 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
-	 *         'on:' 
-	 *         BEGIN 
-	 *         triggers+=Event
-	 *     )
-	 *     (
-	 *         vmImage=ID 
-	 *         (ambiguity) 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
-	 *         'on:'? 
-	 *         jobOrStageVar='jobs:'
-	 *     )
-	 *     (
-	 *         vmImage=ID 
-	 *         (ambiguity) 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
-	 *         'on:'? 
-	 *         jobOrStageVar='stages:'
-	 *     )
-	 *     (
-	 *         vmImage=ID 
-	 *         (ambiguity) 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
 	 *         'run-name:' 
 	 *         runName=UnquotedString
 	 *     )
@@ -2604,6 +2570,12 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         (ambiguity) 
 	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
 	 *         extendedParameter=ExtendedParameter
+	 *     )
+	 *     (
+	 *         vmImage=ID 
+	 *         (ambiguity) 
+	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
+	 *         jobOrStageVar='stages:'
 	 *     )
 	 *     (
 	 *         vmImage=ID 
@@ -2675,43 +2647,6 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         vmImage=STRING 
 	 *         (ambiguity) 
 	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
-	 *         'on:' 
-	 *         '[' 
-	 *         triggers+=Event
-	 *     )
-	 *     (
-	 *         vmImage=STRING 
-	 *         (ambiguity) 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
-	 *         'on:' 
-	 *         BEGIN 
-	 *         triggers+=Event
-	 *     )
-	 *     (
-	 *         vmImage=STRING 
-	 *         (ambiguity) 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
-	 *         'on:' 
-	 *         triggers+=Event
-	 *     )
-	 *     (
-	 *         vmImage=STRING 
-	 *         (ambiguity) 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
-	 *         'on:'? 
-	 *         jobOrStageVar='jobs:'
-	 *     )
-	 *     (
-	 *         vmImage=STRING 
-	 *         (ambiguity) 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
-	 *         'on:'? 
-	 *         jobOrStageVar='stages:'
-	 *     )
-	 *     (
-	 *         vmImage=STRING 
-	 *         (ambiguity) 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
 	 *         'run-name:' 
 	 *         runName=UnquotedString
 	 *     )
@@ -2734,6 +2669,18 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         (ambiguity) 
 	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
 	 *         extendedParameter=ExtendedParameter
+	 *     )
+	 *     (
+	 *         vmImage=STRING 
+	 *         (ambiguity) 
+	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
+	 *         jobOrStageVar='jobs:'
+	 *     )
+	 *     (
+	 *         vmImage=STRING 
+	 *         (ambiguity) 
+	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
+	 *         jobOrStageVar='stages:'
 	 *     )
 	 *     (
 	 *         vmImage=STRING 
@@ -2805,28 +2752,6 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         vmName=ID 
 	 *         (ambiguity) 
 	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
-	 *         'on:' 
-	 *         BEGIN 
-	 *         triggers+=Event
-	 *     )
-	 *     (
-	 *         vmName=ID 
-	 *         (ambiguity) 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
-	 *         'on:'? 
-	 *         jobOrStageVar='jobs:'
-	 *     )
-	 *     (
-	 *         vmName=ID 
-	 *         (ambiguity) 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
-	 *         'on:'? 
-	 *         jobOrStageVar='stages:'
-	 *     )
-	 *     (
-	 *         vmName=ID 
-	 *         (ambiguity) 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
 	 *         'run-name:' 
 	 *         runName=UnquotedString
 	 *     )
@@ -2866,15 +2791,12 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         '-'? 
 	 *         env+=KeyValue
 	 *     )
-	 *     vmImage=ID (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 'on:' triggers+=Event
 	 *     vmImage=ID (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ (rule end)
-	 *     vmImage=ID (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ triggers+=Event
+	 *     vmImage=ID (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ jobOrStageVar='jobs:'
 	 *     vmImage=STRING (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ (rule end)
-	 *     vmImage=STRING (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ triggers+=Event
-	 *     vmName=ID (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 'on:' '[' triggers+=Event
-	 *     vmName=ID (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 'on:' triggers+=Event
 	 *     vmName=ID (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ (rule end)
-	 *     vmName=ID (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ triggers+=Event
+	 *     vmName=ID (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ jobOrStageVar='jobs:'
+	 *     vmName=ID (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ jobOrStageVar='stages:'
 	 
 	 * </pre>
 	 */
@@ -2947,48 +2869,6 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         (ambiguity) 
 	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
 	 *         ('pool:' (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
-	 *         'on:' 
-	 *         '[' 
-	 *         triggers+=Event
-	 *     )
-	 *     (
-	 *         vmDemands=AnyData 
-	 *         (ambiguity) 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         ('pool:' (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
-	 *         'on:' 
-	 *         BEGIN 
-	 *         triggers+=Event
-	 *     )
-	 *     (
-	 *         vmDemands=AnyData 
-	 *         (ambiguity) 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         ('pool:' (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
-	 *         'on:' 
-	 *         triggers+=Event
-	 *     )
-	 *     (
-	 *         vmDemands=AnyData 
-	 *         (ambiguity) 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         ('pool:' (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
-	 *         'on:'? 
-	 *         jobOrStageVar='jobs:'
-	 *     )
-	 *     (
-	 *         vmDemands=AnyData 
-	 *         (ambiguity) 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         ('pool:' (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
-	 *         'on:'? 
-	 *         jobOrStageVar='stages:'
-	 *     )
-	 *     (
-	 *         vmDemands=AnyData 
-	 *         (ambiguity) 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         ('pool:' (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
 	 *         'run-name:' 
 	 *         runName=UnquotedString
 	 *     )
@@ -3027,14 +2907,21 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         (ambiguity) 
 	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
 	 *         ('pool:' (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
-	 *         pipelineParameters+=PipelineParameter
+	 *         jobOrStageVar='jobs:'
 	 *     )
 	 *     (
 	 *         vmDemands=AnyData 
 	 *         (ambiguity) 
 	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
 	 *         ('pool:' (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
-	 *         triggers+=Event
+	 *         jobOrStageVar='stages:'
+	 *     )
+	 *     (
+	 *         vmDemands=AnyData 
+	 *         (ambiguity) 
+	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         ('pool:' (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
+	 *         pipelineParameters+=PipelineParameter
 	 *     )
 	 *     (
 	 *         vmDemands=AnyData 
@@ -3105,48 +2992,6 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         (ambiguity) 
 	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
 	 *         ('pool:' (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
-	 *         'on:' 
-	 *         '[' 
-	 *         triggers+=Event
-	 *     )
-	 *     (
-	 *         vmDemands=HyphenValues 
-	 *         (ambiguity) 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         ('pool:' (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
-	 *         'on:' 
-	 *         BEGIN 
-	 *         triggers+=Event
-	 *     )
-	 *     (
-	 *         vmDemands=HyphenValues 
-	 *         (ambiguity) 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         ('pool:' (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
-	 *         'on:' 
-	 *         triggers+=Event
-	 *     )
-	 *     (
-	 *         vmDemands=HyphenValues 
-	 *         (ambiguity) 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         ('pool:' (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
-	 *         'on:'? 
-	 *         jobOrStageVar='jobs:'
-	 *     )
-	 *     (
-	 *         vmDemands=HyphenValues 
-	 *         (ambiguity) 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         ('pool:' (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
-	 *         'on:'? 
-	 *         jobOrStageVar='stages:'
-	 *     )
-	 *     (
-	 *         vmDemands=HyphenValues 
-	 *         (ambiguity) 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         ('pool:' (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
 	 *         'run-name:' 
 	 *         runName=UnquotedString
 	 *     )
@@ -3185,14 +3030,21 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         (ambiguity) 
 	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
 	 *         ('pool:' (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
-	 *         pipelineParameters+=PipelineParameter
+	 *         jobOrStageVar='jobs:'
 	 *     )
 	 *     (
 	 *         vmDemands=HyphenValues 
 	 *         (ambiguity) 
 	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
 	 *         ('pool:' (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
-	 *         triggers+=Event
+	 *         jobOrStageVar='stages:'
+	 *     )
+	 *     (
+	 *         vmDemands=HyphenValues 
+	 *         (ambiguity) 
+	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         ('pool:' (ambiguity) ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
+	 *         pipelineParameters+=PipelineParameter
 	 *     )
 	 *     (
 	 *         vmDemands=HyphenValues 
@@ -3449,267 +3301,6 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	/**
 	 * <pre>
 	 * Ambiguous syntax:
-	 *     'on:'?
-	 *
-	 * This ambiguous syntax occurs at:
-	 *     (
-	 *         cancelConcurrence=COMPLEX_EXPRESSION 
-	 *         END 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='jobs:'
-	 *     )
-	 *     (
-	 *         cancelConcurrence=COMPLEX_EXPRESSION 
-	 *         END 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='stages:'
-	 *     )
-	 *     (
-	 *         cancelConcurrence=ID 
-	 *         END 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='jobs:'
-	 *     )
-	 *     (
-	 *         cancelConcurrence=ID 
-	 *         END 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='stages:'
-	 *     )
-	 *     (
-	 *         defaultShellValue=STRING 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='jobs:'
-	 *     )
-	 *     (
-	 *         defaultShellValue=STRING 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='stages:'
-	 *     )
-	 *     (
-	 *         defaultWDValue=STRING 
-	 *         (END END ('variables:'? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)+ 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='jobs:'
-	 *     )
-	 *     (
-	 *         defaultWDValue=STRING 
-	 *         (END END ('variables:'? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)+ 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='stages:'
-	 *     )
-	 *     (
-	 *         env+=KeyValue 
-	 *         END 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         ('env:' BEGIN END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='jobs:'
-	 *     )
-	 *     (
-	 *         env+=KeyValue 
-	 *         END 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         ('env:' BEGIN END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='stages:'
-	 *     )
-	 *     (
-	 *         extendedParameter=ExtendedParameter 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='jobs:'
-	 *     )
-	 *     (
-	 *         extendedParameter=ExtendedParameter 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='stages:'
-	 *     )
-	 *     (
-	 *         indPermissions+=IndPermissionValue 
-	 *         END 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         ('permission:' BEGIN END ('variables:'? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='jobs:'
-	 *     )
-	 *     (
-	 *         indPermissions+=IndPermissionValue 
-	 *         END 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         ('permission:' BEGIN END ('variables:'? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='stages:'
-	 *     )
-	 *     (
-	 *         jobOrStageVar='jobs:' 
-	 *         BEGIN 
-	 *         END 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='jobs:'
-	 *     )
-	 *     (
-	 *         jobOrStageVar='jobs:' 
-	 *         BEGIN 
-	 *         END 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='stages:'
-	 *     )
-	 *     (
-	 *         jobOrStageVar='stages:' 
-	 *         BEGIN 
-	 *         END 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='jobs:'
-	 *     )
-	 *     (
-	 *         jobOrStageVar='stages:' 
-	 *         BEGIN 
-	 *         END 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='stages:'
-	 *     )
-	 *     (
-	 *         name=UnquotedString 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='jobs:'
-	 *     )
-	 *     (
-	 *         name=UnquotedString 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='stages:'
-	 *     )
-	 *     (
-	 *         pipelineParameters+=PipelineParameter 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='jobs:'
-	 *     )
-	 *     (
-	 *         pipelineParameters+=PipelineParameter 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='stages:'
-	 *     )
-	 *     (
-	 *         pplVariables+=Variable 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='jobs:'
-	 *     )
-	 *     (
-	 *         pplVariables+=Variable 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='stages:'
-	 *     )
-	 *     (
-	 *         resources+=Resource 
-	 *         END 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         ('resources:' BEGIN END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='jobs:'
-	 *     )
-	 *     (
-	 *         resources+=Resource 
-	 *         END 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         ('resources:' BEGIN END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='stages:'
-	 *     )
-	 *     (
-	 *         runName=UnquotedString 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='jobs:'
-	 *     )
-	 *     (
-	 *         runName=UnquotedString 
-	 *         ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='stages:'
-	 *     )
-	 *     (
-	 *         vmDemands=AnyData 
-	 *         END+ 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         ('pool:' END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='jobs:'
-	 *     )
-	 *     (
-	 *         vmDemands=AnyData 
-	 *         END+ 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         ('pool:' END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='stages:'
-	 *     )
-	 *     (
-	 *         vmDemands=HyphenValues 
-	 *         END+ 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         ('pool:' END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='jobs:'
-	 *     )
-	 *     (
-	 *         vmDemands=HyphenValues 
-	 *         END+ 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
-	 *         ('pool:' END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='stages:'
-	 *     )
-	 *     (
-	 *         vmImage=STRING 
-	 *         END* 
-	 *         ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' END*)?)+ 
-	 *         (ambiguity) 
-	 *         jobOrStageVar='stages:'
-	 *     )
-	 *     (rule start) ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) jobOrStageVar='jobs:'
-	 *     (rule start) ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) jobOrStageVar='stages:'
-	 *     allPermission=ID ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) jobOrStageVar='jobs:'
-	 *     allPermission=ID ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) jobOrStageVar='stages:'
-	 *     jobs+=Job END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) jobOrStageVar='jobs:'
-	 *     jobs+=Job END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) jobOrStageVar='stages:'
-	 *     pipelineParameters+=PipelineParameter (ambiguity) jobOrStageVar='jobs:'
-	 *     pipelineParameters+=PipelineParameter (ambiguity) jobOrStageVar='stages:'
-	 *     stages+=Stage END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) jobOrStageVar='jobs:'
-	 *     stages+=Stage END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) jobOrStageVar='stages:'
-	 *     version=VERSION ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) jobOrStageVar='jobs:'
-	 *     version=VERSION ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) jobOrStageVar='stages:'
-	 *     vmImage=ID END* ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' END*)?)+ (ambiguity) jobOrStageVar='jobs:'
-	 *     vmImage=ID END* ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' END*)?)+ (ambiguity) jobOrStageVar='stages:'
-	 *     vmImage=STRING END* ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' END*)?)+ (ambiguity) jobOrStageVar='jobs:'
-	 *     vmName=ID END* ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' END*)?)+ (ambiguity) jobOrStageVar='jobs:'
-	 *     vmName=ID END* ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' END*)?)+ (ambiguity) jobOrStageVar='stages:'
-	 
-	 * </pre>
-	 */
-	protected void emit_Pipeline_OnKeyword_12_1_0_0_q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
-		acceptNodes(transition, nodes);
-	}
-	
-	/**
-	 * <pre>
-	 * Ambiguous syntax:
 	 *     (
 	  *         BEGIN 
 	  *         END 
@@ -3878,18 +3469,14 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     defaultWDValue=STRING (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     defaultWDValue=STRING (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
 	 *     defaultWDValue=STRING (ambiguity) 'name:' name=UnquotedString
-	 *     defaultWDValue=STRING (ambiguity) 'on:' '[' triggers+=Event
-	 *     defaultWDValue=STRING (ambiguity) 'on:' BEGIN triggers+=Event
-	 *     defaultWDValue=STRING (ambiguity) 'on:' triggers+=Event
-	 *     defaultWDValue=STRING (ambiguity) 'on:'? jobOrStageVar='jobs:'
-	 *     defaultWDValue=STRING (ambiguity) 'on:'? jobOrStageVar='stages:'
 	 *     defaultWDValue=STRING (ambiguity) 'run-name:' runName=UnquotedString
 	 *     defaultWDValue=STRING (ambiguity) 'version:' version=VERSION
 	 *     defaultWDValue=STRING (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     defaultWDValue=STRING (ambiguity) (rule end)
 	 *     defaultWDValue=STRING (ambiguity) extendedParameter=ExtendedParameter
+	 *     defaultWDValue=STRING (ambiguity) jobOrStageVar='jobs:'
+	 *     defaultWDValue=STRING (ambiguity) jobOrStageVar='stages:'
 	 *     defaultWDValue=STRING (ambiguity) pipelineParameters+=PipelineParameter
-	 *     defaultWDValue=STRING (ambiguity) triggers+=Event
 	 
 	 * </pre>
 	 */
@@ -5086,18 +4673,14 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     )
 	 *     env+=KeyValue END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
 	 *     env+=KeyValue END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'name:' name=UnquotedString
-	 *     env+=KeyValue END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:' '[' triggers+=Event
-	 *     env+=KeyValue END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:' BEGIN triggers+=Event
-	 *     env+=KeyValue END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:' triggers+=Event
-	 *     env+=KeyValue END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:'? jobOrStageVar='jobs:'
-	 *     env+=KeyValue END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:'? jobOrStageVar='stages:'
 	 *     env+=KeyValue END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'run-name:' runName=UnquotedString
 	 *     env+=KeyValue END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'version:' version=VERSION
 	 *     env+=KeyValue END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     env+=KeyValue END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) (rule end)
 	 *     env+=KeyValue END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) extendedParameter=ExtendedParameter
+	 *     env+=KeyValue END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) jobOrStageVar='jobs:'
+	 *     env+=KeyValue END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) jobOrStageVar='stages:'
 	 *     env+=KeyValue END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) pipelineParameters+=PipelineParameter
-	 *     env+=KeyValue END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) triggers+=Event
 	 
 	 * </pre>
 	 */
@@ -5256,14 +4839,10 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         pipelineParameters+=PipelineParameter
 	 *     )
 	 *     indPermissions+=IndPermissionValue END ('variables:'? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'name:' name=UnquotedString
-	 *     indPermissions+=IndPermissionValue END ('variables:'? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:' '[' triggers+=Event
-	 *     indPermissions+=IndPermissionValue END ('variables:'? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:' BEGIN triggers+=Event
-	 *     indPermissions+=IndPermissionValue END ('variables:'? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:' triggers+=Event
-	 *     indPermissions+=IndPermissionValue END ('variables:'? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:'? jobOrStageVar='jobs:'
-	 *     indPermissions+=IndPermissionValue END ('variables:'? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:'? jobOrStageVar='stages:'
 	 *     indPermissions+=IndPermissionValue END ('variables:'? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'version:' version=VERSION
 	 *     indPermissions+=IndPermissionValue END ('variables:'? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) (rule end)
-	 *     indPermissions+=IndPermissionValue END ('variables:'? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) triggers+=Event
+	 *     indPermissions+=IndPermissionValue END ('variables:'? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) jobOrStageVar='jobs:'
+	 *     indPermissions+=IndPermissionValue END ('variables:'? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) jobOrStageVar='stages:'
 	 
 	 * </pre>
 	 */
@@ -5407,24 +4986,16 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         pipelineParameters+=PipelineParameter
 	 *     )
 	 *     vmDemands=AnyData END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'name:' name=UnquotedString
-	 *     vmDemands=AnyData END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:' '[' triggers+=Event
-	 *     vmDemands=AnyData END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:' BEGIN triggers+=Event
-	 *     vmDemands=AnyData END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:' triggers+=Event
-	 *     vmDemands=AnyData END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:'? jobOrStageVar='jobs:'
-	 *     vmDemands=AnyData END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:'? jobOrStageVar='stages:'
 	 *     vmDemands=AnyData END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'run-name:' runName=UnquotedString
 	 *     vmDemands=AnyData END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'version:' version=VERSION
 	 *     vmDemands=AnyData END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) (rule end)
-	 *     vmDemands=AnyData END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) triggers+=Event
+	 *     vmDemands=AnyData END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) jobOrStageVar='jobs:'
+	 *     vmDemands=AnyData END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) jobOrStageVar='stages:'
 	 *     vmDemands=HyphenValues END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'name:' name=UnquotedString
-	 *     vmDemands=HyphenValues END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:' '[' triggers+=Event
-	 *     vmDemands=HyphenValues END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:' BEGIN triggers+=Event
-	 *     vmDemands=HyphenValues END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:' triggers+=Event
-	 *     vmDemands=HyphenValues END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:'? jobOrStageVar='jobs:'
-	 *     vmDemands=HyphenValues END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:'? jobOrStageVar='stages:'
 	 *     vmDemands=HyphenValues END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'version:' version=VERSION
 	 *     vmDemands=HyphenValues END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) (rule end)
-	 *     vmDemands=HyphenValues END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) triggers+=Event
+	 *     vmDemands=HyphenValues END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) jobOrStageVar='jobs:'
+	 *     vmDemands=HyphenValues END+ ('variables:'? (END END)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) jobOrStageVar='stages:'
 	 
 	 * </pre>
 	 */
@@ -5564,18 +5135,14 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     )
 	 *     resources+=Resource END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
 	 *     resources+=Resource END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'name:' name=UnquotedString
-	 *     resources+=Resource END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:' '[' triggers+=Event
-	 *     resources+=Resource END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:' BEGIN triggers+=Event
-	 *     resources+=Resource END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:' triggers+=Event
-	 *     resources+=Resource END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:'? jobOrStageVar='jobs:'
-	 *     resources+=Resource END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'on:'? jobOrStageVar='stages:'
 	 *     resources+=Resource END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'run-name:' runName=UnquotedString
 	 *     resources+=Resource END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'version:' version=VERSION
 	 *     resources+=Resource END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     resources+=Resource END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) (rule end)
 	 *     resources+=Resource END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) extendedParameter=ExtendedParameter
+	 *     resources+=Resource END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) jobOrStageVar='jobs:'
+	 *     resources+=Resource END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) jobOrStageVar='stages:'
 	 *     resources+=Resource END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) pipelineParameters+=PipelineParameter
-	 *     resources+=Resource END ('variables:'? (END END)? ('pool:' END+)? ('permission:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ (ambiguity) triggers+=Event
 	 
 	 * </pre>
 	 */
@@ -5911,48 +5478,36 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     vmImage=ID END* (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     vmImage=ID END* (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
 	 *     vmImage=ID END* (ambiguity) 'name:' name=UnquotedString
-	 *     vmImage=ID END* (ambiguity) 'on:' '[' triggers+=Event
-	 *     vmImage=ID END* (ambiguity) 'on:' BEGIN triggers+=Event
-	 *     vmImage=ID END* (ambiguity) 'on:' triggers+=Event
-	 *     vmImage=ID END* (ambiguity) 'on:'? jobOrStageVar='jobs:'
-	 *     vmImage=ID END* (ambiguity) 'on:'? jobOrStageVar='stages:'
 	 *     vmImage=ID END* (ambiguity) 'run-name:' runName=UnquotedString
 	 *     vmImage=ID END* (ambiguity) 'version:' version=VERSION
 	 *     vmImage=ID END* (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     vmImage=ID END* (ambiguity) (rule end)
 	 *     vmImage=ID END* (ambiguity) extendedParameter=ExtendedParameter
+	 *     vmImage=ID END* (ambiguity) jobOrStageVar='jobs:'
+	 *     vmImage=ID END* (ambiguity) jobOrStageVar='stages:'
 	 *     vmImage=ID END* (ambiguity) pipelineParameters+=PipelineParameter
-	 *     vmImage=ID END* (ambiguity) triggers+=Event
 	 *     vmImage=STRING END* (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     vmImage=STRING END* (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
 	 *     vmImage=STRING END* (ambiguity) 'name:' name=UnquotedString
-	 *     vmImage=STRING END* (ambiguity) 'on:' '[' triggers+=Event
-	 *     vmImage=STRING END* (ambiguity) 'on:' BEGIN triggers+=Event
-	 *     vmImage=STRING END* (ambiguity) 'on:' triggers+=Event
-	 *     vmImage=STRING END* (ambiguity) 'on:'? jobOrStageVar='jobs:'
-	 *     vmImage=STRING END* (ambiguity) 'on:'? jobOrStageVar='stages:'
 	 *     vmImage=STRING END* (ambiguity) 'run-name:' runName=UnquotedString
 	 *     vmImage=STRING END* (ambiguity) 'version:' version=VERSION
 	 *     vmImage=STRING END* (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     vmImage=STRING END* (ambiguity) (rule end)
 	 *     vmImage=STRING END* (ambiguity) extendedParameter=ExtendedParameter
+	 *     vmImage=STRING END* (ambiguity) jobOrStageVar='jobs:'
+	 *     vmImage=STRING END* (ambiguity) jobOrStageVar='stages:'
 	 *     vmImage=STRING END* (ambiguity) pipelineParameters+=PipelineParameter
-	 *     vmImage=STRING END* (ambiguity) triggers+=Event
 	 *     vmName=ID END* (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     vmName=ID END* (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
 	 *     vmName=ID END* (ambiguity) 'name:' name=UnquotedString
-	 *     vmName=ID END* (ambiguity) 'on:' '[' triggers+=Event
-	 *     vmName=ID END* (ambiguity) 'on:' BEGIN triggers+=Event
-	 *     vmName=ID END* (ambiguity) 'on:' triggers+=Event
-	 *     vmName=ID END* (ambiguity) 'on:'? jobOrStageVar='jobs:'
-	 *     vmName=ID END* (ambiguity) 'on:'? jobOrStageVar='stages:'
 	 *     vmName=ID END* (ambiguity) 'run-name:' runName=UnquotedString
 	 *     vmName=ID END* (ambiguity) 'version:' version=VERSION
 	 *     vmName=ID END* (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     vmName=ID END* (ambiguity) (rule end)
 	 *     vmName=ID END* (ambiguity) extendedParameter=ExtendedParameter
+	 *     vmName=ID END* (ambiguity) jobOrStageVar='jobs:'
+	 *     vmName=ID END* (ambiguity) jobOrStageVar='stages:'
 	 *     vmName=ID END* (ambiguity) pipelineParameters+=PipelineParameter
-	 *     vmName=ID END* (ambiguity) triggers+=Event
 	 
 	 * </pre>
 	 */
@@ -6021,33 +5576,25 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* 'concurrency:' BEGIN 'group:' group=ID
 	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* 'name:' name=UnquotedString
-	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* 'on:' '[' triggers+=Event
-	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* 'on:' BEGIN triggers+=Event
-	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* 'on:' triggers+=Event
-	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* 'on:'? jobOrStageVar='jobs:'
-	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* 'on:'? jobOrStageVar='stages:'
 	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* 'run-name:' runName=UnquotedString
 	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* 'version:' version=VERSION
 	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* 'working-directory:' defaultWDValue=STRING
 	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* (rule end)
 	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* extendedParameter=ExtendedParameter
+	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* jobOrStageVar='jobs:'
+	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* jobOrStageVar='stages:'
 	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* pipelineParameters+=PipelineParameter
-	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* triggers+=Event
 	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* 'concurrency:' BEGIN 'group:' group=ID
 	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* 'name:' name=UnquotedString
-	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* 'on:' '[' triggers+=Event
-	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* 'on:' BEGIN triggers+=Event
-	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* 'on:' triggers+=Event
-	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* 'on:'? jobOrStageVar='jobs:'
-	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* 'on:'? jobOrStageVar='stages:'
 	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* 'run-name:' runName=UnquotedString
 	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* 'version:' version=VERSION
 	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* 'working-directory:' defaultWDValue=STRING
 	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* (rule end)
 	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* extendedParameter=ExtendedParameter
+	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* jobOrStageVar='jobs:'
+	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* jobOrStageVar='stages:'
 	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* pipelineParameters+=PipelineParameter
-	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* triggers+=Event
 	 
 	 * </pre>
 	 */
@@ -6175,18 +5722,14 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permission:' BEGIN END (ambiguity))* 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permission:' BEGIN END (ambiguity))* 'concurrency:' BEGIN 'group:' group=ID
 	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permission:' BEGIN END (ambiguity))* 'name:' name=UnquotedString
-	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permission:' BEGIN END (ambiguity))* 'on:' '[' triggers+=Event
-	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permission:' BEGIN END (ambiguity))* 'on:' BEGIN triggers+=Event
-	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permission:' BEGIN END (ambiguity))* 'on:' triggers+=Event
-	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permission:' BEGIN END (ambiguity))* 'on:'? jobOrStageVar='jobs:'
-	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permission:' BEGIN END (ambiguity))* 'on:'? jobOrStageVar='stages:'
 	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permission:' BEGIN END (ambiguity))* 'run-name:' runName=UnquotedString
 	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permission:' BEGIN END (ambiguity))* 'version:' version=VERSION
 	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permission:' BEGIN END (ambiguity))* 'working-directory:' defaultWDValue=STRING
 	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permission:' BEGIN END (ambiguity))* (rule end)
 	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permission:' BEGIN END (ambiguity))* extendedParameter=ExtendedParameter
+	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permission:' BEGIN END (ambiguity))* jobOrStageVar='jobs:'
+	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permission:' BEGIN END (ambiguity))* jobOrStageVar='stages:'
 	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permission:' BEGIN END (ambiguity))* pipelineParameters+=PipelineParameter
-	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permission:' BEGIN END (ambiguity))* triggers+=Event
 	 *     jobOrStageVar='jobs:' BEGIN END (ambiguity) 'permission:' (BEGIN END (ambiguity) 'permission:')* allPermission=ID
 	 *     jobOrStageVar='jobs:' BEGIN END (ambiguity) 'permission:' BEGIN (END (ambiguity) 'permission:' BEGIN)* indPermissions+=IndPermissionValue
 	 *     jobOrStageVar='stages:' BEGIN END (ambiguity) 'permission:' (BEGIN END (ambiguity) 'permission:')* allPermission=ID
@@ -6282,18 +5825,14 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* 'concurrency:' BEGIN 'group:' group=ID
 	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* 'name:' name=UnquotedString
-	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* 'on:' '[' triggers+=Event
-	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* 'on:' BEGIN triggers+=Event
-	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* 'on:' triggers+=Event
-	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* 'on:'? jobOrStageVar='jobs:'
-	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* 'on:'? jobOrStageVar='stages:'
 	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* 'run-name:' runName=UnquotedString
 	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* 'version:' version=VERSION
 	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* 'working-directory:' defaultWDValue=STRING
 	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* (rule end)
 	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* extendedParameter=ExtendedParameter
+	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* jobOrStageVar='jobs:'
+	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* jobOrStageVar='stages:'
 	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* pipelineParameters+=PipelineParameter
-	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* triggers+=Event
 	 *     runName=UnquotedString (ambiguity) 'resources:' BEGIN (END (ambiguity) 'resources:' BEGIN)* resources+=Resource
 	 *     stages+=Stage END (ambiguity) 'resources:' BEGIN (END (ambiguity) 'resources:' BEGIN)* resources+=Resource
 	 *     version=VERSION (ambiguity) 'resources:' BEGIN (END (ambiguity) 'resources:' BEGIN)* resources+=Resource
@@ -6322,242 +5861,182 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     (rule start) (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     (rule start) (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
 	 *     (rule start) (ambiguity) 'name:' name=UnquotedString
-	 *     (rule start) (ambiguity) 'on:' '[' triggers+=Event
-	 *     (rule start) (ambiguity) 'on:' BEGIN triggers+=Event
-	 *     (rule start) (ambiguity) 'on:' triggers+=Event
-	 *     (rule start) (ambiguity) 'on:'? jobOrStageVar='jobs:'
-	 *     (rule start) (ambiguity) 'on:'? jobOrStageVar='stages:'
 	 *     (rule start) (ambiguity) 'run-name:' runName=UnquotedString
 	 *     (rule start) (ambiguity) 'version:' version=VERSION
 	 *     (rule start) (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     (rule start) (ambiguity) (rule start)
 	 *     (rule start) (ambiguity) extendedParameter=ExtendedParameter
+	 *     (rule start) (ambiguity) jobOrStageVar='jobs:'
+	 *     (rule start) (ambiguity) jobOrStageVar='stages:'
 	 *     (rule start) (ambiguity) pipelineParameters+=PipelineParameter
-	 *     (rule start) (ambiguity) triggers+=Event
 	 *     allPermission=ID (ambiguity)
 	 *     allPermission=ID (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     allPermission=ID (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
 	 *     allPermission=ID (ambiguity) 'name:' name=UnquotedString
-	 *     allPermission=ID (ambiguity) 'on:' '[' triggers+=Event
-	 *     allPermission=ID (ambiguity) 'on:' BEGIN triggers+=Event
-	 *     allPermission=ID (ambiguity) 'on:' triggers+=Event
-	 *     allPermission=ID (ambiguity) 'on:'? jobOrStageVar='jobs:'
-	 *     allPermission=ID (ambiguity) 'on:'? jobOrStageVar='stages:'
 	 *     allPermission=ID (ambiguity) 'run-name:' runName=UnquotedString
 	 *     allPermission=ID (ambiguity) 'version:' version=VERSION
 	 *     allPermission=ID (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     allPermission=ID (ambiguity) (rule end)
 	 *     allPermission=ID (ambiguity) extendedParameter=ExtendedParameter
+	 *     allPermission=ID (ambiguity) jobOrStageVar='jobs:'
+	 *     allPermission=ID (ambiguity) jobOrStageVar='stages:'
 	 *     allPermission=ID (ambiguity) pipelineParameters+=PipelineParameter
-	 *     allPermission=ID (ambiguity) triggers+=Event
 	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity)
 	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
 	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) 'name:' name=UnquotedString
-	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) 'on:' '[' triggers+=Event
-	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) 'on:' BEGIN triggers+=Event
-	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) 'on:' triggers+=Event
-	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) 'on:'? jobOrStageVar='jobs:'
-	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) 'on:'? jobOrStageVar='stages:'
 	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) 'run-name:' runName=UnquotedString
 	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) 'version:' version=VERSION
 	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) (rule end)
 	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) extendedParameter=ExtendedParameter
+	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) jobOrStageVar='jobs:'
+	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) jobOrStageVar='stages:'
 	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) pipelineParameters+=PipelineParameter
-	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) triggers+=Event
 	 *     cancelConcurrence=ID END (ambiguity)
 	 *     cancelConcurrence=ID END (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     cancelConcurrence=ID END (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
 	 *     cancelConcurrence=ID END (ambiguity) 'name:' name=UnquotedString
-	 *     cancelConcurrence=ID END (ambiguity) 'on:' '[' triggers+=Event
-	 *     cancelConcurrence=ID END (ambiguity) 'on:' BEGIN triggers+=Event
-	 *     cancelConcurrence=ID END (ambiguity) 'on:' triggers+=Event
-	 *     cancelConcurrence=ID END (ambiguity) 'on:'? jobOrStageVar='jobs:'
-	 *     cancelConcurrence=ID END (ambiguity) 'on:'? jobOrStageVar='stages:'
 	 *     cancelConcurrence=ID END (ambiguity) 'run-name:' runName=UnquotedString
 	 *     cancelConcurrence=ID END (ambiguity) 'version:' version=VERSION
 	 *     cancelConcurrence=ID END (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     cancelConcurrence=ID END (ambiguity) (rule end)
 	 *     cancelConcurrence=ID END (ambiguity) extendedParameter=ExtendedParameter
+	 *     cancelConcurrence=ID END (ambiguity) jobOrStageVar='jobs:'
+	 *     cancelConcurrence=ID END (ambiguity) jobOrStageVar='stages:'
 	 *     cancelConcurrence=ID END (ambiguity) pipelineParameters+=PipelineParameter
-	 *     cancelConcurrence=ID END (ambiguity) triggers+=Event
 	 *     defaultShellValue=STRING (ambiguity)
 	 *     defaultShellValue=STRING (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     defaultShellValue=STRING (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
 	 *     defaultShellValue=STRING (ambiguity) 'name:' name=UnquotedString
-	 *     defaultShellValue=STRING (ambiguity) 'on:' '[' triggers+=Event
-	 *     defaultShellValue=STRING (ambiguity) 'on:' BEGIN triggers+=Event
-	 *     defaultShellValue=STRING (ambiguity) 'on:' triggers+=Event
-	 *     defaultShellValue=STRING (ambiguity) 'on:'? jobOrStageVar='jobs:'
-	 *     defaultShellValue=STRING (ambiguity) 'on:'? jobOrStageVar='stages:'
 	 *     defaultShellValue=STRING (ambiguity) 'run-name:' runName=UnquotedString
 	 *     defaultShellValue=STRING (ambiguity) 'version:' version=VERSION
 	 *     defaultShellValue=STRING (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     defaultShellValue=STRING (ambiguity) (rule end)
 	 *     defaultShellValue=STRING (ambiguity) extendedParameter=ExtendedParameter
+	 *     defaultShellValue=STRING (ambiguity) jobOrStageVar='jobs:'
+	 *     defaultShellValue=STRING (ambiguity) jobOrStageVar='stages:'
 	 *     defaultShellValue=STRING (ambiguity) pipelineParameters+=PipelineParameter
-	 *     defaultShellValue=STRING (ambiguity) triggers+=Event
 	 *     extendedParameter=ExtendedParameter (ambiguity)
 	 *     extendedParameter=ExtendedParameter (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     extendedParameter=ExtendedParameter (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
 	 *     extendedParameter=ExtendedParameter (ambiguity) 'name:' name=UnquotedString
-	 *     extendedParameter=ExtendedParameter (ambiguity) 'on:' '[' triggers+=Event
-	 *     extendedParameter=ExtendedParameter (ambiguity) 'on:' BEGIN triggers+=Event
-	 *     extendedParameter=ExtendedParameter (ambiguity) 'on:' triggers+=Event
-	 *     extendedParameter=ExtendedParameter (ambiguity) 'on:'? jobOrStageVar='jobs:'
-	 *     extendedParameter=ExtendedParameter (ambiguity) 'on:'? jobOrStageVar='stages:'
 	 *     extendedParameter=ExtendedParameter (ambiguity) 'run-name:' runName=UnquotedString
 	 *     extendedParameter=ExtendedParameter (ambiguity) 'version:' version=VERSION
 	 *     extendedParameter=ExtendedParameter (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     extendedParameter=ExtendedParameter (ambiguity) (rule end)
 	 *     extendedParameter=ExtendedParameter (ambiguity) extendedParameter=ExtendedParameter
+	 *     extendedParameter=ExtendedParameter (ambiguity) jobOrStageVar='jobs:'
+	 *     extendedParameter=ExtendedParameter (ambiguity) jobOrStageVar='stages:'
 	 *     extendedParameter=ExtendedParameter (ambiguity) pipelineParameters+=PipelineParameter
-	 *     extendedParameter=ExtendedParameter (ambiguity) triggers+=Event
 	 *     jobOrStageVar='jobs:' BEGIN END (ambiguity)
 	 *     jobOrStageVar='jobs:' BEGIN END (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     jobOrStageVar='jobs:' BEGIN END (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
 	 *     jobOrStageVar='jobs:' BEGIN END (ambiguity) 'name:' name=UnquotedString
-	 *     jobOrStageVar='jobs:' BEGIN END (ambiguity) 'on:' '[' triggers+=Event
-	 *     jobOrStageVar='jobs:' BEGIN END (ambiguity) 'on:' BEGIN triggers+=Event
-	 *     jobOrStageVar='jobs:' BEGIN END (ambiguity) 'on:' triggers+=Event
-	 *     jobOrStageVar='jobs:' BEGIN END (ambiguity) 'on:'? jobOrStageVar='jobs:'
-	 *     jobOrStageVar='jobs:' BEGIN END (ambiguity) 'on:'? jobOrStageVar='stages:'
 	 *     jobOrStageVar='jobs:' BEGIN END (ambiguity) 'run-name:' runName=UnquotedString
 	 *     jobOrStageVar='jobs:' BEGIN END (ambiguity) 'version:' version=VERSION
 	 *     jobOrStageVar='jobs:' BEGIN END (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     jobOrStageVar='jobs:' BEGIN END (ambiguity) (rule end)
 	 *     jobOrStageVar='jobs:' BEGIN END (ambiguity) extendedParameter=ExtendedParameter
+	 *     jobOrStageVar='jobs:' BEGIN END (ambiguity) jobOrStageVar='jobs:'
+	 *     jobOrStageVar='jobs:' BEGIN END (ambiguity) jobOrStageVar='stages:'
 	 *     jobOrStageVar='jobs:' BEGIN END (ambiguity) pipelineParameters+=PipelineParameter
-	 *     jobOrStageVar='jobs:' BEGIN END (ambiguity) triggers+=Event
 	 *     jobOrStageVar='stages:' BEGIN END (ambiguity)
 	 *     jobOrStageVar='stages:' BEGIN END (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     jobOrStageVar='stages:' BEGIN END (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
 	 *     jobOrStageVar='stages:' BEGIN END (ambiguity) 'name:' name=UnquotedString
-	 *     jobOrStageVar='stages:' BEGIN END (ambiguity) 'on:' '[' triggers+=Event
-	 *     jobOrStageVar='stages:' BEGIN END (ambiguity) 'on:' BEGIN triggers+=Event
-	 *     jobOrStageVar='stages:' BEGIN END (ambiguity) 'on:' triggers+=Event
-	 *     jobOrStageVar='stages:' BEGIN END (ambiguity) 'on:'? jobOrStageVar='jobs:'
-	 *     jobOrStageVar='stages:' BEGIN END (ambiguity) 'on:'? jobOrStageVar='stages:'
 	 *     jobOrStageVar='stages:' BEGIN END (ambiguity) 'run-name:' runName=UnquotedString
 	 *     jobOrStageVar='stages:' BEGIN END (ambiguity) 'version:' version=VERSION
 	 *     jobOrStageVar='stages:' BEGIN END (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     jobOrStageVar='stages:' BEGIN END (ambiguity) (rule end)
 	 *     jobOrStageVar='stages:' BEGIN END (ambiguity) extendedParameter=ExtendedParameter
+	 *     jobOrStageVar='stages:' BEGIN END (ambiguity) jobOrStageVar='jobs:'
+	 *     jobOrStageVar='stages:' BEGIN END (ambiguity) jobOrStageVar='stages:'
 	 *     jobOrStageVar='stages:' BEGIN END (ambiguity) pipelineParameters+=PipelineParameter
-	 *     jobOrStageVar='stages:' BEGIN END (ambiguity) triggers+=Event
 	 *     jobs+=Job END (ambiguity)
 	 *     jobs+=Job END (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     jobs+=Job END (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
 	 *     jobs+=Job END (ambiguity) 'name:' name=UnquotedString
-	 *     jobs+=Job END (ambiguity) 'on:' '[' triggers+=Event
-	 *     jobs+=Job END (ambiguity) 'on:' BEGIN triggers+=Event
-	 *     jobs+=Job END (ambiguity) 'on:' triggers+=Event
-	 *     jobs+=Job END (ambiguity) 'on:'? jobOrStageVar='jobs:'
-	 *     jobs+=Job END (ambiguity) 'on:'? jobOrStageVar='stages:'
 	 *     jobs+=Job END (ambiguity) 'run-name:' runName=UnquotedString
 	 *     jobs+=Job END (ambiguity) 'version:' version=VERSION
 	 *     jobs+=Job END (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     jobs+=Job END (ambiguity) (rule end)
 	 *     jobs+=Job END (ambiguity) extendedParameter=ExtendedParameter
+	 *     jobs+=Job END (ambiguity) jobOrStageVar='jobs:'
+	 *     jobs+=Job END (ambiguity) jobOrStageVar='stages:'
 	 *     jobs+=Job END (ambiguity) pipelineParameters+=PipelineParameter
-	 *     jobs+=Job END (ambiguity) triggers+=Event
 	 *     name=UnquotedString (ambiguity)
 	 *     name=UnquotedString (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     name=UnquotedString (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
 	 *     name=UnquotedString (ambiguity) 'name:' name=UnquotedString
-	 *     name=UnquotedString (ambiguity) 'on:' '[' triggers+=Event
-	 *     name=UnquotedString (ambiguity) 'on:' BEGIN triggers+=Event
-	 *     name=UnquotedString (ambiguity) 'on:' triggers+=Event
-	 *     name=UnquotedString (ambiguity) 'on:'? jobOrStageVar='jobs:'
-	 *     name=UnquotedString (ambiguity) 'on:'? jobOrStageVar='stages:'
 	 *     name=UnquotedString (ambiguity) 'run-name:' runName=UnquotedString
 	 *     name=UnquotedString (ambiguity) 'version:' version=VERSION
 	 *     name=UnquotedString (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     name=UnquotedString (ambiguity) (rule end)
 	 *     name=UnquotedString (ambiguity) extendedParameter=ExtendedParameter
+	 *     name=UnquotedString (ambiguity) jobOrStageVar='jobs:'
+	 *     name=UnquotedString (ambiguity) jobOrStageVar='stages:'
 	 *     name=UnquotedString (ambiguity) pipelineParameters+=PipelineParameter
-	 *     name=UnquotedString (ambiguity) triggers+=Event
 	 *     pipelineParameters+=PipelineParameter (ambiguity)
 	 *     pipelineParameters+=PipelineParameter (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     pipelineParameters+=PipelineParameter (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
 	 *     pipelineParameters+=PipelineParameter (ambiguity) 'name:' name=UnquotedString
-	 *     pipelineParameters+=PipelineParameter (ambiguity) 'on:' '[' triggers+=Event
-	 *     pipelineParameters+=PipelineParameter (ambiguity) 'on:' BEGIN triggers+=Event
-	 *     pipelineParameters+=PipelineParameter (ambiguity) 'on:' triggers+=Event
-	 *     pipelineParameters+=PipelineParameter (ambiguity) 'on:'? jobOrStageVar='jobs:'
-	 *     pipelineParameters+=PipelineParameter (ambiguity) 'on:'? jobOrStageVar='stages:'
 	 *     pipelineParameters+=PipelineParameter (ambiguity) 'run-name:' runName=UnquotedString
 	 *     pipelineParameters+=PipelineParameter (ambiguity) 'version:' version=VERSION
 	 *     pipelineParameters+=PipelineParameter (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     pipelineParameters+=PipelineParameter (ambiguity) (rule end)
 	 *     pipelineParameters+=PipelineParameter (ambiguity) extendedParameter=ExtendedParameter
+	 *     pipelineParameters+=PipelineParameter (ambiguity) jobOrStageVar='jobs:'
+	 *     pipelineParameters+=PipelineParameter (ambiguity) jobOrStageVar='stages:'
 	 *     pipelineParameters+=PipelineParameter (ambiguity) pipelineParameters+=PipelineParameter
-	 *     pipelineParameters+=PipelineParameter (ambiguity) triggers+=Event
 	 *     pplVariables+=Variable (ambiguity)
 	 *     pplVariables+=Variable (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     pplVariables+=Variable (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
 	 *     pplVariables+=Variable (ambiguity) 'name:' name=UnquotedString
-	 *     pplVariables+=Variable (ambiguity) 'on:' '[' triggers+=Event
-	 *     pplVariables+=Variable (ambiguity) 'on:' BEGIN triggers+=Event
-	 *     pplVariables+=Variable (ambiguity) 'on:' triggers+=Event
-	 *     pplVariables+=Variable (ambiguity) 'on:'? jobOrStageVar='jobs:'
-	 *     pplVariables+=Variable (ambiguity) 'on:'? jobOrStageVar='stages:'
 	 *     pplVariables+=Variable (ambiguity) 'run-name:' runName=UnquotedString
 	 *     pplVariables+=Variable (ambiguity) 'version:' version=VERSION
 	 *     pplVariables+=Variable (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     pplVariables+=Variable (ambiguity) (rule end)
 	 *     pplVariables+=Variable (ambiguity) extendedParameter=ExtendedParameter
+	 *     pplVariables+=Variable (ambiguity) jobOrStageVar='jobs:'
+	 *     pplVariables+=Variable (ambiguity) jobOrStageVar='stages:'
 	 *     pplVariables+=Variable (ambiguity) pipelineParameters+=PipelineParameter
-	 *     pplVariables+=Variable (ambiguity) triggers+=Event
 	 *     runName=UnquotedString (ambiguity)
 	 *     runName=UnquotedString (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     runName=UnquotedString (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
 	 *     runName=UnquotedString (ambiguity) 'name:' name=UnquotedString
-	 *     runName=UnquotedString (ambiguity) 'on:' '[' triggers+=Event
-	 *     runName=UnquotedString (ambiguity) 'on:' BEGIN triggers+=Event
-	 *     runName=UnquotedString (ambiguity) 'on:' triggers+=Event
-	 *     runName=UnquotedString (ambiguity) 'on:'? jobOrStageVar='jobs:'
-	 *     runName=UnquotedString (ambiguity) 'on:'? jobOrStageVar='stages:'
 	 *     runName=UnquotedString (ambiguity) 'run-name:' runName=UnquotedString
 	 *     runName=UnquotedString (ambiguity) 'version:' version=VERSION
 	 *     runName=UnquotedString (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     runName=UnquotedString (ambiguity) (rule end)
 	 *     runName=UnquotedString (ambiguity) extendedParameter=ExtendedParameter
+	 *     runName=UnquotedString (ambiguity) jobOrStageVar='jobs:'
+	 *     runName=UnquotedString (ambiguity) jobOrStageVar='stages:'
 	 *     runName=UnquotedString (ambiguity) pipelineParameters+=PipelineParameter
-	 *     runName=UnquotedString (ambiguity) triggers+=Event
 	 *     stages+=Stage END (ambiguity)
 	 *     stages+=Stage END (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     stages+=Stage END (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
 	 *     stages+=Stage END (ambiguity) 'name:' name=UnquotedString
-	 *     stages+=Stage END (ambiguity) 'on:' '[' triggers+=Event
-	 *     stages+=Stage END (ambiguity) 'on:' BEGIN triggers+=Event
-	 *     stages+=Stage END (ambiguity) 'on:' triggers+=Event
-	 *     stages+=Stage END (ambiguity) 'on:'? jobOrStageVar='jobs:'
-	 *     stages+=Stage END (ambiguity) 'on:'? jobOrStageVar='stages:'
 	 *     stages+=Stage END (ambiguity) 'run-name:' runName=UnquotedString
 	 *     stages+=Stage END (ambiguity) 'version:' version=VERSION
 	 *     stages+=Stage END (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     stages+=Stage END (ambiguity) (rule end)
 	 *     stages+=Stage END (ambiguity) extendedParameter=ExtendedParameter
+	 *     stages+=Stage END (ambiguity) jobOrStageVar='jobs:'
+	 *     stages+=Stage END (ambiguity) jobOrStageVar='stages:'
 	 *     stages+=Stage END (ambiguity) pipelineParameters+=PipelineParameter
-	 *     stages+=Stage END (ambiguity) triggers+=Event
 	 *     version=VERSION (ambiguity)
 	 *     version=VERSION (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     version=VERSION (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
 	 *     version=VERSION (ambiguity) 'name:' name=UnquotedString
-	 *     version=VERSION (ambiguity) 'on:' '[' triggers+=Event
-	 *     version=VERSION (ambiguity) 'on:' BEGIN triggers+=Event
-	 *     version=VERSION (ambiguity) 'on:' triggers+=Event
-	 *     version=VERSION (ambiguity) 'on:'? jobOrStageVar='jobs:'
-	 *     version=VERSION (ambiguity) 'on:'? jobOrStageVar='stages:'
 	 *     version=VERSION (ambiguity) 'run-name:' runName=UnquotedString
 	 *     version=VERSION (ambiguity) 'version:' version=VERSION
 	 *     version=VERSION (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     version=VERSION (ambiguity) (rule end)
 	 *     version=VERSION (ambiguity) extendedParameter=ExtendedParameter
+	 *     version=VERSION (ambiguity) jobOrStageVar='jobs:'
+	 *     version=VERSION (ambiguity) jobOrStageVar='stages:'
 	 *     version=VERSION (ambiguity) pipelineParameters+=PipelineParameter
-	 *     version=VERSION (ambiguity) triggers+=Event
 	 
 	 * </pre>
 	 */
@@ -6586,18 +6065,14 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* 'concurrency:' BEGIN 'group:' group=ID
 	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* 'name:' name=UnquotedString
-	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* 'on:' '[' triggers+=Event
-	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* 'on:' BEGIN triggers+=Event
-	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* 'on:' triggers+=Event
-	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* 'on:'? jobOrStageVar='jobs:'
-	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* 'on:'? jobOrStageVar='stages:'
 	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* 'run-name:' runName=UnquotedString
 	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* 'version:' version=VERSION
 	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* 'working-directory:' defaultWDValue=STRING
 	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* (rule end)
 	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* extendedParameter=ExtendedParameter
+	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* jobOrStageVar='jobs:'
+	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* jobOrStageVar='stages:'
 	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* pipelineParameters+=PipelineParameter
-	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* triggers+=Event
 	 *     extendedParameter=ExtendedParameter (ambiguity) 'env:' BEGIN (END (ambiguity) 'env:' BEGIN)* '-'? env+=KeyValue
 	 *     jobOrStageVar='jobs:' BEGIN END (ambiguity) 'env:' BEGIN (END (ambiguity) 'env:' BEGIN)* '-'? env+=KeyValue
 	 *     jobOrStageVar='stages:' BEGIN END (ambiguity) 'env:' BEGIN (END (ambiguity) 'env:' BEGIN)* '-'? env+=KeyValue

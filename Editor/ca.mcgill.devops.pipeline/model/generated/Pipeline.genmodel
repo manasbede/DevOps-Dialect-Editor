@@ -155,7 +155,6 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/version"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/pplVariables"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/extendedParameter"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/triggers"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Pipeline/jobOrStageVar"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/stages"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Pipeline/jobs"/>

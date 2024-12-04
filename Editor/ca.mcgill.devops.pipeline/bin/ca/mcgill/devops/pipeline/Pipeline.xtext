@@ -1,12 +1,59 @@
+/*******************************************************************************
+ * Xtext Grammar for Multi-Platform CI/CD Pipeline Language
+ * 
+ * Author: Manas Bedekar
+ * Date: December 2024
+ * 
+ * Description:
+ * This Xtext grammar defines a language that abstracts automation pipelines 
+ * for multiple CI/CD platforms such as GitHub Actions, Azure DevOps, GitLab, 
+ * Bitbucket, Bamboo, CircleCI, etc. The language enables unified analysis 
+ * of pipelines across different platforms, supporting multi-platform dialects 
+ * in a streamlined environment. The grammar provides support for defining 
+ * events, configurations, stages, jobs, scripts, resources, and more.
+ * 
+ * Purpose:
+ * The goal is to enable cross-platform pipeline analysis, allowing users to 
+ * define pipelines in a consistent way across different platforms, abstracting 
+ * away the specifics of each individual CI/CD environment. This is beneficial 
+ * for tool developers, researchers, and organizations who need a unified 
+ * representation to simplify the design and analysis of CI/CD pipelines.
+ * 
+ * License:
+ * This grammar is intended for educational and research purposes and should be 
+ * modified and used accordingly. Please reach out to the author for inquiries 
+ * about reuse or adaptation for commercial use.
+ * 
+ * Contact Information:
+ * Manas Bedekar
+ * Email: manas.bedekar@mail.mcgill.ca, manasbedekar002@gmail.com
+ * Organization: McGill University, Montreal
+ ******************************************************************************/
+ 
+
+
 grammar ca.mcgill.devops.pipeline.Pipeline with org.eclipse.xtext.common.Terminals
 hidden(WS, ML_COMMENT, SL_COMMENT)
 import "http://www.eclipse.org/emf/2002/Ecore" as ecore
 generate pipeline "http://www.mcgill.ca/devops/pipeline/Pipeline"
 
+
 /* Pipeline Rule Declarations */
-//Basic Configurations
+/*----------------------------------------------------Basic Configurations----------------------------------------------------*/
 Pipeline:
 	// GitHub Actions Config
+	pipelineConfiguration=Configurations
+	
+	// Event Config
+	(('on:' (BEGIN triggers+=Event+ END)? ((triggers+=Event) | ('['triggers+=Event (',' triggers+=Event)*']'))?) | (triggers+=Event*))
+	
+	// Job and Stage Config
+	(jobOrStageVar=('stages:'|'jobs:')
+    	((stages+=Stage*)|(BEGIN (jobs+=Job*) END))
+    )
+;
+
+Configurations:
 	('name:' name=UnquotedString)? &
 	('run-name:'runName=UnquotedString)? &
 	('defaults:' BEGIN 'run:' BEGIN ('shell:'defaultShellValue=STRING)?&('working-directory:'defaultWDValue=STRING)? END END)? &
@@ -15,71 +62,58 @@ Pipeline:
 	('concurrency:'(BEGIN ('group:' group=(ID|COMPLEX_EXPRESSION)) ('cancel-in-progress:' cancelConcurrence=(ID|COMPLEX_EXPRESSION)) END))? &
 	
 	// Azure DevOps Config
-	(pipelineParameters+=PipelineParameter*) &
 	('pool:'(BEGIN ('name:'vmName=ID)('vmImage:'vmImage=(ID|STRING))?&('demands:'vmDemands=(AnyData|HyphenValues))? END))? &
 	('resources:' (BEGIN (resources+=Resource*) END))? & 
 	
-	//CircleCI Config
+	// CircleCI Config
 	('version:' version=VERSION)? &
 	
 	// Common for GitHub Actions, Azure Devops, GitLab, CircleCI
-	('variables:' (pplVariables+=Variable)*) ? &
-	(extendedParameter=ExtendedParameter)? &
-	(pipelineParameters+=PipelineParameter*)
-	
-	//Event
-	(('on:' (BEGIN triggers+=Event+ END)? ((triggers+=Event) | ('['triggers+=Event (',' triggers+=Event)*']'))?) | (triggers+=Event*))
-	
-	//Job or Stage
-	(jobOrStageVar=('stages:'|'jobs:')
-    	BEGIN ((stages+=Stage*) | jobs+=Job* ) END
-    )
+	('variables:' (pplVariables+=Variable*)) ? &
+	('parameters:'(('-'paras+=ParameterValue)*)) ? &
+	(extendOrInclude=('extends:'|'include:')(BEGIN (extendedParameters+=ParameterValue+) END))?
 ;
 
-//Additional Configurations
-ExtendedParameter:
-	('extends:'(BEGIN ('template:' template=ID) ('parameters:' (BEGIN extendedParameterValues+=ParameterValue* END)) END)) |
-	('include:'(BEGIN extendedParameterValues+=ParameterValue+ END))
-;
-
+//
 Variable:
-	(BEGIN (variableValues+=ParameterValue)+ END)|
-	(('-''group:' group=AnyData)?
-	(('-''name:'name=AnyData)(BEGIN ('value:'value=AnyData)('readonly:'readonly=ID)? END)))
+	((BEGIN (variableKey=ID':')(variableValue=AnyData) END)|
+	(('-'('name:'|'group:')name=AnyData)(BEGIN ('value:'value=AnyData)('readonly:'readonly=ID)? END)?))|
+	(BEGIN 
+		name=ID':'
+		(BEGIN 
+			variables+=KeyValue+
+		END)
+	END)
 ;
-
+//
 Resource:
 	(resourceName=('builds:'|'containers:'|'pipelines:'|'repositories:'|'webhooks:'|'packages:'))
 	(('-'resourceValues+=ParameterValue)*|(BEGIN('-'resourceValues+=ParameterValue)*END))
 ;
 
-PipelineParameter:
-	(name='parameters:'(parameterValues+=ParameterValue+))|
-	(name=('default:'|'executors:'|'orbs:'|'commands:')(BEGIN (parameterValues+=ParameterValue+) END))
-;
-
-//Event Configurations
+/*----------------------------------------------------Event Configurations----------------------------------------------------*/
 Event:
 	(
-		(name=ID(':')?)(includedBranches+=Branch*)
+		((name=PipelineEventKeyword)|(simpleEvent=(ID)(':')?))(includedBranches+=Branch*)
 		(BEGIN 
 			(('types:')(activities+=Activity)|(BEGIN activities+=Activity END)) ?
 			(
 				('batch:' batch=ID)? &
 				('autoCancel:' autoCancel=ID)? &
+				('workflows:' workflows=ArrayList)? &
 				('drafts:' drafts=ID)? &
 				(('branches:')(((includedBranches+=Branch*)|('['includedBranches+=Branch (',' includedBranches+=Branch)*']'))|(BEGIN (includedBranches+=Branch*) (('include:')(includedBranches+=Branch*))? (('exclude:')(excludedBranches+=Branch*))? END)))? &
 				(('branches-ignore:')(((excludedBranches+=Branch*)|('['excludedBranches+=Branch (',' excludedBranches+=Branch)*']'))| (BEGIN (excludedBranches+=Branch*) END)))? &
-				(('paths:')(includedPaths+=HyphenValues)? ((BEGIN (includedPaths+=HyphenValues)? (('include:')(includedPaths+=HyphenValues))? (('exclude:')(excludedPaths+=HyphenValues))? END)))? &
-				(('paths-ignore:')(excludedPaths+=HyphenValues)? (BEGIN (excludedPaths+=HyphenValues) END))? &
-				(('tags:')(includedTags+=HyphenValues)? ((BEGIN (includedTags+=HyphenValues)? (('include:')(includedTags+=HyphenValues))? (('exclude:')(excludedTags+=HyphenValues))? END)))? &
-				(('tags-ignore:')(excludedTags+=HyphenValues)? (BEGIN (excludedTags+=HyphenValues) END))?
+				(('paths:')(includedPaths=HyphenValues)? ((BEGIN (('include:')(includedPaths=HyphenValues))? (('exclude:')(excludedPaths=HyphenValues))? END)))? &
+				(('paths-ignore:')(excludedPaths=HyphenValues))? &
+				(('tags:')(includedTags=HyphenValues)? ((BEGIN (('include:')(includedTags=HyphenValues))? (('exclude:')(excludedTags=HyphenValues))? END)))? &
+				(('tags-ignore:')(excludedTags=HyphenValues))?
 			)
 		END)?
-	) |
+	)|
 	(
-		((name=('schedules:'|'schedule:'))(triggerSchedules+=TriggerSchedule*))|
-		((name=('workflow_call:'|'workflow_run:'|'workflow_dispatch:'))(otherEventParameterValues+=ParameterValue*))
+		((scheduleName=(('schedules:')|('schedule:')))(triggerSchedules+=TriggerSchedule*))|
+		((workflowType=('workflow_call:')|('workflow_dispatch:'))(BEGIN workFlowActivities+=Activity* END))
 	)
 ;
 
@@ -98,10 +132,14 @@ Branch:
 ;
 
 Activity:
-	name=(AnyData|ArrayList|HyphenValues)
+	(name=(HyphenValues|ArrayList))|
+	(
+		name=('inputs:'|'outputs:'|'secrets:')
+		(BEGIN (activities+=WorkFlowKeyValue+) END)
+	)
 ;
 
-//Stage and Job Configurations
+/*----------------------------------------------------Stage & Job Configurations----------------------------------------------------*/
 Stage:
 	(('-''stage:' name=AnyData))
 	(BEGIN
@@ -120,20 +158,12 @@ Job:
 	(BEGIN
 		(nameKW=('name:'|'displayName:') jobName=STRING)? &
 		(dependKW=('needs:' | 'dependsOn:') ((references+=[Job]) | ('[' references+=[Job] (',' references+=[Job])* ']')))? &
-		(jobParameterValues+=JobParameter*)
+		(jobParameterValues+=ParameterValue*)
 		('steps:'(steps+=Step*))?
 	END)
 ;
 
-JobParameter:
-	((name=PipelineKeyword)|(otherName=ID':'))
-	(
-		(value=(AnyData|ArrayList))|
-		(BEGIN subParameters+=JobParameter+ END)
-	)
-;
-
-//Step Configurations
+/*----------------------------------------------------Step Configurations----------------------------------------------------*/
 Step:
 	('-')(Action | Script)
 ;
@@ -150,73 +180,195 @@ Script:
 
 //------------------------------------------Task: Add ENUM to keyword
 Action:
-	(('name:'stepName=STRING)|(((actionKeyword=(PipelineKeyword))|(otherKeyword=ID)':')(actionValue=AnyData)?))
+	(
+		((actionKeyword=PipelineKeyword)|(otherKeyword=ID':'))
+		(actionValue=AnyData)?
+	)
 	(BEGIN (subSteps+=(Action|Script))* END)?
 ;
 
-// -----------------------------------------Task: Change preDefinedKeywrod assignment
+/*----------------------------------------------------Parameter Values----------------------------------------------------*/
 ParameterValue:
-    ('-')?(name=(ID|COMPLEX_EXPRESSION)) ':' WS* ((BEGIN (subParameterValues+=ParameterValue)* END) | (value=(AnyData|ArrayList|HyphenValues)(BEGIN subParameterValues+=ParameterValue* END)?)) 
+	((name=PipelineKeyword)|(otherName=(ID|COMPLEX_EXPRESSION)':'))
+	(
+		(value=(AnyData|ArrayList|HyphenValues)(BEGIN (('-')?subParameters+=ParameterValue)* END)?)|
+		(BEGIN (('-')?subParameters+=ParameterValue)* END)
+	)
 ;
 
 
 
 /* Defining Enum */
-//enum Permission:
-//	READ_ALL = 'read-all' |
-//    WRITE_ALL = 'write-all'|
-//    READ ='read'|
-//    WRITE = 'write'|
-//    NONE = 'none'
-//;
+/*----------------------------------------------------Permission Enum----------------------------------------------------*/
 
+enum Permission:
+	READ_ALL = 'read-all:' |
+    WRITE_ALL = 'write-all:'|
+    READ ='read:'|
+    WRITE = 'write:'|
+    NONE = 'none:'
+;
+
+/*----------------------------------------------------Event Enum----------------------------------------------------*/
+enum PipelineEventKeyword:
+    PPL_EVT_PUSH = 'push:' |
+    PPL_EVT_PULL_REQUEST = 'pull_request:' |
+    //PPL_EVT_SCHEDULE = 'schedule:' |
+    PPL_EVT_WORKFLOW_DISPATCH = 'workflow_dispatch:' |
+    PPL_EVT_REPOSITORY_DISPATCH = 'repository_dispatch:' |
+    PPL_EVT_CHECK_RUN = 'check_run:' |
+    PPL_EVT_CHECK_SUITE = 'check_suite:' |
+    PPL_EVT_CREATE = 'create:' |
+    PPL_EVT_DELETE = 'delete:' |
+    PPL_EVT_DEPLOYMENT = 'deployment:' |
+    PPL_EVT_DEPLOYMENT_STATUS = 'deployment_status:' |
+    PPL_EVT_FORK = 'fork:' |
+    PPL_EVT_GOLLUM = 'gollum:' |
+    PPL_EVT_ISSUE_COMMENT = 'issue_comment:' |
+    PPL_EVT_ISSUES = 'issues:' |
+    PPL_EVT_LABEL = 'label:' |
+    PPL_EVT_MILESTONE = 'milestone:' |
+    PPL_EVT_PAGE_BUILD = 'page_build:' |
+    PPL_EVT_PROJECT = 'project:' |
+    PPL_EVT_PROJECT_CARD = 'project_card:' |
+    PPL_EVT_PROJECT_COLUMN = 'project_column:' |
+    PPL_EVT_PUBLIC = 'public:' |
+    PPL_EVT_PULL_REQUEST_REVIEW = 'pull_request_review:' |
+    PPL_EVT_PULL_REQUEST_REVIEW_COMMENT = 'pull_request_review_comment:' |
+    PPL_EVT_PULL_REQUEST_TARGET = 'pull_request_target:' |
+    PPL_EVT_REGISTRY_PACKAGE = 'registry_package:' |
+    PPL_EVT_RELEASE = 'release:' |
+    PPL_EVT_STATUS = 'status:' |
+    PPL_EVT_WATCH = 'watch:' |
+    PPL_EVT_WORKFLOW_CALL = 'workflow_call:' |
+    PPL_EVT_WORKFLOW_RUN = 'workflow_run:' |
+    PPL_EVT_TRIGGER = 'trigger:' |
+    PPL_EVT_PR = 'pr:' |
+    PPL_EVT_BRANCHES = 'branches:' |
+    PPL_EVT_TAGS = 'tags:' |
+    PPL_EVT_PATHS = 'paths:' |
+    PPL_EVT_AUTO_CANCEL = 'autoCancel:' |
+    PPL_EVT_DRAFTS = 'drafts:' |
+    PPL_EVT_ONLY = 'only:' |
+    PPL_EVT_EXCEPT = 'except:' |
+    PPL_EVT_RULES = 'rules:' |
+    PPL_EVT_WORKFLOW_RULES = 'workflow.rules:' |
+    PPL_EVT_PIPELINE_SCHEDULE = 'pipeline_schedule:' |
+    PPL_EVT_MERGE_REQUESTS = 'merge_requests:' |
+    PPL_EVT_CHANGES = 'changes:' |
+    PPL_EVT_PIPELINES = 'pipelines:' |
+    PPL_EVT_DEFAULT = 'default:' |
+    PPL_EVT_PULL_REQUESTS = 'pull-requests:' |
+    PPL_EVT_CUSTOM = 'custom:' |
+    PPL_EVT_CONDITIONS = 'conditions:' |
+    PPL_EVT_BRANCH_DELETED = 'bitbucket-branch-deleted:' |
+    PPL_EVT_BRANCH_CREATED = 'bitbucket-branch-created:' |
+    PPL_EVT_TAG_CREATED = 'bitbucket-tag-created:' |
+    PPL_EVT_TAG_DELETED = 'bitbucket-tag-deleted:' |
+    PPL_EVT_REPOSITORY_TRIGGER = 'repository:' |
+    PPL_EVT_SCHEDULED_TRIGGER = 'scheduled:' |
+    PPL_EVT_REMOTE_TRIGGER = 'remote:' |
+    PPL_EVT_BITBUCKET_TRIGGER = 'bitbucket:' |
+    PPL_EVT_PLAN_BRANCH = 'planBranch:' |
+    PPL_EVT_CRON = 'cron:' |
+    PPL_EVT_NOTIFICATIONS = 'notifications:' |
+    PPL_EVT_LOCK_BEHAVIOR = 'lockBehavior:'
+;
+
+/*----------------------------------------------------Pipeline Enum----------------------------------------------------*/
 enum PipelineKeyword:
     PPL_KW_NAME = 'name:' |
-    PPL_KW_ON = 'on:' |
     PPL_KW_RUN_NAME = 'run-name:' |
+    PPL_KW_ON = 'on:' |
+    PPL_KW_DEFAULTS = 'defaults:' |
+    PPL_KW_RUN = 'run:' |
+    PPL_KW_SHELL = 'shell:' |
+    PPL_KW_WORKING_DIRECTORY = 'working-directory:' |
+    PPL_KW_ENV = 'env:' |
+    PPL_KW_PERMISSION = 'permission:' |
+    PPL_KW_CONCURRENCY = 'concurrency:' |
+    PPL_KW_GROUP = 'group:' |
+    PPL_KW_CANCEL_IN_PROGRESS = 'cancel-in-progress:' |
+    PPL_KW_POOL = 'pool:' |
+    PPL_KW_VM_IMAGE = 'vmImage:' |
+    PPL_KW_DEMANDS = 'demands:' |
+    PPL_KW_RESOURCES = 'resources:' |
+    PPL_KW_VERSION = 'version:' |
+    PPL_KW_VARIABLES = 'variables:' |
+    PPL_KW_PARAMETERS = 'parameters:' |
+    PPL_KW_EXTENDS = 'extends:' |
+    PPL_KW_INCLUDE = 'include:' |
+    PPL_KW_TYPES = 'types:' |
+    PPL_KW_BATCH = 'batch:' |
+    PPL_KW_AUTO_CANCEL = 'autoCancel:' |
+    PPL_KW_WORKFLOWS = 'workflows:' |
+    PPL_KW_DRAFTS = 'drafts:' |
+    PPL_KW_BRANCHES = 'branches:' |
+    PPL_KW_BRANCHES_IGNORE = 'branches-ignore:' |
+    PPL_KW_PATHS = 'paths:' |
+    PPL_KW_PATHS_IGNORE = 'paths-ignore:' |
+    PPL_KW_TAGS = 'tags:' |
+    PPL_KW_TAGS_IGNORE = 'tags-ignore:' |
+    PPL_KW_SCHEDULES = 'schedules:' |
+    PPL_KW_SCHEDULE = 'schedule:' |
+    PPL_KW_WORKFLOW_CALL = 'workflow_call:' |
+    PPL_KW_WORKFLOW_DISPATCH = 'workflow_dispatch:' |
+    PPL_KW_CRON = 'cron:' |
+    PPL_KW_DISPLAY_NAME = 'displayName:' |
+    PPL_KW_ALWAYS = 'always:' |
+    PPL_KW_STAGE = 'stage:' |
+    PPL_KW_CONDITION = 'condition:' |
+    PPL_KW_IS_SKIPPABLE = 'isSkippable:' |
+    PPL_KW_DEPENDS_ON = 'dependsOn:' |
+    PPL_KW_JOB = 'job:' |
+    PPL_KW_DEPLOYMENT = 'deployment:' |
+    PPL_KW_NEEDS = 'needs:' |
+    PPL_KW_SCRIPT = 'script:' |
+    PPL_KW_BASH = 'bash:' |
+    PPL_KW_PWSH = 'pwsh:' |
+    PPL_KW_POWERSHELL = 'powershell:' |
+    PPL_KW_CHECKOUT = 'checkout:' |
+    PPL_KW_DOWNLOAD = 'download:' |
+    PPL_KW_GET_PACKAGE = 'getPackage:' |
+    PPL_KW_PUBLISH = 'publish:' |
+    PPL_KW_TASK = 'task:' |
+    PPL_KW_VALUE = 'value:' |
+    PPL_KW_READONLY = 'readonly:' |
+    PPL_KW_BUILDS = 'builds:' |
+    PPL_KW_CONTAINERS = 'containers:' |
+    PPL_KW_PIPELINES = 'pipelines:' |
+    PPL_KW_REPOSITORIES = 'repositories:' |
+    PPL_KW_WEBHOOKS = 'webhooks:' |
+    PPL_KW_PACKAGES = 'packages:' |
+    PPL_KW_INPUTS = 'inputs:' |
+    PPL_KW_OUTPUTS = 'outputs:' |
+    PPL_KW_SECRETS = 'secrets:' |
+    PPL_KW_DESCRIPTION = 'description:' |
+    PPL_KW_REQUIRED = 'required:' |
+    PPL_KW_DEFAULT = 'default:' |
+    PPL_KW_TYPE = 'type:' |
+    PPL_KW_OPTIONS = 'options:' |
     PPL_KW_IF = 'if:' |
     PPL_KW_RUNS_ON = 'runs-on:' |
-    PPL_KW_ENV = 'env:' |
-    PPL_KW_DEFAULTS = 'defaults:' |
     PPL_KW_STRATEGY = 'strategy:' |
     PPL_KW_MATRIX = 'matrix:' |
     PPL_KW_CONTAINER = 'container:' |
     PPL_KW_SERVICES = 'services:' |
     PPL_KW_STEPS = 'steps:' |
     PPL_KW_USES = 'uses:' |
-    PPL_KW_RUN = 'run:' |
-    PPL_KW_SHELL = 'shell:' |
-    PPL_KW_WORKING_DIRECTORY = 'working-directory:' |
     PPL_KW_WITH = 'with:' |
     PPL_KW_TIMEOUT_MINUTES = 'timeout-minutes:' |
     PPL_KW_CONTINUE_ON_ERROR = 'continue-on-error:' |
-    PPL_KW_CONDITION = 'condition:' |
     PPL_KW_ENVIRONMENT = 'environment:' |
     PPL_KW_ID = 'id:' |
-    PPL_KW_NEEDS = 'needs:' |
-    PPL_KW_OUTPUTS = 'outputs:' |
-    PPL_KW_SECRETS = 'secrets:' |
     PPL_KW_PERMISSIONS = 'permissions:' |
-    PPL_KW_CONCURRENCY = 'concurrency:' |
     PPL_KW_TIMEOUTS = 'timeouts:' |
     PPL_KW_DEFAULTS_RUN = 'defaults.run:' |
-    PPL_KW_WORKFLOW_DISPATCH = 'workflow_dispatch:' |
-    PPL_KW_WORKFLOW_CALL = 'workflow_call:' |
-    PPL_KW_SCHEDULE = 'schedule:' |
     PPL_KW_PUSH = 'push:' |
     PPL_KW_PULL_REQUEST = 'pull_request:' |
-    PPL_KW_PATHS = 'paths:' |
-    PPL_KW_BRANCHES = 'branches:' |
-    PPL_KW_TAGS = 'tags:' |
-    PPL_KW_BRANCHES_IGNORE = 'branches-ignore:' |
-    PPL_KW_PATHS_IGNORE = 'paths-ignore:' |
-    PPL_KW_TAGS_IGNORE = 'tags-ignore:' |
-    PPL_KW_CRON = 'cron:' |
     PPL_KW_REPOSITORY_DISPATCH = 'repository_dispatch:' |
     PPL_KW_WORKFLOW_RUN = 'workflow_run:' |
-    PPL_KW_CHECKOUT = 'checkout:' |
     PPL_KW_FILTERS = 'filters:' |
-    PPL_KW_INCLUDE = 'include:' |
     PPL_KW_EXCLUDE = 'exclude:' |
     PPL_KW_FAIL_FAST = 'fail-fast:' |
     PPL_KW_MAX_PARALLEL = 'max-parallel:' |
@@ -225,17 +377,9 @@ enum PipelineKeyword:
     PPL_KW_PORTS = 'ports:' |
     PPL_KW_INHERIT = 'inherit:' |
     PPL_KW_TRIGGER = 'trigger:' |
-    PPL_KW_POOL = 'pool:' |
-    PPL_KW_DISPLAY_NAME = 'displayName:' |
-    PPL_KW_TASK = 'task:' |
     PPL_KW_TEMPLATE = 'template:' |
-    PPL_KW_DEPENDS_ON = 'dependsOn:' |
     PPL_KW_WORKSPACE = 'workspace:' |
-    PPL_KW_PARAMETERS = 'parameters:' |
-    PPL_KW_POOL_VM_IMAGE = 'vmImage:' |
-    PPL_KW_RESOURCES = 'resources:' |
     PPL_KW_PIPELINE = 'pipeline:' |
-    PPL_KW_STAGE = 'stage:' |
     PPL_KW_TIMEOUT_IN_MINUTES = 'timeoutInMinutes:' |
     PPL_KW_CONTINUE_ON_ERR = 'continueOnError:' |
     PPL_KW_RESOURCE_TYPE = 'resourceType:' |
@@ -244,7 +388,6 @@ enum PipelineKeyword:
     PPL_KW_ONLY = 'only:' |
     PPL_KW_EXCEPT = 'except:' |
     PPL_KW_IMAGE = 'image:' |
-    PPL_KW_VARIABLES = 'variables:' |
     PPL_KW_CACHE = 'cache:' |
     PPL_KW_ARTIFACTS = 'artifacts:' |
     PPL_KW_RETRIES = 'retries:' |
@@ -255,12 +398,8 @@ enum PipelineKeyword:
     PPL_KW_WHEN = 'when:' |
     PPL_KW_ALLOW_FAILURE = 'allow_failure:' |
     PPL_KW_DEPENDENCIES = 'dependencies:' |
-    PPL_KW_EXTENDS = 'extends:' |
-    PPL_KW_PIPELINES = 'pipelines:' |
-    PPL_KW_DEFAULT = 'default:' |
     PPL_KW_PULL_REQUESTS = 'pull-requests:' |
     PPL_KW_STEP = 'step:' |
-    PPL_KW_SCRIPT = 'script:' |
     PPL_KW_DEFINITIONS = 'definitions:' |
     PPL_KW_CACHES = 'caches:' |
     PPL_KW_PARALLEL = 'parallel:' |
@@ -274,9 +413,7 @@ enum PipelineKeyword:
     PPL_KW_JDK = 'jdk:' |
     PPL_KW_LABELS = 'labels:' |
     PPL_KW_REPOSITORY = 'repository:' |
-    PPL_KW_DEPLOYMENT = 'deployment:' |
     PPL_KW_RELEASE = 'release:' |
-    PPL_KW_VERSION = 'version:' |
     PPL_KW_DOCKER = 'docker:' |
     PPL_KW_AGENT = 'agent:' |
     PPL_KW_QUEUE = 'queue:' |
@@ -294,7 +431,6 @@ enum PipelineKeyword:
     PPL_KW_TRIGGER_RULES = 'triggerRules:' |
     PPL_KW_RUN_POLICY = 'runPolicy:' |
     PPL_KW_QUEUED = 'queued:' |
-    PPL_KW_AUTO_CANCEL = 'autoCancel:' |
     PPL_KW_NOTIFICATIONS = 'notifications:' |
     PPL_KW_DEPLOY_TRIGGER = 'deployTrigger:' |
     PPL_KW_RELEASE_TRIGGER = 'releaseTrigger:' |
@@ -307,8 +443,11 @@ enum PipelineKeyword:
 AnyData:
     STRING |Number | FloatingPoint | SimpleWord | COMPLEX_EXPRESSION | VERSION | HEX_INT;
     
+WorkFlowKeyValue:
+	(ID':')(BEGIN (('description:'|'required:'|'default:'|'type:'|'options:')(AnyData|HyphenValues))+ END)
+;
 KeyValue:
-	ID':' AnyData;
+	ID':' (AnyData|HyphenValues);
 
 IndPermissionValue:
 	ID':'('read'|'write'|'none');

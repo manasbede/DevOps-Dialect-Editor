@@ -424,20 +424,9 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EReference getPipeline_Triggers()
-  {
-    return (EReference)pipelineEClass.getEStructuralFeatures().get(17);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
   public EAttribute getPipeline_JobOrStageVar()
   {
-    return (EAttribute)pipelineEClass.getEStructuralFeatures().get(18);
+    return (EAttribute)pipelineEClass.getEStructuralFeatures().get(17);
   }
 
   /**
@@ -448,7 +437,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
   @Override
   public EReference getPipeline_Stages()
   {
-    return (EReference)pipelineEClass.getEStructuralFeatures().get(19);
+    return (EReference)pipelineEClass.getEStructuralFeatures().get(18);
   }
 
   /**
@@ -459,7 +448,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
   @Override
   public EReference getPipeline_Jobs()
   {
-    return (EReference)pipelineEClass.getEStructuralFeatures().get(20);
+    return (EReference)pipelineEClass.getEStructuralFeatures().get(19);
   }
 
   /**
@@ -1391,7 +1380,6 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     createEAttribute(pipelineEClass, PIPELINE__VERSION);
     createEReference(pipelineEClass, PIPELINE__PPL_VARIABLES);
     createEReference(pipelineEClass, PIPELINE__EXTENDED_PARAMETER);
-    createEReference(pipelineEClass, PIPELINE__TRIGGERS);
     createEAttribute(pipelineEClass, PIPELINE__JOB_OR_STAGE_VAR);
     createEReference(pipelineEClass, PIPELINE__STAGES);
     createEReference(pipelineEClass, PIPELINE__JOBS);
@@ -1545,7 +1533,6 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     initEAttribute(getPipeline_Version(), ecorePackage.getEString(), "version", null, 0, 1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getPipeline_PplVariables(), this.getVariable(), null, "pplVariables", null, 0, -1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getPipeline_ExtendedParameter(), this.getExtendedParameter(), null, "extendedParameter", null, 0, 1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getPipeline_Triggers(), this.getEvent(), null, "triggers", null, 0, -1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getPipeline_JobOrStageVar(), ecorePackage.getEString(), "jobOrStageVar", null, 0, 1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getPipeline_Stages(), this.getStage(), null, "stages", null, 0, -1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getPipeline_Jobs(), this.getJob(), null, "jobs", null, 0, -1, Pipeline.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

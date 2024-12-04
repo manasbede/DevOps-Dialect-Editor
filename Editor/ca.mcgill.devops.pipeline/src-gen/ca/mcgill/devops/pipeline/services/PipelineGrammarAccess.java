@@ -134,40 +134,18 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		private final Group cGroup_12 = (Group)cUnorderedGroup.eContents().get(12);
 		private final Assignment cPipelineParametersAssignment_12_0 = (Assignment)cGroup_12.eContents().get(0);
 		private final RuleCall cPipelineParametersPipelineParameterParserRuleCall_12_0_0 = (RuleCall)cPipelineParametersAssignment_12_0.eContents().get(0);
-		private final Alternatives cAlternatives_12_1 = (Alternatives)cGroup_12.eContents().get(1);
-		private final Group cGroup_12_1_0 = (Group)cAlternatives_12_1.eContents().get(0);
-		private final Keyword cOnKeyword_12_1_0_0 = (Keyword)cGroup_12_1_0.eContents().get(0);
-		private final Group cGroup_12_1_0_1 = (Group)cGroup_12_1_0.eContents().get(1);
-		private final RuleCall cBEGINTerminalRuleCall_12_1_0_1_0 = (RuleCall)cGroup_12_1_0_1.eContents().get(0);
-		private final Assignment cTriggersAssignment_12_1_0_1_1 = (Assignment)cGroup_12_1_0_1.eContents().get(1);
-		private final RuleCall cTriggersEventParserRuleCall_12_1_0_1_1_0 = (RuleCall)cTriggersAssignment_12_1_0_1_1.eContents().get(0);
-		private final RuleCall cENDTerminalRuleCall_12_1_0_1_2 = (RuleCall)cGroup_12_1_0_1.eContents().get(2);
-		private final Alternatives cAlternatives_12_1_0_2 = (Alternatives)cGroup_12_1_0.eContents().get(2);
-		private final Assignment cTriggersAssignment_12_1_0_2_0 = (Assignment)cAlternatives_12_1_0_2.eContents().get(0);
-		private final RuleCall cTriggersEventParserRuleCall_12_1_0_2_0_0 = (RuleCall)cTriggersAssignment_12_1_0_2_0.eContents().get(0);
-		private final Group cGroup_12_1_0_2_1 = (Group)cAlternatives_12_1_0_2.eContents().get(1);
-		private final Keyword cLeftSquareBracketKeyword_12_1_0_2_1_0 = (Keyword)cGroup_12_1_0_2_1.eContents().get(0);
-		private final Assignment cTriggersAssignment_12_1_0_2_1_1 = (Assignment)cGroup_12_1_0_2_1.eContents().get(1);
-		private final RuleCall cTriggersEventParserRuleCall_12_1_0_2_1_1_0 = (RuleCall)cTriggersAssignment_12_1_0_2_1_1.eContents().get(0);
-		private final Group cGroup_12_1_0_2_1_2 = (Group)cGroup_12_1_0_2_1.eContents().get(2);
-		private final Keyword cCommaKeyword_12_1_0_2_1_2_0 = (Keyword)cGroup_12_1_0_2_1_2.eContents().get(0);
-		private final Assignment cTriggersAssignment_12_1_0_2_1_2_1 = (Assignment)cGroup_12_1_0_2_1_2.eContents().get(1);
-		private final RuleCall cTriggersEventParserRuleCall_12_1_0_2_1_2_1_0 = (RuleCall)cTriggersAssignment_12_1_0_2_1_2_1.eContents().get(0);
-		private final Keyword cRightSquareBracketKeyword_12_1_0_2_1_3 = (Keyword)cGroup_12_1_0_2_1.eContents().get(3);
-		private final Assignment cTriggersAssignment_12_1_1 = (Assignment)cAlternatives_12_1.eContents().get(1);
-		private final RuleCall cTriggersEventParserRuleCall_12_1_1_0 = (RuleCall)cTriggersAssignment_12_1_1.eContents().get(0);
-		private final Group cGroup_12_2 = (Group)cGroup_12.eContents().get(2);
-		private final Assignment cJobOrStageVarAssignment_12_2_0 = (Assignment)cGroup_12_2.eContents().get(0);
-		private final Alternatives cJobOrStageVarAlternatives_12_2_0_0 = (Alternatives)cJobOrStageVarAssignment_12_2_0.eContents().get(0);
-		private final Keyword cJobOrStageVarStagesKeyword_12_2_0_0_0 = (Keyword)cJobOrStageVarAlternatives_12_2_0_0.eContents().get(0);
-		private final Keyword cJobOrStageVarJobsKeyword_12_2_0_0_1 = (Keyword)cJobOrStageVarAlternatives_12_2_0_0.eContents().get(1);
-		private final RuleCall cBEGINTerminalRuleCall_12_2_1 = (RuleCall)cGroup_12_2.eContents().get(1);
-		private final Alternatives cAlternatives_12_2_2 = (Alternatives)cGroup_12_2.eContents().get(2);
-		private final Assignment cStagesAssignment_12_2_2_0 = (Assignment)cAlternatives_12_2_2.eContents().get(0);
-		private final RuleCall cStagesStageParserRuleCall_12_2_2_0_0 = (RuleCall)cStagesAssignment_12_2_2_0.eContents().get(0);
-		private final Assignment cJobsAssignment_12_2_2_1 = (Assignment)cAlternatives_12_2_2.eContents().get(1);
-		private final RuleCall cJobsJobParserRuleCall_12_2_2_1_0 = (RuleCall)cJobsAssignment_12_2_2_1.eContents().get(0);
-		private final RuleCall cENDTerminalRuleCall_12_2_3 = (RuleCall)cGroup_12_2.eContents().get(3);
+		private final Group cGroup_12_1 = (Group)cGroup_12.eContents().get(1);
+		private final Assignment cJobOrStageVarAssignment_12_1_0 = (Assignment)cGroup_12_1.eContents().get(0);
+		private final Alternatives cJobOrStageVarAlternatives_12_1_0_0 = (Alternatives)cJobOrStageVarAssignment_12_1_0.eContents().get(0);
+		private final Keyword cJobOrStageVarStagesKeyword_12_1_0_0_0 = (Keyword)cJobOrStageVarAlternatives_12_1_0_0.eContents().get(0);
+		private final Keyword cJobOrStageVarJobsKeyword_12_1_0_0_1 = (Keyword)cJobOrStageVarAlternatives_12_1_0_0.eContents().get(1);
+		private final RuleCall cBEGINTerminalRuleCall_12_1_1 = (RuleCall)cGroup_12_1.eContents().get(1);
+		private final Alternatives cAlternatives_12_1_2 = (Alternatives)cGroup_12_1.eContents().get(2);
+		private final Assignment cStagesAssignment_12_1_2_0 = (Assignment)cAlternatives_12_1_2.eContents().get(0);
+		private final RuleCall cStagesStageParserRuleCall_12_1_2_0_0 = (RuleCall)cStagesAssignment_12_1_2_0.eContents().get(0);
+		private final Assignment cJobsAssignment_12_1_2_1 = (Assignment)cAlternatives_12_1_2.eContents().get(1);
+		private final RuleCall cJobsJobParserRuleCall_12_1_2_1_0 = (RuleCall)cJobsAssignment_12_1_2_1.eContents().get(0);
+		private final RuleCall cENDTerminalRuleCall_12_1_3 = (RuleCall)cGroup_12_1.eContents().get(3);
 		
 		///* Pipeline Rule Declarations */
 		////Basic Configurations
@@ -190,7 +168,7 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//    (extendedParameter=ExtendedParameter)? &
 		//    (pipelineParameters+=PipelineParameter*)
 		//    //Event
-		//    (('on:' (BEGIN triggers+=Event+ END)? ((triggers+=Event) | ('['triggers+=Event (',' triggers+=Event)*']'))?) | (triggers+=Event*))
+		//    //(('on:' (BEGIN triggers+=Event+ END)? ((triggers+=Event) | ('['triggers+=Event (',' triggers+=Event)*']'))?) | (triggers+=Event*))
 		//    //Job or Stage
 		//    (jobOrStageVar=('stages:'|'jobs:')
 		//        BEGIN ((stages+=Stage*) | jobs+=Job* ) END
@@ -216,7 +194,7 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//(extendedParameter=ExtendedParameter)? &
 		//(pipelineParameters+=PipelineParameter*)
 		////Event
-		//(('on:' (BEGIN triggers+=Event+ END)? ((triggers+=Event) | ('['triggers+=Event (',' triggers+=Event)*']'))?) | (triggers+=Event*))
+		////(('on:' (BEGIN triggers+=Event+ END)? ((triggers+=Event) | ('['triggers+=Event (',' triggers+=Event)*']'))?) | (triggers+=Event*))
 		////Job or Stage
 		//(jobOrStageVar=('stages:'|'jobs:')
 		//    BEGIN ((stages+=Stage*) | jobs+=Job* ) END
@@ -535,7 +513,7 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		
 		//(pipelineParameters+=PipelineParameter*)
 		////Event
-		//(('on:' (BEGIN triggers+=Event+ END)? ((triggers+=Event) | ('['triggers+=Event (',' triggers+=Event)*']'))?) | (triggers+=Event*))
+		////(('on:' (BEGIN triggers+=Event+ END)? ((triggers+=Event) | ('['triggers+=Event (',' triggers+=Event)*']'))?) | (triggers+=Event*))
 		////Job or Stage
 		//(jobOrStageVar=('stages:'|'jobs:')
 		//    BEGIN ((stages+=Stage*) | jobs+=Job* ) END
@@ -549,110 +527,45 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		public RuleCall getPipelineParametersPipelineParameterParserRuleCall_12_0_0() { return cPipelineParametersPipelineParameterParserRuleCall_12_0_0; }
 		
 		////Event
-		//(('on:' (BEGIN triggers+=Event+ END)? ((triggers+=Event) | ('['triggers+=Event (',' triggers+=Event)*']'))?) | (triggers+=Event*))
-		public Alternatives getAlternatives_12_1() { return cAlternatives_12_1; }
-		
-		//('on:' (BEGIN triggers+=Event+ END)? ((triggers+=Event) | ('['triggers+=Event (',' triggers+=Event)*']'))?)
-		public Group getGroup_12_1_0() { return cGroup_12_1_0; }
-		
-		//'on:'
-		public Keyword getOnKeyword_12_1_0_0() { return cOnKeyword_12_1_0_0; }
-		
-		//(BEGIN triggers+=Event+ END)?
-		public Group getGroup_12_1_0_1() { return cGroup_12_1_0_1; }
-		
-		//BEGIN
-		public RuleCall getBEGINTerminalRuleCall_12_1_0_1_0() { return cBEGINTerminalRuleCall_12_1_0_1_0; }
-		
-		//triggers+=Event+
-		public Assignment getTriggersAssignment_12_1_0_1_1() { return cTriggersAssignment_12_1_0_1_1; }
-		
-		//Event
-		public RuleCall getTriggersEventParserRuleCall_12_1_0_1_1_0() { return cTriggersEventParserRuleCall_12_1_0_1_1_0; }
-		
-		//END
-		public RuleCall getENDTerminalRuleCall_12_1_0_1_2() { return cENDTerminalRuleCall_12_1_0_1_2; }
-		
-		//((triggers+=Event) | ('['triggers+=Event (',' triggers+=Event)*']'))?
-		public Alternatives getAlternatives_12_1_0_2() { return cAlternatives_12_1_0_2; }
-		
-		//(triggers+=Event)
-		public Assignment getTriggersAssignment_12_1_0_2_0() { return cTriggersAssignment_12_1_0_2_0; }
-		
-		//Event
-		public RuleCall getTriggersEventParserRuleCall_12_1_0_2_0_0() { return cTriggersEventParserRuleCall_12_1_0_2_0_0; }
-		
-		//('['triggers+=Event (',' triggers+=Event)*']')
-		public Group getGroup_12_1_0_2_1() { return cGroup_12_1_0_2_1; }
-		
-		//'['
-		public Keyword getLeftSquareBracketKeyword_12_1_0_2_1_0() { return cLeftSquareBracketKeyword_12_1_0_2_1_0; }
-		
-		//triggers+=Event
-		public Assignment getTriggersAssignment_12_1_0_2_1_1() { return cTriggersAssignment_12_1_0_2_1_1; }
-		
-		//Event
-		public RuleCall getTriggersEventParserRuleCall_12_1_0_2_1_1_0() { return cTriggersEventParserRuleCall_12_1_0_2_1_1_0; }
-		
-		//(',' triggers+=Event)*
-		public Group getGroup_12_1_0_2_1_2() { return cGroup_12_1_0_2_1_2; }
-		
-		//','
-		public Keyword getCommaKeyword_12_1_0_2_1_2_0() { return cCommaKeyword_12_1_0_2_1_2_0; }
-		
-		//triggers+=Event
-		public Assignment getTriggersAssignment_12_1_0_2_1_2_1() { return cTriggersAssignment_12_1_0_2_1_2_1; }
-		
-		//Event
-		public RuleCall getTriggersEventParserRuleCall_12_1_0_2_1_2_1_0() { return cTriggersEventParserRuleCall_12_1_0_2_1_2_1_0; }
-		
-		//']'
-		public Keyword getRightSquareBracketKeyword_12_1_0_2_1_3() { return cRightSquareBracketKeyword_12_1_0_2_1_3; }
-		
-		//(triggers+=Event*)
-		public Assignment getTriggersAssignment_12_1_1() { return cTriggersAssignment_12_1_1; }
-		
-		//Event
-		public RuleCall getTriggersEventParserRuleCall_12_1_1_0() { return cTriggersEventParserRuleCall_12_1_1_0; }
-		
+		////(('on:' (BEGIN triggers+=Event+ END)? ((triggers+=Event) | ('['triggers+=Event (',' triggers+=Event)*']'))?) | (triggers+=Event*))
 		////Job or Stage
 		//(jobOrStageVar=('stages:'|'jobs:')
 		//    BEGIN ((stages+=Stage*) | jobs+=Job* ) END
 		//)
-		public Group getGroup_12_2() { return cGroup_12_2; }
+		public Group getGroup_12_1() { return cGroup_12_1; }
 		
 		//jobOrStageVar=('stages:'|'jobs:')
-		public Assignment getJobOrStageVarAssignment_12_2_0() { return cJobOrStageVarAssignment_12_2_0; }
+		public Assignment getJobOrStageVarAssignment_12_1_0() { return cJobOrStageVarAssignment_12_1_0; }
 		
 		//('stages:'|'jobs:')
-		public Alternatives getJobOrStageVarAlternatives_12_2_0_0() { return cJobOrStageVarAlternatives_12_2_0_0; }
+		public Alternatives getJobOrStageVarAlternatives_12_1_0_0() { return cJobOrStageVarAlternatives_12_1_0_0; }
 		
 		//'stages:'
-		public Keyword getJobOrStageVarStagesKeyword_12_2_0_0_0() { return cJobOrStageVarStagesKeyword_12_2_0_0_0; }
+		public Keyword getJobOrStageVarStagesKeyword_12_1_0_0_0() { return cJobOrStageVarStagesKeyword_12_1_0_0_0; }
 		
 		//'jobs:'
-		public Keyword getJobOrStageVarJobsKeyword_12_2_0_0_1() { return cJobOrStageVarJobsKeyword_12_2_0_0_1; }
+		public Keyword getJobOrStageVarJobsKeyword_12_1_0_0_1() { return cJobOrStageVarJobsKeyword_12_1_0_0_1; }
 		
 		//BEGIN
-		public RuleCall getBEGINTerminalRuleCall_12_2_1() { return cBEGINTerminalRuleCall_12_2_1; }
+		public RuleCall getBEGINTerminalRuleCall_12_1_1() { return cBEGINTerminalRuleCall_12_1_1; }
 		
 		//((stages+=Stage*) | jobs+=Job* )
-		public Alternatives getAlternatives_12_2_2() { return cAlternatives_12_2_2; }
+		public Alternatives getAlternatives_12_1_2() { return cAlternatives_12_1_2; }
 		
 		//(stages+=Stage*)
-		public Assignment getStagesAssignment_12_2_2_0() { return cStagesAssignment_12_2_2_0; }
+		public Assignment getStagesAssignment_12_1_2_0() { return cStagesAssignment_12_1_2_0; }
 		
 		//Stage
-		public RuleCall getStagesStageParserRuleCall_12_2_2_0_0() { return cStagesStageParserRuleCall_12_2_2_0_0; }
+		public RuleCall getStagesStageParserRuleCall_12_1_2_0_0() { return cStagesStageParserRuleCall_12_1_2_0_0; }
 		
 		//jobs+=Job*
-		public Assignment getJobsAssignment_12_2_2_1() { return cJobsAssignment_12_2_2_1; }
+		public Assignment getJobsAssignment_12_1_2_1() { return cJobsAssignment_12_1_2_1; }
 		
 		//Job
-		public RuleCall getJobsJobParserRuleCall_12_2_2_1_0() { return cJobsJobParserRuleCall_12_2_2_1_0; }
+		public RuleCall getJobsJobParserRuleCall_12_1_2_1_0() { return cJobsJobParserRuleCall_12_1_2_1_0; }
 		
 		//END
-		public RuleCall getENDTerminalRuleCall_12_2_3() { return cENDTerminalRuleCall_12_2_3; }
+		public RuleCall getENDTerminalRuleCall_12_1_3() { return cENDTerminalRuleCall_12_1_3; }
 	}
 	public class ExtendedParameterElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ca.mcgill.devops.pipeline.Pipeline.ExtendedParameter");
@@ -4714,7 +4627,7 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 	//    (extendedParameter=ExtendedParameter)? &
 	//    (pipelineParameters+=PipelineParameter*)
 	//    //Event
-	//    (('on:' (BEGIN triggers+=Event+ END)? ((triggers+=Event) | ('['triggers+=Event (',' triggers+=Event)*']'))?) | (triggers+=Event*))
+	//    //(('on:' (BEGIN triggers+=Event+ END)? ((triggers+=Event) | ('['triggers+=Event (',' triggers+=Event)*']'))?) | (triggers+=Event*))
 	//    //Job or Stage
 	//    (jobOrStageVar=('stages:'|'jobs:')
 	//        BEGIN ((stages+=Stage*) | jobs+=Job* ) END
