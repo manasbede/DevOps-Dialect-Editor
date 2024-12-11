@@ -33,12 +33,10 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.JobImpl#getName <em>Name</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.JobImpl#getNameKW <em>Name KW</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.JobImpl#getJobName <em>Job Name</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.JobImpl#getJobParameterValues <em>Job Parameter Values</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.JobImpl#getDependKW <em>Depend KW</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.JobImpl#getReferences <em>References</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.JobImpl#getJobParameterValues <em>Job Parameter Values</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.JobImpl#getSteps <em>Steps</em>}</li>
  * </ul>
  *
@@ -46,46 +44,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class JobImpl extends MinimalEObjectImpl.Container implements Job
 {
-  /**
-   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getName()
-   * @generated
-   * @ordered
-   */
-  protected static final String NAME_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getName()
-   * @generated
-   * @ordered
-   */
-  protected String name = NAME_EDEFAULT;
-
-  /**
-   * The default value of the '{@link #getNameKW() <em>Name KW</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getNameKW()
-   * @generated
-   * @ordered
-   */
-  protected static final String NAME_KW_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getNameKW() <em>Name KW</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getNameKW()
-   * @generated
-   * @ordered
-   */
-  protected String nameKW = NAME_KW_EDEFAULT;
-
   /**
    * The default value of the '{@link #getJobName() <em>Job Name</em>}' attribute.
    * <!-- begin-user-doc -->
@@ -105,6 +63,16 @@ public class JobImpl extends MinimalEObjectImpl.Container implements Job
    * @ordered
    */
   protected String jobName = JOB_NAME_EDEFAULT;
+
+  /**
+   * The cached value of the '{@link #getJobParameterValues() <em>Job Parameter Values</em>}' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getJobParameterValues()
+   * @generated
+   * @ordered
+   */
+  protected EList<ParameterValue> jobParameterValues;
 
   /**
    * The default value of the '{@link #getDependKW() <em>Depend KW</em>}' attribute.
@@ -135,16 +103,6 @@ public class JobImpl extends MinimalEObjectImpl.Container implements Job
    * @ordered
    */
   protected EList<Job> references;
-
-  /**
-   * The cached value of the '{@link #getJobParameterValues() <em>Job Parameter Values</em>}' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getJobParameterValues()
-   * @generated
-   * @ordered
-   */
-  protected EList<ParameterValue> jobParameterValues;
 
   /**
    * The cached value of the '{@link #getSteps() <em>Steps</em>}' containment reference list.
@@ -183,56 +141,6 @@ public class JobImpl extends MinimalEObjectImpl.Container implements Job
    * @generated
    */
   @Override
-  public String getName()
-  {
-    return name;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public void setName(String newName)
-  {
-    String oldName = name;
-    name = newName;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.JOB__NAME, oldName, name));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String getNameKW()
-  {
-    return nameKW;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public void setNameKW(String newNameKW)
-  {
-    String oldNameKW = nameKW;
-    nameKW = newNameKW;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.JOB__NAME_KW, oldNameKW, nameKW));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
   public String getJobName()
   {
     return jobName;
@@ -250,6 +158,21 @@ public class JobImpl extends MinimalEObjectImpl.Container implements Job
     jobName = newJobName;
     if (eNotificationRequired())
       eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.JOB__JOB_NAME, oldJobName, jobName));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EList<ParameterValue> getJobParameterValues()
+  {
+    if (jobParameterValues == null)
+    {
+      jobParameterValues = new EObjectContainmentEList<ParameterValue>(ParameterValue.class, this, PipelinePackage.JOB__JOB_PARAMETER_VALUES);
+    }
+    return jobParameterValues;
   }
 
   /**
@@ -298,21 +221,6 @@ public class JobImpl extends MinimalEObjectImpl.Container implements Job
    * @generated
    */
   @Override
-  public EList<ParameterValue> getJobParameterValues()
-  {
-    if (jobParameterValues == null)
-    {
-      jobParameterValues = new EObjectContainmentEList<ParameterValue>(ParameterValue.class, this, PipelinePackage.JOB__JOB_PARAMETER_VALUES);
-    }
-    return jobParameterValues;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
   public EList<Step> getSteps()
   {
     if (steps == null)
@@ -350,18 +258,14 @@ public class JobImpl extends MinimalEObjectImpl.Container implements Job
   {
     switch (featureID)
     {
-      case PipelinePackage.JOB__NAME:
-        return getName();
-      case PipelinePackage.JOB__NAME_KW:
-        return getNameKW();
       case PipelinePackage.JOB__JOB_NAME:
         return getJobName();
+      case PipelinePackage.JOB__JOB_PARAMETER_VALUES:
+        return getJobParameterValues();
       case PipelinePackage.JOB__DEPEND_KW:
         return getDependKW();
       case PipelinePackage.JOB__REFERENCES:
         return getReferences();
-      case PipelinePackage.JOB__JOB_PARAMETER_VALUES:
-        return getJobParameterValues();
       case PipelinePackage.JOB__STEPS:
         return getSteps();
     }
@@ -379,14 +283,12 @@ public class JobImpl extends MinimalEObjectImpl.Container implements Job
   {
     switch (featureID)
     {
-      case PipelinePackage.JOB__NAME:
-        setName((String)newValue);
-        return;
-      case PipelinePackage.JOB__NAME_KW:
-        setNameKW((String)newValue);
-        return;
       case PipelinePackage.JOB__JOB_NAME:
         setJobName((String)newValue);
+        return;
+      case PipelinePackage.JOB__JOB_PARAMETER_VALUES:
+        getJobParameterValues().clear();
+        getJobParameterValues().addAll((Collection<? extends ParameterValue>)newValue);
         return;
       case PipelinePackage.JOB__DEPEND_KW:
         setDependKW((String)newValue);
@@ -394,10 +296,6 @@ public class JobImpl extends MinimalEObjectImpl.Container implements Job
       case PipelinePackage.JOB__REFERENCES:
         getReferences().clear();
         getReferences().addAll((Collection<? extends Job>)newValue);
-        return;
-      case PipelinePackage.JOB__JOB_PARAMETER_VALUES:
-        getJobParameterValues().clear();
-        getJobParameterValues().addAll((Collection<? extends ParameterValue>)newValue);
         return;
       case PipelinePackage.JOB__STEPS:
         getSteps().clear();
@@ -417,23 +315,17 @@ public class JobImpl extends MinimalEObjectImpl.Container implements Job
   {
     switch (featureID)
     {
-      case PipelinePackage.JOB__NAME:
-        setName(NAME_EDEFAULT);
-        return;
-      case PipelinePackage.JOB__NAME_KW:
-        setNameKW(NAME_KW_EDEFAULT);
-        return;
       case PipelinePackage.JOB__JOB_NAME:
         setJobName(JOB_NAME_EDEFAULT);
+        return;
+      case PipelinePackage.JOB__JOB_PARAMETER_VALUES:
+        getJobParameterValues().clear();
         return;
       case PipelinePackage.JOB__DEPEND_KW:
         setDependKW(DEPEND_KW_EDEFAULT);
         return;
       case PipelinePackage.JOB__REFERENCES:
         getReferences().clear();
-        return;
-      case PipelinePackage.JOB__JOB_PARAMETER_VALUES:
-        getJobParameterValues().clear();
         return;
       case PipelinePackage.JOB__STEPS:
         getSteps().clear();
@@ -452,18 +344,14 @@ public class JobImpl extends MinimalEObjectImpl.Container implements Job
   {
     switch (featureID)
     {
-      case PipelinePackage.JOB__NAME:
-        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case PipelinePackage.JOB__NAME_KW:
-        return NAME_KW_EDEFAULT == null ? nameKW != null : !NAME_KW_EDEFAULT.equals(nameKW);
       case PipelinePackage.JOB__JOB_NAME:
         return JOB_NAME_EDEFAULT == null ? jobName != null : !JOB_NAME_EDEFAULT.equals(jobName);
+      case PipelinePackage.JOB__JOB_PARAMETER_VALUES:
+        return jobParameterValues != null && !jobParameterValues.isEmpty();
       case PipelinePackage.JOB__DEPEND_KW:
         return DEPEND_KW_EDEFAULT == null ? dependKW != null : !DEPEND_KW_EDEFAULT.equals(dependKW);
       case PipelinePackage.JOB__REFERENCES:
         return references != null && !references.isEmpty();
-      case PipelinePackage.JOB__JOB_PARAMETER_VALUES:
-        return jobParameterValues != null && !jobParameterValues.isEmpty();
       case PipelinePackage.JOB__STEPS:
         return steps != null && !steps.isEmpty();
     }
@@ -481,11 +369,7 @@ public class JobImpl extends MinimalEObjectImpl.Container implements Job
     if (eIsProxy()) return super.toString();
 
     StringBuilder result = new StringBuilder(super.toString());
-    result.append(" (name: ");
-    result.append(name);
-    result.append(", nameKW: ");
-    result.append(nameKW);
-    result.append(", jobName: ");
+    result.append(" (jobName: ");
     result.append(jobName);
     result.append(", dependKW: ");
     result.append(dependKW);

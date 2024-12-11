@@ -29,9 +29,9 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getExcludedPaths <em>Excluded Paths</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getIncludedTags <em>Included Tags</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getExcludedTags <em>Excluded Tags</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getScheduleName <em>Schedule Name</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getScheduleNameKW <em>Schedule Name KW</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getTriggerSchedules <em>Trigger Schedules</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getWorkflowType <em>Workflow Type</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getWorkflowTypeKW <em>Workflow Type KW</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Event#getWorkFlowActivities <em>Work Flow Activities</em>}</li>
  * </ul>
  *
@@ -301,26 +301,26 @@ public interface Event extends EObject
   void setExcludedTags(String value);
 
   /**
-   * Returns the value of the '<em><b>Schedule Name</b></em>' attribute.
+   * Returns the value of the '<em><b>Schedule Name KW</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Schedule Name</em>' attribute.
-   * @see #setScheduleName(String)
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getEvent_ScheduleName()
+   * @return the value of the '<em>Schedule Name KW</em>' attribute.
+   * @see #setScheduleNameKW(String)
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getEvent_ScheduleNameKW()
    * @model
    * @generated
    */
-  String getScheduleName();
+  String getScheduleNameKW();
 
   /**
-   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Event#getScheduleName <em>Schedule Name</em>}' attribute.
+   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Event#getScheduleNameKW <em>Schedule Name KW</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Schedule Name</em>' attribute.
-   * @see #getScheduleName()
+   * @param value the new value of the '<em>Schedule Name KW</em>' attribute.
+   * @see #getScheduleNameKW()
    * @generated
    */
-  void setScheduleName(String value);
+  void setScheduleNameKW(String value);
 
   /**
    * Returns the value of the '<em><b>Trigger Schedules</b></em>' containment reference list.
@@ -335,26 +335,26 @@ public interface Event extends EObject
   EList<TriggerSchedule> getTriggerSchedules();
 
   /**
-   * Returns the value of the '<em><b>Workflow Type</b></em>' attribute.
+   * Returns the value of the '<em><b>Workflow Type KW</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Workflow Type</em>' attribute.
-   * @see #setWorkflowType(String)
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getEvent_WorkflowType()
+   * @return the value of the '<em>Workflow Type KW</em>' attribute.
+   * @see #setWorkflowTypeKW(String)
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getEvent_WorkflowTypeKW()
    * @model
    * @generated
    */
-  String getWorkflowType();
+  String getWorkflowTypeKW();
 
   /**
-   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Event#getWorkflowType <em>Workflow Type</em>}' attribute.
+   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Event#getWorkflowTypeKW <em>Workflow Type KW</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Workflow Type</em>' attribute.
-   * @see #getWorkflowType()
+   * @param value the new value of the '<em>Workflow Type KW</em>' attribute.
+   * @see #getWorkflowTypeKW()
    * @generated
    */
-  void setWorkflowType(String value);
+  void setWorkflowTypeKW(String value);
 
   /**
    * Returns the value of the '<em><b>Work Flow Activities</b></em>' containment reference list.

@@ -16,12 +16,10 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Job#getName <em>Name</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Job#getNameKW <em>Name KW</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Job#getJobName <em>Job Name</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Job#getJobParameterValues <em>Job Parameter Values</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Job#getDependKW <em>Depend KW</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Job#getReferences <em>References</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Job#getJobParameterValues <em>Job Parameter Values</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Job#getSteps <em>Steps</em>}</li>
  * </ul>
  *
@@ -31,50 +29,6 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface Job extends EObject
 {
-  /**
-   * Returns the value of the '<em><b>Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Name</em>' attribute.
-   * @see #setName(String)
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getJob_Name()
-   * @model
-   * @generated
-   */
-  String getName();
-
-  /**
-   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Job#getName <em>Name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Name</em>' attribute.
-   * @see #getName()
-   * @generated
-   */
-  void setName(String value);
-
-  /**
-   * Returns the value of the '<em><b>Name KW</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Name KW</em>' attribute.
-   * @see #setNameKW(String)
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getJob_NameKW()
-   * @model
-   * @generated
-   */
-  String getNameKW();
-
-  /**
-   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Job#getNameKW <em>Name KW</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Name KW</em>' attribute.
-   * @see #getNameKW()
-   * @generated
-   */
-  void setNameKW(String value);
-
   /**
    * Returns the value of the '<em><b>Job Name</b></em>' attribute.
    * <!-- begin-user-doc -->
@@ -96,6 +50,18 @@ public interface Job extends EObject
    * @generated
    */
   void setJobName(String value);
+
+  /**
+   * Returns the value of the '<em><b>Job Parameter Values</b></em>' containment reference list.
+   * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.ParameterValue}.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Job Parameter Values</em>' containment reference list.
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getJob_JobParameterValues()
+   * @model containment="true"
+   * @generated
+   */
+  EList<ParameterValue> getJobParameterValues();
 
   /**
    * Returns the value of the '<em><b>Depend KW</b></em>' attribute.
@@ -130,18 +96,6 @@ public interface Job extends EObject
    * @generated
    */
   EList<Job> getReferences();
-
-  /**
-   * Returns the value of the '<em><b>Job Parameter Values</b></em>' containment reference list.
-   * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.ParameterValue}.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Job Parameter Values</em>' containment reference list.
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getJob_JobParameterValues()
-   * @model containment="true"
-   * @generated
-   */
-  EList<ParameterValue> getJobParameterValues();
 
   /**
    * Returns the value of the '<em><b>Steps</b></em>' containment reference list.

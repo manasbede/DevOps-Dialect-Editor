@@ -541,13 +541,13 @@ public interface PipelinePackage extends EPackage
   int EVENT__EXCLUDED_TAGS = 12;
 
   /**
-   * The feature id for the '<em><b>Schedule Name</b></em>' attribute.
+   * The feature id for the '<em><b>Schedule Name KW</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int EVENT__SCHEDULE_NAME = 13;
+  int EVENT__SCHEDULE_NAME_KW = 13;
 
   /**
    * The feature id for the '<em><b>Trigger Schedules</b></em>' containment reference list.
@@ -559,13 +559,13 @@ public interface PipelinePackage extends EPackage
   int EVENT__TRIGGER_SCHEDULES = 14;
 
   /**
-   * The feature id for the '<em><b>Workflow Type</b></em>' attribute.
+   * The feature id for the '<em><b>Workflow Type KW</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int EVENT__WORKFLOW_TYPE = 15;
+  int EVENT__WORKFLOW_TYPE_KW = 15;
 
   /**
    * The feature id for the '<em><b>Work Flow Activities</b></em>' containment reference list.
@@ -706,7 +706,7 @@ public interface PipelinePackage extends EPackage
   int ACTIVITY__NAME = 0;
 
   /**
-   * The feature id for the '<em><b>Activities</b></em>' attribute list.
+   * The feature id for the '<em><b>Activities</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -852,49 +852,13 @@ public interface PipelinePackage extends EPackage
   int JOB = 9;
 
   /**
-   * The feature id for the '<em><b>Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int JOB__NAME = 0;
-
-  /**
-   * The feature id for the '<em><b>Name KW</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int JOB__NAME_KW = 1;
-
-  /**
    * The feature id for the '<em><b>Job Name</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int JOB__JOB_NAME = 2;
-
-  /**
-   * The feature id for the '<em><b>Depend KW</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int JOB__DEPEND_KW = 3;
-
-  /**
-   * The feature id for the '<em><b>References</b></em>' reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int JOB__REFERENCES = 4;
+  int JOB__JOB_NAME = 0;
 
   /**
    * The feature id for the '<em><b>Job Parameter Values</b></em>' containment reference list.
@@ -903,7 +867,25 @@ public interface PipelinePackage extends EPackage
    * @generated
    * @ordered
    */
-  int JOB__JOB_PARAMETER_VALUES = 5;
+  int JOB__JOB_PARAMETER_VALUES = 1;
+
+  /**
+   * The feature id for the '<em><b>Depend KW</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int JOB__DEPEND_KW = 2;
+
+  /**
+   * The feature id for the '<em><b>References</b></em>' reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int JOB__REFERENCES = 3;
 
   /**
    * The feature id for the '<em><b>Steps</b></em>' containment reference list.
@@ -912,7 +894,7 @@ public interface PipelinePackage extends EPackage
    * @generated
    * @ordered
    */
-  int JOB__STEPS = 6;
+  int JOB__STEPS = 4;
 
   /**
    * The number of structural features of the '<em>Job</em>' class.
@@ -921,7 +903,7 @@ public interface PipelinePackage extends EPackage
    * @generated
    * @ordered
    */
-  int JOB_FEATURE_COUNT = 7;
+  int JOB_FEATURE_COUNT = 5;
 
   /**
    * The meta object id for the '{@link ca.mcgill.devops.pipeline.pipeline.impl.StepImpl <em>Step</em>}' class.
@@ -1017,13 +999,22 @@ public interface PipelinePackage extends EPackage
   int ACTION__SUB_STEPS = STEP__SUB_STEPS;
 
   /**
+   * The feature id for the '<em><b>Action Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ACTION__ACTION_NAME = STEP_FEATURE_COUNT + 0;
+
+  /**
    * The feature id for the '<em><b>Action Keyword</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int ACTION__ACTION_KEYWORD = STEP_FEATURE_COUNT + 0;
+  int ACTION__ACTION_KEYWORD = STEP_FEATURE_COUNT + 1;
 
   /**
    * The feature id for the '<em><b>Other Keyword</b></em>' attribute.
@@ -1032,7 +1023,7 @@ public interface PipelinePackage extends EPackage
    * @generated
    * @ordered
    */
-  int ACTION__OTHER_KEYWORD = STEP_FEATURE_COUNT + 1;
+  int ACTION__OTHER_KEYWORD = STEP_FEATURE_COUNT + 2;
 
   /**
    * The feature id for the '<em><b>Action Value</b></em>' attribute.
@@ -1041,7 +1032,7 @@ public interface PipelinePackage extends EPackage
    * @generated
    * @ordered
    */
-  int ACTION__ACTION_VALUE = STEP_FEATURE_COUNT + 2;
+  int ACTION__ACTION_VALUE = STEP_FEATURE_COUNT + 3;
 
   /**
    * The number of structural features of the '<em>Action</em>' class.
@@ -1050,7 +1041,7 @@ public interface PipelinePackage extends EPackage
    * @generated
    * @ordered
    */
-  int ACTION_FEATURE_COUNT = STEP_FEATURE_COUNT + 3;
+  int ACTION_FEATURE_COUNT = STEP_FEATURE_COUNT + 4;
 
   /**
    * The meta object id for the '{@link ca.mcgill.devops.pipeline.pipeline.impl.ParameterValueImpl <em>Parameter Value</em>}' class.
@@ -1673,15 +1664,15 @@ public interface PipelinePackage extends EPackage
   EAttribute getEvent_ExcludedTags();
 
   /**
-   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Event#getScheduleName <em>Schedule Name</em>}'.
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Event#getScheduleNameKW <em>Schedule Name KW</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Schedule Name</em>'.
-   * @see ca.mcgill.devops.pipeline.pipeline.Event#getScheduleName()
+   * @return the meta object for the attribute '<em>Schedule Name KW</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Event#getScheduleNameKW()
    * @see #getEvent()
    * @generated
    */
-  EAttribute getEvent_ScheduleName();
+  EAttribute getEvent_ScheduleNameKW();
 
   /**
    * Returns the meta object for the containment reference list '{@link ca.mcgill.devops.pipeline.pipeline.Event#getTriggerSchedules <em>Trigger Schedules</em>}'.
@@ -1695,15 +1686,15 @@ public interface PipelinePackage extends EPackage
   EReference getEvent_TriggerSchedules();
 
   /**
-   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Event#getWorkflowType <em>Workflow Type</em>}'.
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Event#getWorkflowTypeKW <em>Workflow Type KW</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Workflow Type</em>'.
-   * @see ca.mcgill.devops.pipeline.pipeline.Event#getWorkflowType()
+   * @return the meta object for the attribute '<em>Workflow Type KW</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Event#getWorkflowTypeKW()
    * @see #getEvent()
    * @generated
    */
-  EAttribute getEvent_WorkflowType();
+  EAttribute getEvent_WorkflowTypeKW();
 
   /**
    * Returns the meta object for the containment reference list '{@link ca.mcgill.devops.pipeline.pipeline.Event#getWorkFlowActivities <em>Work Flow Activities</em>}'.
@@ -1835,15 +1826,15 @@ public interface PipelinePackage extends EPackage
   EAttribute getActivity_Name();
 
   /**
-   * Returns the meta object for the attribute list '{@link ca.mcgill.devops.pipeline.pipeline.Activity#getActivities <em>Activities</em>}'.
+   * Returns the meta object for the containment reference list '{@link ca.mcgill.devops.pipeline.pipeline.Activity#getActivities <em>Activities</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute list '<em>Activities</em>'.
+   * @return the meta object for the containment reference list '<em>Activities</em>'.
    * @see ca.mcgill.devops.pipeline.pipeline.Activity#getActivities()
    * @see #getActivity()
    * @generated
    */
-  EAttribute getActivity_Activities();
+  EReference getActivity_Activities();
 
   /**
    * Returns the meta object for class '{@link ca.mcgill.devops.pipeline.pipeline.Stage <em>Stage</em>}'.
@@ -1987,28 +1978,6 @@ public interface PipelinePackage extends EPackage
   EClass getJob();
 
   /**
-   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Job#getName <em>Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Name</em>'.
-   * @see ca.mcgill.devops.pipeline.pipeline.Job#getName()
-   * @see #getJob()
-   * @generated
-   */
-  EAttribute getJob_Name();
-
-  /**
-   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Job#getNameKW <em>Name KW</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Name KW</em>'.
-   * @see ca.mcgill.devops.pipeline.pipeline.Job#getNameKW()
-   * @see #getJob()
-   * @generated
-   */
-  EAttribute getJob_NameKW();
-
-  /**
    * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Job#getJobName <em>Job Name</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -2018,6 +1987,17 @@ public interface PipelinePackage extends EPackage
    * @generated
    */
   EAttribute getJob_JobName();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link ca.mcgill.devops.pipeline.pipeline.Job#getJobParameterValues <em>Job Parameter Values</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Job Parameter Values</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Job#getJobParameterValues()
+   * @see #getJob()
+   * @generated
+   */
+  EReference getJob_JobParameterValues();
 
   /**
    * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Job#getDependKW <em>Depend KW</em>}'.
@@ -2040,17 +2020,6 @@ public interface PipelinePackage extends EPackage
    * @generated
    */
   EReference getJob_References();
-
-  /**
-   * Returns the meta object for the containment reference list '{@link ca.mcgill.devops.pipeline.pipeline.Job#getJobParameterValues <em>Job Parameter Values</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Job Parameter Values</em>'.
-   * @see ca.mcgill.devops.pipeline.pipeline.Job#getJobParameterValues()
-   * @see #getJob()
-   * @generated
-   */
-  EReference getJob_JobParameterValues();
 
   /**
    * Returns the meta object for the containment reference list '{@link ca.mcgill.devops.pipeline.pipeline.Job#getSteps <em>Steps</em>}'.
@@ -2125,6 +2094,17 @@ public interface PipelinePackage extends EPackage
    * @generated
    */
   EClass getAction();
+
+  /**
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Action#getActionName <em>Action Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Action Name</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Action#getActionName()
+   * @see #getAction()
+   * @generated
+   */
+  EAttribute getAction_ActionName();
 
   /**
    * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Action#getActionKeyword <em>Action Keyword</em>}'.
@@ -2669,12 +2649,12 @@ public interface PipelinePackage extends EPackage
     EAttribute EVENT__EXCLUDED_TAGS = eINSTANCE.getEvent_ExcludedTags();
 
     /**
-     * The meta object literal for the '<em><b>Schedule Name</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Schedule Name KW</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute EVENT__SCHEDULE_NAME = eINSTANCE.getEvent_ScheduleName();
+    EAttribute EVENT__SCHEDULE_NAME_KW = eINSTANCE.getEvent_ScheduleNameKW();
 
     /**
      * The meta object literal for the '<em><b>Trigger Schedules</b></em>' containment reference list feature.
@@ -2685,12 +2665,12 @@ public interface PipelinePackage extends EPackage
     EReference EVENT__TRIGGER_SCHEDULES = eINSTANCE.getEvent_TriggerSchedules();
 
     /**
-     * The meta object literal for the '<em><b>Workflow Type</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Workflow Type KW</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute EVENT__WORKFLOW_TYPE = eINSTANCE.getEvent_WorkflowType();
+    EAttribute EVENT__WORKFLOW_TYPE_KW = eINSTANCE.getEvent_WorkflowTypeKW();
 
     /**
      * The meta object literal for the '<em><b>Work Flow Activities</b></em>' containment reference list feature.
@@ -2795,12 +2775,12 @@ public interface PipelinePackage extends EPackage
     EAttribute ACTIVITY__NAME = eINSTANCE.getActivity_Name();
 
     /**
-     * The meta object literal for the '<em><b>Activities</b></em>' attribute list feature.
+     * The meta object literal for the '<em><b>Activities</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute ACTIVITY__ACTIVITIES = eINSTANCE.getActivity_Activities();
+    EReference ACTIVITY__ACTIVITIES = eINSTANCE.getActivity_Activities();
 
     /**
      * The meta object literal for the '{@link ca.mcgill.devops.pipeline.pipeline.impl.StageImpl <em>Stage</em>}' class.
@@ -2911,28 +2891,20 @@ public interface PipelinePackage extends EPackage
     EClass JOB = eINSTANCE.getJob();
 
     /**
-     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute JOB__NAME = eINSTANCE.getJob_Name();
-
-    /**
-     * The meta object literal for the '<em><b>Name KW</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute JOB__NAME_KW = eINSTANCE.getJob_NameKW();
-
-    /**
      * The meta object literal for the '<em><b>Job Name</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
     EAttribute JOB__JOB_NAME = eINSTANCE.getJob_JobName();
+
+    /**
+     * The meta object literal for the '<em><b>Job Parameter Values</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference JOB__JOB_PARAMETER_VALUES = eINSTANCE.getJob_JobParameterValues();
 
     /**
      * The meta object literal for the '<em><b>Depend KW</b></em>' attribute feature.
@@ -2949,14 +2921,6 @@ public interface PipelinePackage extends EPackage
      * @generated
      */
     EReference JOB__REFERENCES = eINSTANCE.getJob_References();
-
-    /**
-     * The meta object literal for the '<em><b>Job Parameter Values</b></em>' containment reference list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference JOB__JOB_PARAMETER_VALUES = eINSTANCE.getJob_JobParameterValues();
 
     /**
      * The meta object literal for the '<em><b>Steps</b></em>' containment reference list feature.
@@ -3019,6 +2983,14 @@ public interface PipelinePackage extends EPackage
      * @generated
      */
     EClass ACTION = eINSTANCE.getAction();
+
+    /**
+     * The meta object literal for the '<em><b>Action Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute ACTION__ACTION_NAME = eINSTANCE.getAction_ActionName();
 
     /**
      * The meta object literal for the '<em><b>Action Keyword</b></em>' attribute feature.

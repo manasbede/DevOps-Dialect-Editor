@@ -70,10 +70,10 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="excludedPaths" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="includedTags" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="excludedTags" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scheduleName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scheduleNameKW" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="triggerSchedules" upperBound="-1"
         eType="#//TriggerSchedule" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="workflowType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="workflowTypeKW" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="workFlowActivities" upperBound="-1"
         eType="#//Activity" containment="true"/>
   </eClassifiers>
@@ -92,8 +92,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Activity">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="activities" unique="false"
-        upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="activities" upperBound="-1"
+        eType="#//ParameterValue" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Stage">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -112,14 +112,12 @@
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Job">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nameKW" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="jobName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="jobParameterValues" upperBound="-1"
+        eType="#//ParameterValue" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dependKW" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="references" unique="false"
         upperBound="-1" eType="#//Job"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="jobParameterValues" upperBound="-1"
-        eType="#//ParameterValue" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="steps" upperBound="-1"
         eType="#//Step" containment="true"/>
   </eClassifiers>
@@ -132,6 +130,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="command" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Action" eSuperTypes="#//Step">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="actionName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="actionKeyword" eType="#//PipelineKeyword"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="otherKeyword" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="actionValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -259,119 +258,118 @@
     <eLiterals name="PPL_KW_DEPENDS_ON" value="42" literal="dependsOn:"/>
     <eLiterals name="PPL_KW_JOB" value="43" literal="job:"/>
     <eLiterals name="PPL_KW_DEPLOYMENT" value="44" literal="deployment:"/>
-    <eLiterals name="PPL_KW_NEEDS" value="45" literal="needs:"/>
-    <eLiterals name="PPL_KW_SCRIPT" value="46" literal="script:"/>
-    <eLiterals name="PPL_KW_BASH" value="47" literal="bash:"/>
-    <eLiterals name="PPL_KW_PWSH" value="48" literal="pwsh:"/>
-    <eLiterals name="PPL_KW_POWERSHELL" value="49" literal="powershell:"/>
-    <eLiterals name="PPL_KW_CHECKOUT" value="50" literal="checkout:"/>
-    <eLiterals name="PPL_KW_DOWNLOAD" value="51" literal="download:"/>
-    <eLiterals name="PPL_KW_GET_PACKAGE" value="52" literal="getPackage:"/>
-    <eLiterals name="PPL_KW_PUBLISH" value="53" literal="publish:"/>
-    <eLiterals name="PPL_KW_TASK" value="54" literal="task:"/>
-    <eLiterals name="PPL_KW_VALUE" value="55" literal="value:"/>
-    <eLiterals name="PPL_KW_READONLY" value="56" literal="readonly:"/>
-    <eLiterals name="PPL_KW_BUILDS" value="57" literal="builds:"/>
-    <eLiterals name="PPL_KW_CONTAINERS" value="58" literal="containers:"/>
-    <eLiterals name="PPL_KW_PIPELINES" value="59" literal="pipelines:"/>
-    <eLiterals name="PPL_KW_REPOSITORIES" value="60" literal="repositories:"/>
-    <eLiterals name="PPL_KW_WEBHOOKS" value="61" literal="webhooks:"/>
-    <eLiterals name="PPL_KW_PACKAGES" value="62" literal="packages:"/>
-    <eLiterals name="PPL_KW_INPUTS" value="63" literal="inputs:"/>
-    <eLiterals name="PPL_KW_OUTPUTS" value="64" literal="outputs:"/>
-    <eLiterals name="PPL_KW_SECRETS" value="65" literal="secrets:"/>
-    <eLiterals name="PPL_KW_DESCRIPTION" value="66" literal="description:"/>
-    <eLiterals name="PPL_KW_REQUIRED" value="67" literal="required:"/>
-    <eLiterals name="PPL_KW_DEFAULT" value="68" literal="default:"/>
-    <eLiterals name="PPL_KW_TYPE" value="69" literal="type:"/>
-    <eLiterals name="PPL_KW_OPTIONS" value="70" literal="options:"/>
-    <eLiterals name="PPL_KW_IF" value="71" literal="if:"/>
-    <eLiterals name="PPL_KW_RUNS_ON" value="72" literal="runs-on:"/>
-    <eLiterals name="PPL_KW_STRATEGY" value="73" literal="strategy:"/>
-    <eLiterals name="PPL_KW_MATRIX" value="74" literal="matrix:"/>
-    <eLiterals name="PPL_KW_CONTAINER" value="75" literal="container:"/>
-    <eLiterals name="PPL_KW_SERVICES" value="76" literal="services:"/>
-    <eLiterals name="PPL_KW_STEPS" value="77" literal="steps:"/>
-    <eLiterals name="PPL_KW_USES" value="78" literal="uses:"/>
-    <eLiterals name="PPL_KW_WITH" value="79" literal="with:"/>
-    <eLiterals name="PPL_KW_TIMEOUT_MINUTES" value="80" literal="timeout-minutes:"/>
-    <eLiterals name="PPL_KW_CONTINUE_ON_ERROR" value="81" literal="continue-on-error:"/>
-    <eLiterals name="PPL_KW_ENVIRONMENT" value="82" literal="environment:"/>
-    <eLiterals name="PPL_KW_ID" value="83" literal="id:"/>
-    <eLiterals name="PPL_KW_PERMISSIONS" value="84" literal="permissions:"/>
-    <eLiterals name="PPL_KW_TIMEOUTS" value="85" literal="timeouts:"/>
-    <eLiterals name="PPL_KW_DEFAULTS_RUN" value="86" literal="defaults.run:"/>
-    <eLiterals name="PPL_KW_PUSH" value="87" literal="push:"/>
-    <eLiterals name="PPL_KW_PULL_REQUEST" value="88" literal="pull_request:"/>
-    <eLiterals name="PPL_KW_REPOSITORY_DISPATCH" value="89" literal="repository_dispatch:"/>
-    <eLiterals name="PPL_KW_WORKFLOW_RUN" value="90" literal="workflow_run:"/>
-    <eLiterals name="PPL_KW_FILTERS" value="91" literal="filters:"/>
-    <eLiterals name="PPL_KW_EXCLUDE" value="92" literal="exclude:"/>
-    <eLiterals name="PPL_KW_FAIL_FAST" value="93" literal="fail-fast:"/>
-    <eLiterals name="PPL_KW_MAX_PARALLEL" value="94" literal="max-parallel:"/>
-    <eLiterals name="PPL_KW_CONTAINER_IMAGE" value="95" literal="container.image:"/>
-    <eLiterals name="PPL_KW_CREDENTIALS" value="96" literal="credentials:"/>
-    <eLiterals name="PPL_KW_PORTS" value="97" literal="ports:"/>
-    <eLiterals name="PPL_KW_INHERIT" value="98" literal="inherit:"/>
-    <eLiterals name="PPL_KW_TRIGGER" value="99" literal="trigger:"/>
-    <eLiterals name="PPL_KW_TEMPLATE" value="100" literal="template:"/>
-    <eLiterals name="PPL_KW_WORKSPACE" value="101" literal="workspace:"/>
-    <eLiterals name="PPL_KW_PIPELINE" value="102" literal="pipeline:"/>
-    <eLiterals name="PPL_KW_TIMEOUT_IN_MINUTES" value="103" literal="timeoutInMinutes:"/>
-    <eLiterals name="PPL_KW_CONTINUE_ON_ERR" value="104" literal="continueOnError:"/>
-    <eLiterals name="PPL_KW_RESOURCE_TYPE" value="105" literal="resourceType:"/>
-    <eLiterals name="PPL_KW_RESOURCE_NAME" value="106" literal="resourceName:"/>
-    <eLiterals name="PPL_KW_STAGES" value="107" literal="stages:"/>
-    <eLiterals name="PPL_KW_ONLY" value="108" literal="only:"/>
-    <eLiterals name="PPL_KW_EXCEPT" value="109" literal="except:"/>
-    <eLiterals name="PPL_KW_IMAGE" value="110" literal="image:"/>
-    <eLiterals name="PPL_KW_CACHE" value="111" literal="cache:"/>
-    <eLiterals name="PPL_KW_ARTIFACTS" value="112" literal="artifacts:"/>
-    <eLiterals name="PPL_KW_RETRIES" value="113" literal="retries:"/>
-    <eLiterals name="PPL_KW_RULES" value="114" literal="rules:"/>
-    <eLiterals name="PPL_KW_BEFORE_SCRIPT" value="115" literal="before_script:"/>
-    <eLiterals name="PPL_KW_AFTER_SCRIPT" value="116" literal="after_script:"/>
-    <eLiterals name="PPL_KW_TIMEOUT" value="117" literal="timeout:"/>
-    <eLiterals name="PPL_KW_WHEN" value="118" literal="when:"/>
-    <eLiterals name="PPL_KW_ALLOW_FAILURE" value="119" literal="allow_failure:"/>
-    <eLiterals name="PPL_KW_DEPENDENCIES" value="120" literal="dependencies:"/>
-    <eLiterals name="PPL_KW_PULL_REQUESTS" value="121" literal="pull-requests:"/>
-    <eLiterals name="PPL_KW_STEP" value="122" literal="step:"/>
-    <eLiterals name="PPL_KW_DEFINITIONS" value="123" literal="definitions:"/>
-    <eLiterals name="PPL_KW_CACHES" value="124" literal="caches:"/>
-    <eLiterals name="PPL_KW_PARALLEL" value="125" literal="parallel:"/>
-    <eLiterals name="PPL_KW_CONDITIONS" value="126" literal="conditions:"/>
-    <eLiterals name="PPL_KW_MAX_TIME" value="127" literal="max-time:"/>
-    <eLiterals name="PPL_KW_PROJECT" value="128" literal="project:"/>
-    <eLiterals name="PPL_KW_PLAN" value="129" literal="plan:"/>
-    <eLiterals name="PPL_KW_TASKS" value="130" literal="tasks:"/>
-    <eLiterals name="PPL_KW_REQUIREMENTS" value="131" literal="requirements:"/>
-    <eLiterals name="PPL_KW_FINAL" value="132" literal="final:"/>
-    <eLiterals name="PPL_KW_JDK" value="133" literal="jdk:"/>
-    <eLiterals name="PPL_KW_LABELS" value="134" literal="labels:"/>
-    <eLiterals name="PPL_KW_REPOSITORY" value="135" literal="repository:"/>
-    <eLiterals name="PPL_KW_RELEASE" value="136" literal="release:"/>
-    <eLiterals name="PPL_KW_DOCKER" value="137" literal="docker:"/>
-    <eLiterals name="PPL_KW_AGENT" value="138" literal="agent:"/>
-    <eLiterals name="PPL_KW_QUEUE" value="139" literal="queue:"/>
-    <eLiterals name="PPL_KW_SNAPSHOT" value="140" literal="snapshot:"/>
-    <eLiterals name="PPL_KW_POLICY" value="141" literal="policy:"/>
-    <eLiterals name="PPL_KW_APPROVALS" value="142" literal="approvals:"/>
-    <eLiterals name="PPL_KW_PREBUILD" value="143" literal="preBuild:"/>
-    <eLiterals name="PPL_KW_POSTBUILD" value="144" literal="postBuild:"/>
-    <eLiterals name="PPL_KW_SSH" value="145" literal="ssh:"/>
-    <eLiterals name="PPL_KW_AUTH" value="146" literal="auth:"/>
-    <eLiterals name="PPL_KW_STORAGE" value="147" literal="storage:"/>
-    <eLiterals name="PPL_KW_ENDPOINTS" value="148" literal="endpoints:"/>
-    <eLiterals name="PPL_KW_COMMAND" value="149" literal="command:"/>
-    <eLiterals name="PPL_KW_PROVISIONER" value="150" literal="provisioner:"/>
-    <eLiterals name="PPL_KW_TRIGGER_RULES" value="151" literal="triggerRules:"/>
-    <eLiterals name="PPL_KW_RUN_POLICY" value="152" literal="runPolicy:"/>
-    <eLiterals name="PPL_KW_QUEUED" value="153" literal="queued:"/>
-    <eLiterals name="PPL_KW_NOTIFICATIONS" value="154" literal="notifications:"/>
-    <eLiterals name="PPL_KW_DEPLOY_TRIGGER" value="155" literal="deployTrigger:"/>
-    <eLiterals name="PPL_KW_RELEASE_TRIGGER" value="156" literal="releaseTrigger:"/>
-    <eLiterals name="PPL_KW_LOCK_BEHAVIOR" value="157" literal="lockBehavior:"/>
-    <eLiterals name="PPL_KW_REVIEW_STAGE" value="158" literal="reviewStage:"/>
+    <eLiterals name="PPL_KW_SCRIPT" value="45" literal="script:"/>
+    <eLiterals name="PPL_KW_BASH" value="46" literal="bash:"/>
+    <eLiterals name="PPL_KW_PWSH" value="47" literal="pwsh:"/>
+    <eLiterals name="PPL_KW_POWERSHELL" value="48" literal="powershell:"/>
+    <eLiterals name="PPL_KW_CHECKOUT" value="49" literal="checkout:"/>
+    <eLiterals name="PPL_KW_DOWNLOAD" value="50" literal="download:"/>
+    <eLiterals name="PPL_KW_GET_PACKAGE" value="51" literal="getPackage:"/>
+    <eLiterals name="PPL_KW_PUBLISH" value="52" literal="publish:"/>
+    <eLiterals name="PPL_KW_TASK" value="53" literal="task:"/>
+    <eLiterals name="PPL_KW_VALUE" value="54" literal="value:"/>
+    <eLiterals name="PPL_KW_READONLY" value="55" literal="readonly:"/>
+    <eLiterals name="PPL_KW_BUILDS" value="56" literal="builds:"/>
+    <eLiterals name="PPL_KW_CONTAINERS" value="57" literal="containers:"/>
+    <eLiterals name="PPL_KW_PIPELINES" value="58" literal="pipelines:"/>
+    <eLiterals name="PPL_KW_REPOSITORIES" value="59" literal="repositories:"/>
+    <eLiterals name="PPL_KW_WEBHOOKS" value="60" literal="webhooks:"/>
+    <eLiterals name="PPL_KW_PACKAGES" value="61" literal="packages:"/>
+    <eLiterals name="PPL_KW_INPUTS" value="62" literal="inputs:"/>
+    <eLiterals name="PPL_KW_OUTPUTS" value="63" literal="outputs:"/>
+    <eLiterals name="PPL_KW_SECRETS" value="64" literal="secrets:"/>
+    <eLiterals name="PPL_KW_DESCRIPTION" value="65" literal="description:"/>
+    <eLiterals name="PPL_KW_REQUIRED" value="66" literal="required:"/>
+    <eLiterals name="PPL_KW_DEFAULT" value="67" literal="default:"/>
+    <eLiterals name="PPL_KW_TYPE" value="68" literal="type:"/>
+    <eLiterals name="PPL_KW_OPTIONS" value="69" literal="options:"/>
+    <eLiterals name="PPL_KW_IF" value="70" literal="if:"/>
+    <eLiterals name="PPL_KW_RUNS_ON" value="71" literal="runs-on:"/>
+    <eLiterals name="PPL_KW_STRATEGY" value="72" literal="strategy:"/>
+    <eLiterals name="PPL_KW_MATRIX" value="73" literal="matrix:"/>
+    <eLiterals name="PPL_KW_CONTAINER" value="74" literal="container:"/>
+    <eLiterals name="PPL_KW_SERVICES" value="75" literal="services:"/>
+    <eLiterals name="PPL_KW_STEPS" value="76" literal="steps:"/>
+    <eLiterals name="PPL_KW_USES" value="77" literal="uses:"/>
+    <eLiterals name="PPL_KW_WITH" value="78" literal="with:"/>
+    <eLiterals name="PPL_KW_TIMEOUT_MINUTES" value="79" literal="timeout-minutes:"/>
+    <eLiterals name="PPL_KW_CONTINUE_ON_ERROR" value="80" literal="continue-on-error:"/>
+    <eLiterals name="PPL_KW_ENVIRONMENT" value="81" literal="environment:"/>
+    <eLiterals name="PPL_KW_ID" value="82" literal="id:"/>
+    <eLiterals name="PPL_KW_PERMISSIONS" value="83" literal="permissions:"/>
+    <eLiterals name="PPL_KW_TIMEOUTS" value="84" literal="timeouts:"/>
+    <eLiterals name="PPL_KW_DEFAULTS_RUN" value="85" literal="defaults.run:"/>
+    <eLiterals name="PPL_KW_PUSH" value="86" literal="push:"/>
+    <eLiterals name="PPL_KW_PULL_REQUEST" value="87" literal="pull_request:"/>
+    <eLiterals name="PPL_KW_REPOSITORY_DISPATCH" value="88" literal="repository_dispatch:"/>
+    <eLiterals name="PPL_KW_WORKFLOW_RUN" value="89" literal="workflow_run:"/>
+    <eLiterals name="PPL_KW_FILTERS" value="90" literal="filters:"/>
+    <eLiterals name="PPL_KW_EXCLUDE" value="91" literal="exclude:"/>
+    <eLiterals name="PPL_KW_FAIL_FAST" value="92" literal="fail-fast:"/>
+    <eLiterals name="PPL_KW_MAX_PARALLEL" value="93" literal="max-parallel:"/>
+    <eLiterals name="PPL_KW_CONTAINER_IMAGE" value="94" literal="container.image:"/>
+    <eLiterals name="PPL_KW_CREDENTIALS" value="95" literal="credentials:"/>
+    <eLiterals name="PPL_KW_PORTS" value="96" literal="ports:"/>
+    <eLiterals name="PPL_KW_INHERIT" value="97" literal="inherit:"/>
+    <eLiterals name="PPL_KW_TRIGGER" value="98" literal="trigger:"/>
+    <eLiterals name="PPL_KW_TEMPLATE" value="99" literal="template:"/>
+    <eLiterals name="PPL_KW_WORKSPACE" value="100" literal="workspace:"/>
+    <eLiterals name="PPL_KW_PIPELINE" value="101" literal="pipeline:"/>
+    <eLiterals name="PPL_KW_TIMEOUT_IN_MINUTES" value="102" literal="timeoutInMinutes:"/>
+    <eLiterals name="PPL_KW_CONTINUE_ON_ERR" value="103" literal="continueOnError:"/>
+    <eLiterals name="PPL_KW_RESOURCE_TYPE" value="104" literal="resourceType:"/>
+    <eLiterals name="PPL_KW_RESOURCE_NAME" value="105" literal="resourceName:"/>
+    <eLiterals name="PPL_KW_STAGES" value="106" literal="stages:"/>
+    <eLiterals name="PPL_KW_ONLY" value="107" literal="only:"/>
+    <eLiterals name="PPL_KW_EXCEPT" value="108" literal="except:"/>
+    <eLiterals name="PPL_KW_IMAGE" value="109" literal="image:"/>
+    <eLiterals name="PPL_KW_CACHE" value="110" literal="cache:"/>
+    <eLiterals name="PPL_KW_ARTIFACTS" value="111" literal="artifacts:"/>
+    <eLiterals name="PPL_KW_RETRIES" value="112" literal="retries:"/>
+    <eLiterals name="PPL_KW_RULES" value="113" literal="rules:"/>
+    <eLiterals name="PPL_KW_BEFORE_SCRIPT" value="114" literal="before_script:"/>
+    <eLiterals name="PPL_KW_AFTER_SCRIPT" value="115" literal="after_script:"/>
+    <eLiterals name="PPL_KW_TIMEOUT" value="116" literal="timeout:"/>
+    <eLiterals name="PPL_KW_WHEN" value="117" literal="when:"/>
+    <eLiterals name="PPL_KW_ALLOW_FAILURE" value="118" literal="allow_failure:"/>
+    <eLiterals name="PPL_KW_DEPENDENCIES" value="119" literal="dependencies:"/>
+    <eLiterals name="PPL_KW_PULL_REQUESTS" value="120" literal="pull-requests:"/>
+    <eLiterals name="PPL_KW_STEP" value="121" literal="step:"/>
+    <eLiterals name="PPL_KW_DEFINITIONS" value="122" literal="definitions:"/>
+    <eLiterals name="PPL_KW_CACHES" value="123" literal="caches:"/>
+    <eLiterals name="PPL_KW_PARALLEL" value="124" literal="parallel:"/>
+    <eLiterals name="PPL_KW_CONDITIONS" value="125" literal="conditions:"/>
+    <eLiterals name="PPL_KW_MAX_TIME" value="126" literal="max-time:"/>
+    <eLiterals name="PPL_KW_PROJECT" value="127" literal="project:"/>
+    <eLiterals name="PPL_KW_PLAN" value="128" literal="plan:"/>
+    <eLiterals name="PPL_KW_TASKS" value="129" literal="tasks:"/>
+    <eLiterals name="PPL_KW_REQUIREMENTS" value="130" literal="requirements:"/>
+    <eLiterals name="PPL_KW_FINAL" value="131" literal="final:"/>
+    <eLiterals name="PPL_KW_JDK" value="132" literal="jdk:"/>
+    <eLiterals name="PPL_KW_LABELS" value="133" literal="labels:"/>
+    <eLiterals name="PPL_KW_REPOSITORY" value="134" literal="repository:"/>
+    <eLiterals name="PPL_KW_RELEASE" value="135" literal="release:"/>
+    <eLiterals name="PPL_KW_DOCKER" value="136" literal="docker:"/>
+    <eLiterals name="PPL_KW_AGENT" value="137" literal="agent:"/>
+    <eLiterals name="PPL_KW_QUEUE" value="138" literal="queue:"/>
+    <eLiterals name="PPL_KW_SNAPSHOT" value="139" literal="snapshot:"/>
+    <eLiterals name="PPL_KW_POLICY" value="140" literal="policy:"/>
+    <eLiterals name="PPL_KW_APPROVALS" value="141" literal="approvals:"/>
+    <eLiterals name="PPL_KW_PREBUILD" value="142" literal="preBuild:"/>
+    <eLiterals name="PPL_KW_POSTBUILD" value="143" literal="postBuild:"/>
+    <eLiterals name="PPL_KW_SSH" value="144" literal="ssh:"/>
+    <eLiterals name="PPL_KW_AUTH" value="145" literal="auth:"/>
+    <eLiterals name="PPL_KW_STORAGE" value="146" literal="storage:"/>
+    <eLiterals name="PPL_KW_ENDPOINTS" value="147" literal="endpoints:"/>
+    <eLiterals name="PPL_KW_COMMAND" value="148" literal="command:"/>
+    <eLiterals name="PPL_KW_PROVISIONER" value="149" literal="provisioner:"/>
+    <eLiterals name="PPL_KW_TRIGGER_RULES" value="150" literal="triggerRules:"/>
+    <eLiterals name="PPL_KW_RUN_POLICY" value="151" literal="runPolicy:"/>
+    <eLiterals name="PPL_KW_QUEUED" value="152" literal="queued:"/>
+    <eLiterals name="PPL_KW_NOTIFICATIONS" value="153" literal="notifications:"/>
+    <eLiterals name="PPL_KW_DEPLOY_TRIGGER" value="154" literal="deployTrigger:"/>
+    <eLiterals name="PPL_KW_RELEASE_TRIGGER" value="155" literal="releaseTrigger:"/>
+    <eLiterals name="PPL_KW_LOCK_BEHAVIOR" value="156" literal="lockBehavior:"/>
+    <eLiterals name="PPL_KW_REVIEW_STAGE" value="157" literal="reviewStage:"/>
   </eClassifiers>
 </ecore:EPackage>

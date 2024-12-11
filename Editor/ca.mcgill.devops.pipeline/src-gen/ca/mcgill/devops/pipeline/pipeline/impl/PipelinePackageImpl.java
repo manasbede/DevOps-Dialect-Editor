@@ -765,7 +765,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getEvent_ScheduleName()
+  public EAttribute getEvent_ScheduleNameKW()
   {
     return (EAttribute)eventEClass.getEStructuralFeatures().get(13);
   }
@@ -787,7 +787,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getEvent_WorkflowType()
+  public EAttribute getEvent_WorkflowTypeKW()
   {
     return (EAttribute)eventEClass.getEStructuralFeatures().get(15);
   }
@@ -930,9 +930,9 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getActivity_Activities()
+  public EReference getActivity_Activities()
   {
-    return (EAttribute)activityEClass.getEStructuralFeatures().get(1);
+    return (EReference)activityEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -1084,7 +1084,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getJob_Name()
+  public EAttribute getJob_JobName()
   {
     return (EAttribute)jobEClass.getEStructuralFeatures().get(0);
   }
@@ -1095,20 +1095,9 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getJob_NameKW()
+  public EReference getJob_JobParameterValues()
   {
-    return (EAttribute)jobEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EAttribute getJob_JobName()
-  {
-    return (EAttribute)jobEClass.getEStructuralFeatures().get(2);
+    return (EReference)jobEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -1119,7 +1108,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
   @Override
   public EAttribute getJob_DependKW()
   {
-    return (EAttribute)jobEClass.getEStructuralFeatures().get(3);
+    return (EAttribute)jobEClass.getEStructuralFeatures().get(2);
   }
 
   /**
@@ -1130,18 +1119,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
   @Override
   public EReference getJob_References()
   {
-    return (EReference)jobEClass.getEStructuralFeatures().get(4);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getJob_JobParameterValues()
-  {
-    return (EReference)jobEClass.getEStructuralFeatures().get(5);
+    return (EReference)jobEClass.getEStructuralFeatures().get(3);
   }
 
   /**
@@ -1152,7 +1130,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
   @Override
   public EReference getJob_Steps()
   {
-    return (EReference)jobEClass.getEStructuralFeatures().get(6);
+    return (EReference)jobEClass.getEStructuralFeatures().get(4);
   }
 
   /**
@@ -1227,7 +1205,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getAction_ActionKeyword()
+  public EAttribute getAction_ActionName()
   {
     return (EAttribute)actionEClass.getEStructuralFeatures().get(0);
   }
@@ -1238,7 +1216,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getAction_OtherKeyword()
+  public EAttribute getAction_ActionKeyword()
   {
     return (EAttribute)actionEClass.getEStructuralFeatures().get(1);
   }
@@ -1249,9 +1227,20 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getAction_ActionValue()
+  public EAttribute getAction_OtherKeyword()
   {
     return (EAttribute)actionEClass.getEStructuralFeatures().get(2);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EAttribute getAction_ActionValue()
+  {
+    return (EAttribute)actionEClass.getEStructuralFeatures().get(3);
   }
 
   /**
@@ -1426,9 +1415,9 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     createEAttribute(eventEClass, EVENT__EXCLUDED_PATHS);
     createEAttribute(eventEClass, EVENT__INCLUDED_TAGS);
     createEAttribute(eventEClass, EVENT__EXCLUDED_TAGS);
-    createEAttribute(eventEClass, EVENT__SCHEDULE_NAME);
+    createEAttribute(eventEClass, EVENT__SCHEDULE_NAME_KW);
     createEReference(eventEClass, EVENT__TRIGGER_SCHEDULES);
-    createEAttribute(eventEClass, EVENT__WORKFLOW_TYPE);
+    createEAttribute(eventEClass, EVENT__WORKFLOW_TYPE_KW);
     createEReference(eventEClass, EVENT__WORK_FLOW_ACTIVITIES);
 
     triggerScheduleEClass = createEClass(TRIGGER_SCHEDULE);
@@ -1444,7 +1433,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
 
     activityEClass = createEClass(ACTIVITY);
     createEAttribute(activityEClass, ACTIVITY__NAME);
-    createEAttribute(activityEClass, ACTIVITY__ACTIVITIES);
+    createEReference(activityEClass, ACTIVITY__ACTIVITIES);
 
     stageEClass = createEClass(STAGE);
     createEAttribute(stageEClass, STAGE__NAME);
@@ -1460,12 +1449,10 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     createEReference(stageEClass, STAGE__JOBS);
 
     jobEClass = createEClass(JOB);
-    createEAttribute(jobEClass, JOB__NAME);
-    createEAttribute(jobEClass, JOB__NAME_KW);
     createEAttribute(jobEClass, JOB__JOB_NAME);
+    createEReference(jobEClass, JOB__JOB_PARAMETER_VALUES);
     createEAttribute(jobEClass, JOB__DEPEND_KW);
     createEReference(jobEClass, JOB__REFERENCES);
-    createEReference(jobEClass, JOB__JOB_PARAMETER_VALUES);
     createEReference(jobEClass, JOB__STEPS);
 
     stepEClass = createEClass(STEP);
@@ -1476,6 +1463,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     createEAttribute(scriptEClass, SCRIPT__COMMAND);
 
     actionEClass = createEClass(ACTION);
+    createEAttribute(actionEClass, ACTION__ACTION_NAME);
     createEAttribute(actionEClass, ACTION__ACTION_KEYWORD);
     createEAttribute(actionEClass, ACTION__OTHER_KEYWORD);
     createEAttribute(actionEClass, ACTION__ACTION_VALUE);
@@ -1578,9 +1566,9 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     initEAttribute(getEvent_ExcludedPaths(), ecorePackage.getEString(), "excludedPaths", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getEvent_IncludedTags(), ecorePackage.getEString(), "includedTags", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getEvent_ExcludedTags(), ecorePackage.getEString(), "excludedTags", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getEvent_ScheduleName(), ecorePackage.getEString(), "scheduleName", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getEvent_ScheduleNameKW(), ecorePackage.getEString(), "scheduleNameKW", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getEvent_TriggerSchedules(), this.getTriggerSchedule(), null, "triggerSchedules", null, 0, -1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getEvent_WorkflowType(), ecorePackage.getEString(), "workflowType", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getEvent_WorkflowTypeKW(), ecorePackage.getEString(), "workflowTypeKW", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getEvent_WorkFlowActivities(), this.getActivity(), null, "workFlowActivities", null, 0, -1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(triggerScheduleEClass, TriggerSchedule.class, "TriggerSchedule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1596,7 +1584,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
 
     initEClass(activityEClass, Activity.class, "Activity", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getActivity_Name(), ecorePackage.getEString(), "name", null, 0, 1, Activity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getActivity_Activities(), ecorePackage.getEString(), "activities", null, 0, -1, Activity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getActivity_Activities(), this.getParameterValue(), null, "activities", null, 0, -1, Activity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(stageEClass, Stage.class, "Stage", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getStage_Name(), ecorePackage.getEString(), "name", null, 0, 1, Stage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1612,12 +1600,10 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     initEReference(getStage_Jobs(), this.getJob(), null, "jobs", null, 0, -1, Stage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(jobEClass, Job.class, "Job", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getJob_Name(), ecorePackage.getEString(), "name", null, 0, 1, Job.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getJob_NameKW(), ecorePackage.getEString(), "nameKW", null, 0, 1, Job.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getJob_JobName(), ecorePackage.getEString(), "jobName", null, 0, 1, Job.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getJob_JobParameterValues(), this.getParameterValue(), null, "jobParameterValues", null, 0, -1, Job.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getJob_DependKW(), ecorePackage.getEString(), "dependKW", null, 0, 1, Job.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getJob_References(), this.getJob(), null, "references", null, 0, -1, Job.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getJob_JobParameterValues(), this.getParameterValue(), null, "jobParameterValues", null, 0, -1, Job.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getJob_Steps(), this.getStep(), null, "steps", null, 0, -1, Job.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(stepEClass, Step.class, "Step", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1628,6 +1614,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     initEAttribute(getScript_Command(), ecorePackage.getEString(), "command", null, 0, 1, Script.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(actionEClass, Action.class, "Action", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getAction_ActionName(), ecorePackage.getEString(), "actionName", null, 0, 1, Action.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getAction_ActionKeyword(), this.getPipelineKeyword(), "actionKeyword", null, 0, 1, Action.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getAction_OtherKeyword(), ecorePackage.getEString(), "otherKeyword", null, 0, 1, Action.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getAction_ActionValue(), ecorePackage.getEString(), "actionValue", null, 0, 1, Action.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1755,7 +1742,6 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_DEPENDS_ON);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_JOB);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_DEPLOYMENT);
-    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_NEEDS);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_SCRIPT);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_BASH);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_PWSH);

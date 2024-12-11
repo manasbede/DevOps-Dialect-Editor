@@ -92,7 +92,11 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *     Action returns Action
 	 *
 	 * Constraint:
-	 *     ((actionKeyword=PipelineKeyword | otherKeyword=ID) actionValue=AnyData? subSteps+=Action? (subSteps+=Script? subSteps+=Action?)*)
+	 *     (
+	 *         (actionName=UnquotedString | ((actionKeyword=PipelineKeyword | otherKeyword=ID) (actionValue=AnyData | actionValue=HyphenValues)?)) 
+	 *         subSteps+=Action? 
+	 *         (subSteps+=Script? subSteps+=Action?)*
+	 *     )
 	 * </pre>
 	 */
 	protected void sequence_Action(ISerializationContext context, ca.mcgill.devops.pipeline.pipeline.Action semanticObject) {
@@ -106,7 +110,7 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *     Activity returns Activity
 	 *
 	 * Constraint:
-	 *     (name=HyphenValues | name=ArrayList | ((name='inputs:' | name='outputs:' | name='secrets:') activities+=WorkFlowKeyValue+))
+	 *     (name=HyphenValues | name=ArrayList | ((name='inputs:' | name='outputs:' | name='secrets:') activities+=ParameterValue+))
 	 * </pre>
 	 */
 	protected void sequence_Activity(ISerializationContext context, Activity semanticObject) {
@@ -171,13 +175,15 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *         (
 	 *             (name=PipelineEventKeyword | simpleEvent=ID) 
 	 *             includedBranches+=Branch* 
-	 *             (activities+=Activity | activities+=Activity)? 
 	 *             includedBranches+=Branch? 
 	 *             (
 	 *                 (
+	 *                     activities+=Activity | 
 	 *                     batch=ID | 
 	 *                     autoCancel=ID | 
 	 *                     workflows=ArrayList | 
+	 *                     workflows=HyphenValues | 
+	 *                     workflows=ID | 
 	 *                     drafts=ID | 
 	 *                     (includedBranches+=Branch includedBranches+=Branch*) | 
 	 *                     includedBranches+=Branch | 
@@ -198,8 +204,8 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *                 includedBranches+=Branch?
 	 *             )*
 	 *         ) | 
-	 *         ((scheduleName='schedules:' | scheduleName='schedule:') triggerSchedules+=TriggerSchedule*) | 
-	 *         (workflowType='workflow_call:'? workFlowActivities+=Activity*)
+	 *         ((scheduleNameKW='schedules:' | scheduleNameKW='schedule:') triggerSchedules+=TriggerSchedule*) | 
+	 *         (workflowTypeKW='workflow_call:'? workFlowActivities+=Activity*)
 	 *     )
 	 * </pre>
 	 */
@@ -215,16 +221,10 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *
 	 * Constraint:
 	 *     (
-	 *         (name=ID | name=STRING) 
-	 *         jobParameterValues+=ParameterValue? 
-	 *         (
-	 *             (
-	 *                 ((nameKW='name:' | nameKW='displayName:') jobName=STRING) | 
-	 *                 ((dependKW='needs:' | dependKW='dependsOn:') (references+=[Job|ID] | (references+=[Job|ID] references+=[Job|ID]*))) | 
-	 *                 steps+=Step
-	 *             )? 
-	 *             jobParameterValues+=ParameterValue?
-	 *         )*
+	 *         (jobName=ID | jobName=STRING) 
+	 *         jobParameterValues+=ParameterValue* 
+	 *         ((dependKW='needs:' | dependKW='dependsOn:') (references+=[Job|ID] | (references+=[Job|ID] references+=[Job|ID]*))?)? 
+	 *         steps+=Step*
 	 *     )
 	 * </pre>
 	 */
@@ -333,7 +333,7 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *         name=AnyData 
 	 *         (
 	 *             (
-	 *                 displayName=STRING | 
+	 *                 displayName=UnquotedString | 
 	 *                 poolValue=AnyData | 
 	 *                 vmDemands=AnyData | 
 	 *                 vmDemands=HyphenValues | 
