@@ -110,7 +110,7 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *     Activity returns Activity
 	 *
 	 * Constraint:
-	 *     (name=HyphenValues | name=ArrayList | ((name='inputs:' | name='outputs:' | name='secrets:') activities+=ParameterValue+))
+	 *     (name=AnyData | name=HyphenValues | name=ArrayList | ((name='inputs:' | name='outputs:' | name='secrets:') activities+=ParameterValue+))
 	 * </pre>
 	 */
 	protected void sequence_Activity(ISerializationContext context, Activity semanticObject) {
@@ -143,10 +143,14 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *             name=UnquotedString | 
 	 *             runName=UnquotedString | 
 	 *             defaultShellValue=STRING | 
+	 *             defaultShellValue=ID | 
 	 *             defaultWDValue=STRING | 
+	 *             defaultWDValue=ID | 
 	 *             env+=KeyValue | 
 	 *             allPermission=ID | 
 	 *             indPermissions+=IndPermissionValue | 
+	 *             concurrency=AnyData | 
+	 *             concurrency=ArrayList | 
 	 *             vmDemands=AnyData | 
 	 *             vmDemands=HyphenValues | 
 	 *             resources+=Resource | 
@@ -221,7 +225,7 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *
 	 * Constraint:
 	 *     (
-	 *         (jobName=ID | jobName=STRING) 
+	 *         (name=ID | name=STRING) 
 	 *         jobParameterValues+=ParameterValue* 
 	 *         ((dependKW='needs:' | dependKW='dependsOn:') (references+=[Job|ID] | (references+=[Job|ID] references+=[Job|ID]*))?)? 
 	 *         steps+=Step*

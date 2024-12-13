@@ -43,6 +43,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationsImpl#getIndPermissions <em>Ind Permissions</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationsImpl#getGroup <em>Group</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationsImpl#getCancelConcurrence <em>Cancel Concurrence</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationsImpl#getConcurrency <em>Concurrency</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationsImpl#getVmName <em>Vm Name</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationsImpl#getVmImage <em>Vm Image</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ConfigurationsImpl#getVmDemands <em>Vm Demands</em>}</li>
@@ -217,6 +218,26 @@ public class ConfigurationsImpl extends MinimalEObjectImpl.Container implements 
    * @ordered
    */
   protected String cancelConcurrence = CANCEL_CONCURRENCE_EDEFAULT;
+
+  /**
+   * The default value of the '{@link #getConcurrency() <em>Concurrency</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getConcurrency()
+   * @generated
+   * @ordered
+   */
+  protected static final String CONCURRENCY_EDEFAULT = null;
+
+  /**
+   * The cached value of the '{@link #getConcurrency() <em>Concurrency</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getConcurrency()
+   * @generated
+   * @ordered
+   */
+  protected String concurrency = CONCURRENCY_EDEFAULT;
 
   /**
    * The default value of the '{@link #getVmName() <em>Vm Name</em>}' attribute.
@@ -590,6 +611,31 @@ public class ConfigurationsImpl extends MinimalEObjectImpl.Container implements 
    * @generated
    */
   @Override
+  public String getConcurrency()
+  {
+    return concurrency;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public void setConcurrency(String newConcurrency)
+  {
+    String oldConcurrency = concurrency;
+    concurrency = newConcurrency;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.CONFIGURATIONS__CONCURRENCY, oldConcurrency, concurrency));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
   public String getVmName()
   {
     return vmName;
@@ -819,6 +865,8 @@ public class ConfigurationsImpl extends MinimalEObjectImpl.Container implements 
         return getGroup();
       case PipelinePackage.CONFIGURATIONS__CANCEL_CONCURRENCE:
         return getCancelConcurrence();
+      case PipelinePackage.CONFIGURATIONS__CONCURRENCY:
+        return getConcurrency();
       case PipelinePackage.CONFIGURATIONS__VM_NAME:
         return getVmName();
       case PipelinePackage.CONFIGURATIONS__VM_IMAGE:
@@ -880,6 +928,9 @@ public class ConfigurationsImpl extends MinimalEObjectImpl.Container implements 
         return;
       case PipelinePackage.CONFIGURATIONS__CANCEL_CONCURRENCE:
         setCancelConcurrence((String)newValue);
+        return;
+      case PipelinePackage.CONFIGURATIONS__CONCURRENCY:
+        setConcurrency((String)newValue);
         return;
       case PipelinePackage.CONFIGURATIONS__VM_NAME:
         setVmName((String)newValue);
@@ -953,6 +1004,9 @@ public class ConfigurationsImpl extends MinimalEObjectImpl.Container implements 
       case PipelinePackage.CONFIGURATIONS__CANCEL_CONCURRENCE:
         setCancelConcurrence(CANCEL_CONCURRENCE_EDEFAULT);
         return;
+      case PipelinePackage.CONFIGURATIONS__CONCURRENCY:
+        setConcurrency(CONCURRENCY_EDEFAULT);
+        return;
       case PipelinePackage.CONFIGURATIONS__VM_NAME:
         setVmName(VM_NAME_EDEFAULT);
         return;
@@ -1012,6 +1066,8 @@ public class ConfigurationsImpl extends MinimalEObjectImpl.Container implements 
         return GROUP_EDEFAULT == null ? group != null : !GROUP_EDEFAULT.equals(group);
       case PipelinePackage.CONFIGURATIONS__CANCEL_CONCURRENCE:
         return CANCEL_CONCURRENCE_EDEFAULT == null ? cancelConcurrence != null : !CANCEL_CONCURRENCE_EDEFAULT.equals(cancelConcurrence);
+      case PipelinePackage.CONFIGURATIONS__CONCURRENCY:
+        return CONCURRENCY_EDEFAULT == null ? concurrency != null : !CONCURRENCY_EDEFAULT.equals(concurrency);
       case PipelinePackage.CONFIGURATIONS__VM_NAME:
         return VM_NAME_EDEFAULT == null ? vmName != null : !VM_NAME_EDEFAULT.equals(vmName);
       case PipelinePackage.CONFIGURATIONS__VM_IMAGE:
@@ -1063,6 +1119,8 @@ public class ConfigurationsImpl extends MinimalEObjectImpl.Container implements 
     result.append(group);
     result.append(", cancelConcurrence: ");
     result.append(cancelConcurrence);
+    result.append(", concurrency: ");
+    result.append(concurrency);
     result.append(", vmName: ");
     result.append(vmName);
     result.append(", vmImage: ");

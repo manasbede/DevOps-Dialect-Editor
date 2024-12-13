@@ -123,6 +123,7 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	protected AbstractElementAlias match_Event_WorkflowsHyphenValuesParserRuleCall_0_2_1_3_1_0_1;
 	protected AbstractElementAlias match_Event_WorkflowsIDTerminalRuleCall_0_2_1_3_1_0_2;
 	protected AbstractElementAlias match_Event___BEGINTerminalRuleCall_0_2_0___BranchesKeyword_0_2_1_5_0_or___BranchesIgnoreKeyword_0_2_1_6_0___BEGINTerminalRuleCall_0_2_1_6_1_1_0_ENDTerminalRuleCall_0_2_1_6_1_1_2__q___or___PathsKeyword_0_2_1_7_0___BEGINTerminalRuleCall_0_2_1_7_2_0_ENDTerminalRuleCall_0_2_1_7_2_3__q___or___TagsKeyword_0_2_1_9_0___BEGINTerminalRuleCall_0_2_1_9_2_0_ENDTerminalRuleCall_0_2_1_9_2_3__q____a_ENDTerminalRuleCall_0_2_2__q;
+	protected AbstractElementAlias match_Event___BEGINTerminalRuleCall_1_1_1_0_ENDTerminalRuleCall_1_1_1_2__q;
 	protected AbstractElementAlias match_Job_ColonKeyword_0_2_q;
 	protected AbstractElementAlias match_Job_StepsKeyword_1_3_0_q;
 	protected AbstractElementAlias match_Job___HyphenMinusKeyword_0_0_0___DeploymentKeyword_0_0_1_1_or_JobKeyword_0_0_1_0____q;
@@ -282,6 +283,7 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 		match_Event_WorkflowsHyphenValuesParserRuleCall_0_2_1_3_1_0_1 = new TokenAlias(false, false, grammarAccess.getEventAccess().getWorkflowsHyphenValuesParserRuleCall_0_2_1_3_1_0_1());
 		match_Event_WorkflowsIDTerminalRuleCall_0_2_1_3_1_0_2 = new TokenAlias(false, false, grammarAccess.getEventAccess().getWorkflowsIDTerminalRuleCall_0_2_1_3_1_0_2());
 		match_Event___BEGINTerminalRuleCall_0_2_0___BranchesKeyword_0_2_1_5_0_or___BranchesIgnoreKeyword_0_2_1_6_0___BEGINTerminalRuleCall_0_2_1_6_1_1_0_ENDTerminalRuleCall_0_2_1_6_1_1_2__q___or___PathsKeyword_0_2_1_7_0___BEGINTerminalRuleCall_0_2_1_7_2_0_ENDTerminalRuleCall_0_2_1_7_2_3__q___or___TagsKeyword_0_2_1_9_0___BEGINTerminalRuleCall_0_2_1_9_2_0_ENDTerminalRuleCall_0_2_1_9_2_3__q____a_ENDTerminalRuleCall_0_2_2__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getEventAccess().getBEGINTerminalRuleCall_0_2_0()), new AlternativeAlias(true, true, new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getEventAccess().getBranchesIgnoreKeyword_0_2_1_6_0()), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getEventAccess().getBEGINTerminalRuleCall_0_2_1_6_1_1_0()), new TokenAlias(false, false, grammarAccess.getEventAccess().getENDTerminalRuleCall_0_2_1_6_1_1_2()))), new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getEventAccess().getPathsKeyword_0_2_1_7_0()), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getEventAccess().getBEGINTerminalRuleCall_0_2_1_7_2_0()), new TokenAlias(false, false, grammarAccess.getEventAccess().getENDTerminalRuleCall_0_2_1_7_2_3()))), new GroupAlias(false, false, new TokenAlias(false, false, grammarAccess.getEventAccess().getTagsKeyword_0_2_1_9_0()), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getEventAccess().getBEGINTerminalRuleCall_0_2_1_9_2_0()), new TokenAlias(false, false, grammarAccess.getEventAccess().getENDTerminalRuleCall_0_2_1_9_2_3()))), new TokenAlias(false, false, grammarAccess.getEventAccess().getBranchesKeyword_0_2_1_5_0())), new TokenAlias(false, false, grammarAccess.getEventAccess().getENDTerminalRuleCall_0_2_2()));
+		match_Event___BEGINTerminalRuleCall_1_1_1_0_ENDTerminalRuleCall_1_1_1_2__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getEventAccess().getBEGINTerminalRuleCall_1_1_1_0()), new TokenAlias(false, false, grammarAccess.getEventAccess().getENDTerminalRuleCall_1_1_1_2()));
 		match_Job_ColonKeyword_0_2_q = new TokenAlias(false, true, grammarAccess.getJobAccess().getColonKeyword_0_2());
 		match_Job_StepsKeyword_1_3_0_q = new TokenAlias(false, true, grammarAccess.getJobAccess().getStepsKeyword_1_3_0());
 		match_Job___HyphenMinusKeyword_0_0_0___DeploymentKeyword_0_0_1_1_or_JobKeyword_0_0_1_0____q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getJobAccess().getHyphenMinusKeyword_0_0_0()), new AlternativeAlias(false, false, new TokenAlias(false, false, grammarAccess.getJobAccess().getDeploymentKeyword_0_0_1_1()), new TokenAlias(false, false, grammarAccess.getJobAccess().getJobKeyword_0_0_1_0())));
@@ -300,10 +302,10 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 		match_Stage___ENDTerminalRuleCall_1_1_1_1_1_1_______BEGINTerminalRuleCall_1_0_0_or_DependsOnKeyword_1_5_0__q_VariablesKeyword_1_4_0_q___JobsKeyword_1_6_0_0_ENDTerminalRuleCall_1_6_1__q__p_PoolKeyword_1_1_0__q__p = new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getStageAccess().getENDTerminalRuleCall_1_1_1_1_1_1()), new GroupAlias(false, true, new GroupAlias(true, false, new AlternativeAlias(false, true, new TokenAlias(false, false, grammarAccess.getStageAccess().getBEGINTerminalRuleCall_1_0_0()), new TokenAlias(false, false, grammarAccess.getStageAccess().getDependsOnKeyword_1_5_0())), new TokenAlias(false, true, grammarAccess.getStageAccess().getVariablesKeyword_1_4_0()), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getStageAccess().getJobsKeyword_1_6_0_0()), new TokenAlias(false, false, grammarAccess.getStageAccess().getENDTerminalRuleCall_1_6_1()))), new TokenAlias(false, false, grammarAccess.getStageAccess().getPoolKeyword_1_1_0())));
 		match_Stage___ENDTerminalRuleCall_1_1_1_1_1_1_______BEGINTerminalRuleCall_1_0_0_or_DependsOnKeyword_1_5_0_or_VariablesKeyword_1_4_0__q___JobsKeyword_1_6_0_0_ENDTerminalRuleCall_1_6_1__q__p_PoolKeyword_1_1_0__q__a = new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getStageAccess().getENDTerminalRuleCall_1_1_1_1_1_1()), new GroupAlias(false, true, new GroupAlias(true, false, new AlternativeAlias(false, true, new TokenAlias(false, false, grammarAccess.getStageAccess().getBEGINTerminalRuleCall_1_0_0()), new TokenAlias(false, false, grammarAccess.getStageAccess().getDependsOnKeyword_1_5_0()), new TokenAlias(false, false, grammarAccess.getStageAccess().getVariablesKeyword_1_4_0())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getStageAccess().getJobsKeyword_1_6_0_0()), new TokenAlias(false, false, grammarAccess.getStageAccess().getENDTerminalRuleCall_1_6_1()))), new TokenAlias(false, false, grammarAccess.getStageAccess().getPoolKeyword_1_1_0())));
 		match_Stage___ENDTerminalRuleCall_1_1_1_1_1_1_______BEGINTerminalRuleCall_1_0_0_or_DependsOnKeyword_1_5_0_or_VariablesKeyword_1_4_0__q___JobsKeyword_1_6_0_0_ENDTerminalRuleCall_1_6_1__q__p_PoolKeyword_1_1_0__q__p = new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getStageAccess().getENDTerminalRuleCall_1_1_1_1_1_1()), new GroupAlias(false, true, new GroupAlias(true, false, new AlternativeAlias(false, true, new TokenAlias(false, false, grammarAccess.getStageAccess().getBEGINTerminalRuleCall_1_0_0()), new TokenAlias(false, false, grammarAccess.getStageAccess().getDependsOnKeyword_1_5_0()), new TokenAlias(false, false, grammarAccess.getStageAccess().getVariablesKeyword_1_4_0())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getStageAccess().getJobsKeyword_1_6_0_0()), new TokenAlias(false, false, grammarAccess.getStageAccess().getENDTerminalRuleCall_1_6_1()))), new TokenAlias(false, false, grammarAccess.getStageAccess().getPoolKeyword_1_1_0())));
-		match_Stage___ENDTerminalRuleCall_1_1_1_1_1_1_______BEGINTerminalRuleCall_1_0_0_or_VariablesKeyword_1_4_0__q_DependsOnKeyword_1_5_0_q___JobsKeyword_1_6_0_0_ENDTerminalRuleCall_1_6_1__q__p_PoolKeyword_1_1_0__q__p = new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getStageAccess().getENDTerminalRuleCall_1_1_1_1_1_1()), new GroupAlias(false, true, new GroupAlias(true, false, new AlternativeAlias(false, true, new TokenAlias(false, false, grammarAccess.getStageAccess().getBEGINTerminalRuleCall_1_0_0()), new TokenAlias(false, false, grammarAccess.getStageAccess().getVariablesKeyword_1_4_0())), new TokenAlias(false, true, grammarAccess.getStageAccess().getDependsOnKeyword_1_5_0()), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getStageAccess().getJobsKeyword_1_6_0_0()), new TokenAlias(false, false, grammarAccess.getStageAccess().getENDTerminalRuleCall_1_6_1()))), new TokenAlias(false, false, grammarAccess.getStageAccess().getPoolKeyword_1_1_0())));
 	}
 	
 	private void init2() {
+		match_Stage___ENDTerminalRuleCall_1_1_1_1_1_1_______BEGINTerminalRuleCall_1_0_0_or_VariablesKeyword_1_4_0__q_DependsOnKeyword_1_5_0_q___JobsKeyword_1_6_0_0_ENDTerminalRuleCall_1_6_1__q__p_PoolKeyword_1_1_0__q__p = new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getStageAccess().getENDTerminalRuleCall_1_1_1_1_1_1()), new GroupAlias(false, true, new GroupAlias(true, false, new AlternativeAlias(false, true, new TokenAlias(false, false, grammarAccess.getStageAccess().getBEGINTerminalRuleCall_1_0_0()), new TokenAlias(false, false, grammarAccess.getStageAccess().getVariablesKeyword_1_4_0())), new TokenAlias(false, true, grammarAccess.getStageAccess().getDependsOnKeyword_1_5_0()), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getStageAccess().getJobsKeyword_1_6_0_0()), new TokenAlias(false, false, grammarAccess.getStageAccess().getENDTerminalRuleCall_1_6_1()))), new TokenAlias(false, false, grammarAccess.getStageAccess().getPoolKeyword_1_1_0())));
 		match_Stage___ENDTerminalRuleCall_1_1_1_1_1_1_______DependsOnKeyword_1_5_0_or_VariablesKeyword_1_4_0__q_BEGINTerminalRuleCall_1_0_0_q___JobsKeyword_1_6_0_0_ENDTerminalRuleCall_1_6_1__q__p_PoolKeyword_1_1_0__q__p = new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getStageAccess().getENDTerminalRuleCall_1_1_1_1_1_1()), new GroupAlias(false, true, new GroupAlias(true, false, new AlternativeAlias(false, true, new TokenAlias(false, false, grammarAccess.getStageAccess().getDependsOnKeyword_1_5_0()), new TokenAlias(false, false, grammarAccess.getStageAccess().getVariablesKeyword_1_4_0())), new TokenAlias(false, true, grammarAccess.getStageAccess().getBEGINTerminalRuleCall_1_0_0()), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getStageAccess().getJobsKeyword_1_6_0_0()), new TokenAlias(false, false, grammarAccess.getStageAccess().getENDTerminalRuleCall_1_6_1()))), new TokenAlias(false, false, grammarAccess.getStageAccess().getPoolKeyword_1_1_0())));
 		match_Stage___ENDTerminalRuleCall_1_1_1_1_1_1_a_____BEGINTerminalRuleCall_1_0_0_or_DependsOnKeyword_1_5_0_or_VariablesKeyword_1_4_0__q___JobsKeyword_1_6_0_0_ENDTerminalRuleCall_1_6_1__q__p_PoolKeyword_1_1_0__a = new GroupAlias(true, true, new TokenAlias(true, true, grammarAccess.getStageAccess().getENDTerminalRuleCall_1_1_1_1_1_1()), new GroupAlias(true, false, new AlternativeAlias(false, true, new TokenAlias(false, false, grammarAccess.getStageAccess().getBEGINTerminalRuleCall_1_0_0()), new TokenAlias(false, false, grammarAccess.getStageAccess().getDependsOnKeyword_1_5_0()), new TokenAlias(false, false, grammarAccess.getStageAccess().getVariablesKeyword_1_4_0())), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getStageAccess().getJobsKeyword_1_6_0_0()), new TokenAlias(false, false, grammarAccess.getStageAccess().getENDTerminalRuleCall_1_6_1()))), new TokenAlias(false, false, grammarAccess.getStageAccess().getPoolKeyword_1_1_0()));
 		match_Stage___ENDTerminalRuleCall_1_1_1_1_1_1_p_____BEGINTerminalRuleCall_1_0_0_or_DependsOnKeyword_1_5_0__q_VariablesKeyword_1_4_0_q___JobsKeyword_1_6_0_0_ENDTerminalRuleCall_1_6_1__q__p_PoolKeyword_1_1_0__a = new GroupAlias(true, true, new TokenAlias(true, false, grammarAccess.getStageAccess().getENDTerminalRuleCall_1_1_1_1_1_1()), new GroupAlias(true, false, new AlternativeAlias(false, true, new TokenAlias(false, false, grammarAccess.getStageAccess().getBEGINTerminalRuleCall_1_0_0()), new TokenAlias(false, false, grammarAccess.getStageAccess().getDependsOnKeyword_1_5_0())), new TokenAlias(false, true, grammarAccess.getStageAccess().getVariablesKeyword_1_4_0()), new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getStageAccess().getJobsKeyword_1_6_0_0()), new TokenAlias(false, false, grammarAccess.getStageAccess().getENDTerminalRuleCall_1_6_1()))), new TokenAlias(false, false, grammarAccess.getStageAccess().getPoolKeyword_1_1_0()));
@@ -561,6 +563,8 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 				emit_Event_WorkflowsIDTerminalRuleCall_0_2_1_3_1_0_2(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_Event___BEGINTerminalRuleCall_0_2_0___BranchesKeyword_0_2_1_5_0_or___BranchesIgnoreKeyword_0_2_1_6_0___BEGINTerminalRuleCall_0_2_1_6_1_1_0_ENDTerminalRuleCall_0_2_1_6_1_1_2__q___or___PathsKeyword_0_2_1_7_0___BEGINTerminalRuleCall_0_2_1_7_2_0_ENDTerminalRuleCall_0_2_1_7_2_3__q___or___TagsKeyword_0_2_1_9_0___BEGINTerminalRuleCall_0_2_1_9_2_0_ENDTerminalRuleCall_0_2_1_9_2_3__q____a_ENDTerminalRuleCall_0_2_2__q.equals(syntax))
 				emit_Event___BEGINTerminalRuleCall_0_2_0___BranchesKeyword_0_2_1_5_0_or___BranchesIgnoreKeyword_0_2_1_6_0___BEGINTerminalRuleCall_0_2_1_6_1_1_0_ENDTerminalRuleCall_0_2_1_6_1_1_2__q___or___PathsKeyword_0_2_1_7_0___BEGINTerminalRuleCall_0_2_1_7_2_0_ENDTerminalRuleCall_0_2_1_7_2_3__q___or___TagsKeyword_0_2_1_9_0___BEGINTerminalRuleCall_0_2_1_9_2_0_ENDTerminalRuleCall_0_2_1_9_2_3__q____a_ENDTerminalRuleCall_0_2_2__q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_Event___BEGINTerminalRuleCall_1_1_1_0_ENDTerminalRuleCall_1_1_1_2__q.equals(syntax))
+				emit_Event___BEGINTerminalRuleCall_1_1_1_0_ENDTerminalRuleCall_1_1_1_2__q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_Job_ColonKeyword_0_2_q.equals(syntax))
 				emit_Job_ColonKeyword_0_2_q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_Job_StepsKeyword_1_3_0_q.equals(syntax))
@@ -813,6 +817,90 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         vmName=ID
 	 *     )
 	 *     (
+	 *         concurrency=AnyData 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'pool:' 
+	 *         ((ambiguity) (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 'pool:')* 
+	 *         (ambiguity) 
+	 *         'demands:' 
+	 *         vmDemands=AnyData
+	 *     )
+	 *     (
+	 *         concurrency=AnyData 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'pool:' 
+	 *         ((ambiguity) (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 'pool:')* 
+	 *         (ambiguity) 
+	 *         'demands:' 
+	 *         vmDemands=HyphenValues
+	 *     )
+	 *     (
+	 *         concurrency=AnyData 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'pool:' 
+	 *         ((ambiguity) (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 'pool:')* 
+	 *         (ambiguity) 
+	 *         BEGIN 
+	 *         'name:' 
+	 *         vmName=ID
+	 *     )
+	 *     (
+	 *         concurrency=ArrayList 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'pool:' 
+	 *         ((ambiguity) (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 'pool:')* 
+	 *         (ambiguity) 
+	 *         'demands:' 
+	 *         vmDemands=AnyData
+	 *     )
+	 *     (
+	 *         concurrency=ArrayList 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'pool:' 
+	 *         ((ambiguity) (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 'pool:')* 
+	 *         (ambiguity) 
+	 *         'demands:' 
+	 *         vmDemands=HyphenValues
+	 *     )
+	 *     (
+	 *         concurrency=ArrayList 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'pool:' 
+	 *         ((ambiguity) (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 'pool:')* 
+	 *         (ambiguity) 
+	 *         BEGIN 
+	 *         'name:' 
+	 *         vmName=ID
+	 *     )
+	 *     (
+	 *         defaultShellValue=ID 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'pool:' 
+	 *         ((ambiguity) (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 'pool:')* 
+	 *         (ambiguity) 
+	 *         'demands:' 
+	 *         vmDemands=AnyData
+	 *     )
+	 *     (
+	 *         defaultShellValue=ID 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'pool:' 
+	 *         ((ambiguity) (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 'pool:')* 
+	 *         (ambiguity) 
+	 *         'demands:' 
+	 *         vmDemands=HyphenValues
+	 *     )
+	 *     (
+	 *         defaultShellValue=ID 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'pool:' 
+	 *         ((ambiguity) (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 'pool:')* 
+	 *         (ambiguity) 
+	 *         BEGIN 
+	 *         'name:' 
+	 *         vmName=ID
+	 *     )
+	 *     (
 	 *         defaultShellValue=STRING 
 	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
 	 *         'pool:' 
@@ -835,6 +923,31 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
 	 *         'pool:' 
 	 *         ((ambiguity) (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 'pool:')* 
+	 *         (ambiguity) 
+	 *         BEGIN 
+	 *         'name:' 
+	 *         vmName=ID
+	 *     )
+	 *     (
+	 *         defaultWDValue=ID 
+	 *         (END END (('variables:' | 'parameters:')? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+)+ 
+	 *         'pool:' 
+	 *         (ambiguity) 
+	 *         'demands:' 
+	 *         vmDemands=AnyData
+	 *     )
+	 *     (
+	 *         defaultWDValue=ID 
+	 *         (END END (('variables:' | 'parameters:')? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+)+ 
+	 *         'pool:' 
+	 *         (ambiguity) 
+	 *         'demands:' 
+	 *         vmDemands=HyphenValues
+	 *     )
+	 *     (
+	 *         defaultWDValue=ID 
+	 *         (END END (('variables:' | 'parameters:')? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+)+ 
+	 *         'pool:' 
 	 *         (ambiguity) 
 	 *         BEGIN 
 	 *         'name:' 
@@ -1176,6 +1289,20 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         vmImage=ID 
 	 *         (ambiguity) 
 	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
+	 *         'concurrency:' 
+	 *         concurrency=AnyData
+	 *     )
+	 *     (
+	 *         vmImage=ID 
+	 *         (ambiguity) 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
+	 *         'concurrency:' 
+	 *         concurrency=ArrayList
+	 *     )
+	 *     (
+	 *         vmImage=ID 
+	 *         (ambiguity) 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
 	 *         'name:' 
 	 *         name=UnquotedString
 	 *     )
@@ -1192,6 +1319,13 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
 	 *         'version:' 
 	 *         version=VERSION
+	 *     )
+	 *     (
+	 *         vmImage=ID 
+	 *         (ambiguity) 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
+	 *         'working-directory:' 
+	 *         defaultWDValue=ID
 	 *     )
 	 *     (
 	 *         vmImage=ID 
@@ -1275,6 +1409,20 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         vmImage=STRING 
 	 *         (ambiguity) 
 	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
+	 *         'concurrency:' 
+	 *         concurrency=AnyData
+	 *     )
+	 *     (
+	 *         vmImage=STRING 
+	 *         (ambiguity) 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
+	 *         'concurrency:' 
+	 *         concurrency=ArrayList
+	 *     )
+	 *     (
+	 *         vmImage=STRING 
+	 *         (ambiguity) 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
 	 *         'name:' 
 	 *         name=UnquotedString
 	 *     )
@@ -1291,6 +1439,13 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
 	 *         'version:' 
 	 *         version=VERSION
+	 *     )
+	 *     (
+	 *         vmImage=STRING 
+	 *         (ambiguity) 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
+	 *         'working-directory:' 
+	 *         defaultWDValue=ID
 	 *     )
 	 *     (
 	 *         vmImage=STRING 
@@ -1374,6 +1529,20 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         vmName=ID 
 	 *         (ambiguity) 
 	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
+	 *         'concurrency:' 
+	 *         concurrency=AnyData
+	 *     )
+	 *     (
+	 *         vmName=ID 
+	 *         (ambiguity) 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
+	 *         'concurrency:' 
+	 *         concurrency=ArrayList
+	 *     )
+	 *     (
+	 *         vmName=ID 
+	 *         (ambiguity) 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
 	 *         'name:' 
 	 *         name=UnquotedString
 	 *     )
@@ -1390,6 +1559,13 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
 	 *         'version:' 
 	 *         version=VERSION
+	 *     )
+	 *     (
+	 *         vmName=ID 
+	 *         (ambiguity) 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('pool:' (ambiguity))?)+ 
+	 *         'working-directory:' 
+	 *         defaultWDValue=ID
 	 *     )
 	 *     (
 	 *         vmName=ID 
@@ -1490,6 +1666,22 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         (ambiguity) 
 	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
 	 *         ('pool:' (ambiguity) (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
+	 *         'concurrency:' 
+	 *         concurrency=AnyData
+	 *     )
+	 *     (
+	 *         vmDemands=AnyData 
+	 *         (ambiguity) 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         ('pool:' (ambiguity) (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
+	 *         'concurrency:' 
+	 *         concurrency=ArrayList
+	 *     )
+	 *     (
+	 *         vmDemands=AnyData 
+	 *         (ambiguity) 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         ('pool:' (ambiguity) (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
 	 *         'name:' 
 	 *         name=UnquotedString
 	 *     )
@@ -1508,6 +1700,14 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         ('pool:' (ambiguity) (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
 	 *         'version:' 
 	 *         version=VERSION
+	 *     )
+	 *     (
+	 *         vmDemands=AnyData 
+	 *         (ambiguity) 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         ('pool:' (ambiguity) (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
+	 *         'working-directory:' 
+	 *         defaultWDValue=ID
 	 *     )
 	 *     (
 	 *         vmDemands=AnyData 
@@ -1599,6 +1799,22 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         (ambiguity) 
 	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
 	 *         ('pool:' (ambiguity) (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
+	 *         'concurrency:' 
+	 *         concurrency=AnyData
+	 *     )
+	 *     (
+	 *         vmDemands=HyphenValues 
+	 *         (ambiguity) 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         ('pool:' (ambiguity) (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
+	 *         'concurrency:' 
+	 *         concurrency=ArrayList
+	 *     )
+	 *     (
+	 *         vmDemands=HyphenValues 
+	 *         (ambiguity) 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         ('pool:' (ambiguity) (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
 	 *         'name:' 
 	 *         name=UnquotedString
 	 *     )
@@ -1617,6 +1833,14 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         ('pool:' (ambiguity) (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
 	 *         'version:' 
 	 *         version=VERSION
+	 *     )
+	 *     (
+	 *         vmDemands=HyphenValues 
+	 *         (ambiguity) 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         ('pool:' (ambiguity) (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+)* 
+	 *         'working-directory:' 
+	 *         defaultWDValue=ID
 	 *     )
 	 *     (
 	 *         vmDemands=HyphenValues 
@@ -1709,11 +1933,46 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         env+=KeyValue
 	 *     )
 	 *     (
+	 *         concurrency=AnyData 
+	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('permissions:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'env:' 
+	 *         BEGIN 
+	 *         (END (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('permissions:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 'env:' BEGIN)* 
+	 *         (ambiguity) 
+	 *         env+=KeyValue
+	 *     )
+	 *     (
+	 *         concurrency=ArrayList 
+	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('permissions:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'env:' 
+	 *         BEGIN 
+	 *         (END (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('permissions:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 'env:' BEGIN)* 
+	 *         (ambiguity) 
+	 *         env+=KeyValue
+	 *     )
+	 *     (
+	 *         defaultShellValue=ID 
+	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('permissions:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'env:' 
+	 *         BEGIN 
+	 *         (END (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('permissions:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 'env:' BEGIN)* 
+	 *         (ambiguity) 
+	 *         env+=KeyValue
+	 *     )
+	 *     (
 	 *         defaultShellValue=STRING 
 	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('permissions:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
 	 *         'env:' 
 	 *         BEGIN 
 	 *         (END (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('permissions:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 'env:' BEGIN)* 
+	 *         (ambiguity) 
+	 *         env+=KeyValue
+	 *     )
+	 *     (
+	 *         defaultWDValue=ID 
+	 *         (END END (('variables:' | 'parameters:')? ('pool:' END+)? ('permissions:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)? ('env:' BEGIN END)?)+)+ 
+	 *         'env:' 
+	 *         BEGIN 
 	 *         (ambiguity) 
 	 *         env+=KeyValue
 	 *     )
@@ -1926,6 +2185,27 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         allPermission=ID
 	 *     )
 	 *     (
+	 *         concurrency=AnyData 
+	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'permissions:' 
+	 *         (ambiguity) 
+	 *         allPermission=ID
+	 *     )
+	 *     (
+	 *         concurrency=ArrayList 
+	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'permissions:' 
+	 *         (ambiguity) 
+	 *         allPermission=ID
+	 *     )
+	 *     (
+	 *         defaultShellValue=ID 
+	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'permissions:' 
+	 *         (ambiguity) 
+	 *         allPermission=ID
+	 *     )
+	 *     (
 	 *         defaultShellValue=STRING 
 	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
 	 *         'permissions:' 
@@ -2004,6 +2284,7 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	  *     )*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     defaultWDValue=ID (ambiguity)
 	 *     defaultWDValue=STRING (ambiguity)
 	 
 	 * </pre>
@@ -2030,6 +2311,7 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	  *     )*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     defaultWDValue=ID (ambiguity)
 	 *     defaultWDValue=STRING (ambiguity)
 	 
 	 * </pre>
@@ -2055,6 +2337,9 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	  *     )+
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     defaultWDValue=ID (ambiguity) 'pool:' END* 'demands:' vmDemands=AnyData
+	 *     defaultWDValue=ID (ambiguity) 'pool:' END* 'demands:' vmDemands=HyphenValues
+	 *     defaultWDValue=ID (ambiguity) 'pool:' END* BEGIN 'name:' vmName=ID
 	 *     defaultWDValue=STRING (ambiguity) 'pool:' END* 'demands:' vmDemands=AnyData
 	 *     defaultWDValue=STRING (ambiguity) 'pool:' END* 'demands:' vmDemands=HyphenValues
 	 *     defaultWDValue=STRING (ambiguity) 'pool:' END* BEGIN 'name:' vmName=ID
@@ -2082,6 +2367,8 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	  *     )+
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     defaultWDValue=ID (ambiguity) 'permissions:' BEGIN indPermissions+=IndPermissionValue
+	 *     defaultWDValue=ID (ambiguity) 'permissions:' allPermission=ID
 	 *     defaultWDValue=STRING (ambiguity) 'permissions:' BEGIN indPermissions+=IndPermissionValue
 	 *     defaultWDValue=STRING (ambiguity) 'permissions:' allPermission=ID
 	 
@@ -2108,6 +2395,7 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	  *     )+
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     defaultWDValue=ID (ambiguity) 'resources:' BEGIN resources+=Resource
 	 *     defaultWDValue=STRING (ambiguity) 'resources:' BEGIN resources+=Resource
 	 
 	 * </pre>
@@ -2133,6 +2421,7 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	  *     )*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     defaultWDValue=ID (ambiguity)
 	 *     defaultWDValue=STRING (ambiguity)
 	 
 	 * </pre>
@@ -2158,11 +2447,26 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	  *     )+
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     defaultWDValue=ID (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
+	 *     defaultWDValue=ID (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
+	 *     defaultWDValue=ID (ambiguity) 'concurrency:' concurrency=AnyData
+	 *     defaultWDValue=ID (ambiguity) 'concurrency:' concurrency=ArrayList
+	 *     defaultWDValue=ID (ambiguity) 'name:' name=UnquotedString
+	 *     defaultWDValue=ID (ambiguity) 'run-name:' runName=UnquotedString
+	 *     defaultWDValue=ID (ambiguity) 'version:' version=VERSION
+	 *     defaultWDValue=ID (ambiguity) 'working-directory:' defaultWDValue=ID
+	 *     defaultWDValue=ID (ambiguity) 'working-directory:' defaultWDValue=STRING
+	 *     defaultWDValue=ID (ambiguity) (rule end)
+	 *     defaultWDValue=ID (ambiguity) extendOrInclude='extends:'
+	 *     defaultWDValue=ID (ambiguity) extendOrInclude='include:'
 	 *     defaultWDValue=STRING (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     defaultWDValue=STRING (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
+	 *     defaultWDValue=STRING (ambiguity) 'concurrency:' concurrency=AnyData
+	 *     defaultWDValue=STRING (ambiguity) 'concurrency:' concurrency=ArrayList
 	 *     defaultWDValue=STRING (ambiguity) 'name:' name=UnquotedString
 	 *     defaultWDValue=STRING (ambiguity) 'run-name:' runName=UnquotedString
 	 *     defaultWDValue=STRING (ambiguity) 'version:' version=VERSION
+	 *     defaultWDValue=STRING (ambiguity) 'working-directory:' defaultWDValue=ID
 	 *     defaultWDValue=STRING (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     defaultWDValue=STRING (ambiguity) (rule end)
 	 *     defaultWDValue=STRING (ambiguity) extendOrInclude='extends:'
@@ -2191,6 +2495,7 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	  *     )+
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     defaultWDValue=ID (ambiguity) 'env:' BEGIN '-'? env+=KeyValue
 	 *     defaultWDValue=STRING (ambiguity) 'env:' BEGIN '-'? env+=KeyValue
 	 
 	 * </pre>
@@ -2428,6 +2733,33 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     (
 	 *         cancelConcurrence=ID 
 	 *         END 
+	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('permissions:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'env:' 
+	 *         BEGIN 
+	 *         (ambiguity) 
+	 *         '-'? 
+	 *         env+=KeyValue
+	 *     )
+	 *     (
+	 *         concurrency=AnyData 
+	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('permissions:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'env:' 
+	 *         BEGIN 
+	 *         (ambiguity) 
+	 *         '-'? 
+	 *         env+=KeyValue
+	 *     )
+	 *     (
+	 *         concurrency=ArrayList 
+	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('permissions:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'env:' 
+	 *         BEGIN 
+	 *         (ambiguity) 
+	 *         '-'? 
+	 *         env+=KeyValue
+	 *     )
+	 *     (
+	 *         defaultShellValue=ID 
 	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('permissions:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
 	 *         'env:' 
 	 *         BEGIN 
@@ -2773,6 +3105,30 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     (
 	 *         cancelConcurrence=ID 
 	 *         END 
+	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'permissions:' 
+	 *         BEGIN 
+	 *         (ambiguity) 
+	 *         indPermissions+=IndPermissionValue
+	 *     )
+	 *     (
+	 *         concurrency=AnyData 
+	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'permissions:' 
+	 *         BEGIN 
+	 *         (ambiguity) 
+	 *         indPermissions+=IndPermissionValue
+	 *     )
+	 *     (
+	 *         concurrency=ArrayList 
+	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'permissions:' 
+	 *         BEGIN 
+	 *         (ambiguity) 
+	 *         indPermissions+=IndPermissionValue
+	 *     )
+	 *     (
+	 *         defaultShellValue=ID 
 	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
 	 *         'permissions:' 
 	 *         BEGIN 
@@ -3136,6 +3492,90 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     (
 	 *         cancelConcurrence=ID 
 	 *         END 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'pool:' 
+	 *         (ambiguity) 
+	 *         END* 
+	 *         BEGIN 
+	 *         'name:' 
+	 *         vmName=ID
+	 *     )
+	 *     (
+	 *         concurrency=AnyData 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'pool:' 
+	 *         (ambiguity) 
+	 *         END* 
+	 *         'demands:' 
+	 *         vmDemands=AnyData
+	 *     )
+	 *     (
+	 *         concurrency=AnyData 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'pool:' 
+	 *         (ambiguity) 
+	 *         END* 
+	 *         'demands:' 
+	 *         vmDemands=HyphenValues
+	 *     )
+	 *     (
+	 *         concurrency=AnyData 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'pool:' 
+	 *         (ambiguity) 
+	 *         END* 
+	 *         BEGIN 
+	 *         'name:' 
+	 *         vmName=ID
+	 *     )
+	 *     (
+	 *         concurrency=ArrayList 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'pool:' 
+	 *         (ambiguity) 
+	 *         END* 
+	 *         'demands:' 
+	 *         vmDemands=AnyData
+	 *     )
+	 *     (
+	 *         concurrency=ArrayList 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'pool:' 
+	 *         (ambiguity) 
+	 *         END* 
+	 *         'demands:' 
+	 *         vmDemands=HyphenValues
+	 *     )
+	 *     (
+	 *         concurrency=ArrayList 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'pool:' 
+	 *         (ambiguity) 
+	 *         END* 
+	 *         BEGIN 
+	 *         'name:' 
+	 *         vmName=ID
+	 *     )
+	 *     (
+	 *         defaultShellValue=ID 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'pool:' 
+	 *         (ambiguity) 
+	 *         END* 
+	 *         'demands:' 
+	 *         vmDemands=AnyData
+	 *     )
+	 *     (
+	 *         defaultShellValue=ID 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'pool:' 
+	 *         (ambiguity) 
+	 *         END* 
+	 *         'demands:' 
+	 *         vmDemands=HyphenValues
+	 *     )
+	 *     (
+	 *         defaultShellValue=ID 
 	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
 	 *         'pool:' 
 	 *         (ambiguity) 
@@ -3700,6 +4140,30 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         resources+=Resource
 	 *     )
 	 *     (
+	 *         concurrency=AnyData 
+	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'resources:' 
+	 *         BEGIN 
+	 *         (ambiguity) 
+	 *         resources+=Resource
+	 *     )
+	 *     (
+	 *         concurrency=ArrayList 
+	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'resources:' 
+	 *         BEGIN 
+	 *         (ambiguity) 
+	 *         resources+=Resource
+	 *     )
+	 *     (
+	 *         defaultShellValue=ID 
+	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         'resources:' 
+	 *         BEGIN 
+	 *         (ambiguity) 
+	 *         resources+=Resource
+	 *     )
+	 *     (
 	 *         defaultShellValue=STRING 
 	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
 	 *         'resources:' 
@@ -3864,6 +4328,22 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         END 
 	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('permissions:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
 	 *         (ambiguity) 
+	 *         'concurrency:' 
+	 *         concurrency=AnyData
+	 *     )
+	 *     (
+	 *         env+=KeyValue 
+	 *         END 
+	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('permissions:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         (ambiguity) 
+	 *         'concurrency:' 
+	 *         concurrency=ArrayList
+	 *     )
+	 *     (
+	 *         env+=KeyValue 
+	 *         END 
+	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('permissions:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         (ambiguity) 
 	 *         'name:' 
 	 *         name=UnquotedString
 	 *     )
@@ -3882,6 +4362,14 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         (ambiguity) 
 	 *         'version:' 
 	 *         version=VERSION
+	 *     )
+	 *     (
+	 *         env+=KeyValue 
+	 *         END 
+	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('permissions:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         (ambiguity) 
+	 *         'working-directory:' 
+	 *         defaultWDValue=ID
 	 *     )
 	 *     (
 	 *         env+=KeyValue 
@@ -3988,6 +4476,9 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     allPermission=ID (ambiguity)
 	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity)
 	 *     cancelConcurrence=ID END (ambiguity)
+	 *     concurrency=AnyData (ambiguity)
+	 *     concurrency=ArrayList (ambiguity)
+	 *     defaultShellValue=ID (ambiguity)
 	 *     defaultShellValue=STRING (ambiguity)
 	 *     extendedParameters+=ParameterValue END (ambiguity)
 	 *     name=UnquotedString (ambiguity)
@@ -4100,6 +4591,22 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         END 
 	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
 	 *         (ambiguity) 
+	 *         'concurrency:' 
+	 *         concurrency=AnyData
+	 *     )
+	 *     (
+	 *         indPermissions+=IndPermissionValue 
+	 *         END 
+	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         (ambiguity) 
+	 *         'concurrency:' 
+	 *         concurrency=ArrayList
+	 *     )
+	 *     (
+	 *         indPermissions+=IndPermissionValue 
+	 *         END 
+	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         (ambiguity) 
 	 *         'name:' 
 	 *         name=UnquotedString
 	 *     )
@@ -4118,6 +4625,14 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         (ambiguity) 
 	 *         'version:' 
 	 *         version=VERSION
+	 *     )
+	 *     (
+	 *         indPermissions+=IndPermissionValue 
+	 *         END 
+	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         (ambiguity) 
+	 *         'working-directory:' 
+	 *         defaultWDValue=ID
 	 *     )
 	 *     (
 	 *         indPermissions+=IndPermissionValue 
@@ -4231,6 +4746,22 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         END+ 
 	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
 	 *         (ambiguity) 
+	 *         'concurrency:' 
+	 *         concurrency=AnyData
+	 *     )
+	 *     (
+	 *         vmDemands=AnyData 
+	 *         END+ 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         (ambiguity) 
+	 *         'concurrency:' 
+	 *         concurrency=ArrayList
+	 *     )
+	 *     (
+	 *         vmDemands=AnyData 
+	 *         END+ 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         (ambiguity) 
 	 *         'name:' 
 	 *         name=UnquotedString
 	 *     )
@@ -4249,6 +4780,14 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         (ambiguity) 
 	 *         'version:' 
 	 *         version=VERSION
+	 *     )
+	 *     (
+	 *         vmDemands=AnyData 
+	 *         END+ 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         (ambiguity) 
+	 *         'working-directory:' 
+	 *         defaultWDValue=ID
 	 *     )
 	 *     (
 	 *         vmDemands=AnyData 
@@ -4297,6 +4836,22 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         END+ 
 	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
 	 *         (ambiguity) 
+	 *         'concurrency:' 
+	 *         concurrency=AnyData
+	 *     )
+	 *     (
+	 *         vmDemands=HyphenValues 
+	 *         END+ 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         (ambiguity) 
+	 *         'concurrency:' 
+	 *         concurrency=ArrayList
+	 *     )
+	 *     (
+	 *         vmDemands=HyphenValues 
+	 *         END+ 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         (ambiguity) 
 	 *         'name:' 
 	 *         name=UnquotedString
 	 *     )
@@ -4315,6 +4870,14 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         (ambiguity) 
 	 *         'version:' 
 	 *         version=VERSION
+	 *     )
+	 *     (
+	 *         vmDemands=HyphenValues 
+	 *         END+ 
+	 *         (('variables:' | 'parameters:')? (END END)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('resources:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         (ambiguity) 
+	 *         'working-directory:' 
+	 *         defaultWDValue=ID
 	 *     )
 	 *     (
 	 *         vmDemands=HyphenValues 
@@ -4479,6 +5042,22 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         END 
 	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
 	 *         (ambiguity) 
+	 *         'concurrency:' 
+	 *         concurrency=AnyData
+	 *     )
+	 *     (
+	 *         resources+=Resource 
+	 *         END 
+	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         (ambiguity) 
+	 *         'concurrency:' 
+	 *         concurrency=ArrayList
+	 *     )
+	 *     (
+	 *         resources+=Resource 
+	 *         END 
+	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         (ambiguity) 
 	 *         'name:' 
 	 *         name=UnquotedString
 	 *     )
@@ -4497,6 +5076,14 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *         (ambiguity) 
 	 *         'version:' 
 	 *         version=VERSION
+	 *     )
+	 *     (
+	 *         resources+=Resource 
+	 *         END 
+	 *         (('variables:' | 'parameters:')? (END END)? ('pool:' END+)? ('permissions:' BEGIN END)? ('env:' BEGIN END)? ('defaults:' BEGIN 'run:' BEGIN)?)+ 
+	 *         (ambiguity) 
+	 *         'working-directory:' 
+	 *         defaultWDValue=ID
 	 *     )
 	 *     (
 	 *         resources+=Resource 
@@ -4547,6 +5134,9 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     allPermission=ID (ambiguity)
 	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity)
 	 *     cancelConcurrence=ID END (ambiguity)
+	 *     concurrency=AnyData (ambiguity)
+	 *     concurrency=ArrayList (ambiguity)
+	 *     defaultShellValue=ID (ambiguity)
 	 *     defaultShellValue=STRING (ambiguity)
 	 *     extendedParameters+=ParameterValue END (ambiguity)
 	 *     name=UnquotedString (ambiguity)
@@ -4718,27 +5308,36 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 * This ambiguous syntax occurs at:
 	 *     vmImage=ID END* (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     vmImage=ID END* (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
+	 *     vmImage=ID END* (ambiguity) 'concurrency:' concurrency=AnyData
+	 *     vmImage=ID END* (ambiguity) 'concurrency:' concurrency=ArrayList
 	 *     vmImage=ID END* (ambiguity) 'name:' name=UnquotedString
 	 *     vmImage=ID END* (ambiguity) 'run-name:' runName=UnquotedString
 	 *     vmImage=ID END* (ambiguity) 'version:' version=VERSION
+	 *     vmImage=ID END* (ambiguity) 'working-directory:' defaultWDValue=ID
 	 *     vmImage=ID END* (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     vmImage=ID END* (ambiguity) (rule end)
 	 *     vmImage=ID END* (ambiguity) extendOrInclude='extends:'
 	 *     vmImage=ID END* (ambiguity) extendOrInclude='include:'
 	 *     vmImage=STRING END* (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     vmImage=STRING END* (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
+	 *     vmImage=STRING END* (ambiguity) 'concurrency:' concurrency=AnyData
+	 *     vmImage=STRING END* (ambiguity) 'concurrency:' concurrency=ArrayList
 	 *     vmImage=STRING END* (ambiguity) 'name:' name=UnquotedString
 	 *     vmImage=STRING END* (ambiguity) 'run-name:' runName=UnquotedString
 	 *     vmImage=STRING END* (ambiguity) 'version:' version=VERSION
+	 *     vmImage=STRING END* (ambiguity) 'working-directory:' defaultWDValue=ID
 	 *     vmImage=STRING END* (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     vmImage=STRING END* (ambiguity) (rule end)
 	 *     vmImage=STRING END* (ambiguity) extendOrInclude='extends:'
 	 *     vmImage=STRING END* (ambiguity) extendOrInclude='include:'
 	 *     vmName=ID END* (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     vmName=ID END* (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
+	 *     vmName=ID END* (ambiguity) 'concurrency:' concurrency=AnyData
+	 *     vmName=ID END* (ambiguity) 'concurrency:' concurrency=ArrayList
 	 *     vmName=ID END* (ambiguity) 'name:' name=UnquotedString
 	 *     vmName=ID END* (ambiguity) 'run-name:' runName=UnquotedString
 	 *     vmName=ID END* (ambiguity) 'version:' version=VERSION
+	 *     vmName=ID END* (ambiguity) 'working-directory:' defaultWDValue=ID
 	 *     vmName=ID END* (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     vmName=ID END* (ambiguity) (rule end)
 	 *     vmName=ID END* (ambiguity) extendOrInclude='extends:'
@@ -4775,6 +5374,15 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     cancelConcurrence=ID END (ambiguity) 'pool:' (END* (ambiguity) 'pool:')* END* 'demands:' vmDemands=AnyData
 	 *     cancelConcurrence=ID END (ambiguity) 'pool:' (END* (ambiguity) 'pool:')* END* 'demands:' vmDemands=HyphenValues
 	 *     cancelConcurrence=ID END (ambiguity) 'pool:' (END* (ambiguity) 'pool:')* END* BEGIN 'name:' vmName=ID
+	 *     concurrency=AnyData (ambiguity) 'pool:' (END* (ambiguity) 'pool:')* END* 'demands:' vmDemands=AnyData
+	 *     concurrency=AnyData (ambiguity) 'pool:' (END* (ambiguity) 'pool:')* END* 'demands:' vmDemands=HyphenValues
+	 *     concurrency=AnyData (ambiguity) 'pool:' (END* (ambiguity) 'pool:')* END* BEGIN 'name:' vmName=ID
+	 *     concurrency=ArrayList (ambiguity) 'pool:' (END* (ambiguity) 'pool:')* END* 'demands:' vmDemands=AnyData
+	 *     concurrency=ArrayList (ambiguity) 'pool:' (END* (ambiguity) 'pool:')* END* 'demands:' vmDemands=HyphenValues
+	 *     concurrency=ArrayList (ambiguity) 'pool:' (END* (ambiguity) 'pool:')* END* BEGIN 'name:' vmName=ID
+	 *     defaultShellValue=ID (ambiguity) 'pool:' (END* (ambiguity) 'pool:')* END* 'demands:' vmDemands=AnyData
+	 *     defaultShellValue=ID (ambiguity) 'pool:' (END* (ambiguity) 'pool:')* END* 'demands:' vmDemands=HyphenValues
+	 *     defaultShellValue=ID (ambiguity) 'pool:' (END* (ambiguity) 'pool:')* END* BEGIN 'name:' vmName=ID
 	 *     defaultShellValue=STRING (ambiguity) 'pool:' (END* (ambiguity) 'pool:')* END* 'demands:' vmDemands=AnyData
 	 *     defaultShellValue=STRING (ambiguity) 'pool:' (END* (ambiguity) 'pool:')* END* 'demands:' vmDemands=HyphenValues
 	 *     defaultShellValue=STRING (ambiguity) 'pool:' (END* (ambiguity) 'pool:')* END* BEGIN 'name:' vmName=ID
@@ -4798,18 +5406,24 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     version=VERSION (ambiguity) 'pool:' (END* (ambiguity) 'pool:')* END* BEGIN 'name:' vmName=ID
 	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* 'concurrency:' BEGIN 'group:' group=ID
+	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* 'concurrency:' concurrency=AnyData
+	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* 'concurrency:' concurrency=ArrayList
 	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* 'name:' name=UnquotedString
 	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* 'run-name:' runName=UnquotedString
 	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* 'version:' version=VERSION
+	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* 'working-directory:' defaultWDValue=ID
 	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* 'working-directory:' defaultWDValue=STRING
 	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* (rule end)
 	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* extendOrInclude='extends:'
 	 *     vmDemands=AnyData END+ (ambiguity) ('pool:' END+ (ambiguity))* extendOrInclude='include:'
 	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* 'concurrency:' BEGIN 'group:' group=ID
+	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* 'concurrency:' concurrency=AnyData
+	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* 'concurrency:' concurrency=ArrayList
 	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* 'name:' name=UnquotedString
 	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* 'run-name:' runName=UnquotedString
 	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* 'version:' version=VERSION
+	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* 'working-directory:' defaultWDValue=ID
 	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* 'working-directory:' defaultWDValue=STRING
 	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* (rule end)
 	 *     vmDemands=HyphenValues END+ (ambiguity) ('pool:' END+ (ambiguity))* extendOrInclude='extends:'
@@ -4933,6 +5547,12 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) 'permissions:' BEGIN (END (ambiguity) 'permissions:' BEGIN)* indPermissions+=IndPermissionValue
 	 *     cancelConcurrence=ID END (ambiguity) 'permissions:' (BEGIN END (ambiguity) 'permissions:')* allPermission=ID
 	 *     cancelConcurrence=ID END (ambiguity) 'permissions:' BEGIN (END (ambiguity) 'permissions:' BEGIN)* indPermissions+=IndPermissionValue
+	 *     concurrency=AnyData (ambiguity) 'permissions:' (BEGIN END (ambiguity) 'permissions:')* allPermission=ID
+	 *     concurrency=AnyData (ambiguity) 'permissions:' BEGIN (END (ambiguity) 'permissions:' BEGIN)* indPermissions+=IndPermissionValue
+	 *     concurrency=ArrayList (ambiguity) 'permissions:' (BEGIN END (ambiguity) 'permissions:')* allPermission=ID
+	 *     concurrency=ArrayList (ambiguity) 'permissions:' BEGIN (END (ambiguity) 'permissions:' BEGIN)* indPermissions+=IndPermissionValue
+	 *     defaultShellValue=ID (ambiguity) 'permissions:' (BEGIN END (ambiguity) 'permissions:')* allPermission=ID
+	 *     defaultShellValue=ID (ambiguity) 'permissions:' BEGIN (END (ambiguity) 'permissions:' BEGIN)* indPermissions+=IndPermissionValue
 	 *     defaultShellValue=STRING (ambiguity) 'permissions:' (BEGIN END (ambiguity) 'permissions:')* allPermission=ID
 	 *     defaultShellValue=STRING (ambiguity) 'permissions:' BEGIN (END (ambiguity) 'permissions:' BEGIN)* indPermissions+=IndPermissionValue
 	 *     extendedParameters+=ParameterValue END (ambiguity) 'permissions:' (BEGIN END (ambiguity) 'permissions:')* allPermission=ID
@@ -4940,9 +5560,12 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     indPermissions+=IndPermissionValue END (ambiguity) 'permissions:' (BEGIN END (ambiguity) 'permissions:')* allPermission=ID
 	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permissions:' BEGIN END (ambiguity))* 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permissions:' BEGIN END (ambiguity))* 'concurrency:' BEGIN 'group:' group=ID
+	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permissions:' BEGIN END (ambiguity))* 'concurrency:' concurrency=AnyData
+	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permissions:' BEGIN END (ambiguity))* 'concurrency:' concurrency=ArrayList
 	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permissions:' BEGIN END (ambiguity))* 'name:' name=UnquotedString
 	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permissions:' BEGIN END (ambiguity))* 'run-name:' runName=UnquotedString
 	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permissions:' BEGIN END (ambiguity))* 'version:' version=VERSION
+	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permissions:' BEGIN END (ambiguity))* 'working-directory:' defaultWDValue=ID
 	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permissions:' BEGIN END (ambiguity))* 'working-directory:' defaultWDValue=STRING
 	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permissions:' BEGIN END (ambiguity))* (rule end)
 	 *     indPermissions+=IndPermissionValue END (ambiguity) ('permissions:' BEGIN END (ambiguity))* extendOrInclude='extends:'
@@ -5023,6 +5646,9 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     allPermission=ID (ambiguity) 'resources:' BEGIN (END (ambiguity) 'resources:' BEGIN)* resources+=Resource
 	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) 'resources:' BEGIN (END (ambiguity) 'resources:' BEGIN)* resources+=Resource
 	 *     cancelConcurrence=ID END (ambiguity) 'resources:' BEGIN (END (ambiguity) 'resources:' BEGIN)* resources+=Resource
+	 *     concurrency=AnyData (ambiguity) 'resources:' BEGIN (END (ambiguity) 'resources:' BEGIN)* resources+=Resource
+	 *     concurrency=ArrayList (ambiguity) 'resources:' BEGIN (END (ambiguity) 'resources:' BEGIN)* resources+=Resource
+	 *     defaultShellValue=ID (ambiguity) 'resources:' BEGIN (END (ambiguity) 'resources:' BEGIN)* resources+=Resource
 	 *     defaultShellValue=STRING (ambiguity) 'resources:' BEGIN (END (ambiguity) 'resources:' BEGIN)* resources+=Resource
 	 *     extendedParameters+=ParameterValue END (ambiguity) 'resources:' BEGIN (END (ambiguity) 'resources:' BEGIN)* resources+=Resource
 	 *     name=UnquotedString (ambiguity) 'resources:' BEGIN (END (ambiguity) 'resources:' BEGIN)* resources+=Resource
@@ -5030,9 +5656,12 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     pplVariables+=Variable (ambiguity) 'resources:' BEGIN (END (ambiguity) 'resources:' BEGIN)* resources+=Resource
 	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* 'concurrency:' BEGIN 'group:' group=ID
+	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* 'concurrency:' concurrency=AnyData
+	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* 'concurrency:' concurrency=ArrayList
 	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* 'name:' name=UnquotedString
 	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* 'run-name:' runName=UnquotedString
 	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* 'version:' version=VERSION
+	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* 'working-directory:' defaultWDValue=ID
 	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* 'working-directory:' defaultWDValue=STRING
 	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* (rule end)
 	 *     resources+=Resource END (ambiguity) ('resources:' BEGIN END (ambiguity))* extendOrInclude='extends:'
@@ -5063,9 +5692,12 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     (rule start) (ambiguity)
 	 *     (rule start) (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     (rule start) (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
+	 *     (rule start) (ambiguity) 'concurrency:' concurrency=AnyData
+	 *     (rule start) (ambiguity) 'concurrency:' concurrency=ArrayList
 	 *     (rule start) (ambiguity) 'name:' name=UnquotedString
 	 *     (rule start) (ambiguity) 'run-name:' runName=UnquotedString
 	 *     (rule start) (ambiguity) 'version:' version=VERSION
+	 *     (rule start) (ambiguity) 'working-directory:' defaultWDValue=ID
 	 *     (rule start) (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     (rule start) (ambiguity) (rule start)
 	 *     (rule start) (ambiguity) extendOrInclude='extends:'
@@ -5073,9 +5705,12 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     allPermission=ID (ambiguity)
 	 *     allPermission=ID (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     allPermission=ID (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
+	 *     allPermission=ID (ambiguity) 'concurrency:' concurrency=AnyData
+	 *     allPermission=ID (ambiguity) 'concurrency:' concurrency=ArrayList
 	 *     allPermission=ID (ambiguity) 'name:' name=UnquotedString
 	 *     allPermission=ID (ambiguity) 'run-name:' runName=UnquotedString
 	 *     allPermission=ID (ambiguity) 'version:' version=VERSION
+	 *     allPermission=ID (ambiguity) 'working-directory:' defaultWDValue=ID
 	 *     allPermission=ID (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     allPermission=ID (ambiguity) (rule end)
 	 *     allPermission=ID (ambiguity) extendOrInclude='extends:'
@@ -5083,9 +5718,12 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity)
 	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
+	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) 'concurrency:' concurrency=AnyData
+	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) 'concurrency:' concurrency=ArrayList
 	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) 'name:' name=UnquotedString
 	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) 'run-name:' runName=UnquotedString
 	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) 'version:' version=VERSION
+	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) 'working-directory:' defaultWDValue=ID
 	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) (rule end)
 	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) extendOrInclude='extends:'
@@ -5093,19 +5731,64 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     cancelConcurrence=ID END (ambiguity)
 	 *     cancelConcurrence=ID END (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     cancelConcurrence=ID END (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
+	 *     cancelConcurrence=ID END (ambiguity) 'concurrency:' concurrency=AnyData
+	 *     cancelConcurrence=ID END (ambiguity) 'concurrency:' concurrency=ArrayList
 	 *     cancelConcurrence=ID END (ambiguity) 'name:' name=UnquotedString
 	 *     cancelConcurrence=ID END (ambiguity) 'run-name:' runName=UnquotedString
 	 *     cancelConcurrence=ID END (ambiguity) 'version:' version=VERSION
+	 *     cancelConcurrence=ID END (ambiguity) 'working-directory:' defaultWDValue=ID
 	 *     cancelConcurrence=ID END (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     cancelConcurrence=ID END (ambiguity) (rule end)
 	 *     cancelConcurrence=ID END (ambiguity) extendOrInclude='extends:'
 	 *     cancelConcurrence=ID END (ambiguity) extendOrInclude='include:'
+	 *     concurrency=AnyData (ambiguity)
+	 *     concurrency=AnyData (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
+	 *     concurrency=AnyData (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
+	 *     concurrency=AnyData (ambiguity) 'concurrency:' concurrency=AnyData
+	 *     concurrency=AnyData (ambiguity) 'concurrency:' concurrency=ArrayList
+	 *     concurrency=AnyData (ambiguity) 'name:' name=UnquotedString
+	 *     concurrency=AnyData (ambiguity) 'run-name:' runName=UnquotedString
+	 *     concurrency=AnyData (ambiguity) 'version:' version=VERSION
+	 *     concurrency=AnyData (ambiguity) 'working-directory:' defaultWDValue=ID
+	 *     concurrency=AnyData (ambiguity) 'working-directory:' defaultWDValue=STRING
+	 *     concurrency=AnyData (ambiguity) (rule end)
+	 *     concurrency=AnyData (ambiguity) extendOrInclude='extends:'
+	 *     concurrency=AnyData (ambiguity) extendOrInclude='include:'
+	 *     concurrency=ArrayList (ambiguity)
+	 *     concurrency=ArrayList (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
+	 *     concurrency=ArrayList (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
+	 *     concurrency=ArrayList (ambiguity) 'concurrency:' concurrency=AnyData
+	 *     concurrency=ArrayList (ambiguity) 'concurrency:' concurrency=ArrayList
+	 *     concurrency=ArrayList (ambiguity) 'name:' name=UnquotedString
+	 *     concurrency=ArrayList (ambiguity) 'run-name:' runName=UnquotedString
+	 *     concurrency=ArrayList (ambiguity) 'version:' version=VERSION
+	 *     concurrency=ArrayList (ambiguity) 'working-directory:' defaultWDValue=ID
+	 *     concurrency=ArrayList (ambiguity) 'working-directory:' defaultWDValue=STRING
+	 *     concurrency=ArrayList (ambiguity) (rule end)
+	 *     concurrency=ArrayList (ambiguity) extendOrInclude='extends:'
+	 *     concurrency=ArrayList (ambiguity) extendOrInclude='include:'
+	 *     defaultShellValue=ID (ambiguity)
+	 *     defaultShellValue=ID (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
+	 *     defaultShellValue=ID (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
+	 *     defaultShellValue=ID (ambiguity) 'concurrency:' concurrency=AnyData
+	 *     defaultShellValue=ID (ambiguity) 'concurrency:' concurrency=ArrayList
+	 *     defaultShellValue=ID (ambiguity) 'name:' name=UnquotedString
+	 *     defaultShellValue=ID (ambiguity) 'run-name:' runName=UnquotedString
+	 *     defaultShellValue=ID (ambiguity) 'version:' version=VERSION
+	 *     defaultShellValue=ID (ambiguity) 'working-directory:' defaultWDValue=ID
+	 *     defaultShellValue=ID (ambiguity) 'working-directory:' defaultWDValue=STRING
+	 *     defaultShellValue=ID (ambiguity) (rule end)
+	 *     defaultShellValue=ID (ambiguity) extendOrInclude='extends:'
+	 *     defaultShellValue=ID (ambiguity) extendOrInclude='include:'
 	 *     defaultShellValue=STRING (ambiguity)
 	 *     defaultShellValue=STRING (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     defaultShellValue=STRING (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
+	 *     defaultShellValue=STRING (ambiguity) 'concurrency:' concurrency=AnyData
+	 *     defaultShellValue=STRING (ambiguity) 'concurrency:' concurrency=ArrayList
 	 *     defaultShellValue=STRING (ambiguity) 'name:' name=UnquotedString
 	 *     defaultShellValue=STRING (ambiguity) 'run-name:' runName=UnquotedString
 	 *     defaultShellValue=STRING (ambiguity) 'version:' version=VERSION
+	 *     defaultShellValue=STRING (ambiguity) 'working-directory:' defaultWDValue=ID
 	 *     defaultShellValue=STRING (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     defaultShellValue=STRING (ambiguity) (rule end)
 	 *     defaultShellValue=STRING (ambiguity) extendOrInclude='extends:'
@@ -5113,9 +5796,12 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     extendedParameters+=ParameterValue END (ambiguity)
 	 *     extendedParameters+=ParameterValue END (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     extendedParameters+=ParameterValue END (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
+	 *     extendedParameters+=ParameterValue END (ambiguity) 'concurrency:' concurrency=AnyData
+	 *     extendedParameters+=ParameterValue END (ambiguity) 'concurrency:' concurrency=ArrayList
 	 *     extendedParameters+=ParameterValue END (ambiguity) 'name:' name=UnquotedString
 	 *     extendedParameters+=ParameterValue END (ambiguity) 'run-name:' runName=UnquotedString
 	 *     extendedParameters+=ParameterValue END (ambiguity) 'version:' version=VERSION
+	 *     extendedParameters+=ParameterValue END (ambiguity) 'working-directory:' defaultWDValue=ID
 	 *     extendedParameters+=ParameterValue END (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     extendedParameters+=ParameterValue END (ambiguity) (rule end)
 	 *     extendedParameters+=ParameterValue END (ambiguity) extendOrInclude='extends:'
@@ -5123,9 +5809,12 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     name=UnquotedString (ambiguity)
 	 *     name=UnquotedString (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     name=UnquotedString (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
+	 *     name=UnquotedString (ambiguity) 'concurrency:' concurrency=AnyData
+	 *     name=UnquotedString (ambiguity) 'concurrency:' concurrency=ArrayList
 	 *     name=UnquotedString (ambiguity) 'name:' name=UnquotedString
 	 *     name=UnquotedString (ambiguity) 'run-name:' runName=UnquotedString
 	 *     name=UnquotedString (ambiguity) 'version:' version=VERSION
+	 *     name=UnquotedString (ambiguity) 'working-directory:' defaultWDValue=ID
 	 *     name=UnquotedString (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     name=UnquotedString (ambiguity) (rule end)
 	 *     name=UnquotedString (ambiguity) extendOrInclude='extends:'
@@ -5133,9 +5822,12 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     parameterValues+=ParameterValue (ambiguity)
 	 *     parameterValues+=ParameterValue (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     parameterValues+=ParameterValue (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
+	 *     parameterValues+=ParameterValue (ambiguity) 'concurrency:' concurrency=AnyData
+	 *     parameterValues+=ParameterValue (ambiguity) 'concurrency:' concurrency=ArrayList
 	 *     parameterValues+=ParameterValue (ambiguity) 'name:' name=UnquotedString
 	 *     parameterValues+=ParameterValue (ambiguity) 'run-name:' runName=UnquotedString
 	 *     parameterValues+=ParameterValue (ambiguity) 'version:' version=VERSION
+	 *     parameterValues+=ParameterValue (ambiguity) 'working-directory:' defaultWDValue=ID
 	 *     parameterValues+=ParameterValue (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     parameterValues+=ParameterValue (ambiguity) (rule end)
 	 *     parameterValues+=ParameterValue (ambiguity) extendOrInclude='extends:'
@@ -5143,9 +5835,12 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     pplVariables+=Variable (ambiguity)
 	 *     pplVariables+=Variable (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     pplVariables+=Variable (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
+	 *     pplVariables+=Variable (ambiguity) 'concurrency:' concurrency=AnyData
+	 *     pplVariables+=Variable (ambiguity) 'concurrency:' concurrency=ArrayList
 	 *     pplVariables+=Variable (ambiguity) 'name:' name=UnquotedString
 	 *     pplVariables+=Variable (ambiguity) 'run-name:' runName=UnquotedString
 	 *     pplVariables+=Variable (ambiguity) 'version:' version=VERSION
+	 *     pplVariables+=Variable (ambiguity) 'working-directory:' defaultWDValue=ID
 	 *     pplVariables+=Variable (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     pplVariables+=Variable (ambiguity) (rule end)
 	 *     pplVariables+=Variable (ambiguity) extendOrInclude='extends:'
@@ -5153,9 +5848,12 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     runName=UnquotedString (ambiguity)
 	 *     runName=UnquotedString (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     runName=UnquotedString (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
+	 *     runName=UnquotedString (ambiguity) 'concurrency:' concurrency=AnyData
+	 *     runName=UnquotedString (ambiguity) 'concurrency:' concurrency=ArrayList
 	 *     runName=UnquotedString (ambiguity) 'name:' name=UnquotedString
 	 *     runName=UnquotedString (ambiguity) 'run-name:' runName=UnquotedString
 	 *     runName=UnquotedString (ambiguity) 'version:' version=VERSION
+	 *     runName=UnquotedString (ambiguity) 'working-directory:' defaultWDValue=ID
 	 *     runName=UnquotedString (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     runName=UnquotedString (ambiguity) (rule end)
 	 *     runName=UnquotedString (ambiguity) extendOrInclude='extends:'
@@ -5163,9 +5861,12 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     version=VERSION (ambiguity)
 	 *     version=VERSION (ambiguity) 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     version=VERSION (ambiguity) 'concurrency:' BEGIN 'group:' group=ID
+	 *     version=VERSION (ambiguity) 'concurrency:' concurrency=AnyData
+	 *     version=VERSION (ambiguity) 'concurrency:' concurrency=ArrayList
 	 *     version=VERSION (ambiguity) 'name:' name=UnquotedString
 	 *     version=VERSION (ambiguity) 'run-name:' runName=UnquotedString
 	 *     version=VERSION (ambiguity) 'version:' version=VERSION
+	 *     version=VERSION (ambiguity) 'working-directory:' defaultWDValue=ID
 	 *     version=VERSION (ambiguity) 'working-directory:' defaultWDValue=STRING
 	 *     version=VERSION (ambiguity) (rule end)
 	 *     version=VERSION (ambiguity) extendOrInclude='extends:'
@@ -5194,12 +5895,18 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     allPermission=ID (ambiguity) 'env:' BEGIN (END (ambiguity) 'env:' BEGIN)* '-'? env+=KeyValue
 	 *     cancelConcurrence=COMPLEX_EXPRESSION END (ambiguity) 'env:' BEGIN (END (ambiguity) 'env:' BEGIN)* '-'? env+=KeyValue
 	 *     cancelConcurrence=ID END (ambiguity) 'env:' BEGIN (END (ambiguity) 'env:' BEGIN)* '-'? env+=KeyValue
+	 *     concurrency=AnyData (ambiguity) 'env:' BEGIN (END (ambiguity) 'env:' BEGIN)* '-'? env+=KeyValue
+	 *     concurrency=ArrayList (ambiguity) 'env:' BEGIN (END (ambiguity) 'env:' BEGIN)* '-'? env+=KeyValue
+	 *     defaultShellValue=ID (ambiguity) 'env:' BEGIN (END (ambiguity) 'env:' BEGIN)* '-'? env+=KeyValue
 	 *     defaultShellValue=STRING (ambiguity) 'env:' BEGIN (END (ambiguity) 'env:' BEGIN)* '-'? env+=KeyValue
 	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* 'concurrency:' BEGIN 'group:' group=COMPLEX_EXPRESSION
 	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* 'concurrency:' BEGIN 'group:' group=ID
+	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* 'concurrency:' concurrency=AnyData
+	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* 'concurrency:' concurrency=ArrayList
 	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* 'name:' name=UnquotedString
 	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* 'run-name:' runName=UnquotedString
 	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* 'version:' version=VERSION
+	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* 'working-directory:' defaultWDValue=ID
 	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* 'working-directory:' defaultWDValue=STRING
 	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* (rule end)
 	 *     env+=KeyValue END (ambiguity) ('env:' BEGIN END (ambiguity))* extendOrInclude='extends:'
@@ -5591,19 +6298,34 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	/**
 	 * <pre>
 	 * Ambiguous syntax:
+	 *     (BEGIN END)?
+	 *
+	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'workflow_dispatch:' (ambiguity) (rule start)
+	 *     workflowTypeKW='workflow_call:' (ambiguity) (rule end)
+	 
+	 * </pre>
+	 */
+	protected void emit_Event___BEGINTerminalRuleCall_1_1_1_0_ENDTerminalRuleCall_1_1_1_2__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * <pre>
+	 * Ambiguous syntax:
 	 *     ':'?
 	 *
 	 * This ambiguous syntax occurs at:
-	 *     jobName=ID (ambiguity) BEGIN 'steps:' steps+=Step
-	 *     jobName=ID (ambiguity) BEGIN 'steps:'? END (rule end)
-	 *     jobName=ID (ambiguity) BEGIN dependKW='dependsOn:'
-	 *     jobName=ID (ambiguity) BEGIN dependKW='needs:'
-	 *     jobName=ID (ambiguity) BEGIN jobParameterValues+=ParameterValue
-	 *     jobName=STRING (ambiguity) BEGIN 'steps:' steps+=Step
-	 *     jobName=STRING (ambiguity) BEGIN 'steps:'? END (rule end)
-	 *     jobName=STRING (ambiguity) BEGIN dependKW='dependsOn:'
-	 *     jobName=STRING (ambiguity) BEGIN dependKW='needs:'
-	 *     jobName=STRING (ambiguity) BEGIN jobParameterValues+=ParameterValue
+	 *     name=ID (ambiguity) BEGIN 'steps:' steps+=Step
+	 *     name=ID (ambiguity) BEGIN 'steps:'? END (rule end)
+	 *     name=ID (ambiguity) BEGIN dependKW='dependsOn:'
+	 *     name=ID (ambiguity) BEGIN dependKW='needs:'
+	 *     name=ID (ambiguity) BEGIN jobParameterValues+=ParameterValue
+	 *     name=STRING (ambiguity) BEGIN 'steps:' steps+=Step
+	 *     name=STRING (ambiguity) BEGIN 'steps:'? END (rule end)
+	 *     name=STRING (ambiguity) BEGIN dependKW='dependsOn:'
+	 *     name=STRING (ambiguity) BEGIN dependKW='needs:'
+	 *     name=STRING (ambiguity) BEGIN jobParameterValues+=ParameterValue
 	 
 	 * </pre>
 	 */
@@ -5619,9 +6341,9 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 * This ambiguous syntax occurs at:
 	 *     dependKW='dependsOn:' 'none' (ambiguity) END (rule end)
 	 *     dependKW='needs:' 'none' (ambiguity) END (rule end)
-	 *     jobName=ID ':'? BEGIN (ambiguity) END (rule end)
-	 *     jobName=STRING ':'? BEGIN (ambiguity) END (rule end)
 	 *     jobParameterValues+=ParameterValue (ambiguity) END (rule end)
+	 *     name=ID ':'? BEGIN (ambiguity) END (rule end)
+	 *     name=STRING ':'? BEGIN (ambiguity) END (rule end)
 	 *     references+=[Job|ID] ']' (ambiguity) END (rule end)
 	 *     references+=[Job|ID] (ambiguity) END (rule end)
 	 
@@ -5637,8 +6359,8 @@ public class PipelineSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('-' ('job:' | 'deployment:'))?
 	 *
 	 * This ambiguous syntax occurs at:
-	 *     (rule start) (ambiguity) jobName=ID
-	 *     (rule start) (ambiguity) jobName=STRING
+	 *     (rule start) (ambiguity) name=ID
+	 *     (rule start) (ambiguity) name=STRING
 	 
 	 * </pre>
 	 */

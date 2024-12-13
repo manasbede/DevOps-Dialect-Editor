@@ -37,9 +37,13 @@ public class PipelineParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getPipelineAccess().getAlternatives_1_0_2(), "rule__Pipeline__Alternatives_1_0_2");
 			builder.put(grammarAccess.getPipelineAccess().getJobOrStageVarAlternatives_2_0_0(), "rule__Pipeline__JobOrStageVarAlternatives_2_0_0");
 			builder.put(grammarAccess.getPipelineAccess().getAlternatives_2_1(), "rule__Pipeline__Alternatives_2_1");
+			builder.put(grammarAccess.getConfigurationsAccess().getDefaultShellValueAlternatives_2_0_4_1_0(), "rule__Configurations__DefaultShellValueAlternatives_2_0_4_1_0");
+			builder.put(grammarAccess.getConfigurationsAccess().getDefaultWDValueAlternatives_2_1_0_1_0(), "rule__Configurations__DefaultWDValueAlternatives_2_1_0_1_0");
 			builder.put(grammarAccess.getConfigurationsAccess().getAlternatives_4_1(), "rule__Configurations__Alternatives_4_1");
-			builder.put(grammarAccess.getConfigurationsAccess().getGroupAlternatives_5_1_1_1_0(), "rule__Configurations__GroupAlternatives_5_1_1_1_0");
-			builder.put(grammarAccess.getConfigurationsAccess().getCancelConcurrenceAlternatives_5_1_2_1_0(), "rule__Configurations__CancelConcurrenceAlternatives_5_1_2_1_0");
+			builder.put(grammarAccess.getConfigurationsAccess().getAlternatives_5_1(), "rule__Configurations__Alternatives_5_1");
+			builder.put(grammarAccess.getConfigurationsAccess().getGroupAlternatives_5_1_0_1_1_0(), "rule__Configurations__GroupAlternatives_5_1_0_1_1_0");
+			builder.put(grammarAccess.getConfigurationsAccess().getCancelConcurrenceAlternatives_5_1_0_2_1_0(), "rule__Configurations__CancelConcurrenceAlternatives_5_1_0_2_1_0");
+			builder.put(grammarAccess.getConfigurationsAccess().getConcurrencyAlternatives_5_1_1_0(), "rule__Configurations__ConcurrencyAlternatives_5_1_1_0");
 			builder.put(grammarAccess.getConfigurationsAccess().getVmImageAlternatives_6_1_0_2_1_0(), "rule__Configurations__VmImageAlternatives_6_1_0_2_1_0");
 			builder.put(grammarAccess.getConfigurationsAccess().getVmDemandsAlternatives_6_1_1_0_1_0(), "rule__Configurations__VmDemandsAlternatives_6_1_1_0_1_0");
 			builder.put(grammarAccess.getConfigurationsAccess().getExtendOrIncludeAlternatives_11_0_0(), "rule__Configurations__ExtendOrIncludeAlternatives_11_0_0");
@@ -67,7 +71,7 @@ public class PipelineParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getStageAccess().getVmImageAlternatives_1_1_1_1_0_2_1_0(), "rule__Stage__VmImageAlternatives_1_1_1_1_0_2_1_0");
 			builder.put(grammarAccess.getStageAccess().getVmDemandsAlternatives_1_1_1_1_1_0_1_0(), "rule__Stage__VmDemandsAlternatives_1_1_1_1_1_0_1_0");
 			builder.put(grammarAccess.getJobAccess().getAlternatives_0_0_1(), "rule__Job__Alternatives_0_0_1");
-			builder.put(grammarAccess.getJobAccess().getJobNameAlternatives_0_1_0(), "rule__Job__JobNameAlternatives_0_1_0");
+			builder.put(grammarAccess.getJobAccess().getNameAlternatives_0_1_0(), "rule__Job__NameAlternatives_0_1_0");
 			builder.put(grammarAccess.getJobAccess().getDependKWAlternatives_1_2_0_0(), "rule__Job__DependKWAlternatives_1_2_0_0");
 			builder.put(grammarAccess.getJobAccess().getAlternatives_1_2_1(), "rule__Job__Alternatives_1_2_1");
 			builder.put(grammarAccess.getJobAccess().getAlternatives_1_2_1_0(), "rule__Job__Alternatives_1_2_1_0");
@@ -113,9 +117,9 @@ public class PipelineParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getConfigurationsAccess().getGroup_4(), "rule__Configurations__Group_4__0");
 			builder.put(grammarAccess.getConfigurationsAccess().getGroup_4_1_1(), "rule__Configurations__Group_4_1_1__0");
 			builder.put(grammarAccess.getConfigurationsAccess().getGroup_5(), "rule__Configurations__Group_5__0");
-			builder.put(grammarAccess.getConfigurationsAccess().getGroup_5_1(), "rule__Configurations__Group_5_1__0");
-			builder.put(grammarAccess.getConfigurationsAccess().getGroup_5_1_1(), "rule__Configurations__Group_5_1_1__0");
-			builder.put(grammarAccess.getConfigurationsAccess().getGroup_5_1_2(), "rule__Configurations__Group_5_1_2__0");
+			builder.put(grammarAccess.getConfigurationsAccess().getGroup_5_1_0(), "rule__Configurations__Group_5_1_0__0");
+			builder.put(grammarAccess.getConfigurationsAccess().getGroup_5_1_0_1(), "rule__Configurations__Group_5_1_0_1__0");
+			builder.put(grammarAccess.getConfigurationsAccess().getGroup_5_1_0_2(), "rule__Configurations__Group_5_1_0_2__0");
 			builder.put(grammarAccess.getConfigurationsAccess().getGroup_6(), "rule__Configurations__Group_6__0");
 			builder.put(grammarAccess.getConfigurationsAccess().getGroup_6_1_0(), "rule__Configurations__Group_6_1_0__0");
 			builder.put(grammarAccess.getConfigurationsAccess().getGroup_6_1_0_1(), "rule__Configurations__Group_6_1_0_1__0");
@@ -259,8 +263,9 @@ public class PipelineParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getConfigurationsAccess().getEnvAssignment_3_2_1(), "rule__Configurations__EnvAssignment_3_2_1");
 			builder.put(grammarAccess.getConfigurationsAccess().getAllPermissionAssignment_4_1_0(), "rule__Configurations__AllPermissionAssignment_4_1_0");
 			builder.put(grammarAccess.getConfigurationsAccess().getIndPermissionsAssignment_4_1_1_1(), "rule__Configurations__IndPermissionsAssignment_4_1_1_1");
-			builder.put(grammarAccess.getConfigurationsAccess().getGroupAssignment_5_1_1_1(), "rule__Configurations__GroupAssignment_5_1_1_1");
-			builder.put(grammarAccess.getConfigurationsAccess().getCancelConcurrenceAssignment_5_1_2_1(), "rule__Configurations__CancelConcurrenceAssignment_5_1_2_1");
+			builder.put(grammarAccess.getConfigurationsAccess().getGroupAssignment_5_1_0_1_1(), "rule__Configurations__GroupAssignment_5_1_0_1_1");
+			builder.put(grammarAccess.getConfigurationsAccess().getCancelConcurrenceAssignment_5_1_0_2_1(), "rule__Configurations__CancelConcurrenceAssignment_5_1_0_2_1");
+			builder.put(grammarAccess.getConfigurationsAccess().getConcurrencyAssignment_5_1_1(), "rule__Configurations__ConcurrencyAssignment_5_1_1");
 			builder.put(grammarAccess.getConfigurationsAccess().getVmNameAssignment_6_1_0_1_1(), "rule__Configurations__VmNameAssignment_6_1_0_1_1");
 			builder.put(grammarAccess.getConfigurationsAccess().getVmImageAssignment_6_1_0_2_1(), "rule__Configurations__VmImageAssignment_6_1_0_2_1");
 			builder.put(grammarAccess.getConfigurationsAccess().getVmDemandsAssignment_6_1_1_0_1(), "rule__Configurations__VmDemandsAssignment_6_1_1_0_1");
@@ -332,7 +337,7 @@ public class PipelineParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getStageAccess().getStageVariablesAssignment_1_4_1(), "rule__Stage__StageVariablesAssignment_1_4_1");
 			builder.put(grammarAccess.getStageAccess().getDependsOnAssignment_1_5_1(), "rule__Stage__DependsOnAssignment_1_5_1");
 			builder.put(grammarAccess.getStageAccess().getJobsAssignment_1_6_0_1(), "rule__Stage__JobsAssignment_1_6_0_1");
-			builder.put(grammarAccess.getJobAccess().getJobNameAssignment_0_1(), "rule__Job__JobNameAssignment_0_1");
+			builder.put(grammarAccess.getJobAccess().getNameAssignment_0_1(), "rule__Job__NameAssignment_0_1");
 			builder.put(grammarAccess.getJobAccess().getJobParameterValuesAssignment_1_1(), "rule__Job__JobParameterValuesAssignment_1_1");
 			builder.put(grammarAccess.getJobAccess().getDependKWAssignment_1_2_0(), "rule__Job__DependKWAssignment_1_2_0");
 			builder.put(grammarAccess.getJobAccess().getReferencesAssignment_1_2_1_0_0(), "rule__Job__ReferencesAssignment_1_2_1_0_0");

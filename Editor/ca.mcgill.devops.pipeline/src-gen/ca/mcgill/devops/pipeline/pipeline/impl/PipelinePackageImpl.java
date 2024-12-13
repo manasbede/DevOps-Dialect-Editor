@@ -402,7 +402,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getConfigurations_VmName()
+  public EAttribute getConfigurations_Concurrency()
   {
     return (EAttribute)configurationsEClass.getEStructuralFeatures().get(9);
   }
@@ -413,7 +413,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getConfigurations_VmImage()
+  public EAttribute getConfigurations_VmName()
   {
     return (EAttribute)configurationsEClass.getEStructuralFeatures().get(10);
   }
@@ -424,7 +424,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getConfigurations_VmDemands()
+  public EAttribute getConfigurations_VmImage()
   {
     return (EAttribute)configurationsEClass.getEStructuralFeatures().get(11);
   }
@@ -435,9 +435,20 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
+  public EAttribute getConfigurations_VmDemands()
+  {
+    return (EAttribute)configurationsEClass.getEStructuralFeatures().get(12);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
   public EReference getConfigurations_Resources()
   {
-    return (EReference)configurationsEClass.getEStructuralFeatures().get(12);
+    return (EReference)configurationsEClass.getEStructuralFeatures().get(13);
   }
 
   /**
@@ -448,7 +459,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
   @Override
   public EAttribute getConfigurations_Version()
   {
-    return (EAttribute)configurationsEClass.getEStructuralFeatures().get(13);
+    return (EAttribute)configurationsEClass.getEStructuralFeatures().get(14);
   }
 
   /**
@@ -459,7 +470,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
   @Override
   public EReference getConfigurations_PplVariables()
   {
-    return (EReference)configurationsEClass.getEStructuralFeatures().get(14);
+    return (EReference)configurationsEClass.getEStructuralFeatures().get(15);
   }
 
   /**
@@ -470,7 +481,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
   @Override
   public EReference getConfigurations_ParameterValues()
   {
-    return (EReference)configurationsEClass.getEStructuralFeatures().get(15);
+    return (EReference)configurationsEClass.getEStructuralFeatures().get(16);
   }
 
   /**
@@ -481,7 +492,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
   @Override
   public EAttribute getConfigurations_ExtendOrInclude()
   {
-    return (EAttribute)configurationsEClass.getEStructuralFeatures().get(16);
+    return (EAttribute)configurationsEClass.getEStructuralFeatures().get(17);
   }
 
   /**
@@ -492,7 +503,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
   @Override
   public EReference getConfigurations_ExtendedParameters()
   {
-    return (EReference)configurationsEClass.getEStructuralFeatures().get(17);
+    return (EReference)configurationsEClass.getEStructuralFeatures().get(18);
   }
 
   /**
@@ -1084,7 +1095,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
    * @generated
    */
   @Override
-  public EAttribute getJob_JobName()
+  public EAttribute getJob_Name()
   {
     return (EAttribute)jobEClass.getEStructuralFeatures().get(0);
   }
@@ -1379,6 +1390,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     createEAttribute(configurationsEClass, CONFIGURATIONS__IND_PERMISSIONS);
     createEAttribute(configurationsEClass, CONFIGURATIONS__GROUP);
     createEAttribute(configurationsEClass, CONFIGURATIONS__CANCEL_CONCURRENCE);
+    createEAttribute(configurationsEClass, CONFIGURATIONS__CONCURRENCY);
     createEAttribute(configurationsEClass, CONFIGURATIONS__VM_NAME);
     createEAttribute(configurationsEClass, CONFIGURATIONS__VM_IMAGE);
     createEAttribute(configurationsEClass, CONFIGURATIONS__VM_DEMANDS);
@@ -1449,7 +1461,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     createEReference(stageEClass, STAGE__JOBS);
 
     jobEClass = createEClass(JOB);
-    createEAttribute(jobEClass, JOB__JOB_NAME);
+    createEAttribute(jobEClass, JOB__NAME);
     createEReference(jobEClass, JOB__JOB_PARAMETER_VALUES);
     createEAttribute(jobEClass, JOB__DEPEND_KW);
     createEReference(jobEClass, JOB__REFERENCES);
@@ -1530,6 +1542,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     initEAttribute(getConfigurations_IndPermissions(), ecorePackage.getEString(), "indPermissions", null, 0, -1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getConfigurations_Group(), ecorePackage.getEString(), "group", null, 0, 1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getConfigurations_CancelConcurrence(), ecorePackage.getEString(), "cancelConcurrence", null, 0, 1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getConfigurations_Concurrency(), ecorePackage.getEString(), "concurrency", null, 0, 1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getConfigurations_VmName(), ecorePackage.getEString(), "vmName", null, 0, 1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getConfigurations_VmImage(), ecorePackage.getEString(), "vmImage", null, 0, 1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getConfigurations_VmDemands(), ecorePackage.getEString(), "vmDemands", null, 0, 1, Configurations.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1600,7 +1613,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     initEReference(getStage_Jobs(), this.getJob(), null, "jobs", null, 0, -1, Stage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(jobEClass, Job.class, "Job", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getJob_JobName(), ecorePackage.getEString(), "jobName", null, 0, 1, Job.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getJob_Name(), ecorePackage.getEString(), "name", null, 0, 1, Job.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getJob_JobParameterValues(), this.getParameterValue(), null, "jobParameterValues", null, 0, -1, Job.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getJob_DependKW(), ecorePackage.getEString(), "dependKW", null, 0, 1, Job.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getJob_References(), this.getJob(), null, "references", null, 0, -1, Job.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1720,6 +1733,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_INCLUDE);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_TYPES);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_BATCH);
+    addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_STATUS);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_AUTO_CANCEL);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_WORKFLOWS);
     addEEnumLiteral(pipelineKeywordEEnum, PipelineKeyword.PPL_KW_DRAFTS);

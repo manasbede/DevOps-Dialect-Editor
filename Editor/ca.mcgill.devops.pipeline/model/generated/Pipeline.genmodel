@@ -100,6 +100,7 @@
       <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_INCLUDE"/>
       <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_TYPES"/>
       <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_BATCH"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_STATUS"/>
       <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_AUTO_CANCEL"/>
       <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_WORKFLOWS"/>
       <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_DRAFTS"/>
@@ -253,6 +254,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Configurations/indPermissions"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Configurations/group"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Configurations/cancelConcurrence"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Configurations/concurrency"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Configurations/vmName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Configurations/vmImage"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Configurations/vmDemands"/>
@@ -323,7 +325,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Stage/jobs"/>
     </genClasses>
     <genClasses ecoreClass="Pipeline.ecore#//Job">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Job/jobName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Job/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Job/jobParameterValues"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Job/dependKW"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Job/references"/>

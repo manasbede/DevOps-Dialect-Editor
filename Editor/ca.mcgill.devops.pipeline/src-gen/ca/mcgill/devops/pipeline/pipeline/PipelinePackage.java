@@ -214,13 +214,22 @@ public interface PipelinePackage extends EPackage
   int CONFIGURATIONS__CANCEL_CONCURRENCE = 8;
 
   /**
+   * The feature id for the '<em><b>Concurrency</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int CONFIGURATIONS__CONCURRENCY = 9;
+
+  /**
    * The feature id for the '<em><b>Vm Name</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int CONFIGURATIONS__VM_NAME = 9;
+  int CONFIGURATIONS__VM_NAME = 10;
 
   /**
    * The feature id for the '<em><b>Vm Image</b></em>' attribute.
@@ -229,7 +238,7 @@ public interface PipelinePackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATIONS__VM_IMAGE = 10;
+  int CONFIGURATIONS__VM_IMAGE = 11;
 
   /**
    * The feature id for the '<em><b>Vm Demands</b></em>' attribute.
@@ -238,7 +247,7 @@ public interface PipelinePackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATIONS__VM_DEMANDS = 11;
+  int CONFIGURATIONS__VM_DEMANDS = 12;
 
   /**
    * The feature id for the '<em><b>Resources</b></em>' containment reference list.
@@ -247,7 +256,7 @@ public interface PipelinePackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATIONS__RESOURCES = 12;
+  int CONFIGURATIONS__RESOURCES = 13;
 
   /**
    * The feature id for the '<em><b>Version</b></em>' attribute.
@@ -256,7 +265,7 @@ public interface PipelinePackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATIONS__VERSION = 13;
+  int CONFIGURATIONS__VERSION = 14;
 
   /**
    * The feature id for the '<em><b>Ppl Variables</b></em>' containment reference list.
@@ -265,7 +274,7 @@ public interface PipelinePackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATIONS__PPL_VARIABLES = 14;
+  int CONFIGURATIONS__PPL_VARIABLES = 15;
 
   /**
    * The feature id for the '<em><b>Parameter Values</b></em>' containment reference list.
@@ -274,7 +283,7 @@ public interface PipelinePackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATIONS__PARAMETER_VALUES = 15;
+  int CONFIGURATIONS__PARAMETER_VALUES = 16;
 
   /**
    * The feature id for the '<em><b>Extend Or Include</b></em>' attribute.
@@ -283,7 +292,7 @@ public interface PipelinePackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATIONS__EXTEND_OR_INCLUDE = 16;
+  int CONFIGURATIONS__EXTEND_OR_INCLUDE = 17;
 
   /**
    * The feature id for the '<em><b>Extended Parameters</b></em>' containment reference list.
@@ -292,7 +301,7 @@ public interface PipelinePackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATIONS__EXTENDED_PARAMETERS = 17;
+  int CONFIGURATIONS__EXTENDED_PARAMETERS = 18;
 
   /**
    * The number of structural features of the '<em>Configurations</em>' class.
@@ -301,7 +310,7 @@ public interface PipelinePackage extends EPackage
    * @generated
    * @ordered
    */
-  int CONFIGURATIONS_FEATURE_COUNT = 18;
+  int CONFIGURATIONS_FEATURE_COUNT = 19;
 
   /**
    * The meta object id for the '{@link ca.mcgill.devops.pipeline.pipeline.impl.VariableImpl <em>Variable</em>}' class.
@@ -852,13 +861,13 @@ public interface PipelinePackage extends EPackage
   int JOB = 9;
 
   /**
-   * The feature id for the '<em><b>Job Name</b></em>' attribute.
+   * The feature id for the '<em><b>Name</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int JOB__JOB_NAME = 0;
+  int JOB__NAME = 0;
 
   /**
    * The feature id for the '<em><b>Job Parameter Values</b></em>' containment reference list.
@@ -1302,6 +1311,17 @@ public interface PipelinePackage extends EPackage
    * @generated
    */
   EAttribute getConfigurations_CancelConcurrence();
+
+  /**
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Configurations#getConcurrency <em>Concurrency</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Concurrency</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Configurations#getConcurrency()
+   * @see #getConfigurations()
+   * @generated
+   */
+  EAttribute getConfigurations_Concurrency();
 
   /**
    * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Configurations#getVmName <em>Vm Name</em>}'.
@@ -1978,15 +1998,15 @@ public interface PipelinePackage extends EPackage
   EClass getJob();
 
   /**
-   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Job#getJobName <em>Job Name</em>}'.
+   * Returns the meta object for the attribute '{@link ca.mcgill.devops.pipeline.pipeline.Job#getName <em>Name</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Job Name</em>'.
-   * @see ca.mcgill.devops.pipeline.pipeline.Job#getJobName()
+   * @return the meta object for the attribute '<em>Name</em>'.
+   * @see ca.mcgill.devops.pipeline.pipeline.Job#getName()
    * @see #getJob()
    * @generated
    */
-  EAttribute getJob_JobName();
+  EAttribute getJob_Name();
 
   /**
    * Returns the meta object for the containment reference list '{@link ca.mcgill.devops.pipeline.pipeline.Job#getJobParameterValues <em>Job Parameter Values</em>}'.
@@ -2377,6 +2397,14 @@ public interface PipelinePackage extends EPackage
      * @generated
      */
     EAttribute CONFIGURATIONS__CANCEL_CONCURRENCE = eINSTANCE.getConfigurations_CancelConcurrence();
+
+    /**
+     * The meta object literal for the '<em><b>Concurrency</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute CONFIGURATIONS__CONCURRENCY = eINSTANCE.getConfigurations_Concurrency();
 
     /**
      * The meta object literal for the '<em><b>Vm Name</b></em>' attribute feature.
@@ -2891,12 +2919,12 @@ public interface PipelinePackage extends EPackage
     EClass JOB = eINSTANCE.getJob();
 
     /**
-     * The meta object literal for the '<em><b>Job Name</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute JOB__JOB_NAME = eINSTANCE.getJob_JobName();
+    EAttribute JOB__NAME = eINSTANCE.getJob_Name();
 
     /**
      * The meta object literal for the '<em><b>Job Parameter Values</b></em>' containment reference list feature.

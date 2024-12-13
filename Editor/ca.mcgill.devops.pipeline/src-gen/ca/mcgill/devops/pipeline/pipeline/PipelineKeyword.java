@@ -251,6 +251,16 @@ public enum PipelineKeyword implements Enumerator
   PPL_KW_BATCH(22, "PPL_KW_BATCH", "batch:"),
 
   /**
+   * The '<em><b>PPL KW STATUS</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_STATUS_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_KW_STATUS(23, "PPL_KW_STATUS", "status:"),
+
+  /**
    * The '<em><b>PPL KW AUTO CANCEL</b></em>' literal object.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -258,7 +268,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_AUTO_CANCEL(23, "PPL_KW_AUTO_CANCEL", "autoCancel:"),
+  PPL_KW_AUTO_CANCEL(24, "PPL_KW_AUTO_CANCEL", "autoCancel:"),
 
   /**
    * The '<em><b>PPL KW WORKFLOWS</b></em>' literal object.
@@ -268,7 +278,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_WORKFLOWS(24, "PPL_KW_WORKFLOWS", "workflows:"),
+  PPL_KW_WORKFLOWS(25, "PPL_KW_WORKFLOWS", "workflows:"),
 
   /**
    * The '<em><b>PPL KW DRAFTS</b></em>' literal object.
@@ -278,7 +288,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_DRAFTS(25, "PPL_KW_DRAFTS", "drafts:"),
+  PPL_KW_DRAFTS(26, "PPL_KW_DRAFTS", "drafts:"),
 
   /**
    * The '<em><b>PPL KW BRANCHES</b></em>' literal object.
@@ -288,7 +298,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_BRANCHES(26, "PPL_KW_BRANCHES", "branches:"),
+  PPL_KW_BRANCHES(27, "PPL_KW_BRANCHES", "branches:"),
 
   /**
    * The '<em><b>PPL KW BRANCHES IGNORE</b></em>' literal object.
@@ -298,7 +308,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_BRANCHES_IGNORE(27, "PPL_KW_BRANCHES_IGNORE", "branches-ignore:"),
+  PPL_KW_BRANCHES_IGNORE(28, "PPL_KW_BRANCHES_IGNORE", "branches-ignore:"),
 
   /**
    * The '<em><b>PPL KW PATHS</b></em>' literal object.
@@ -308,7 +318,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_PATHS(28, "PPL_KW_PATHS", "paths:"),
+  PPL_KW_PATHS(29, "PPL_KW_PATHS", "paths:"),
 
   /**
    * The '<em><b>PPL KW PATHS IGNORE</b></em>' literal object.
@@ -318,7 +328,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_PATHS_IGNORE(29, "PPL_KW_PATHS_IGNORE", "paths-ignore:"),
+  PPL_KW_PATHS_IGNORE(30, "PPL_KW_PATHS_IGNORE", "paths-ignore:"),
 
   /**
    * The '<em><b>PPL KW TAGS</b></em>' literal object.
@@ -328,7 +338,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_TAGS(30, "PPL_KW_TAGS", "tags:"),
+  PPL_KW_TAGS(31, "PPL_KW_TAGS", "tags:"),
 
   /**
    * The '<em><b>PPL KW TAGS IGNORE</b></em>' literal object.
@@ -338,7 +348,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_TAGS_IGNORE(31, "PPL_KW_TAGS_IGNORE", "tags-ignore:"),
+  PPL_KW_TAGS_IGNORE(32, "PPL_KW_TAGS_IGNORE", "tags-ignore:"),
 
   /**
    * The '<em><b>PPL KW SCHEDULES</b></em>' literal object.
@@ -348,7 +358,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_SCHEDULES(32, "PPL_KW_SCHEDULES", "schedules:"),
+  PPL_KW_SCHEDULES(33, "PPL_KW_SCHEDULES", "schedules:"),
 
   /**
    * The '<em><b>PPL KW SCHEDULE</b></em>' literal object.
@@ -358,7 +368,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_SCHEDULE(33, "PPL_KW_SCHEDULE", "schedule:"),
+  PPL_KW_SCHEDULE(34, "PPL_KW_SCHEDULE", "schedule:"),
 
   /**
    * The '<em><b>PPL KW WORKFLOW CALL</b></em>' literal object.
@@ -368,7 +378,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_WORKFLOW_CALL(34, "PPL_KW_WORKFLOW_CALL", "workflow_call:"),
+  PPL_KW_WORKFLOW_CALL(35, "PPL_KW_WORKFLOW_CALL", "workflow_call:"),
 
   /**
    * The '<em><b>PPL KW WORKFLOW DISPATCH</b></em>' literal object.
@@ -378,7 +388,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_WORKFLOW_DISPATCH(35, "PPL_KW_WORKFLOW_DISPATCH", "workflow_dispatch:"),
+  PPL_KW_WORKFLOW_DISPATCH(36, "PPL_KW_WORKFLOW_DISPATCH", "workflow_dispatch:"),
 
   /**
    * The '<em><b>PPL KW CRON</b></em>' literal object.
@@ -388,7 +398,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_CRON(36, "PPL_KW_CRON", "cron:"),
+  PPL_KW_CRON(37, "PPL_KW_CRON", "cron:"),
 
   /**
    * The '<em><b>PPL KW DISPLAY NAME</b></em>' literal object.
@@ -398,7 +408,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_DISPLAY_NAME(37, "PPL_KW_DISPLAY_NAME", "displayName:"),
+  PPL_KW_DISPLAY_NAME(38, "PPL_KW_DISPLAY_NAME", "displayName:"),
 
   /**
    * The '<em><b>PPL KW ALWAYS</b></em>' literal object.
@@ -408,7 +418,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_ALWAYS(38, "PPL_KW_ALWAYS", "always:"),
+  PPL_KW_ALWAYS(39, "PPL_KW_ALWAYS", "always:"),
 
   /**
    * The '<em><b>PPL KW STAGE</b></em>' literal object.
@@ -418,7 +428,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_STAGE(39, "PPL_KW_STAGE", "stage:"),
+  PPL_KW_STAGE(40, "PPL_KW_STAGE", "stage:"),
 
   /**
    * The '<em><b>PPL KW CONDITION</b></em>' literal object.
@@ -428,7 +438,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_CONDITION(40, "PPL_KW_CONDITION", "condition:"),
+  PPL_KW_CONDITION(41, "PPL_KW_CONDITION", "condition:"),
 
   /**
    * The '<em><b>PPL KW IS SKIPPABLE</b></em>' literal object.
@@ -438,7 +448,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_IS_SKIPPABLE(41, "PPL_KW_IS_SKIPPABLE", "isSkippable:"),
+  PPL_KW_IS_SKIPPABLE(42, "PPL_KW_IS_SKIPPABLE", "isSkippable:"),
 
   /**
    * The '<em><b>PPL KW DEPENDS ON</b></em>' literal object.
@@ -448,7 +458,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_DEPENDS_ON(42, "PPL_KW_DEPENDS_ON", "dependsOn:"),
+  PPL_KW_DEPENDS_ON(43, "PPL_KW_DEPENDS_ON", "dependsOn:"),
 
   /**
    * The '<em><b>PPL KW JOB</b></em>' literal object.
@@ -458,7 +468,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_JOB(43, "PPL_KW_JOB", "job:"),
+  PPL_KW_JOB(44, "PPL_KW_JOB", "job:"),
 
   /**
    * The '<em><b>PPL KW DEPLOYMENT</b></em>' literal object.
@@ -468,7 +478,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_DEPLOYMENT(44, "PPL_KW_DEPLOYMENT", "deployment:"),
+  PPL_KW_DEPLOYMENT(45, "PPL_KW_DEPLOYMENT", "deployment:"),
 
   /**
    * The '<em><b>PPL KW SCRIPT</b></em>' literal object.
@@ -478,7 +488,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_SCRIPT(45, "PPL_KW_SCRIPT", "script:"),
+  PPL_KW_SCRIPT(46, "PPL_KW_SCRIPT", "script:"),
 
   /**
    * The '<em><b>PPL KW BASH</b></em>' literal object.
@@ -488,7 +498,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_BASH(46, "PPL_KW_BASH", "bash:"),
+  PPL_KW_BASH(47, "PPL_KW_BASH", "bash:"),
 
   /**
    * The '<em><b>PPL KW PWSH</b></em>' literal object.
@@ -498,7 +508,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_PWSH(47, "PPL_KW_PWSH", "pwsh:"),
+  PPL_KW_PWSH(48, "PPL_KW_PWSH", "pwsh:"),
 
   /**
    * The '<em><b>PPL KW POWERSHELL</b></em>' literal object.
@@ -508,7 +518,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_POWERSHELL(48, "PPL_KW_POWERSHELL", "powershell:"),
+  PPL_KW_POWERSHELL(49, "PPL_KW_POWERSHELL", "powershell:"),
 
   /**
    * The '<em><b>PPL KW CHECKOUT</b></em>' literal object.
@@ -518,7 +528,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_CHECKOUT(49, "PPL_KW_CHECKOUT", "checkout:"),
+  PPL_KW_CHECKOUT(50, "PPL_KW_CHECKOUT", "checkout:"),
 
   /**
    * The '<em><b>PPL KW DOWNLOAD</b></em>' literal object.
@@ -528,7 +538,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_DOWNLOAD(50, "PPL_KW_DOWNLOAD", "download:"),
+  PPL_KW_DOWNLOAD(51, "PPL_KW_DOWNLOAD", "download:"),
 
   /**
    * The '<em><b>PPL KW GET PACKAGE</b></em>' literal object.
@@ -538,7 +548,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_GET_PACKAGE(51, "PPL_KW_GET_PACKAGE", "getPackage:"),
+  PPL_KW_GET_PACKAGE(52, "PPL_KW_GET_PACKAGE", "getPackage:"),
 
   /**
    * The '<em><b>PPL KW PUBLISH</b></em>' literal object.
@@ -548,7 +558,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_PUBLISH(52, "PPL_KW_PUBLISH", "publish:"),
+  PPL_KW_PUBLISH(53, "PPL_KW_PUBLISH", "publish:"),
 
   /**
    * The '<em><b>PPL KW TASK</b></em>' literal object.
@@ -558,7 +568,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_TASK(53, "PPL_KW_TASK", "task:"),
+  PPL_KW_TASK(54, "PPL_KW_TASK", "task:"),
 
   /**
    * The '<em><b>PPL KW VALUE</b></em>' literal object.
@@ -568,7 +578,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_VALUE(54, "PPL_KW_VALUE", "value:"),
+  PPL_KW_VALUE(55, "PPL_KW_VALUE", "value:"),
 
   /**
    * The '<em><b>PPL KW READONLY</b></em>' literal object.
@@ -578,7 +588,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_READONLY(55, "PPL_KW_READONLY", "readonly:"),
+  PPL_KW_READONLY(56, "PPL_KW_READONLY", "readonly:"),
 
   /**
    * The '<em><b>PPL KW BUILDS</b></em>' literal object.
@@ -588,7 +598,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_BUILDS(56, "PPL_KW_BUILDS", "builds:"),
+  PPL_KW_BUILDS(57, "PPL_KW_BUILDS", "builds:"),
 
   /**
    * The '<em><b>PPL KW CONTAINERS</b></em>' literal object.
@@ -598,7 +608,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_CONTAINERS(57, "PPL_KW_CONTAINERS", "containers:"),
+  PPL_KW_CONTAINERS(58, "PPL_KW_CONTAINERS", "containers:"),
 
   /**
    * The '<em><b>PPL KW PIPELINES</b></em>' literal object.
@@ -608,7 +618,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_PIPELINES(58, "PPL_KW_PIPELINES", "pipelines:"),
+  PPL_KW_PIPELINES(59, "PPL_KW_PIPELINES", "pipelines:"),
 
   /**
    * The '<em><b>PPL KW REPOSITORIES</b></em>' literal object.
@@ -618,7 +628,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_REPOSITORIES(59, "PPL_KW_REPOSITORIES", "repositories:"),
+  PPL_KW_REPOSITORIES(60, "PPL_KW_REPOSITORIES", "repositories:"),
 
   /**
    * The '<em><b>PPL KW WEBHOOKS</b></em>' literal object.
@@ -628,7 +638,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_WEBHOOKS(60, "PPL_KW_WEBHOOKS", "webhooks:"),
+  PPL_KW_WEBHOOKS(61, "PPL_KW_WEBHOOKS", "webhooks:"),
 
   /**
    * The '<em><b>PPL KW PACKAGES</b></em>' literal object.
@@ -638,7 +648,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_PACKAGES(61, "PPL_KW_PACKAGES", "packages:"),
+  PPL_KW_PACKAGES(62, "PPL_KW_PACKAGES", "packages:"),
 
   /**
    * The '<em><b>PPL KW INPUTS</b></em>' literal object.
@@ -648,7 +658,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_INPUTS(62, "PPL_KW_INPUTS", "inputs:"),
+  PPL_KW_INPUTS(63, "PPL_KW_INPUTS", "inputs:"),
 
   /**
    * The '<em><b>PPL KW OUTPUTS</b></em>' literal object.
@@ -658,7 +668,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_OUTPUTS(63, "PPL_KW_OUTPUTS", "outputs:"),
+  PPL_KW_OUTPUTS(64, "PPL_KW_OUTPUTS", "outputs:"),
 
   /**
    * The '<em><b>PPL KW SECRETS</b></em>' literal object.
@@ -668,7 +678,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_SECRETS(64, "PPL_KW_SECRETS", "secrets:"),
+  PPL_KW_SECRETS(65, "PPL_KW_SECRETS", "secrets:"),
 
   /**
    * The '<em><b>PPL KW DESCRIPTION</b></em>' literal object.
@@ -678,7 +688,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_DESCRIPTION(65, "PPL_KW_DESCRIPTION", "description:"),
+  PPL_KW_DESCRIPTION(66, "PPL_KW_DESCRIPTION", "description:"),
 
   /**
    * The '<em><b>PPL KW REQUIRED</b></em>' literal object.
@@ -688,7 +698,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_REQUIRED(66, "PPL_KW_REQUIRED", "required:"),
+  PPL_KW_REQUIRED(67, "PPL_KW_REQUIRED", "required:"),
 
   /**
    * The '<em><b>PPL KW DEFAULT</b></em>' literal object.
@@ -698,7 +708,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_DEFAULT(67, "PPL_KW_DEFAULT", "default:"),
+  PPL_KW_DEFAULT(68, "PPL_KW_DEFAULT", "default:"),
 
   /**
    * The '<em><b>PPL KW TYPE</b></em>' literal object.
@@ -708,7 +718,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_TYPE(68, "PPL_KW_TYPE", "type:"),
+  PPL_KW_TYPE(69, "PPL_KW_TYPE", "type:"),
 
   /**
    * The '<em><b>PPL KW OPTIONS</b></em>' literal object.
@@ -718,7 +728,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_OPTIONS(69, "PPL_KW_OPTIONS", "options:"),
+  PPL_KW_OPTIONS(70, "PPL_KW_OPTIONS", "options:"),
 
   /**
    * The '<em><b>PPL KW IF</b></em>' literal object.
@@ -728,7 +738,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_IF(70, "PPL_KW_IF", "if:"),
+  PPL_KW_IF(71, "PPL_KW_IF", "if:"),
 
   /**
    * The '<em><b>PPL KW RUNS ON</b></em>' literal object.
@@ -738,7 +748,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_RUNS_ON(71, "PPL_KW_RUNS_ON", "runs-on:"),
+  PPL_KW_RUNS_ON(72, "PPL_KW_RUNS_ON", "runs-on:"),
 
   /**
    * The '<em><b>PPL KW STRATEGY</b></em>' literal object.
@@ -748,7 +758,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_STRATEGY(72, "PPL_KW_STRATEGY", "strategy:"),
+  PPL_KW_STRATEGY(73, "PPL_KW_STRATEGY", "strategy:"),
 
   /**
    * The '<em><b>PPL KW MATRIX</b></em>' literal object.
@@ -758,7 +768,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_MATRIX(73, "PPL_KW_MATRIX", "matrix:"),
+  PPL_KW_MATRIX(74, "PPL_KW_MATRIX", "matrix:"),
 
   /**
    * The '<em><b>PPL KW CONTAINER</b></em>' literal object.
@@ -768,7 +778,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_CONTAINER(74, "PPL_KW_CONTAINER", "container:"),
+  PPL_KW_CONTAINER(75, "PPL_KW_CONTAINER", "container:"),
 
   /**
    * The '<em><b>PPL KW SERVICES</b></em>' literal object.
@@ -778,7 +788,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_SERVICES(75, "PPL_KW_SERVICES", "services:"),
+  PPL_KW_SERVICES(76, "PPL_KW_SERVICES", "services:"),
 
   /**
    * The '<em><b>PPL KW STEPS</b></em>' literal object.
@@ -788,7 +798,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_STEPS(76, "PPL_KW_STEPS", "steps:"),
+  PPL_KW_STEPS(77, "PPL_KW_STEPS", "steps:"),
 
   /**
    * The '<em><b>PPL KW USES</b></em>' literal object.
@@ -798,7 +808,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_USES(77, "PPL_KW_USES", "uses:"),
+  PPL_KW_USES(78, "PPL_KW_USES", "uses:"),
 
   /**
    * The '<em><b>PPL KW WITH</b></em>' literal object.
@@ -808,7 +818,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_WITH(78, "PPL_KW_WITH", "with:"),
+  PPL_KW_WITH(79, "PPL_KW_WITH", "with:"),
 
   /**
    * The '<em><b>PPL KW TIMEOUT MINUTES</b></em>' literal object.
@@ -818,7 +828,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_TIMEOUT_MINUTES(79, "PPL_KW_TIMEOUT_MINUTES", "timeout-minutes:"),
+  PPL_KW_TIMEOUT_MINUTES(80, "PPL_KW_TIMEOUT_MINUTES", "timeout-minutes:"),
 
   /**
    * The '<em><b>PPL KW CONTINUE ON ERROR</b></em>' literal object.
@@ -828,7 +838,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_CONTINUE_ON_ERROR(80, "PPL_KW_CONTINUE_ON_ERROR", "continue-on-error:"),
+  PPL_KW_CONTINUE_ON_ERROR(81, "PPL_KW_CONTINUE_ON_ERROR", "continue-on-error:"),
 
   /**
    * The '<em><b>PPL KW ENVIRONMENT</b></em>' literal object.
@@ -838,7 +848,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_ENVIRONMENT(81, "PPL_KW_ENVIRONMENT", "environment:"),
+  PPL_KW_ENVIRONMENT(82, "PPL_KW_ENVIRONMENT", "environment:"),
 
   /**
    * The '<em><b>PPL KW ID</b></em>' literal object.
@@ -848,7 +858,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_ID(82, "PPL_KW_ID", "id:"),
+  PPL_KW_ID(83, "PPL_KW_ID", "id:"),
 
   /**
    * The '<em><b>PPL KW PERMISSIONS</b></em>' literal object.
@@ -858,7 +868,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_PERMISSIONS(83, "PPL_KW_PERMISSIONS", "permissions:"),
+  PPL_KW_PERMISSIONS(84, "PPL_KW_PERMISSIONS", "permissions:"),
 
   /**
    * The '<em><b>PPL KW TIMEOUTS</b></em>' literal object.
@@ -868,7 +878,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_TIMEOUTS(84, "PPL_KW_TIMEOUTS", "timeouts:"),
+  PPL_KW_TIMEOUTS(85, "PPL_KW_TIMEOUTS", "timeouts:"),
 
   /**
    * The '<em><b>PPL KW DEFAULTS RUN</b></em>' literal object.
@@ -878,7 +888,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_DEFAULTS_RUN(85, "PPL_KW_DEFAULTS_RUN", "defaults.run:"),
+  PPL_KW_DEFAULTS_RUN(86, "PPL_KW_DEFAULTS_RUN", "defaults.run:"),
 
   /**
    * The '<em><b>PPL KW PUSH</b></em>' literal object.
@@ -888,7 +898,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_PUSH(86, "PPL_KW_PUSH", "push:"),
+  PPL_KW_PUSH(87, "PPL_KW_PUSH", "push:"),
 
   /**
    * The '<em><b>PPL KW PULL REQUEST</b></em>' literal object.
@@ -898,7 +908,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_PULL_REQUEST(87, "PPL_KW_PULL_REQUEST", "pull_request:"),
+  PPL_KW_PULL_REQUEST(88, "PPL_KW_PULL_REQUEST", "pull_request:"),
 
   /**
    * The '<em><b>PPL KW REPOSITORY DISPATCH</b></em>' literal object.
@@ -908,7 +918,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_REPOSITORY_DISPATCH(88, "PPL_KW_REPOSITORY_DISPATCH", "repository_dispatch:"),
+  PPL_KW_REPOSITORY_DISPATCH(89, "PPL_KW_REPOSITORY_DISPATCH", "repository_dispatch:"),
 
   /**
    * The '<em><b>PPL KW WORKFLOW RUN</b></em>' literal object.
@@ -918,7 +928,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_WORKFLOW_RUN(89, "PPL_KW_WORKFLOW_RUN", "workflow_run:"),
+  PPL_KW_WORKFLOW_RUN(90, "PPL_KW_WORKFLOW_RUN", "workflow_run:"),
 
   /**
    * The '<em><b>PPL KW FILTERS</b></em>' literal object.
@@ -928,7 +938,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_FILTERS(90, "PPL_KW_FILTERS", "filters:"),
+  PPL_KW_FILTERS(91, "PPL_KW_FILTERS", "filters:"),
 
   /**
    * The '<em><b>PPL KW EXCLUDE</b></em>' literal object.
@@ -938,7 +948,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_EXCLUDE(91, "PPL_KW_EXCLUDE", "exclude:"),
+  PPL_KW_EXCLUDE(92, "PPL_KW_EXCLUDE", "exclude:"),
 
   /**
    * The '<em><b>PPL KW FAIL FAST</b></em>' literal object.
@@ -948,7 +958,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_FAIL_FAST(92, "PPL_KW_FAIL_FAST", "fail-fast:"),
+  PPL_KW_FAIL_FAST(93, "PPL_KW_FAIL_FAST", "fail-fast:"),
 
   /**
    * The '<em><b>PPL KW MAX PARALLEL</b></em>' literal object.
@@ -958,7 +968,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_MAX_PARALLEL(93, "PPL_KW_MAX_PARALLEL", "max-parallel:"),
+  PPL_KW_MAX_PARALLEL(94, "PPL_KW_MAX_PARALLEL", "max-parallel:"),
 
   /**
    * The '<em><b>PPL KW CONTAINER IMAGE</b></em>' literal object.
@@ -968,7 +978,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_CONTAINER_IMAGE(94, "PPL_KW_CONTAINER_IMAGE", "container.image:"),
+  PPL_KW_CONTAINER_IMAGE(95, "PPL_KW_CONTAINER_IMAGE", "container.image:"),
 
   /**
    * The '<em><b>PPL KW CREDENTIALS</b></em>' literal object.
@@ -978,7 +988,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_CREDENTIALS(95, "PPL_KW_CREDENTIALS", "credentials:"),
+  PPL_KW_CREDENTIALS(96, "PPL_KW_CREDENTIALS", "credentials:"),
 
   /**
    * The '<em><b>PPL KW PORTS</b></em>' literal object.
@@ -988,7 +998,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_PORTS(96, "PPL_KW_PORTS", "ports:"),
+  PPL_KW_PORTS(97, "PPL_KW_PORTS", "ports:"),
 
   /**
    * The '<em><b>PPL KW INHERIT</b></em>' literal object.
@@ -998,7 +1008,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_INHERIT(97, "PPL_KW_INHERIT", "inherit:"),
+  PPL_KW_INHERIT(98, "PPL_KW_INHERIT", "inherit:"),
 
   /**
    * The '<em><b>PPL KW TRIGGER</b></em>' literal object.
@@ -1008,7 +1018,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_TRIGGER(98, "PPL_KW_TRIGGER", "trigger:"),
+  PPL_KW_TRIGGER(99, "PPL_KW_TRIGGER", "trigger:"),
 
   /**
    * The '<em><b>PPL KW TEMPLATE</b></em>' literal object.
@@ -1018,7 +1028,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_TEMPLATE(99, "PPL_KW_TEMPLATE", "template:"),
+  PPL_KW_TEMPLATE(100, "PPL_KW_TEMPLATE", "template:"),
 
   /**
    * The '<em><b>PPL KW WORKSPACE</b></em>' literal object.
@@ -1028,7 +1038,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_WORKSPACE(100, "PPL_KW_WORKSPACE", "workspace:"),
+  PPL_KW_WORKSPACE(101, "PPL_KW_WORKSPACE", "workspace:"),
 
   /**
    * The '<em><b>PPL KW PIPELINE</b></em>' literal object.
@@ -1038,7 +1048,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_PIPELINE(101, "PPL_KW_PIPELINE", "pipeline:"),
+  PPL_KW_PIPELINE(102, "PPL_KW_PIPELINE", "pipeline:"),
 
   /**
    * The '<em><b>PPL KW TIMEOUT IN MINUTES</b></em>' literal object.
@@ -1048,7 +1058,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_TIMEOUT_IN_MINUTES(102, "PPL_KW_TIMEOUT_IN_MINUTES", "timeoutInMinutes:"),
+  PPL_KW_TIMEOUT_IN_MINUTES(103, "PPL_KW_TIMEOUT_IN_MINUTES", "timeoutInMinutes:"),
 
   /**
    * The '<em><b>PPL KW CONTINUE ON ERR</b></em>' literal object.
@@ -1058,7 +1068,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_CONTINUE_ON_ERR(103, "PPL_KW_CONTINUE_ON_ERR", "continueOnError:"),
+  PPL_KW_CONTINUE_ON_ERR(104, "PPL_KW_CONTINUE_ON_ERR", "continueOnError:"),
 
   /**
    * The '<em><b>PPL KW RESOURCE TYPE</b></em>' literal object.
@@ -1068,7 +1078,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_RESOURCE_TYPE(104, "PPL_KW_RESOURCE_TYPE", "resourceType:"),
+  PPL_KW_RESOURCE_TYPE(105, "PPL_KW_RESOURCE_TYPE", "resourceType:"),
 
   /**
    * The '<em><b>PPL KW RESOURCE NAME</b></em>' literal object.
@@ -1078,7 +1088,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_RESOURCE_NAME(105, "PPL_KW_RESOURCE_NAME", "resourceName:"),
+  PPL_KW_RESOURCE_NAME(106, "PPL_KW_RESOURCE_NAME", "resourceName:"),
 
   /**
    * The '<em><b>PPL KW STAGES</b></em>' literal object.
@@ -1088,7 +1098,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_STAGES(106, "PPL_KW_STAGES", "stages:"),
+  PPL_KW_STAGES(107, "PPL_KW_STAGES", "stages:"),
 
   /**
    * The '<em><b>PPL KW ONLY</b></em>' literal object.
@@ -1098,7 +1108,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_ONLY(107, "PPL_KW_ONLY", "only:"),
+  PPL_KW_ONLY(108, "PPL_KW_ONLY", "only:"),
 
   /**
    * The '<em><b>PPL KW EXCEPT</b></em>' literal object.
@@ -1108,7 +1118,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_EXCEPT(108, "PPL_KW_EXCEPT", "except:"),
+  PPL_KW_EXCEPT(109, "PPL_KW_EXCEPT", "except:"),
 
   /**
    * The '<em><b>PPL KW IMAGE</b></em>' literal object.
@@ -1118,7 +1128,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_IMAGE(109, "PPL_KW_IMAGE", "image:"),
+  PPL_KW_IMAGE(110, "PPL_KW_IMAGE", "image:"),
 
   /**
    * The '<em><b>PPL KW CACHE</b></em>' literal object.
@@ -1128,7 +1138,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_CACHE(110, "PPL_KW_CACHE", "cache:"),
+  PPL_KW_CACHE(111, "PPL_KW_CACHE", "cache:"),
 
   /**
    * The '<em><b>PPL KW ARTIFACTS</b></em>' literal object.
@@ -1138,7 +1148,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_ARTIFACTS(111, "PPL_KW_ARTIFACTS", "artifacts:"),
+  PPL_KW_ARTIFACTS(112, "PPL_KW_ARTIFACTS", "artifacts:"),
 
   /**
    * The '<em><b>PPL KW RETRIES</b></em>' literal object.
@@ -1148,7 +1158,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_RETRIES(112, "PPL_KW_RETRIES", "retries:"),
+  PPL_KW_RETRIES(113, "PPL_KW_RETRIES", "retries:"),
 
   /**
    * The '<em><b>PPL KW RULES</b></em>' literal object.
@@ -1158,7 +1168,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_RULES(113, "PPL_KW_RULES", "rules:"),
+  PPL_KW_RULES(114, "PPL_KW_RULES", "rules:"),
 
   /**
    * The '<em><b>PPL KW BEFORE SCRIPT</b></em>' literal object.
@@ -1168,7 +1178,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_BEFORE_SCRIPT(114, "PPL_KW_BEFORE_SCRIPT", "before_script:"),
+  PPL_KW_BEFORE_SCRIPT(115, "PPL_KW_BEFORE_SCRIPT", "before_script:"),
 
   /**
    * The '<em><b>PPL KW AFTER SCRIPT</b></em>' literal object.
@@ -1178,7 +1188,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_AFTER_SCRIPT(115, "PPL_KW_AFTER_SCRIPT", "after_script:"),
+  PPL_KW_AFTER_SCRIPT(116, "PPL_KW_AFTER_SCRIPT", "after_script:"),
 
   /**
    * The '<em><b>PPL KW TIMEOUT</b></em>' literal object.
@@ -1188,7 +1198,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_TIMEOUT(116, "PPL_KW_TIMEOUT", "timeout:"),
+  PPL_KW_TIMEOUT(117, "PPL_KW_TIMEOUT", "timeout:"),
 
   /**
    * The '<em><b>PPL KW WHEN</b></em>' literal object.
@@ -1198,7 +1208,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_WHEN(117, "PPL_KW_WHEN", "when:"),
+  PPL_KW_WHEN(118, "PPL_KW_WHEN", "when:"),
 
   /**
    * The '<em><b>PPL KW ALLOW FAILURE</b></em>' literal object.
@@ -1208,7 +1218,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_ALLOW_FAILURE(118, "PPL_KW_ALLOW_FAILURE", "allow_failure:"),
+  PPL_KW_ALLOW_FAILURE(119, "PPL_KW_ALLOW_FAILURE", "allow_failure:"),
 
   /**
    * The '<em><b>PPL KW DEPENDENCIES</b></em>' literal object.
@@ -1218,7 +1228,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_DEPENDENCIES(119, "PPL_KW_DEPENDENCIES", "dependencies:"),
+  PPL_KW_DEPENDENCIES(120, "PPL_KW_DEPENDENCIES", "dependencies:"),
 
   /**
    * The '<em><b>PPL KW PULL REQUESTS</b></em>' literal object.
@@ -1228,7 +1238,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_PULL_REQUESTS(120, "PPL_KW_PULL_REQUESTS", "pull-requests:"),
+  PPL_KW_PULL_REQUESTS(121, "PPL_KW_PULL_REQUESTS", "pull-requests:"),
 
   /**
    * The '<em><b>PPL KW STEP</b></em>' literal object.
@@ -1238,7 +1248,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_STEP(121, "PPL_KW_STEP", "step:"),
+  PPL_KW_STEP(122, "PPL_KW_STEP", "step:"),
 
   /**
    * The '<em><b>PPL KW DEFINITIONS</b></em>' literal object.
@@ -1248,7 +1258,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_DEFINITIONS(122, "PPL_KW_DEFINITIONS", "definitions:"),
+  PPL_KW_DEFINITIONS(123, "PPL_KW_DEFINITIONS", "definitions:"),
 
   /**
    * The '<em><b>PPL KW CACHES</b></em>' literal object.
@@ -1258,7 +1268,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_CACHES(123, "PPL_KW_CACHES", "caches:"),
+  PPL_KW_CACHES(124, "PPL_KW_CACHES", "caches:"),
 
   /**
    * The '<em><b>PPL KW PARALLEL</b></em>' literal object.
@@ -1268,7 +1278,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_PARALLEL(124, "PPL_KW_PARALLEL", "parallel:"),
+  PPL_KW_PARALLEL(125, "PPL_KW_PARALLEL", "parallel:"),
 
   /**
    * The '<em><b>PPL KW CONDITIONS</b></em>' literal object.
@@ -1278,7 +1288,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_CONDITIONS(125, "PPL_KW_CONDITIONS", "conditions:"),
+  PPL_KW_CONDITIONS(126, "PPL_KW_CONDITIONS", "conditions:"),
 
   /**
    * The '<em><b>PPL KW MAX TIME</b></em>' literal object.
@@ -1288,7 +1298,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_MAX_TIME(126, "PPL_KW_MAX_TIME", "max-time:"),
+  PPL_KW_MAX_TIME(127, "PPL_KW_MAX_TIME", "max-time:"),
 
   /**
    * The '<em><b>PPL KW PROJECT</b></em>' literal object.
@@ -1298,7 +1308,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_PROJECT(127, "PPL_KW_PROJECT", "project:"),
+  PPL_KW_PROJECT(128, "PPL_KW_PROJECT", "project:"),
 
   /**
    * The '<em><b>PPL KW PLAN</b></em>' literal object.
@@ -1308,7 +1318,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_PLAN(128, "PPL_KW_PLAN", "plan:"),
+  PPL_KW_PLAN(129, "PPL_KW_PLAN", "plan:"),
 
   /**
    * The '<em><b>PPL KW TASKS</b></em>' literal object.
@@ -1318,7 +1328,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_TASKS(129, "PPL_KW_TASKS", "tasks:"),
+  PPL_KW_TASKS(130, "PPL_KW_TASKS", "tasks:"),
 
   /**
    * The '<em><b>PPL KW REQUIREMENTS</b></em>' literal object.
@@ -1328,7 +1338,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_REQUIREMENTS(130, "PPL_KW_REQUIREMENTS", "requirements:"),
+  PPL_KW_REQUIREMENTS(131, "PPL_KW_REQUIREMENTS", "requirements:"),
 
   /**
    * The '<em><b>PPL KW FINAL</b></em>' literal object.
@@ -1338,7 +1348,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_FINAL(131, "PPL_KW_FINAL", "final:"),
+  PPL_KW_FINAL(132, "PPL_KW_FINAL", "final:"),
 
   /**
    * The '<em><b>PPL KW JDK</b></em>' literal object.
@@ -1348,7 +1358,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_JDK(132, "PPL_KW_JDK", "jdk:"),
+  PPL_KW_JDK(133, "PPL_KW_JDK", "jdk:"),
 
   /**
    * The '<em><b>PPL KW LABELS</b></em>' literal object.
@@ -1358,7 +1368,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_LABELS(133, "PPL_KW_LABELS", "labels:"),
+  PPL_KW_LABELS(134, "PPL_KW_LABELS", "labels:"),
 
   /**
    * The '<em><b>PPL KW REPOSITORY</b></em>' literal object.
@@ -1368,7 +1378,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_REPOSITORY(134, "PPL_KW_REPOSITORY", "repository:"),
+  PPL_KW_REPOSITORY(135, "PPL_KW_REPOSITORY", "repository:"),
 
   /**
    * The '<em><b>PPL KW RELEASE</b></em>' literal object.
@@ -1378,7 +1388,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_RELEASE(135, "PPL_KW_RELEASE", "release:"),
+  PPL_KW_RELEASE(136, "PPL_KW_RELEASE", "release:"),
 
   /**
    * The '<em><b>PPL KW DOCKER</b></em>' literal object.
@@ -1388,7 +1398,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_DOCKER(136, "PPL_KW_DOCKER", "docker:"),
+  PPL_KW_DOCKER(137, "PPL_KW_DOCKER", "docker:"),
 
   /**
    * The '<em><b>PPL KW AGENT</b></em>' literal object.
@@ -1398,7 +1408,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_AGENT(137, "PPL_KW_AGENT", "agent:"),
+  PPL_KW_AGENT(138, "PPL_KW_AGENT", "agent:"),
 
   /**
    * The '<em><b>PPL KW QUEUE</b></em>' literal object.
@@ -1408,7 +1418,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_QUEUE(138, "PPL_KW_QUEUE", "queue:"),
+  PPL_KW_QUEUE(139, "PPL_KW_QUEUE", "queue:"),
 
   /**
    * The '<em><b>PPL KW SNAPSHOT</b></em>' literal object.
@@ -1418,7 +1428,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_SNAPSHOT(139, "PPL_KW_SNAPSHOT", "snapshot:"),
+  PPL_KW_SNAPSHOT(140, "PPL_KW_SNAPSHOT", "snapshot:"),
 
   /**
    * The '<em><b>PPL KW POLICY</b></em>' literal object.
@@ -1428,7 +1438,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_POLICY(140, "PPL_KW_POLICY", "policy:"),
+  PPL_KW_POLICY(141, "PPL_KW_POLICY", "policy:"),
 
   /**
    * The '<em><b>PPL KW APPROVALS</b></em>' literal object.
@@ -1438,7 +1448,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_APPROVALS(141, "PPL_KW_APPROVALS", "approvals:"),
+  PPL_KW_APPROVALS(142, "PPL_KW_APPROVALS", "approvals:"),
 
   /**
    * The '<em><b>PPL KW PREBUILD</b></em>' literal object.
@@ -1448,7 +1458,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_PREBUILD(142, "PPL_KW_PREBUILD", "preBuild:"),
+  PPL_KW_PREBUILD(143, "PPL_KW_PREBUILD", "preBuild:"),
 
   /**
    * The '<em><b>PPL KW POSTBUILD</b></em>' literal object.
@@ -1458,7 +1468,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_POSTBUILD(143, "PPL_KW_POSTBUILD", "postBuild:"),
+  PPL_KW_POSTBUILD(144, "PPL_KW_POSTBUILD", "postBuild:"),
 
   /**
    * The '<em><b>PPL KW SSH</b></em>' literal object.
@@ -1468,7 +1478,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_SSH(144, "PPL_KW_SSH", "ssh:"),
+  PPL_KW_SSH(145, "PPL_KW_SSH", "ssh:"),
 
   /**
    * The '<em><b>PPL KW AUTH</b></em>' literal object.
@@ -1478,7 +1488,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_AUTH(145, "PPL_KW_AUTH", "auth:"),
+  PPL_KW_AUTH(146, "PPL_KW_AUTH", "auth:"),
 
   /**
    * The '<em><b>PPL KW STORAGE</b></em>' literal object.
@@ -1488,7 +1498,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_STORAGE(146, "PPL_KW_STORAGE", "storage:"),
+  PPL_KW_STORAGE(147, "PPL_KW_STORAGE", "storage:"),
 
   /**
    * The '<em><b>PPL KW ENDPOINTS</b></em>' literal object.
@@ -1498,7 +1508,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_ENDPOINTS(147, "PPL_KW_ENDPOINTS", "endpoints:"),
+  PPL_KW_ENDPOINTS(148, "PPL_KW_ENDPOINTS", "endpoints:"),
 
   /**
    * The '<em><b>PPL KW COMMAND</b></em>' literal object.
@@ -1508,7 +1518,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_COMMAND(148, "PPL_KW_COMMAND", "command:"),
+  PPL_KW_COMMAND(149, "PPL_KW_COMMAND", "command:"),
 
   /**
    * The '<em><b>PPL KW PROVISIONER</b></em>' literal object.
@@ -1518,7 +1528,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_PROVISIONER(149, "PPL_KW_PROVISIONER", "provisioner:"),
+  PPL_KW_PROVISIONER(150, "PPL_KW_PROVISIONER", "provisioner:"),
 
   /**
    * The '<em><b>PPL KW TRIGGER RULES</b></em>' literal object.
@@ -1528,7 +1538,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_TRIGGER_RULES(150, "PPL_KW_TRIGGER_RULES", "triggerRules:"),
+  PPL_KW_TRIGGER_RULES(151, "PPL_KW_TRIGGER_RULES", "triggerRules:"),
 
   /**
    * The '<em><b>PPL KW RUN POLICY</b></em>' literal object.
@@ -1538,7 +1548,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_RUN_POLICY(151, "PPL_KW_RUN_POLICY", "runPolicy:"),
+  PPL_KW_RUN_POLICY(152, "PPL_KW_RUN_POLICY", "runPolicy:"),
 
   /**
    * The '<em><b>PPL KW QUEUED</b></em>' literal object.
@@ -1548,7 +1558,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_QUEUED(152, "PPL_KW_QUEUED", "queued:"),
+  PPL_KW_QUEUED(153, "PPL_KW_QUEUED", "queued:"),
 
   /**
    * The '<em><b>PPL KW NOTIFICATIONS</b></em>' literal object.
@@ -1558,7 +1568,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_NOTIFICATIONS(153, "PPL_KW_NOTIFICATIONS", "notifications:"),
+  PPL_KW_NOTIFICATIONS(154, "PPL_KW_NOTIFICATIONS", "notifications:"),
 
   /**
    * The '<em><b>PPL KW DEPLOY TRIGGER</b></em>' literal object.
@@ -1568,7 +1578,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_DEPLOY_TRIGGER(154, "PPL_KW_DEPLOY_TRIGGER", "deployTrigger:"),
+  PPL_KW_DEPLOY_TRIGGER(155, "PPL_KW_DEPLOY_TRIGGER", "deployTrigger:"),
 
   /**
    * The '<em><b>PPL KW RELEASE TRIGGER</b></em>' literal object.
@@ -1578,7 +1588,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_RELEASE_TRIGGER(155, "PPL_KW_RELEASE_TRIGGER", "releaseTrigger:"),
+  PPL_KW_RELEASE_TRIGGER(156, "PPL_KW_RELEASE_TRIGGER", "releaseTrigger:"),
 
   /**
    * The '<em><b>PPL KW LOCK BEHAVIOR</b></em>' literal object.
@@ -1588,7 +1598,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_LOCK_BEHAVIOR(156, "PPL_KW_LOCK_BEHAVIOR", "lockBehavior:"),
+  PPL_KW_LOCK_BEHAVIOR(157, "PPL_KW_LOCK_BEHAVIOR", "lockBehavior:"),
 
   /**
    * The '<em><b>PPL KW REVIEW STAGE</b></em>' literal object.
@@ -1598,7 +1608,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_KW_REVIEW_STAGE(157, "PPL_KW_REVIEW_STAGE", "reviewStage:");
+  PPL_KW_REVIEW_STAGE(158, "PPL_KW_REVIEW_STAGE", "reviewStage:");
 
   /**
    * The '<em><b>PPL KW NAME</b></em>' literal value.
@@ -1854,6 +1864,17 @@ public enum PipelineKeyword implements Enumerator
   public static final int PPL_KW_BATCH_VALUE = 22;
 
   /**
+   * The '<em><b>PPL KW STATUS</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_KW_STATUS
+   * @model literal="status:"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_KW_STATUS_VALUE = 23;
+
+  /**
    * The '<em><b>PPL KW AUTO CANCEL</b></em>' literal value.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -1862,7 +1883,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_AUTO_CANCEL_VALUE = 23;
+  public static final int PPL_KW_AUTO_CANCEL_VALUE = 24;
 
   /**
    * The '<em><b>PPL KW WORKFLOWS</b></em>' literal value.
@@ -1873,7 +1894,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_WORKFLOWS_VALUE = 24;
+  public static final int PPL_KW_WORKFLOWS_VALUE = 25;
 
   /**
    * The '<em><b>PPL KW DRAFTS</b></em>' literal value.
@@ -1884,7 +1905,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_DRAFTS_VALUE = 25;
+  public static final int PPL_KW_DRAFTS_VALUE = 26;
 
   /**
    * The '<em><b>PPL KW BRANCHES</b></em>' literal value.
@@ -1895,7 +1916,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_BRANCHES_VALUE = 26;
+  public static final int PPL_KW_BRANCHES_VALUE = 27;
 
   /**
    * The '<em><b>PPL KW BRANCHES IGNORE</b></em>' literal value.
@@ -1906,7 +1927,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_BRANCHES_IGNORE_VALUE = 27;
+  public static final int PPL_KW_BRANCHES_IGNORE_VALUE = 28;
 
   /**
    * The '<em><b>PPL KW PATHS</b></em>' literal value.
@@ -1917,7 +1938,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_PATHS_VALUE = 28;
+  public static final int PPL_KW_PATHS_VALUE = 29;
 
   /**
    * The '<em><b>PPL KW PATHS IGNORE</b></em>' literal value.
@@ -1928,7 +1949,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_PATHS_IGNORE_VALUE = 29;
+  public static final int PPL_KW_PATHS_IGNORE_VALUE = 30;
 
   /**
    * The '<em><b>PPL KW TAGS</b></em>' literal value.
@@ -1939,7 +1960,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_TAGS_VALUE = 30;
+  public static final int PPL_KW_TAGS_VALUE = 31;
 
   /**
    * The '<em><b>PPL KW TAGS IGNORE</b></em>' literal value.
@@ -1950,7 +1971,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_TAGS_IGNORE_VALUE = 31;
+  public static final int PPL_KW_TAGS_IGNORE_VALUE = 32;
 
   /**
    * The '<em><b>PPL KW SCHEDULES</b></em>' literal value.
@@ -1961,7 +1982,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_SCHEDULES_VALUE = 32;
+  public static final int PPL_KW_SCHEDULES_VALUE = 33;
 
   /**
    * The '<em><b>PPL KW SCHEDULE</b></em>' literal value.
@@ -1972,7 +1993,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_SCHEDULE_VALUE = 33;
+  public static final int PPL_KW_SCHEDULE_VALUE = 34;
 
   /**
    * The '<em><b>PPL KW WORKFLOW CALL</b></em>' literal value.
@@ -1983,7 +2004,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_WORKFLOW_CALL_VALUE = 34;
+  public static final int PPL_KW_WORKFLOW_CALL_VALUE = 35;
 
   /**
    * The '<em><b>PPL KW WORKFLOW DISPATCH</b></em>' literal value.
@@ -1994,7 +2015,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_WORKFLOW_DISPATCH_VALUE = 35;
+  public static final int PPL_KW_WORKFLOW_DISPATCH_VALUE = 36;
 
   /**
    * The '<em><b>PPL KW CRON</b></em>' literal value.
@@ -2005,7 +2026,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_CRON_VALUE = 36;
+  public static final int PPL_KW_CRON_VALUE = 37;
 
   /**
    * The '<em><b>PPL KW DISPLAY NAME</b></em>' literal value.
@@ -2016,7 +2037,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_DISPLAY_NAME_VALUE = 37;
+  public static final int PPL_KW_DISPLAY_NAME_VALUE = 38;
 
   /**
    * The '<em><b>PPL KW ALWAYS</b></em>' literal value.
@@ -2027,7 +2048,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_ALWAYS_VALUE = 38;
+  public static final int PPL_KW_ALWAYS_VALUE = 39;
 
   /**
    * The '<em><b>PPL KW STAGE</b></em>' literal value.
@@ -2038,7 +2059,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_STAGE_VALUE = 39;
+  public static final int PPL_KW_STAGE_VALUE = 40;
 
   /**
    * The '<em><b>PPL KW CONDITION</b></em>' literal value.
@@ -2049,7 +2070,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_CONDITION_VALUE = 40;
+  public static final int PPL_KW_CONDITION_VALUE = 41;
 
   /**
    * The '<em><b>PPL KW IS SKIPPABLE</b></em>' literal value.
@@ -2060,7 +2081,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_IS_SKIPPABLE_VALUE = 41;
+  public static final int PPL_KW_IS_SKIPPABLE_VALUE = 42;
 
   /**
    * The '<em><b>PPL KW DEPENDS ON</b></em>' literal value.
@@ -2071,7 +2092,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_DEPENDS_ON_VALUE = 42;
+  public static final int PPL_KW_DEPENDS_ON_VALUE = 43;
 
   /**
    * The '<em><b>PPL KW JOB</b></em>' literal value.
@@ -2082,7 +2103,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_JOB_VALUE = 43;
+  public static final int PPL_KW_JOB_VALUE = 44;
 
   /**
    * The '<em><b>PPL KW DEPLOYMENT</b></em>' literal value.
@@ -2093,7 +2114,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_DEPLOYMENT_VALUE = 44;
+  public static final int PPL_KW_DEPLOYMENT_VALUE = 45;
 
   /**
    * The '<em><b>PPL KW SCRIPT</b></em>' literal value.
@@ -2104,7 +2125,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_SCRIPT_VALUE = 45;
+  public static final int PPL_KW_SCRIPT_VALUE = 46;
 
   /**
    * The '<em><b>PPL KW BASH</b></em>' literal value.
@@ -2115,7 +2136,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_BASH_VALUE = 46;
+  public static final int PPL_KW_BASH_VALUE = 47;
 
   /**
    * The '<em><b>PPL KW PWSH</b></em>' literal value.
@@ -2126,7 +2147,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_PWSH_VALUE = 47;
+  public static final int PPL_KW_PWSH_VALUE = 48;
 
   /**
    * The '<em><b>PPL KW POWERSHELL</b></em>' literal value.
@@ -2137,7 +2158,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_POWERSHELL_VALUE = 48;
+  public static final int PPL_KW_POWERSHELL_VALUE = 49;
 
   /**
    * The '<em><b>PPL KW CHECKOUT</b></em>' literal value.
@@ -2148,7 +2169,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_CHECKOUT_VALUE = 49;
+  public static final int PPL_KW_CHECKOUT_VALUE = 50;
 
   /**
    * The '<em><b>PPL KW DOWNLOAD</b></em>' literal value.
@@ -2159,7 +2180,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_DOWNLOAD_VALUE = 50;
+  public static final int PPL_KW_DOWNLOAD_VALUE = 51;
 
   /**
    * The '<em><b>PPL KW GET PACKAGE</b></em>' literal value.
@@ -2170,7 +2191,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_GET_PACKAGE_VALUE = 51;
+  public static final int PPL_KW_GET_PACKAGE_VALUE = 52;
 
   /**
    * The '<em><b>PPL KW PUBLISH</b></em>' literal value.
@@ -2181,7 +2202,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_PUBLISH_VALUE = 52;
+  public static final int PPL_KW_PUBLISH_VALUE = 53;
 
   /**
    * The '<em><b>PPL KW TASK</b></em>' literal value.
@@ -2192,7 +2213,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_TASK_VALUE = 53;
+  public static final int PPL_KW_TASK_VALUE = 54;
 
   /**
    * The '<em><b>PPL KW VALUE</b></em>' literal value.
@@ -2203,7 +2224,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_VALUE_VALUE = 54;
+  public static final int PPL_KW_VALUE_VALUE = 55;
 
   /**
    * The '<em><b>PPL KW READONLY</b></em>' literal value.
@@ -2214,7 +2235,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_READONLY_VALUE = 55;
+  public static final int PPL_KW_READONLY_VALUE = 56;
 
   /**
    * The '<em><b>PPL KW BUILDS</b></em>' literal value.
@@ -2225,7 +2246,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_BUILDS_VALUE = 56;
+  public static final int PPL_KW_BUILDS_VALUE = 57;
 
   /**
    * The '<em><b>PPL KW CONTAINERS</b></em>' literal value.
@@ -2236,7 +2257,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_CONTAINERS_VALUE = 57;
+  public static final int PPL_KW_CONTAINERS_VALUE = 58;
 
   /**
    * The '<em><b>PPL KW PIPELINES</b></em>' literal value.
@@ -2247,7 +2268,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_PIPELINES_VALUE = 58;
+  public static final int PPL_KW_PIPELINES_VALUE = 59;
 
   /**
    * The '<em><b>PPL KW REPOSITORIES</b></em>' literal value.
@@ -2258,7 +2279,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_REPOSITORIES_VALUE = 59;
+  public static final int PPL_KW_REPOSITORIES_VALUE = 60;
 
   /**
    * The '<em><b>PPL KW WEBHOOKS</b></em>' literal value.
@@ -2269,7 +2290,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_WEBHOOKS_VALUE = 60;
+  public static final int PPL_KW_WEBHOOKS_VALUE = 61;
 
   /**
    * The '<em><b>PPL KW PACKAGES</b></em>' literal value.
@@ -2280,7 +2301,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_PACKAGES_VALUE = 61;
+  public static final int PPL_KW_PACKAGES_VALUE = 62;
 
   /**
    * The '<em><b>PPL KW INPUTS</b></em>' literal value.
@@ -2291,7 +2312,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_INPUTS_VALUE = 62;
+  public static final int PPL_KW_INPUTS_VALUE = 63;
 
   /**
    * The '<em><b>PPL KW OUTPUTS</b></em>' literal value.
@@ -2302,7 +2323,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_OUTPUTS_VALUE = 63;
+  public static final int PPL_KW_OUTPUTS_VALUE = 64;
 
   /**
    * The '<em><b>PPL KW SECRETS</b></em>' literal value.
@@ -2313,7 +2334,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_SECRETS_VALUE = 64;
+  public static final int PPL_KW_SECRETS_VALUE = 65;
 
   /**
    * The '<em><b>PPL KW DESCRIPTION</b></em>' literal value.
@@ -2324,7 +2345,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_DESCRIPTION_VALUE = 65;
+  public static final int PPL_KW_DESCRIPTION_VALUE = 66;
 
   /**
    * The '<em><b>PPL KW REQUIRED</b></em>' literal value.
@@ -2335,7 +2356,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_REQUIRED_VALUE = 66;
+  public static final int PPL_KW_REQUIRED_VALUE = 67;
 
   /**
    * The '<em><b>PPL KW DEFAULT</b></em>' literal value.
@@ -2346,7 +2367,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_DEFAULT_VALUE = 67;
+  public static final int PPL_KW_DEFAULT_VALUE = 68;
 
   /**
    * The '<em><b>PPL KW TYPE</b></em>' literal value.
@@ -2357,7 +2378,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_TYPE_VALUE = 68;
+  public static final int PPL_KW_TYPE_VALUE = 69;
 
   /**
    * The '<em><b>PPL KW OPTIONS</b></em>' literal value.
@@ -2368,7 +2389,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_OPTIONS_VALUE = 69;
+  public static final int PPL_KW_OPTIONS_VALUE = 70;
 
   /**
    * The '<em><b>PPL KW IF</b></em>' literal value.
@@ -2379,7 +2400,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_IF_VALUE = 70;
+  public static final int PPL_KW_IF_VALUE = 71;
 
   /**
    * The '<em><b>PPL KW RUNS ON</b></em>' literal value.
@@ -2390,7 +2411,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_RUNS_ON_VALUE = 71;
+  public static final int PPL_KW_RUNS_ON_VALUE = 72;
 
   /**
    * The '<em><b>PPL KW STRATEGY</b></em>' literal value.
@@ -2401,7 +2422,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_STRATEGY_VALUE = 72;
+  public static final int PPL_KW_STRATEGY_VALUE = 73;
 
   /**
    * The '<em><b>PPL KW MATRIX</b></em>' literal value.
@@ -2412,7 +2433,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_MATRIX_VALUE = 73;
+  public static final int PPL_KW_MATRIX_VALUE = 74;
 
   /**
    * The '<em><b>PPL KW CONTAINER</b></em>' literal value.
@@ -2423,7 +2444,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_CONTAINER_VALUE = 74;
+  public static final int PPL_KW_CONTAINER_VALUE = 75;
 
   /**
    * The '<em><b>PPL KW SERVICES</b></em>' literal value.
@@ -2434,7 +2455,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_SERVICES_VALUE = 75;
+  public static final int PPL_KW_SERVICES_VALUE = 76;
 
   /**
    * The '<em><b>PPL KW STEPS</b></em>' literal value.
@@ -2445,7 +2466,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_STEPS_VALUE = 76;
+  public static final int PPL_KW_STEPS_VALUE = 77;
 
   /**
    * The '<em><b>PPL KW USES</b></em>' literal value.
@@ -2456,7 +2477,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_USES_VALUE = 77;
+  public static final int PPL_KW_USES_VALUE = 78;
 
   /**
    * The '<em><b>PPL KW WITH</b></em>' literal value.
@@ -2467,7 +2488,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_WITH_VALUE = 78;
+  public static final int PPL_KW_WITH_VALUE = 79;
 
   /**
    * The '<em><b>PPL KW TIMEOUT MINUTES</b></em>' literal value.
@@ -2478,7 +2499,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_TIMEOUT_MINUTES_VALUE = 79;
+  public static final int PPL_KW_TIMEOUT_MINUTES_VALUE = 80;
 
   /**
    * The '<em><b>PPL KW CONTINUE ON ERROR</b></em>' literal value.
@@ -2489,7 +2510,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_CONTINUE_ON_ERROR_VALUE = 80;
+  public static final int PPL_KW_CONTINUE_ON_ERROR_VALUE = 81;
 
   /**
    * The '<em><b>PPL KW ENVIRONMENT</b></em>' literal value.
@@ -2500,7 +2521,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_ENVIRONMENT_VALUE = 81;
+  public static final int PPL_KW_ENVIRONMENT_VALUE = 82;
 
   /**
    * The '<em><b>PPL KW ID</b></em>' literal value.
@@ -2511,7 +2532,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_ID_VALUE = 82;
+  public static final int PPL_KW_ID_VALUE = 83;
 
   /**
    * The '<em><b>PPL KW PERMISSIONS</b></em>' literal value.
@@ -2522,7 +2543,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_PERMISSIONS_VALUE = 83;
+  public static final int PPL_KW_PERMISSIONS_VALUE = 84;
 
   /**
    * The '<em><b>PPL KW TIMEOUTS</b></em>' literal value.
@@ -2533,7 +2554,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_TIMEOUTS_VALUE = 84;
+  public static final int PPL_KW_TIMEOUTS_VALUE = 85;
 
   /**
    * The '<em><b>PPL KW DEFAULTS RUN</b></em>' literal value.
@@ -2544,7 +2565,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_DEFAULTS_RUN_VALUE = 85;
+  public static final int PPL_KW_DEFAULTS_RUN_VALUE = 86;
 
   /**
    * The '<em><b>PPL KW PUSH</b></em>' literal value.
@@ -2555,7 +2576,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_PUSH_VALUE = 86;
+  public static final int PPL_KW_PUSH_VALUE = 87;
 
   /**
    * The '<em><b>PPL KW PULL REQUEST</b></em>' literal value.
@@ -2566,7 +2587,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_PULL_REQUEST_VALUE = 87;
+  public static final int PPL_KW_PULL_REQUEST_VALUE = 88;
 
   /**
    * The '<em><b>PPL KW REPOSITORY DISPATCH</b></em>' literal value.
@@ -2577,7 +2598,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_REPOSITORY_DISPATCH_VALUE = 88;
+  public static final int PPL_KW_REPOSITORY_DISPATCH_VALUE = 89;
 
   /**
    * The '<em><b>PPL KW WORKFLOW RUN</b></em>' literal value.
@@ -2588,7 +2609,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_WORKFLOW_RUN_VALUE = 89;
+  public static final int PPL_KW_WORKFLOW_RUN_VALUE = 90;
 
   /**
    * The '<em><b>PPL KW FILTERS</b></em>' literal value.
@@ -2599,7 +2620,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_FILTERS_VALUE = 90;
+  public static final int PPL_KW_FILTERS_VALUE = 91;
 
   /**
    * The '<em><b>PPL KW EXCLUDE</b></em>' literal value.
@@ -2610,7 +2631,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_EXCLUDE_VALUE = 91;
+  public static final int PPL_KW_EXCLUDE_VALUE = 92;
 
   /**
    * The '<em><b>PPL KW FAIL FAST</b></em>' literal value.
@@ -2621,7 +2642,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_FAIL_FAST_VALUE = 92;
+  public static final int PPL_KW_FAIL_FAST_VALUE = 93;
 
   /**
    * The '<em><b>PPL KW MAX PARALLEL</b></em>' literal value.
@@ -2632,7 +2653,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_MAX_PARALLEL_VALUE = 93;
+  public static final int PPL_KW_MAX_PARALLEL_VALUE = 94;
 
   /**
    * The '<em><b>PPL KW CONTAINER IMAGE</b></em>' literal value.
@@ -2643,7 +2664,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_CONTAINER_IMAGE_VALUE = 94;
+  public static final int PPL_KW_CONTAINER_IMAGE_VALUE = 95;
 
   /**
    * The '<em><b>PPL KW CREDENTIALS</b></em>' literal value.
@@ -2654,7 +2675,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_CREDENTIALS_VALUE = 95;
+  public static final int PPL_KW_CREDENTIALS_VALUE = 96;
 
   /**
    * The '<em><b>PPL KW PORTS</b></em>' literal value.
@@ -2665,7 +2686,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_PORTS_VALUE = 96;
+  public static final int PPL_KW_PORTS_VALUE = 97;
 
   /**
    * The '<em><b>PPL KW INHERIT</b></em>' literal value.
@@ -2676,7 +2697,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_INHERIT_VALUE = 97;
+  public static final int PPL_KW_INHERIT_VALUE = 98;
 
   /**
    * The '<em><b>PPL KW TRIGGER</b></em>' literal value.
@@ -2687,7 +2708,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_TRIGGER_VALUE = 98;
+  public static final int PPL_KW_TRIGGER_VALUE = 99;
 
   /**
    * The '<em><b>PPL KW TEMPLATE</b></em>' literal value.
@@ -2698,7 +2719,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_TEMPLATE_VALUE = 99;
+  public static final int PPL_KW_TEMPLATE_VALUE = 100;
 
   /**
    * The '<em><b>PPL KW WORKSPACE</b></em>' literal value.
@@ -2709,7 +2730,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_WORKSPACE_VALUE = 100;
+  public static final int PPL_KW_WORKSPACE_VALUE = 101;
 
   /**
    * The '<em><b>PPL KW PIPELINE</b></em>' literal value.
@@ -2720,7 +2741,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_PIPELINE_VALUE = 101;
+  public static final int PPL_KW_PIPELINE_VALUE = 102;
 
   /**
    * The '<em><b>PPL KW TIMEOUT IN MINUTES</b></em>' literal value.
@@ -2731,7 +2752,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_TIMEOUT_IN_MINUTES_VALUE = 102;
+  public static final int PPL_KW_TIMEOUT_IN_MINUTES_VALUE = 103;
 
   /**
    * The '<em><b>PPL KW CONTINUE ON ERR</b></em>' literal value.
@@ -2742,7 +2763,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_CONTINUE_ON_ERR_VALUE = 103;
+  public static final int PPL_KW_CONTINUE_ON_ERR_VALUE = 104;
 
   /**
    * The '<em><b>PPL KW RESOURCE TYPE</b></em>' literal value.
@@ -2753,7 +2774,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_RESOURCE_TYPE_VALUE = 104;
+  public static final int PPL_KW_RESOURCE_TYPE_VALUE = 105;
 
   /**
    * The '<em><b>PPL KW RESOURCE NAME</b></em>' literal value.
@@ -2764,7 +2785,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_RESOURCE_NAME_VALUE = 105;
+  public static final int PPL_KW_RESOURCE_NAME_VALUE = 106;
 
   /**
    * The '<em><b>PPL KW STAGES</b></em>' literal value.
@@ -2775,7 +2796,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_STAGES_VALUE = 106;
+  public static final int PPL_KW_STAGES_VALUE = 107;
 
   /**
    * The '<em><b>PPL KW ONLY</b></em>' literal value.
@@ -2786,7 +2807,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_ONLY_VALUE = 107;
+  public static final int PPL_KW_ONLY_VALUE = 108;
 
   /**
    * The '<em><b>PPL KW EXCEPT</b></em>' literal value.
@@ -2797,7 +2818,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_EXCEPT_VALUE = 108;
+  public static final int PPL_KW_EXCEPT_VALUE = 109;
 
   /**
    * The '<em><b>PPL KW IMAGE</b></em>' literal value.
@@ -2808,7 +2829,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_IMAGE_VALUE = 109;
+  public static final int PPL_KW_IMAGE_VALUE = 110;
 
   /**
    * The '<em><b>PPL KW CACHE</b></em>' literal value.
@@ -2819,7 +2840,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_CACHE_VALUE = 110;
+  public static final int PPL_KW_CACHE_VALUE = 111;
 
   /**
    * The '<em><b>PPL KW ARTIFACTS</b></em>' literal value.
@@ -2830,7 +2851,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_ARTIFACTS_VALUE = 111;
+  public static final int PPL_KW_ARTIFACTS_VALUE = 112;
 
   /**
    * The '<em><b>PPL KW RETRIES</b></em>' literal value.
@@ -2841,7 +2862,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_RETRIES_VALUE = 112;
+  public static final int PPL_KW_RETRIES_VALUE = 113;
 
   /**
    * The '<em><b>PPL KW RULES</b></em>' literal value.
@@ -2852,7 +2873,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_RULES_VALUE = 113;
+  public static final int PPL_KW_RULES_VALUE = 114;
 
   /**
    * The '<em><b>PPL KW BEFORE SCRIPT</b></em>' literal value.
@@ -2863,7 +2884,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_BEFORE_SCRIPT_VALUE = 114;
+  public static final int PPL_KW_BEFORE_SCRIPT_VALUE = 115;
 
   /**
    * The '<em><b>PPL KW AFTER SCRIPT</b></em>' literal value.
@@ -2874,7 +2895,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_AFTER_SCRIPT_VALUE = 115;
+  public static final int PPL_KW_AFTER_SCRIPT_VALUE = 116;
 
   /**
    * The '<em><b>PPL KW TIMEOUT</b></em>' literal value.
@@ -2885,7 +2906,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_TIMEOUT_VALUE = 116;
+  public static final int PPL_KW_TIMEOUT_VALUE = 117;
 
   /**
    * The '<em><b>PPL KW WHEN</b></em>' literal value.
@@ -2896,7 +2917,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_WHEN_VALUE = 117;
+  public static final int PPL_KW_WHEN_VALUE = 118;
 
   /**
    * The '<em><b>PPL KW ALLOW FAILURE</b></em>' literal value.
@@ -2907,7 +2928,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_ALLOW_FAILURE_VALUE = 118;
+  public static final int PPL_KW_ALLOW_FAILURE_VALUE = 119;
 
   /**
    * The '<em><b>PPL KW DEPENDENCIES</b></em>' literal value.
@@ -2918,7 +2939,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_DEPENDENCIES_VALUE = 119;
+  public static final int PPL_KW_DEPENDENCIES_VALUE = 120;
 
   /**
    * The '<em><b>PPL KW PULL REQUESTS</b></em>' literal value.
@@ -2929,7 +2950,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_PULL_REQUESTS_VALUE = 120;
+  public static final int PPL_KW_PULL_REQUESTS_VALUE = 121;
 
   /**
    * The '<em><b>PPL KW STEP</b></em>' literal value.
@@ -2940,7 +2961,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_STEP_VALUE = 121;
+  public static final int PPL_KW_STEP_VALUE = 122;
 
   /**
    * The '<em><b>PPL KW DEFINITIONS</b></em>' literal value.
@@ -2951,7 +2972,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_DEFINITIONS_VALUE = 122;
+  public static final int PPL_KW_DEFINITIONS_VALUE = 123;
 
   /**
    * The '<em><b>PPL KW CACHES</b></em>' literal value.
@@ -2962,7 +2983,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_CACHES_VALUE = 123;
+  public static final int PPL_KW_CACHES_VALUE = 124;
 
   /**
    * The '<em><b>PPL KW PARALLEL</b></em>' literal value.
@@ -2973,7 +2994,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_PARALLEL_VALUE = 124;
+  public static final int PPL_KW_PARALLEL_VALUE = 125;
 
   /**
    * The '<em><b>PPL KW CONDITIONS</b></em>' literal value.
@@ -2984,7 +3005,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_CONDITIONS_VALUE = 125;
+  public static final int PPL_KW_CONDITIONS_VALUE = 126;
 
   /**
    * The '<em><b>PPL KW MAX TIME</b></em>' literal value.
@@ -2995,7 +3016,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_MAX_TIME_VALUE = 126;
+  public static final int PPL_KW_MAX_TIME_VALUE = 127;
 
   /**
    * The '<em><b>PPL KW PROJECT</b></em>' literal value.
@@ -3006,7 +3027,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_PROJECT_VALUE = 127;
+  public static final int PPL_KW_PROJECT_VALUE = 128;
 
   /**
    * The '<em><b>PPL KW PLAN</b></em>' literal value.
@@ -3017,7 +3038,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_PLAN_VALUE = 128;
+  public static final int PPL_KW_PLAN_VALUE = 129;
 
   /**
    * The '<em><b>PPL KW TASKS</b></em>' literal value.
@@ -3028,7 +3049,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_TASKS_VALUE = 129;
+  public static final int PPL_KW_TASKS_VALUE = 130;
 
   /**
    * The '<em><b>PPL KW REQUIREMENTS</b></em>' literal value.
@@ -3039,7 +3060,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_REQUIREMENTS_VALUE = 130;
+  public static final int PPL_KW_REQUIREMENTS_VALUE = 131;
 
   /**
    * The '<em><b>PPL KW FINAL</b></em>' literal value.
@@ -3050,7 +3071,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_FINAL_VALUE = 131;
+  public static final int PPL_KW_FINAL_VALUE = 132;
 
   /**
    * The '<em><b>PPL KW JDK</b></em>' literal value.
@@ -3061,7 +3082,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_JDK_VALUE = 132;
+  public static final int PPL_KW_JDK_VALUE = 133;
 
   /**
    * The '<em><b>PPL KW LABELS</b></em>' literal value.
@@ -3072,7 +3093,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_LABELS_VALUE = 133;
+  public static final int PPL_KW_LABELS_VALUE = 134;
 
   /**
    * The '<em><b>PPL KW REPOSITORY</b></em>' literal value.
@@ -3083,7 +3104,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_REPOSITORY_VALUE = 134;
+  public static final int PPL_KW_REPOSITORY_VALUE = 135;
 
   /**
    * The '<em><b>PPL KW RELEASE</b></em>' literal value.
@@ -3094,7 +3115,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_RELEASE_VALUE = 135;
+  public static final int PPL_KW_RELEASE_VALUE = 136;
 
   /**
    * The '<em><b>PPL KW DOCKER</b></em>' literal value.
@@ -3105,7 +3126,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_DOCKER_VALUE = 136;
+  public static final int PPL_KW_DOCKER_VALUE = 137;
 
   /**
    * The '<em><b>PPL KW AGENT</b></em>' literal value.
@@ -3116,7 +3137,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_AGENT_VALUE = 137;
+  public static final int PPL_KW_AGENT_VALUE = 138;
 
   /**
    * The '<em><b>PPL KW QUEUE</b></em>' literal value.
@@ -3127,7 +3148,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_QUEUE_VALUE = 138;
+  public static final int PPL_KW_QUEUE_VALUE = 139;
 
   /**
    * The '<em><b>PPL KW SNAPSHOT</b></em>' literal value.
@@ -3138,7 +3159,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_SNAPSHOT_VALUE = 139;
+  public static final int PPL_KW_SNAPSHOT_VALUE = 140;
 
   /**
    * The '<em><b>PPL KW POLICY</b></em>' literal value.
@@ -3149,7 +3170,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_POLICY_VALUE = 140;
+  public static final int PPL_KW_POLICY_VALUE = 141;
 
   /**
    * The '<em><b>PPL KW APPROVALS</b></em>' literal value.
@@ -3160,7 +3181,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_APPROVALS_VALUE = 141;
+  public static final int PPL_KW_APPROVALS_VALUE = 142;
 
   /**
    * The '<em><b>PPL KW PREBUILD</b></em>' literal value.
@@ -3171,7 +3192,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_PREBUILD_VALUE = 142;
+  public static final int PPL_KW_PREBUILD_VALUE = 143;
 
   /**
    * The '<em><b>PPL KW POSTBUILD</b></em>' literal value.
@@ -3182,7 +3203,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_POSTBUILD_VALUE = 143;
+  public static final int PPL_KW_POSTBUILD_VALUE = 144;
 
   /**
    * The '<em><b>PPL KW SSH</b></em>' literal value.
@@ -3193,7 +3214,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_SSH_VALUE = 144;
+  public static final int PPL_KW_SSH_VALUE = 145;
 
   /**
    * The '<em><b>PPL KW AUTH</b></em>' literal value.
@@ -3204,7 +3225,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_AUTH_VALUE = 145;
+  public static final int PPL_KW_AUTH_VALUE = 146;
 
   /**
    * The '<em><b>PPL KW STORAGE</b></em>' literal value.
@@ -3215,7 +3236,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_STORAGE_VALUE = 146;
+  public static final int PPL_KW_STORAGE_VALUE = 147;
 
   /**
    * The '<em><b>PPL KW ENDPOINTS</b></em>' literal value.
@@ -3226,7 +3247,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_ENDPOINTS_VALUE = 147;
+  public static final int PPL_KW_ENDPOINTS_VALUE = 148;
 
   /**
    * The '<em><b>PPL KW COMMAND</b></em>' literal value.
@@ -3237,7 +3258,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_COMMAND_VALUE = 148;
+  public static final int PPL_KW_COMMAND_VALUE = 149;
 
   /**
    * The '<em><b>PPL KW PROVISIONER</b></em>' literal value.
@@ -3248,7 +3269,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_PROVISIONER_VALUE = 149;
+  public static final int PPL_KW_PROVISIONER_VALUE = 150;
 
   /**
    * The '<em><b>PPL KW TRIGGER RULES</b></em>' literal value.
@@ -3259,7 +3280,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_TRIGGER_RULES_VALUE = 150;
+  public static final int PPL_KW_TRIGGER_RULES_VALUE = 151;
 
   /**
    * The '<em><b>PPL KW RUN POLICY</b></em>' literal value.
@@ -3270,7 +3291,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_RUN_POLICY_VALUE = 151;
+  public static final int PPL_KW_RUN_POLICY_VALUE = 152;
 
   /**
    * The '<em><b>PPL KW QUEUED</b></em>' literal value.
@@ -3281,7 +3302,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_QUEUED_VALUE = 152;
+  public static final int PPL_KW_QUEUED_VALUE = 153;
 
   /**
    * The '<em><b>PPL KW NOTIFICATIONS</b></em>' literal value.
@@ -3292,7 +3313,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_NOTIFICATIONS_VALUE = 153;
+  public static final int PPL_KW_NOTIFICATIONS_VALUE = 154;
 
   /**
    * The '<em><b>PPL KW DEPLOY TRIGGER</b></em>' literal value.
@@ -3303,7 +3324,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_DEPLOY_TRIGGER_VALUE = 154;
+  public static final int PPL_KW_DEPLOY_TRIGGER_VALUE = 155;
 
   /**
    * The '<em><b>PPL KW RELEASE TRIGGER</b></em>' literal value.
@@ -3314,7 +3335,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_RELEASE_TRIGGER_VALUE = 155;
+  public static final int PPL_KW_RELEASE_TRIGGER_VALUE = 156;
 
   /**
    * The '<em><b>PPL KW LOCK BEHAVIOR</b></em>' literal value.
@@ -3325,7 +3346,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_LOCK_BEHAVIOR_VALUE = 156;
+  public static final int PPL_KW_LOCK_BEHAVIOR_VALUE = 157;
 
   /**
    * The '<em><b>PPL KW REVIEW STAGE</b></em>' literal value.
@@ -3336,7 +3357,7 @@ public enum PipelineKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_KW_REVIEW_STAGE_VALUE = 157;
+  public static final int PPL_KW_REVIEW_STAGE_VALUE = 158;
 
   /**
    * An array of all the '<em><b>Keyword</b></em>' enumerators.
@@ -3370,6 +3391,7 @@ public enum PipelineKeyword implements Enumerator
       PPL_KW_INCLUDE,
       PPL_KW_TYPES,
       PPL_KW_BATCH,
+      PPL_KW_STATUS,
       PPL_KW_AUTO_CANCEL,
       PPL_KW_WORKFLOWS,
       PPL_KW_DRAFTS,
@@ -3592,6 +3614,7 @@ public enum PipelineKeyword implements Enumerator
       case PPL_KW_INCLUDE_VALUE: return PPL_KW_INCLUDE;
       case PPL_KW_TYPES_VALUE: return PPL_KW_TYPES;
       case PPL_KW_BATCH_VALUE: return PPL_KW_BATCH;
+      case PPL_KW_STATUS_VALUE: return PPL_KW_STATUS;
       case PPL_KW_AUTO_CANCEL_VALUE: return PPL_KW_AUTO_CANCEL;
       case PPL_KW_WORKFLOWS_VALUE: return PPL_KW_WORKFLOWS;
       case PPL_KW_DRAFTS_VALUE: return PPL_KW_DRAFTS;

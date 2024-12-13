@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Job#getJobName <em>Job Name</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Job#getName <em>Name</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Job#getJobParameterValues <em>Job Parameter Values</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Job#getDependKW <em>Depend KW</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Job#getReferences <em>References</em>}</li>
@@ -30,26 +30,26 @@ import org.eclipse.emf.ecore.EObject;
 public interface Job extends EObject
 {
   /**
-   * Returns the value of the '<em><b>Job Name</b></em>' attribute.
+   * Returns the value of the '<em><b>Name</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Job Name</em>' attribute.
-   * @see #setJobName(String)
-   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getJob_JobName()
+   * @return the value of the '<em>Name</em>' attribute.
+   * @see #setName(String)
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getJob_Name()
    * @model
    * @generated
    */
-  String getJobName();
+  String getName();
 
   /**
-   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Job#getJobName <em>Job Name</em>}' attribute.
+   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Job#getName <em>Name</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Job Name</em>' attribute.
-   * @see #getJobName()
+   * @param value the new value of the '<em>Name</em>' attribute.
+   * @see #getName()
    * @generated
    */
-  void setJobName(String value);
+  void setName(String value);
 
   /**
    * Returns the value of the '<em><b>Job Parameter Values</b></em>' containment reference list.

@@ -56,10 +56,10 @@ Pipeline:
 Configurations:
 	('name:' name=UnquotedString)? &
 	('run-name:'runName=UnquotedString)? &
-	('defaults:' BEGIN 'run:' BEGIN ('shell:'defaultShellValue=STRING)?&('working-directory:'defaultWDValue=STRING)? END END)? &
+	('defaults:' BEGIN 'run:' BEGIN ('shell:'defaultShellValue=(STRING|ID))?&('working-directory:'defaultWDValue=(STRING|ID))? END END)? &
 	('env:' BEGIN ('-'?env+=KeyValue)* END)? &
 	('permissions:'((allPermission=ID)|(BEGIN (indPermissions+=IndPermissionValue*) END))) ? &
-	('concurrency:'(BEGIN ('group:' group=(ID|COMPLEX_EXPRESSION)) ('cancel-in-progress:' cancelConcurrence=(ID|COMPLEX_EXPRESSION)) END))? &
+	('concurrency:'((BEGIN ('group:' group=(ID|COMPLEX_EXPRESSION)) ('cancel-in-progress:' cancelConcurrence=(ID|COMPLEX_EXPRESSION)) END) | (concurrency=(AnyData|ArrayList))))? &
 	
 	// Azure DevOps Config
 	('pool:'(BEGIN ('name:'vmName=ID)('vmImage:'vmImage=(ID|STRING))?&('demands:'vmDemands=(AnyData|HyphenValues))? END))? &
@@ -112,7 +112,7 @@ Event:
 	)|
 	(
 		((scheduleNameKW=(('schedules:')|('schedule:')))(triggerSchedules+=TriggerSchedule*))|
-		((workflowTypeKW=('workflow_call:')|('workflow_dispatch:'))(BEGIN workFlowActivities+=Activity* END))
+		((workflowTypeKW=('workflow_call:')|('workflow_dispatch:'))(BEGIN workFlowActivities+=Activity* END)?)
 	)
 ;
 
@@ -131,7 +131,7 @@ Branch:
 ;
 
 Activity:
-	(name=(HyphenValues|ArrayList))|
+	(name=(AnyData|HyphenValues|ArrayList))|
 	(
 		name=('inputs:'|'outputs:'|'secrets:')
 		//(BEGIN (activities+=WorkFlowKeyValue+) END)
@@ -154,7 +154,7 @@ Stage:
 ; 
 
 Job:
-	(('-' ('job:'|'deployment:'))? jobName=(ID|STRING) (':')?)
+	(('-' ('job:'|'deployment:'))? name=(ID|STRING) (':')?)
 	(BEGIN
 		//(nameKW=('name:'|'displayName:') name=UnquotedString)? &
 		(jobParameterValues+=ParameterValue*)
@@ -301,6 +301,7 @@ enum PipelineKeyword:
     PPL_KW_INCLUDE = 'include:' |
     PPL_KW_TYPES = 'types:' |
     PPL_KW_BATCH = 'batch:' |
+    PPL_KW_STATUS = 'status:' |
     PPL_KW_AUTO_CANCEL = 'autoCancel:' |
     PPL_KW_WORKFLOWS = 'workflows:' |
     PPL_KW_DRAFTS = 'drafts:' |
