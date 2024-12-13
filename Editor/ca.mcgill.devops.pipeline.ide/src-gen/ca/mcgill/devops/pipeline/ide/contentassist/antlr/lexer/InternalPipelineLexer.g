@@ -25,6 +25,8 @@ Pull_request_review : 'pull_request_review:';
 
 Pull_request_target : 'pull_request_target:';
 
+RepositoryProjects : 'repository-projects:';
+
 Repository_dispatch : 'repository_dispatch:';
 
 CancelInProgress : 'cancel-in-progress:';
@@ -48,6 +50,8 @@ BranchesIgnore : 'branches-ignore:';
 ContainerImage : 'container.image:';
 
 ContinueOnError : 'continueOnError:';
+
+SecurityEvents : 'security-events:';
 
 TimeoutMinutes : 'timeout-minutes:';
 
@@ -74,6 +78,8 @@ PullRequests : 'pull-requests:';
 Workflow_call : 'workflow_call:';
 
 After_script : 'after_script:';
+
+Attestations : 'attestations:';
 
 DefaultsRun : 'defaults.run:';
 
@@ -109,7 +115,11 @@ Credentials : 'credentials:';
 
 Definitions : 'definitions:';
 
+Deployments : 'deployments:';
+
 Description : 'description:';
+
+Discussions : 'discussions:';
 
 DisplayName : 'displayName:';
 
@@ -191,9 +201,13 @@ Branches : 'branches:';
 
 Checkout : 'checkout:';
 
+Contents : 'contents:';
+
 Defaults : 'defaults:';
 
 Download : 'download:';
+
+IdToken : 'id-token:';
 
 MaxTime : 'max-time:';
 
@@ -219,6 +233,8 @@ Services : 'services:';
 
 Snapshot : 'snapshot:';
 
+Statuses : 'statuses:';
+
 Strategy : 'strategy:';
 
 Template : 'template:';
@@ -226,6 +242,8 @@ Template : 'template:';
 Timeouts : 'timeouts:';
 
 Webhooks : 'webhooks:';
+
+Actions : 'actions:';
 
 Changes : 'changes:';
 
@@ -276,6 +294,8 @@ Always : 'always:';
 Builds : 'builds:';
 
 Caches : 'caches:';
+
+Checks : 'checks:';
 
 Create : 'create:';
 
@@ -437,13 +457,13 @@ RULE_HEX_INT : '0x' ('0'..'9'|'a'..'f'|'A'..'F')+;
 
 RULE_FLOAT_LITERAL : '-'? RULE_INT '.' RULE_INT;
 
-RULE_VERSION : RULE_INT ('.' RULE_INT)+;
+RULE_VERSION : RULE_INT ('.' (RULE_INT|RULE_ID))+;
 
 fragment RULE_BEGIN : ;
 
 fragment RULE_END : ;
 
-RULE_ID : ('a'..'z'|'A'..'Z'|'_'|'/'|'@'|'-'|'.'|'\\'|'&') ('a'..'z'|'A'..'Z'|'0'..'9'|'_'|'/'|'@'|'&'|'-'|'.'|'\\'|'('|')'|'|'|'$')*;
+RULE_ID : ('a'..'z'|'A'..'Z'|'0'..'9'|'_'|'/'|'@'|'-'|'.'|'\\'|'&') ('a'..'z'|'A'..'Z'|'0'..'9'|'_'|'/'|'@'|'&'|'-'|'.'|'\\'|'('|')'|'|'|'$')*;
 
 RULE_ML_COMMENT : '/*' ( options {greedy=false;} : . )*'*/';
 

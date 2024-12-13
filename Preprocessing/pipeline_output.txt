@@ -1,0 +1,13 @@
+Counter Value: 1
+Complete Output:
+Starting pipeline validation and processing...
+Pipeline Validator
+Resource URI: file:///C:\Users\mbedek\Documents\DevOps Dialect Editor\runtime-EclipseApplication\BasicSanity\Test.Pipeline
+
+
+1
+Severity: ERROR
+Message: Couldn't resolve reference to Job 'create-releas'.
+Location: file:///C:\Users\mbedek\Documents\DevOps Dialect Editor\runtime-EclipseApplication\BasicSanity\Test.Pipeline#//@jobs.2
+--------------
+Failed to process pipeline.

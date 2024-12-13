@@ -49,15 +49,15 @@ public interface Activity extends EObject
   void setName(String value);
 
   /**
-   * Returns the value of the '<em><b>Activities</b></em>' attribute list.
-   * The list contents are of type {@link java.lang.String}.
+   * Returns the value of the '<em><b>Activities</b></em>' containment reference list.
+   * The list contents are of type {@link ca.mcgill.devops.pipeline.pipeline.ParameterValue}.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Activities</em>' attribute list.
+   * @return the value of the '<em>Activities</em>' containment reference list.
    * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getActivity_Activities()
-   * @model unique="false"
+   * @model containment="true"
    * @generated
    */
-  EList<String> getActivities();
+  EList<ParameterValue> getActivities();
 
 } // Activity

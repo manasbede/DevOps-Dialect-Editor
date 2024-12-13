@@ -4,20 +4,24 @@
 package ca.mcgill.devops.pipeline.pipeline.impl;
 
 import ca.mcgill.devops.pipeline.pipeline.Activity;
+import ca.mcgill.devops.pipeline.pipeline.ParameterValue;
 import ca.mcgill.devops.pipeline.pipeline.PipelinePackage;
 
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.eclipse.emf.ecore.util.EDataTypeEList;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -56,14 +60,14 @@ public class ActivityImpl extends MinimalEObjectImpl.Container implements Activi
   protected String name = NAME_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getActivities() <em>Activities</em>}' attribute list.
+   * The cached value of the '{@link #getActivities() <em>Activities</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getActivities()
    * @generated
    * @ordered
    */
-  protected EList<String> activities;
+  protected EList<ParameterValue> activities;
 
   /**
    * <!-- begin-user-doc -->
@@ -117,13 +121,29 @@ public class ActivityImpl extends MinimalEObjectImpl.Container implements Activi
    * @generated
    */
   @Override
-  public EList<String> getActivities()
+  public EList<ParameterValue> getActivities()
   {
     if (activities == null)
     {
-      activities = new EDataTypeEList<String>(String.class, this, PipelinePackage.ACTIVITY__ACTIVITIES);
+      activities = new EObjectContainmentEList<ParameterValue>(ParameterValue.class, this, PipelinePackage.ACTIVITY__ACTIVITIES);
     }
     return activities;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  {
+    switch (featureID)
+    {
+      case PipelinePackage.ACTIVITY__ACTIVITIES:
+        return ((InternalEList<?>)getActivities()).basicRemove(otherEnd, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
   }
 
   /**
@@ -160,7 +180,7 @@ public class ActivityImpl extends MinimalEObjectImpl.Container implements Activi
         return;
       case PipelinePackage.ACTIVITY__ACTIVITIES:
         getActivities().clear();
-        getActivities().addAll((Collection<? extends String>)newValue);
+        getActivities().addAll((Collection<? extends ParameterValue>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -217,8 +237,6 @@ public class ActivityImpl extends MinimalEObjectImpl.Container implements Activi
     StringBuilder result = new StringBuilder(super.toString());
     result.append(" (name: ");
     result.append(name);
-    result.append(", activities: ");
-    result.append(activities);
     result.append(')');
     return result.toString();
   }

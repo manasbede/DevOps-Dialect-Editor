@@ -25,6 +25,7 @@
         upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="group" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="cancelConcurrence" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="concurrency" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="vmName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="vmImage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="vmDemands" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -70,10 +71,10 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="excludedPaths" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="includedTags" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="excludedTags" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scheduleName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scheduleNameKW" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="triggerSchedules" upperBound="-1"
         eType="#//TriggerSchedule" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="workflowType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="workflowTypeKW" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="workFlowActivities" upperBound="-1"
         eType="#//Activity" containment="true"/>
   </eClassifiers>
@@ -92,8 +93,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Activity">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="activities" unique="false"
-        upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="activities" upperBound="-1"
+        eType="#//ParameterValue" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Stage">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -113,13 +114,11 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Job">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nameKW" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="jobName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="jobParameterValues" upperBound="-1"
+        eType="#//ParameterValue" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dependKW" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="references" unique="false"
         upperBound="-1" eType="#//Job"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="jobParameterValues" upperBound="-1"
-        eType="#//ParameterValue" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="steps" upperBound="-1"
         eType="#//Step" containment="true"/>
   </eClassifiers>
@@ -132,6 +131,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="command" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Action" eSuperTypes="#//Step">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="actionName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="actionKeyword" eType="#//PipelineKeyword"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="otherKeyword" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="actionValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -237,29 +237,29 @@
     <eLiterals name="PPL_KW_INCLUDE" value="20" literal="include:"/>
     <eLiterals name="PPL_KW_TYPES" value="21" literal="types:"/>
     <eLiterals name="PPL_KW_BATCH" value="22" literal="batch:"/>
-    <eLiterals name="PPL_KW_AUTO_CANCEL" value="23" literal="autoCancel:"/>
-    <eLiterals name="PPL_KW_WORKFLOWS" value="24" literal="workflows:"/>
-    <eLiterals name="PPL_KW_DRAFTS" value="25" literal="drafts:"/>
-    <eLiterals name="PPL_KW_BRANCHES" value="26" literal="branches:"/>
-    <eLiterals name="PPL_KW_BRANCHES_IGNORE" value="27" literal="branches-ignore:"/>
-    <eLiterals name="PPL_KW_PATHS" value="28" literal="paths:"/>
-    <eLiterals name="PPL_KW_PATHS_IGNORE" value="29" literal="paths-ignore:"/>
-    <eLiterals name="PPL_KW_TAGS" value="30" literal="tags:"/>
-    <eLiterals name="PPL_KW_TAGS_IGNORE" value="31" literal="tags-ignore:"/>
-    <eLiterals name="PPL_KW_SCHEDULES" value="32" literal="schedules:"/>
-    <eLiterals name="PPL_KW_SCHEDULE" value="33" literal="schedule:"/>
-    <eLiterals name="PPL_KW_WORKFLOW_CALL" value="34" literal="workflow_call:"/>
-    <eLiterals name="PPL_KW_WORKFLOW_DISPATCH" value="35" literal="workflow_dispatch:"/>
-    <eLiterals name="PPL_KW_CRON" value="36" literal="cron:"/>
-    <eLiterals name="PPL_KW_DISPLAY_NAME" value="37" literal="displayName:"/>
-    <eLiterals name="PPL_KW_ALWAYS" value="38" literal="always:"/>
-    <eLiterals name="PPL_KW_STAGE" value="39" literal="stage:"/>
-    <eLiterals name="PPL_KW_CONDITION" value="40" literal="condition:"/>
-    <eLiterals name="PPL_KW_IS_SKIPPABLE" value="41" literal="isSkippable:"/>
-    <eLiterals name="PPL_KW_DEPENDS_ON" value="42" literal="dependsOn:"/>
-    <eLiterals name="PPL_KW_JOB" value="43" literal="job:"/>
-    <eLiterals name="PPL_KW_DEPLOYMENT" value="44" literal="deployment:"/>
-    <eLiterals name="PPL_KW_NEEDS" value="45" literal="needs:"/>
+    <eLiterals name="PPL_KW_STATUS" value="23" literal="status:"/>
+    <eLiterals name="PPL_KW_AUTO_CANCEL" value="24" literal="autoCancel:"/>
+    <eLiterals name="PPL_KW_WORKFLOWS" value="25" literal="workflows:"/>
+    <eLiterals name="PPL_KW_DRAFTS" value="26" literal="drafts:"/>
+    <eLiterals name="PPL_KW_BRANCHES" value="27" literal="branches:"/>
+    <eLiterals name="PPL_KW_BRANCHES_IGNORE" value="28" literal="branches-ignore:"/>
+    <eLiterals name="PPL_KW_PATHS" value="29" literal="paths:"/>
+    <eLiterals name="PPL_KW_PATHS_IGNORE" value="30" literal="paths-ignore:"/>
+    <eLiterals name="PPL_KW_TAGS" value="31" literal="tags:"/>
+    <eLiterals name="PPL_KW_TAGS_IGNORE" value="32" literal="tags-ignore:"/>
+    <eLiterals name="PPL_KW_SCHEDULES" value="33" literal="schedules:"/>
+    <eLiterals name="PPL_KW_SCHEDULE" value="34" literal="schedule:"/>
+    <eLiterals name="PPL_KW_WORKFLOW_CALL" value="35" literal="workflow_call:"/>
+    <eLiterals name="PPL_KW_WORKFLOW_DISPATCH" value="36" literal="workflow_dispatch:"/>
+    <eLiterals name="PPL_KW_CRON" value="37" literal="cron:"/>
+    <eLiterals name="PPL_KW_DISPLAY_NAME" value="38" literal="displayName:"/>
+    <eLiterals name="PPL_KW_ALWAYS" value="39" literal="always:"/>
+    <eLiterals name="PPL_KW_STAGE" value="40" literal="stage:"/>
+    <eLiterals name="PPL_KW_CONDITION" value="41" literal="condition:"/>
+    <eLiterals name="PPL_KW_IS_SKIPPABLE" value="42" literal="isSkippable:"/>
+    <eLiterals name="PPL_KW_DEPENDS_ON" value="43" literal="dependsOn:"/>
+    <eLiterals name="PPL_KW_JOB" value="44" literal="job:"/>
+    <eLiterals name="PPL_KW_DEPLOYMENT" value="45" literal="deployment:"/>
     <eLiterals name="PPL_KW_SCRIPT" value="46" literal="script:"/>
     <eLiterals name="PPL_KW_BASH" value="47" literal="bash:"/>
     <eLiterals name="PPL_KW_PWSH" value="48" literal="pwsh:"/>

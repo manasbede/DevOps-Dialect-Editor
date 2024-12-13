@@ -100,6 +100,7 @@
       <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_INCLUDE"/>
       <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_TYPES"/>
       <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_BATCH"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_STATUS"/>
       <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_AUTO_CANCEL"/>
       <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_WORKFLOWS"/>
       <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_DRAFTS"/>
@@ -122,7 +123,6 @@
       <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_DEPENDS_ON"/>
       <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_JOB"/>
       <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_DEPLOYMENT"/>
-      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_NEEDS"/>
       <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_SCRIPT"/>
       <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_BASH"/>
       <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineKeyword/PPL_KW_PWSH"/>
@@ -254,6 +254,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Configurations/indPermissions"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Configurations/group"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Configurations/cancelConcurrence"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Configurations/concurrency"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Configurations/vmName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Configurations/vmImage"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Configurations/vmDemands"/>
@@ -290,9 +291,9 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Event/excludedPaths"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Event/includedTags"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Event/excludedTags"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Event/scheduleName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Event/scheduleNameKW"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Event/triggerSchedules"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Event/workflowType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Event/workflowTypeKW"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Event/workFlowActivities"/>
     </genClasses>
     <genClasses ecoreClass="Pipeline.ecore#//TriggerSchedule">
@@ -308,7 +309,7 @@
     </genClasses>
     <genClasses ecoreClass="Pipeline.ecore#//Activity">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Activity/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Activity/activities"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Activity/activities"/>
     </genClasses>
     <genClasses ecoreClass="Pipeline.ecore#//Stage">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Stage/name"/>
@@ -325,11 +326,9 @@
     </genClasses>
     <genClasses ecoreClass="Pipeline.ecore#//Job">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Job/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Job/nameKW"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Job/jobName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Job/jobParameterValues"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Job/dependKW"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Job/references"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Job/jobParameterValues"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Pipeline.ecore#//Job/steps"/>
     </genClasses>
     <genClasses ecoreClass="Pipeline.ecore#//Step">
@@ -340,6 +339,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Script/command"/>
     </genClasses>
     <genClasses ecoreClass="Pipeline.ecore#//Action">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Action/actionName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Action/actionKeyword"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Action/otherKeyword"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Pipeline.ecore#//Action/actionValue"/>

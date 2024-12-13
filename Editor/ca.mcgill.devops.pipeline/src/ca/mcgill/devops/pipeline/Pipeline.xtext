@@ -42,7 +42,7 @@ generate pipeline "http://www.mcgill.ca/devops/pipeline/Pipeline"
 /*----------------------------------------------------Basic Configurations----------------------------------------------------*/
 Pipeline:
 	// GitHub Actions Config
-	pipelineConfiguration=Configurations
+	(pipelineConfiguration=Configurations)
 	
 	// Event Config
 	(('on:' (BEGIN triggers+=Event+ END)? ((triggers+=Event) | ('['triggers+=Event (',' triggers+=Event)*']'))?) | (triggers+=Event*))
@@ -56,10 +56,10 @@ Pipeline:
 Configurations:
 	('name:' name=UnquotedString)? &
 	('run-name:'runName=UnquotedString)? &
-	('defaults:' BEGIN 'run:' BEGIN ('shell:'defaultShellValue=STRING)?&('working-directory:'defaultWDValue=STRING)? END END)? &
+	('defaults:' BEGIN 'run:' BEGIN ('shell:'defaultShellValue=(STRING|ID))?&('working-directory:'defaultWDValue=(STRING|ID))? END END)? &
 	('env:' BEGIN ('-'?env+=KeyValue)* END)? &
-	('permission:'((allPermission=ID)|(BEGIN (indPermissions+=IndPermissionValue*) END))) ? &
-	('concurrency:'(BEGIN ('group:' group=(ID|COMPLEX_EXPRESSION)) ('cancel-in-progress:' cancelConcurrence=(ID|COMPLEX_EXPRESSION)) END))? &
+	('permissions:'((allPermission=ID)|(BEGIN (indPermissions+=IndPermissionValue*) END))) ? &
+	('concurrency:'((BEGIN ('group:' group=(ID|COMPLEX_EXPRESSION)) ('cancel-in-progress:' cancelConcurrence=(ID|COMPLEX_EXPRESSION)) END) | (concurrency=(AnyData|ArrayList))))? &
 	
 	// Azure DevOps Config
 	('pool:'(BEGIN ('name:'vmName=ID)('vmImage:'vmImage=(ID|STRING))?&('demands:'vmDemands=(AnyData|HyphenValues))? END))? &
@@ -96,11 +96,10 @@ Event:
 	(
 		((name=PipelineEventKeyword)|(simpleEvent=(ID)(':')?))(includedBranches+=Branch*)
 		(BEGIN 
-			(('types:')(activities+=Activity)|(BEGIN activities+=Activity END)) ?
-			(
+			(	(('types:')(activities+=Activity))? &
 				('batch:' batch=ID)? &
 				('autoCancel:' autoCancel=ID)? &
-				('workflows:' workflows=ArrayList)? &
+				('workflows:' workflows=(ArrayList|HyphenValues|ID))? &
 				('drafts:' drafts=ID)? &
 				(('branches:')(((includedBranches+=Branch*)|('['includedBranches+=Branch (',' includedBranches+=Branch)*']'))|(BEGIN (includedBranches+=Branch*) (('include:')(includedBranches+=Branch*))? (('exclude:')(excludedBranches+=Branch*))? END)))? &
 				(('branches-ignore:')(((excludedBranches+=Branch*)|('['excludedBranches+=Branch (',' excludedBranches+=Branch)*']'))| (BEGIN (excludedBranches+=Branch*) END)))? &
@@ -112,8 +111,8 @@ Event:
 		END)?
 	)|
 	(
-		((scheduleName=(('schedules:')|('schedule:')))(triggerSchedules+=TriggerSchedule*))|
-		((workflowType=('workflow_call:')|('workflow_dispatch:'))(BEGIN workFlowActivities+=Activity* END))
+		((scheduleNameKW=(('schedules:')|('schedule:')))(triggerSchedules+=TriggerSchedule*))|
+		((workflowTypeKW=('workflow_call:')|('workflow_dispatch:'))(BEGIN workFlowActivities+=Activity* END)?)
 	)
 ;
 
@@ -132,10 +131,11 @@ Branch:
 ;
 
 Activity:
-	(name=(HyphenValues|ArrayList))|
+	(name=(AnyData|HyphenValues|ArrayList))|
 	(
 		name=('inputs:'|'outputs:'|'secrets:')
-		(BEGIN (activities+=WorkFlowKeyValue+) END)
+		//(BEGIN (activities+=WorkFlowKeyValue+) END)
+		(BEGIN activities+=ParameterValue+ END)
 	)
 ;
 
@@ -143,7 +143,7 @@ Activity:
 Stage:
 	(('-''stage:' name=AnyData))
 	(BEGIN
-		('displayName:' displayName=STRING)? &
+		('displayName:' displayName=UnquotedString)? &
 		('pool:'((poolValue=AnyData)|(BEGIN ('name:'vmName=ID)('vmImage:'vmImage=(ID|STRING))?&('demands:'vmDemands=(AnyData|HyphenValues))? END)))? &
 		('condition:'(conditionValue=AnyData))? &
 		('isSkippable:' isSkippable=ID)? &
@@ -156,9 +156,9 @@ Stage:
 Job:
 	(('-' ('job:'|'deployment:'))? name=(ID|STRING) (':')?)
 	(BEGIN
-		(nameKW=('name:'|'displayName:') jobName=STRING)? &
-		(dependKW=('needs:' | 'dependsOn:') ((references+=[Job]) | ('[' references+=[Job] (',' references+=[Job])* ']')))? &
+		//(nameKW=('name:'|'displayName:') name=UnquotedString)? &
 		(jobParameterValues+=ParameterValue*)
+		(dependKW=('needs:' | 'dependsOn:') ((references+=([Job])|'none') | ('[' references+=[Job] (',' references+=[Job])* ']')))?
 		('steps:'(steps+=Step*))?
 	END)
 ;
@@ -180,10 +180,11 @@ Script:
 
 //------------------------------------------Task: Add ENUM to keyword
 Action:
+	(('name:' actionName=UnquotedString)|
 	(
 		((actionKeyword=PipelineKeyword)|(otherKeyword=ID':'))
-		(actionValue=AnyData)?
-	)
+		(actionValue=(AnyData|HyphenValues))?
+	))
 	(BEGIN (subSteps+=(Action|Script))* END)?
 ;
 
@@ -300,6 +301,7 @@ enum PipelineKeyword:
     PPL_KW_INCLUDE = 'include:' |
     PPL_KW_TYPES = 'types:' |
     PPL_KW_BATCH = 'batch:' |
+    PPL_KW_STATUS = 'status:' |
     PPL_KW_AUTO_CANCEL = 'autoCancel:' |
     PPL_KW_WORKFLOWS = 'workflows:' |
     PPL_KW_DRAFTS = 'drafts:' |
@@ -322,7 +324,7 @@ enum PipelineKeyword:
     PPL_KW_DEPENDS_ON = 'dependsOn:' |
     PPL_KW_JOB = 'job:' |
     PPL_KW_DEPLOYMENT = 'deployment:' |
-    PPL_KW_NEEDS = 'needs:' |
+//    PPL_KW_NEEDS = 'needs:' |
     PPL_KW_SCRIPT = 'script:' |
     PPL_KW_BASH = 'bash:' |
     PPL_KW_PWSH = 'pwsh:' |
@@ -450,10 +452,11 @@ KeyValue:
 	ID':' (AnyData|HyphenValues);
 
 IndPermissionValue:
-	ID':'('read'|'write'|'none');
+	('actions:'| 'attestations:'| 'checks:'| 'contents:'| 'deployments:'| 'id-token:' | 'issues:'|'discussions:'|'packages:'|'pull-requests:'|'repository-projects:'|'security-events:'|'statuses:')
+	('read'|'write'|'none');
 
 UnquotedString:	
-	ID (ID|INT|COMPLEX_EXPRESSION)*;
+	ID (ID|INT|COMPLEX_EXPRESSION|VERSION)*;
 
 HyphenValues:
 	('-' AnyData)+ |
@@ -484,7 +487,7 @@ terminal FLOAT_LITERAL returns ecore::EFloat:
     ('-')?(INT '.' INT);
 
 terminal VERSION:
-	INT ('.' INT)+;
+	INT ('.' (INT|ID))+;
 	
 terminal BEGIN: 'synthetic:BEGIN';
 
@@ -492,7 +495,7 @@ terminal END: 'synthetic:END';
 
 @Override 
 terminal ID:
-    ('a'..'z' | 'A'..'Z' | '_' | '/' | '@' | '-' | '.' | '\\' | '&') ('a'..'z' | 'A'..'Z' | '0'..'9' | '_' | '/' | '@' | '&' |'-' | '.' | '\\' | '(' | ')' | '|' | '$' )*;
+    ('a'..'z' | 'A'..'Z' | '0'..'9' | '_' | '/' | '@' | '-' | '.' | '\\' | '&') ('a'..'z' | 'A'..'Z' | '0'..'9' | '_' | '/' | '@' | '&' |'-' | '.' | '\\' | '(' | ')' | '|' | '$' )*;
 
 @Override 
 terminal ML_COMMENT:

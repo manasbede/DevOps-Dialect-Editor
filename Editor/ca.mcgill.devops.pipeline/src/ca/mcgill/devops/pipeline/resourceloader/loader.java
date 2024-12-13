@@ -46,14 +46,14 @@ public class loader {
         printValidationIssues(issues);
 	    EcoreUtil.resolveAll(xtextResource);
 
-	    Resource xmiResource = resourceSet.createResource(URI.createURI(outputURI));
-	    xmiResource.getContents().add(xtextResource.getContents().get(0));
-	    try {
-	        xmiResource.save(null);
-	        return (Pipeline)xmiResource.getContents().get(0);
-	    } catch (IOException e) {
-	        e.printStackTrace();
-	    }
+//	    Resource xmiResource = resourceSet.createResource(URI.createURI(outputURI));
+//	    xmiResource.getContents().add(xtextResource.getContents().get(0));
+//	    try {
+//	        xmiResource.save(null);
+//	        return (Pipeline)xmiResource.getContents().get(0);
+//	    } catch (IOException e) {
+//	        e.printStackTrace();
+//	    }
 		return null;
 	}
 	
@@ -73,17 +73,17 @@ public class loader {
     }
 	
 	public static void main(String[] args) {
-        if (args.length != 2) {
-            System.out.println("Usage: java -jar loader.jar <filePath> <fileName>");
-            return;
-        }
-
-        String resourcePath = args[0];
-        String fileName = args[1];
+//        if (args.length != 2) {
+//            System.out.println("Usage: java -jar loader.jar <filePath> <fileName>");
+//            return;
+//        }
+//
+//        String resourcePath = args[0];
+//        String fileName = args[1];
 
         System.out.println("Starting pipeline validation and processing...");
-//        String resourcePath = "C:\\Users\\mbedek\\Documents\\DevOps Dialect Editor\\runtime-EclipseApplication\\BasicSanity";
-//        String fileName = "Test";
+        String resourcePath = "C:\\Users\\mbedek\\Documents\\DevOps Dialect Editor\\runtime-EclipseApplication\\BasicSanity";
+        String fileName = "Test";
         Pipeline pipeline = resourceLoad(resourcePath, fileName);
 
         if (pipeline != null) {

@@ -33,8 +33,8 @@
 - **Exploring the Dataset**: The dataset is pre-processed to help researchers and practitioners examine automation pipelines from multiple CI/CD platforms. The dataset includes pipelines from GitHub, GitLab, Azure DevOps, BitBucket, Bamboo, and Circle CI.
 
 ## Metamodel
-Version 2.0 Metamodel
-![Metamodel](Version-2-Metamodel.PNG)
+Version 2.1 Metamodel (Concrete Represnetation)
+![Metamodel](Version-2.1-Metamodel.PNG)
 
 ## Dataset Preparation
 

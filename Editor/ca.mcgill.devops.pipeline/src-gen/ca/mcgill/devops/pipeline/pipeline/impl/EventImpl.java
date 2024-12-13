@@ -47,9 +47,9 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.EventImpl#getExcludedPaths <em>Excluded Paths</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.EventImpl#getIncludedTags <em>Included Tags</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.EventImpl#getExcludedTags <em>Excluded Tags</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.EventImpl#getScheduleName <em>Schedule Name</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.EventImpl#getScheduleNameKW <em>Schedule Name KW</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.EventImpl#getTriggerSchedules <em>Trigger Schedules</em>}</li>
- *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.EventImpl#getWorkflowType <em>Workflow Type</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.EventImpl#getWorkflowTypeKW <em>Workflow Type KW</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.EventImpl#getWorkFlowActivities <em>Work Flow Activities</em>}</li>
  * </ul>
  *
@@ -288,24 +288,24 @@ public class EventImpl extends MinimalEObjectImpl.Container implements Event
   protected String excludedTags = EXCLUDED_TAGS_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getScheduleName() <em>Schedule Name</em>}' attribute.
+   * The default value of the '{@link #getScheduleNameKW() <em>Schedule Name KW</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getScheduleName()
+   * @see #getScheduleNameKW()
    * @generated
    * @ordered
    */
-  protected static final String SCHEDULE_NAME_EDEFAULT = null;
+  protected static final String SCHEDULE_NAME_KW_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getScheduleName() <em>Schedule Name</em>}' attribute.
+   * The cached value of the '{@link #getScheduleNameKW() <em>Schedule Name KW</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getScheduleName()
+   * @see #getScheduleNameKW()
    * @generated
    * @ordered
    */
-  protected String scheduleName = SCHEDULE_NAME_EDEFAULT;
+  protected String scheduleNameKW = SCHEDULE_NAME_KW_EDEFAULT;
 
   /**
    * The cached value of the '{@link #getTriggerSchedules() <em>Trigger Schedules</em>}' containment reference list.
@@ -318,24 +318,24 @@ public class EventImpl extends MinimalEObjectImpl.Container implements Event
   protected EList<TriggerSchedule> triggerSchedules;
 
   /**
-   * The default value of the '{@link #getWorkflowType() <em>Workflow Type</em>}' attribute.
+   * The default value of the '{@link #getWorkflowTypeKW() <em>Workflow Type KW</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getWorkflowType()
+   * @see #getWorkflowTypeKW()
    * @generated
    * @ordered
    */
-  protected static final String WORKFLOW_TYPE_EDEFAULT = null;
+  protected static final String WORKFLOW_TYPE_KW_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getWorkflowType() <em>Workflow Type</em>}' attribute.
+   * The cached value of the '{@link #getWorkflowTypeKW() <em>Workflow Type KW</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getWorkflowType()
+   * @see #getWorkflowTypeKW()
    * @generated
    * @ordered
    */
-  protected String workflowType = WORKFLOW_TYPE_EDEFAULT;
+  protected String workflowTypeKW = WORKFLOW_TYPE_KW_EDEFAULT;
 
   /**
    * The cached value of the '{@link #getWorkFlowActivities() <em>Work Flow Activities</em>}' containment reference list.
@@ -669,9 +669,9 @@ public class EventImpl extends MinimalEObjectImpl.Container implements Event
    * @generated
    */
   @Override
-  public String getScheduleName()
+  public String getScheduleNameKW()
   {
-    return scheduleName;
+    return scheduleNameKW;
   }
 
   /**
@@ -680,12 +680,12 @@ public class EventImpl extends MinimalEObjectImpl.Container implements Event
    * @generated
    */
   @Override
-  public void setScheduleName(String newScheduleName)
+  public void setScheduleNameKW(String newScheduleNameKW)
   {
-    String oldScheduleName = scheduleName;
-    scheduleName = newScheduleName;
+    String oldScheduleNameKW = scheduleNameKW;
+    scheduleNameKW = newScheduleNameKW;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.EVENT__SCHEDULE_NAME, oldScheduleName, scheduleName));
+      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.EVENT__SCHEDULE_NAME_KW, oldScheduleNameKW, scheduleNameKW));
   }
 
   /**
@@ -709,9 +709,9 @@ public class EventImpl extends MinimalEObjectImpl.Container implements Event
    * @generated
    */
   @Override
-  public String getWorkflowType()
+  public String getWorkflowTypeKW()
   {
-    return workflowType;
+    return workflowTypeKW;
   }
 
   /**
@@ -720,12 +720,12 @@ public class EventImpl extends MinimalEObjectImpl.Container implements Event
    * @generated
    */
   @Override
-  public void setWorkflowType(String newWorkflowType)
+  public void setWorkflowTypeKW(String newWorkflowTypeKW)
   {
-    String oldWorkflowType = workflowType;
-    workflowType = newWorkflowType;
+    String oldWorkflowTypeKW = workflowTypeKW;
+    workflowTypeKW = newWorkflowTypeKW;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.EVENT__WORKFLOW_TYPE, oldWorkflowType, workflowType));
+      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.EVENT__WORKFLOW_TYPE_KW, oldWorkflowTypeKW, workflowTypeKW));
   }
 
   /**
@@ -803,12 +803,12 @@ public class EventImpl extends MinimalEObjectImpl.Container implements Event
         return getIncludedTags();
       case PipelinePackage.EVENT__EXCLUDED_TAGS:
         return getExcludedTags();
-      case PipelinePackage.EVENT__SCHEDULE_NAME:
-        return getScheduleName();
+      case PipelinePackage.EVENT__SCHEDULE_NAME_KW:
+        return getScheduleNameKW();
       case PipelinePackage.EVENT__TRIGGER_SCHEDULES:
         return getTriggerSchedules();
-      case PipelinePackage.EVENT__WORKFLOW_TYPE:
-        return getWorkflowType();
+      case PipelinePackage.EVENT__WORKFLOW_TYPE_KW:
+        return getWorkflowTypeKW();
       case PipelinePackage.EVENT__WORK_FLOW_ACTIVITIES:
         return getWorkFlowActivities();
     }
@@ -868,15 +868,15 @@ public class EventImpl extends MinimalEObjectImpl.Container implements Event
       case PipelinePackage.EVENT__EXCLUDED_TAGS:
         setExcludedTags((String)newValue);
         return;
-      case PipelinePackage.EVENT__SCHEDULE_NAME:
-        setScheduleName((String)newValue);
+      case PipelinePackage.EVENT__SCHEDULE_NAME_KW:
+        setScheduleNameKW((String)newValue);
         return;
       case PipelinePackage.EVENT__TRIGGER_SCHEDULES:
         getTriggerSchedules().clear();
         getTriggerSchedules().addAll((Collection<? extends TriggerSchedule>)newValue);
         return;
-      case PipelinePackage.EVENT__WORKFLOW_TYPE:
-        setWorkflowType((String)newValue);
+      case PipelinePackage.EVENT__WORKFLOW_TYPE_KW:
+        setWorkflowTypeKW((String)newValue);
         return;
       case PipelinePackage.EVENT__WORK_FLOW_ACTIVITIES:
         getWorkFlowActivities().clear();
@@ -935,14 +935,14 @@ public class EventImpl extends MinimalEObjectImpl.Container implements Event
       case PipelinePackage.EVENT__EXCLUDED_TAGS:
         setExcludedTags(EXCLUDED_TAGS_EDEFAULT);
         return;
-      case PipelinePackage.EVENT__SCHEDULE_NAME:
-        setScheduleName(SCHEDULE_NAME_EDEFAULT);
+      case PipelinePackage.EVENT__SCHEDULE_NAME_KW:
+        setScheduleNameKW(SCHEDULE_NAME_KW_EDEFAULT);
         return;
       case PipelinePackage.EVENT__TRIGGER_SCHEDULES:
         getTriggerSchedules().clear();
         return;
-      case PipelinePackage.EVENT__WORKFLOW_TYPE:
-        setWorkflowType(WORKFLOW_TYPE_EDEFAULT);
+      case PipelinePackage.EVENT__WORKFLOW_TYPE_KW:
+        setWorkflowTypeKW(WORKFLOW_TYPE_KW_EDEFAULT);
         return;
       case PipelinePackage.EVENT__WORK_FLOW_ACTIVITIES:
         getWorkFlowActivities().clear();
@@ -987,12 +987,12 @@ public class EventImpl extends MinimalEObjectImpl.Container implements Event
         return INCLUDED_TAGS_EDEFAULT == null ? includedTags != null : !INCLUDED_TAGS_EDEFAULT.equals(includedTags);
       case PipelinePackage.EVENT__EXCLUDED_TAGS:
         return EXCLUDED_TAGS_EDEFAULT == null ? excludedTags != null : !EXCLUDED_TAGS_EDEFAULT.equals(excludedTags);
-      case PipelinePackage.EVENT__SCHEDULE_NAME:
-        return SCHEDULE_NAME_EDEFAULT == null ? scheduleName != null : !SCHEDULE_NAME_EDEFAULT.equals(scheduleName);
+      case PipelinePackage.EVENT__SCHEDULE_NAME_KW:
+        return SCHEDULE_NAME_KW_EDEFAULT == null ? scheduleNameKW != null : !SCHEDULE_NAME_KW_EDEFAULT.equals(scheduleNameKW);
       case PipelinePackage.EVENT__TRIGGER_SCHEDULES:
         return triggerSchedules != null && !triggerSchedules.isEmpty();
-      case PipelinePackage.EVENT__WORKFLOW_TYPE:
-        return WORKFLOW_TYPE_EDEFAULT == null ? workflowType != null : !WORKFLOW_TYPE_EDEFAULT.equals(workflowType);
+      case PipelinePackage.EVENT__WORKFLOW_TYPE_KW:
+        return WORKFLOW_TYPE_KW_EDEFAULT == null ? workflowTypeKW != null : !WORKFLOW_TYPE_KW_EDEFAULT.equals(workflowTypeKW);
       case PipelinePackage.EVENT__WORK_FLOW_ACTIVITIES:
         return workFlowActivities != null && !workFlowActivities.isEmpty();
     }
@@ -1030,10 +1030,10 @@ public class EventImpl extends MinimalEObjectImpl.Container implements Event
     result.append(includedTags);
     result.append(", excludedTags: ");
     result.append(excludedTags);
-    result.append(", scheduleName: ");
-    result.append(scheduleName);
-    result.append(", workflowType: ");
-    result.append(workflowType);
+    result.append(", scheduleNameKW: ");
+    result.append(scheduleNameKW);
+    result.append(", workflowTypeKW: ");
+    result.append(workflowTypeKW);
     result.append(')');
     return result.toString();
   }

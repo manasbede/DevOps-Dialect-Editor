@@ -21,6 +21,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ActionImpl#getActionName <em>Action Name</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ActionImpl#getActionKeyword <em>Action Keyword</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ActionImpl#getOtherKeyword <em>Other Keyword</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.impl.ActionImpl#getActionValue <em>Action Value</em>}</li>
@@ -30,6 +31,26 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class ActionImpl extends StepImpl implements Action
 {
+  /**
+   * The default value of the '{@link #getActionName() <em>Action Name</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getActionName()
+   * @generated
+   * @ordered
+   */
+  protected static final String ACTION_NAME_EDEFAULT = null;
+
+  /**
+   * The cached value of the '{@link #getActionName() <em>Action Name</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getActionName()
+   * @generated
+   * @ordered
+   */
+  protected String actionName = ACTION_NAME_EDEFAULT;
+
   /**
    * The default value of the '{@link #getActionKeyword() <em>Action Keyword</em>}' attribute.
    * <!-- begin-user-doc -->
@@ -117,6 +138,31 @@ public class ActionImpl extends StepImpl implements Action
    * @generated
    */
   @Override
+  public String getActionName()
+  {
+    return actionName;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public void setActionName(String newActionName)
+  {
+    String oldActionName = actionName;
+    actionName = newActionName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, PipelinePackage.ACTION__ACTION_NAME, oldActionName, actionName));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
   public PipelineKeyword getActionKeyword()
   {
     return actionKeyword;
@@ -196,6 +242,8 @@ public class ActionImpl extends StepImpl implements Action
   {
     switch (featureID)
     {
+      case PipelinePackage.ACTION__ACTION_NAME:
+        return getActionName();
       case PipelinePackage.ACTION__ACTION_KEYWORD:
         return getActionKeyword();
       case PipelinePackage.ACTION__OTHER_KEYWORD:
@@ -216,6 +264,9 @@ public class ActionImpl extends StepImpl implements Action
   {
     switch (featureID)
     {
+      case PipelinePackage.ACTION__ACTION_NAME:
+        setActionName((String)newValue);
+        return;
       case PipelinePackage.ACTION__ACTION_KEYWORD:
         setActionKeyword((PipelineKeyword)newValue);
         return;
@@ -239,6 +290,9 @@ public class ActionImpl extends StepImpl implements Action
   {
     switch (featureID)
     {
+      case PipelinePackage.ACTION__ACTION_NAME:
+        setActionName(ACTION_NAME_EDEFAULT);
+        return;
       case PipelinePackage.ACTION__ACTION_KEYWORD:
         setActionKeyword(ACTION_KEYWORD_EDEFAULT);
         return;
@@ -262,6 +316,8 @@ public class ActionImpl extends StepImpl implements Action
   {
     switch (featureID)
     {
+      case PipelinePackage.ACTION__ACTION_NAME:
+        return ACTION_NAME_EDEFAULT == null ? actionName != null : !ACTION_NAME_EDEFAULT.equals(actionName);
       case PipelinePackage.ACTION__ACTION_KEYWORD:
         return actionKeyword != ACTION_KEYWORD_EDEFAULT;
       case PipelinePackage.ACTION__OTHER_KEYWORD:
@@ -283,7 +339,9 @@ public class ActionImpl extends StepImpl implements Action
     if (eIsProxy()) return super.toString();
 
     StringBuilder result = new StringBuilder(super.toString());
-    result.append(" (actionKeyword: ");
+    result.append(" (actionName: ");
+    result.append(actionName);
+    result.append(", actionKeyword: ");
     result.append(actionKeyword);
     result.append(", otherKeyword: ");
     result.append(otherKeyword);

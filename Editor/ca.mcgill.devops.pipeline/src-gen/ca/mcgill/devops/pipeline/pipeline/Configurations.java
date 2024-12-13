@@ -25,6 +25,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Configurations#getIndPermissions <em>Ind Permissions</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Configurations#getGroup <em>Group</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Configurations#getCancelConcurrence <em>Cancel Concurrence</em>}</li>
+ *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Configurations#getConcurrency <em>Concurrency</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Configurations#getVmName <em>Vm Name</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Configurations#getVmImage <em>Vm Image</em>}</li>
  *   <li>{@link ca.mcgill.devops.pipeline.pipeline.Configurations#getVmDemands <em>Vm Demands</em>}</li>
@@ -219,6 +220,28 @@ public interface Configurations extends EObject
    * @generated
    */
   void setCancelConcurrence(String value);
+
+  /**
+   * Returns the value of the '<em><b>Concurrency</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Concurrency</em>' attribute.
+   * @see #setConcurrency(String)
+   * @see ca.mcgill.devops.pipeline.pipeline.PipelinePackage#getConfigurations_Concurrency()
+   * @model
+   * @generated
+   */
+  String getConcurrency();
+
+  /**
+   * Sets the value of the '{@link ca.mcgill.devops.pipeline.pipeline.Configurations#getConcurrency <em>Concurrency</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Concurrency</em>' attribute.
+   * @see #getConcurrency()
+   * @generated
+   */
+  void setConcurrency(String value);
 
   /**
    * Returns the value of the '<em><b>Vm Name</b></em>' attribute.
