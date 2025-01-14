@@ -214,6 +214,7 @@ enum Permission:
 enum PipelineEventKeyword:
     PPL_EVT_PUSH = 'push:' |
     PPL_EVT_PULL_REQUEST = 'pull_request:' |
+    PPL_EVT_NONE = 'none' |
     //PPL_EVT_SCHEDULE = 'schedule:' |
     PPL_EVT_WORKFLOW_DISPATCH = 'workflow_dispatch:' |
     PPL_EVT_REPOSITORY_DISPATCH = 'repository_dispatch:' |

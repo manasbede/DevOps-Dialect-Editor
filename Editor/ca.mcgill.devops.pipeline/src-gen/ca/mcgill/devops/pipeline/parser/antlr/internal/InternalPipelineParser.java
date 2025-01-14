@@ -414,7 +414,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             if ( (LA6_0==On) ) {
                 alt6=1;
             }
-            else if ( ((LA6_0>=Pull_request_review_comment && LA6_0<=Pull_request_target)||LA6_0==Repository_dispatch||(LA6_0>=Deployment_status && LA6_0<=Workflow_dispatch)||LA6_0==Registry_package||(LA6_0>=Merge_requests && LA6_0<=Project_column)||LA6_0==WorkflowRules||(LA6_0>=Issue_comment && LA6_0<=Workflow_call)||LA6_0==LockBehavior||(LA6_0>=Project_card && LA6_0<=Pull_request)||(LA6_0>=Workflow_run && LA6_0<=Check_suite)||(LA6_0>=AutoCancel && LA6_0<=Conditions)||LA6_0==Deployment||LA6_0==Page_build||LA6_0==PlanBranch||LA6_0==Repository||(LA6_0>=Bitbucket && LA6_0<=Check_run)||(LA6_0>=Milestone && LA6_0<=Pipelines)||(LA6_0>=Scheduled && LA6_0<=Schedules)||LA6_0==Branches||LA6_0==Schedule||LA6_0==Changes||LA6_0==Default||LA6_0==Project||LA6_0==Release||LA6_0==Trigger||(LA6_0>=Create && LA6_0<=Delete)||(LA6_0>=Drafts && LA6_0<=Gollum)||LA6_0==Issues||LA6_0==Public||LA6_0==Remote||(LA6_0>=Stages && LA6_0<=Status)||LA6_0==Label||LA6_0==Paths||LA6_0==Rules||LA6_0==Watch||(LA6_0>=Cron && LA6_0<=Jobs)||LA6_0==Only||LA6_0==Push||LA6_0==Tags||LA6_0==Pr||LA6_0==RULE_ID) ) {
+            else if ( ((LA6_0>=Pull_request_review_comment && LA6_0<=Pull_request_target)||LA6_0==Repository_dispatch||(LA6_0>=Deployment_status && LA6_0<=Workflow_dispatch)||LA6_0==Registry_package||(LA6_0>=Merge_requests && LA6_0<=Project_column)||LA6_0==WorkflowRules||(LA6_0>=Issue_comment && LA6_0<=Workflow_call)||LA6_0==LockBehavior||(LA6_0>=Project_card && LA6_0<=Pull_request)||(LA6_0>=Workflow_run && LA6_0<=Check_suite)||(LA6_0>=AutoCancel && LA6_0<=Conditions)||LA6_0==Deployment||LA6_0==Page_build||LA6_0==PlanBranch||LA6_0==Repository||(LA6_0>=Bitbucket && LA6_0<=Check_run)||(LA6_0>=Milestone && LA6_0<=Pipelines)||(LA6_0>=Scheduled && LA6_0<=Schedules)||LA6_0==Branches||LA6_0==Schedule||LA6_0==Changes||LA6_0==Default||LA6_0==Project||LA6_0==Release||LA6_0==Trigger||(LA6_0>=Create && LA6_0<=Delete)||(LA6_0>=Drafts && LA6_0<=Gollum)||LA6_0==Issues||LA6_0==Public||LA6_0==Remote||(LA6_0>=Stages && LA6_0<=Status)||LA6_0==Label||LA6_0==Paths||LA6_0==Rules||LA6_0==Watch||(LA6_0>=Cron && LA6_0<=Jobs)||LA6_0==Only||LA6_0==Push||LA6_0==Tags||LA6_0==None||LA6_0==Pr||LA6_0==RULE_ID) ) {
                 alt6=2;
             }
             else {
@@ -456,7 +456,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                                 int alt1=2;
                                 int LA1_0 = input.LA(1);
 
-                                if ( ((LA1_0>=Pull_request_review_comment && LA1_0<=Pull_request_target)||LA1_0==Repository_dispatch||(LA1_0>=Deployment_status && LA1_0<=Workflow_dispatch)||LA1_0==Registry_package||(LA1_0>=Merge_requests && LA1_0<=Project_column)||LA1_0==WorkflowRules||(LA1_0>=Issue_comment && LA1_0<=Workflow_call)||LA1_0==LockBehavior||(LA1_0>=Project_card && LA1_0<=Pull_request)||(LA1_0>=Workflow_run && LA1_0<=Check_suite)||(LA1_0>=AutoCancel && LA1_0<=Conditions)||LA1_0==Deployment||LA1_0==Page_build||LA1_0==PlanBranch||LA1_0==Repository||(LA1_0>=Bitbucket && LA1_0<=Check_run)||(LA1_0>=Milestone && LA1_0<=Pipelines)||(LA1_0>=Scheduled && LA1_0<=Schedules)||LA1_0==Branches||LA1_0==Schedule||LA1_0==Changes||LA1_0==Default||LA1_0==Project||LA1_0==Release||LA1_0==Trigger||(LA1_0>=Create && LA1_0<=Delete)||(LA1_0>=Drafts && LA1_0<=Gollum)||LA1_0==Issues||LA1_0==Public||LA1_0==Remote||LA1_0==Status||LA1_0==Label||LA1_0==Paths||LA1_0==Rules||LA1_0==Watch||(LA1_0>=Cron && LA1_0<=Fork)||LA1_0==Only||LA1_0==Push||LA1_0==Tags||LA1_0==Pr||LA1_0==RULE_ID) ) {
+                                if ( ((LA1_0>=Pull_request_review_comment && LA1_0<=Pull_request_target)||LA1_0==Repository_dispatch||(LA1_0>=Deployment_status && LA1_0<=Workflow_dispatch)||LA1_0==Registry_package||(LA1_0>=Merge_requests && LA1_0<=Project_column)||LA1_0==WorkflowRules||(LA1_0>=Issue_comment && LA1_0<=Workflow_call)||LA1_0==LockBehavior||(LA1_0>=Project_card && LA1_0<=Pull_request)||(LA1_0>=Workflow_run && LA1_0<=Check_suite)||(LA1_0>=AutoCancel && LA1_0<=Conditions)||LA1_0==Deployment||LA1_0==Page_build||LA1_0==PlanBranch||LA1_0==Repository||(LA1_0>=Bitbucket && LA1_0<=Check_run)||(LA1_0>=Milestone && LA1_0<=Pipelines)||(LA1_0>=Scheduled && LA1_0<=Schedules)||LA1_0==Branches||LA1_0==Schedule||LA1_0==Changes||LA1_0==Default||LA1_0==Project||LA1_0==Release||LA1_0==Trigger||(LA1_0>=Create && LA1_0<=Delete)||(LA1_0>=Drafts && LA1_0<=Gollum)||LA1_0==Issues||LA1_0==Public||LA1_0==Remote||LA1_0==Status||LA1_0==Label||LA1_0==Paths||LA1_0==Rules||LA1_0==Watch||(LA1_0>=Cron && LA1_0<=Fork)||LA1_0==Only||LA1_0==Push||LA1_0==Tags||LA1_0==None||LA1_0==Pr||LA1_0==RULE_ID) ) {
                                     alt1=1;
                                 }
 
@@ -517,7 +517,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     int alt4=3;
                     int LA4_0 = input.LA(1);
 
-                    if ( ((LA4_0>=Pull_request_review_comment && LA4_0<=Pull_request_target)||LA4_0==Repository_dispatch||(LA4_0>=Deployment_status && LA4_0<=Workflow_dispatch)||LA4_0==Registry_package||(LA4_0>=Merge_requests && LA4_0<=Project_column)||LA4_0==WorkflowRules||(LA4_0>=Issue_comment && LA4_0<=Workflow_call)||LA4_0==LockBehavior||(LA4_0>=Project_card && LA4_0<=Pull_request)||(LA4_0>=Workflow_run && LA4_0<=Check_suite)||(LA4_0>=AutoCancel && LA4_0<=Conditions)||LA4_0==Deployment||LA4_0==Page_build||LA4_0==PlanBranch||LA4_0==Repository||(LA4_0>=Bitbucket && LA4_0<=Check_run)||(LA4_0>=Milestone && LA4_0<=Pipelines)||(LA4_0>=Scheduled && LA4_0<=Schedules)||LA4_0==Branches||LA4_0==Schedule||LA4_0==Changes||LA4_0==Default||LA4_0==Project||LA4_0==Release||LA4_0==Trigger||(LA4_0>=Create && LA4_0<=Delete)||(LA4_0>=Drafts && LA4_0<=Gollum)||LA4_0==Issues||LA4_0==Public||LA4_0==Remote||LA4_0==Status||LA4_0==Label||LA4_0==Paths||LA4_0==Rules||LA4_0==Watch||(LA4_0>=Cron && LA4_0<=Fork)||LA4_0==Only||LA4_0==Push||LA4_0==Tags||LA4_0==Pr||LA4_0==RULE_ID) ) {
+                    if ( ((LA4_0>=Pull_request_review_comment && LA4_0<=Pull_request_target)||LA4_0==Repository_dispatch||(LA4_0>=Deployment_status && LA4_0<=Workflow_dispatch)||LA4_0==Registry_package||(LA4_0>=Merge_requests && LA4_0<=Project_column)||LA4_0==WorkflowRules||(LA4_0>=Issue_comment && LA4_0<=Workflow_call)||LA4_0==LockBehavior||(LA4_0>=Project_card && LA4_0<=Pull_request)||(LA4_0>=Workflow_run && LA4_0<=Check_suite)||(LA4_0>=AutoCancel && LA4_0<=Conditions)||LA4_0==Deployment||LA4_0==Page_build||LA4_0==PlanBranch||LA4_0==Repository||(LA4_0>=Bitbucket && LA4_0<=Check_run)||(LA4_0>=Milestone && LA4_0<=Pipelines)||(LA4_0>=Scheduled && LA4_0<=Schedules)||LA4_0==Branches||LA4_0==Schedule||LA4_0==Changes||LA4_0==Default||LA4_0==Project||LA4_0==Release||LA4_0==Trigger||(LA4_0>=Create && LA4_0<=Delete)||(LA4_0>=Drafts && LA4_0<=Gollum)||LA4_0==Issues||LA4_0==Public||LA4_0==Remote||LA4_0==Status||LA4_0==Label||LA4_0==Paths||LA4_0==Rules||LA4_0==Watch||(LA4_0>=Cron && LA4_0<=Fork)||LA4_0==Only||LA4_0==Push||LA4_0==Tags||LA4_0==None||LA4_0==Pr||LA4_0==RULE_ID) ) {
                         alt4=1;
                     }
                     else if ( (LA4_0==LeftSquareBracket) ) {
@@ -689,7 +689,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                         int alt5=2;
                         int LA5_0 = input.LA(1);
 
-                        if ( ((LA5_0>=Pull_request_review_comment && LA5_0<=Pull_request_target)||LA5_0==Repository_dispatch||(LA5_0>=Deployment_status && LA5_0<=Workflow_dispatch)||LA5_0==Registry_package||(LA5_0>=Merge_requests && LA5_0<=Project_column)||LA5_0==WorkflowRules||(LA5_0>=Issue_comment && LA5_0<=Workflow_call)||LA5_0==LockBehavior||(LA5_0>=Project_card && LA5_0<=Pull_request)||(LA5_0>=Workflow_run && LA5_0<=Check_suite)||(LA5_0>=AutoCancel && LA5_0<=Conditions)||LA5_0==Deployment||LA5_0==Page_build||LA5_0==PlanBranch||LA5_0==Repository||(LA5_0>=Bitbucket && LA5_0<=Check_run)||(LA5_0>=Milestone && LA5_0<=Pipelines)||(LA5_0>=Scheduled && LA5_0<=Schedules)||LA5_0==Branches||LA5_0==Schedule||LA5_0==Changes||LA5_0==Default||LA5_0==Project||LA5_0==Release||LA5_0==Trigger||(LA5_0>=Create && LA5_0<=Delete)||(LA5_0>=Drafts && LA5_0<=Gollum)||LA5_0==Issues||LA5_0==Public||LA5_0==Remote||LA5_0==Status||LA5_0==Label||LA5_0==Paths||LA5_0==Rules||LA5_0==Watch||(LA5_0>=Cron && LA5_0<=Fork)||LA5_0==Only||LA5_0==Push||LA5_0==Tags||LA5_0==Pr||LA5_0==RULE_ID) ) {
+                        if ( ((LA5_0>=Pull_request_review_comment && LA5_0<=Pull_request_target)||LA5_0==Repository_dispatch||(LA5_0>=Deployment_status && LA5_0<=Workflow_dispatch)||LA5_0==Registry_package||(LA5_0>=Merge_requests && LA5_0<=Project_column)||LA5_0==WorkflowRules||(LA5_0>=Issue_comment && LA5_0<=Workflow_call)||LA5_0==LockBehavior||(LA5_0>=Project_card && LA5_0<=Pull_request)||(LA5_0>=Workflow_run && LA5_0<=Check_suite)||(LA5_0>=AutoCancel && LA5_0<=Conditions)||LA5_0==Deployment||LA5_0==Page_build||LA5_0==PlanBranch||LA5_0==Repository||(LA5_0>=Bitbucket && LA5_0<=Check_run)||(LA5_0>=Milestone && LA5_0<=Pipelines)||(LA5_0>=Scheduled && LA5_0<=Schedules)||LA5_0==Branches||LA5_0==Schedule||LA5_0==Changes||LA5_0==Default||LA5_0==Project||LA5_0==Release||LA5_0==Trigger||(LA5_0>=Create && LA5_0<=Delete)||(LA5_0>=Drafts && LA5_0<=Gollum)||LA5_0==Issues||LA5_0==Public||LA5_0==Remote||LA5_0==Status||LA5_0==Label||LA5_0==Paths||LA5_0==Rules||LA5_0==Watch||(LA5_0>=Cron && LA5_0<=Fork)||LA5_0==Only||LA5_0==Push||LA5_0==Tags||LA5_0==None||LA5_0==Pr||LA5_0==RULE_ID) ) {
                             alt5=1;
                         }
 
@@ -2375,7 +2375,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
 
             	            }
-            	            else if ( ( LA28_2 == EOF || LA28_2 >= Pull_request_review_comment && LA28_2 <= Pull_request_target || LA28_2 == Repository_dispatch || LA28_2 >= Deployment_status && LA28_2 <= Registry_package || LA28_2 >= Merge_requests && LA28_2 <= Project_column || LA28_2 == WorkflowRules || LA28_2 >= Issue_comment && LA28_2 <= Workflow_call || LA28_2 == LockBehavior || LA28_2 >= Project_card && LA28_2 <= Pull_request || LA28_2 >= Workflow_run && LA28_2 <= Concurrency || LA28_2 == Permissions || LA28_2 >= AutoCancel && LA28_2 <= Conditions || LA28_2 == Deployment || LA28_2 >= Page_build && LA28_2 <= Parameters || LA28_2 == PlanBranch || LA28_2 == Repository || LA28_2 >= Bitbucket && LA28_2 <= Check_run || LA28_2 >= Milestone && LA28_2 <= Pipelines || LA28_2 == Resources || LA28_2 >= Scheduled && LA28_2 <= Variables || LA28_2 == Branches || LA28_2 == Defaults || LA28_2 >= RunName && LA28_2 <= Schedule || LA28_2 == Changes || LA28_2 >= Default && LA28_2 <= Demands || LA28_2 == Extends || LA28_2 == Include || LA28_2 == Project || LA28_2 == Release || LA28_2 >= Trigger && LA28_2 <= Version || LA28_2 >= Create && LA28_2 <= Delete || LA28_2 >= Drafts && LA28_2 <= Gollum || LA28_2 == Issues || LA28_2 == Public || LA28_2 == Remote || LA28_2 >= Stages && LA28_2 <= Status || LA28_2 == Label || LA28_2 == Paths || LA28_2 == Rules || LA28_2 == Watch || LA28_2 >= Cron && LA28_2 <= Name || LA28_2 == Only || LA28_2 >= Pool && LA28_2 <= Push || LA28_2 == Tags || LA28_2 == Env || LA28_2 >= On && LA28_2 <= Pr || LA28_2 == RULE_ID || LA28_2 == RULE_BEGIN ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {
+            	            else if ( ( LA28_2 == EOF || LA28_2 >= Pull_request_review_comment && LA28_2 <= Pull_request_target || LA28_2 == Repository_dispatch || LA28_2 >= Deployment_status && LA28_2 <= Registry_package || LA28_2 >= Merge_requests && LA28_2 <= Project_column || LA28_2 == WorkflowRules || LA28_2 >= Issue_comment && LA28_2 <= Workflow_call || LA28_2 == LockBehavior || LA28_2 >= Project_card && LA28_2 <= Pull_request || LA28_2 >= Workflow_run && LA28_2 <= Concurrency || LA28_2 == Permissions || LA28_2 >= AutoCancel && LA28_2 <= Conditions || LA28_2 == Deployment || LA28_2 >= Page_build && LA28_2 <= Parameters || LA28_2 == PlanBranch || LA28_2 == Repository || LA28_2 >= Bitbucket && LA28_2 <= Check_run || LA28_2 >= Milestone && LA28_2 <= Pipelines || LA28_2 == Resources || LA28_2 >= Scheduled && LA28_2 <= Variables || LA28_2 == Branches || LA28_2 == Defaults || LA28_2 >= RunName && LA28_2 <= Schedule || LA28_2 == Changes || LA28_2 >= Default && LA28_2 <= Demands || LA28_2 == Extends || LA28_2 == Include || LA28_2 == Project || LA28_2 == Release || LA28_2 >= Trigger && LA28_2 <= Version || LA28_2 >= Create && LA28_2 <= Delete || LA28_2 >= Drafts && LA28_2 <= Gollum || LA28_2 == Issues || LA28_2 == Public || LA28_2 == Remote || LA28_2 >= Stages && LA28_2 <= Status || LA28_2 == Label || LA28_2 == Paths || LA28_2 == Rules || LA28_2 == Watch || LA28_2 >= Cron && LA28_2 <= Name || LA28_2 == Only || LA28_2 >= Pool && LA28_2 <= Push || LA28_2 == Tags || LA28_2 == Env || LA28_2 == None || LA28_2 >= On && LA28_2 <= Pr || LA28_2 == RULE_ID || LA28_2 == RULE_BEGIN ) && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup_6_1(), 1) ) {
             	                alt28=2;
             	            }
 
@@ -4490,6 +4490,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             switch ( input.LA(1) ) {
             case Pull_request:
             case Push:
+            case None:
                 {
                 alt79=1;
                 }
@@ -4586,7 +4587,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     int alt46=2;
                     int LA46_0 = input.LA(1);
 
-                    if ( ((LA46_0>=Pull_request_review_comment && LA46_0<=Pull_request_target)||LA46_0==Repository_dispatch||(LA46_0>=Deployment_status && LA46_0<=Workflow_dispatch)||LA46_0==Registry_package||(LA46_0>=Merge_requests && LA46_0<=Project_column)||LA46_0==WorkflowRules||(LA46_0>=Issue_comment && LA46_0<=Workflow_call)||LA46_0==LockBehavior||(LA46_0>=Project_card && LA46_0<=Pull_request)||(LA46_0>=Workflow_run && LA46_0<=Check_suite)||(LA46_0>=AutoCancel && LA46_0<=Conditions)||LA46_0==Deployment||LA46_0==Page_build||LA46_0==PlanBranch||LA46_0==Repository||(LA46_0>=Bitbucket && LA46_0<=Check_run)||(LA46_0>=Milestone && LA46_0<=Pipelines)||LA46_0==Scheduled||LA46_0==Branches||LA46_0==Changes||LA46_0==Default||LA46_0==Project||LA46_0==Release||LA46_0==Trigger||(LA46_0>=Create && LA46_0<=Delete)||(LA46_0>=Drafts && LA46_0<=Gollum)||LA46_0==Issues||LA46_0==Public||LA46_0==Remote||LA46_0==Status||LA46_0==Label||LA46_0==Paths||LA46_0==Rules||LA46_0==Watch||(LA46_0>=Cron && LA46_0<=Fork)||LA46_0==Only||LA46_0==Push||LA46_0==Tags||LA46_0==Pr) ) {
+                    if ( ((LA46_0>=Pull_request_review_comment && LA46_0<=Pull_request_target)||LA46_0==Repository_dispatch||(LA46_0>=Deployment_status && LA46_0<=Workflow_dispatch)||LA46_0==Registry_package||(LA46_0>=Merge_requests && LA46_0<=Project_column)||LA46_0==WorkflowRules||(LA46_0>=Issue_comment && LA46_0<=Workflow_call)||LA46_0==LockBehavior||(LA46_0>=Project_card && LA46_0<=Pull_request)||(LA46_0>=Workflow_run && LA46_0<=Check_suite)||(LA46_0>=AutoCancel && LA46_0<=Conditions)||LA46_0==Deployment||LA46_0==Page_build||LA46_0==PlanBranch||LA46_0==Repository||(LA46_0>=Bitbucket && LA46_0<=Check_run)||(LA46_0>=Milestone && LA46_0<=Pipelines)||LA46_0==Scheduled||LA46_0==Branches||LA46_0==Changes||LA46_0==Default||LA46_0==Project||LA46_0==Release||LA46_0==Trigger||(LA46_0>=Create && LA46_0<=Delete)||(LA46_0>=Drafts && LA46_0<=Gollum)||LA46_0==Issues||LA46_0==Public||LA46_0==Remote||LA46_0==Status||LA46_0==Label||LA46_0==Paths||LA46_0==Rules||LA46_0==Watch||(LA46_0>=Cron && LA46_0<=Fork)||LA46_0==Only||LA46_0==Push||LA46_0==Tags||LA46_0==None||LA46_0==Pr) ) {
                         alt46=1;
                     }
                     else if ( (LA46_0==RULE_ID) ) {
@@ -10918,11 +10919,11 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
             if ( (LA128_0==Name) ) {
                 int LA128_1 = input.LA(2);
 
-                if ( (LA128_1==EOF||(LA128_1>=Repository_dispatch && LA128_1<=ContinueOnError_1)||(LA128_1>=Workflow_dispatch && LA128_1<=WorkingDirectory)||(LA128_1>=TimeoutInMinutes && LA128_1<=ContinueOnError)||LA128_1==TimeoutMinutes||LA128_1==ReleaseTrigger||(LA128_1>=Allow_failure && LA128_1<=DeployTrigger)||(LA128_1>=Notifications && LA128_1<=After_script)||(LA128_1>=DefaultsRun && LA128_1<=PathsIgnore)||(LA128_1>=Pull_request && LA128_1<=Workflow_run)||(LA128_1>=Concurrency && LA128_1<=Definitions)||LA128_1==Description||(LA128_1>=DisplayName && LA128_1<=GetPackage)||(LA128_1>=Parameters && LA128_1<=Permission)||(LA128_1>=Powershell && LA128_1<=Artifacts)||(LA128_1>=Condition && LA128_1<=FailFast)||(LA128_1>=Pipelines && LA128_1<=RunPolicy)||(LA128_1>=Schedules && LA128_1<=Workspace)||(LA128_1>=Branches && LA128_1<=Checkout)||(LA128_1>=Defaults && LA128_1<=Download)||(LA128_1>=MaxTime && LA128_1<=PreBuild)||(LA128_1>=Readonly && LA128_1<=Snapshot)||(LA128_1>=Strategy && LA128_1<=Webhooks)||(LA128_1>=Command && LA128_1<=Caches)||(LA128_1>=Docker && LA128_1<=Except)||LA128_1==Inputs||(LA128_1>=Labels && LA128_1<=Policy)||LA128_1==Queued||(LA128_1>=Script && LA128_1<=Image)||(LA128_1>=Paths && LA128_1<=Value)||(LA128_1>=Auth && LA128_1<=Cron)||LA128_1==Name||(LA128_1>=Only && LA128_1<=Pwsh)||(LA128_1>=Step && LA128_1<=With)||(LA128_1>=Env && LA128_1<=Job)||(LA128_1>=Run && LA128_1<=On)||LA128_1==HyphenMinus||(LA128_1>=RULE_COMPLEX_EXPRESSION && LA128_1<=RULE_FLOAT_LITERAL)||(LA128_1>=RULE_VERSION && LA128_1<=RULE_END)||LA128_1==RULE_STRING) ) {
-                    alt128=2;
-                }
-                else if ( (LA128_1==RULE_ID) ) {
+                if ( (LA128_1==RULE_ID) ) {
                     alt128=1;
+                }
+                else if ( (LA128_1==EOF||(LA128_1>=Repository_dispatch && LA128_1<=ContinueOnError_1)||(LA128_1>=Workflow_dispatch && LA128_1<=WorkingDirectory)||(LA128_1>=TimeoutInMinutes && LA128_1<=ContinueOnError)||LA128_1==TimeoutMinutes||LA128_1==ReleaseTrigger||(LA128_1>=Allow_failure && LA128_1<=DeployTrigger)||(LA128_1>=Notifications && LA128_1<=After_script)||(LA128_1>=DefaultsRun && LA128_1<=PathsIgnore)||(LA128_1>=Pull_request && LA128_1<=Workflow_run)||(LA128_1>=Concurrency && LA128_1<=Definitions)||LA128_1==Description||(LA128_1>=DisplayName && LA128_1<=GetPackage)||(LA128_1>=Parameters && LA128_1<=Permission)||(LA128_1>=Powershell && LA128_1<=Artifacts)||(LA128_1>=Condition && LA128_1<=FailFast)||(LA128_1>=Pipelines && LA128_1<=RunPolicy)||(LA128_1>=Schedules && LA128_1<=Workspace)||(LA128_1>=Branches && LA128_1<=Checkout)||(LA128_1>=Defaults && LA128_1<=Download)||(LA128_1>=MaxTime && LA128_1<=PreBuild)||(LA128_1>=Readonly && LA128_1<=Snapshot)||(LA128_1>=Strategy && LA128_1<=Webhooks)||(LA128_1>=Command && LA128_1<=Caches)||(LA128_1>=Docker && LA128_1<=Except)||LA128_1==Inputs||(LA128_1>=Labels && LA128_1<=Policy)||LA128_1==Queued||(LA128_1>=Script && LA128_1<=Image)||(LA128_1>=Paths && LA128_1<=Value)||(LA128_1>=Auth && LA128_1<=Cron)||LA128_1==Name||(LA128_1>=Only && LA128_1<=Pwsh)||(LA128_1>=Step && LA128_1<=With)||(LA128_1>=Env && LA128_1<=Job)||(LA128_1>=Run && LA128_1<=On)||LA128_1==HyphenMinus||(LA128_1>=RULE_COMPLEX_EXPRESSION && LA128_1<=RULE_FLOAT_LITERAL)||(LA128_1>=RULE_VERSION && LA128_1<=RULE_END)||LA128_1==RULE_STRING) ) {
+                    alt128=2;
                 }
                 else {
                     NoViableAltException nvae =
@@ -13729,7 +13730,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "rulePipelineEventKeyword"
-    // InternalPipelineParser.g:4916:1: rulePipelineEventKeyword returns [Enumerator current=null] : ( (enumLiteral_0= Push ) | (enumLiteral_1= Pull_request ) | (enumLiteral_2= Workflow_dispatch ) | (enumLiteral_3= Repository_dispatch ) | (enumLiteral_4= Check_run ) | (enumLiteral_5= Check_suite ) | (enumLiteral_6= Create ) | (enumLiteral_7= Delete ) | (enumLiteral_8= Deployment ) | (enumLiteral_9= Deployment_status ) | (enumLiteral_10= Fork ) | (enumLiteral_11= Gollum ) | (enumLiteral_12= Issue_comment ) | (enumLiteral_13= Issues ) | (enumLiteral_14= Label ) | (enumLiteral_15= Milestone ) | (enumLiteral_16= Page_build ) | (enumLiteral_17= Project ) | (enumLiteral_18= Project_card ) | (enumLiteral_19= Project_column ) | (enumLiteral_20= Public ) | (enumLiteral_21= Pull_request_review ) | (enumLiteral_22= Pull_request_review_comment ) | (enumLiteral_23= Pull_request_target ) | (enumLiteral_24= Registry_package ) | (enumLiteral_25= Release ) | (enumLiteral_26= Status ) | (enumLiteral_27= Watch ) | (enumLiteral_28= Workflow_call ) | (enumLiteral_29= Workflow_run ) | (enumLiteral_30= Trigger ) | (enumLiteral_31= Pr ) | (enumLiteral_32= Branches ) | (enumLiteral_33= Tags ) | (enumLiteral_34= Paths ) | (enumLiteral_35= AutoCancel ) | (enumLiteral_36= Drafts ) | (enumLiteral_37= Only ) | (enumLiteral_38= Except ) | (enumLiteral_39= Rules ) | (enumLiteral_40= WorkflowRules ) | (enumLiteral_41= Pipeline_schedule ) | (enumLiteral_42= Merge_requests ) | (enumLiteral_43= Changes ) | (enumLiteral_44= Pipelines ) | (enumLiteral_45= Default ) | (enumLiteral_46= PullRequests ) | (enumLiteral_47= Custom ) | (enumLiteral_48= Conditions ) | (enumLiteral_49= BitbucketBranchDeleted ) | (enumLiteral_50= BitbucketBranchCreated ) | (enumLiteral_51= BitbucketTagCreated ) | (enumLiteral_52= BitbucketTagDeleted ) | (enumLiteral_53= Repository ) | (enumLiteral_54= Scheduled ) | (enumLiteral_55= Remote ) | (enumLiteral_56= Bitbucket ) | (enumLiteral_57= PlanBranch ) | (enumLiteral_58= Cron ) | (enumLiteral_59= Notifications ) | (enumLiteral_60= LockBehavior ) ) ;
+    // InternalPipelineParser.g:4916:1: rulePipelineEventKeyword returns [Enumerator current=null] : ( (enumLiteral_0= Push ) | (enumLiteral_1= Pull_request ) | (enumLiteral_2= None ) | (enumLiteral_3= Workflow_dispatch ) | (enumLiteral_4= Repository_dispatch ) | (enumLiteral_5= Check_run ) | (enumLiteral_6= Check_suite ) | (enumLiteral_7= Create ) | (enumLiteral_8= Delete ) | (enumLiteral_9= Deployment ) | (enumLiteral_10= Deployment_status ) | (enumLiteral_11= Fork ) | (enumLiteral_12= Gollum ) | (enumLiteral_13= Issue_comment ) | (enumLiteral_14= Issues ) | (enumLiteral_15= Label ) | (enumLiteral_16= Milestone ) | (enumLiteral_17= Page_build ) | (enumLiteral_18= Project ) | (enumLiteral_19= Project_card ) | (enumLiteral_20= Project_column ) | (enumLiteral_21= Public ) | (enumLiteral_22= Pull_request_review ) | (enumLiteral_23= Pull_request_review_comment ) | (enumLiteral_24= Pull_request_target ) | (enumLiteral_25= Registry_package ) | (enumLiteral_26= Release ) | (enumLiteral_27= Status ) | (enumLiteral_28= Watch ) | (enumLiteral_29= Workflow_call ) | (enumLiteral_30= Workflow_run ) | (enumLiteral_31= Trigger ) | (enumLiteral_32= Pr ) | (enumLiteral_33= Branches ) | (enumLiteral_34= Tags ) | (enumLiteral_35= Paths ) | (enumLiteral_36= AutoCancel ) | (enumLiteral_37= Drafts ) | (enumLiteral_38= Only ) | (enumLiteral_39= Except ) | (enumLiteral_40= Rules ) | (enumLiteral_41= WorkflowRules ) | (enumLiteral_42= Pipeline_schedule ) | (enumLiteral_43= Merge_requests ) | (enumLiteral_44= Changes ) | (enumLiteral_45= Pipelines ) | (enumLiteral_46= Default ) | (enumLiteral_47= PullRequests ) | (enumLiteral_48= Custom ) | (enumLiteral_49= Conditions ) | (enumLiteral_50= BitbucketBranchDeleted ) | (enumLiteral_51= BitbucketBranchCreated ) | (enumLiteral_52= BitbucketTagCreated ) | (enumLiteral_53= BitbucketTagDeleted ) | (enumLiteral_54= Repository ) | (enumLiteral_55= Scheduled ) | (enumLiteral_56= Remote ) | (enumLiteral_57= Bitbucket ) | (enumLiteral_58= PlanBranch ) | (enumLiteral_59= Cron ) | (enumLiteral_60= Notifications ) | (enumLiteral_61= LockBehavior ) ) ;
     public final Enumerator rulePipelineEventKeyword() throws RecognitionException {
         Enumerator current = null;
 
@@ -13794,16 +13795,17 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
         Token enumLiteral_58=null;
         Token enumLiteral_59=null;
         Token enumLiteral_60=null;
+        Token enumLiteral_61=null;
 
 
         	enterRule();
 
         try {
-            // InternalPipelineParser.g:4922:2: ( ( (enumLiteral_0= Push ) | (enumLiteral_1= Pull_request ) | (enumLiteral_2= Workflow_dispatch ) | (enumLiteral_3= Repository_dispatch ) | (enumLiteral_4= Check_run ) | (enumLiteral_5= Check_suite ) | (enumLiteral_6= Create ) | (enumLiteral_7= Delete ) | (enumLiteral_8= Deployment ) | (enumLiteral_9= Deployment_status ) | (enumLiteral_10= Fork ) | (enumLiteral_11= Gollum ) | (enumLiteral_12= Issue_comment ) | (enumLiteral_13= Issues ) | (enumLiteral_14= Label ) | (enumLiteral_15= Milestone ) | (enumLiteral_16= Page_build ) | (enumLiteral_17= Project ) | (enumLiteral_18= Project_card ) | (enumLiteral_19= Project_column ) | (enumLiteral_20= Public ) | (enumLiteral_21= Pull_request_review ) | (enumLiteral_22= Pull_request_review_comment ) | (enumLiteral_23= Pull_request_target ) | (enumLiteral_24= Registry_package ) | (enumLiteral_25= Release ) | (enumLiteral_26= Status ) | (enumLiteral_27= Watch ) | (enumLiteral_28= Workflow_call ) | (enumLiteral_29= Workflow_run ) | (enumLiteral_30= Trigger ) | (enumLiteral_31= Pr ) | (enumLiteral_32= Branches ) | (enumLiteral_33= Tags ) | (enumLiteral_34= Paths ) | (enumLiteral_35= AutoCancel ) | (enumLiteral_36= Drafts ) | (enumLiteral_37= Only ) | (enumLiteral_38= Except ) | (enumLiteral_39= Rules ) | (enumLiteral_40= WorkflowRules ) | (enumLiteral_41= Pipeline_schedule ) | (enumLiteral_42= Merge_requests ) | (enumLiteral_43= Changes ) | (enumLiteral_44= Pipelines ) | (enumLiteral_45= Default ) | (enumLiteral_46= PullRequests ) | (enumLiteral_47= Custom ) | (enumLiteral_48= Conditions ) | (enumLiteral_49= BitbucketBranchDeleted ) | (enumLiteral_50= BitbucketBranchCreated ) | (enumLiteral_51= BitbucketTagCreated ) | (enumLiteral_52= BitbucketTagDeleted ) | (enumLiteral_53= Repository ) | (enumLiteral_54= Scheduled ) | (enumLiteral_55= Remote ) | (enumLiteral_56= Bitbucket ) | (enumLiteral_57= PlanBranch ) | (enumLiteral_58= Cron ) | (enumLiteral_59= Notifications ) | (enumLiteral_60= LockBehavior ) ) )
-            // InternalPipelineParser.g:4923:2: ( (enumLiteral_0= Push ) | (enumLiteral_1= Pull_request ) | (enumLiteral_2= Workflow_dispatch ) | (enumLiteral_3= Repository_dispatch ) | (enumLiteral_4= Check_run ) | (enumLiteral_5= Check_suite ) | (enumLiteral_6= Create ) | (enumLiteral_7= Delete ) | (enumLiteral_8= Deployment ) | (enumLiteral_9= Deployment_status ) | (enumLiteral_10= Fork ) | (enumLiteral_11= Gollum ) | (enumLiteral_12= Issue_comment ) | (enumLiteral_13= Issues ) | (enumLiteral_14= Label ) | (enumLiteral_15= Milestone ) | (enumLiteral_16= Page_build ) | (enumLiteral_17= Project ) | (enumLiteral_18= Project_card ) | (enumLiteral_19= Project_column ) | (enumLiteral_20= Public ) | (enumLiteral_21= Pull_request_review ) | (enumLiteral_22= Pull_request_review_comment ) | (enumLiteral_23= Pull_request_target ) | (enumLiteral_24= Registry_package ) | (enumLiteral_25= Release ) | (enumLiteral_26= Status ) | (enumLiteral_27= Watch ) | (enumLiteral_28= Workflow_call ) | (enumLiteral_29= Workflow_run ) | (enumLiteral_30= Trigger ) | (enumLiteral_31= Pr ) | (enumLiteral_32= Branches ) | (enumLiteral_33= Tags ) | (enumLiteral_34= Paths ) | (enumLiteral_35= AutoCancel ) | (enumLiteral_36= Drafts ) | (enumLiteral_37= Only ) | (enumLiteral_38= Except ) | (enumLiteral_39= Rules ) | (enumLiteral_40= WorkflowRules ) | (enumLiteral_41= Pipeline_schedule ) | (enumLiteral_42= Merge_requests ) | (enumLiteral_43= Changes ) | (enumLiteral_44= Pipelines ) | (enumLiteral_45= Default ) | (enumLiteral_46= PullRequests ) | (enumLiteral_47= Custom ) | (enumLiteral_48= Conditions ) | (enumLiteral_49= BitbucketBranchDeleted ) | (enumLiteral_50= BitbucketBranchCreated ) | (enumLiteral_51= BitbucketTagCreated ) | (enumLiteral_52= BitbucketTagDeleted ) | (enumLiteral_53= Repository ) | (enumLiteral_54= Scheduled ) | (enumLiteral_55= Remote ) | (enumLiteral_56= Bitbucket ) | (enumLiteral_57= PlanBranch ) | (enumLiteral_58= Cron ) | (enumLiteral_59= Notifications ) | (enumLiteral_60= LockBehavior ) )
+            // InternalPipelineParser.g:4922:2: ( ( (enumLiteral_0= Push ) | (enumLiteral_1= Pull_request ) | (enumLiteral_2= None ) | (enumLiteral_3= Workflow_dispatch ) | (enumLiteral_4= Repository_dispatch ) | (enumLiteral_5= Check_run ) | (enumLiteral_6= Check_suite ) | (enumLiteral_7= Create ) | (enumLiteral_8= Delete ) | (enumLiteral_9= Deployment ) | (enumLiteral_10= Deployment_status ) | (enumLiteral_11= Fork ) | (enumLiteral_12= Gollum ) | (enumLiteral_13= Issue_comment ) | (enumLiteral_14= Issues ) | (enumLiteral_15= Label ) | (enumLiteral_16= Milestone ) | (enumLiteral_17= Page_build ) | (enumLiteral_18= Project ) | (enumLiteral_19= Project_card ) | (enumLiteral_20= Project_column ) | (enumLiteral_21= Public ) | (enumLiteral_22= Pull_request_review ) | (enumLiteral_23= Pull_request_review_comment ) | (enumLiteral_24= Pull_request_target ) | (enumLiteral_25= Registry_package ) | (enumLiteral_26= Release ) | (enumLiteral_27= Status ) | (enumLiteral_28= Watch ) | (enumLiteral_29= Workflow_call ) | (enumLiteral_30= Workflow_run ) | (enumLiteral_31= Trigger ) | (enumLiteral_32= Pr ) | (enumLiteral_33= Branches ) | (enumLiteral_34= Tags ) | (enumLiteral_35= Paths ) | (enumLiteral_36= AutoCancel ) | (enumLiteral_37= Drafts ) | (enumLiteral_38= Only ) | (enumLiteral_39= Except ) | (enumLiteral_40= Rules ) | (enumLiteral_41= WorkflowRules ) | (enumLiteral_42= Pipeline_schedule ) | (enumLiteral_43= Merge_requests ) | (enumLiteral_44= Changes ) | (enumLiteral_45= Pipelines ) | (enumLiteral_46= Default ) | (enumLiteral_47= PullRequests ) | (enumLiteral_48= Custom ) | (enumLiteral_49= Conditions ) | (enumLiteral_50= BitbucketBranchDeleted ) | (enumLiteral_51= BitbucketBranchCreated ) | (enumLiteral_52= BitbucketTagCreated ) | (enumLiteral_53= BitbucketTagDeleted ) | (enumLiteral_54= Repository ) | (enumLiteral_55= Scheduled ) | (enumLiteral_56= Remote ) | (enumLiteral_57= Bitbucket ) | (enumLiteral_58= PlanBranch ) | (enumLiteral_59= Cron ) | (enumLiteral_60= Notifications ) | (enumLiteral_61= LockBehavior ) ) )
+            // InternalPipelineParser.g:4923:2: ( (enumLiteral_0= Push ) | (enumLiteral_1= Pull_request ) | (enumLiteral_2= None ) | (enumLiteral_3= Workflow_dispatch ) | (enumLiteral_4= Repository_dispatch ) | (enumLiteral_5= Check_run ) | (enumLiteral_6= Check_suite ) | (enumLiteral_7= Create ) | (enumLiteral_8= Delete ) | (enumLiteral_9= Deployment ) | (enumLiteral_10= Deployment_status ) | (enumLiteral_11= Fork ) | (enumLiteral_12= Gollum ) | (enumLiteral_13= Issue_comment ) | (enumLiteral_14= Issues ) | (enumLiteral_15= Label ) | (enumLiteral_16= Milestone ) | (enumLiteral_17= Page_build ) | (enumLiteral_18= Project ) | (enumLiteral_19= Project_card ) | (enumLiteral_20= Project_column ) | (enumLiteral_21= Public ) | (enumLiteral_22= Pull_request_review ) | (enumLiteral_23= Pull_request_review_comment ) | (enumLiteral_24= Pull_request_target ) | (enumLiteral_25= Registry_package ) | (enumLiteral_26= Release ) | (enumLiteral_27= Status ) | (enumLiteral_28= Watch ) | (enumLiteral_29= Workflow_call ) | (enumLiteral_30= Workflow_run ) | (enumLiteral_31= Trigger ) | (enumLiteral_32= Pr ) | (enumLiteral_33= Branches ) | (enumLiteral_34= Tags ) | (enumLiteral_35= Paths ) | (enumLiteral_36= AutoCancel ) | (enumLiteral_37= Drafts ) | (enumLiteral_38= Only ) | (enumLiteral_39= Except ) | (enumLiteral_40= Rules ) | (enumLiteral_41= WorkflowRules ) | (enumLiteral_42= Pipeline_schedule ) | (enumLiteral_43= Merge_requests ) | (enumLiteral_44= Changes ) | (enumLiteral_45= Pipelines ) | (enumLiteral_46= Default ) | (enumLiteral_47= PullRequests ) | (enumLiteral_48= Custom ) | (enumLiteral_49= Conditions ) | (enumLiteral_50= BitbucketBranchDeleted ) | (enumLiteral_51= BitbucketBranchCreated ) | (enumLiteral_52= BitbucketTagCreated ) | (enumLiteral_53= BitbucketTagDeleted ) | (enumLiteral_54= Repository ) | (enumLiteral_55= Scheduled ) | (enumLiteral_56= Remote ) | (enumLiteral_57= Bitbucket ) | (enumLiteral_58= PlanBranch ) | (enumLiteral_59= Cron ) | (enumLiteral_60= Notifications ) | (enumLiteral_61= LockBehavior ) )
             {
-            // InternalPipelineParser.g:4923:2: ( (enumLiteral_0= Push ) | (enumLiteral_1= Pull_request ) | (enumLiteral_2= Workflow_dispatch ) | (enumLiteral_3= Repository_dispatch ) | (enumLiteral_4= Check_run ) | (enumLiteral_5= Check_suite ) | (enumLiteral_6= Create ) | (enumLiteral_7= Delete ) | (enumLiteral_8= Deployment ) | (enumLiteral_9= Deployment_status ) | (enumLiteral_10= Fork ) | (enumLiteral_11= Gollum ) | (enumLiteral_12= Issue_comment ) | (enumLiteral_13= Issues ) | (enumLiteral_14= Label ) | (enumLiteral_15= Milestone ) | (enumLiteral_16= Page_build ) | (enumLiteral_17= Project ) | (enumLiteral_18= Project_card ) | (enumLiteral_19= Project_column ) | (enumLiteral_20= Public ) | (enumLiteral_21= Pull_request_review ) | (enumLiteral_22= Pull_request_review_comment ) | (enumLiteral_23= Pull_request_target ) | (enumLiteral_24= Registry_package ) | (enumLiteral_25= Release ) | (enumLiteral_26= Status ) | (enumLiteral_27= Watch ) | (enumLiteral_28= Workflow_call ) | (enumLiteral_29= Workflow_run ) | (enumLiteral_30= Trigger ) | (enumLiteral_31= Pr ) | (enumLiteral_32= Branches ) | (enumLiteral_33= Tags ) | (enumLiteral_34= Paths ) | (enumLiteral_35= AutoCancel ) | (enumLiteral_36= Drafts ) | (enumLiteral_37= Only ) | (enumLiteral_38= Except ) | (enumLiteral_39= Rules ) | (enumLiteral_40= WorkflowRules ) | (enumLiteral_41= Pipeline_schedule ) | (enumLiteral_42= Merge_requests ) | (enumLiteral_43= Changes ) | (enumLiteral_44= Pipelines ) | (enumLiteral_45= Default ) | (enumLiteral_46= PullRequests ) | (enumLiteral_47= Custom ) | (enumLiteral_48= Conditions ) | (enumLiteral_49= BitbucketBranchDeleted ) | (enumLiteral_50= BitbucketBranchCreated ) | (enumLiteral_51= BitbucketTagCreated ) | (enumLiteral_52= BitbucketTagDeleted ) | (enumLiteral_53= Repository ) | (enumLiteral_54= Scheduled ) | (enumLiteral_55= Remote ) | (enumLiteral_56= Bitbucket ) | (enumLiteral_57= PlanBranch ) | (enumLiteral_58= Cron ) | (enumLiteral_59= Notifications ) | (enumLiteral_60= LockBehavior ) )
-            int alt151=61;
+            // InternalPipelineParser.g:4923:2: ( (enumLiteral_0= Push ) | (enumLiteral_1= Pull_request ) | (enumLiteral_2= None ) | (enumLiteral_3= Workflow_dispatch ) | (enumLiteral_4= Repository_dispatch ) | (enumLiteral_5= Check_run ) | (enumLiteral_6= Check_suite ) | (enumLiteral_7= Create ) | (enumLiteral_8= Delete ) | (enumLiteral_9= Deployment ) | (enumLiteral_10= Deployment_status ) | (enumLiteral_11= Fork ) | (enumLiteral_12= Gollum ) | (enumLiteral_13= Issue_comment ) | (enumLiteral_14= Issues ) | (enumLiteral_15= Label ) | (enumLiteral_16= Milestone ) | (enumLiteral_17= Page_build ) | (enumLiteral_18= Project ) | (enumLiteral_19= Project_card ) | (enumLiteral_20= Project_column ) | (enumLiteral_21= Public ) | (enumLiteral_22= Pull_request_review ) | (enumLiteral_23= Pull_request_review_comment ) | (enumLiteral_24= Pull_request_target ) | (enumLiteral_25= Registry_package ) | (enumLiteral_26= Release ) | (enumLiteral_27= Status ) | (enumLiteral_28= Watch ) | (enumLiteral_29= Workflow_call ) | (enumLiteral_30= Workflow_run ) | (enumLiteral_31= Trigger ) | (enumLiteral_32= Pr ) | (enumLiteral_33= Branches ) | (enumLiteral_34= Tags ) | (enumLiteral_35= Paths ) | (enumLiteral_36= AutoCancel ) | (enumLiteral_37= Drafts ) | (enumLiteral_38= Only ) | (enumLiteral_39= Except ) | (enumLiteral_40= Rules ) | (enumLiteral_41= WorkflowRules ) | (enumLiteral_42= Pipeline_schedule ) | (enumLiteral_43= Merge_requests ) | (enumLiteral_44= Changes ) | (enumLiteral_45= Pipelines ) | (enumLiteral_46= Default ) | (enumLiteral_47= PullRequests ) | (enumLiteral_48= Custom ) | (enumLiteral_49= Conditions ) | (enumLiteral_50= BitbucketBranchDeleted ) | (enumLiteral_51= BitbucketBranchCreated ) | (enumLiteral_52= BitbucketTagCreated ) | (enumLiteral_53= BitbucketTagDeleted ) | (enumLiteral_54= Repository ) | (enumLiteral_55= Scheduled ) | (enumLiteral_56= Remote ) | (enumLiteral_57= Bitbucket ) | (enumLiteral_58= PlanBranch ) | (enumLiteral_59= Cron ) | (enumLiteral_60= Notifications ) | (enumLiteral_61= LockBehavior ) )
+            int alt151=62;
             switch ( input.LA(1) ) {
             case Push:
                 {
@@ -13815,299 +13817,304 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                 alt151=2;
                 }
                 break;
-            case Workflow_dispatch:
+            case None:
                 {
                 alt151=3;
                 }
                 break;
-            case Repository_dispatch:
+            case Workflow_dispatch:
                 {
                 alt151=4;
                 }
                 break;
-            case Check_run:
+            case Repository_dispatch:
                 {
                 alt151=5;
                 }
                 break;
-            case Check_suite:
+            case Check_run:
                 {
                 alt151=6;
                 }
                 break;
-            case Create:
+            case Check_suite:
                 {
                 alt151=7;
                 }
                 break;
-            case Delete:
+            case Create:
                 {
                 alt151=8;
                 }
                 break;
-            case Deployment:
+            case Delete:
                 {
                 alt151=9;
                 }
                 break;
-            case Deployment_status:
+            case Deployment:
                 {
                 alt151=10;
                 }
                 break;
-            case Fork:
+            case Deployment_status:
                 {
                 alt151=11;
                 }
                 break;
-            case Gollum:
+            case Fork:
                 {
                 alt151=12;
                 }
                 break;
-            case Issue_comment:
+            case Gollum:
                 {
                 alt151=13;
                 }
                 break;
-            case Issues:
+            case Issue_comment:
                 {
                 alt151=14;
                 }
                 break;
-            case Label:
+            case Issues:
                 {
                 alt151=15;
                 }
                 break;
-            case Milestone:
+            case Label:
                 {
                 alt151=16;
                 }
                 break;
-            case Page_build:
+            case Milestone:
                 {
                 alt151=17;
                 }
                 break;
-            case Project:
+            case Page_build:
                 {
                 alt151=18;
                 }
                 break;
-            case Project_card:
+            case Project:
                 {
                 alt151=19;
                 }
                 break;
-            case Project_column:
+            case Project_card:
                 {
                 alt151=20;
                 }
                 break;
-            case Public:
+            case Project_column:
                 {
                 alt151=21;
                 }
                 break;
-            case Pull_request_review:
+            case Public:
                 {
                 alt151=22;
                 }
                 break;
-            case Pull_request_review_comment:
+            case Pull_request_review:
                 {
                 alt151=23;
                 }
                 break;
-            case Pull_request_target:
+            case Pull_request_review_comment:
                 {
                 alt151=24;
                 }
                 break;
-            case Registry_package:
+            case Pull_request_target:
                 {
                 alt151=25;
                 }
                 break;
-            case Release:
+            case Registry_package:
                 {
                 alt151=26;
                 }
                 break;
-            case Status:
+            case Release:
                 {
                 alt151=27;
                 }
                 break;
-            case Watch:
+            case Status:
                 {
                 alt151=28;
                 }
                 break;
-            case Workflow_call:
+            case Watch:
                 {
                 alt151=29;
                 }
                 break;
-            case Workflow_run:
+            case Workflow_call:
                 {
                 alt151=30;
                 }
                 break;
-            case Trigger:
+            case Workflow_run:
                 {
                 alt151=31;
                 }
                 break;
-            case Pr:
+            case Trigger:
                 {
                 alt151=32;
                 }
                 break;
-            case Branches:
+            case Pr:
                 {
                 alt151=33;
                 }
                 break;
-            case Tags:
+            case Branches:
                 {
                 alt151=34;
                 }
                 break;
-            case Paths:
+            case Tags:
                 {
                 alt151=35;
                 }
                 break;
-            case AutoCancel:
+            case Paths:
                 {
                 alt151=36;
                 }
                 break;
-            case Drafts:
+            case AutoCancel:
                 {
                 alt151=37;
                 }
                 break;
-            case Only:
+            case Drafts:
                 {
                 alt151=38;
                 }
                 break;
-            case Except:
+            case Only:
                 {
                 alt151=39;
                 }
                 break;
-            case Rules:
+            case Except:
                 {
                 alt151=40;
                 }
                 break;
-            case WorkflowRules:
+            case Rules:
                 {
                 alt151=41;
                 }
                 break;
-            case Pipeline_schedule:
+            case WorkflowRules:
                 {
                 alt151=42;
                 }
                 break;
-            case Merge_requests:
+            case Pipeline_schedule:
                 {
                 alt151=43;
                 }
                 break;
-            case Changes:
+            case Merge_requests:
                 {
                 alt151=44;
                 }
                 break;
-            case Pipelines:
+            case Changes:
                 {
                 alt151=45;
                 }
                 break;
-            case Default:
+            case Pipelines:
                 {
                 alt151=46;
                 }
                 break;
-            case PullRequests:
+            case Default:
                 {
                 alt151=47;
                 }
                 break;
-            case Custom:
+            case PullRequests:
                 {
                 alt151=48;
                 }
                 break;
-            case Conditions:
+            case Custom:
                 {
                 alt151=49;
                 }
                 break;
-            case BitbucketBranchDeleted:
+            case Conditions:
                 {
                 alt151=50;
                 }
                 break;
-            case BitbucketBranchCreated:
+            case BitbucketBranchDeleted:
                 {
                 alt151=51;
                 }
                 break;
-            case BitbucketTagCreated:
+            case BitbucketBranchCreated:
                 {
                 alt151=52;
                 }
                 break;
-            case BitbucketTagDeleted:
+            case BitbucketTagCreated:
                 {
                 alt151=53;
                 }
                 break;
-            case Repository:
+            case BitbucketTagDeleted:
                 {
                 alt151=54;
                 }
                 break;
-            case Scheduled:
+            case Repository:
                 {
                 alt151=55;
                 }
                 break;
-            case Remote:
+            case Scheduled:
                 {
                 alt151=56;
                 }
                 break;
-            case Bitbucket:
+            case Remote:
                 {
                 alt151=57;
                 }
                 break;
-            case PlanBranch:
+            case Bitbucket:
                 {
                 alt151=58;
                 }
                 break;
-            case Cron:
+            case PlanBranch:
                 {
                 alt151=59;
                 }
                 break;
-            case Notifications:
+            case Cron:
                 {
                 alt151=60;
                 }
                 break;
-            case LockBehavior:
+            case Notifications:
                 {
                 alt151=61;
+                }
+                break;
+            case LockBehavior:
+                {
+                alt151=62;
                 }
                 break;
             default:
@@ -14153,15 +14160,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // InternalPipelineParser.g:4940:3: (enumLiteral_2= Workflow_dispatch )
+                    // InternalPipelineParser.g:4940:3: (enumLiteral_2= None )
                     {
-                    // InternalPipelineParser.g:4940:3: (enumLiteral_2= Workflow_dispatch )
-                    // InternalPipelineParser.g:4941:4: enumLiteral_2= Workflow_dispatch
+                    // InternalPipelineParser.g:4940:3: (enumLiteral_2= None )
+                    // InternalPipelineParser.g:4941:4: enumLiteral_2= None
                     {
-                    enumLiteral_2=(Token)match(input,Workflow_dispatch,FOLLOW_2); 
+                    enumLiteral_2=(Token)match(input,None,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_DISPATCHEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_2, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_DISPATCHEnumLiteralDeclaration_2());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_NONEEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_2, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_NONEEnumLiteralDeclaration_2());
                     			
 
                     }
@@ -14170,15 +14177,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // InternalPipelineParser.g:4948:3: (enumLiteral_3= Repository_dispatch )
+                    // InternalPipelineParser.g:4948:3: (enumLiteral_3= Workflow_dispatch )
                     {
-                    // InternalPipelineParser.g:4948:3: (enumLiteral_3= Repository_dispatch )
-                    // InternalPipelineParser.g:4949:4: enumLiteral_3= Repository_dispatch
+                    // InternalPipelineParser.g:4948:3: (enumLiteral_3= Workflow_dispatch )
+                    // InternalPipelineParser.g:4949:4: enumLiteral_3= Workflow_dispatch
                     {
-                    enumLiteral_3=(Token)match(input,Repository_dispatch,FOLLOW_2); 
+                    enumLiteral_3=(Token)match(input,Workflow_dispatch,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REPOSITORY_DISPATCHEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_3, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REPOSITORY_DISPATCHEnumLiteralDeclaration_3());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_DISPATCHEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_3, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_DISPATCHEnumLiteralDeclaration_3());
                     			
 
                     }
@@ -14187,15 +14194,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 5 :
-                    // InternalPipelineParser.g:4956:3: (enumLiteral_4= Check_run )
+                    // InternalPipelineParser.g:4956:3: (enumLiteral_4= Repository_dispatch )
                     {
-                    // InternalPipelineParser.g:4956:3: (enumLiteral_4= Check_run )
-                    // InternalPipelineParser.g:4957:4: enumLiteral_4= Check_run
+                    // InternalPipelineParser.g:4956:3: (enumLiteral_4= Repository_dispatch )
+                    // InternalPipelineParser.g:4957:4: enumLiteral_4= Repository_dispatch
                     {
-                    enumLiteral_4=(Token)match(input,Check_run,FOLLOW_2); 
+                    enumLiteral_4=(Token)match(input,Repository_dispatch,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHECK_RUNEnumLiteralDeclaration_4().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_4, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHECK_RUNEnumLiteralDeclaration_4());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REPOSITORY_DISPATCHEnumLiteralDeclaration_4().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_4, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REPOSITORY_DISPATCHEnumLiteralDeclaration_4());
                     			
 
                     }
@@ -14204,15 +14211,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 6 :
-                    // InternalPipelineParser.g:4964:3: (enumLiteral_5= Check_suite )
+                    // InternalPipelineParser.g:4964:3: (enumLiteral_5= Check_run )
                     {
-                    // InternalPipelineParser.g:4964:3: (enumLiteral_5= Check_suite )
-                    // InternalPipelineParser.g:4965:4: enumLiteral_5= Check_suite
+                    // InternalPipelineParser.g:4964:3: (enumLiteral_5= Check_run )
+                    // InternalPipelineParser.g:4965:4: enumLiteral_5= Check_run
                     {
-                    enumLiteral_5=(Token)match(input,Check_suite,FOLLOW_2); 
+                    enumLiteral_5=(Token)match(input,Check_run,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHECK_SUITEEnumLiteralDeclaration_5().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_5, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHECK_SUITEEnumLiteralDeclaration_5());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHECK_RUNEnumLiteralDeclaration_5().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_5, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHECK_RUNEnumLiteralDeclaration_5());
                     			
 
                     }
@@ -14221,15 +14228,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 7 :
-                    // InternalPipelineParser.g:4972:3: (enumLiteral_6= Create )
+                    // InternalPipelineParser.g:4972:3: (enumLiteral_6= Check_suite )
                     {
-                    // InternalPipelineParser.g:4972:3: (enumLiteral_6= Create )
-                    // InternalPipelineParser.g:4973:4: enumLiteral_6= Create
+                    // InternalPipelineParser.g:4972:3: (enumLiteral_6= Check_suite )
+                    // InternalPipelineParser.g:4973:4: enumLiteral_6= Check_suite
                     {
-                    enumLiteral_6=(Token)match(input,Create,FOLLOW_2); 
+                    enumLiteral_6=(Token)match(input,Check_suite,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CREATEEnumLiteralDeclaration_6().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_6, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CREATEEnumLiteralDeclaration_6());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHECK_SUITEEnumLiteralDeclaration_6().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_6, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHECK_SUITEEnumLiteralDeclaration_6());
                     			
 
                     }
@@ -14238,15 +14245,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 8 :
-                    // InternalPipelineParser.g:4980:3: (enumLiteral_7= Delete )
+                    // InternalPipelineParser.g:4980:3: (enumLiteral_7= Create )
                     {
-                    // InternalPipelineParser.g:4980:3: (enumLiteral_7= Delete )
-                    // InternalPipelineParser.g:4981:4: enumLiteral_7= Delete
+                    // InternalPipelineParser.g:4980:3: (enumLiteral_7= Create )
+                    // InternalPipelineParser.g:4981:4: enumLiteral_7= Create
                     {
-                    enumLiteral_7=(Token)match(input,Delete,FOLLOW_2); 
+                    enumLiteral_7=(Token)match(input,Create,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DELETEEnumLiteralDeclaration_7().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_7, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DELETEEnumLiteralDeclaration_7());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CREATEEnumLiteralDeclaration_7().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_7, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CREATEEnumLiteralDeclaration_7());
                     			
 
                     }
@@ -14255,15 +14262,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 9 :
-                    // InternalPipelineParser.g:4988:3: (enumLiteral_8= Deployment )
+                    // InternalPipelineParser.g:4988:3: (enumLiteral_8= Delete )
                     {
-                    // InternalPipelineParser.g:4988:3: (enumLiteral_8= Deployment )
-                    // InternalPipelineParser.g:4989:4: enumLiteral_8= Deployment
+                    // InternalPipelineParser.g:4988:3: (enumLiteral_8= Delete )
+                    // InternalPipelineParser.g:4989:4: enumLiteral_8= Delete
                     {
-                    enumLiteral_8=(Token)match(input,Deployment,FOLLOW_2); 
+                    enumLiteral_8=(Token)match(input,Delete,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEPLOYMENTEnumLiteralDeclaration_8().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_8, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEPLOYMENTEnumLiteralDeclaration_8());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DELETEEnumLiteralDeclaration_8().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_8, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DELETEEnumLiteralDeclaration_8());
                     			
 
                     }
@@ -14272,15 +14279,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 10 :
-                    // InternalPipelineParser.g:4996:3: (enumLiteral_9= Deployment_status )
+                    // InternalPipelineParser.g:4996:3: (enumLiteral_9= Deployment )
                     {
-                    // InternalPipelineParser.g:4996:3: (enumLiteral_9= Deployment_status )
-                    // InternalPipelineParser.g:4997:4: enumLiteral_9= Deployment_status
+                    // InternalPipelineParser.g:4996:3: (enumLiteral_9= Deployment )
+                    // InternalPipelineParser.g:4997:4: enumLiteral_9= Deployment
                     {
-                    enumLiteral_9=(Token)match(input,Deployment_status,FOLLOW_2); 
+                    enumLiteral_9=(Token)match(input,Deployment,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEPLOYMENT_STATUSEnumLiteralDeclaration_9().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_9, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEPLOYMENT_STATUSEnumLiteralDeclaration_9());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEPLOYMENTEnumLiteralDeclaration_9().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_9, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEPLOYMENTEnumLiteralDeclaration_9());
                     			
 
                     }
@@ -14289,15 +14296,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 11 :
-                    // InternalPipelineParser.g:5004:3: (enumLiteral_10= Fork )
+                    // InternalPipelineParser.g:5004:3: (enumLiteral_10= Deployment_status )
                     {
-                    // InternalPipelineParser.g:5004:3: (enumLiteral_10= Fork )
-                    // InternalPipelineParser.g:5005:4: enumLiteral_10= Fork
+                    // InternalPipelineParser.g:5004:3: (enumLiteral_10= Deployment_status )
+                    // InternalPipelineParser.g:5005:4: enumLiteral_10= Deployment_status
                     {
-                    enumLiteral_10=(Token)match(input,Fork,FOLLOW_2); 
+                    enumLiteral_10=(Token)match(input,Deployment_status,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_FORKEnumLiteralDeclaration_10().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_10, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_FORKEnumLiteralDeclaration_10());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEPLOYMENT_STATUSEnumLiteralDeclaration_10().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_10, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEPLOYMENT_STATUSEnumLiteralDeclaration_10());
                     			
 
                     }
@@ -14306,15 +14313,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 12 :
-                    // InternalPipelineParser.g:5012:3: (enumLiteral_11= Gollum )
+                    // InternalPipelineParser.g:5012:3: (enumLiteral_11= Fork )
                     {
-                    // InternalPipelineParser.g:5012:3: (enumLiteral_11= Gollum )
-                    // InternalPipelineParser.g:5013:4: enumLiteral_11= Gollum
+                    // InternalPipelineParser.g:5012:3: (enumLiteral_11= Fork )
+                    // InternalPipelineParser.g:5013:4: enumLiteral_11= Fork
                     {
-                    enumLiteral_11=(Token)match(input,Gollum,FOLLOW_2); 
+                    enumLiteral_11=(Token)match(input,Fork,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_GOLLUMEnumLiteralDeclaration_11().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_11, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_GOLLUMEnumLiteralDeclaration_11());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_FORKEnumLiteralDeclaration_11().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_11, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_FORKEnumLiteralDeclaration_11());
                     			
 
                     }
@@ -14323,15 +14330,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 13 :
-                    // InternalPipelineParser.g:5020:3: (enumLiteral_12= Issue_comment )
+                    // InternalPipelineParser.g:5020:3: (enumLiteral_12= Gollum )
                     {
-                    // InternalPipelineParser.g:5020:3: (enumLiteral_12= Issue_comment )
-                    // InternalPipelineParser.g:5021:4: enumLiteral_12= Issue_comment
+                    // InternalPipelineParser.g:5020:3: (enumLiteral_12= Gollum )
+                    // InternalPipelineParser.g:5021:4: enumLiteral_12= Gollum
                     {
-                    enumLiteral_12=(Token)match(input,Issue_comment,FOLLOW_2); 
+                    enumLiteral_12=(Token)match(input,Gollum,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ISSUE_COMMENTEnumLiteralDeclaration_12().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_12, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ISSUE_COMMENTEnumLiteralDeclaration_12());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_GOLLUMEnumLiteralDeclaration_12().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_12, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_GOLLUMEnumLiteralDeclaration_12());
                     			
 
                     }
@@ -14340,15 +14347,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 14 :
-                    // InternalPipelineParser.g:5028:3: (enumLiteral_13= Issues )
+                    // InternalPipelineParser.g:5028:3: (enumLiteral_13= Issue_comment )
                     {
-                    // InternalPipelineParser.g:5028:3: (enumLiteral_13= Issues )
-                    // InternalPipelineParser.g:5029:4: enumLiteral_13= Issues
+                    // InternalPipelineParser.g:5028:3: (enumLiteral_13= Issue_comment )
+                    // InternalPipelineParser.g:5029:4: enumLiteral_13= Issue_comment
                     {
-                    enumLiteral_13=(Token)match(input,Issues,FOLLOW_2); 
+                    enumLiteral_13=(Token)match(input,Issue_comment,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ISSUESEnumLiteralDeclaration_13().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_13, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ISSUESEnumLiteralDeclaration_13());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ISSUE_COMMENTEnumLiteralDeclaration_13().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_13, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ISSUE_COMMENTEnumLiteralDeclaration_13());
                     			
 
                     }
@@ -14357,15 +14364,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 15 :
-                    // InternalPipelineParser.g:5036:3: (enumLiteral_14= Label )
+                    // InternalPipelineParser.g:5036:3: (enumLiteral_14= Issues )
                     {
-                    // InternalPipelineParser.g:5036:3: (enumLiteral_14= Label )
-                    // InternalPipelineParser.g:5037:4: enumLiteral_14= Label
+                    // InternalPipelineParser.g:5036:3: (enumLiteral_14= Issues )
+                    // InternalPipelineParser.g:5037:4: enumLiteral_14= Issues
                     {
-                    enumLiteral_14=(Token)match(input,Label,FOLLOW_2); 
+                    enumLiteral_14=(Token)match(input,Issues,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_LABELEnumLiteralDeclaration_14().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_14, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_LABELEnumLiteralDeclaration_14());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ISSUESEnumLiteralDeclaration_14().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_14, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ISSUESEnumLiteralDeclaration_14());
                     			
 
                     }
@@ -14374,15 +14381,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 16 :
-                    // InternalPipelineParser.g:5044:3: (enumLiteral_15= Milestone )
+                    // InternalPipelineParser.g:5044:3: (enumLiteral_15= Label )
                     {
-                    // InternalPipelineParser.g:5044:3: (enumLiteral_15= Milestone )
-                    // InternalPipelineParser.g:5045:4: enumLiteral_15= Milestone
+                    // InternalPipelineParser.g:5044:3: (enumLiteral_15= Label )
+                    // InternalPipelineParser.g:5045:4: enumLiteral_15= Label
                     {
-                    enumLiteral_15=(Token)match(input,Milestone,FOLLOW_2); 
+                    enumLiteral_15=(Token)match(input,Label,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_MILESTONEEnumLiteralDeclaration_15().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_15, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_MILESTONEEnumLiteralDeclaration_15());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_LABELEnumLiteralDeclaration_15().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_15, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_LABELEnumLiteralDeclaration_15());
                     			
 
                     }
@@ -14391,15 +14398,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 17 :
-                    // InternalPipelineParser.g:5052:3: (enumLiteral_16= Page_build )
+                    // InternalPipelineParser.g:5052:3: (enumLiteral_16= Milestone )
                     {
-                    // InternalPipelineParser.g:5052:3: (enumLiteral_16= Page_build )
-                    // InternalPipelineParser.g:5053:4: enumLiteral_16= Page_build
+                    // InternalPipelineParser.g:5052:3: (enumLiteral_16= Milestone )
+                    // InternalPipelineParser.g:5053:4: enumLiteral_16= Milestone
                     {
-                    enumLiteral_16=(Token)match(input,Page_build,FOLLOW_2); 
+                    enumLiteral_16=(Token)match(input,Milestone,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PAGE_BUILDEnumLiteralDeclaration_16().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_16, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PAGE_BUILDEnumLiteralDeclaration_16());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_MILESTONEEnumLiteralDeclaration_16().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_16, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_MILESTONEEnumLiteralDeclaration_16());
                     			
 
                     }
@@ -14408,15 +14415,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 18 :
-                    // InternalPipelineParser.g:5060:3: (enumLiteral_17= Project )
+                    // InternalPipelineParser.g:5060:3: (enumLiteral_17= Page_build )
                     {
-                    // InternalPipelineParser.g:5060:3: (enumLiteral_17= Project )
-                    // InternalPipelineParser.g:5061:4: enumLiteral_17= Project
+                    // InternalPipelineParser.g:5060:3: (enumLiteral_17= Page_build )
+                    // InternalPipelineParser.g:5061:4: enumLiteral_17= Page_build
                     {
-                    enumLiteral_17=(Token)match(input,Project,FOLLOW_2); 
+                    enumLiteral_17=(Token)match(input,Page_build,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECTEnumLiteralDeclaration_17().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_17, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECTEnumLiteralDeclaration_17());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PAGE_BUILDEnumLiteralDeclaration_17().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_17, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PAGE_BUILDEnumLiteralDeclaration_17());
                     			
 
                     }
@@ -14425,15 +14432,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 19 :
-                    // InternalPipelineParser.g:5068:3: (enumLiteral_18= Project_card )
+                    // InternalPipelineParser.g:5068:3: (enumLiteral_18= Project )
                     {
-                    // InternalPipelineParser.g:5068:3: (enumLiteral_18= Project_card )
-                    // InternalPipelineParser.g:5069:4: enumLiteral_18= Project_card
+                    // InternalPipelineParser.g:5068:3: (enumLiteral_18= Project )
+                    // InternalPipelineParser.g:5069:4: enumLiteral_18= Project
                     {
-                    enumLiteral_18=(Token)match(input,Project_card,FOLLOW_2); 
+                    enumLiteral_18=(Token)match(input,Project,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECT_CARDEnumLiteralDeclaration_18().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_18, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECT_CARDEnumLiteralDeclaration_18());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECTEnumLiteralDeclaration_18().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_18, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECTEnumLiteralDeclaration_18());
                     			
 
                     }
@@ -14442,15 +14449,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 20 :
-                    // InternalPipelineParser.g:5076:3: (enumLiteral_19= Project_column )
+                    // InternalPipelineParser.g:5076:3: (enumLiteral_19= Project_card )
                     {
-                    // InternalPipelineParser.g:5076:3: (enumLiteral_19= Project_column )
-                    // InternalPipelineParser.g:5077:4: enumLiteral_19= Project_column
+                    // InternalPipelineParser.g:5076:3: (enumLiteral_19= Project_card )
+                    // InternalPipelineParser.g:5077:4: enumLiteral_19= Project_card
                     {
-                    enumLiteral_19=(Token)match(input,Project_column,FOLLOW_2); 
+                    enumLiteral_19=(Token)match(input,Project_card,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECT_COLUMNEnumLiteralDeclaration_19().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_19, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECT_COLUMNEnumLiteralDeclaration_19());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECT_CARDEnumLiteralDeclaration_19().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_19, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECT_CARDEnumLiteralDeclaration_19());
                     			
 
                     }
@@ -14459,15 +14466,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 21 :
-                    // InternalPipelineParser.g:5084:3: (enumLiteral_20= Public )
+                    // InternalPipelineParser.g:5084:3: (enumLiteral_20= Project_column )
                     {
-                    // InternalPipelineParser.g:5084:3: (enumLiteral_20= Public )
-                    // InternalPipelineParser.g:5085:4: enumLiteral_20= Public
+                    // InternalPipelineParser.g:5084:3: (enumLiteral_20= Project_column )
+                    // InternalPipelineParser.g:5085:4: enumLiteral_20= Project_column
                     {
-                    enumLiteral_20=(Token)match(input,Public,FOLLOW_2); 
+                    enumLiteral_20=(Token)match(input,Project_column,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PUBLICEnumLiteralDeclaration_20().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_20, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PUBLICEnumLiteralDeclaration_20());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECT_COLUMNEnumLiteralDeclaration_20().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_20, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECT_COLUMNEnumLiteralDeclaration_20());
                     			
 
                     }
@@ -14476,15 +14483,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 22 :
-                    // InternalPipelineParser.g:5092:3: (enumLiteral_21= Pull_request_review )
+                    // InternalPipelineParser.g:5092:3: (enumLiteral_21= Public )
                     {
-                    // InternalPipelineParser.g:5092:3: (enumLiteral_21= Pull_request_review )
-                    // InternalPipelineParser.g:5093:4: enumLiteral_21= Pull_request_review
+                    // InternalPipelineParser.g:5092:3: (enumLiteral_21= Public )
+                    // InternalPipelineParser.g:5093:4: enumLiteral_21= Public
                     {
-                    enumLiteral_21=(Token)match(input,Pull_request_review,FOLLOW_2); 
+                    enumLiteral_21=(Token)match(input,Public,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_REVIEWEnumLiteralDeclaration_21().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_21, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_REVIEWEnumLiteralDeclaration_21());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PUBLICEnumLiteralDeclaration_21().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_21, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PUBLICEnumLiteralDeclaration_21());
                     			
 
                     }
@@ -14493,15 +14500,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 23 :
-                    // InternalPipelineParser.g:5100:3: (enumLiteral_22= Pull_request_review_comment )
+                    // InternalPipelineParser.g:5100:3: (enumLiteral_22= Pull_request_review )
                     {
-                    // InternalPipelineParser.g:5100:3: (enumLiteral_22= Pull_request_review_comment )
-                    // InternalPipelineParser.g:5101:4: enumLiteral_22= Pull_request_review_comment
+                    // InternalPipelineParser.g:5100:3: (enumLiteral_22= Pull_request_review )
+                    // InternalPipelineParser.g:5101:4: enumLiteral_22= Pull_request_review
                     {
-                    enumLiteral_22=(Token)match(input,Pull_request_review_comment,FOLLOW_2); 
+                    enumLiteral_22=(Token)match(input,Pull_request_review,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_REVIEW_COMMENTEnumLiteralDeclaration_22().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_22, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_REVIEW_COMMENTEnumLiteralDeclaration_22());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_REVIEWEnumLiteralDeclaration_22().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_22, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_REVIEWEnumLiteralDeclaration_22());
                     			
 
                     }
@@ -14510,15 +14517,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 24 :
-                    // InternalPipelineParser.g:5108:3: (enumLiteral_23= Pull_request_target )
+                    // InternalPipelineParser.g:5108:3: (enumLiteral_23= Pull_request_review_comment )
                     {
-                    // InternalPipelineParser.g:5108:3: (enumLiteral_23= Pull_request_target )
-                    // InternalPipelineParser.g:5109:4: enumLiteral_23= Pull_request_target
+                    // InternalPipelineParser.g:5108:3: (enumLiteral_23= Pull_request_review_comment )
+                    // InternalPipelineParser.g:5109:4: enumLiteral_23= Pull_request_review_comment
                     {
-                    enumLiteral_23=(Token)match(input,Pull_request_target,FOLLOW_2); 
+                    enumLiteral_23=(Token)match(input,Pull_request_review_comment,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_TARGETEnumLiteralDeclaration_23().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_23, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_TARGETEnumLiteralDeclaration_23());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_REVIEW_COMMENTEnumLiteralDeclaration_23().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_23, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_REVIEW_COMMENTEnumLiteralDeclaration_23());
                     			
 
                     }
@@ -14527,15 +14534,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 25 :
-                    // InternalPipelineParser.g:5116:3: (enumLiteral_24= Registry_package )
+                    // InternalPipelineParser.g:5116:3: (enumLiteral_24= Pull_request_target )
                     {
-                    // InternalPipelineParser.g:5116:3: (enumLiteral_24= Registry_package )
-                    // InternalPipelineParser.g:5117:4: enumLiteral_24= Registry_package
+                    // InternalPipelineParser.g:5116:3: (enumLiteral_24= Pull_request_target )
+                    // InternalPipelineParser.g:5117:4: enumLiteral_24= Pull_request_target
                     {
-                    enumLiteral_24=(Token)match(input,Registry_package,FOLLOW_2); 
+                    enumLiteral_24=(Token)match(input,Pull_request_target,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REGISTRY_PACKAGEEnumLiteralDeclaration_24().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_24, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REGISTRY_PACKAGEEnumLiteralDeclaration_24());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_TARGETEnumLiteralDeclaration_24().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_24, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_TARGETEnumLiteralDeclaration_24());
                     			
 
                     }
@@ -14544,15 +14551,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 26 :
-                    // InternalPipelineParser.g:5124:3: (enumLiteral_25= Release )
+                    // InternalPipelineParser.g:5124:3: (enumLiteral_25= Registry_package )
                     {
-                    // InternalPipelineParser.g:5124:3: (enumLiteral_25= Release )
-                    // InternalPipelineParser.g:5125:4: enumLiteral_25= Release
+                    // InternalPipelineParser.g:5124:3: (enumLiteral_25= Registry_package )
+                    // InternalPipelineParser.g:5125:4: enumLiteral_25= Registry_package
                     {
-                    enumLiteral_25=(Token)match(input,Release,FOLLOW_2); 
+                    enumLiteral_25=(Token)match(input,Registry_package,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_RELEASEEnumLiteralDeclaration_25().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_25, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_RELEASEEnumLiteralDeclaration_25());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REGISTRY_PACKAGEEnumLiteralDeclaration_25().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_25, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REGISTRY_PACKAGEEnumLiteralDeclaration_25());
                     			
 
                     }
@@ -14561,15 +14568,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 27 :
-                    // InternalPipelineParser.g:5132:3: (enumLiteral_26= Status )
+                    // InternalPipelineParser.g:5132:3: (enumLiteral_26= Release )
                     {
-                    // InternalPipelineParser.g:5132:3: (enumLiteral_26= Status )
-                    // InternalPipelineParser.g:5133:4: enumLiteral_26= Status
+                    // InternalPipelineParser.g:5132:3: (enumLiteral_26= Release )
+                    // InternalPipelineParser.g:5133:4: enumLiteral_26= Release
                     {
-                    enumLiteral_26=(Token)match(input,Status,FOLLOW_2); 
+                    enumLiteral_26=(Token)match(input,Release,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_STATUSEnumLiteralDeclaration_26().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_26, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_STATUSEnumLiteralDeclaration_26());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_RELEASEEnumLiteralDeclaration_26().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_26, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_RELEASEEnumLiteralDeclaration_26());
                     			
 
                     }
@@ -14578,15 +14585,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 28 :
-                    // InternalPipelineParser.g:5140:3: (enumLiteral_27= Watch )
+                    // InternalPipelineParser.g:5140:3: (enumLiteral_27= Status )
                     {
-                    // InternalPipelineParser.g:5140:3: (enumLiteral_27= Watch )
-                    // InternalPipelineParser.g:5141:4: enumLiteral_27= Watch
+                    // InternalPipelineParser.g:5140:3: (enumLiteral_27= Status )
+                    // InternalPipelineParser.g:5141:4: enumLiteral_27= Status
                     {
-                    enumLiteral_27=(Token)match(input,Watch,FOLLOW_2); 
+                    enumLiteral_27=(Token)match(input,Status,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WATCHEnumLiteralDeclaration_27().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_27, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WATCHEnumLiteralDeclaration_27());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_STATUSEnumLiteralDeclaration_27().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_27, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_STATUSEnumLiteralDeclaration_27());
                     			
 
                     }
@@ -14595,15 +14602,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 29 :
-                    // InternalPipelineParser.g:5148:3: (enumLiteral_28= Workflow_call )
+                    // InternalPipelineParser.g:5148:3: (enumLiteral_28= Watch )
                     {
-                    // InternalPipelineParser.g:5148:3: (enumLiteral_28= Workflow_call )
-                    // InternalPipelineParser.g:5149:4: enumLiteral_28= Workflow_call
+                    // InternalPipelineParser.g:5148:3: (enumLiteral_28= Watch )
+                    // InternalPipelineParser.g:5149:4: enumLiteral_28= Watch
                     {
-                    enumLiteral_28=(Token)match(input,Workflow_call,FOLLOW_2); 
+                    enumLiteral_28=(Token)match(input,Watch,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_CALLEnumLiteralDeclaration_28().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_28, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_CALLEnumLiteralDeclaration_28());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WATCHEnumLiteralDeclaration_28().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_28, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WATCHEnumLiteralDeclaration_28());
                     			
 
                     }
@@ -14612,15 +14619,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 30 :
-                    // InternalPipelineParser.g:5156:3: (enumLiteral_29= Workflow_run )
+                    // InternalPipelineParser.g:5156:3: (enumLiteral_29= Workflow_call )
                     {
-                    // InternalPipelineParser.g:5156:3: (enumLiteral_29= Workflow_run )
-                    // InternalPipelineParser.g:5157:4: enumLiteral_29= Workflow_run
+                    // InternalPipelineParser.g:5156:3: (enumLiteral_29= Workflow_call )
+                    // InternalPipelineParser.g:5157:4: enumLiteral_29= Workflow_call
                     {
-                    enumLiteral_29=(Token)match(input,Workflow_run,FOLLOW_2); 
+                    enumLiteral_29=(Token)match(input,Workflow_call,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_RUNEnumLiteralDeclaration_29().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_29, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_RUNEnumLiteralDeclaration_29());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_CALLEnumLiteralDeclaration_29().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_29, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_CALLEnumLiteralDeclaration_29());
                     			
 
                     }
@@ -14629,15 +14636,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 31 :
-                    // InternalPipelineParser.g:5164:3: (enumLiteral_30= Trigger )
+                    // InternalPipelineParser.g:5164:3: (enumLiteral_30= Workflow_run )
                     {
-                    // InternalPipelineParser.g:5164:3: (enumLiteral_30= Trigger )
-                    // InternalPipelineParser.g:5165:4: enumLiteral_30= Trigger
+                    // InternalPipelineParser.g:5164:3: (enumLiteral_30= Workflow_run )
+                    // InternalPipelineParser.g:5165:4: enumLiteral_30= Workflow_run
                     {
-                    enumLiteral_30=(Token)match(input,Trigger,FOLLOW_2); 
+                    enumLiteral_30=(Token)match(input,Workflow_run,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TRIGGEREnumLiteralDeclaration_30().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_30, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TRIGGEREnumLiteralDeclaration_30());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_RUNEnumLiteralDeclaration_30().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_30, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_RUNEnumLiteralDeclaration_30());
                     			
 
                     }
@@ -14646,15 +14653,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 32 :
-                    // InternalPipelineParser.g:5172:3: (enumLiteral_31= Pr )
+                    // InternalPipelineParser.g:5172:3: (enumLiteral_31= Trigger )
                     {
-                    // InternalPipelineParser.g:5172:3: (enumLiteral_31= Pr )
-                    // InternalPipelineParser.g:5173:4: enumLiteral_31= Pr
+                    // InternalPipelineParser.g:5172:3: (enumLiteral_31= Trigger )
+                    // InternalPipelineParser.g:5173:4: enumLiteral_31= Trigger
                     {
-                    enumLiteral_31=(Token)match(input,Pr,FOLLOW_2); 
+                    enumLiteral_31=(Token)match(input,Trigger,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PREnumLiteralDeclaration_31().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_31, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PREnumLiteralDeclaration_31());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TRIGGEREnumLiteralDeclaration_31().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_31, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TRIGGEREnumLiteralDeclaration_31());
                     			
 
                     }
@@ -14663,15 +14670,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 33 :
-                    // InternalPipelineParser.g:5180:3: (enumLiteral_32= Branches )
+                    // InternalPipelineParser.g:5180:3: (enumLiteral_32= Pr )
                     {
-                    // InternalPipelineParser.g:5180:3: (enumLiteral_32= Branches )
-                    // InternalPipelineParser.g:5181:4: enumLiteral_32= Branches
+                    // InternalPipelineParser.g:5180:3: (enumLiteral_32= Pr )
+                    // InternalPipelineParser.g:5181:4: enumLiteral_32= Pr
                     {
-                    enumLiteral_32=(Token)match(input,Branches,FOLLOW_2); 
+                    enumLiteral_32=(Token)match(input,Pr,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCHESEnumLiteralDeclaration_32().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_32, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCHESEnumLiteralDeclaration_32());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PREnumLiteralDeclaration_32().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_32, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PREnumLiteralDeclaration_32());
                     			
 
                     }
@@ -14680,15 +14687,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 34 :
-                    // InternalPipelineParser.g:5188:3: (enumLiteral_33= Tags )
+                    // InternalPipelineParser.g:5188:3: (enumLiteral_33= Branches )
                     {
-                    // InternalPipelineParser.g:5188:3: (enumLiteral_33= Tags )
-                    // InternalPipelineParser.g:5189:4: enumLiteral_33= Tags
+                    // InternalPipelineParser.g:5188:3: (enumLiteral_33= Branches )
+                    // InternalPipelineParser.g:5189:4: enumLiteral_33= Branches
                     {
-                    enumLiteral_33=(Token)match(input,Tags,FOLLOW_2); 
+                    enumLiteral_33=(Token)match(input,Branches,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAGSEnumLiteralDeclaration_33().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_33, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAGSEnumLiteralDeclaration_33());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCHESEnumLiteralDeclaration_33().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_33, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCHESEnumLiteralDeclaration_33());
                     			
 
                     }
@@ -14697,15 +14704,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 35 :
-                    // InternalPipelineParser.g:5196:3: (enumLiteral_34= Paths )
+                    // InternalPipelineParser.g:5196:3: (enumLiteral_34= Tags )
                     {
-                    // InternalPipelineParser.g:5196:3: (enumLiteral_34= Paths )
-                    // InternalPipelineParser.g:5197:4: enumLiteral_34= Paths
+                    // InternalPipelineParser.g:5196:3: (enumLiteral_34= Tags )
+                    // InternalPipelineParser.g:5197:4: enumLiteral_34= Tags
                     {
-                    enumLiteral_34=(Token)match(input,Paths,FOLLOW_2); 
+                    enumLiteral_34=(Token)match(input,Tags,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PATHSEnumLiteralDeclaration_34().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_34, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PATHSEnumLiteralDeclaration_34());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAGSEnumLiteralDeclaration_34().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_34, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAGSEnumLiteralDeclaration_34());
                     			
 
                     }
@@ -14714,15 +14721,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 36 :
-                    // InternalPipelineParser.g:5204:3: (enumLiteral_35= AutoCancel )
+                    // InternalPipelineParser.g:5204:3: (enumLiteral_35= Paths )
                     {
-                    // InternalPipelineParser.g:5204:3: (enumLiteral_35= AutoCancel )
-                    // InternalPipelineParser.g:5205:4: enumLiteral_35= AutoCancel
+                    // InternalPipelineParser.g:5204:3: (enumLiteral_35= Paths )
+                    // InternalPipelineParser.g:5205:4: enumLiteral_35= Paths
                     {
-                    enumLiteral_35=(Token)match(input,AutoCancel,FOLLOW_2); 
+                    enumLiteral_35=(Token)match(input,Paths,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_AUTO_CANCELEnumLiteralDeclaration_35().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_35, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_AUTO_CANCELEnumLiteralDeclaration_35());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PATHSEnumLiteralDeclaration_35().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_35, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PATHSEnumLiteralDeclaration_35());
                     			
 
                     }
@@ -14731,15 +14738,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 37 :
-                    // InternalPipelineParser.g:5212:3: (enumLiteral_36= Drafts )
+                    // InternalPipelineParser.g:5212:3: (enumLiteral_36= AutoCancel )
                     {
-                    // InternalPipelineParser.g:5212:3: (enumLiteral_36= Drafts )
-                    // InternalPipelineParser.g:5213:4: enumLiteral_36= Drafts
+                    // InternalPipelineParser.g:5212:3: (enumLiteral_36= AutoCancel )
+                    // InternalPipelineParser.g:5213:4: enumLiteral_36= AutoCancel
                     {
-                    enumLiteral_36=(Token)match(input,Drafts,FOLLOW_2); 
+                    enumLiteral_36=(Token)match(input,AutoCancel,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DRAFTSEnumLiteralDeclaration_36().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_36, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DRAFTSEnumLiteralDeclaration_36());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_AUTO_CANCELEnumLiteralDeclaration_36().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_36, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_AUTO_CANCELEnumLiteralDeclaration_36());
                     			
 
                     }
@@ -14748,15 +14755,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 38 :
-                    // InternalPipelineParser.g:5220:3: (enumLiteral_37= Only )
+                    // InternalPipelineParser.g:5220:3: (enumLiteral_37= Drafts )
                     {
-                    // InternalPipelineParser.g:5220:3: (enumLiteral_37= Only )
-                    // InternalPipelineParser.g:5221:4: enumLiteral_37= Only
+                    // InternalPipelineParser.g:5220:3: (enumLiteral_37= Drafts )
+                    // InternalPipelineParser.g:5221:4: enumLiteral_37= Drafts
                     {
-                    enumLiteral_37=(Token)match(input,Only,FOLLOW_2); 
+                    enumLiteral_37=(Token)match(input,Drafts,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ONLYEnumLiteralDeclaration_37().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_37, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ONLYEnumLiteralDeclaration_37());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DRAFTSEnumLiteralDeclaration_37().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_37, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DRAFTSEnumLiteralDeclaration_37());
                     			
 
                     }
@@ -14765,15 +14772,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 39 :
-                    // InternalPipelineParser.g:5228:3: (enumLiteral_38= Except )
+                    // InternalPipelineParser.g:5228:3: (enumLiteral_38= Only )
                     {
-                    // InternalPipelineParser.g:5228:3: (enumLiteral_38= Except )
-                    // InternalPipelineParser.g:5229:4: enumLiteral_38= Except
+                    // InternalPipelineParser.g:5228:3: (enumLiteral_38= Only )
+                    // InternalPipelineParser.g:5229:4: enumLiteral_38= Only
                     {
-                    enumLiteral_38=(Token)match(input,Except,FOLLOW_2); 
+                    enumLiteral_38=(Token)match(input,Only,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_EXCEPTEnumLiteralDeclaration_38().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_38, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_EXCEPTEnumLiteralDeclaration_38());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ONLYEnumLiteralDeclaration_38().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_38, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ONLYEnumLiteralDeclaration_38());
                     			
 
                     }
@@ -14782,15 +14789,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 40 :
-                    // InternalPipelineParser.g:5236:3: (enumLiteral_39= Rules )
+                    // InternalPipelineParser.g:5236:3: (enumLiteral_39= Except )
                     {
-                    // InternalPipelineParser.g:5236:3: (enumLiteral_39= Rules )
-                    // InternalPipelineParser.g:5237:4: enumLiteral_39= Rules
+                    // InternalPipelineParser.g:5236:3: (enumLiteral_39= Except )
+                    // InternalPipelineParser.g:5237:4: enumLiteral_39= Except
                     {
-                    enumLiteral_39=(Token)match(input,Rules,FOLLOW_2); 
+                    enumLiteral_39=(Token)match(input,Except,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_RULESEnumLiteralDeclaration_39().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_39, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_RULESEnumLiteralDeclaration_39());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_EXCEPTEnumLiteralDeclaration_39().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_39, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_EXCEPTEnumLiteralDeclaration_39());
                     			
 
                     }
@@ -14799,15 +14806,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 41 :
-                    // InternalPipelineParser.g:5244:3: (enumLiteral_40= WorkflowRules )
+                    // InternalPipelineParser.g:5244:3: (enumLiteral_40= Rules )
                     {
-                    // InternalPipelineParser.g:5244:3: (enumLiteral_40= WorkflowRules )
-                    // InternalPipelineParser.g:5245:4: enumLiteral_40= WorkflowRules
+                    // InternalPipelineParser.g:5244:3: (enumLiteral_40= Rules )
+                    // InternalPipelineParser.g:5245:4: enumLiteral_40= Rules
                     {
-                    enumLiteral_40=(Token)match(input,WorkflowRules,FOLLOW_2); 
+                    enumLiteral_40=(Token)match(input,Rules,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_RULESEnumLiteralDeclaration_40().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_40, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_RULESEnumLiteralDeclaration_40());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_RULESEnumLiteralDeclaration_40().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_40, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_RULESEnumLiteralDeclaration_40());
                     			
 
                     }
@@ -14816,15 +14823,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 42 :
-                    // InternalPipelineParser.g:5252:3: (enumLiteral_41= Pipeline_schedule )
+                    // InternalPipelineParser.g:5252:3: (enumLiteral_41= WorkflowRules )
                     {
-                    // InternalPipelineParser.g:5252:3: (enumLiteral_41= Pipeline_schedule )
-                    // InternalPipelineParser.g:5253:4: enumLiteral_41= Pipeline_schedule
+                    // InternalPipelineParser.g:5252:3: (enumLiteral_41= WorkflowRules )
+                    // InternalPipelineParser.g:5253:4: enumLiteral_41= WorkflowRules
                     {
-                    enumLiteral_41=(Token)match(input,Pipeline_schedule,FOLLOW_2); 
+                    enumLiteral_41=(Token)match(input,WorkflowRules,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PIPELINE_SCHEDULEEnumLiteralDeclaration_41().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_41, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PIPELINE_SCHEDULEEnumLiteralDeclaration_41());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_RULESEnumLiteralDeclaration_41().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_41, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_RULESEnumLiteralDeclaration_41());
                     			
 
                     }
@@ -14833,15 +14840,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 43 :
-                    // InternalPipelineParser.g:5260:3: (enumLiteral_42= Merge_requests )
+                    // InternalPipelineParser.g:5260:3: (enumLiteral_42= Pipeline_schedule )
                     {
-                    // InternalPipelineParser.g:5260:3: (enumLiteral_42= Merge_requests )
-                    // InternalPipelineParser.g:5261:4: enumLiteral_42= Merge_requests
+                    // InternalPipelineParser.g:5260:3: (enumLiteral_42= Pipeline_schedule )
+                    // InternalPipelineParser.g:5261:4: enumLiteral_42= Pipeline_schedule
                     {
-                    enumLiteral_42=(Token)match(input,Merge_requests,FOLLOW_2); 
+                    enumLiteral_42=(Token)match(input,Pipeline_schedule,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_MERGE_REQUESTSEnumLiteralDeclaration_42().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_42, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_MERGE_REQUESTSEnumLiteralDeclaration_42());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PIPELINE_SCHEDULEEnumLiteralDeclaration_42().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_42, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PIPELINE_SCHEDULEEnumLiteralDeclaration_42());
                     			
 
                     }
@@ -14850,15 +14857,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 44 :
-                    // InternalPipelineParser.g:5268:3: (enumLiteral_43= Changes )
+                    // InternalPipelineParser.g:5268:3: (enumLiteral_43= Merge_requests )
                     {
-                    // InternalPipelineParser.g:5268:3: (enumLiteral_43= Changes )
-                    // InternalPipelineParser.g:5269:4: enumLiteral_43= Changes
+                    // InternalPipelineParser.g:5268:3: (enumLiteral_43= Merge_requests )
+                    // InternalPipelineParser.g:5269:4: enumLiteral_43= Merge_requests
                     {
-                    enumLiteral_43=(Token)match(input,Changes,FOLLOW_2); 
+                    enumLiteral_43=(Token)match(input,Merge_requests,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHANGESEnumLiteralDeclaration_43().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_43, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHANGESEnumLiteralDeclaration_43());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_MERGE_REQUESTSEnumLiteralDeclaration_43().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_43, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_MERGE_REQUESTSEnumLiteralDeclaration_43());
                     			
 
                     }
@@ -14867,15 +14874,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 45 :
-                    // InternalPipelineParser.g:5276:3: (enumLiteral_44= Pipelines )
+                    // InternalPipelineParser.g:5276:3: (enumLiteral_44= Changes )
                     {
-                    // InternalPipelineParser.g:5276:3: (enumLiteral_44= Pipelines )
-                    // InternalPipelineParser.g:5277:4: enumLiteral_44= Pipelines
+                    // InternalPipelineParser.g:5276:3: (enumLiteral_44= Changes )
+                    // InternalPipelineParser.g:5277:4: enumLiteral_44= Changes
                     {
-                    enumLiteral_44=(Token)match(input,Pipelines,FOLLOW_2); 
+                    enumLiteral_44=(Token)match(input,Changes,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PIPELINESEnumLiteralDeclaration_44().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_44, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PIPELINESEnumLiteralDeclaration_44());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHANGESEnumLiteralDeclaration_44().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_44, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHANGESEnumLiteralDeclaration_44());
                     			
 
                     }
@@ -14884,15 +14891,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 46 :
-                    // InternalPipelineParser.g:5284:3: (enumLiteral_45= Default )
+                    // InternalPipelineParser.g:5284:3: (enumLiteral_45= Pipelines )
                     {
-                    // InternalPipelineParser.g:5284:3: (enumLiteral_45= Default )
-                    // InternalPipelineParser.g:5285:4: enumLiteral_45= Default
+                    // InternalPipelineParser.g:5284:3: (enumLiteral_45= Pipelines )
+                    // InternalPipelineParser.g:5285:4: enumLiteral_45= Pipelines
                     {
-                    enumLiteral_45=(Token)match(input,Default,FOLLOW_2); 
+                    enumLiteral_45=(Token)match(input,Pipelines,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEFAULTEnumLiteralDeclaration_45().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_45, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEFAULTEnumLiteralDeclaration_45());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PIPELINESEnumLiteralDeclaration_45().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_45, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PIPELINESEnumLiteralDeclaration_45());
                     			
 
                     }
@@ -14901,15 +14908,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 47 :
-                    // InternalPipelineParser.g:5292:3: (enumLiteral_46= PullRequests )
+                    // InternalPipelineParser.g:5292:3: (enumLiteral_46= Default )
                     {
-                    // InternalPipelineParser.g:5292:3: (enumLiteral_46= PullRequests )
-                    // InternalPipelineParser.g:5293:4: enumLiteral_46= PullRequests
+                    // InternalPipelineParser.g:5292:3: (enumLiteral_46= Default )
+                    // InternalPipelineParser.g:5293:4: enumLiteral_46= Default
                     {
-                    enumLiteral_46=(Token)match(input,PullRequests,FOLLOW_2); 
+                    enumLiteral_46=(Token)match(input,Default,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUESTSEnumLiteralDeclaration_46().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_46, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUESTSEnumLiteralDeclaration_46());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEFAULTEnumLiteralDeclaration_46().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_46, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEFAULTEnumLiteralDeclaration_46());
                     			
 
                     }
@@ -14918,15 +14925,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 48 :
-                    // InternalPipelineParser.g:5300:3: (enumLiteral_47= Custom )
+                    // InternalPipelineParser.g:5300:3: (enumLiteral_47= PullRequests )
                     {
-                    // InternalPipelineParser.g:5300:3: (enumLiteral_47= Custom )
-                    // InternalPipelineParser.g:5301:4: enumLiteral_47= Custom
+                    // InternalPipelineParser.g:5300:3: (enumLiteral_47= PullRequests )
+                    // InternalPipelineParser.g:5301:4: enumLiteral_47= PullRequests
                     {
-                    enumLiteral_47=(Token)match(input,Custom,FOLLOW_2); 
+                    enumLiteral_47=(Token)match(input,PullRequests,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CUSTOMEnumLiteralDeclaration_47().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_47, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CUSTOMEnumLiteralDeclaration_47());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUESTSEnumLiteralDeclaration_47().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_47, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUESTSEnumLiteralDeclaration_47());
                     			
 
                     }
@@ -14935,15 +14942,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 49 :
-                    // InternalPipelineParser.g:5308:3: (enumLiteral_48= Conditions )
+                    // InternalPipelineParser.g:5308:3: (enumLiteral_48= Custom )
                     {
-                    // InternalPipelineParser.g:5308:3: (enumLiteral_48= Conditions )
-                    // InternalPipelineParser.g:5309:4: enumLiteral_48= Conditions
+                    // InternalPipelineParser.g:5308:3: (enumLiteral_48= Custom )
+                    // InternalPipelineParser.g:5309:4: enumLiteral_48= Custom
                     {
-                    enumLiteral_48=(Token)match(input,Conditions,FOLLOW_2); 
+                    enumLiteral_48=(Token)match(input,Custom,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CONDITIONSEnumLiteralDeclaration_48().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_48, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CONDITIONSEnumLiteralDeclaration_48());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CUSTOMEnumLiteralDeclaration_48().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_48, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CUSTOMEnumLiteralDeclaration_48());
                     			
 
                     }
@@ -14952,15 +14959,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 50 :
-                    // InternalPipelineParser.g:5316:3: (enumLiteral_49= BitbucketBranchDeleted )
+                    // InternalPipelineParser.g:5316:3: (enumLiteral_49= Conditions )
                     {
-                    // InternalPipelineParser.g:5316:3: (enumLiteral_49= BitbucketBranchDeleted )
-                    // InternalPipelineParser.g:5317:4: enumLiteral_49= BitbucketBranchDeleted
+                    // InternalPipelineParser.g:5316:3: (enumLiteral_49= Conditions )
+                    // InternalPipelineParser.g:5317:4: enumLiteral_49= Conditions
                     {
-                    enumLiteral_49=(Token)match(input,BitbucketBranchDeleted,FOLLOW_2); 
+                    enumLiteral_49=(Token)match(input,Conditions,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCH_DELETEDEnumLiteralDeclaration_49().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_49, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCH_DELETEDEnumLiteralDeclaration_49());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CONDITIONSEnumLiteralDeclaration_49().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_49, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CONDITIONSEnumLiteralDeclaration_49());
                     			
 
                     }
@@ -14969,15 +14976,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 51 :
-                    // InternalPipelineParser.g:5324:3: (enumLiteral_50= BitbucketBranchCreated )
+                    // InternalPipelineParser.g:5324:3: (enumLiteral_50= BitbucketBranchDeleted )
                     {
-                    // InternalPipelineParser.g:5324:3: (enumLiteral_50= BitbucketBranchCreated )
-                    // InternalPipelineParser.g:5325:4: enumLiteral_50= BitbucketBranchCreated
+                    // InternalPipelineParser.g:5324:3: (enumLiteral_50= BitbucketBranchDeleted )
+                    // InternalPipelineParser.g:5325:4: enumLiteral_50= BitbucketBranchDeleted
                     {
-                    enumLiteral_50=(Token)match(input,BitbucketBranchCreated,FOLLOW_2); 
+                    enumLiteral_50=(Token)match(input,BitbucketBranchDeleted,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCH_CREATEDEnumLiteralDeclaration_50().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_50, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCH_CREATEDEnumLiteralDeclaration_50());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCH_DELETEDEnumLiteralDeclaration_50().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_50, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCH_DELETEDEnumLiteralDeclaration_50());
                     			
 
                     }
@@ -14986,15 +14993,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 52 :
-                    // InternalPipelineParser.g:5332:3: (enumLiteral_51= BitbucketTagCreated )
+                    // InternalPipelineParser.g:5332:3: (enumLiteral_51= BitbucketBranchCreated )
                     {
-                    // InternalPipelineParser.g:5332:3: (enumLiteral_51= BitbucketTagCreated )
-                    // InternalPipelineParser.g:5333:4: enumLiteral_51= BitbucketTagCreated
+                    // InternalPipelineParser.g:5332:3: (enumLiteral_51= BitbucketBranchCreated )
+                    // InternalPipelineParser.g:5333:4: enumLiteral_51= BitbucketBranchCreated
                     {
-                    enumLiteral_51=(Token)match(input,BitbucketTagCreated,FOLLOW_2); 
+                    enumLiteral_51=(Token)match(input,BitbucketBranchCreated,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAG_CREATEDEnumLiteralDeclaration_51().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_51, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAG_CREATEDEnumLiteralDeclaration_51());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCH_CREATEDEnumLiteralDeclaration_51().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_51, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCH_CREATEDEnumLiteralDeclaration_51());
                     			
 
                     }
@@ -15003,15 +15010,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 53 :
-                    // InternalPipelineParser.g:5340:3: (enumLiteral_52= BitbucketTagDeleted )
+                    // InternalPipelineParser.g:5340:3: (enumLiteral_52= BitbucketTagCreated )
                     {
-                    // InternalPipelineParser.g:5340:3: (enumLiteral_52= BitbucketTagDeleted )
-                    // InternalPipelineParser.g:5341:4: enumLiteral_52= BitbucketTagDeleted
+                    // InternalPipelineParser.g:5340:3: (enumLiteral_52= BitbucketTagCreated )
+                    // InternalPipelineParser.g:5341:4: enumLiteral_52= BitbucketTagCreated
                     {
-                    enumLiteral_52=(Token)match(input,BitbucketTagDeleted,FOLLOW_2); 
+                    enumLiteral_52=(Token)match(input,BitbucketTagCreated,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAG_DELETEDEnumLiteralDeclaration_52().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_52, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAG_DELETEDEnumLiteralDeclaration_52());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAG_CREATEDEnumLiteralDeclaration_52().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_52, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAG_CREATEDEnumLiteralDeclaration_52());
                     			
 
                     }
@@ -15020,15 +15027,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 54 :
-                    // InternalPipelineParser.g:5348:3: (enumLiteral_53= Repository )
+                    // InternalPipelineParser.g:5348:3: (enumLiteral_53= BitbucketTagDeleted )
                     {
-                    // InternalPipelineParser.g:5348:3: (enumLiteral_53= Repository )
-                    // InternalPipelineParser.g:5349:4: enumLiteral_53= Repository
+                    // InternalPipelineParser.g:5348:3: (enumLiteral_53= BitbucketTagDeleted )
+                    // InternalPipelineParser.g:5349:4: enumLiteral_53= BitbucketTagDeleted
                     {
-                    enumLiteral_53=(Token)match(input,Repository,FOLLOW_2); 
+                    enumLiteral_53=(Token)match(input,BitbucketTagDeleted,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REPOSITORY_TRIGGEREnumLiteralDeclaration_53().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_53, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REPOSITORY_TRIGGEREnumLiteralDeclaration_53());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAG_DELETEDEnumLiteralDeclaration_53().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_53, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAG_DELETEDEnumLiteralDeclaration_53());
                     			
 
                     }
@@ -15037,15 +15044,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 55 :
-                    // InternalPipelineParser.g:5356:3: (enumLiteral_54= Scheduled )
+                    // InternalPipelineParser.g:5356:3: (enumLiteral_54= Repository )
                     {
-                    // InternalPipelineParser.g:5356:3: (enumLiteral_54= Scheduled )
-                    // InternalPipelineParser.g:5357:4: enumLiteral_54= Scheduled
+                    // InternalPipelineParser.g:5356:3: (enumLiteral_54= Repository )
+                    // InternalPipelineParser.g:5357:4: enumLiteral_54= Repository
                     {
-                    enumLiteral_54=(Token)match(input,Scheduled,FOLLOW_2); 
+                    enumLiteral_54=(Token)match(input,Repository,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_SCHEDULED_TRIGGEREnumLiteralDeclaration_54().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_54, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_SCHEDULED_TRIGGEREnumLiteralDeclaration_54());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REPOSITORY_TRIGGEREnumLiteralDeclaration_54().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_54, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REPOSITORY_TRIGGEREnumLiteralDeclaration_54());
                     			
 
                     }
@@ -15054,15 +15061,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 56 :
-                    // InternalPipelineParser.g:5364:3: (enumLiteral_55= Remote )
+                    // InternalPipelineParser.g:5364:3: (enumLiteral_55= Scheduled )
                     {
-                    // InternalPipelineParser.g:5364:3: (enumLiteral_55= Remote )
-                    // InternalPipelineParser.g:5365:4: enumLiteral_55= Remote
+                    // InternalPipelineParser.g:5364:3: (enumLiteral_55= Scheduled )
+                    // InternalPipelineParser.g:5365:4: enumLiteral_55= Scheduled
                     {
-                    enumLiteral_55=(Token)match(input,Remote,FOLLOW_2); 
+                    enumLiteral_55=(Token)match(input,Scheduled,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REMOTE_TRIGGEREnumLiteralDeclaration_55().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_55, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REMOTE_TRIGGEREnumLiteralDeclaration_55());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_SCHEDULED_TRIGGEREnumLiteralDeclaration_55().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_55, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_SCHEDULED_TRIGGEREnumLiteralDeclaration_55());
                     			
 
                     }
@@ -15071,15 +15078,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 57 :
-                    // InternalPipelineParser.g:5372:3: (enumLiteral_56= Bitbucket )
+                    // InternalPipelineParser.g:5372:3: (enumLiteral_56= Remote )
                     {
-                    // InternalPipelineParser.g:5372:3: (enumLiteral_56= Bitbucket )
-                    // InternalPipelineParser.g:5373:4: enumLiteral_56= Bitbucket
+                    // InternalPipelineParser.g:5372:3: (enumLiteral_56= Remote )
+                    // InternalPipelineParser.g:5373:4: enumLiteral_56= Remote
                     {
-                    enumLiteral_56=(Token)match(input,Bitbucket,FOLLOW_2); 
+                    enumLiteral_56=(Token)match(input,Remote,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BITBUCKET_TRIGGEREnumLiteralDeclaration_56().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_56, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BITBUCKET_TRIGGEREnumLiteralDeclaration_56());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REMOTE_TRIGGEREnumLiteralDeclaration_56().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_56, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REMOTE_TRIGGEREnumLiteralDeclaration_56());
                     			
 
                     }
@@ -15088,15 +15095,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 58 :
-                    // InternalPipelineParser.g:5380:3: (enumLiteral_57= PlanBranch )
+                    // InternalPipelineParser.g:5380:3: (enumLiteral_57= Bitbucket )
                     {
-                    // InternalPipelineParser.g:5380:3: (enumLiteral_57= PlanBranch )
-                    // InternalPipelineParser.g:5381:4: enumLiteral_57= PlanBranch
+                    // InternalPipelineParser.g:5380:3: (enumLiteral_57= Bitbucket )
+                    // InternalPipelineParser.g:5381:4: enumLiteral_57= Bitbucket
                     {
-                    enumLiteral_57=(Token)match(input,PlanBranch,FOLLOW_2); 
+                    enumLiteral_57=(Token)match(input,Bitbucket,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PLAN_BRANCHEnumLiteralDeclaration_57().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_57, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PLAN_BRANCHEnumLiteralDeclaration_57());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BITBUCKET_TRIGGEREnumLiteralDeclaration_57().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_57, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BITBUCKET_TRIGGEREnumLiteralDeclaration_57());
                     			
 
                     }
@@ -15105,15 +15112,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 59 :
-                    // InternalPipelineParser.g:5388:3: (enumLiteral_58= Cron )
+                    // InternalPipelineParser.g:5388:3: (enumLiteral_58= PlanBranch )
                     {
-                    // InternalPipelineParser.g:5388:3: (enumLiteral_58= Cron )
-                    // InternalPipelineParser.g:5389:4: enumLiteral_58= Cron
+                    // InternalPipelineParser.g:5388:3: (enumLiteral_58= PlanBranch )
+                    // InternalPipelineParser.g:5389:4: enumLiteral_58= PlanBranch
                     {
-                    enumLiteral_58=(Token)match(input,Cron,FOLLOW_2); 
+                    enumLiteral_58=(Token)match(input,PlanBranch,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CRONEnumLiteralDeclaration_58().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_58, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CRONEnumLiteralDeclaration_58());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PLAN_BRANCHEnumLiteralDeclaration_58().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_58, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PLAN_BRANCHEnumLiteralDeclaration_58());
                     			
 
                     }
@@ -15122,15 +15129,15 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 60 :
-                    // InternalPipelineParser.g:5396:3: (enumLiteral_59= Notifications )
+                    // InternalPipelineParser.g:5396:3: (enumLiteral_59= Cron )
                     {
-                    // InternalPipelineParser.g:5396:3: (enumLiteral_59= Notifications )
-                    // InternalPipelineParser.g:5397:4: enumLiteral_59= Notifications
+                    // InternalPipelineParser.g:5396:3: (enumLiteral_59= Cron )
+                    // InternalPipelineParser.g:5397:4: enumLiteral_59= Cron
                     {
-                    enumLiteral_59=(Token)match(input,Notifications,FOLLOW_2); 
+                    enumLiteral_59=(Token)match(input,Cron,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_NOTIFICATIONSEnumLiteralDeclaration_59().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_59, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_NOTIFICATIONSEnumLiteralDeclaration_59());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CRONEnumLiteralDeclaration_59().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_59, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CRONEnumLiteralDeclaration_59());
                     			
 
                     }
@@ -15139,15 +15146,32 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 61 :
-                    // InternalPipelineParser.g:5404:3: (enumLiteral_60= LockBehavior )
+                    // InternalPipelineParser.g:5404:3: (enumLiteral_60= Notifications )
                     {
-                    // InternalPipelineParser.g:5404:3: (enumLiteral_60= LockBehavior )
-                    // InternalPipelineParser.g:5405:4: enumLiteral_60= LockBehavior
+                    // InternalPipelineParser.g:5404:3: (enumLiteral_60= Notifications )
+                    // InternalPipelineParser.g:5405:4: enumLiteral_60= Notifications
                     {
-                    enumLiteral_60=(Token)match(input,LockBehavior,FOLLOW_2); 
+                    enumLiteral_60=(Token)match(input,Notifications,FOLLOW_2); 
 
-                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_LOCK_BEHAVIOREnumLiteralDeclaration_60().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_60, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_LOCK_BEHAVIOREnumLiteralDeclaration_60());
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_NOTIFICATIONSEnumLiteralDeclaration_60().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_60, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_NOTIFICATIONSEnumLiteralDeclaration_60());
+                    			
+
+                    }
+
+
+                    }
+                    break;
+                case 62 :
+                    // InternalPipelineParser.g:5412:3: (enumLiteral_61= LockBehavior )
+                    {
+                    // InternalPipelineParser.g:5412:3: (enumLiteral_61= LockBehavior )
+                    // InternalPipelineParser.g:5413:4: enumLiteral_61= LockBehavior
+                    {
+                    enumLiteral_61=(Token)match(input,LockBehavior,FOLLOW_2); 
+
+                    				current = grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_LOCK_BEHAVIOREnumLiteralDeclaration_61().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_61, grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_LOCK_BEHAVIOREnumLiteralDeclaration_61());
                     			
 
                     }
@@ -15178,7 +15202,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "rulePipelineKeyword"
-    // InternalPipelineParser.g:5415:1: rulePipelineKeyword returns [Enumerator current=null] : ( (enumLiteral_0= Name ) | (enumLiteral_1= RunName ) | (enumLiteral_2= On ) | (enumLiteral_3= Defaults ) | (enumLiteral_4= Run ) | (enumLiteral_5= Shell ) | (enumLiteral_6= WorkingDirectory ) | (enumLiteral_7= Env ) | (enumLiteral_8= Permission ) | (enumLiteral_9= Concurrency ) | (enumLiteral_10= Group ) | (enumLiteral_11= CancelInProgress ) | (enumLiteral_12= Pool ) | (enumLiteral_13= VmImage ) | (enumLiteral_14= Demands ) | (enumLiteral_15= Resources ) | (enumLiteral_16= Version ) | (enumLiteral_17= Variables ) | (enumLiteral_18= Parameters ) | (enumLiteral_19= Extends ) | (enumLiteral_20= Include ) | (enumLiteral_21= Types ) | (enumLiteral_22= Batch ) | (enumLiteral_23= Status ) | (enumLiteral_24= AutoCancel ) | (enumLiteral_25= Workflows ) | (enumLiteral_26= Drafts ) | (enumLiteral_27= Branches ) | (enumLiteral_28= BranchesIgnore ) | (enumLiteral_29= Paths ) | (enumLiteral_30= PathsIgnore ) | (enumLiteral_31= Tags ) | (enumLiteral_32= TagsIgnore ) | (enumLiteral_33= Schedules ) | (enumLiteral_34= Schedule ) | (enumLiteral_35= Workflow_call ) | (enumLiteral_36= Workflow_dispatch ) | (enumLiteral_37= Cron ) | (enumLiteral_38= DisplayName ) | (enumLiteral_39= Always ) | (enumLiteral_40= Stage ) | (enumLiteral_41= Condition ) | (enumLiteral_42= IsSkippable ) | (enumLiteral_43= DependsOn ) | (enumLiteral_44= Job ) | (enumLiteral_45= Deployment ) | (enumLiteral_46= Script ) | (enumLiteral_47= Bash ) | (enumLiteral_48= Pwsh ) | (enumLiteral_49= Powershell ) | (enumLiteral_50= Checkout ) | (enumLiteral_51= Download ) | (enumLiteral_52= GetPackage ) | (enumLiteral_53= Publish ) | (enumLiteral_54= Task ) | (enumLiteral_55= Value ) | (enumLiteral_56= Readonly ) | (enumLiteral_57= Builds ) | (enumLiteral_58= Containers ) | (enumLiteral_59= Pipelines ) | (enumLiteral_60= Repositories ) | (enumLiteral_61= Webhooks ) | (enumLiteral_62= Packages ) | (enumLiteral_63= Inputs ) | (enumLiteral_64= Outputs ) | (enumLiteral_65= Secrets ) | (enumLiteral_66= Description ) | (enumLiteral_67= Required ) | (enumLiteral_68= Default ) | (enumLiteral_69= Type ) | (enumLiteral_70= Options ) | (enumLiteral_71= If ) | (enumLiteral_72= RunsOn ) | (enumLiteral_73= Strategy ) | (enumLiteral_74= Matrix ) | (enumLiteral_75= Container ) | (enumLiteral_76= Services ) | (enumLiteral_77= Steps ) | (enumLiteral_78= Uses ) | (enumLiteral_79= With ) | (enumLiteral_80= TimeoutMinutes ) | (enumLiteral_81= ContinueOnError_1 ) | (enumLiteral_82= Environment ) | (enumLiteral_83= Id ) | (enumLiteral_84= Permissions ) | (enumLiteral_85= Timeouts ) | (enumLiteral_86= DefaultsRun ) | (enumLiteral_87= Push ) | (enumLiteral_88= Pull_request ) | (enumLiteral_89= Repository_dispatch ) | (enumLiteral_90= Workflow_run ) | (enumLiteral_91= Filters ) | (enumLiteral_92= Exclude ) | (enumLiteral_93= FailFast ) | (enumLiteral_94= MaxParallel ) | (enumLiteral_95= ContainerImage ) | (enumLiteral_96= Credentials ) | (enumLiteral_97= Ports ) | (enumLiteral_98= Inherit ) | (enumLiteral_99= Trigger ) | (enumLiteral_100= Template ) | (enumLiteral_101= Workspace ) | (enumLiteral_102= Pipeline ) | (enumLiteral_103= TimeoutInMinutes ) | (enumLiteral_104= ContinueOnError ) | (enumLiteral_105= ResourceType ) | (enumLiteral_106= ResourceName ) | (enumLiteral_107= Stages ) | (enumLiteral_108= Only ) | (enumLiteral_109= Except ) | (enumLiteral_110= Image ) | (enumLiteral_111= Cache ) | (enumLiteral_112= Artifacts ) | (enumLiteral_113= Retries ) | (enumLiteral_114= Rules ) | (enumLiteral_115= Before_script ) | (enumLiteral_116= After_script ) | (enumLiteral_117= Timeout ) | (enumLiteral_118= When ) | (enumLiteral_119= Allow_failure ) | (enumLiteral_120= Dependencies ) | (enumLiteral_121= PullRequests ) | (enumLiteral_122= Step ) | (enumLiteral_123= Definitions ) | (enumLiteral_124= Caches ) | (enumLiteral_125= Parallel ) | (enumLiteral_126= Conditions ) | (enumLiteral_127= MaxTime ) | (enumLiteral_128= Project ) | (enumLiteral_129= Plan ) | (enumLiteral_130= Tasks ) | (enumLiteral_131= Requirements ) | (enumLiteral_132= Final ) | (enumLiteral_133= Jdk ) | (enumLiteral_134= Labels ) | (enumLiteral_135= Repository ) | (enumLiteral_136= Release ) | (enumLiteral_137= Docker ) | (enumLiteral_138= Agent ) | (enumLiteral_139= Queue ) | (enumLiteral_140= Snapshot ) | (enumLiteral_141= Policy ) | (enumLiteral_142= Approvals ) | (enumLiteral_143= PreBuild ) | (enumLiteral_144= PostBuild ) | (enumLiteral_145= Ssh ) | (enumLiteral_146= Auth ) | (enumLiteral_147= Storage ) | (enumLiteral_148= Endpoints ) | (enumLiteral_149= Command ) | (enumLiteral_150= Provisioner ) | (enumLiteral_151= TriggerRules ) | (enumLiteral_152= RunPolicy ) | (enumLiteral_153= Queued ) | (enumLiteral_154= Notifications ) | (enumLiteral_155= DeployTrigger ) | (enumLiteral_156= ReleaseTrigger ) | (enumLiteral_157= LockBehavior ) | (enumLiteral_158= ReviewStage ) ) ;
+    // InternalPipelineParser.g:5423:1: rulePipelineKeyword returns [Enumerator current=null] : ( (enumLiteral_0= Name ) | (enumLiteral_1= RunName ) | (enumLiteral_2= On ) | (enumLiteral_3= Defaults ) | (enumLiteral_4= Run ) | (enumLiteral_5= Shell ) | (enumLiteral_6= WorkingDirectory ) | (enumLiteral_7= Env ) | (enumLiteral_8= Permission ) | (enumLiteral_9= Concurrency ) | (enumLiteral_10= Group ) | (enumLiteral_11= CancelInProgress ) | (enumLiteral_12= Pool ) | (enumLiteral_13= VmImage ) | (enumLiteral_14= Demands ) | (enumLiteral_15= Resources ) | (enumLiteral_16= Version ) | (enumLiteral_17= Variables ) | (enumLiteral_18= Parameters ) | (enumLiteral_19= Extends ) | (enumLiteral_20= Include ) | (enumLiteral_21= Types ) | (enumLiteral_22= Batch ) | (enumLiteral_23= Status ) | (enumLiteral_24= AutoCancel ) | (enumLiteral_25= Workflows ) | (enumLiteral_26= Drafts ) | (enumLiteral_27= Branches ) | (enumLiteral_28= BranchesIgnore ) | (enumLiteral_29= Paths ) | (enumLiteral_30= PathsIgnore ) | (enumLiteral_31= Tags ) | (enumLiteral_32= TagsIgnore ) | (enumLiteral_33= Schedules ) | (enumLiteral_34= Schedule ) | (enumLiteral_35= Workflow_call ) | (enumLiteral_36= Workflow_dispatch ) | (enumLiteral_37= Cron ) | (enumLiteral_38= DisplayName ) | (enumLiteral_39= Always ) | (enumLiteral_40= Stage ) | (enumLiteral_41= Condition ) | (enumLiteral_42= IsSkippable ) | (enumLiteral_43= DependsOn ) | (enumLiteral_44= Job ) | (enumLiteral_45= Deployment ) | (enumLiteral_46= Script ) | (enumLiteral_47= Bash ) | (enumLiteral_48= Pwsh ) | (enumLiteral_49= Powershell ) | (enumLiteral_50= Checkout ) | (enumLiteral_51= Download ) | (enumLiteral_52= GetPackage ) | (enumLiteral_53= Publish ) | (enumLiteral_54= Task ) | (enumLiteral_55= Value ) | (enumLiteral_56= Readonly ) | (enumLiteral_57= Builds ) | (enumLiteral_58= Containers ) | (enumLiteral_59= Pipelines ) | (enumLiteral_60= Repositories ) | (enumLiteral_61= Webhooks ) | (enumLiteral_62= Packages ) | (enumLiteral_63= Inputs ) | (enumLiteral_64= Outputs ) | (enumLiteral_65= Secrets ) | (enumLiteral_66= Description ) | (enumLiteral_67= Required ) | (enumLiteral_68= Default ) | (enumLiteral_69= Type ) | (enumLiteral_70= Options ) | (enumLiteral_71= If ) | (enumLiteral_72= RunsOn ) | (enumLiteral_73= Strategy ) | (enumLiteral_74= Matrix ) | (enumLiteral_75= Container ) | (enumLiteral_76= Services ) | (enumLiteral_77= Steps ) | (enumLiteral_78= Uses ) | (enumLiteral_79= With ) | (enumLiteral_80= TimeoutMinutes ) | (enumLiteral_81= ContinueOnError_1 ) | (enumLiteral_82= Environment ) | (enumLiteral_83= Id ) | (enumLiteral_84= Permissions ) | (enumLiteral_85= Timeouts ) | (enumLiteral_86= DefaultsRun ) | (enumLiteral_87= Push ) | (enumLiteral_88= Pull_request ) | (enumLiteral_89= Repository_dispatch ) | (enumLiteral_90= Workflow_run ) | (enumLiteral_91= Filters ) | (enumLiteral_92= Exclude ) | (enumLiteral_93= FailFast ) | (enumLiteral_94= MaxParallel ) | (enumLiteral_95= ContainerImage ) | (enumLiteral_96= Credentials ) | (enumLiteral_97= Ports ) | (enumLiteral_98= Inherit ) | (enumLiteral_99= Trigger ) | (enumLiteral_100= Template ) | (enumLiteral_101= Workspace ) | (enumLiteral_102= Pipeline ) | (enumLiteral_103= TimeoutInMinutes ) | (enumLiteral_104= ContinueOnError ) | (enumLiteral_105= ResourceType ) | (enumLiteral_106= ResourceName ) | (enumLiteral_107= Stages ) | (enumLiteral_108= Only ) | (enumLiteral_109= Except ) | (enumLiteral_110= Image ) | (enumLiteral_111= Cache ) | (enumLiteral_112= Artifacts ) | (enumLiteral_113= Retries ) | (enumLiteral_114= Rules ) | (enumLiteral_115= Before_script ) | (enumLiteral_116= After_script ) | (enumLiteral_117= Timeout ) | (enumLiteral_118= When ) | (enumLiteral_119= Allow_failure ) | (enumLiteral_120= Dependencies ) | (enumLiteral_121= PullRequests ) | (enumLiteral_122= Step ) | (enumLiteral_123= Definitions ) | (enumLiteral_124= Caches ) | (enumLiteral_125= Parallel ) | (enumLiteral_126= Conditions ) | (enumLiteral_127= MaxTime ) | (enumLiteral_128= Project ) | (enumLiteral_129= Plan ) | (enumLiteral_130= Tasks ) | (enumLiteral_131= Requirements ) | (enumLiteral_132= Final ) | (enumLiteral_133= Jdk ) | (enumLiteral_134= Labels ) | (enumLiteral_135= Repository ) | (enumLiteral_136= Release ) | (enumLiteral_137= Docker ) | (enumLiteral_138= Agent ) | (enumLiteral_139= Queue ) | (enumLiteral_140= Snapshot ) | (enumLiteral_141= Policy ) | (enumLiteral_142= Approvals ) | (enumLiteral_143= PreBuild ) | (enumLiteral_144= PostBuild ) | (enumLiteral_145= Ssh ) | (enumLiteral_146= Auth ) | (enumLiteral_147= Storage ) | (enumLiteral_148= Endpoints ) | (enumLiteral_149= Command ) | (enumLiteral_150= Provisioner ) | (enumLiteral_151= TriggerRules ) | (enumLiteral_152= RunPolicy ) | (enumLiteral_153= Queued ) | (enumLiteral_154= Notifications ) | (enumLiteral_155= DeployTrigger ) | (enumLiteral_156= ReleaseTrigger ) | (enumLiteral_157= LockBehavior ) | (enumLiteral_158= ReviewStage ) ) ;
     public final Enumerator rulePipelineKeyword() throws RecognitionException {
         Enumerator current = null;
 
@@ -15346,10 +15370,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalPipelineParser.g:5421:2: ( ( (enumLiteral_0= Name ) | (enumLiteral_1= RunName ) | (enumLiteral_2= On ) | (enumLiteral_3= Defaults ) | (enumLiteral_4= Run ) | (enumLiteral_5= Shell ) | (enumLiteral_6= WorkingDirectory ) | (enumLiteral_7= Env ) | (enumLiteral_8= Permission ) | (enumLiteral_9= Concurrency ) | (enumLiteral_10= Group ) | (enumLiteral_11= CancelInProgress ) | (enumLiteral_12= Pool ) | (enumLiteral_13= VmImage ) | (enumLiteral_14= Demands ) | (enumLiteral_15= Resources ) | (enumLiteral_16= Version ) | (enumLiteral_17= Variables ) | (enumLiteral_18= Parameters ) | (enumLiteral_19= Extends ) | (enumLiteral_20= Include ) | (enumLiteral_21= Types ) | (enumLiteral_22= Batch ) | (enumLiteral_23= Status ) | (enumLiteral_24= AutoCancel ) | (enumLiteral_25= Workflows ) | (enumLiteral_26= Drafts ) | (enumLiteral_27= Branches ) | (enumLiteral_28= BranchesIgnore ) | (enumLiteral_29= Paths ) | (enumLiteral_30= PathsIgnore ) | (enumLiteral_31= Tags ) | (enumLiteral_32= TagsIgnore ) | (enumLiteral_33= Schedules ) | (enumLiteral_34= Schedule ) | (enumLiteral_35= Workflow_call ) | (enumLiteral_36= Workflow_dispatch ) | (enumLiteral_37= Cron ) | (enumLiteral_38= DisplayName ) | (enumLiteral_39= Always ) | (enumLiteral_40= Stage ) | (enumLiteral_41= Condition ) | (enumLiteral_42= IsSkippable ) | (enumLiteral_43= DependsOn ) | (enumLiteral_44= Job ) | (enumLiteral_45= Deployment ) | (enumLiteral_46= Script ) | (enumLiteral_47= Bash ) | (enumLiteral_48= Pwsh ) | (enumLiteral_49= Powershell ) | (enumLiteral_50= Checkout ) | (enumLiteral_51= Download ) | (enumLiteral_52= GetPackage ) | (enumLiteral_53= Publish ) | (enumLiteral_54= Task ) | (enumLiteral_55= Value ) | (enumLiteral_56= Readonly ) | (enumLiteral_57= Builds ) | (enumLiteral_58= Containers ) | (enumLiteral_59= Pipelines ) | (enumLiteral_60= Repositories ) | (enumLiteral_61= Webhooks ) | (enumLiteral_62= Packages ) | (enumLiteral_63= Inputs ) | (enumLiteral_64= Outputs ) | (enumLiteral_65= Secrets ) | (enumLiteral_66= Description ) | (enumLiteral_67= Required ) | (enumLiteral_68= Default ) | (enumLiteral_69= Type ) | (enumLiteral_70= Options ) | (enumLiteral_71= If ) | (enumLiteral_72= RunsOn ) | (enumLiteral_73= Strategy ) | (enumLiteral_74= Matrix ) | (enumLiteral_75= Container ) | (enumLiteral_76= Services ) | (enumLiteral_77= Steps ) | (enumLiteral_78= Uses ) | (enumLiteral_79= With ) | (enumLiteral_80= TimeoutMinutes ) | (enumLiteral_81= ContinueOnError_1 ) | (enumLiteral_82= Environment ) | (enumLiteral_83= Id ) | (enumLiteral_84= Permissions ) | (enumLiteral_85= Timeouts ) | (enumLiteral_86= DefaultsRun ) | (enumLiteral_87= Push ) | (enumLiteral_88= Pull_request ) | (enumLiteral_89= Repository_dispatch ) | (enumLiteral_90= Workflow_run ) | (enumLiteral_91= Filters ) | (enumLiteral_92= Exclude ) | (enumLiteral_93= FailFast ) | (enumLiteral_94= MaxParallel ) | (enumLiteral_95= ContainerImage ) | (enumLiteral_96= Credentials ) | (enumLiteral_97= Ports ) | (enumLiteral_98= Inherit ) | (enumLiteral_99= Trigger ) | (enumLiteral_100= Template ) | (enumLiteral_101= Workspace ) | (enumLiteral_102= Pipeline ) | (enumLiteral_103= TimeoutInMinutes ) | (enumLiteral_104= ContinueOnError ) | (enumLiteral_105= ResourceType ) | (enumLiteral_106= ResourceName ) | (enumLiteral_107= Stages ) | (enumLiteral_108= Only ) | (enumLiteral_109= Except ) | (enumLiteral_110= Image ) | (enumLiteral_111= Cache ) | (enumLiteral_112= Artifacts ) | (enumLiteral_113= Retries ) | (enumLiteral_114= Rules ) | (enumLiteral_115= Before_script ) | (enumLiteral_116= After_script ) | (enumLiteral_117= Timeout ) | (enumLiteral_118= When ) | (enumLiteral_119= Allow_failure ) | (enumLiteral_120= Dependencies ) | (enumLiteral_121= PullRequests ) | (enumLiteral_122= Step ) | (enumLiteral_123= Definitions ) | (enumLiteral_124= Caches ) | (enumLiteral_125= Parallel ) | (enumLiteral_126= Conditions ) | (enumLiteral_127= MaxTime ) | (enumLiteral_128= Project ) | (enumLiteral_129= Plan ) | (enumLiteral_130= Tasks ) | (enumLiteral_131= Requirements ) | (enumLiteral_132= Final ) | (enumLiteral_133= Jdk ) | (enumLiteral_134= Labels ) | (enumLiteral_135= Repository ) | (enumLiteral_136= Release ) | (enumLiteral_137= Docker ) | (enumLiteral_138= Agent ) | (enumLiteral_139= Queue ) | (enumLiteral_140= Snapshot ) | (enumLiteral_141= Policy ) | (enumLiteral_142= Approvals ) | (enumLiteral_143= PreBuild ) | (enumLiteral_144= PostBuild ) | (enumLiteral_145= Ssh ) | (enumLiteral_146= Auth ) | (enumLiteral_147= Storage ) | (enumLiteral_148= Endpoints ) | (enumLiteral_149= Command ) | (enumLiteral_150= Provisioner ) | (enumLiteral_151= TriggerRules ) | (enumLiteral_152= RunPolicy ) | (enumLiteral_153= Queued ) | (enumLiteral_154= Notifications ) | (enumLiteral_155= DeployTrigger ) | (enumLiteral_156= ReleaseTrigger ) | (enumLiteral_157= LockBehavior ) | (enumLiteral_158= ReviewStage ) ) )
-            // InternalPipelineParser.g:5422:2: ( (enumLiteral_0= Name ) | (enumLiteral_1= RunName ) | (enumLiteral_2= On ) | (enumLiteral_3= Defaults ) | (enumLiteral_4= Run ) | (enumLiteral_5= Shell ) | (enumLiteral_6= WorkingDirectory ) | (enumLiteral_7= Env ) | (enumLiteral_8= Permission ) | (enumLiteral_9= Concurrency ) | (enumLiteral_10= Group ) | (enumLiteral_11= CancelInProgress ) | (enumLiteral_12= Pool ) | (enumLiteral_13= VmImage ) | (enumLiteral_14= Demands ) | (enumLiteral_15= Resources ) | (enumLiteral_16= Version ) | (enumLiteral_17= Variables ) | (enumLiteral_18= Parameters ) | (enumLiteral_19= Extends ) | (enumLiteral_20= Include ) | (enumLiteral_21= Types ) | (enumLiteral_22= Batch ) | (enumLiteral_23= Status ) | (enumLiteral_24= AutoCancel ) | (enumLiteral_25= Workflows ) | (enumLiteral_26= Drafts ) | (enumLiteral_27= Branches ) | (enumLiteral_28= BranchesIgnore ) | (enumLiteral_29= Paths ) | (enumLiteral_30= PathsIgnore ) | (enumLiteral_31= Tags ) | (enumLiteral_32= TagsIgnore ) | (enumLiteral_33= Schedules ) | (enumLiteral_34= Schedule ) | (enumLiteral_35= Workflow_call ) | (enumLiteral_36= Workflow_dispatch ) | (enumLiteral_37= Cron ) | (enumLiteral_38= DisplayName ) | (enumLiteral_39= Always ) | (enumLiteral_40= Stage ) | (enumLiteral_41= Condition ) | (enumLiteral_42= IsSkippable ) | (enumLiteral_43= DependsOn ) | (enumLiteral_44= Job ) | (enumLiteral_45= Deployment ) | (enumLiteral_46= Script ) | (enumLiteral_47= Bash ) | (enumLiteral_48= Pwsh ) | (enumLiteral_49= Powershell ) | (enumLiteral_50= Checkout ) | (enumLiteral_51= Download ) | (enumLiteral_52= GetPackage ) | (enumLiteral_53= Publish ) | (enumLiteral_54= Task ) | (enumLiteral_55= Value ) | (enumLiteral_56= Readonly ) | (enumLiteral_57= Builds ) | (enumLiteral_58= Containers ) | (enumLiteral_59= Pipelines ) | (enumLiteral_60= Repositories ) | (enumLiteral_61= Webhooks ) | (enumLiteral_62= Packages ) | (enumLiteral_63= Inputs ) | (enumLiteral_64= Outputs ) | (enumLiteral_65= Secrets ) | (enumLiteral_66= Description ) | (enumLiteral_67= Required ) | (enumLiteral_68= Default ) | (enumLiteral_69= Type ) | (enumLiteral_70= Options ) | (enumLiteral_71= If ) | (enumLiteral_72= RunsOn ) | (enumLiteral_73= Strategy ) | (enumLiteral_74= Matrix ) | (enumLiteral_75= Container ) | (enumLiteral_76= Services ) | (enumLiteral_77= Steps ) | (enumLiteral_78= Uses ) | (enumLiteral_79= With ) | (enumLiteral_80= TimeoutMinutes ) | (enumLiteral_81= ContinueOnError_1 ) | (enumLiteral_82= Environment ) | (enumLiteral_83= Id ) | (enumLiteral_84= Permissions ) | (enumLiteral_85= Timeouts ) | (enumLiteral_86= DefaultsRun ) | (enumLiteral_87= Push ) | (enumLiteral_88= Pull_request ) | (enumLiteral_89= Repository_dispatch ) | (enumLiteral_90= Workflow_run ) | (enumLiteral_91= Filters ) | (enumLiteral_92= Exclude ) | (enumLiteral_93= FailFast ) | (enumLiteral_94= MaxParallel ) | (enumLiteral_95= ContainerImage ) | (enumLiteral_96= Credentials ) | (enumLiteral_97= Ports ) | (enumLiteral_98= Inherit ) | (enumLiteral_99= Trigger ) | (enumLiteral_100= Template ) | (enumLiteral_101= Workspace ) | (enumLiteral_102= Pipeline ) | (enumLiteral_103= TimeoutInMinutes ) | (enumLiteral_104= ContinueOnError ) | (enumLiteral_105= ResourceType ) | (enumLiteral_106= ResourceName ) | (enumLiteral_107= Stages ) | (enumLiteral_108= Only ) | (enumLiteral_109= Except ) | (enumLiteral_110= Image ) | (enumLiteral_111= Cache ) | (enumLiteral_112= Artifacts ) | (enumLiteral_113= Retries ) | (enumLiteral_114= Rules ) | (enumLiteral_115= Before_script ) | (enumLiteral_116= After_script ) | (enumLiteral_117= Timeout ) | (enumLiteral_118= When ) | (enumLiteral_119= Allow_failure ) | (enumLiteral_120= Dependencies ) | (enumLiteral_121= PullRequests ) | (enumLiteral_122= Step ) | (enumLiteral_123= Definitions ) | (enumLiteral_124= Caches ) | (enumLiteral_125= Parallel ) | (enumLiteral_126= Conditions ) | (enumLiteral_127= MaxTime ) | (enumLiteral_128= Project ) | (enumLiteral_129= Plan ) | (enumLiteral_130= Tasks ) | (enumLiteral_131= Requirements ) | (enumLiteral_132= Final ) | (enumLiteral_133= Jdk ) | (enumLiteral_134= Labels ) | (enumLiteral_135= Repository ) | (enumLiteral_136= Release ) | (enumLiteral_137= Docker ) | (enumLiteral_138= Agent ) | (enumLiteral_139= Queue ) | (enumLiteral_140= Snapshot ) | (enumLiteral_141= Policy ) | (enumLiteral_142= Approvals ) | (enumLiteral_143= PreBuild ) | (enumLiteral_144= PostBuild ) | (enumLiteral_145= Ssh ) | (enumLiteral_146= Auth ) | (enumLiteral_147= Storage ) | (enumLiteral_148= Endpoints ) | (enumLiteral_149= Command ) | (enumLiteral_150= Provisioner ) | (enumLiteral_151= TriggerRules ) | (enumLiteral_152= RunPolicy ) | (enumLiteral_153= Queued ) | (enumLiteral_154= Notifications ) | (enumLiteral_155= DeployTrigger ) | (enumLiteral_156= ReleaseTrigger ) | (enumLiteral_157= LockBehavior ) | (enumLiteral_158= ReviewStage ) )
+            // InternalPipelineParser.g:5429:2: ( ( (enumLiteral_0= Name ) | (enumLiteral_1= RunName ) | (enumLiteral_2= On ) | (enumLiteral_3= Defaults ) | (enumLiteral_4= Run ) | (enumLiteral_5= Shell ) | (enumLiteral_6= WorkingDirectory ) | (enumLiteral_7= Env ) | (enumLiteral_8= Permission ) | (enumLiteral_9= Concurrency ) | (enumLiteral_10= Group ) | (enumLiteral_11= CancelInProgress ) | (enumLiteral_12= Pool ) | (enumLiteral_13= VmImage ) | (enumLiteral_14= Demands ) | (enumLiteral_15= Resources ) | (enumLiteral_16= Version ) | (enumLiteral_17= Variables ) | (enumLiteral_18= Parameters ) | (enumLiteral_19= Extends ) | (enumLiteral_20= Include ) | (enumLiteral_21= Types ) | (enumLiteral_22= Batch ) | (enumLiteral_23= Status ) | (enumLiteral_24= AutoCancel ) | (enumLiteral_25= Workflows ) | (enumLiteral_26= Drafts ) | (enumLiteral_27= Branches ) | (enumLiteral_28= BranchesIgnore ) | (enumLiteral_29= Paths ) | (enumLiteral_30= PathsIgnore ) | (enumLiteral_31= Tags ) | (enumLiteral_32= TagsIgnore ) | (enumLiteral_33= Schedules ) | (enumLiteral_34= Schedule ) | (enumLiteral_35= Workflow_call ) | (enumLiteral_36= Workflow_dispatch ) | (enumLiteral_37= Cron ) | (enumLiteral_38= DisplayName ) | (enumLiteral_39= Always ) | (enumLiteral_40= Stage ) | (enumLiteral_41= Condition ) | (enumLiteral_42= IsSkippable ) | (enumLiteral_43= DependsOn ) | (enumLiteral_44= Job ) | (enumLiteral_45= Deployment ) | (enumLiteral_46= Script ) | (enumLiteral_47= Bash ) | (enumLiteral_48= Pwsh ) | (enumLiteral_49= Powershell ) | (enumLiteral_50= Checkout ) | (enumLiteral_51= Download ) | (enumLiteral_52= GetPackage ) | (enumLiteral_53= Publish ) | (enumLiteral_54= Task ) | (enumLiteral_55= Value ) | (enumLiteral_56= Readonly ) | (enumLiteral_57= Builds ) | (enumLiteral_58= Containers ) | (enumLiteral_59= Pipelines ) | (enumLiteral_60= Repositories ) | (enumLiteral_61= Webhooks ) | (enumLiteral_62= Packages ) | (enumLiteral_63= Inputs ) | (enumLiteral_64= Outputs ) | (enumLiteral_65= Secrets ) | (enumLiteral_66= Description ) | (enumLiteral_67= Required ) | (enumLiteral_68= Default ) | (enumLiteral_69= Type ) | (enumLiteral_70= Options ) | (enumLiteral_71= If ) | (enumLiteral_72= RunsOn ) | (enumLiteral_73= Strategy ) | (enumLiteral_74= Matrix ) | (enumLiteral_75= Container ) | (enumLiteral_76= Services ) | (enumLiteral_77= Steps ) | (enumLiteral_78= Uses ) | (enumLiteral_79= With ) | (enumLiteral_80= TimeoutMinutes ) | (enumLiteral_81= ContinueOnError_1 ) | (enumLiteral_82= Environment ) | (enumLiteral_83= Id ) | (enumLiteral_84= Permissions ) | (enumLiteral_85= Timeouts ) | (enumLiteral_86= DefaultsRun ) | (enumLiteral_87= Push ) | (enumLiteral_88= Pull_request ) | (enumLiteral_89= Repository_dispatch ) | (enumLiteral_90= Workflow_run ) | (enumLiteral_91= Filters ) | (enumLiteral_92= Exclude ) | (enumLiteral_93= FailFast ) | (enumLiteral_94= MaxParallel ) | (enumLiteral_95= ContainerImage ) | (enumLiteral_96= Credentials ) | (enumLiteral_97= Ports ) | (enumLiteral_98= Inherit ) | (enumLiteral_99= Trigger ) | (enumLiteral_100= Template ) | (enumLiteral_101= Workspace ) | (enumLiteral_102= Pipeline ) | (enumLiteral_103= TimeoutInMinutes ) | (enumLiteral_104= ContinueOnError ) | (enumLiteral_105= ResourceType ) | (enumLiteral_106= ResourceName ) | (enumLiteral_107= Stages ) | (enumLiteral_108= Only ) | (enumLiteral_109= Except ) | (enumLiteral_110= Image ) | (enumLiteral_111= Cache ) | (enumLiteral_112= Artifacts ) | (enumLiteral_113= Retries ) | (enumLiteral_114= Rules ) | (enumLiteral_115= Before_script ) | (enumLiteral_116= After_script ) | (enumLiteral_117= Timeout ) | (enumLiteral_118= When ) | (enumLiteral_119= Allow_failure ) | (enumLiteral_120= Dependencies ) | (enumLiteral_121= PullRequests ) | (enumLiteral_122= Step ) | (enumLiteral_123= Definitions ) | (enumLiteral_124= Caches ) | (enumLiteral_125= Parallel ) | (enumLiteral_126= Conditions ) | (enumLiteral_127= MaxTime ) | (enumLiteral_128= Project ) | (enumLiteral_129= Plan ) | (enumLiteral_130= Tasks ) | (enumLiteral_131= Requirements ) | (enumLiteral_132= Final ) | (enumLiteral_133= Jdk ) | (enumLiteral_134= Labels ) | (enumLiteral_135= Repository ) | (enumLiteral_136= Release ) | (enumLiteral_137= Docker ) | (enumLiteral_138= Agent ) | (enumLiteral_139= Queue ) | (enumLiteral_140= Snapshot ) | (enumLiteral_141= Policy ) | (enumLiteral_142= Approvals ) | (enumLiteral_143= PreBuild ) | (enumLiteral_144= PostBuild ) | (enumLiteral_145= Ssh ) | (enumLiteral_146= Auth ) | (enumLiteral_147= Storage ) | (enumLiteral_148= Endpoints ) | (enumLiteral_149= Command ) | (enumLiteral_150= Provisioner ) | (enumLiteral_151= TriggerRules ) | (enumLiteral_152= RunPolicy ) | (enumLiteral_153= Queued ) | (enumLiteral_154= Notifications ) | (enumLiteral_155= DeployTrigger ) | (enumLiteral_156= ReleaseTrigger ) | (enumLiteral_157= LockBehavior ) | (enumLiteral_158= ReviewStage ) ) )
+            // InternalPipelineParser.g:5430:2: ( (enumLiteral_0= Name ) | (enumLiteral_1= RunName ) | (enumLiteral_2= On ) | (enumLiteral_3= Defaults ) | (enumLiteral_4= Run ) | (enumLiteral_5= Shell ) | (enumLiteral_6= WorkingDirectory ) | (enumLiteral_7= Env ) | (enumLiteral_8= Permission ) | (enumLiteral_9= Concurrency ) | (enumLiteral_10= Group ) | (enumLiteral_11= CancelInProgress ) | (enumLiteral_12= Pool ) | (enumLiteral_13= VmImage ) | (enumLiteral_14= Demands ) | (enumLiteral_15= Resources ) | (enumLiteral_16= Version ) | (enumLiteral_17= Variables ) | (enumLiteral_18= Parameters ) | (enumLiteral_19= Extends ) | (enumLiteral_20= Include ) | (enumLiteral_21= Types ) | (enumLiteral_22= Batch ) | (enumLiteral_23= Status ) | (enumLiteral_24= AutoCancel ) | (enumLiteral_25= Workflows ) | (enumLiteral_26= Drafts ) | (enumLiteral_27= Branches ) | (enumLiteral_28= BranchesIgnore ) | (enumLiteral_29= Paths ) | (enumLiteral_30= PathsIgnore ) | (enumLiteral_31= Tags ) | (enumLiteral_32= TagsIgnore ) | (enumLiteral_33= Schedules ) | (enumLiteral_34= Schedule ) | (enumLiteral_35= Workflow_call ) | (enumLiteral_36= Workflow_dispatch ) | (enumLiteral_37= Cron ) | (enumLiteral_38= DisplayName ) | (enumLiteral_39= Always ) | (enumLiteral_40= Stage ) | (enumLiteral_41= Condition ) | (enumLiteral_42= IsSkippable ) | (enumLiteral_43= DependsOn ) | (enumLiteral_44= Job ) | (enumLiteral_45= Deployment ) | (enumLiteral_46= Script ) | (enumLiteral_47= Bash ) | (enumLiteral_48= Pwsh ) | (enumLiteral_49= Powershell ) | (enumLiteral_50= Checkout ) | (enumLiteral_51= Download ) | (enumLiteral_52= GetPackage ) | (enumLiteral_53= Publish ) | (enumLiteral_54= Task ) | (enumLiteral_55= Value ) | (enumLiteral_56= Readonly ) | (enumLiteral_57= Builds ) | (enumLiteral_58= Containers ) | (enumLiteral_59= Pipelines ) | (enumLiteral_60= Repositories ) | (enumLiteral_61= Webhooks ) | (enumLiteral_62= Packages ) | (enumLiteral_63= Inputs ) | (enumLiteral_64= Outputs ) | (enumLiteral_65= Secrets ) | (enumLiteral_66= Description ) | (enumLiteral_67= Required ) | (enumLiteral_68= Default ) | (enumLiteral_69= Type ) | (enumLiteral_70= Options ) | (enumLiteral_71= If ) | (enumLiteral_72= RunsOn ) | (enumLiteral_73= Strategy ) | (enumLiteral_74= Matrix ) | (enumLiteral_75= Container ) | (enumLiteral_76= Services ) | (enumLiteral_77= Steps ) | (enumLiteral_78= Uses ) | (enumLiteral_79= With ) | (enumLiteral_80= TimeoutMinutes ) | (enumLiteral_81= ContinueOnError_1 ) | (enumLiteral_82= Environment ) | (enumLiteral_83= Id ) | (enumLiteral_84= Permissions ) | (enumLiteral_85= Timeouts ) | (enumLiteral_86= DefaultsRun ) | (enumLiteral_87= Push ) | (enumLiteral_88= Pull_request ) | (enumLiteral_89= Repository_dispatch ) | (enumLiteral_90= Workflow_run ) | (enumLiteral_91= Filters ) | (enumLiteral_92= Exclude ) | (enumLiteral_93= FailFast ) | (enumLiteral_94= MaxParallel ) | (enumLiteral_95= ContainerImage ) | (enumLiteral_96= Credentials ) | (enumLiteral_97= Ports ) | (enumLiteral_98= Inherit ) | (enumLiteral_99= Trigger ) | (enumLiteral_100= Template ) | (enumLiteral_101= Workspace ) | (enumLiteral_102= Pipeline ) | (enumLiteral_103= TimeoutInMinutes ) | (enumLiteral_104= ContinueOnError ) | (enumLiteral_105= ResourceType ) | (enumLiteral_106= ResourceName ) | (enumLiteral_107= Stages ) | (enumLiteral_108= Only ) | (enumLiteral_109= Except ) | (enumLiteral_110= Image ) | (enumLiteral_111= Cache ) | (enumLiteral_112= Artifacts ) | (enumLiteral_113= Retries ) | (enumLiteral_114= Rules ) | (enumLiteral_115= Before_script ) | (enumLiteral_116= After_script ) | (enumLiteral_117= Timeout ) | (enumLiteral_118= When ) | (enumLiteral_119= Allow_failure ) | (enumLiteral_120= Dependencies ) | (enumLiteral_121= PullRequests ) | (enumLiteral_122= Step ) | (enumLiteral_123= Definitions ) | (enumLiteral_124= Caches ) | (enumLiteral_125= Parallel ) | (enumLiteral_126= Conditions ) | (enumLiteral_127= MaxTime ) | (enumLiteral_128= Project ) | (enumLiteral_129= Plan ) | (enumLiteral_130= Tasks ) | (enumLiteral_131= Requirements ) | (enumLiteral_132= Final ) | (enumLiteral_133= Jdk ) | (enumLiteral_134= Labels ) | (enumLiteral_135= Repository ) | (enumLiteral_136= Release ) | (enumLiteral_137= Docker ) | (enumLiteral_138= Agent ) | (enumLiteral_139= Queue ) | (enumLiteral_140= Snapshot ) | (enumLiteral_141= Policy ) | (enumLiteral_142= Approvals ) | (enumLiteral_143= PreBuild ) | (enumLiteral_144= PostBuild ) | (enumLiteral_145= Ssh ) | (enumLiteral_146= Auth ) | (enumLiteral_147= Storage ) | (enumLiteral_148= Endpoints ) | (enumLiteral_149= Command ) | (enumLiteral_150= Provisioner ) | (enumLiteral_151= TriggerRules ) | (enumLiteral_152= RunPolicy ) | (enumLiteral_153= Queued ) | (enumLiteral_154= Notifications ) | (enumLiteral_155= DeployTrigger ) | (enumLiteral_156= ReleaseTrigger ) | (enumLiteral_157= LockBehavior ) | (enumLiteral_158= ReviewStage ) )
             {
-            // InternalPipelineParser.g:5422:2: ( (enumLiteral_0= Name ) | (enumLiteral_1= RunName ) | (enumLiteral_2= On ) | (enumLiteral_3= Defaults ) | (enumLiteral_4= Run ) | (enumLiteral_5= Shell ) | (enumLiteral_6= WorkingDirectory ) | (enumLiteral_7= Env ) | (enumLiteral_8= Permission ) | (enumLiteral_9= Concurrency ) | (enumLiteral_10= Group ) | (enumLiteral_11= CancelInProgress ) | (enumLiteral_12= Pool ) | (enumLiteral_13= VmImage ) | (enumLiteral_14= Demands ) | (enumLiteral_15= Resources ) | (enumLiteral_16= Version ) | (enumLiteral_17= Variables ) | (enumLiteral_18= Parameters ) | (enumLiteral_19= Extends ) | (enumLiteral_20= Include ) | (enumLiteral_21= Types ) | (enumLiteral_22= Batch ) | (enumLiteral_23= Status ) | (enumLiteral_24= AutoCancel ) | (enumLiteral_25= Workflows ) | (enumLiteral_26= Drafts ) | (enumLiteral_27= Branches ) | (enumLiteral_28= BranchesIgnore ) | (enumLiteral_29= Paths ) | (enumLiteral_30= PathsIgnore ) | (enumLiteral_31= Tags ) | (enumLiteral_32= TagsIgnore ) | (enumLiteral_33= Schedules ) | (enumLiteral_34= Schedule ) | (enumLiteral_35= Workflow_call ) | (enumLiteral_36= Workflow_dispatch ) | (enumLiteral_37= Cron ) | (enumLiteral_38= DisplayName ) | (enumLiteral_39= Always ) | (enumLiteral_40= Stage ) | (enumLiteral_41= Condition ) | (enumLiteral_42= IsSkippable ) | (enumLiteral_43= DependsOn ) | (enumLiteral_44= Job ) | (enumLiteral_45= Deployment ) | (enumLiteral_46= Script ) | (enumLiteral_47= Bash ) | (enumLiteral_48= Pwsh ) | (enumLiteral_49= Powershell ) | (enumLiteral_50= Checkout ) | (enumLiteral_51= Download ) | (enumLiteral_52= GetPackage ) | (enumLiteral_53= Publish ) | (enumLiteral_54= Task ) | (enumLiteral_55= Value ) | (enumLiteral_56= Readonly ) | (enumLiteral_57= Builds ) | (enumLiteral_58= Containers ) | (enumLiteral_59= Pipelines ) | (enumLiteral_60= Repositories ) | (enumLiteral_61= Webhooks ) | (enumLiteral_62= Packages ) | (enumLiteral_63= Inputs ) | (enumLiteral_64= Outputs ) | (enumLiteral_65= Secrets ) | (enumLiteral_66= Description ) | (enumLiteral_67= Required ) | (enumLiteral_68= Default ) | (enumLiteral_69= Type ) | (enumLiteral_70= Options ) | (enumLiteral_71= If ) | (enumLiteral_72= RunsOn ) | (enumLiteral_73= Strategy ) | (enumLiteral_74= Matrix ) | (enumLiteral_75= Container ) | (enumLiteral_76= Services ) | (enumLiteral_77= Steps ) | (enumLiteral_78= Uses ) | (enumLiteral_79= With ) | (enumLiteral_80= TimeoutMinutes ) | (enumLiteral_81= ContinueOnError_1 ) | (enumLiteral_82= Environment ) | (enumLiteral_83= Id ) | (enumLiteral_84= Permissions ) | (enumLiteral_85= Timeouts ) | (enumLiteral_86= DefaultsRun ) | (enumLiteral_87= Push ) | (enumLiteral_88= Pull_request ) | (enumLiteral_89= Repository_dispatch ) | (enumLiteral_90= Workflow_run ) | (enumLiteral_91= Filters ) | (enumLiteral_92= Exclude ) | (enumLiteral_93= FailFast ) | (enumLiteral_94= MaxParallel ) | (enumLiteral_95= ContainerImage ) | (enumLiteral_96= Credentials ) | (enumLiteral_97= Ports ) | (enumLiteral_98= Inherit ) | (enumLiteral_99= Trigger ) | (enumLiteral_100= Template ) | (enumLiteral_101= Workspace ) | (enumLiteral_102= Pipeline ) | (enumLiteral_103= TimeoutInMinutes ) | (enumLiteral_104= ContinueOnError ) | (enumLiteral_105= ResourceType ) | (enumLiteral_106= ResourceName ) | (enumLiteral_107= Stages ) | (enumLiteral_108= Only ) | (enumLiteral_109= Except ) | (enumLiteral_110= Image ) | (enumLiteral_111= Cache ) | (enumLiteral_112= Artifacts ) | (enumLiteral_113= Retries ) | (enumLiteral_114= Rules ) | (enumLiteral_115= Before_script ) | (enumLiteral_116= After_script ) | (enumLiteral_117= Timeout ) | (enumLiteral_118= When ) | (enumLiteral_119= Allow_failure ) | (enumLiteral_120= Dependencies ) | (enumLiteral_121= PullRequests ) | (enumLiteral_122= Step ) | (enumLiteral_123= Definitions ) | (enumLiteral_124= Caches ) | (enumLiteral_125= Parallel ) | (enumLiteral_126= Conditions ) | (enumLiteral_127= MaxTime ) | (enumLiteral_128= Project ) | (enumLiteral_129= Plan ) | (enumLiteral_130= Tasks ) | (enumLiteral_131= Requirements ) | (enumLiteral_132= Final ) | (enumLiteral_133= Jdk ) | (enumLiteral_134= Labels ) | (enumLiteral_135= Repository ) | (enumLiteral_136= Release ) | (enumLiteral_137= Docker ) | (enumLiteral_138= Agent ) | (enumLiteral_139= Queue ) | (enumLiteral_140= Snapshot ) | (enumLiteral_141= Policy ) | (enumLiteral_142= Approvals ) | (enumLiteral_143= PreBuild ) | (enumLiteral_144= PostBuild ) | (enumLiteral_145= Ssh ) | (enumLiteral_146= Auth ) | (enumLiteral_147= Storage ) | (enumLiteral_148= Endpoints ) | (enumLiteral_149= Command ) | (enumLiteral_150= Provisioner ) | (enumLiteral_151= TriggerRules ) | (enumLiteral_152= RunPolicy ) | (enumLiteral_153= Queued ) | (enumLiteral_154= Notifications ) | (enumLiteral_155= DeployTrigger ) | (enumLiteral_156= ReleaseTrigger ) | (enumLiteral_157= LockBehavior ) | (enumLiteral_158= ReviewStage ) )
+            // InternalPipelineParser.g:5430:2: ( (enumLiteral_0= Name ) | (enumLiteral_1= RunName ) | (enumLiteral_2= On ) | (enumLiteral_3= Defaults ) | (enumLiteral_4= Run ) | (enumLiteral_5= Shell ) | (enumLiteral_6= WorkingDirectory ) | (enumLiteral_7= Env ) | (enumLiteral_8= Permission ) | (enumLiteral_9= Concurrency ) | (enumLiteral_10= Group ) | (enumLiteral_11= CancelInProgress ) | (enumLiteral_12= Pool ) | (enumLiteral_13= VmImage ) | (enumLiteral_14= Demands ) | (enumLiteral_15= Resources ) | (enumLiteral_16= Version ) | (enumLiteral_17= Variables ) | (enumLiteral_18= Parameters ) | (enumLiteral_19= Extends ) | (enumLiteral_20= Include ) | (enumLiteral_21= Types ) | (enumLiteral_22= Batch ) | (enumLiteral_23= Status ) | (enumLiteral_24= AutoCancel ) | (enumLiteral_25= Workflows ) | (enumLiteral_26= Drafts ) | (enumLiteral_27= Branches ) | (enumLiteral_28= BranchesIgnore ) | (enumLiteral_29= Paths ) | (enumLiteral_30= PathsIgnore ) | (enumLiteral_31= Tags ) | (enumLiteral_32= TagsIgnore ) | (enumLiteral_33= Schedules ) | (enumLiteral_34= Schedule ) | (enumLiteral_35= Workflow_call ) | (enumLiteral_36= Workflow_dispatch ) | (enumLiteral_37= Cron ) | (enumLiteral_38= DisplayName ) | (enumLiteral_39= Always ) | (enumLiteral_40= Stage ) | (enumLiteral_41= Condition ) | (enumLiteral_42= IsSkippable ) | (enumLiteral_43= DependsOn ) | (enumLiteral_44= Job ) | (enumLiteral_45= Deployment ) | (enumLiteral_46= Script ) | (enumLiteral_47= Bash ) | (enumLiteral_48= Pwsh ) | (enumLiteral_49= Powershell ) | (enumLiteral_50= Checkout ) | (enumLiteral_51= Download ) | (enumLiteral_52= GetPackage ) | (enumLiteral_53= Publish ) | (enumLiteral_54= Task ) | (enumLiteral_55= Value ) | (enumLiteral_56= Readonly ) | (enumLiteral_57= Builds ) | (enumLiteral_58= Containers ) | (enumLiteral_59= Pipelines ) | (enumLiteral_60= Repositories ) | (enumLiteral_61= Webhooks ) | (enumLiteral_62= Packages ) | (enumLiteral_63= Inputs ) | (enumLiteral_64= Outputs ) | (enumLiteral_65= Secrets ) | (enumLiteral_66= Description ) | (enumLiteral_67= Required ) | (enumLiteral_68= Default ) | (enumLiteral_69= Type ) | (enumLiteral_70= Options ) | (enumLiteral_71= If ) | (enumLiteral_72= RunsOn ) | (enumLiteral_73= Strategy ) | (enumLiteral_74= Matrix ) | (enumLiteral_75= Container ) | (enumLiteral_76= Services ) | (enumLiteral_77= Steps ) | (enumLiteral_78= Uses ) | (enumLiteral_79= With ) | (enumLiteral_80= TimeoutMinutes ) | (enumLiteral_81= ContinueOnError_1 ) | (enumLiteral_82= Environment ) | (enumLiteral_83= Id ) | (enumLiteral_84= Permissions ) | (enumLiteral_85= Timeouts ) | (enumLiteral_86= DefaultsRun ) | (enumLiteral_87= Push ) | (enumLiteral_88= Pull_request ) | (enumLiteral_89= Repository_dispatch ) | (enumLiteral_90= Workflow_run ) | (enumLiteral_91= Filters ) | (enumLiteral_92= Exclude ) | (enumLiteral_93= FailFast ) | (enumLiteral_94= MaxParallel ) | (enumLiteral_95= ContainerImage ) | (enumLiteral_96= Credentials ) | (enumLiteral_97= Ports ) | (enumLiteral_98= Inherit ) | (enumLiteral_99= Trigger ) | (enumLiteral_100= Template ) | (enumLiteral_101= Workspace ) | (enumLiteral_102= Pipeline ) | (enumLiteral_103= TimeoutInMinutes ) | (enumLiteral_104= ContinueOnError ) | (enumLiteral_105= ResourceType ) | (enumLiteral_106= ResourceName ) | (enumLiteral_107= Stages ) | (enumLiteral_108= Only ) | (enumLiteral_109= Except ) | (enumLiteral_110= Image ) | (enumLiteral_111= Cache ) | (enumLiteral_112= Artifacts ) | (enumLiteral_113= Retries ) | (enumLiteral_114= Rules ) | (enumLiteral_115= Before_script ) | (enumLiteral_116= After_script ) | (enumLiteral_117= Timeout ) | (enumLiteral_118= When ) | (enumLiteral_119= Allow_failure ) | (enumLiteral_120= Dependencies ) | (enumLiteral_121= PullRequests ) | (enumLiteral_122= Step ) | (enumLiteral_123= Definitions ) | (enumLiteral_124= Caches ) | (enumLiteral_125= Parallel ) | (enumLiteral_126= Conditions ) | (enumLiteral_127= MaxTime ) | (enumLiteral_128= Project ) | (enumLiteral_129= Plan ) | (enumLiteral_130= Tasks ) | (enumLiteral_131= Requirements ) | (enumLiteral_132= Final ) | (enumLiteral_133= Jdk ) | (enumLiteral_134= Labels ) | (enumLiteral_135= Repository ) | (enumLiteral_136= Release ) | (enumLiteral_137= Docker ) | (enumLiteral_138= Agent ) | (enumLiteral_139= Queue ) | (enumLiteral_140= Snapshot ) | (enumLiteral_141= Policy ) | (enumLiteral_142= Approvals ) | (enumLiteral_143= PreBuild ) | (enumLiteral_144= PostBuild ) | (enumLiteral_145= Ssh ) | (enumLiteral_146= Auth ) | (enumLiteral_147= Storage ) | (enumLiteral_148= Endpoints ) | (enumLiteral_149= Command ) | (enumLiteral_150= Provisioner ) | (enumLiteral_151= TriggerRules ) | (enumLiteral_152= RunPolicy ) | (enumLiteral_153= Queued ) | (enumLiteral_154= Notifications ) | (enumLiteral_155= DeployTrigger ) | (enumLiteral_156= ReleaseTrigger ) | (enumLiteral_157= LockBehavior ) | (enumLiteral_158= ReviewStage ) )
             int alt152=159;
             switch ( input.LA(1) ) {
             case Name:
@@ -16156,10 +16180,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
             switch (alt152) {
                 case 1 :
-                    // InternalPipelineParser.g:5423:3: (enumLiteral_0= Name )
+                    // InternalPipelineParser.g:5431:3: (enumLiteral_0= Name )
                     {
-                    // InternalPipelineParser.g:5423:3: (enumLiteral_0= Name )
-                    // InternalPipelineParser.g:5424:4: enumLiteral_0= Name
+                    // InternalPipelineParser.g:5431:3: (enumLiteral_0= Name )
+                    // InternalPipelineParser.g:5432:4: enumLiteral_0= Name
                     {
                     enumLiteral_0=(Token)match(input,Name,FOLLOW_2); 
 
@@ -16173,10 +16197,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // InternalPipelineParser.g:5431:3: (enumLiteral_1= RunName )
+                    // InternalPipelineParser.g:5439:3: (enumLiteral_1= RunName )
                     {
-                    // InternalPipelineParser.g:5431:3: (enumLiteral_1= RunName )
-                    // InternalPipelineParser.g:5432:4: enumLiteral_1= RunName
+                    // InternalPipelineParser.g:5439:3: (enumLiteral_1= RunName )
+                    // InternalPipelineParser.g:5440:4: enumLiteral_1= RunName
                     {
                     enumLiteral_1=(Token)match(input,RunName,FOLLOW_2); 
 
@@ -16190,10 +16214,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // InternalPipelineParser.g:5439:3: (enumLiteral_2= On )
+                    // InternalPipelineParser.g:5447:3: (enumLiteral_2= On )
                     {
-                    // InternalPipelineParser.g:5439:3: (enumLiteral_2= On )
-                    // InternalPipelineParser.g:5440:4: enumLiteral_2= On
+                    // InternalPipelineParser.g:5447:3: (enumLiteral_2= On )
+                    // InternalPipelineParser.g:5448:4: enumLiteral_2= On
                     {
                     enumLiteral_2=(Token)match(input,On,FOLLOW_2); 
 
@@ -16207,10 +16231,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // InternalPipelineParser.g:5447:3: (enumLiteral_3= Defaults )
+                    // InternalPipelineParser.g:5455:3: (enumLiteral_3= Defaults )
                     {
-                    // InternalPipelineParser.g:5447:3: (enumLiteral_3= Defaults )
-                    // InternalPipelineParser.g:5448:4: enumLiteral_3= Defaults
+                    // InternalPipelineParser.g:5455:3: (enumLiteral_3= Defaults )
+                    // InternalPipelineParser.g:5456:4: enumLiteral_3= Defaults
                     {
                     enumLiteral_3=(Token)match(input,Defaults,FOLLOW_2); 
 
@@ -16224,10 +16248,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 5 :
-                    // InternalPipelineParser.g:5455:3: (enumLiteral_4= Run )
+                    // InternalPipelineParser.g:5463:3: (enumLiteral_4= Run )
                     {
-                    // InternalPipelineParser.g:5455:3: (enumLiteral_4= Run )
-                    // InternalPipelineParser.g:5456:4: enumLiteral_4= Run
+                    // InternalPipelineParser.g:5463:3: (enumLiteral_4= Run )
+                    // InternalPipelineParser.g:5464:4: enumLiteral_4= Run
                     {
                     enumLiteral_4=(Token)match(input,Run,FOLLOW_2); 
 
@@ -16241,10 +16265,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 6 :
-                    // InternalPipelineParser.g:5463:3: (enumLiteral_5= Shell )
+                    // InternalPipelineParser.g:5471:3: (enumLiteral_5= Shell )
                     {
-                    // InternalPipelineParser.g:5463:3: (enumLiteral_5= Shell )
-                    // InternalPipelineParser.g:5464:4: enumLiteral_5= Shell
+                    // InternalPipelineParser.g:5471:3: (enumLiteral_5= Shell )
+                    // InternalPipelineParser.g:5472:4: enumLiteral_5= Shell
                     {
                     enumLiteral_5=(Token)match(input,Shell,FOLLOW_2); 
 
@@ -16258,10 +16282,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 7 :
-                    // InternalPipelineParser.g:5471:3: (enumLiteral_6= WorkingDirectory )
+                    // InternalPipelineParser.g:5479:3: (enumLiteral_6= WorkingDirectory )
                     {
-                    // InternalPipelineParser.g:5471:3: (enumLiteral_6= WorkingDirectory )
-                    // InternalPipelineParser.g:5472:4: enumLiteral_6= WorkingDirectory
+                    // InternalPipelineParser.g:5479:3: (enumLiteral_6= WorkingDirectory )
+                    // InternalPipelineParser.g:5480:4: enumLiteral_6= WorkingDirectory
                     {
                     enumLiteral_6=(Token)match(input,WorkingDirectory,FOLLOW_2); 
 
@@ -16275,10 +16299,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 8 :
-                    // InternalPipelineParser.g:5479:3: (enumLiteral_7= Env )
+                    // InternalPipelineParser.g:5487:3: (enumLiteral_7= Env )
                     {
-                    // InternalPipelineParser.g:5479:3: (enumLiteral_7= Env )
-                    // InternalPipelineParser.g:5480:4: enumLiteral_7= Env
+                    // InternalPipelineParser.g:5487:3: (enumLiteral_7= Env )
+                    // InternalPipelineParser.g:5488:4: enumLiteral_7= Env
                     {
                     enumLiteral_7=(Token)match(input,Env,FOLLOW_2); 
 
@@ -16292,10 +16316,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 9 :
-                    // InternalPipelineParser.g:5487:3: (enumLiteral_8= Permission )
+                    // InternalPipelineParser.g:5495:3: (enumLiteral_8= Permission )
                     {
-                    // InternalPipelineParser.g:5487:3: (enumLiteral_8= Permission )
-                    // InternalPipelineParser.g:5488:4: enumLiteral_8= Permission
+                    // InternalPipelineParser.g:5495:3: (enumLiteral_8= Permission )
+                    // InternalPipelineParser.g:5496:4: enumLiteral_8= Permission
                     {
                     enumLiteral_8=(Token)match(input,Permission,FOLLOW_2); 
 
@@ -16309,10 +16333,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 10 :
-                    // InternalPipelineParser.g:5495:3: (enumLiteral_9= Concurrency )
+                    // InternalPipelineParser.g:5503:3: (enumLiteral_9= Concurrency )
                     {
-                    // InternalPipelineParser.g:5495:3: (enumLiteral_9= Concurrency )
-                    // InternalPipelineParser.g:5496:4: enumLiteral_9= Concurrency
+                    // InternalPipelineParser.g:5503:3: (enumLiteral_9= Concurrency )
+                    // InternalPipelineParser.g:5504:4: enumLiteral_9= Concurrency
                     {
                     enumLiteral_9=(Token)match(input,Concurrency,FOLLOW_2); 
 
@@ -16326,10 +16350,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 11 :
-                    // InternalPipelineParser.g:5503:3: (enumLiteral_10= Group )
+                    // InternalPipelineParser.g:5511:3: (enumLiteral_10= Group )
                     {
-                    // InternalPipelineParser.g:5503:3: (enumLiteral_10= Group )
-                    // InternalPipelineParser.g:5504:4: enumLiteral_10= Group
+                    // InternalPipelineParser.g:5511:3: (enumLiteral_10= Group )
+                    // InternalPipelineParser.g:5512:4: enumLiteral_10= Group
                     {
                     enumLiteral_10=(Token)match(input,Group,FOLLOW_2); 
 
@@ -16343,10 +16367,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 12 :
-                    // InternalPipelineParser.g:5511:3: (enumLiteral_11= CancelInProgress )
+                    // InternalPipelineParser.g:5519:3: (enumLiteral_11= CancelInProgress )
                     {
-                    // InternalPipelineParser.g:5511:3: (enumLiteral_11= CancelInProgress )
-                    // InternalPipelineParser.g:5512:4: enumLiteral_11= CancelInProgress
+                    // InternalPipelineParser.g:5519:3: (enumLiteral_11= CancelInProgress )
+                    // InternalPipelineParser.g:5520:4: enumLiteral_11= CancelInProgress
                     {
                     enumLiteral_11=(Token)match(input,CancelInProgress,FOLLOW_2); 
 
@@ -16360,10 +16384,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 13 :
-                    // InternalPipelineParser.g:5519:3: (enumLiteral_12= Pool )
+                    // InternalPipelineParser.g:5527:3: (enumLiteral_12= Pool )
                     {
-                    // InternalPipelineParser.g:5519:3: (enumLiteral_12= Pool )
-                    // InternalPipelineParser.g:5520:4: enumLiteral_12= Pool
+                    // InternalPipelineParser.g:5527:3: (enumLiteral_12= Pool )
+                    // InternalPipelineParser.g:5528:4: enumLiteral_12= Pool
                     {
                     enumLiteral_12=(Token)match(input,Pool,FOLLOW_2); 
 
@@ -16377,10 +16401,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 14 :
-                    // InternalPipelineParser.g:5527:3: (enumLiteral_13= VmImage )
+                    // InternalPipelineParser.g:5535:3: (enumLiteral_13= VmImage )
                     {
-                    // InternalPipelineParser.g:5527:3: (enumLiteral_13= VmImage )
-                    // InternalPipelineParser.g:5528:4: enumLiteral_13= VmImage
+                    // InternalPipelineParser.g:5535:3: (enumLiteral_13= VmImage )
+                    // InternalPipelineParser.g:5536:4: enumLiteral_13= VmImage
                     {
                     enumLiteral_13=(Token)match(input,VmImage,FOLLOW_2); 
 
@@ -16394,10 +16418,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 15 :
-                    // InternalPipelineParser.g:5535:3: (enumLiteral_14= Demands )
+                    // InternalPipelineParser.g:5543:3: (enumLiteral_14= Demands )
                     {
-                    // InternalPipelineParser.g:5535:3: (enumLiteral_14= Demands )
-                    // InternalPipelineParser.g:5536:4: enumLiteral_14= Demands
+                    // InternalPipelineParser.g:5543:3: (enumLiteral_14= Demands )
+                    // InternalPipelineParser.g:5544:4: enumLiteral_14= Demands
                     {
                     enumLiteral_14=(Token)match(input,Demands,FOLLOW_2); 
 
@@ -16411,10 +16435,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 16 :
-                    // InternalPipelineParser.g:5543:3: (enumLiteral_15= Resources )
+                    // InternalPipelineParser.g:5551:3: (enumLiteral_15= Resources )
                     {
-                    // InternalPipelineParser.g:5543:3: (enumLiteral_15= Resources )
-                    // InternalPipelineParser.g:5544:4: enumLiteral_15= Resources
+                    // InternalPipelineParser.g:5551:3: (enumLiteral_15= Resources )
+                    // InternalPipelineParser.g:5552:4: enumLiteral_15= Resources
                     {
                     enumLiteral_15=(Token)match(input,Resources,FOLLOW_2); 
 
@@ -16428,10 +16452,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 17 :
-                    // InternalPipelineParser.g:5551:3: (enumLiteral_16= Version )
+                    // InternalPipelineParser.g:5559:3: (enumLiteral_16= Version )
                     {
-                    // InternalPipelineParser.g:5551:3: (enumLiteral_16= Version )
-                    // InternalPipelineParser.g:5552:4: enumLiteral_16= Version
+                    // InternalPipelineParser.g:5559:3: (enumLiteral_16= Version )
+                    // InternalPipelineParser.g:5560:4: enumLiteral_16= Version
                     {
                     enumLiteral_16=(Token)match(input,Version,FOLLOW_2); 
 
@@ -16445,10 +16469,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 18 :
-                    // InternalPipelineParser.g:5559:3: (enumLiteral_17= Variables )
+                    // InternalPipelineParser.g:5567:3: (enumLiteral_17= Variables )
                     {
-                    // InternalPipelineParser.g:5559:3: (enumLiteral_17= Variables )
-                    // InternalPipelineParser.g:5560:4: enumLiteral_17= Variables
+                    // InternalPipelineParser.g:5567:3: (enumLiteral_17= Variables )
+                    // InternalPipelineParser.g:5568:4: enumLiteral_17= Variables
                     {
                     enumLiteral_17=(Token)match(input,Variables,FOLLOW_2); 
 
@@ -16462,10 +16486,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 19 :
-                    // InternalPipelineParser.g:5567:3: (enumLiteral_18= Parameters )
+                    // InternalPipelineParser.g:5575:3: (enumLiteral_18= Parameters )
                     {
-                    // InternalPipelineParser.g:5567:3: (enumLiteral_18= Parameters )
-                    // InternalPipelineParser.g:5568:4: enumLiteral_18= Parameters
+                    // InternalPipelineParser.g:5575:3: (enumLiteral_18= Parameters )
+                    // InternalPipelineParser.g:5576:4: enumLiteral_18= Parameters
                     {
                     enumLiteral_18=(Token)match(input,Parameters,FOLLOW_2); 
 
@@ -16479,10 +16503,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 20 :
-                    // InternalPipelineParser.g:5575:3: (enumLiteral_19= Extends )
+                    // InternalPipelineParser.g:5583:3: (enumLiteral_19= Extends )
                     {
-                    // InternalPipelineParser.g:5575:3: (enumLiteral_19= Extends )
-                    // InternalPipelineParser.g:5576:4: enumLiteral_19= Extends
+                    // InternalPipelineParser.g:5583:3: (enumLiteral_19= Extends )
+                    // InternalPipelineParser.g:5584:4: enumLiteral_19= Extends
                     {
                     enumLiteral_19=(Token)match(input,Extends,FOLLOW_2); 
 
@@ -16496,10 +16520,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 21 :
-                    // InternalPipelineParser.g:5583:3: (enumLiteral_20= Include )
+                    // InternalPipelineParser.g:5591:3: (enumLiteral_20= Include )
                     {
-                    // InternalPipelineParser.g:5583:3: (enumLiteral_20= Include )
-                    // InternalPipelineParser.g:5584:4: enumLiteral_20= Include
+                    // InternalPipelineParser.g:5591:3: (enumLiteral_20= Include )
+                    // InternalPipelineParser.g:5592:4: enumLiteral_20= Include
                     {
                     enumLiteral_20=(Token)match(input,Include,FOLLOW_2); 
 
@@ -16513,10 +16537,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 22 :
-                    // InternalPipelineParser.g:5591:3: (enumLiteral_21= Types )
+                    // InternalPipelineParser.g:5599:3: (enumLiteral_21= Types )
                     {
-                    // InternalPipelineParser.g:5591:3: (enumLiteral_21= Types )
-                    // InternalPipelineParser.g:5592:4: enumLiteral_21= Types
+                    // InternalPipelineParser.g:5599:3: (enumLiteral_21= Types )
+                    // InternalPipelineParser.g:5600:4: enumLiteral_21= Types
                     {
                     enumLiteral_21=(Token)match(input,Types,FOLLOW_2); 
 
@@ -16530,10 +16554,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 23 :
-                    // InternalPipelineParser.g:5599:3: (enumLiteral_22= Batch )
+                    // InternalPipelineParser.g:5607:3: (enumLiteral_22= Batch )
                     {
-                    // InternalPipelineParser.g:5599:3: (enumLiteral_22= Batch )
-                    // InternalPipelineParser.g:5600:4: enumLiteral_22= Batch
+                    // InternalPipelineParser.g:5607:3: (enumLiteral_22= Batch )
+                    // InternalPipelineParser.g:5608:4: enumLiteral_22= Batch
                     {
                     enumLiteral_22=(Token)match(input,Batch,FOLLOW_2); 
 
@@ -16547,10 +16571,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 24 :
-                    // InternalPipelineParser.g:5607:3: (enumLiteral_23= Status )
+                    // InternalPipelineParser.g:5615:3: (enumLiteral_23= Status )
                     {
-                    // InternalPipelineParser.g:5607:3: (enumLiteral_23= Status )
-                    // InternalPipelineParser.g:5608:4: enumLiteral_23= Status
+                    // InternalPipelineParser.g:5615:3: (enumLiteral_23= Status )
+                    // InternalPipelineParser.g:5616:4: enumLiteral_23= Status
                     {
                     enumLiteral_23=(Token)match(input,Status,FOLLOW_2); 
 
@@ -16564,10 +16588,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 25 :
-                    // InternalPipelineParser.g:5615:3: (enumLiteral_24= AutoCancel )
+                    // InternalPipelineParser.g:5623:3: (enumLiteral_24= AutoCancel )
                     {
-                    // InternalPipelineParser.g:5615:3: (enumLiteral_24= AutoCancel )
-                    // InternalPipelineParser.g:5616:4: enumLiteral_24= AutoCancel
+                    // InternalPipelineParser.g:5623:3: (enumLiteral_24= AutoCancel )
+                    // InternalPipelineParser.g:5624:4: enumLiteral_24= AutoCancel
                     {
                     enumLiteral_24=(Token)match(input,AutoCancel,FOLLOW_2); 
 
@@ -16581,10 +16605,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 26 :
-                    // InternalPipelineParser.g:5623:3: (enumLiteral_25= Workflows )
+                    // InternalPipelineParser.g:5631:3: (enumLiteral_25= Workflows )
                     {
-                    // InternalPipelineParser.g:5623:3: (enumLiteral_25= Workflows )
-                    // InternalPipelineParser.g:5624:4: enumLiteral_25= Workflows
+                    // InternalPipelineParser.g:5631:3: (enumLiteral_25= Workflows )
+                    // InternalPipelineParser.g:5632:4: enumLiteral_25= Workflows
                     {
                     enumLiteral_25=(Token)match(input,Workflows,FOLLOW_2); 
 
@@ -16598,10 +16622,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 27 :
-                    // InternalPipelineParser.g:5631:3: (enumLiteral_26= Drafts )
+                    // InternalPipelineParser.g:5639:3: (enumLiteral_26= Drafts )
                     {
-                    // InternalPipelineParser.g:5631:3: (enumLiteral_26= Drafts )
-                    // InternalPipelineParser.g:5632:4: enumLiteral_26= Drafts
+                    // InternalPipelineParser.g:5639:3: (enumLiteral_26= Drafts )
+                    // InternalPipelineParser.g:5640:4: enumLiteral_26= Drafts
                     {
                     enumLiteral_26=(Token)match(input,Drafts,FOLLOW_2); 
 
@@ -16615,10 +16639,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 28 :
-                    // InternalPipelineParser.g:5639:3: (enumLiteral_27= Branches )
+                    // InternalPipelineParser.g:5647:3: (enumLiteral_27= Branches )
                     {
-                    // InternalPipelineParser.g:5639:3: (enumLiteral_27= Branches )
-                    // InternalPipelineParser.g:5640:4: enumLiteral_27= Branches
+                    // InternalPipelineParser.g:5647:3: (enumLiteral_27= Branches )
+                    // InternalPipelineParser.g:5648:4: enumLiteral_27= Branches
                     {
                     enumLiteral_27=(Token)match(input,Branches,FOLLOW_2); 
 
@@ -16632,10 +16656,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 29 :
-                    // InternalPipelineParser.g:5647:3: (enumLiteral_28= BranchesIgnore )
+                    // InternalPipelineParser.g:5655:3: (enumLiteral_28= BranchesIgnore )
                     {
-                    // InternalPipelineParser.g:5647:3: (enumLiteral_28= BranchesIgnore )
-                    // InternalPipelineParser.g:5648:4: enumLiteral_28= BranchesIgnore
+                    // InternalPipelineParser.g:5655:3: (enumLiteral_28= BranchesIgnore )
+                    // InternalPipelineParser.g:5656:4: enumLiteral_28= BranchesIgnore
                     {
                     enumLiteral_28=(Token)match(input,BranchesIgnore,FOLLOW_2); 
 
@@ -16649,10 +16673,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 30 :
-                    // InternalPipelineParser.g:5655:3: (enumLiteral_29= Paths )
+                    // InternalPipelineParser.g:5663:3: (enumLiteral_29= Paths )
                     {
-                    // InternalPipelineParser.g:5655:3: (enumLiteral_29= Paths )
-                    // InternalPipelineParser.g:5656:4: enumLiteral_29= Paths
+                    // InternalPipelineParser.g:5663:3: (enumLiteral_29= Paths )
+                    // InternalPipelineParser.g:5664:4: enumLiteral_29= Paths
                     {
                     enumLiteral_29=(Token)match(input,Paths,FOLLOW_2); 
 
@@ -16666,10 +16690,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 31 :
-                    // InternalPipelineParser.g:5663:3: (enumLiteral_30= PathsIgnore )
+                    // InternalPipelineParser.g:5671:3: (enumLiteral_30= PathsIgnore )
                     {
-                    // InternalPipelineParser.g:5663:3: (enumLiteral_30= PathsIgnore )
-                    // InternalPipelineParser.g:5664:4: enumLiteral_30= PathsIgnore
+                    // InternalPipelineParser.g:5671:3: (enumLiteral_30= PathsIgnore )
+                    // InternalPipelineParser.g:5672:4: enumLiteral_30= PathsIgnore
                     {
                     enumLiteral_30=(Token)match(input,PathsIgnore,FOLLOW_2); 
 
@@ -16683,10 +16707,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 32 :
-                    // InternalPipelineParser.g:5671:3: (enumLiteral_31= Tags )
+                    // InternalPipelineParser.g:5679:3: (enumLiteral_31= Tags )
                     {
-                    // InternalPipelineParser.g:5671:3: (enumLiteral_31= Tags )
-                    // InternalPipelineParser.g:5672:4: enumLiteral_31= Tags
+                    // InternalPipelineParser.g:5679:3: (enumLiteral_31= Tags )
+                    // InternalPipelineParser.g:5680:4: enumLiteral_31= Tags
                     {
                     enumLiteral_31=(Token)match(input,Tags,FOLLOW_2); 
 
@@ -16700,10 +16724,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 33 :
-                    // InternalPipelineParser.g:5679:3: (enumLiteral_32= TagsIgnore )
+                    // InternalPipelineParser.g:5687:3: (enumLiteral_32= TagsIgnore )
                     {
-                    // InternalPipelineParser.g:5679:3: (enumLiteral_32= TagsIgnore )
-                    // InternalPipelineParser.g:5680:4: enumLiteral_32= TagsIgnore
+                    // InternalPipelineParser.g:5687:3: (enumLiteral_32= TagsIgnore )
+                    // InternalPipelineParser.g:5688:4: enumLiteral_32= TagsIgnore
                     {
                     enumLiteral_32=(Token)match(input,TagsIgnore,FOLLOW_2); 
 
@@ -16717,10 +16741,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 34 :
-                    // InternalPipelineParser.g:5687:3: (enumLiteral_33= Schedules )
+                    // InternalPipelineParser.g:5695:3: (enumLiteral_33= Schedules )
                     {
-                    // InternalPipelineParser.g:5687:3: (enumLiteral_33= Schedules )
-                    // InternalPipelineParser.g:5688:4: enumLiteral_33= Schedules
+                    // InternalPipelineParser.g:5695:3: (enumLiteral_33= Schedules )
+                    // InternalPipelineParser.g:5696:4: enumLiteral_33= Schedules
                     {
                     enumLiteral_33=(Token)match(input,Schedules,FOLLOW_2); 
 
@@ -16734,10 +16758,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 35 :
-                    // InternalPipelineParser.g:5695:3: (enumLiteral_34= Schedule )
+                    // InternalPipelineParser.g:5703:3: (enumLiteral_34= Schedule )
                     {
-                    // InternalPipelineParser.g:5695:3: (enumLiteral_34= Schedule )
-                    // InternalPipelineParser.g:5696:4: enumLiteral_34= Schedule
+                    // InternalPipelineParser.g:5703:3: (enumLiteral_34= Schedule )
+                    // InternalPipelineParser.g:5704:4: enumLiteral_34= Schedule
                     {
                     enumLiteral_34=(Token)match(input,Schedule,FOLLOW_2); 
 
@@ -16751,10 +16775,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 36 :
-                    // InternalPipelineParser.g:5703:3: (enumLiteral_35= Workflow_call )
+                    // InternalPipelineParser.g:5711:3: (enumLiteral_35= Workflow_call )
                     {
-                    // InternalPipelineParser.g:5703:3: (enumLiteral_35= Workflow_call )
-                    // InternalPipelineParser.g:5704:4: enumLiteral_35= Workflow_call
+                    // InternalPipelineParser.g:5711:3: (enumLiteral_35= Workflow_call )
+                    // InternalPipelineParser.g:5712:4: enumLiteral_35= Workflow_call
                     {
                     enumLiteral_35=(Token)match(input,Workflow_call,FOLLOW_2); 
 
@@ -16768,10 +16792,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 37 :
-                    // InternalPipelineParser.g:5711:3: (enumLiteral_36= Workflow_dispatch )
+                    // InternalPipelineParser.g:5719:3: (enumLiteral_36= Workflow_dispatch )
                     {
-                    // InternalPipelineParser.g:5711:3: (enumLiteral_36= Workflow_dispatch )
-                    // InternalPipelineParser.g:5712:4: enumLiteral_36= Workflow_dispatch
+                    // InternalPipelineParser.g:5719:3: (enumLiteral_36= Workflow_dispatch )
+                    // InternalPipelineParser.g:5720:4: enumLiteral_36= Workflow_dispatch
                     {
                     enumLiteral_36=(Token)match(input,Workflow_dispatch,FOLLOW_2); 
 
@@ -16785,10 +16809,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 38 :
-                    // InternalPipelineParser.g:5719:3: (enumLiteral_37= Cron )
+                    // InternalPipelineParser.g:5727:3: (enumLiteral_37= Cron )
                     {
-                    // InternalPipelineParser.g:5719:3: (enumLiteral_37= Cron )
-                    // InternalPipelineParser.g:5720:4: enumLiteral_37= Cron
+                    // InternalPipelineParser.g:5727:3: (enumLiteral_37= Cron )
+                    // InternalPipelineParser.g:5728:4: enumLiteral_37= Cron
                     {
                     enumLiteral_37=(Token)match(input,Cron,FOLLOW_2); 
 
@@ -16802,10 +16826,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 39 :
-                    // InternalPipelineParser.g:5727:3: (enumLiteral_38= DisplayName )
+                    // InternalPipelineParser.g:5735:3: (enumLiteral_38= DisplayName )
                     {
-                    // InternalPipelineParser.g:5727:3: (enumLiteral_38= DisplayName )
-                    // InternalPipelineParser.g:5728:4: enumLiteral_38= DisplayName
+                    // InternalPipelineParser.g:5735:3: (enumLiteral_38= DisplayName )
+                    // InternalPipelineParser.g:5736:4: enumLiteral_38= DisplayName
                     {
                     enumLiteral_38=(Token)match(input,DisplayName,FOLLOW_2); 
 
@@ -16819,10 +16843,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 40 :
-                    // InternalPipelineParser.g:5735:3: (enumLiteral_39= Always )
+                    // InternalPipelineParser.g:5743:3: (enumLiteral_39= Always )
                     {
-                    // InternalPipelineParser.g:5735:3: (enumLiteral_39= Always )
-                    // InternalPipelineParser.g:5736:4: enumLiteral_39= Always
+                    // InternalPipelineParser.g:5743:3: (enumLiteral_39= Always )
+                    // InternalPipelineParser.g:5744:4: enumLiteral_39= Always
                     {
                     enumLiteral_39=(Token)match(input,Always,FOLLOW_2); 
 
@@ -16836,10 +16860,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 41 :
-                    // InternalPipelineParser.g:5743:3: (enumLiteral_40= Stage )
+                    // InternalPipelineParser.g:5751:3: (enumLiteral_40= Stage )
                     {
-                    // InternalPipelineParser.g:5743:3: (enumLiteral_40= Stage )
-                    // InternalPipelineParser.g:5744:4: enumLiteral_40= Stage
+                    // InternalPipelineParser.g:5751:3: (enumLiteral_40= Stage )
+                    // InternalPipelineParser.g:5752:4: enumLiteral_40= Stage
                     {
                     enumLiteral_40=(Token)match(input,Stage,FOLLOW_2); 
 
@@ -16853,10 +16877,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 42 :
-                    // InternalPipelineParser.g:5751:3: (enumLiteral_41= Condition )
+                    // InternalPipelineParser.g:5759:3: (enumLiteral_41= Condition )
                     {
-                    // InternalPipelineParser.g:5751:3: (enumLiteral_41= Condition )
-                    // InternalPipelineParser.g:5752:4: enumLiteral_41= Condition
+                    // InternalPipelineParser.g:5759:3: (enumLiteral_41= Condition )
+                    // InternalPipelineParser.g:5760:4: enumLiteral_41= Condition
                     {
                     enumLiteral_41=(Token)match(input,Condition,FOLLOW_2); 
 
@@ -16870,10 +16894,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 43 :
-                    // InternalPipelineParser.g:5759:3: (enumLiteral_42= IsSkippable )
+                    // InternalPipelineParser.g:5767:3: (enumLiteral_42= IsSkippable )
                     {
-                    // InternalPipelineParser.g:5759:3: (enumLiteral_42= IsSkippable )
-                    // InternalPipelineParser.g:5760:4: enumLiteral_42= IsSkippable
+                    // InternalPipelineParser.g:5767:3: (enumLiteral_42= IsSkippable )
+                    // InternalPipelineParser.g:5768:4: enumLiteral_42= IsSkippable
                     {
                     enumLiteral_42=(Token)match(input,IsSkippable,FOLLOW_2); 
 
@@ -16887,10 +16911,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 44 :
-                    // InternalPipelineParser.g:5767:3: (enumLiteral_43= DependsOn )
+                    // InternalPipelineParser.g:5775:3: (enumLiteral_43= DependsOn )
                     {
-                    // InternalPipelineParser.g:5767:3: (enumLiteral_43= DependsOn )
-                    // InternalPipelineParser.g:5768:4: enumLiteral_43= DependsOn
+                    // InternalPipelineParser.g:5775:3: (enumLiteral_43= DependsOn )
+                    // InternalPipelineParser.g:5776:4: enumLiteral_43= DependsOn
                     {
                     enumLiteral_43=(Token)match(input,DependsOn,FOLLOW_2); 
 
@@ -16904,10 +16928,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 45 :
-                    // InternalPipelineParser.g:5775:3: (enumLiteral_44= Job )
+                    // InternalPipelineParser.g:5783:3: (enumLiteral_44= Job )
                     {
-                    // InternalPipelineParser.g:5775:3: (enumLiteral_44= Job )
-                    // InternalPipelineParser.g:5776:4: enumLiteral_44= Job
+                    // InternalPipelineParser.g:5783:3: (enumLiteral_44= Job )
+                    // InternalPipelineParser.g:5784:4: enumLiteral_44= Job
                     {
                     enumLiteral_44=(Token)match(input,Job,FOLLOW_2); 
 
@@ -16921,10 +16945,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 46 :
-                    // InternalPipelineParser.g:5783:3: (enumLiteral_45= Deployment )
+                    // InternalPipelineParser.g:5791:3: (enumLiteral_45= Deployment )
                     {
-                    // InternalPipelineParser.g:5783:3: (enumLiteral_45= Deployment )
-                    // InternalPipelineParser.g:5784:4: enumLiteral_45= Deployment
+                    // InternalPipelineParser.g:5791:3: (enumLiteral_45= Deployment )
+                    // InternalPipelineParser.g:5792:4: enumLiteral_45= Deployment
                     {
                     enumLiteral_45=(Token)match(input,Deployment,FOLLOW_2); 
 
@@ -16938,10 +16962,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 47 :
-                    // InternalPipelineParser.g:5791:3: (enumLiteral_46= Script )
+                    // InternalPipelineParser.g:5799:3: (enumLiteral_46= Script )
                     {
-                    // InternalPipelineParser.g:5791:3: (enumLiteral_46= Script )
-                    // InternalPipelineParser.g:5792:4: enumLiteral_46= Script
+                    // InternalPipelineParser.g:5799:3: (enumLiteral_46= Script )
+                    // InternalPipelineParser.g:5800:4: enumLiteral_46= Script
                     {
                     enumLiteral_46=(Token)match(input,Script,FOLLOW_2); 
 
@@ -16955,10 +16979,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 48 :
-                    // InternalPipelineParser.g:5799:3: (enumLiteral_47= Bash )
+                    // InternalPipelineParser.g:5807:3: (enumLiteral_47= Bash )
                     {
-                    // InternalPipelineParser.g:5799:3: (enumLiteral_47= Bash )
-                    // InternalPipelineParser.g:5800:4: enumLiteral_47= Bash
+                    // InternalPipelineParser.g:5807:3: (enumLiteral_47= Bash )
+                    // InternalPipelineParser.g:5808:4: enumLiteral_47= Bash
                     {
                     enumLiteral_47=(Token)match(input,Bash,FOLLOW_2); 
 
@@ -16972,10 +16996,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 49 :
-                    // InternalPipelineParser.g:5807:3: (enumLiteral_48= Pwsh )
+                    // InternalPipelineParser.g:5815:3: (enumLiteral_48= Pwsh )
                     {
-                    // InternalPipelineParser.g:5807:3: (enumLiteral_48= Pwsh )
-                    // InternalPipelineParser.g:5808:4: enumLiteral_48= Pwsh
+                    // InternalPipelineParser.g:5815:3: (enumLiteral_48= Pwsh )
+                    // InternalPipelineParser.g:5816:4: enumLiteral_48= Pwsh
                     {
                     enumLiteral_48=(Token)match(input,Pwsh,FOLLOW_2); 
 
@@ -16989,10 +17013,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 50 :
-                    // InternalPipelineParser.g:5815:3: (enumLiteral_49= Powershell )
+                    // InternalPipelineParser.g:5823:3: (enumLiteral_49= Powershell )
                     {
-                    // InternalPipelineParser.g:5815:3: (enumLiteral_49= Powershell )
-                    // InternalPipelineParser.g:5816:4: enumLiteral_49= Powershell
+                    // InternalPipelineParser.g:5823:3: (enumLiteral_49= Powershell )
+                    // InternalPipelineParser.g:5824:4: enumLiteral_49= Powershell
                     {
                     enumLiteral_49=(Token)match(input,Powershell,FOLLOW_2); 
 
@@ -17006,10 +17030,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 51 :
-                    // InternalPipelineParser.g:5823:3: (enumLiteral_50= Checkout )
+                    // InternalPipelineParser.g:5831:3: (enumLiteral_50= Checkout )
                     {
-                    // InternalPipelineParser.g:5823:3: (enumLiteral_50= Checkout )
-                    // InternalPipelineParser.g:5824:4: enumLiteral_50= Checkout
+                    // InternalPipelineParser.g:5831:3: (enumLiteral_50= Checkout )
+                    // InternalPipelineParser.g:5832:4: enumLiteral_50= Checkout
                     {
                     enumLiteral_50=(Token)match(input,Checkout,FOLLOW_2); 
 
@@ -17023,10 +17047,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 52 :
-                    // InternalPipelineParser.g:5831:3: (enumLiteral_51= Download )
+                    // InternalPipelineParser.g:5839:3: (enumLiteral_51= Download )
                     {
-                    // InternalPipelineParser.g:5831:3: (enumLiteral_51= Download )
-                    // InternalPipelineParser.g:5832:4: enumLiteral_51= Download
+                    // InternalPipelineParser.g:5839:3: (enumLiteral_51= Download )
+                    // InternalPipelineParser.g:5840:4: enumLiteral_51= Download
                     {
                     enumLiteral_51=(Token)match(input,Download,FOLLOW_2); 
 
@@ -17040,10 +17064,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 53 :
-                    // InternalPipelineParser.g:5839:3: (enumLiteral_52= GetPackage )
+                    // InternalPipelineParser.g:5847:3: (enumLiteral_52= GetPackage )
                     {
-                    // InternalPipelineParser.g:5839:3: (enumLiteral_52= GetPackage )
-                    // InternalPipelineParser.g:5840:4: enumLiteral_52= GetPackage
+                    // InternalPipelineParser.g:5847:3: (enumLiteral_52= GetPackage )
+                    // InternalPipelineParser.g:5848:4: enumLiteral_52= GetPackage
                     {
                     enumLiteral_52=(Token)match(input,GetPackage,FOLLOW_2); 
 
@@ -17057,10 +17081,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 54 :
-                    // InternalPipelineParser.g:5847:3: (enumLiteral_53= Publish )
+                    // InternalPipelineParser.g:5855:3: (enumLiteral_53= Publish )
                     {
-                    // InternalPipelineParser.g:5847:3: (enumLiteral_53= Publish )
-                    // InternalPipelineParser.g:5848:4: enumLiteral_53= Publish
+                    // InternalPipelineParser.g:5855:3: (enumLiteral_53= Publish )
+                    // InternalPipelineParser.g:5856:4: enumLiteral_53= Publish
                     {
                     enumLiteral_53=(Token)match(input,Publish,FOLLOW_2); 
 
@@ -17074,10 +17098,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 55 :
-                    // InternalPipelineParser.g:5855:3: (enumLiteral_54= Task )
+                    // InternalPipelineParser.g:5863:3: (enumLiteral_54= Task )
                     {
-                    // InternalPipelineParser.g:5855:3: (enumLiteral_54= Task )
-                    // InternalPipelineParser.g:5856:4: enumLiteral_54= Task
+                    // InternalPipelineParser.g:5863:3: (enumLiteral_54= Task )
+                    // InternalPipelineParser.g:5864:4: enumLiteral_54= Task
                     {
                     enumLiteral_54=(Token)match(input,Task,FOLLOW_2); 
 
@@ -17091,10 +17115,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 56 :
-                    // InternalPipelineParser.g:5863:3: (enumLiteral_55= Value )
+                    // InternalPipelineParser.g:5871:3: (enumLiteral_55= Value )
                     {
-                    // InternalPipelineParser.g:5863:3: (enumLiteral_55= Value )
-                    // InternalPipelineParser.g:5864:4: enumLiteral_55= Value
+                    // InternalPipelineParser.g:5871:3: (enumLiteral_55= Value )
+                    // InternalPipelineParser.g:5872:4: enumLiteral_55= Value
                     {
                     enumLiteral_55=(Token)match(input,Value,FOLLOW_2); 
 
@@ -17108,10 +17132,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 57 :
-                    // InternalPipelineParser.g:5871:3: (enumLiteral_56= Readonly )
+                    // InternalPipelineParser.g:5879:3: (enumLiteral_56= Readonly )
                     {
-                    // InternalPipelineParser.g:5871:3: (enumLiteral_56= Readonly )
-                    // InternalPipelineParser.g:5872:4: enumLiteral_56= Readonly
+                    // InternalPipelineParser.g:5879:3: (enumLiteral_56= Readonly )
+                    // InternalPipelineParser.g:5880:4: enumLiteral_56= Readonly
                     {
                     enumLiteral_56=(Token)match(input,Readonly,FOLLOW_2); 
 
@@ -17125,10 +17149,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 58 :
-                    // InternalPipelineParser.g:5879:3: (enumLiteral_57= Builds )
+                    // InternalPipelineParser.g:5887:3: (enumLiteral_57= Builds )
                     {
-                    // InternalPipelineParser.g:5879:3: (enumLiteral_57= Builds )
-                    // InternalPipelineParser.g:5880:4: enumLiteral_57= Builds
+                    // InternalPipelineParser.g:5887:3: (enumLiteral_57= Builds )
+                    // InternalPipelineParser.g:5888:4: enumLiteral_57= Builds
                     {
                     enumLiteral_57=(Token)match(input,Builds,FOLLOW_2); 
 
@@ -17142,10 +17166,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 59 :
-                    // InternalPipelineParser.g:5887:3: (enumLiteral_58= Containers )
+                    // InternalPipelineParser.g:5895:3: (enumLiteral_58= Containers )
                     {
-                    // InternalPipelineParser.g:5887:3: (enumLiteral_58= Containers )
-                    // InternalPipelineParser.g:5888:4: enumLiteral_58= Containers
+                    // InternalPipelineParser.g:5895:3: (enumLiteral_58= Containers )
+                    // InternalPipelineParser.g:5896:4: enumLiteral_58= Containers
                     {
                     enumLiteral_58=(Token)match(input,Containers,FOLLOW_2); 
 
@@ -17159,10 +17183,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 60 :
-                    // InternalPipelineParser.g:5895:3: (enumLiteral_59= Pipelines )
+                    // InternalPipelineParser.g:5903:3: (enumLiteral_59= Pipelines )
                     {
-                    // InternalPipelineParser.g:5895:3: (enumLiteral_59= Pipelines )
-                    // InternalPipelineParser.g:5896:4: enumLiteral_59= Pipelines
+                    // InternalPipelineParser.g:5903:3: (enumLiteral_59= Pipelines )
+                    // InternalPipelineParser.g:5904:4: enumLiteral_59= Pipelines
                     {
                     enumLiteral_59=(Token)match(input,Pipelines,FOLLOW_2); 
 
@@ -17176,10 +17200,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 61 :
-                    // InternalPipelineParser.g:5903:3: (enumLiteral_60= Repositories )
+                    // InternalPipelineParser.g:5911:3: (enumLiteral_60= Repositories )
                     {
-                    // InternalPipelineParser.g:5903:3: (enumLiteral_60= Repositories )
-                    // InternalPipelineParser.g:5904:4: enumLiteral_60= Repositories
+                    // InternalPipelineParser.g:5911:3: (enumLiteral_60= Repositories )
+                    // InternalPipelineParser.g:5912:4: enumLiteral_60= Repositories
                     {
                     enumLiteral_60=(Token)match(input,Repositories,FOLLOW_2); 
 
@@ -17193,10 +17217,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 62 :
-                    // InternalPipelineParser.g:5911:3: (enumLiteral_61= Webhooks )
+                    // InternalPipelineParser.g:5919:3: (enumLiteral_61= Webhooks )
                     {
-                    // InternalPipelineParser.g:5911:3: (enumLiteral_61= Webhooks )
-                    // InternalPipelineParser.g:5912:4: enumLiteral_61= Webhooks
+                    // InternalPipelineParser.g:5919:3: (enumLiteral_61= Webhooks )
+                    // InternalPipelineParser.g:5920:4: enumLiteral_61= Webhooks
                     {
                     enumLiteral_61=(Token)match(input,Webhooks,FOLLOW_2); 
 
@@ -17210,10 +17234,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 63 :
-                    // InternalPipelineParser.g:5919:3: (enumLiteral_62= Packages )
+                    // InternalPipelineParser.g:5927:3: (enumLiteral_62= Packages )
                     {
-                    // InternalPipelineParser.g:5919:3: (enumLiteral_62= Packages )
-                    // InternalPipelineParser.g:5920:4: enumLiteral_62= Packages
+                    // InternalPipelineParser.g:5927:3: (enumLiteral_62= Packages )
+                    // InternalPipelineParser.g:5928:4: enumLiteral_62= Packages
                     {
                     enumLiteral_62=(Token)match(input,Packages,FOLLOW_2); 
 
@@ -17227,10 +17251,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 64 :
-                    // InternalPipelineParser.g:5927:3: (enumLiteral_63= Inputs )
+                    // InternalPipelineParser.g:5935:3: (enumLiteral_63= Inputs )
                     {
-                    // InternalPipelineParser.g:5927:3: (enumLiteral_63= Inputs )
-                    // InternalPipelineParser.g:5928:4: enumLiteral_63= Inputs
+                    // InternalPipelineParser.g:5935:3: (enumLiteral_63= Inputs )
+                    // InternalPipelineParser.g:5936:4: enumLiteral_63= Inputs
                     {
                     enumLiteral_63=(Token)match(input,Inputs,FOLLOW_2); 
 
@@ -17244,10 +17268,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 65 :
-                    // InternalPipelineParser.g:5935:3: (enumLiteral_64= Outputs )
+                    // InternalPipelineParser.g:5943:3: (enumLiteral_64= Outputs )
                     {
-                    // InternalPipelineParser.g:5935:3: (enumLiteral_64= Outputs )
-                    // InternalPipelineParser.g:5936:4: enumLiteral_64= Outputs
+                    // InternalPipelineParser.g:5943:3: (enumLiteral_64= Outputs )
+                    // InternalPipelineParser.g:5944:4: enumLiteral_64= Outputs
                     {
                     enumLiteral_64=(Token)match(input,Outputs,FOLLOW_2); 
 
@@ -17261,10 +17285,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 66 :
-                    // InternalPipelineParser.g:5943:3: (enumLiteral_65= Secrets )
+                    // InternalPipelineParser.g:5951:3: (enumLiteral_65= Secrets )
                     {
-                    // InternalPipelineParser.g:5943:3: (enumLiteral_65= Secrets )
-                    // InternalPipelineParser.g:5944:4: enumLiteral_65= Secrets
+                    // InternalPipelineParser.g:5951:3: (enumLiteral_65= Secrets )
+                    // InternalPipelineParser.g:5952:4: enumLiteral_65= Secrets
                     {
                     enumLiteral_65=(Token)match(input,Secrets,FOLLOW_2); 
 
@@ -17278,10 +17302,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 67 :
-                    // InternalPipelineParser.g:5951:3: (enumLiteral_66= Description )
+                    // InternalPipelineParser.g:5959:3: (enumLiteral_66= Description )
                     {
-                    // InternalPipelineParser.g:5951:3: (enumLiteral_66= Description )
-                    // InternalPipelineParser.g:5952:4: enumLiteral_66= Description
+                    // InternalPipelineParser.g:5959:3: (enumLiteral_66= Description )
+                    // InternalPipelineParser.g:5960:4: enumLiteral_66= Description
                     {
                     enumLiteral_66=(Token)match(input,Description,FOLLOW_2); 
 
@@ -17295,10 +17319,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 68 :
-                    // InternalPipelineParser.g:5959:3: (enumLiteral_67= Required )
+                    // InternalPipelineParser.g:5967:3: (enumLiteral_67= Required )
                     {
-                    // InternalPipelineParser.g:5959:3: (enumLiteral_67= Required )
-                    // InternalPipelineParser.g:5960:4: enumLiteral_67= Required
+                    // InternalPipelineParser.g:5967:3: (enumLiteral_67= Required )
+                    // InternalPipelineParser.g:5968:4: enumLiteral_67= Required
                     {
                     enumLiteral_67=(Token)match(input,Required,FOLLOW_2); 
 
@@ -17312,10 +17336,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 69 :
-                    // InternalPipelineParser.g:5967:3: (enumLiteral_68= Default )
+                    // InternalPipelineParser.g:5975:3: (enumLiteral_68= Default )
                     {
-                    // InternalPipelineParser.g:5967:3: (enumLiteral_68= Default )
-                    // InternalPipelineParser.g:5968:4: enumLiteral_68= Default
+                    // InternalPipelineParser.g:5975:3: (enumLiteral_68= Default )
+                    // InternalPipelineParser.g:5976:4: enumLiteral_68= Default
                     {
                     enumLiteral_68=(Token)match(input,Default,FOLLOW_2); 
 
@@ -17329,10 +17353,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 70 :
-                    // InternalPipelineParser.g:5975:3: (enumLiteral_69= Type )
+                    // InternalPipelineParser.g:5983:3: (enumLiteral_69= Type )
                     {
-                    // InternalPipelineParser.g:5975:3: (enumLiteral_69= Type )
-                    // InternalPipelineParser.g:5976:4: enumLiteral_69= Type
+                    // InternalPipelineParser.g:5983:3: (enumLiteral_69= Type )
+                    // InternalPipelineParser.g:5984:4: enumLiteral_69= Type
                     {
                     enumLiteral_69=(Token)match(input,Type,FOLLOW_2); 
 
@@ -17346,10 +17370,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 71 :
-                    // InternalPipelineParser.g:5983:3: (enumLiteral_70= Options )
+                    // InternalPipelineParser.g:5991:3: (enumLiteral_70= Options )
                     {
-                    // InternalPipelineParser.g:5983:3: (enumLiteral_70= Options )
-                    // InternalPipelineParser.g:5984:4: enumLiteral_70= Options
+                    // InternalPipelineParser.g:5991:3: (enumLiteral_70= Options )
+                    // InternalPipelineParser.g:5992:4: enumLiteral_70= Options
                     {
                     enumLiteral_70=(Token)match(input,Options,FOLLOW_2); 
 
@@ -17363,10 +17387,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 72 :
-                    // InternalPipelineParser.g:5991:3: (enumLiteral_71= If )
+                    // InternalPipelineParser.g:5999:3: (enumLiteral_71= If )
                     {
-                    // InternalPipelineParser.g:5991:3: (enumLiteral_71= If )
-                    // InternalPipelineParser.g:5992:4: enumLiteral_71= If
+                    // InternalPipelineParser.g:5999:3: (enumLiteral_71= If )
+                    // InternalPipelineParser.g:6000:4: enumLiteral_71= If
                     {
                     enumLiteral_71=(Token)match(input,If,FOLLOW_2); 
 
@@ -17380,10 +17404,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 73 :
-                    // InternalPipelineParser.g:5999:3: (enumLiteral_72= RunsOn )
+                    // InternalPipelineParser.g:6007:3: (enumLiteral_72= RunsOn )
                     {
-                    // InternalPipelineParser.g:5999:3: (enumLiteral_72= RunsOn )
-                    // InternalPipelineParser.g:6000:4: enumLiteral_72= RunsOn
+                    // InternalPipelineParser.g:6007:3: (enumLiteral_72= RunsOn )
+                    // InternalPipelineParser.g:6008:4: enumLiteral_72= RunsOn
                     {
                     enumLiteral_72=(Token)match(input,RunsOn,FOLLOW_2); 
 
@@ -17397,10 +17421,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 74 :
-                    // InternalPipelineParser.g:6007:3: (enumLiteral_73= Strategy )
+                    // InternalPipelineParser.g:6015:3: (enumLiteral_73= Strategy )
                     {
-                    // InternalPipelineParser.g:6007:3: (enumLiteral_73= Strategy )
-                    // InternalPipelineParser.g:6008:4: enumLiteral_73= Strategy
+                    // InternalPipelineParser.g:6015:3: (enumLiteral_73= Strategy )
+                    // InternalPipelineParser.g:6016:4: enumLiteral_73= Strategy
                     {
                     enumLiteral_73=(Token)match(input,Strategy,FOLLOW_2); 
 
@@ -17414,10 +17438,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 75 :
-                    // InternalPipelineParser.g:6015:3: (enumLiteral_74= Matrix )
+                    // InternalPipelineParser.g:6023:3: (enumLiteral_74= Matrix )
                     {
-                    // InternalPipelineParser.g:6015:3: (enumLiteral_74= Matrix )
-                    // InternalPipelineParser.g:6016:4: enumLiteral_74= Matrix
+                    // InternalPipelineParser.g:6023:3: (enumLiteral_74= Matrix )
+                    // InternalPipelineParser.g:6024:4: enumLiteral_74= Matrix
                     {
                     enumLiteral_74=(Token)match(input,Matrix,FOLLOW_2); 
 
@@ -17431,10 +17455,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 76 :
-                    // InternalPipelineParser.g:6023:3: (enumLiteral_75= Container )
+                    // InternalPipelineParser.g:6031:3: (enumLiteral_75= Container )
                     {
-                    // InternalPipelineParser.g:6023:3: (enumLiteral_75= Container )
-                    // InternalPipelineParser.g:6024:4: enumLiteral_75= Container
+                    // InternalPipelineParser.g:6031:3: (enumLiteral_75= Container )
+                    // InternalPipelineParser.g:6032:4: enumLiteral_75= Container
                     {
                     enumLiteral_75=(Token)match(input,Container,FOLLOW_2); 
 
@@ -17448,10 +17472,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 77 :
-                    // InternalPipelineParser.g:6031:3: (enumLiteral_76= Services )
+                    // InternalPipelineParser.g:6039:3: (enumLiteral_76= Services )
                     {
-                    // InternalPipelineParser.g:6031:3: (enumLiteral_76= Services )
-                    // InternalPipelineParser.g:6032:4: enumLiteral_76= Services
+                    // InternalPipelineParser.g:6039:3: (enumLiteral_76= Services )
+                    // InternalPipelineParser.g:6040:4: enumLiteral_76= Services
                     {
                     enumLiteral_76=(Token)match(input,Services,FOLLOW_2); 
 
@@ -17465,10 +17489,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 78 :
-                    // InternalPipelineParser.g:6039:3: (enumLiteral_77= Steps )
+                    // InternalPipelineParser.g:6047:3: (enumLiteral_77= Steps )
                     {
-                    // InternalPipelineParser.g:6039:3: (enumLiteral_77= Steps )
-                    // InternalPipelineParser.g:6040:4: enumLiteral_77= Steps
+                    // InternalPipelineParser.g:6047:3: (enumLiteral_77= Steps )
+                    // InternalPipelineParser.g:6048:4: enumLiteral_77= Steps
                     {
                     enumLiteral_77=(Token)match(input,Steps,FOLLOW_2); 
 
@@ -17482,10 +17506,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 79 :
-                    // InternalPipelineParser.g:6047:3: (enumLiteral_78= Uses )
+                    // InternalPipelineParser.g:6055:3: (enumLiteral_78= Uses )
                     {
-                    // InternalPipelineParser.g:6047:3: (enumLiteral_78= Uses )
-                    // InternalPipelineParser.g:6048:4: enumLiteral_78= Uses
+                    // InternalPipelineParser.g:6055:3: (enumLiteral_78= Uses )
+                    // InternalPipelineParser.g:6056:4: enumLiteral_78= Uses
                     {
                     enumLiteral_78=(Token)match(input,Uses,FOLLOW_2); 
 
@@ -17499,10 +17523,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 80 :
-                    // InternalPipelineParser.g:6055:3: (enumLiteral_79= With )
+                    // InternalPipelineParser.g:6063:3: (enumLiteral_79= With )
                     {
-                    // InternalPipelineParser.g:6055:3: (enumLiteral_79= With )
-                    // InternalPipelineParser.g:6056:4: enumLiteral_79= With
+                    // InternalPipelineParser.g:6063:3: (enumLiteral_79= With )
+                    // InternalPipelineParser.g:6064:4: enumLiteral_79= With
                     {
                     enumLiteral_79=(Token)match(input,With,FOLLOW_2); 
 
@@ -17516,10 +17540,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 81 :
-                    // InternalPipelineParser.g:6063:3: (enumLiteral_80= TimeoutMinutes )
+                    // InternalPipelineParser.g:6071:3: (enumLiteral_80= TimeoutMinutes )
                     {
-                    // InternalPipelineParser.g:6063:3: (enumLiteral_80= TimeoutMinutes )
-                    // InternalPipelineParser.g:6064:4: enumLiteral_80= TimeoutMinutes
+                    // InternalPipelineParser.g:6071:3: (enumLiteral_80= TimeoutMinutes )
+                    // InternalPipelineParser.g:6072:4: enumLiteral_80= TimeoutMinutes
                     {
                     enumLiteral_80=(Token)match(input,TimeoutMinutes,FOLLOW_2); 
 
@@ -17533,10 +17557,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 82 :
-                    // InternalPipelineParser.g:6071:3: (enumLiteral_81= ContinueOnError_1 )
+                    // InternalPipelineParser.g:6079:3: (enumLiteral_81= ContinueOnError_1 )
                     {
-                    // InternalPipelineParser.g:6071:3: (enumLiteral_81= ContinueOnError_1 )
-                    // InternalPipelineParser.g:6072:4: enumLiteral_81= ContinueOnError_1
+                    // InternalPipelineParser.g:6079:3: (enumLiteral_81= ContinueOnError_1 )
+                    // InternalPipelineParser.g:6080:4: enumLiteral_81= ContinueOnError_1
                     {
                     enumLiteral_81=(Token)match(input,ContinueOnError_1,FOLLOW_2); 
 
@@ -17550,10 +17574,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 83 :
-                    // InternalPipelineParser.g:6079:3: (enumLiteral_82= Environment )
+                    // InternalPipelineParser.g:6087:3: (enumLiteral_82= Environment )
                     {
-                    // InternalPipelineParser.g:6079:3: (enumLiteral_82= Environment )
-                    // InternalPipelineParser.g:6080:4: enumLiteral_82= Environment
+                    // InternalPipelineParser.g:6087:3: (enumLiteral_82= Environment )
+                    // InternalPipelineParser.g:6088:4: enumLiteral_82= Environment
                     {
                     enumLiteral_82=(Token)match(input,Environment,FOLLOW_2); 
 
@@ -17567,10 +17591,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 84 :
-                    // InternalPipelineParser.g:6087:3: (enumLiteral_83= Id )
+                    // InternalPipelineParser.g:6095:3: (enumLiteral_83= Id )
                     {
-                    // InternalPipelineParser.g:6087:3: (enumLiteral_83= Id )
-                    // InternalPipelineParser.g:6088:4: enumLiteral_83= Id
+                    // InternalPipelineParser.g:6095:3: (enumLiteral_83= Id )
+                    // InternalPipelineParser.g:6096:4: enumLiteral_83= Id
                     {
                     enumLiteral_83=(Token)match(input,Id,FOLLOW_2); 
 
@@ -17584,10 +17608,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 85 :
-                    // InternalPipelineParser.g:6095:3: (enumLiteral_84= Permissions )
+                    // InternalPipelineParser.g:6103:3: (enumLiteral_84= Permissions )
                     {
-                    // InternalPipelineParser.g:6095:3: (enumLiteral_84= Permissions )
-                    // InternalPipelineParser.g:6096:4: enumLiteral_84= Permissions
+                    // InternalPipelineParser.g:6103:3: (enumLiteral_84= Permissions )
+                    // InternalPipelineParser.g:6104:4: enumLiteral_84= Permissions
                     {
                     enumLiteral_84=(Token)match(input,Permissions,FOLLOW_2); 
 
@@ -17601,10 +17625,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 86 :
-                    // InternalPipelineParser.g:6103:3: (enumLiteral_85= Timeouts )
+                    // InternalPipelineParser.g:6111:3: (enumLiteral_85= Timeouts )
                     {
-                    // InternalPipelineParser.g:6103:3: (enumLiteral_85= Timeouts )
-                    // InternalPipelineParser.g:6104:4: enumLiteral_85= Timeouts
+                    // InternalPipelineParser.g:6111:3: (enumLiteral_85= Timeouts )
+                    // InternalPipelineParser.g:6112:4: enumLiteral_85= Timeouts
                     {
                     enumLiteral_85=(Token)match(input,Timeouts,FOLLOW_2); 
 
@@ -17618,10 +17642,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 87 :
-                    // InternalPipelineParser.g:6111:3: (enumLiteral_86= DefaultsRun )
+                    // InternalPipelineParser.g:6119:3: (enumLiteral_86= DefaultsRun )
                     {
-                    // InternalPipelineParser.g:6111:3: (enumLiteral_86= DefaultsRun )
-                    // InternalPipelineParser.g:6112:4: enumLiteral_86= DefaultsRun
+                    // InternalPipelineParser.g:6119:3: (enumLiteral_86= DefaultsRun )
+                    // InternalPipelineParser.g:6120:4: enumLiteral_86= DefaultsRun
                     {
                     enumLiteral_86=(Token)match(input,DefaultsRun,FOLLOW_2); 
 
@@ -17635,10 +17659,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 88 :
-                    // InternalPipelineParser.g:6119:3: (enumLiteral_87= Push )
+                    // InternalPipelineParser.g:6127:3: (enumLiteral_87= Push )
                     {
-                    // InternalPipelineParser.g:6119:3: (enumLiteral_87= Push )
-                    // InternalPipelineParser.g:6120:4: enumLiteral_87= Push
+                    // InternalPipelineParser.g:6127:3: (enumLiteral_87= Push )
+                    // InternalPipelineParser.g:6128:4: enumLiteral_87= Push
                     {
                     enumLiteral_87=(Token)match(input,Push,FOLLOW_2); 
 
@@ -17652,10 +17676,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 89 :
-                    // InternalPipelineParser.g:6127:3: (enumLiteral_88= Pull_request )
+                    // InternalPipelineParser.g:6135:3: (enumLiteral_88= Pull_request )
                     {
-                    // InternalPipelineParser.g:6127:3: (enumLiteral_88= Pull_request )
-                    // InternalPipelineParser.g:6128:4: enumLiteral_88= Pull_request
+                    // InternalPipelineParser.g:6135:3: (enumLiteral_88= Pull_request )
+                    // InternalPipelineParser.g:6136:4: enumLiteral_88= Pull_request
                     {
                     enumLiteral_88=(Token)match(input,Pull_request,FOLLOW_2); 
 
@@ -17669,10 +17693,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 90 :
-                    // InternalPipelineParser.g:6135:3: (enumLiteral_89= Repository_dispatch )
+                    // InternalPipelineParser.g:6143:3: (enumLiteral_89= Repository_dispatch )
                     {
-                    // InternalPipelineParser.g:6135:3: (enumLiteral_89= Repository_dispatch )
-                    // InternalPipelineParser.g:6136:4: enumLiteral_89= Repository_dispatch
+                    // InternalPipelineParser.g:6143:3: (enumLiteral_89= Repository_dispatch )
+                    // InternalPipelineParser.g:6144:4: enumLiteral_89= Repository_dispatch
                     {
                     enumLiteral_89=(Token)match(input,Repository_dispatch,FOLLOW_2); 
 
@@ -17686,10 +17710,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 91 :
-                    // InternalPipelineParser.g:6143:3: (enumLiteral_90= Workflow_run )
+                    // InternalPipelineParser.g:6151:3: (enumLiteral_90= Workflow_run )
                     {
-                    // InternalPipelineParser.g:6143:3: (enumLiteral_90= Workflow_run )
-                    // InternalPipelineParser.g:6144:4: enumLiteral_90= Workflow_run
+                    // InternalPipelineParser.g:6151:3: (enumLiteral_90= Workflow_run )
+                    // InternalPipelineParser.g:6152:4: enumLiteral_90= Workflow_run
                     {
                     enumLiteral_90=(Token)match(input,Workflow_run,FOLLOW_2); 
 
@@ -17703,10 +17727,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 92 :
-                    // InternalPipelineParser.g:6151:3: (enumLiteral_91= Filters )
+                    // InternalPipelineParser.g:6159:3: (enumLiteral_91= Filters )
                     {
-                    // InternalPipelineParser.g:6151:3: (enumLiteral_91= Filters )
-                    // InternalPipelineParser.g:6152:4: enumLiteral_91= Filters
+                    // InternalPipelineParser.g:6159:3: (enumLiteral_91= Filters )
+                    // InternalPipelineParser.g:6160:4: enumLiteral_91= Filters
                     {
                     enumLiteral_91=(Token)match(input,Filters,FOLLOW_2); 
 
@@ -17720,10 +17744,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 93 :
-                    // InternalPipelineParser.g:6159:3: (enumLiteral_92= Exclude )
+                    // InternalPipelineParser.g:6167:3: (enumLiteral_92= Exclude )
                     {
-                    // InternalPipelineParser.g:6159:3: (enumLiteral_92= Exclude )
-                    // InternalPipelineParser.g:6160:4: enumLiteral_92= Exclude
+                    // InternalPipelineParser.g:6167:3: (enumLiteral_92= Exclude )
+                    // InternalPipelineParser.g:6168:4: enumLiteral_92= Exclude
                     {
                     enumLiteral_92=(Token)match(input,Exclude,FOLLOW_2); 
 
@@ -17737,10 +17761,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 94 :
-                    // InternalPipelineParser.g:6167:3: (enumLiteral_93= FailFast )
+                    // InternalPipelineParser.g:6175:3: (enumLiteral_93= FailFast )
                     {
-                    // InternalPipelineParser.g:6167:3: (enumLiteral_93= FailFast )
-                    // InternalPipelineParser.g:6168:4: enumLiteral_93= FailFast
+                    // InternalPipelineParser.g:6175:3: (enumLiteral_93= FailFast )
+                    // InternalPipelineParser.g:6176:4: enumLiteral_93= FailFast
                     {
                     enumLiteral_93=(Token)match(input,FailFast,FOLLOW_2); 
 
@@ -17754,10 +17778,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 95 :
-                    // InternalPipelineParser.g:6175:3: (enumLiteral_94= MaxParallel )
+                    // InternalPipelineParser.g:6183:3: (enumLiteral_94= MaxParallel )
                     {
-                    // InternalPipelineParser.g:6175:3: (enumLiteral_94= MaxParallel )
-                    // InternalPipelineParser.g:6176:4: enumLiteral_94= MaxParallel
+                    // InternalPipelineParser.g:6183:3: (enumLiteral_94= MaxParallel )
+                    // InternalPipelineParser.g:6184:4: enumLiteral_94= MaxParallel
                     {
                     enumLiteral_94=(Token)match(input,MaxParallel,FOLLOW_2); 
 
@@ -17771,10 +17795,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 96 :
-                    // InternalPipelineParser.g:6183:3: (enumLiteral_95= ContainerImage )
+                    // InternalPipelineParser.g:6191:3: (enumLiteral_95= ContainerImage )
                     {
-                    // InternalPipelineParser.g:6183:3: (enumLiteral_95= ContainerImage )
-                    // InternalPipelineParser.g:6184:4: enumLiteral_95= ContainerImage
+                    // InternalPipelineParser.g:6191:3: (enumLiteral_95= ContainerImage )
+                    // InternalPipelineParser.g:6192:4: enumLiteral_95= ContainerImage
                     {
                     enumLiteral_95=(Token)match(input,ContainerImage,FOLLOW_2); 
 
@@ -17788,10 +17812,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 97 :
-                    // InternalPipelineParser.g:6191:3: (enumLiteral_96= Credentials )
+                    // InternalPipelineParser.g:6199:3: (enumLiteral_96= Credentials )
                     {
-                    // InternalPipelineParser.g:6191:3: (enumLiteral_96= Credentials )
-                    // InternalPipelineParser.g:6192:4: enumLiteral_96= Credentials
+                    // InternalPipelineParser.g:6199:3: (enumLiteral_96= Credentials )
+                    // InternalPipelineParser.g:6200:4: enumLiteral_96= Credentials
                     {
                     enumLiteral_96=(Token)match(input,Credentials,FOLLOW_2); 
 
@@ -17805,10 +17829,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 98 :
-                    // InternalPipelineParser.g:6199:3: (enumLiteral_97= Ports )
+                    // InternalPipelineParser.g:6207:3: (enumLiteral_97= Ports )
                     {
-                    // InternalPipelineParser.g:6199:3: (enumLiteral_97= Ports )
-                    // InternalPipelineParser.g:6200:4: enumLiteral_97= Ports
+                    // InternalPipelineParser.g:6207:3: (enumLiteral_97= Ports )
+                    // InternalPipelineParser.g:6208:4: enumLiteral_97= Ports
                     {
                     enumLiteral_97=(Token)match(input,Ports,FOLLOW_2); 
 
@@ -17822,10 +17846,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 99 :
-                    // InternalPipelineParser.g:6207:3: (enumLiteral_98= Inherit )
+                    // InternalPipelineParser.g:6215:3: (enumLiteral_98= Inherit )
                     {
-                    // InternalPipelineParser.g:6207:3: (enumLiteral_98= Inherit )
-                    // InternalPipelineParser.g:6208:4: enumLiteral_98= Inherit
+                    // InternalPipelineParser.g:6215:3: (enumLiteral_98= Inherit )
+                    // InternalPipelineParser.g:6216:4: enumLiteral_98= Inherit
                     {
                     enumLiteral_98=(Token)match(input,Inherit,FOLLOW_2); 
 
@@ -17839,10 +17863,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 100 :
-                    // InternalPipelineParser.g:6215:3: (enumLiteral_99= Trigger )
+                    // InternalPipelineParser.g:6223:3: (enumLiteral_99= Trigger )
                     {
-                    // InternalPipelineParser.g:6215:3: (enumLiteral_99= Trigger )
-                    // InternalPipelineParser.g:6216:4: enumLiteral_99= Trigger
+                    // InternalPipelineParser.g:6223:3: (enumLiteral_99= Trigger )
+                    // InternalPipelineParser.g:6224:4: enumLiteral_99= Trigger
                     {
                     enumLiteral_99=(Token)match(input,Trigger,FOLLOW_2); 
 
@@ -17856,10 +17880,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 101 :
-                    // InternalPipelineParser.g:6223:3: (enumLiteral_100= Template )
+                    // InternalPipelineParser.g:6231:3: (enumLiteral_100= Template )
                     {
-                    // InternalPipelineParser.g:6223:3: (enumLiteral_100= Template )
-                    // InternalPipelineParser.g:6224:4: enumLiteral_100= Template
+                    // InternalPipelineParser.g:6231:3: (enumLiteral_100= Template )
+                    // InternalPipelineParser.g:6232:4: enumLiteral_100= Template
                     {
                     enumLiteral_100=(Token)match(input,Template,FOLLOW_2); 
 
@@ -17873,10 +17897,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 102 :
-                    // InternalPipelineParser.g:6231:3: (enumLiteral_101= Workspace )
+                    // InternalPipelineParser.g:6239:3: (enumLiteral_101= Workspace )
                     {
-                    // InternalPipelineParser.g:6231:3: (enumLiteral_101= Workspace )
-                    // InternalPipelineParser.g:6232:4: enumLiteral_101= Workspace
+                    // InternalPipelineParser.g:6239:3: (enumLiteral_101= Workspace )
+                    // InternalPipelineParser.g:6240:4: enumLiteral_101= Workspace
                     {
                     enumLiteral_101=(Token)match(input,Workspace,FOLLOW_2); 
 
@@ -17890,10 +17914,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 103 :
-                    // InternalPipelineParser.g:6239:3: (enumLiteral_102= Pipeline )
+                    // InternalPipelineParser.g:6247:3: (enumLiteral_102= Pipeline )
                     {
-                    // InternalPipelineParser.g:6239:3: (enumLiteral_102= Pipeline )
-                    // InternalPipelineParser.g:6240:4: enumLiteral_102= Pipeline
+                    // InternalPipelineParser.g:6247:3: (enumLiteral_102= Pipeline )
+                    // InternalPipelineParser.g:6248:4: enumLiteral_102= Pipeline
                     {
                     enumLiteral_102=(Token)match(input,Pipeline,FOLLOW_2); 
 
@@ -17907,10 +17931,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 104 :
-                    // InternalPipelineParser.g:6247:3: (enumLiteral_103= TimeoutInMinutes )
+                    // InternalPipelineParser.g:6255:3: (enumLiteral_103= TimeoutInMinutes )
                     {
-                    // InternalPipelineParser.g:6247:3: (enumLiteral_103= TimeoutInMinutes )
-                    // InternalPipelineParser.g:6248:4: enumLiteral_103= TimeoutInMinutes
+                    // InternalPipelineParser.g:6255:3: (enumLiteral_103= TimeoutInMinutes )
+                    // InternalPipelineParser.g:6256:4: enumLiteral_103= TimeoutInMinutes
                     {
                     enumLiteral_103=(Token)match(input,TimeoutInMinutes,FOLLOW_2); 
 
@@ -17924,10 +17948,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 105 :
-                    // InternalPipelineParser.g:6255:3: (enumLiteral_104= ContinueOnError )
+                    // InternalPipelineParser.g:6263:3: (enumLiteral_104= ContinueOnError )
                     {
-                    // InternalPipelineParser.g:6255:3: (enumLiteral_104= ContinueOnError )
-                    // InternalPipelineParser.g:6256:4: enumLiteral_104= ContinueOnError
+                    // InternalPipelineParser.g:6263:3: (enumLiteral_104= ContinueOnError )
+                    // InternalPipelineParser.g:6264:4: enumLiteral_104= ContinueOnError
                     {
                     enumLiteral_104=(Token)match(input,ContinueOnError,FOLLOW_2); 
 
@@ -17941,10 +17965,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 106 :
-                    // InternalPipelineParser.g:6263:3: (enumLiteral_105= ResourceType )
+                    // InternalPipelineParser.g:6271:3: (enumLiteral_105= ResourceType )
                     {
-                    // InternalPipelineParser.g:6263:3: (enumLiteral_105= ResourceType )
-                    // InternalPipelineParser.g:6264:4: enumLiteral_105= ResourceType
+                    // InternalPipelineParser.g:6271:3: (enumLiteral_105= ResourceType )
+                    // InternalPipelineParser.g:6272:4: enumLiteral_105= ResourceType
                     {
                     enumLiteral_105=(Token)match(input,ResourceType,FOLLOW_2); 
 
@@ -17958,10 +17982,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 107 :
-                    // InternalPipelineParser.g:6271:3: (enumLiteral_106= ResourceName )
+                    // InternalPipelineParser.g:6279:3: (enumLiteral_106= ResourceName )
                     {
-                    // InternalPipelineParser.g:6271:3: (enumLiteral_106= ResourceName )
-                    // InternalPipelineParser.g:6272:4: enumLiteral_106= ResourceName
+                    // InternalPipelineParser.g:6279:3: (enumLiteral_106= ResourceName )
+                    // InternalPipelineParser.g:6280:4: enumLiteral_106= ResourceName
                     {
                     enumLiteral_106=(Token)match(input,ResourceName,FOLLOW_2); 
 
@@ -17975,10 +17999,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 108 :
-                    // InternalPipelineParser.g:6279:3: (enumLiteral_107= Stages )
+                    // InternalPipelineParser.g:6287:3: (enumLiteral_107= Stages )
                     {
-                    // InternalPipelineParser.g:6279:3: (enumLiteral_107= Stages )
-                    // InternalPipelineParser.g:6280:4: enumLiteral_107= Stages
+                    // InternalPipelineParser.g:6287:3: (enumLiteral_107= Stages )
+                    // InternalPipelineParser.g:6288:4: enumLiteral_107= Stages
                     {
                     enumLiteral_107=(Token)match(input,Stages,FOLLOW_2); 
 
@@ -17992,10 +18016,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 109 :
-                    // InternalPipelineParser.g:6287:3: (enumLiteral_108= Only )
+                    // InternalPipelineParser.g:6295:3: (enumLiteral_108= Only )
                     {
-                    // InternalPipelineParser.g:6287:3: (enumLiteral_108= Only )
-                    // InternalPipelineParser.g:6288:4: enumLiteral_108= Only
+                    // InternalPipelineParser.g:6295:3: (enumLiteral_108= Only )
+                    // InternalPipelineParser.g:6296:4: enumLiteral_108= Only
                     {
                     enumLiteral_108=(Token)match(input,Only,FOLLOW_2); 
 
@@ -18009,10 +18033,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 110 :
-                    // InternalPipelineParser.g:6295:3: (enumLiteral_109= Except )
+                    // InternalPipelineParser.g:6303:3: (enumLiteral_109= Except )
                     {
-                    // InternalPipelineParser.g:6295:3: (enumLiteral_109= Except )
-                    // InternalPipelineParser.g:6296:4: enumLiteral_109= Except
+                    // InternalPipelineParser.g:6303:3: (enumLiteral_109= Except )
+                    // InternalPipelineParser.g:6304:4: enumLiteral_109= Except
                     {
                     enumLiteral_109=(Token)match(input,Except,FOLLOW_2); 
 
@@ -18026,10 +18050,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 111 :
-                    // InternalPipelineParser.g:6303:3: (enumLiteral_110= Image )
+                    // InternalPipelineParser.g:6311:3: (enumLiteral_110= Image )
                     {
-                    // InternalPipelineParser.g:6303:3: (enumLiteral_110= Image )
-                    // InternalPipelineParser.g:6304:4: enumLiteral_110= Image
+                    // InternalPipelineParser.g:6311:3: (enumLiteral_110= Image )
+                    // InternalPipelineParser.g:6312:4: enumLiteral_110= Image
                     {
                     enumLiteral_110=(Token)match(input,Image,FOLLOW_2); 
 
@@ -18043,10 +18067,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 112 :
-                    // InternalPipelineParser.g:6311:3: (enumLiteral_111= Cache )
+                    // InternalPipelineParser.g:6319:3: (enumLiteral_111= Cache )
                     {
-                    // InternalPipelineParser.g:6311:3: (enumLiteral_111= Cache )
-                    // InternalPipelineParser.g:6312:4: enumLiteral_111= Cache
+                    // InternalPipelineParser.g:6319:3: (enumLiteral_111= Cache )
+                    // InternalPipelineParser.g:6320:4: enumLiteral_111= Cache
                     {
                     enumLiteral_111=(Token)match(input,Cache,FOLLOW_2); 
 
@@ -18060,10 +18084,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 113 :
-                    // InternalPipelineParser.g:6319:3: (enumLiteral_112= Artifacts )
+                    // InternalPipelineParser.g:6327:3: (enumLiteral_112= Artifacts )
                     {
-                    // InternalPipelineParser.g:6319:3: (enumLiteral_112= Artifacts )
-                    // InternalPipelineParser.g:6320:4: enumLiteral_112= Artifacts
+                    // InternalPipelineParser.g:6327:3: (enumLiteral_112= Artifacts )
+                    // InternalPipelineParser.g:6328:4: enumLiteral_112= Artifacts
                     {
                     enumLiteral_112=(Token)match(input,Artifacts,FOLLOW_2); 
 
@@ -18077,10 +18101,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 114 :
-                    // InternalPipelineParser.g:6327:3: (enumLiteral_113= Retries )
+                    // InternalPipelineParser.g:6335:3: (enumLiteral_113= Retries )
                     {
-                    // InternalPipelineParser.g:6327:3: (enumLiteral_113= Retries )
-                    // InternalPipelineParser.g:6328:4: enumLiteral_113= Retries
+                    // InternalPipelineParser.g:6335:3: (enumLiteral_113= Retries )
+                    // InternalPipelineParser.g:6336:4: enumLiteral_113= Retries
                     {
                     enumLiteral_113=(Token)match(input,Retries,FOLLOW_2); 
 
@@ -18094,10 +18118,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 115 :
-                    // InternalPipelineParser.g:6335:3: (enumLiteral_114= Rules )
+                    // InternalPipelineParser.g:6343:3: (enumLiteral_114= Rules )
                     {
-                    // InternalPipelineParser.g:6335:3: (enumLiteral_114= Rules )
-                    // InternalPipelineParser.g:6336:4: enumLiteral_114= Rules
+                    // InternalPipelineParser.g:6343:3: (enumLiteral_114= Rules )
+                    // InternalPipelineParser.g:6344:4: enumLiteral_114= Rules
                     {
                     enumLiteral_114=(Token)match(input,Rules,FOLLOW_2); 
 
@@ -18111,10 +18135,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 116 :
-                    // InternalPipelineParser.g:6343:3: (enumLiteral_115= Before_script )
+                    // InternalPipelineParser.g:6351:3: (enumLiteral_115= Before_script )
                     {
-                    // InternalPipelineParser.g:6343:3: (enumLiteral_115= Before_script )
-                    // InternalPipelineParser.g:6344:4: enumLiteral_115= Before_script
+                    // InternalPipelineParser.g:6351:3: (enumLiteral_115= Before_script )
+                    // InternalPipelineParser.g:6352:4: enumLiteral_115= Before_script
                     {
                     enumLiteral_115=(Token)match(input,Before_script,FOLLOW_2); 
 
@@ -18128,10 +18152,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 117 :
-                    // InternalPipelineParser.g:6351:3: (enumLiteral_116= After_script )
+                    // InternalPipelineParser.g:6359:3: (enumLiteral_116= After_script )
                     {
-                    // InternalPipelineParser.g:6351:3: (enumLiteral_116= After_script )
-                    // InternalPipelineParser.g:6352:4: enumLiteral_116= After_script
+                    // InternalPipelineParser.g:6359:3: (enumLiteral_116= After_script )
+                    // InternalPipelineParser.g:6360:4: enumLiteral_116= After_script
                     {
                     enumLiteral_116=(Token)match(input,After_script,FOLLOW_2); 
 
@@ -18145,10 +18169,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 118 :
-                    // InternalPipelineParser.g:6359:3: (enumLiteral_117= Timeout )
+                    // InternalPipelineParser.g:6367:3: (enumLiteral_117= Timeout )
                     {
-                    // InternalPipelineParser.g:6359:3: (enumLiteral_117= Timeout )
-                    // InternalPipelineParser.g:6360:4: enumLiteral_117= Timeout
+                    // InternalPipelineParser.g:6367:3: (enumLiteral_117= Timeout )
+                    // InternalPipelineParser.g:6368:4: enumLiteral_117= Timeout
                     {
                     enumLiteral_117=(Token)match(input,Timeout,FOLLOW_2); 
 
@@ -18162,10 +18186,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 119 :
-                    // InternalPipelineParser.g:6367:3: (enumLiteral_118= When )
+                    // InternalPipelineParser.g:6375:3: (enumLiteral_118= When )
                     {
-                    // InternalPipelineParser.g:6367:3: (enumLiteral_118= When )
-                    // InternalPipelineParser.g:6368:4: enumLiteral_118= When
+                    // InternalPipelineParser.g:6375:3: (enumLiteral_118= When )
+                    // InternalPipelineParser.g:6376:4: enumLiteral_118= When
                     {
                     enumLiteral_118=(Token)match(input,When,FOLLOW_2); 
 
@@ -18179,10 +18203,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 120 :
-                    // InternalPipelineParser.g:6375:3: (enumLiteral_119= Allow_failure )
+                    // InternalPipelineParser.g:6383:3: (enumLiteral_119= Allow_failure )
                     {
-                    // InternalPipelineParser.g:6375:3: (enumLiteral_119= Allow_failure )
-                    // InternalPipelineParser.g:6376:4: enumLiteral_119= Allow_failure
+                    // InternalPipelineParser.g:6383:3: (enumLiteral_119= Allow_failure )
+                    // InternalPipelineParser.g:6384:4: enumLiteral_119= Allow_failure
                     {
                     enumLiteral_119=(Token)match(input,Allow_failure,FOLLOW_2); 
 
@@ -18196,10 +18220,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 121 :
-                    // InternalPipelineParser.g:6383:3: (enumLiteral_120= Dependencies )
+                    // InternalPipelineParser.g:6391:3: (enumLiteral_120= Dependencies )
                     {
-                    // InternalPipelineParser.g:6383:3: (enumLiteral_120= Dependencies )
-                    // InternalPipelineParser.g:6384:4: enumLiteral_120= Dependencies
+                    // InternalPipelineParser.g:6391:3: (enumLiteral_120= Dependencies )
+                    // InternalPipelineParser.g:6392:4: enumLiteral_120= Dependencies
                     {
                     enumLiteral_120=(Token)match(input,Dependencies,FOLLOW_2); 
 
@@ -18213,10 +18237,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 122 :
-                    // InternalPipelineParser.g:6391:3: (enumLiteral_121= PullRequests )
+                    // InternalPipelineParser.g:6399:3: (enumLiteral_121= PullRequests )
                     {
-                    // InternalPipelineParser.g:6391:3: (enumLiteral_121= PullRequests )
-                    // InternalPipelineParser.g:6392:4: enumLiteral_121= PullRequests
+                    // InternalPipelineParser.g:6399:3: (enumLiteral_121= PullRequests )
+                    // InternalPipelineParser.g:6400:4: enumLiteral_121= PullRequests
                     {
                     enumLiteral_121=(Token)match(input,PullRequests,FOLLOW_2); 
 
@@ -18230,10 +18254,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 123 :
-                    // InternalPipelineParser.g:6399:3: (enumLiteral_122= Step )
+                    // InternalPipelineParser.g:6407:3: (enumLiteral_122= Step )
                     {
-                    // InternalPipelineParser.g:6399:3: (enumLiteral_122= Step )
-                    // InternalPipelineParser.g:6400:4: enumLiteral_122= Step
+                    // InternalPipelineParser.g:6407:3: (enumLiteral_122= Step )
+                    // InternalPipelineParser.g:6408:4: enumLiteral_122= Step
                     {
                     enumLiteral_122=(Token)match(input,Step,FOLLOW_2); 
 
@@ -18247,10 +18271,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 124 :
-                    // InternalPipelineParser.g:6407:3: (enumLiteral_123= Definitions )
+                    // InternalPipelineParser.g:6415:3: (enumLiteral_123= Definitions )
                     {
-                    // InternalPipelineParser.g:6407:3: (enumLiteral_123= Definitions )
-                    // InternalPipelineParser.g:6408:4: enumLiteral_123= Definitions
+                    // InternalPipelineParser.g:6415:3: (enumLiteral_123= Definitions )
+                    // InternalPipelineParser.g:6416:4: enumLiteral_123= Definitions
                     {
                     enumLiteral_123=(Token)match(input,Definitions,FOLLOW_2); 
 
@@ -18264,10 +18288,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 125 :
-                    // InternalPipelineParser.g:6415:3: (enumLiteral_124= Caches )
+                    // InternalPipelineParser.g:6423:3: (enumLiteral_124= Caches )
                     {
-                    // InternalPipelineParser.g:6415:3: (enumLiteral_124= Caches )
-                    // InternalPipelineParser.g:6416:4: enumLiteral_124= Caches
+                    // InternalPipelineParser.g:6423:3: (enumLiteral_124= Caches )
+                    // InternalPipelineParser.g:6424:4: enumLiteral_124= Caches
                     {
                     enumLiteral_124=(Token)match(input,Caches,FOLLOW_2); 
 
@@ -18281,10 +18305,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 126 :
-                    // InternalPipelineParser.g:6423:3: (enumLiteral_125= Parallel )
+                    // InternalPipelineParser.g:6431:3: (enumLiteral_125= Parallel )
                     {
-                    // InternalPipelineParser.g:6423:3: (enumLiteral_125= Parallel )
-                    // InternalPipelineParser.g:6424:4: enumLiteral_125= Parallel
+                    // InternalPipelineParser.g:6431:3: (enumLiteral_125= Parallel )
+                    // InternalPipelineParser.g:6432:4: enumLiteral_125= Parallel
                     {
                     enumLiteral_125=(Token)match(input,Parallel,FOLLOW_2); 
 
@@ -18298,10 +18322,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 127 :
-                    // InternalPipelineParser.g:6431:3: (enumLiteral_126= Conditions )
+                    // InternalPipelineParser.g:6439:3: (enumLiteral_126= Conditions )
                     {
-                    // InternalPipelineParser.g:6431:3: (enumLiteral_126= Conditions )
-                    // InternalPipelineParser.g:6432:4: enumLiteral_126= Conditions
+                    // InternalPipelineParser.g:6439:3: (enumLiteral_126= Conditions )
+                    // InternalPipelineParser.g:6440:4: enumLiteral_126= Conditions
                     {
                     enumLiteral_126=(Token)match(input,Conditions,FOLLOW_2); 
 
@@ -18315,10 +18339,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 128 :
-                    // InternalPipelineParser.g:6439:3: (enumLiteral_127= MaxTime )
+                    // InternalPipelineParser.g:6447:3: (enumLiteral_127= MaxTime )
                     {
-                    // InternalPipelineParser.g:6439:3: (enumLiteral_127= MaxTime )
-                    // InternalPipelineParser.g:6440:4: enumLiteral_127= MaxTime
+                    // InternalPipelineParser.g:6447:3: (enumLiteral_127= MaxTime )
+                    // InternalPipelineParser.g:6448:4: enumLiteral_127= MaxTime
                     {
                     enumLiteral_127=(Token)match(input,MaxTime,FOLLOW_2); 
 
@@ -18332,10 +18356,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 129 :
-                    // InternalPipelineParser.g:6447:3: (enumLiteral_128= Project )
+                    // InternalPipelineParser.g:6455:3: (enumLiteral_128= Project )
                     {
-                    // InternalPipelineParser.g:6447:3: (enumLiteral_128= Project )
-                    // InternalPipelineParser.g:6448:4: enumLiteral_128= Project
+                    // InternalPipelineParser.g:6455:3: (enumLiteral_128= Project )
+                    // InternalPipelineParser.g:6456:4: enumLiteral_128= Project
                     {
                     enumLiteral_128=(Token)match(input,Project,FOLLOW_2); 
 
@@ -18349,10 +18373,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 130 :
-                    // InternalPipelineParser.g:6455:3: (enumLiteral_129= Plan )
+                    // InternalPipelineParser.g:6463:3: (enumLiteral_129= Plan )
                     {
-                    // InternalPipelineParser.g:6455:3: (enumLiteral_129= Plan )
-                    // InternalPipelineParser.g:6456:4: enumLiteral_129= Plan
+                    // InternalPipelineParser.g:6463:3: (enumLiteral_129= Plan )
+                    // InternalPipelineParser.g:6464:4: enumLiteral_129= Plan
                     {
                     enumLiteral_129=(Token)match(input,Plan,FOLLOW_2); 
 
@@ -18366,10 +18390,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 131 :
-                    // InternalPipelineParser.g:6463:3: (enumLiteral_130= Tasks )
+                    // InternalPipelineParser.g:6471:3: (enumLiteral_130= Tasks )
                     {
-                    // InternalPipelineParser.g:6463:3: (enumLiteral_130= Tasks )
-                    // InternalPipelineParser.g:6464:4: enumLiteral_130= Tasks
+                    // InternalPipelineParser.g:6471:3: (enumLiteral_130= Tasks )
+                    // InternalPipelineParser.g:6472:4: enumLiteral_130= Tasks
                     {
                     enumLiteral_130=(Token)match(input,Tasks,FOLLOW_2); 
 
@@ -18383,10 +18407,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 132 :
-                    // InternalPipelineParser.g:6471:3: (enumLiteral_131= Requirements )
+                    // InternalPipelineParser.g:6479:3: (enumLiteral_131= Requirements )
                     {
-                    // InternalPipelineParser.g:6471:3: (enumLiteral_131= Requirements )
-                    // InternalPipelineParser.g:6472:4: enumLiteral_131= Requirements
+                    // InternalPipelineParser.g:6479:3: (enumLiteral_131= Requirements )
+                    // InternalPipelineParser.g:6480:4: enumLiteral_131= Requirements
                     {
                     enumLiteral_131=(Token)match(input,Requirements,FOLLOW_2); 
 
@@ -18400,10 +18424,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 133 :
-                    // InternalPipelineParser.g:6479:3: (enumLiteral_132= Final )
+                    // InternalPipelineParser.g:6487:3: (enumLiteral_132= Final )
                     {
-                    // InternalPipelineParser.g:6479:3: (enumLiteral_132= Final )
-                    // InternalPipelineParser.g:6480:4: enumLiteral_132= Final
+                    // InternalPipelineParser.g:6487:3: (enumLiteral_132= Final )
+                    // InternalPipelineParser.g:6488:4: enumLiteral_132= Final
                     {
                     enumLiteral_132=(Token)match(input,Final,FOLLOW_2); 
 
@@ -18417,10 +18441,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 134 :
-                    // InternalPipelineParser.g:6487:3: (enumLiteral_133= Jdk )
+                    // InternalPipelineParser.g:6495:3: (enumLiteral_133= Jdk )
                     {
-                    // InternalPipelineParser.g:6487:3: (enumLiteral_133= Jdk )
-                    // InternalPipelineParser.g:6488:4: enumLiteral_133= Jdk
+                    // InternalPipelineParser.g:6495:3: (enumLiteral_133= Jdk )
+                    // InternalPipelineParser.g:6496:4: enumLiteral_133= Jdk
                     {
                     enumLiteral_133=(Token)match(input,Jdk,FOLLOW_2); 
 
@@ -18434,10 +18458,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 135 :
-                    // InternalPipelineParser.g:6495:3: (enumLiteral_134= Labels )
+                    // InternalPipelineParser.g:6503:3: (enumLiteral_134= Labels )
                     {
-                    // InternalPipelineParser.g:6495:3: (enumLiteral_134= Labels )
-                    // InternalPipelineParser.g:6496:4: enumLiteral_134= Labels
+                    // InternalPipelineParser.g:6503:3: (enumLiteral_134= Labels )
+                    // InternalPipelineParser.g:6504:4: enumLiteral_134= Labels
                     {
                     enumLiteral_134=(Token)match(input,Labels,FOLLOW_2); 
 
@@ -18451,10 +18475,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 136 :
-                    // InternalPipelineParser.g:6503:3: (enumLiteral_135= Repository )
+                    // InternalPipelineParser.g:6511:3: (enumLiteral_135= Repository )
                     {
-                    // InternalPipelineParser.g:6503:3: (enumLiteral_135= Repository )
-                    // InternalPipelineParser.g:6504:4: enumLiteral_135= Repository
+                    // InternalPipelineParser.g:6511:3: (enumLiteral_135= Repository )
+                    // InternalPipelineParser.g:6512:4: enumLiteral_135= Repository
                     {
                     enumLiteral_135=(Token)match(input,Repository,FOLLOW_2); 
 
@@ -18468,10 +18492,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 137 :
-                    // InternalPipelineParser.g:6511:3: (enumLiteral_136= Release )
+                    // InternalPipelineParser.g:6519:3: (enumLiteral_136= Release )
                     {
-                    // InternalPipelineParser.g:6511:3: (enumLiteral_136= Release )
-                    // InternalPipelineParser.g:6512:4: enumLiteral_136= Release
+                    // InternalPipelineParser.g:6519:3: (enumLiteral_136= Release )
+                    // InternalPipelineParser.g:6520:4: enumLiteral_136= Release
                     {
                     enumLiteral_136=(Token)match(input,Release,FOLLOW_2); 
 
@@ -18485,10 +18509,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 138 :
-                    // InternalPipelineParser.g:6519:3: (enumLiteral_137= Docker )
+                    // InternalPipelineParser.g:6527:3: (enumLiteral_137= Docker )
                     {
-                    // InternalPipelineParser.g:6519:3: (enumLiteral_137= Docker )
-                    // InternalPipelineParser.g:6520:4: enumLiteral_137= Docker
+                    // InternalPipelineParser.g:6527:3: (enumLiteral_137= Docker )
+                    // InternalPipelineParser.g:6528:4: enumLiteral_137= Docker
                     {
                     enumLiteral_137=(Token)match(input,Docker,FOLLOW_2); 
 
@@ -18502,10 +18526,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 139 :
-                    // InternalPipelineParser.g:6527:3: (enumLiteral_138= Agent )
+                    // InternalPipelineParser.g:6535:3: (enumLiteral_138= Agent )
                     {
-                    // InternalPipelineParser.g:6527:3: (enumLiteral_138= Agent )
-                    // InternalPipelineParser.g:6528:4: enumLiteral_138= Agent
+                    // InternalPipelineParser.g:6535:3: (enumLiteral_138= Agent )
+                    // InternalPipelineParser.g:6536:4: enumLiteral_138= Agent
                     {
                     enumLiteral_138=(Token)match(input,Agent,FOLLOW_2); 
 
@@ -18519,10 +18543,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 140 :
-                    // InternalPipelineParser.g:6535:3: (enumLiteral_139= Queue )
+                    // InternalPipelineParser.g:6543:3: (enumLiteral_139= Queue )
                     {
-                    // InternalPipelineParser.g:6535:3: (enumLiteral_139= Queue )
-                    // InternalPipelineParser.g:6536:4: enumLiteral_139= Queue
+                    // InternalPipelineParser.g:6543:3: (enumLiteral_139= Queue )
+                    // InternalPipelineParser.g:6544:4: enumLiteral_139= Queue
                     {
                     enumLiteral_139=(Token)match(input,Queue,FOLLOW_2); 
 
@@ -18536,10 +18560,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 141 :
-                    // InternalPipelineParser.g:6543:3: (enumLiteral_140= Snapshot )
+                    // InternalPipelineParser.g:6551:3: (enumLiteral_140= Snapshot )
                     {
-                    // InternalPipelineParser.g:6543:3: (enumLiteral_140= Snapshot )
-                    // InternalPipelineParser.g:6544:4: enumLiteral_140= Snapshot
+                    // InternalPipelineParser.g:6551:3: (enumLiteral_140= Snapshot )
+                    // InternalPipelineParser.g:6552:4: enumLiteral_140= Snapshot
                     {
                     enumLiteral_140=(Token)match(input,Snapshot,FOLLOW_2); 
 
@@ -18553,10 +18577,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 142 :
-                    // InternalPipelineParser.g:6551:3: (enumLiteral_141= Policy )
+                    // InternalPipelineParser.g:6559:3: (enumLiteral_141= Policy )
                     {
-                    // InternalPipelineParser.g:6551:3: (enumLiteral_141= Policy )
-                    // InternalPipelineParser.g:6552:4: enumLiteral_141= Policy
+                    // InternalPipelineParser.g:6559:3: (enumLiteral_141= Policy )
+                    // InternalPipelineParser.g:6560:4: enumLiteral_141= Policy
                     {
                     enumLiteral_141=(Token)match(input,Policy,FOLLOW_2); 
 
@@ -18570,10 +18594,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 143 :
-                    // InternalPipelineParser.g:6559:3: (enumLiteral_142= Approvals )
+                    // InternalPipelineParser.g:6567:3: (enumLiteral_142= Approvals )
                     {
-                    // InternalPipelineParser.g:6559:3: (enumLiteral_142= Approvals )
-                    // InternalPipelineParser.g:6560:4: enumLiteral_142= Approvals
+                    // InternalPipelineParser.g:6567:3: (enumLiteral_142= Approvals )
+                    // InternalPipelineParser.g:6568:4: enumLiteral_142= Approvals
                     {
                     enumLiteral_142=(Token)match(input,Approvals,FOLLOW_2); 
 
@@ -18587,10 +18611,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 144 :
-                    // InternalPipelineParser.g:6567:3: (enumLiteral_143= PreBuild )
+                    // InternalPipelineParser.g:6575:3: (enumLiteral_143= PreBuild )
                     {
-                    // InternalPipelineParser.g:6567:3: (enumLiteral_143= PreBuild )
-                    // InternalPipelineParser.g:6568:4: enumLiteral_143= PreBuild
+                    // InternalPipelineParser.g:6575:3: (enumLiteral_143= PreBuild )
+                    // InternalPipelineParser.g:6576:4: enumLiteral_143= PreBuild
                     {
                     enumLiteral_143=(Token)match(input,PreBuild,FOLLOW_2); 
 
@@ -18604,10 +18628,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 145 :
-                    // InternalPipelineParser.g:6575:3: (enumLiteral_144= PostBuild )
+                    // InternalPipelineParser.g:6583:3: (enumLiteral_144= PostBuild )
                     {
-                    // InternalPipelineParser.g:6575:3: (enumLiteral_144= PostBuild )
-                    // InternalPipelineParser.g:6576:4: enumLiteral_144= PostBuild
+                    // InternalPipelineParser.g:6583:3: (enumLiteral_144= PostBuild )
+                    // InternalPipelineParser.g:6584:4: enumLiteral_144= PostBuild
                     {
                     enumLiteral_144=(Token)match(input,PostBuild,FOLLOW_2); 
 
@@ -18621,10 +18645,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 146 :
-                    // InternalPipelineParser.g:6583:3: (enumLiteral_145= Ssh )
+                    // InternalPipelineParser.g:6591:3: (enumLiteral_145= Ssh )
                     {
-                    // InternalPipelineParser.g:6583:3: (enumLiteral_145= Ssh )
-                    // InternalPipelineParser.g:6584:4: enumLiteral_145= Ssh
+                    // InternalPipelineParser.g:6591:3: (enumLiteral_145= Ssh )
+                    // InternalPipelineParser.g:6592:4: enumLiteral_145= Ssh
                     {
                     enumLiteral_145=(Token)match(input,Ssh,FOLLOW_2); 
 
@@ -18638,10 +18662,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 147 :
-                    // InternalPipelineParser.g:6591:3: (enumLiteral_146= Auth )
+                    // InternalPipelineParser.g:6599:3: (enumLiteral_146= Auth )
                     {
-                    // InternalPipelineParser.g:6591:3: (enumLiteral_146= Auth )
-                    // InternalPipelineParser.g:6592:4: enumLiteral_146= Auth
+                    // InternalPipelineParser.g:6599:3: (enumLiteral_146= Auth )
+                    // InternalPipelineParser.g:6600:4: enumLiteral_146= Auth
                     {
                     enumLiteral_146=(Token)match(input,Auth,FOLLOW_2); 
 
@@ -18655,10 +18679,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 148 :
-                    // InternalPipelineParser.g:6599:3: (enumLiteral_147= Storage )
+                    // InternalPipelineParser.g:6607:3: (enumLiteral_147= Storage )
                     {
-                    // InternalPipelineParser.g:6599:3: (enumLiteral_147= Storage )
-                    // InternalPipelineParser.g:6600:4: enumLiteral_147= Storage
+                    // InternalPipelineParser.g:6607:3: (enumLiteral_147= Storage )
+                    // InternalPipelineParser.g:6608:4: enumLiteral_147= Storage
                     {
                     enumLiteral_147=(Token)match(input,Storage,FOLLOW_2); 
 
@@ -18672,10 +18696,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 149 :
-                    // InternalPipelineParser.g:6607:3: (enumLiteral_148= Endpoints )
+                    // InternalPipelineParser.g:6615:3: (enumLiteral_148= Endpoints )
                     {
-                    // InternalPipelineParser.g:6607:3: (enumLiteral_148= Endpoints )
-                    // InternalPipelineParser.g:6608:4: enumLiteral_148= Endpoints
+                    // InternalPipelineParser.g:6615:3: (enumLiteral_148= Endpoints )
+                    // InternalPipelineParser.g:6616:4: enumLiteral_148= Endpoints
                     {
                     enumLiteral_148=(Token)match(input,Endpoints,FOLLOW_2); 
 
@@ -18689,10 +18713,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 150 :
-                    // InternalPipelineParser.g:6615:3: (enumLiteral_149= Command )
+                    // InternalPipelineParser.g:6623:3: (enumLiteral_149= Command )
                     {
-                    // InternalPipelineParser.g:6615:3: (enumLiteral_149= Command )
-                    // InternalPipelineParser.g:6616:4: enumLiteral_149= Command
+                    // InternalPipelineParser.g:6623:3: (enumLiteral_149= Command )
+                    // InternalPipelineParser.g:6624:4: enumLiteral_149= Command
                     {
                     enumLiteral_149=(Token)match(input,Command,FOLLOW_2); 
 
@@ -18706,10 +18730,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 151 :
-                    // InternalPipelineParser.g:6623:3: (enumLiteral_150= Provisioner )
+                    // InternalPipelineParser.g:6631:3: (enumLiteral_150= Provisioner )
                     {
-                    // InternalPipelineParser.g:6623:3: (enumLiteral_150= Provisioner )
-                    // InternalPipelineParser.g:6624:4: enumLiteral_150= Provisioner
+                    // InternalPipelineParser.g:6631:3: (enumLiteral_150= Provisioner )
+                    // InternalPipelineParser.g:6632:4: enumLiteral_150= Provisioner
                     {
                     enumLiteral_150=(Token)match(input,Provisioner,FOLLOW_2); 
 
@@ -18723,10 +18747,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 152 :
-                    // InternalPipelineParser.g:6631:3: (enumLiteral_151= TriggerRules )
+                    // InternalPipelineParser.g:6639:3: (enumLiteral_151= TriggerRules )
                     {
-                    // InternalPipelineParser.g:6631:3: (enumLiteral_151= TriggerRules )
-                    // InternalPipelineParser.g:6632:4: enumLiteral_151= TriggerRules
+                    // InternalPipelineParser.g:6639:3: (enumLiteral_151= TriggerRules )
+                    // InternalPipelineParser.g:6640:4: enumLiteral_151= TriggerRules
                     {
                     enumLiteral_151=(Token)match(input,TriggerRules,FOLLOW_2); 
 
@@ -18740,10 +18764,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 153 :
-                    // InternalPipelineParser.g:6639:3: (enumLiteral_152= RunPolicy )
+                    // InternalPipelineParser.g:6647:3: (enumLiteral_152= RunPolicy )
                     {
-                    // InternalPipelineParser.g:6639:3: (enumLiteral_152= RunPolicy )
-                    // InternalPipelineParser.g:6640:4: enumLiteral_152= RunPolicy
+                    // InternalPipelineParser.g:6647:3: (enumLiteral_152= RunPolicy )
+                    // InternalPipelineParser.g:6648:4: enumLiteral_152= RunPolicy
                     {
                     enumLiteral_152=(Token)match(input,RunPolicy,FOLLOW_2); 
 
@@ -18757,10 +18781,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 154 :
-                    // InternalPipelineParser.g:6647:3: (enumLiteral_153= Queued )
+                    // InternalPipelineParser.g:6655:3: (enumLiteral_153= Queued )
                     {
-                    // InternalPipelineParser.g:6647:3: (enumLiteral_153= Queued )
-                    // InternalPipelineParser.g:6648:4: enumLiteral_153= Queued
+                    // InternalPipelineParser.g:6655:3: (enumLiteral_153= Queued )
+                    // InternalPipelineParser.g:6656:4: enumLiteral_153= Queued
                     {
                     enumLiteral_153=(Token)match(input,Queued,FOLLOW_2); 
 
@@ -18774,10 +18798,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 155 :
-                    // InternalPipelineParser.g:6655:3: (enumLiteral_154= Notifications )
+                    // InternalPipelineParser.g:6663:3: (enumLiteral_154= Notifications )
                     {
-                    // InternalPipelineParser.g:6655:3: (enumLiteral_154= Notifications )
-                    // InternalPipelineParser.g:6656:4: enumLiteral_154= Notifications
+                    // InternalPipelineParser.g:6663:3: (enumLiteral_154= Notifications )
+                    // InternalPipelineParser.g:6664:4: enumLiteral_154= Notifications
                     {
                     enumLiteral_154=(Token)match(input,Notifications,FOLLOW_2); 
 
@@ -18791,10 +18815,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 156 :
-                    // InternalPipelineParser.g:6663:3: (enumLiteral_155= DeployTrigger )
+                    // InternalPipelineParser.g:6671:3: (enumLiteral_155= DeployTrigger )
                     {
-                    // InternalPipelineParser.g:6663:3: (enumLiteral_155= DeployTrigger )
-                    // InternalPipelineParser.g:6664:4: enumLiteral_155= DeployTrigger
+                    // InternalPipelineParser.g:6671:3: (enumLiteral_155= DeployTrigger )
+                    // InternalPipelineParser.g:6672:4: enumLiteral_155= DeployTrigger
                     {
                     enumLiteral_155=(Token)match(input,DeployTrigger,FOLLOW_2); 
 
@@ -18808,10 +18832,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 157 :
-                    // InternalPipelineParser.g:6671:3: (enumLiteral_156= ReleaseTrigger )
+                    // InternalPipelineParser.g:6679:3: (enumLiteral_156= ReleaseTrigger )
                     {
-                    // InternalPipelineParser.g:6671:3: (enumLiteral_156= ReleaseTrigger )
-                    // InternalPipelineParser.g:6672:4: enumLiteral_156= ReleaseTrigger
+                    // InternalPipelineParser.g:6679:3: (enumLiteral_156= ReleaseTrigger )
+                    // InternalPipelineParser.g:6680:4: enumLiteral_156= ReleaseTrigger
                     {
                     enumLiteral_156=(Token)match(input,ReleaseTrigger,FOLLOW_2); 
 
@@ -18825,10 +18849,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 158 :
-                    // InternalPipelineParser.g:6679:3: (enumLiteral_157= LockBehavior )
+                    // InternalPipelineParser.g:6687:3: (enumLiteral_157= LockBehavior )
                     {
-                    // InternalPipelineParser.g:6679:3: (enumLiteral_157= LockBehavior )
-                    // InternalPipelineParser.g:6680:4: enumLiteral_157= LockBehavior
+                    // InternalPipelineParser.g:6687:3: (enumLiteral_157= LockBehavior )
+                    // InternalPipelineParser.g:6688:4: enumLiteral_157= LockBehavior
                     {
                     enumLiteral_157=(Token)match(input,LockBehavior,FOLLOW_2); 
 
@@ -18842,10 +18866,10 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 159 :
-                    // InternalPipelineParser.g:6687:3: (enumLiteral_158= ReviewStage )
+                    // InternalPipelineParser.g:6695:3: (enumLiteral_158= ReviewStage )
                     {
-                    // InternalPipelineParser.g:6687:3: (enumLiteral_158= ReviewStage )
-                    // InternalPipelineParser.g:6688:4: enumLiteral_158= ReviewStage
+                    // InternalPipelineParser.g:6695:3: (enumLiteral_158= ReviewStage )
+                    // InternalPipelineParser.g:6696:4: enumLiteral_158= ReviewStage
                     {
                     enumLiteral_158=(Token)match(input,ReviewStage,FOLLOW_2); 
 
@@ -18895,7 +18919,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
     static final String dfa_5s = "\1\uffff\1\15\1\1\1\2\1\3\1\4\1\5\1\6\1\7\1\10\1\11\1\12\1\13\1\14";
     static final String dfa_6s = "\1\0\15\uffff}>";
     static final String[] dfa_7s = {
-            "\7\1\1\uffff\1\1\2\uffff\3\1\1\4\1\1\6\uffff\2\1\1\uffff\1\1\3\uffff\4\1\4\uffff\1\1\2\uffff\2\1\5\uffff\2\1\1\7\10\uffff\1\6\3\uffff\2\1\1\uffff\1\1\1\uffff\1\1\1\14\1\uffff\1\1\1\uffff\1\1\2\uffff\2\1\5\uffff\2\1\1\uffff\1\11\1\uffff\2\1\1\13\3\uffff\1\1\2\uffff\1\4\12\uffff\1\3\1\1\10\uffff\1\1\1\uffff\1\1\2\uffff\1\15\1\uffff\1\15\3\uffff\1\1\1\uffff\1\1\5\uffff\1\1\1\12\5\uffff\3\1\1\uffff\3\1\1\uffff\1\1\3\uffff\1\1\1\uffff\1\1\1\uffff\2\1\6\uffff\1\1\1\uffff\1\1\2\uffff\1\1\6\uffff\1\1\3\uffff\3\1\1\2\1\uffff\1\1\1\uffff\1\10\1\1\3\uffff\1\1\6\uffff\1\5\10\uffff\2\1\13\uffff\1\1\2\uffff\1\4",
+            "\7\1\1\uffff\1\1\2\uffff\3\1\1\4\1\1\6\uffff\2\1\1\uffff\1\1\3\uffff\4\1\4\uffff\1\1\2\uffff\2\1\5\uffff\2\1\1\7\10\uffff\1\6\3\uffff\2\1\1\uffff\1\1\1\uffff\1\1\1\14\1\uffff\1\1\1\uffff\1\1\2\uffff\2\1\5\uffff\2\1\1\uffff\1\11\1\uffff\2\1\1\13\3\uffff\1\1\2\uffff\1\4\12\uffff\1\3\1\1\10\uffff\1\1\1\uffff\1\1\2\uffff\1\15\1\uffff\1\15\3\uffff\1\1\1\uffff\1\1\5\uffff\1\1\1\12\5\uffff\3\1\1\uffff\3\1\1\uffff\1\1\3\uffff\1\1\1\uffff\1\1\1\uffff\2\1\6\uffff\1\1\1\uffff\1\1\2\uffff\1\1\6\uffff\1\1\3\uffff\3\1\1\2\1\uffff\1\1\1\uffff\1\10\1\1\3\uffff\1\1\6\uffff\1\5\2\uffff\1\1\5\uffff\2\1\13\uffff\1\1\2\uffff\1\4",
             "",
             "",
             "",
@@ -18946,7 +18970,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
                         int index34_0 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (LA34_0==EOF||(LA34_0>=Pull_request_review_comment && LA34_0<=Pull_request_target)||LA34_0==Repository_dispatch||(LA34_0>=Deployment_status && LA34_0<=Workflow_dispatch)||LA34_0==Registry_package||(LA34_0>=Merge_requests && LA34_0<=Project_column)||LA34_0==WorkflowRules||(LA34_0>=Issue_comment && LA34_0<=Workflow_call)||LA34_0==LockBehavior||(LA34_0>=Project_card && LA34_0<=Pull_request)||(LA34_0>=Workflow_run && LA34_0<=Check_suite)||(LA34_0>=AutoCancel && LA34_0<=Conditions)||LA34_0==Deployment||LA34_0==Page_build||LA34_0==PlanBranch||LA34_0==Repository||(LA34_0>=Bitbucket && LA34_0<=Check_run)||(LA34_0>=Milestone && LA34_0<=Pipelines)||(LA34_0>=Scheduled && LA34_0<=Schedules)||LA34_0==Branches||LA34_0==Schedule||LA34_0==Changes||LA34_0==Default||LA34_0==Project||LA34_0==Release||LA34_0==Trigger||(LA34_0>=Create && LA34_0<=Delete)||(LA34_0>=Drafts && LA34_0<=Gollum)||LA34_0==Issues||LA34_0==Public||LA34_0==Remote||(LA34_0>=Stages && LA34_0<=Status)||LA34_0==Label||LA34_0==Paths||LA34_0==Rules||LA34_0==Watch||(LA34_0>=Cron && LA34_0<=Jobs)||LA34_0==Only||LA34_0==Push||LA34_0==Tags||(LA34_0>=On && LA34_0<=Pr)||LA34_0==RULE_ID) ) {s = 1;}
+                        if ( (LA34_0==EOF||(LA34_0>=Pull_request_review_comment && LA34_0<=Pull_request_target)||LA34_0==Repository_dispatch||(LA34_0>=Deployment_status && LA34_0<=Workflow_dispatch)||LA34_0==Registry_package||(LA34_0>=Merge_requests && LA34_0<=Project_column)||LA34_0==WorkflowRules||(LA34_0>=Issue_comment && LA34_0<=Workflow_call)||LA34_0==LockBehavior||(LA34_0>=Project_card && LA34_0<=Pull_request)||(LA34_0>=Workflow_run && LA34_0<=Check_suite)||(LA34_0>=AutoCancel && LA34_0<=Conditions)||LA34_0==Deployment||LA34_0==Page_build||LA34_0==PlanBranch||LA34_0==Repository||(LA34_0>=Bitbucket && LA34_0<=Check_run)||(LA34_0>=Milestone && LA34_0<=Pipelines)||(LA34_0>=Scheduled && LA34_0<=Schedules)||LA34_0==Branches||LA34_0==Schedule||LA34_0==Changes||LA34_0==Default||LA34_0==Project||LA34_0==Release||LA34_0==Trigger||(LA34_0>=Create && LA34_0<=Delete)||(LA34_0>=Drafts && LA34_0<=Gollum)||LA34_0==Issues||LA34_0==Public||LA34_0==Remote||(LA34_0>=Stages && LA34_0<=Status)||LA34_0==Label||LA34_0==Paths||LA34_0==Rules||LA34_0==Watch||(LA34_0>=Cron && LA34_0<=Jobs)||LA34_0==Only||LA34_0==Push||LA34_0==Tags||LA34_0==None||(LA34_0>=On && LA34_0<=Pr)||LA34_0==RULE_ID) ) {s = 1;}
 
                         else if ( LA34_0 == Name && getUnorderedGroupHelper().canSelect(grammarAccess.getConfigurationsAccess().getUnorderedGroup(), 0) ) {s = 2;}
 
@@ -19080,7 +19104,7 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
     static final String[] dfa_18s = {
             "\3\4\2\uffff\2\4\1\uffff\4\4\1\uffff\1\4\2\uffff\1\4\1\uffff\3\4\1\uffff\4\4\1\uffff\5\4\1\uffff\7\4\1\uffff\3\4\1\uffff\1\4\1\uffff\14\4\1\uffff\2\4\1\uffff\4\4\2\uffff\2\4\1\2\2\4\1\uffff\4\4\1\uffff\4\4\1\uffff\2\4\1\uffff\2\4\1\uffff\5\4\1\uffff\6\4\1\uffff\4\4\2\uffff\30\4\4\uffff\3\4\1\uffff\1\4\1\uffff\3\4\1\uffff\1\4\1\uffff\11\4\1\uffff\1\1\6\4\1\3\3\4\2\uffff\3\4\2\uffff\1\4\1\uffff\5\4\1\uffff\7\4\1\uffff\3\4\2\uffff\5\4\10\uffff\1\4\3\uffff\1\4\2\uffff\1\1",
             "",
-            "\1\1\11\uffff\1\5\1\uffff\1\6\2\uffff\7\5\3\uffff\1\5",
+            "\1\1\11\uffff\1\5\1\uffff\1\6\2\uffff\2\5\2\4\3\5\3\uffff\1\4",
             "\1\7\1\uffff\1\5\2\uffff\7\5\1\1\2\uffff\1\5",
             "",
             "",
@@ -19234,14 +19258,14 @@ public class InternalPipelineParser extends AbstractInternalAntlrParser {
 
     public static final BitSet FOLLOW_1 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_2 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_3 = new BitSet(new long[]{0x0018321E2C0B97F0L,0x0A01000218C194ACL,0x3881281A8BB81050L,0x0000001001800089L});
-    public static final BitSet FOLLOW_4 = new BitSet(new long[]{0x0018321E2C0B97F0L,0x0A01000218C194ACL,0x3881281A8BB81050L,0x0000005021000089L});
-    public static final BitSet FOLLOW_5 = new BitSet(new long[]{0x0018321E2C0B97F0L,0x0A01000218C194ACL,0x188128128BB81050L,0x0000001001000089L});
-    public static final BitSet FOLLOW_6 = new BitSet(new long[]{0x0018321E2C0B97F0L,0x0A01000218C194ACL,0x188128128BB81050L,0x0000009001000089L});
-    public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x0018321E2C0B97F0L,0x0A01000218C194ACL,0x3881281A8BB81050L,0x0000001021000089L});
+    public static final BitSet FOLLOW_3 = new BitSet(new long[]{0x0018321E2C0B97F0L,0x0A01000218C194ACL,0x3881281A8BB81050L,0x0000001001820089L});
+    public static final BitSet FOLLOW_4 = new BitSet(new long[]{0x0018321E2C0B97F0L,0x0A01000218C194ACL,0x3881281A8BB81050L,0x0000005021020089L});
+    public static final BitSet FOLLOW_5 = new BitSet(new long[]{0x0018321E2C0B97F0L,0x0A01000218C194ACL,0x188128128BB81050L,0x0000001001020089L});
+    public static final BitSet FOLLOW_6 = new BitSet(new long[]{0x0018321E2C0B97F0L,0x0A01000218C194ACL,0x188128128BB81050L,0x0000009001020089L});
+    public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x0018321E2C0B97F0L,0x0A01000218C194ACL,0x3881281A8BB81050L,0x0000001021020089L});
     public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x2000000800000000L});
     public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000000044000000L});
-    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0018321E2C0B97F0L,0x0A01000218C194ACL,0x3881281A8BB81050L,0x0000001001000089L});
+    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0018321E2C0B97F0L,0x0A01000218C194ACL,0x3881281A8BB81050L,0x0000001001020089L});
     public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000000L,0x0000000000000000L,0x0000004008000000L});
     public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000000L,0x0000000000000000L,0x0000000008000000L});
     public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000000L,0x0000049008000000L});

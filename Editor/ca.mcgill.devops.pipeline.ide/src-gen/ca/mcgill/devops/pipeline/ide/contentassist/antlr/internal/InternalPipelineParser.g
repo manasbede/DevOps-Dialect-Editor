@@ -2394,357 +2394,363 @@ rule__PipelineEventKeyword__Alternatives
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_DISPATCHEnumLiteralDeclaration_2()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_NONEEnumLiteralDeclaration_2()); }
+		(None)
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_NONEEnumLiteralDeclaration_2()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_DISPATCHEnumLiteralDeclaration_3()); }
 		(Workflow_dispatch)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_DISPATCHEnumLiteralDeclaration_2()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_DISPATCHEnumLiteralDeclaration_3()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REPOSITORY_DISPATCHEnumLiteralDeclaration_3()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REPOSITORY_DISPATCHEnumLiteralDeclaration_4()); }
 		(Repository_dispatch)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REPOSITORY_DISPATCHEnumLiteralDeclaration_3()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REPOSITORY_DISPATCHEnumLiteralDeclaration_4()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHECK_RUNEnumLiteralDeclaration_4()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHECK_RUNEnumLiteralDeclaration_5()); }
 		(Check_run)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHECK_RUNEnumLiteralDeclaration_4()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHECK_RUNEnumLiteralDeclaration_5()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHECK_SUITEEnumLiteralDeclaration_5()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHECK_SUITEEnumLiteralDeclaration_6()); }
 		(Check_suite)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHECK_SUITEEnumLiteralDeclaration_5()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHECK_SUITEEnumLiteralDeclaration_6()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CREATEEnumLiteralDeclaration_6()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CREATEEnumLiteralDeclaration_7()); }
 		(Create)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CREATEEnumLiteralDeclaration_6()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CREATEEnumLiteralDeclaration_7()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DELETEEnumLiteralDeclaration_7()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DELETEEnumLiteralDeclaration_8()); }
 		(Delete)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DELETEEnumLiteralDeclaration_7()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DELETEEnumLiteralDeclaration_8()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEPLOYMENTEnumLiteralDeclaration_8()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEPLOYMENTEnumLiteralDeclaration_9()); }
 		(Deployment)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEPLOYMENTEnumLiteralDeclaration_8()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEPLOYMENTEnumLiteralDeclaration_9()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEPLOYMENT_STATUSEnumLiteralDeclaration_9()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEPLOYMENT_STATUSEnumLiteralDeclaration_10()); }
 		(Deployment_status)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEPLOYMENT_STATUSEnumLiteralDeclaration_9()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEPLOYMENT_STATUSEnumLiteralDeclaration_10()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_FORKEnumLiteralDeclaration_10()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_FORKEnumLiteralDeclaration_11()); }
 		(Fork)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_FORKEnumLiteralDeclaration_10()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_FORKEnumLiteralDeclaration_11()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_GOLLUMEnumLiteralDeclaration_11()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_GOLLUMEnumLiteralDeclaration_12()); }
 		(Gollum)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_GOLLUMEnumLiteralDeclaration_11()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_GOLLUMEnumLiteralDeclaration_12()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ISSUE_COMMENTEnumLiteralDeclaration_12()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ISSUE_COMMENTEnumLiteralDeclaration_13()); }
 		(Issue_comment)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ISSUE_COMMENTEnumLiteralDeclaration_12()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ISSUE_COMMENTEnumLiteralDeclaration_13()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ISSUESEnumLiteralDeclaration_13()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ISSUESEnumLiteralDeclaration_14()); }
 		(Issues)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ISSUESEnumLiteralDeclaration_13()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ISSUESEnumLiteralDeclaration_14()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_LABELEnumLiteralDeclaration_14()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_LABELEnumLiteralDeclaration_15()); }
 		(Label)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_LABELEnumLiteralDeclaration_14()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_LABELEnumLiteralDeclaration_15()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_MILESTONEEnumLiteralDeclaration_15()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_MILESTONEEnumLiteralDeclaration_16()); }
 		(Milestone)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_MILESTONEEnumLiteralDeclaration_15()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_MILESTONEEnumLiteralDeclaration_16()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PAGE_BUILDEnumLiteralDeclaration_16()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PAGE_BUILDEnumLiteralDeclaration_17()); }
 		(Page_build)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PAGE_BUILDEnumLiteralDeclaration_16()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PAGE_BUILDEnumLiteralDeclaration_17()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECTEnumLiteralDeclaration_17()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECTEnumLiteralDeclaration_18()); }
 		(Project)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECTEnumLiteralDeclaration_17()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECTEnumLiteralDeclaration_18()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECT_CARDEnumLiteralDeclaration_18()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECT_CARDEnumLiteralDeclaration_19()); }
 		(Project_card)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECT_CARDEnumLiteralDeclaration_18()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECT_CARDEnumLiteralDeclaration_19()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECT_COLUMNEnumLiteralDeclaration_19()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECT_COLUMNEnumLiteralDeclaration_20()); }
 		(Project_column)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECT_COLUMNEnumLiteralDeclaration_19()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PROJECT_COLUMNEnumLiteralDeclaration_20()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PUBLICEnumLiteralDeclaration_20()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PUBLICEnumLiteralDeclaration_21()); }
 		(Public)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PUBLICEnumLiteralDeclaration_20()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PUBLICEnumLiteralDeclaration_21()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_REVIEWEnumLiteralDeclaration_21()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_REVIEWEnumLiteralDeclaration_22()); }
 		(Pull_request_review)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_REVIEWEnumLiteralDeclaration_21()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_REVIEWEnumLiteralDeclaration_22()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_REVIEW_COMMENTEnumLiteralDeclaration_22()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_REVIEW_COMMENTEnumLiteralDeclaration_23()); }
 		(Pull_request_review_comment)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_REVIEW_COMMENTEnumLiteralDeclaration_22()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_REVIEW_COMMENTEnumLiteralDeclaration_23()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_TARGETEnumLiteralDeclaration_23()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_TARGETEnumLiteralDeclaration_24()); }
 		(Pull_request_target)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_TARGETEnumLiteralDeclaration_23()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUEST_TARGETEnumLiteralDeclaration_24()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REGISTRY_PACKAGEEnumLiteralDeclaration_24()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REGISTRY_PACKAGEEnumLiteralDeclaration_25()); }
 		(Registry_package)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REGISTRY_PACKAGEEnumLiteralDeclaration_24()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REGISTRY_PACKAGEEnumLiteralDeclaration_25()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_RELEASEEnumLiteralDeclaration_25()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_RELEASEEnumLiteralDeclaration_26()); }
 		(Release)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_RELEASEEnumLiteralDeclaration_25()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_RELEASEEnumLiteralDeclaration_26()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_STATUSEnumLiteralDeclaration_26()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_STATUSEnumLiteralDeclaration_27()); }
 		(Status)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_STATUSEnumLiteralDeclaration_26()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_STATUSEnumLiteralDeclaration_27()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WATCHEnumLiteralDeclaration_27()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WATCHEnumLiteralDeclaration_28()); }
 		(Watch)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WATCHEnumLiteralDeclaration_27()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WATCHEnumLiteralDeclaration_28()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_CALLEnumLiteralDeclaration_28()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_CALLEnumLiteralDeclaration_29()); }
 		(Workflow_call)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_CALLEnumLiteralDeclaration_28()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_CALLEnumLiteralDeclaration_29()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_RUNEnumLiteralDeclaration_29()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_RUNEnumLiteralDeclaration_30()); }
 		(Workflow_run)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_RUNEnumLiteralDeclaration_29()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_RUNEnumLiteralDeclaration_30()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TRIGGEREnumLiteralDeclaration_30()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TRIGGEREnumLiteralDeclaration_31()); }
 		(Trigger)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TRIGGEREnumLiteralDeclaration_30()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TRIGGEREnumLiteralDeclaration_31()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PREnumLiteralDeclaration_31()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PREnumLiteralDeclaration_32()); }
 		(Pr)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PREnumLiteralDeclaration_31()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PREnumLiteralDeclaration_32()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCHESEnumLiteralDeclaration_32()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCHESEnumLiteralDeclaration_33()); }
 		(Branches)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCHESEnumLiteralDeclaration_32()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCHESEnumLiteralDeclaration_33()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAGSEnumLiteralDeclaration_33()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAGSEnumLiteralDeclaration_34()); }
 		(Tags)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAGSEnumLiteralDeclaration_33()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAGSEnumLiteralDeclaration_34()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PATHSEnumLiteralDeclaration_34()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PATHSEnumLiteralDeclaration_35()); }
 		(Paths)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PATHSEnumLiteralDeclaration_34()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PATHSEnumLiteralDeclaration_35()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_AUTO_CANCELEnumLiteralDeclaration_35()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_AUTO_CANCELEnumLiteralDeclaration_36()); }
 		(AutoCancel)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_AUTO_CANCELEnumLiteralDeclaration_35()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_AUTO_CANCELEnumLiteralDeclaration_36()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DRAFTSEnumLiteralDeclaration_36()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DRAFTSEnumLiteralDeclaration_37()); }
 		(Drafts)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DRAFTSEnumLiteralDeclaration_36()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DRAFTSEnumLiteralDeclaration_37()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ONLYEnumLiteralDeclaration_37()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ONLYEnumLiteralDeclaration_38()); }
 		(Only)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ONLYEnumLiteralDeclaration_37()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_ONLYEnumLiteralDeclaration_38()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_EXCEPTEnumLiteralDeclaration_38()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_EXCEPTEnumLiteralDeclaration_39()); }
 		(Except)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_EXCEPTEnumLiteralDeclaration_38()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_EXCEPTEnumLiteralDeclaration_39()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_RULESEnumLiteralDeclaration_39()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_RULESEnumLiteralDeclaration_40()); }
 		(Rules)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_RULESEnumLiteralDeclaration_39()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_RULESEnumLiteralDeclaration_40()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_RULESEnumLiteralDeclaration_40()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_RULESEnumLiteralDeclaration_41()); }
 		(WorkflowRules)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_RULESEnumLiteralDeclaration_40()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_WORKFLOW_RULESEnumLiteralDeclaration_41()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PIPELINE_SCHEDULEEnumLiteralDeclaration_41()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PIPELINE_SCHEDULEEnumLiteralDeclaration_42()); }
 		(Pipeline_schedule)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PIPELINE_SCHEDULEEnumLiteralDeclaration_41()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PIPELINE_SCHEDULEEnumLiteralDeclaration_42()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_MERGE_REQUESTSEnumLiteralDeclaration_42()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_MERGE_REQUESTSEnumLiteralDeclaration_43()); }
 		(Merge_requests)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_MERGE_REQUESTSEnumLiteralDeclaration_42()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_MERGE_REQUESTSEnumLiteralDeclaration_43()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHANGESEnumLiteralDeclaration_43()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHANGESEnumLiteralDeclaration_44()); }
 		(Changes)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHANGESEnumLiteralDeclaration_43()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CHANGESEnumLiteralDeclaration_44()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PIPELINESEnumLiteralDeclaration_44()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PIPELINESEnumLiteralDeclaration_45()); }
 		(Pipelines)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PIPELINESEnumLiteralDeclaration_44()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PIPELINESEnumLiteralDeclaration_45()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEFAULTEnumLiteralDeclaration_45()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEFAULTEnumLiteralDeclaration_46()); }
 		(Default)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEFAULTEnumLiteralDeclaration_45()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_DEFAULTEnumLiteralDeclaration_46()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUESTSEnumLiteralDeclaration_46()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUESTSEnumLiteralDeclaration_47()); }
 		(PullRequests)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUESTSEnumLiteralDeclaration_46()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PULL_REQUESTSEnumLiteralDeclaration_47()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CUSTOMEnumLiteralDeclaration_47()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CUSTOMEnumLiteralDeclaration_48()); }
 		(Custom)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CUSTOMEnumLiteralDeclaration_47()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CUSTOMEnumLiteralDeclaration_48()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CONDITIONSEnumLiteralDeclaration_48()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CONDITIONSEnumLiteralDeclaration_49()); }
 		(Conditions)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CONDITIONSEnumLiteralDeclaration_48()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CONDITIONSEnumLiteralDeclaration_49()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCH_DELETEDEnumLiteralDeclaration_49()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCH_DELETEDEnumLiteralDeclaration_50()); }
 		(BitbucketBranchDeleted)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCH_DELETEDEnumLiteralDeclaration_49()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCH_DELETEDEnumLiteralDeclaration_50()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCH_CREATEDEnumLiteralDeclaration_50()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCH_CREATEDEnumLiteralDeclaration_51()); }
 		(BitbucketBranchCreated)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCH_CREATEDEnumLiteralDeclaration_50()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BRANCH_CREATEDEnumLiteralDeclaration_51()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAG_CREATEDEnumLiteralDeclaration_51()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAG_CREATEDEnumLiteralDeclaration_52()); }
 		(BitbucketTagCreated)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAG_CREATEDEnumLiteralDeclaration_51()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAG_CREATEDEnumLiteralDeclaration_52()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAG_DELETEDEnumLiteralDeclaration_52()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAG_DELETEDEnumLiteralDeclaration_53()); }
 		(BitbucketTagDeleted)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAG_DELETEDEnumLiteralDeclaration_52()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_TAG_DELETEDEnumLiteralDeclaration_53()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REPOSITORY_TRIGGEREnumLiteralDeclaration_53()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REPOSITORY_TRIGGEREnumLiteralDeclaration_54()); }
 		(Repository)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REPOSITORY_TRIGGEREnumLiteralDeclaration_53()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REPOSITORY_TRIGGEREnumLiteralDeclaration_54()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_SCHEDULED_TRIGGEREnumLiteralDeclaration_54()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_SCHEDULED_TRIGGEREnumLiteralDeclaration_55()); }
 		(Scheduled)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_SCHEDULED_TRIGGEREnumLiteralDeclaration_54()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_SCHEDULED_TRIGGEREnumLiteralDeclaration_55()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REMOTE_TRIGGEREnumLiteralDeclaration_55()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REMOTE_TRIGGEREnumLiteralDeclaration_56()); }
 		(Remote)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REMOTE_TRIGGEREnumLiteralDeclaration_55()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_REMOTE_TRIGGEREnumLiteralDeclaration_56()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BITBUCKET_TRIGGEREnumLiteralDeclaration_56()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BITBUCKET_TRIGGEREnumLiteralDeclaration_57()); }
 		(Bitbucket)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BITBUCKET_TRIGGEREnumLiteralDeclaration_56()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_BITBUCKET_TRIGGEREnumLiteralDeclaration_57()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PLAN_BRANCHEnumLiteralDeclaration_57()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PLAN_BRANCHEnumLiteralDeclaration_58()); }
 		(PlanBranch)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PLAN_BRANCHEnumLiteralDeclaration_57()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_PLAN_BRANCHEnumLiteralDeclaration_58()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CRONEnumLiteralDeclaration_58()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CRONEnumLiteralDeclaration_59()); }
 		(Cron)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CRONEnumLiteralDeclaration_58()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_CRONEnumLiteralDeclaration_59()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_NOTIFICATIONSEnumLiteralDeclaration_59()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_NOTIFICATIONSEnumLiteralDeclaration_60()); }
 		(Notifications)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_NOTIFICATIONSEnumLiteralDeclaration_59()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_NOTIFICATIONSEnumLiteralDeclaration_60()); }
 	)
 	|
 	(
-		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_LOCK_BEHAVIOREnumLiteralDeclaration_60()); }
+		{ before(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_LOCK_BEHAVIOREnumLiteralDeclaration_61()); }
 		(LockBehavior)
-		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_LOCK_BEHAVIOREnumLiteralDeclaration_60()); }
+		{ after(grammarAccess.getPipelineEventKeywordAccess().getPPL_EVT_LOCK_BEHAVIOREnumLiteralDeclaration_61()); }
 	)
 ;
 finally {

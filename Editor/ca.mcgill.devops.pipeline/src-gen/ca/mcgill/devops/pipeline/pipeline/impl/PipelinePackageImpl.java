@@ -1649,6 +1649,7 @@ public class PipelinePackageImpl extends EPackageImpl implements PipelinePackage
     initEEnum(pipelineEventKeywordEEnum, PipelineEventKeyword.class, "PipelineEventKeyword");
     addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_PUSH);
     addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_PULL_REQUEST);
+    addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_NONE);
     addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_WORKFLOW_DISPATCH);
     addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_REPOSITORY_DISPATCH);
     addEEnumLiteral(pipelineEventKeywordEEnum, PipelineEventKeyword.PPL_EVT_CHECK_RUN);
