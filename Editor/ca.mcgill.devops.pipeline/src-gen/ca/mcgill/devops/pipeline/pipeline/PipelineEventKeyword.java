@@ -41,6 +41,16 @@ public enum PipelineEventKeyword implements Enumerator
   PPL_EVT_PULL_REQUEST(1, "PPL_EVT_PULL_REQUEST", "pull_request:"),
 
   /**
+   * The '<em><b>PPL EVT NONE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_EVT_NONE_VALUE
+   * @generated
+   * @ordered
+   */
+  PPL_EVT_NONE(2, "PPL_EVT_NONE", "none"),
+
+  /**
    * The '<em><b>PPL EVT WORKFLOW DISPATCH</b></em>' literal object.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -48,7 +58,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_WORKFLOW_DISPATCH(2, "PPL_EVT_WORKFLOW_DISPATCH", "workflow_dispatch:"),
+  PPL_EVT_WORKFLOW_DISPATCH(3, "PPL_EVT_WORKFLOW_DISPATCH", "workflow_dispatch:"),
 
   /**
    * The '<em><b>PPL EVT REPOSITORY DISPATCH</b></em>' literal object.
@@ -58,7 +68,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_REPOSITORY_DISPATCH(3, "PPL_EVT_REPOSITORY_DISPATCH", "repository_dispatch:"),
+  PPL_EVT_REPOSITORY_DISPATCH(4, "PPL_EVT_REPOSITORY_DISPATCH", "repository_dispatch:"),
 
   /**
    * The '<em><b>PPL EVT CHECK RUN</b></em>' literal object.
@@ -68,7 +78,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_CHECK_RUN(4, "PPL_EVT_CHECK_RUN", "check_run:"),
+  PPL_EVT_CHECK_RUN(5, "PPL_EVT_CHECK_RUN", "check_run:"),
 
   /**
    * The '<em><b>PPL EVT CHECK SUITE</b></em>' literal object.
@@ -78,7 +88,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_CHECK_SUITE(5, "PPL_EVT_CHECK_SUITE", "check_suite:"),
+  PPL_EVT_CHECK_SUITE(6, "PPL_EVT_CHECK_SUITE", "check_suite:"),
 
   /**
    * The '<em><b>PPL EVT CREATE</b></em>' literal object.
@@ -88,7 +98,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_CREATE(6, "PPL_EVT_CREATE", "create:"),
+  PPL_EVT_CREATE(7, "PPL_EVT_CREATE", "create:"),
 
   /**
    * The '<em><b>PPL EVT DELETE</b></em>' literal object.
@@ -98,7 +108,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_DELETE(7, "PPL_EVT_DELETE", "delete:"),
+  PPL_EVT_DELETE(8, "PPL_EVT_DELETE", "delete:"),
 
   /**
    * The '<em><b>PPL EVT DEPLOYMENT</b></em>' literal object.
@@ -108,7 +118,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_DEPLOYMENT(8, "PPL_EVT_DEPLOYMENT", "deployment:"),
+  PPL_EVT_DEPLOYMENT(9, "PPL_EVT_DEPLOYMENT", "deployment:"),
 
   /**
    * The '<em><b>PPL EVT DEPLOYMENT STATUS</b></em>' literal object.
@@ -118,7 +128,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_DEPLOYMENT_STATUS(9, "PPL_EVT_DEPLOYMENT_STATUS", "deployment_status:"),
+  PPL_EVT_DEPLOYMENT_STATUS(10, "PPL_EVT_DEPLOYMENT_STATUS", "deployment_status:"),
 
   /**
    * The '<em><b>PPL EVT FORK</b></em>' literal object.
@@ -128,7 +138,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_FORK(10, "PPL_EVT_FORK", "fork:"),
+  PPL_EVT_FORK(11, "PPL_EVT_FORK", "fork:"),
 
   /**
    * The '<em><b>PPL EVT GOLLUM</b></em>' literal object.
@@ -138,7 +148,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_GOLLUM(11, "PPL_EVT_GOLLUM", "gollum:"),
+  PPL_EVT_GOLLUM(12, "PPL_EVT_GOLLUM", "gollum:"),
 
   /**
    * The '<em><b>PPL EVT ISSUE COMMENT</b></em>' literal object.
@@ -148,7 +158,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_ISSUE_COMMENT(12, "PPL_EVT_ISSUE_COMMENT", "issue_comment:"),
+  PPL_EVT_ISSUE_COMMENT(13, "PPL_EVT_ISSUE_COMMENT", "issue_comment:"),
 
   /**
    * The '<em><b>PPL EVT ISSUES</b></em>' literal object.
@@ -158,7 +168,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_ISSUES(13, "PPL_EVT_ISSUES", "issues:"),
+  PPL_EVT_ISSUES(14, "PPL_EVT_ISSUES", "issues:"),
 
   /**
    * The '<em><b>PPL EVT LABEL</b></em>' literal object.
@@ -168,7 +178,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_LABEL(14, "PPL_EVT_LABEL", "label:"),
+  PPL_EVT_LABEL(15, "PPL_EVT_LABEL", "label:"),
 
   /**
    * The '<em><b>PPL EVT MILESTONE</b></em>' literal object.
@@ -178,7 +188,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_MILESTONE(15, "PPL_EVT_MILESTONE", "milestone:"),
+  PPL_EVT_MILESTONE(16, "PPL_EVT_MILESTONE", "milestone:"),
 
   /**
    * The '<em><b>PPL EVT PAGE BUILD</b></em>' literal object.
@@ -188,7 +198,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_PAGE_BUILD(16, "PPL_EVT_PAGE_BUILD", "page_build:"),
+  PPL_EVT_PAGE_BUILD(17, "PPL_EVT_PAGE_BUILD", "page_build:"),
 
   /**
    * The '<em><b>PPL EVT PROJECT</b></em>' literal object.
@@ -198,7 +208,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_PROJECT(17, "PPL_EVT_PROJECT", "project:"),
+  PPL_EVT_PROJECT(18, "PPL_EVT_PROJECT", "project:"),
 
   /**
    * The '<em><b>PPL EVT PROJECT CARD</b></em>' literal object.
@@ -208,7 +218,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_PROJECT_CARD(18, "PPL_EVT_PROJECT_CARD", "project_card:"),
+  PPL_EVT_PROJECT_CARD(19, "PPL_EVT_PROJECT_CARD", "project_card:"),
 
   /**
    * The '<em><b>PPL EVT PROJECT COLUMN</b></em>' literal object.
@@ -218,7 +228,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_PROJECT_COLUMN(19, "PPL_EVT_PROJECT_COLUMN", "project_column:"),
+  PPL_EVT_PROJECT_COLUMN(20, "PPL_EVT_PROJECT_COLUMN", "project_column:"),
 
   /**
    * The '<em><b>PPL EVT PUBLIC</b></em>' literal object.
@@ -228,7 +238,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_PUBLIC(20, "PPL_EVT_PUBLIC", "public:"),
+  PPL_EVT_PUBLIC(21, "PPL_EVT_PUBLIC", "public:"),
 
   /**
    * The '<em><b>PPL EVT PULL REQUEST REVIEW</b></em>' literal object.
@@ -238,7 +248,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_PULL_REQUEST_REVIEW(21, "PPL_EVT_PULL_REQUEST_REVIEW", "pull_request_review:"),
+  PPL_EVT_PULL_REQUEST_REVIEW(22, "PPL_EVT_PULL_REQUEST_REVIEW", "pull_request_review:"),
 
   /**
    * The '<em><b>PPL EVT PULL REQUEST REVIEW COMMENT</b></em>' literal object.
@@ -248,7 +258,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_PULL_REQUEST_REVIEW_COMMENT(22, "PPL_EVT_PULL_REQUEST_REVIEW_COMMENT", "pull_request_review_comment:"),
+  PPL_EVT_PULL_REQUEST_REVIEW_COMMENT(23, "PPL_EVT_PULL_REQUEST_REVIEW_COMMENT", "pull_request_review_comment:"),
 
   /**
    * The '<em><b>PPL EVT PULL REQUEST TARGET</b></em>' literal object.
@@ -258,7 +268,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_PULL_REQUEST_TARGET(23, "PPL_EVT_PULL_REQUEST_TARGET", "pull_request_target:"),
+  PPL_EVT_PULL_REQUEST_TARGET(24, "PPL_EVT_PULL_REQUEST_TARGET", "pull_request_target:"),
 
   /**
    * The '<em><b>PPL EVT REGISTRY PACKAGE</b></em>' literal object.
@@ -268,7 +278,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_REGISTRY_PACKAGE(24, "PPL_EVT_REGISTRY_PACKAGE", "registry_package:"),
+  PPL_EVT_REGISTRY_PACKAGE(25, "PPL_EVT_REGISTRY_PACKAGE", "registry_package:"),
 
   /**
    * The '<em><b>PPL EVT RELEASE</b></em>' literal object.
@@ -278,7 +288,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_RELEASE(25, "PPL_EVT_RELEASE", "release:"),
+  PPL_EVT_RELEASE(26, "PPL_EVT_RELEASE", "release:"),
 
   /**
    * The '<em><b>PPL EVT STATUS</b></em>' literal object.
@@ -288,7 +298,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_STATUS(26, "PPL_EVT_STATUS", "status:"),
+  PPL_EVT_STATUS(27, "PPL_EVT_STATUS", "status:"),
 
   /**
    * The '<em><b>PPL EVT WATCH</b></em>' literal object.
@@ -298,7 +308,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_WATCH(27, "PPL_EVT_WATCH", "watch:"),
+  PPL_EVT_WATCH(28, "PPL_EVT_WATCH", "watch:"),
 
   /**
    * The '<em><b>PPL EVT WORKFLOW CALL</b></em>' literal object.
@@ -308,7 +318,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_WORKFLOW_CALL(28, "PPL_EVT_WORKFLOW_CALL", "workflow_call:"),
+  PPL_EVT_WORKFLOW_CALL(29, "PPL_EVT_WORKFLOW_CALL", "workflow_call:"),
 
   /**
    * The '<em><b>PPL EVT WORKFLOW RUN</b></em>' literal object.
@@ -318,7 +328,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_WORKFLOW_RUN(29, "PPL_EVT_WORKFLOW_RUN", "workflow_run:"),
+  PPL_EVT_WORKFLOW_RUN(30, "PPL_EVT_WORKFLOW_RUN", "workflow_run:"),
 
   /**
    * The '<em><b>PPL EVT TRIGGER</b></em>' literal object.
@@ -328,7 +338,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_TRIGGER(30, "PPL_EVT_TRIGGER", "trigger:"),
+  PPL_EVT_TRIGGER(31, "PPL_EVT_TRIGGER", "trigger:"),
 
   /**
    * The '<em><b>PPL EVT PR</b></em>' literal object.
@@ -338,7 +348,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_PR(31, "PPL_EVT_PR", "pr:"),
+  PPL_EVT_PR(32, "PPL_EVT_PR", "pr:"),
 
   /**
    * The '<em><b>PPL EVT BRANCHES</b></em>' literal object.
@@ -348,7 +358,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_BRANCHES(32, "PPL_EVT_BRANCHES", "branches:"),
+  PPL_EVT_BRANCHES(33, "PPL_EVT_BRANCHES", "branches:"),
 
   /**
    * The '<em><b>PPL EVT TAGS</b></em>' literal object.
@@ -358,7 +368,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_TAGS(33, "PPL_EVT_TAGS", "tags:"),
+  PPL_EVT_TAGS(34, "PPL_EVT_TAGS", "tags:"),
 
   /**
    * The '<em><b>PPL EVT PATHS</b></em>' literal object.
@@ -368,7 +378,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_PATHS(34, "PPL_EVT_PATHS", "paths:"),
+  PPL_EVT_PATHS(35, "PPL_EVT_PATHS", "paths:"),
 
   /**
    * The '<em><b>PPL EVT AUTO CANCEL</b></em>' literal object.
@@ -378,7 +388,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_AUTO_CANCEL(35, "PPL_EVT_AUTO_CANCEL", "autoCancel:"),
+  PPL_EVT_AUTO_CANCEL(36, "PPL_EVT_AUTO_CANCEL", "autoCancel:"),
 
   /**
    * The '<em><b>PPL EVT DRAFTS</b></em>' literal object.
@@ -388,7 +398,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_DRAFTS(36, "PPL_EVT_DRAFTS", "drafts:"),
+  PPL_EVT_DRAFTS(37, "PPL_EVT_DRAFTS", "drafts:"),
 
   /**
    * The '<em><b>PPL EVT ONLY</b></em>' literal object.
@@ -398,7 +408,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_ONLY(37, "PPL_EVT_ONLY", "only:"),
+  PPL_EVT_ONLY(38, "PPL_EVT_ONLY", "only:"),
 
   /**
    * The '<em><b>PPL EVT EXCEPT</b></em>' literal object.
@@ -408,7 +418,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_EXCEPT(38, "PPL_EVT_EXCEPT", "except:"),
+  PPL_EVT_EXCEPT(39, "PPL_EVT_EXCEPT", "except:"),
 
   /**
    * The '<em><b>PPL EVT RULES</b></em>' literal object.
@@ -418,7 +428,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_RULES(39, "PPL_EVT_RULES", "rules:"),
+  PPL_EVT_RULES(40, "PPL_EVT_RULES", "rules:"),
 
   /**
    * The '<em><b>PPL EVT WORKFLOW RULES</b></em>' literal object.
@@ -428,7 +438,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_WORKFLOW_RULES(40, "PPL_EVT_WORKFLOW_RULES", "workflow.rules:"),
+  PPL_EVT_WORKFLOW_RULES(41, "PPL_EVT_WORKFLOW_RULES", "workflow.rules:"),
 
   /**
    * The '<em><b>PPL EVT PIPELINE SCHEDULE</b></em>' literal object.
@@ -438,7 +448,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_PIPELINE_SCHEDULE(41, "PPL_EVT_PIPELINE_SCHEDULE", "pipeline_schedule:"),
+  PPL_EVT_PIPELINE_SCHEDULE(42, "PPL_EVT_PIPELINE_SCHEDULE", "pipeline_schedule:"),
 
   /**
    * The '<em><b>PPL EVT MERGE REQUESTS</b></em>' literal object.
@@ -448,7 +458,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_MERGE_REQUESTS(42, "PPL_EVT_MERGE_REQUESTS", "merge_requests:"),
+  PPL_EVT_MERGE_REQUESTS(43, "PPL_EVT_MERGE_REQUESTS", "merge_requests:"),
 
   /**
    * The '<em><b>PPL EVT CHANGES</b></em>' literal object.
@@ -458,7 +468,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_CHANGES(43, "PPL_EVT_CHANGES", "changes:"),
+  PPL_EVT_CHANGES(44, "PPL_EVT_CHANGES", "changes:"),
 
   /**
    * The '<em><b>PPL EVT PIPELINES</b></em>' literal object.
@@ -468,7 +478,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_PIPELINES(44, "PPL_EVT_PIPELINES", "pipelines:"),
+  PPL_EVT_PIPELINES(45, "PPL_EVT_PIPELINES", "pipelines:"),
 
   /**
    * The '<em><b>PPL EVT DEFAULT</b></em>' literal object.
@@ -478,7 +488,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_DEFAULT(45, "PPL_EVT_DEFAULT", "default:"),
+  PPL_EVT_DEFAULT(46, "PPL_EVT_DEFAULT", "default:"),
 
   /**
    * The '<em><b>PPL EVT PULL REQUESTS</b></em>' literal object.
@@ -488,7 +498,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_PULL_REQUESTS(46, "PPL_EVT_PULL_REQUESTS", "pull-requests:"),
+  PPL_EVT_PULL_REQUESTS(47, "PPL_EVT_PULL_REQUESTS", "pull-requests:"),
 
   /**
    * The '<em><b>PPL EVT CUSTOM</b></em>' literal object.
@@ -498,7 +508,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_CUSTOM(47, "PPL_EVT_CUSTOM", "custom:"),
+  PPL_EVT_CUSTOM(48, "PPL_EVT_CUSTOM", "custom:"),
 
   /**
    * The '<em><b>PPL EVT CONDITIONS</b></em>' literal object.
@@ -508,7 +518,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_CONDITIONS(48, "PPL_EVT_CONDITIONS", "conditions:"),
+  PPL_EVT_CONDITIONS(49, "PPL_EVT_CONDITIONS", "conditions:"),
 
   /**
    * The '<em><b>PPL EVT BRANCH DELETED</b></em>' literal object.
@@ -518,7 +528,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_BRANCH_DELETED(49, "PPL_EVT_BRANCH_DELETED", "bitbucket-branch-deleted:"),
+  PPL_EVT_BRANCH_DELETED(50, "PPL_EVT_BRANCH_DELETED", "bitbucket-branch-deleted:"),
 
   /**
    * The '<em><b>PPL EVT BRANCH CREATED</b></em>' literal object.
@@ -528,7 +538,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_BRANCH_CREATED(50, "PPL_EVT_BRANCH_CREATED", "bitbucket-branch-created:"),
+  PPL_EVT_BRANCH_CREATED(51, "PPL_EVT_BRANCH_CREATED", "bitbucket-branch-created:"),
 
   /**
    * The '<em><b>PPL EVT TAG CREATED</b></em>' literal object.
@@ -538,7 +548,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_TAG_CREATED(51, "PPL_EVT_TAG_CREATED", "bitbucket-tag-created:"),
+  PPL_EVT_TAG_CREATED(52, "PPL_EVT_TAG_CREATED", "bitbucket-tag-created:"),
 
   /**
    * The '<em><b>PPL EVT TAG DELETED</b></em>' literal object.
@@ -548,7 +558,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_TAG_DELETED(52, "PPL_EVT_TAG_DELETED", "bitbucket-tag-deleted:"),
+  PPL_EVT_TAG_DELETED(53, "PPL_EVT_TAG_DELETED", "bitbucket-tag-deleted:"),
 
   /**
    * The '<em><b>PPL EVT REPOSITORY TRIGGER</b></em>' literal object.
@@ -558,7 +568,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_REPOSITORY_TRIGGER(53, "PPL_EVT_REPOSITORY_TRIGGER", "repository:"),
+  PPL_EVT_REPOSITORY_TRIGGER(54, "PPL_EVT_REPOSITORY_TRIGGER", "repository:"),
 
   /**
    * The '<em><b>PPL EVT SCHEDULED TRIGGER</b></em>' literal object.
@@ -568,7 +578,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_SCHEDULED_TRIGGER(54, "PPL_EVT_SCHEDULED_TRIGGER", "scheduled:"),
+  PPL_EVT_SCHEDULED_TRIGGER(55, "PPL_EVT_SCHEDULED_TRIGGER", "scheduled:"),
 
   /**
    * The '<em><b>PPL EVT REMOTE TRIGGER</b></em>' literal object.
@@ -578,7 +588,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_REMOTE_TRIGGER(55, "PPL_EVT_REMOTE_TRIGGER", "remote:"),
+  PPL_EVT_REMOTE_TRIGGER(56, "PPL_EVT_REMOTE_TRIGGER", "remote:"),
 
   /**
    * The '<em><b>PPL EVT BITBUCKET TRIGGER</b></em>' literal object.
@@ -588,7 +598,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_BITBUCKET_TRIGGER(56, "PPL_EVT_BITBUCKET_TRIGGER", "bitbucket:"),
+  PPL_EVT_BITBUCKET_TRIGGER(57, "PPL_EVT_BITBUCKET_TRIGGER", "bitbucket:"),
 
   /**
    * The '<em><b>PPL EVT PLAN BRANCH</b></em>' literal object.
@@ -598,7 +608,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_PLAN_BRANCH(57, "PPL_EVT_PLAN_BRANCH", "planBranch:"),
+  PPL_EVT_PLAN_BRANCH(58, "PPL_EVT_PLAN_BRANCH", "planBranch:"),
 
   /**
    * The '<em><b>PPL EVT CRON</b></em>' literal object.
@@ -608,7 +618,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_CRON(58, "PPL_EVT_CRON", "cron:"),
+  PPL_EVT_CRON(59, "PPL_EVT_CRON", "cron:"),
 
   /**
    * The '<em><b>PPL EVT NOTIFICATIONS</b></em>' literal object.
@@ -618,7 +628,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_NOTIFICATIONS(59, "PPL_EVT_NOTIFICATIONS", "notifications:"),
+  PPL_EVT_NOTIFICATIONS(60, "PPL_EVT_NOTIFICATIONS", "notifications:"),
 
   /**
    * The '<em><b>PPL EVT LOCK BEHAVIOR</b></em>' literal object.
@@ -628,7 +638,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  PPL_EVT_LOCK_BEHAVIOR(60, "PPL_EVT_LOCK_BEHAVIOR", "lockBehavior:");
+  PPL_EVT_LOCK_BEHAVIOR(61, "PPL_EVT_LOCK_BEHAVIOR", "lockBehavior:");
 
   /**
    * The '<em><b>PPL EVT PUSH</b></em>' literal value.
@@ -653,6 +663,17 @@ public enum PipelineEventKeyword implements Enumerator
   public static final int PPL_EVT_PULL_REQUEST_VALUE = 1;
 
   /**
+   * The '<em><b>PPL EVT NONE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #PPL_EVT_NONE
+   * @model literal="none"
+   * @generated
+   * @ordered
+   */
+  public static final int PPL_EVT_NONE_VALUE = 2;
+
+  /**
    * The '<em><b>PPL EVT WORKFLOW DISPATCH</b></em>' literal value.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -661,7 +682,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_WORKFLOW_DISPATCH_VALUE = 2;
+  public static final int PPL_EVT_WORKFLOW_DISPATCH_VALUE = 3;
 
   /**
    * The '<em><b>PPL EVT REPOSITORY DISPATCH</b></em>' literal value.
@@ -672,7 +693,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_REPOSITORY_DISPATCH_VALUE = 3;
+  public static final int PPL_EVT_REPOSITORY_DISPATCH_VALUE = 4;
 
   /**
    * The '<em><b>PPL EVT CHECK RUN</b></em>' literal value.
@@ -683,7 +704,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_CHECK_RUN_VALUE = 4;
+  public static final int PPL_EVT_CHECK_RUN_VALUE = 5;
 
   /**
    * The '<em><b>PPL EVT CHECK SUITE</b></em>' literal value.
@@ -694,7 +715,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_CHECK_SUITE_VALUE = 5;
+  public static final int PPL_EVT_CHECK_SUITE_VALUE = 6;
 
   /**
    * The '<em><b>PPL EVT CREATE</b></em>' literal value.
@@ -705,7 +726,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_CREATE_VALUE = 6;
+  public static final int PPL_EVT_CREATE_VALUE = 7;
 
   /**
    * The '<em><b>PPL EVT DELETE</b></em>' literal value.
@@ -716,7 +737,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_DELETE_VALUE = 7;
+  public static final int PPL_EVT_DELETE_VALUE = 8;
 
   /**
    * The '<em><b>PPL EVT DEPLOYMENT</b></em>' literal value.
@@ -727,7 +748,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_DEPLOYMENT_VALUE = 8;
+  public static final int PPL_EVT_DEPLOYMENT_VALUE = 9;
 
   /**
    * The '<em><b>PPL EVT DEPLOYMENT STATUS</b></em>' literal value.
@@ -738,7 +759,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_DEPLOYMENT_STATUS_VALUE = 9;
+  public static final int PPL_EVT_DEPLOYMENT_STATUS_VALUE = 10;
 
   /**
    * The '<em><b>PPL EVT FORK</b></em>' literal value.
@@ -749,7 +770,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_FORK_VALUE = 10;
+  public static final int PPL_EVT_FORK_VALUE = 11;
 
   /**
    * The '<em><b>PPL EVT GOLLUM</b></em>' literal value.
@@ -760,7 +781,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_GOLLUM_VALUE = 11;
+  public static final int PPL_EVT_GOLLUM_VALUE = 12;
 
   /**
    * The '<em><b>PPL EVT ISSUE COMMENT</b></em>' literal value.
@@ -771,7 +792,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_ISSUE_COMMENT_VALUE = 12;
+  public static final int PPL_EVT_ISSUE_COMMENT_VALUE = 13;
 
   /**
    * The '<em><b>PPL EVT ISSUES</b></em>' literal value.
@@ -782,7 +803,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_ISSUES_VALUE = 13;
+  public static final int PPL_EVT_ISSUES_VALUE = 14;
 
   /**
    * The '<em><b>PPL EVT LABEL</b></em>' literal value.
@@ -793,7 +814,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_LABEL_VALUE = 14;
+  public static final int PPL_EVT_LABEL_VALUE = 15;
 
   /**
    * The '<em><b>PPL EVT MILESTONE</b></em>' literal value.
@@ -804,7 +825,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_MILESTONE_VALUE = 15;
+  public static final int PPL_EVT_MILESTONE_VALUE = 16;
 
   /**
    * The '<em><b>PPL EVT PAGE BUILD</b></em>' literal value.
@@ -815,7 +836,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_PAGE_BUILD_VALUE = 16;
+  public static final int PPL_EVT_PAGE_BUILD_VALUE = 17;
 
   /**
    * The '<em><b>PPL EVT PROJECT</b></em>' literal value.
@@ -826,7 +847,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_PROJECT_VALUE = 17;
+  public static final int PPL_EVT_PROJECT_VALUE = 18;
 
   /**
    * The '<em><b>PPL EVT PROJECT CARD</b></em>' literal value.
@@ -837,7 +858,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_PROJECT_CARD_VALUE = 18;
+  public static final int PPL_EVT_PROJECT_CARD_VALUE = 19;
 
   /**
    * The '<em><b>PPL EVT PROJECT COLUMN</b></em>' literal value.
@@ -848,7 +869,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_PROJECT_COLUMN_VALUE = 19;
+  public static final int PPL_EVT_PROJECT_COLUMN_VALUE = 20;
 
   /**
    * The '<em><b>PPL EVT PUBLIC</b></em>' literal value.
@@ -859,7 +880,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_PUBLIC_VALUE = 20;
+  public static final int PPL_EVT_PUBLIC_VALUE = 21;
 
   /**
    * The '<em><b>PPL EVT PULL REQUEST REVIEW</b></em>' literal value.
@@ -870,7 +891,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_PULL_REQUEST_REVIEW_VALUE = 21;
+  public static final int PPL_EVT_PULL_REQUEST_REVIEW_VALUE = 22;
 
   /**
    * The '<em><b>PPL EVT PULL REQUEST REVIEW COMMENT</b></em>' literal value.
@@ -881,7 +902,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_PULL_REQUEST_REVIEW_COMMENT_VALUE = 22;
+  public static final int PPL_EVT_PULL_REQUEST_REVIEW_COMMENT_VALUE = 23;
 
   /**
    * The '<em><b>PPL EVT PULL REQUEST TARGET</b></em>' literal value.
@@ -892,7 +913,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_PULL_REQUEST_TARGET_VALUE = 23;
+  public static final int PPL_EVT_PULL_REQUEST_TARGET_VALUE = 24;
 
   /**
    * The '<em><b>PPL EVT REGISTRY PACKAGE</b></em>' literal value.
@@ -903,7 +924,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_REGISTRY_PACKAGE_VALUE = 24;
+  public static final int PPL_EVT_REGISTRY_PACKAGE_VALUE = 25;
 
   /**
    * The '<em><b>PPL EVT RELEASE</b></em>' literal value.
@@ -914,7 +935,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_RELEASE_VALUE = 25;
+  public static final int PPL_EVT_RELEASE_VALUE = 26;
 
   /**
    * The '<em><b>PPL EVT STATUS</b></em>' literal value.
@@ -925,7 +946,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_STATUS_VALUE = 26;
+  public static final int PPL_EVT_STATUS_VALUE = 27;
 
   /**
    * The '<em><b>PPL EVT WATCH</b></em>' literal value.
@@ -936,7 +957,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_WATCH_VALUE = 27;
+  public static final int PPL_EVT_WATCH_VALUE = 28;
 
   /**
    * The '<em><b>PPL EVT WORKFLOW CALL</b></em>' literal value.
@@ -947,7 +968,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_WORKFLOW_CALL_VALUE = 28;
+  public static final int PPL_EVT_WORKFLOW_CALL_VALUE = 29;
 
   /**
    * The '<em><b>PPL EVT WORKFLOW RUN</b></em>' literal value.
@@ -958,7 +979,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_WORKFLOW_RUN_VALUE = 29;
+  public static final int PPL_EVT_WORKFLOW_RUN_VALUE = 30;
 
   /**
    * The '<em><b>PPL EVT TRIGGER</b></em>' literal value.
@@ -969,7 +990,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_TRIGGER_VALUE = 30;
+  public static final int PPL_EVT_TRIGGER_VALUE = 31;
 
   /**
    * The '<em><b>PPL EVT PR</b></em>' literal value.
@@ -980,7 +1001,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_PR_VALUE = 31;
+  public static final int PPL_EVT_PR_VALUE = 32;
 
   /**
    * The '<em><b>PPL EVT BRANCHES</b></em>' literal value.
@@ -991,7 +1012,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_BRANCHES_VALUE = 32;
+  public static final int PPL_EVT_BRANCHES_VALUE = 33;
 
   /**
    * The '<em><b>PPL EVT TAGS</b></em>' literal value.
@@ -1002,7 +1023,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_TAGS_VALUE = 33;
+  public static final int PPL_EVT_TAGS_VALUE = 34;
 
   /**
    * The '<em><b>PPL EVT PATHS</b></em>' literal value.
@@ -1013,7 +1034,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_PATHS_VALUE = 34;
+  public static final int PPL_EVT_PATHS_VALUE = 35;
 
   /**
    * The '<em><b>PPL EVT AUTO CANCEL</b></em>' literal value.
@@ -1024,7 +1045,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_AUTO_CANCEL_VALUE = 35;
+  public static final int PPL_EVT_AUTO_CANCEL_VALUE = 36;
 
   /**
    * The '<em><b>PPL EVT DRAFTS</b></em>' literal value.
@@ -1035,7 +1056,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_DRAFTS_VALUE = 36;
+  public static final int PPL_EVT_DRAFTS_VALUE = 37;
 
   /**
    * The '<em><b>PPL EVT ONLY</b></em>' literal value.
@@ -1046,7 +1067,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_ONLY_VALUE = 37;
+  public static final int PPL_EVT_ONLY_VALUE = 38;
 
   /**
    * The '<em><b>PPL EVT EXCEPT</b></em>' literal value.
@@ -1057,7 +1078,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_EXCEPT_VALUE = 38;
+  public static final int PPL_EVT_EXCEPT_VALUE = 39;
 
   /**
    * The '<em><b>PPL EVT RULES</b></em>' literal value.
@@ -1068,7 +1089,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_RULES_VALUE = 39;
+  public static final int PPL_EVT_RULES_VALUE = 40;
 
   /**
    * The '<em><b>PPL EVT WORKFLOW RULES</b></em>' literal value.
@@ -1079,7 +1100,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_WORKFLOW_RULES_VALUE = 40;
+  public static final int PPL_EVT_WORKFLOW_RULES_VALUE = 41;
 
   /**
    * The '<em><b>PPL EVT PIPELINE SCHEDULE</b></em>' literal value.
@@ -1090,7 +1111,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_PIPELINE_SCHEDULE_VALUE = 41;
+  public static final int PPL_EVT_PIPELINE_SCHEDULE_VALUE = 42;
 
   /**
    * The '<em><b>PPL EVT MERGE REQUESTS</b></em>' literal value.
@@ -1101,7 +1122,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_MERGE_REQUESTS_VALUE = 42;
+  public static final int PPL_EVT_MERGE_REQUESTS_VALUE = 43;
 
   /**
    * The '<em><b>PPL EVT CHANGES</b></em>' literal value.
@@ -1112,7 +1133,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_CHANGES_VALUE = 43;
+  public static final int PPL_EVT_CHANGES_VALUE = 44;
 
   /**
    * The '<em><b>PPL EVT PIPELINES</b></em>' literal value.
@@ -1123,7 +1144,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_PIPELINES_VALUE = 44;
+  public static final int PPL_EVT_PIPELINES_VALUE = 45;
 
   /**
    * The '<em><b>PPL EVT DEFAULT</b></em>' literal value.
@@ -1134,7 +1155,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_DEFAULT_VALUE = 45;
+  public static final int PPL_EVT_DEFAULT_VALUE = 46;
 
   /**
    * The '<em><b>PPL EVT PULL REQUESTS</b></em>' literal value.
@@ -1145,7 +1166,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_PULL_REQUESTS_VALUE = 46;
+  public static final int PPL_EVT_PULL_REQUESTS_VALUE = 47;
 
   /**
    * The '<em><b>PPL EVT CUSTOM</b></em>' literal value.
@@ -1156,7 +1177,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_CUSTOM_VALUE = 47;
+  public static final int PPL_EVT_CUSTOM_VALUE = 48;
 
   /**
    * The '<em><b>PPL EVT CONDITIONS</b></em>' literal value.
@@ -1167,7 +1188,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_CONDITIONS_VALUE = 48;
+  public static final int PPL_EVT_CONDITIONS_VALUE = 49;
 
   /**
    * The '<em><b>PPL EVT BRANCH DELETED</b></em>' literal value.
@@ -1178,7 +1199,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_BRANCH_DELETED_VALUE = 49;
+  public static final int PPL_EVT_BRANCH_DELETED_VALUE = 50;
 
   /**
    * The '<em><b>PPL EVT BRANCH CREATED</b></em>' literal value.
@@ -1189,7 +1210,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_BRANCH_CREATED_VALUE = 50;
+  public static final int PPL_EVT_BRANCH_CREATED_VALUE = 51;
 
   /**
    * The '<em><b>PPL EVT TAG CREATED</b></em>' literal value.
@@ -1200,7 +1221,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_TAG_CREATED_VALUE = 51;
+  public static final int PPL_EVT_TAG_CREATED_VALUE = 52;
 
   /**
    * The '<em><b>PPL EVT TAG DELETED</b></em>' literal value.
@@ -1211,7 +1232,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_TAG_DELETED_VALUE = 52;
+  public static final int PPL_EVT_TAG_DELETED_VALUE = 53;
 
   /**
    * The '<em><b>PPL EVT REPOSITORY TRIGGER</b></em>' literal value.
@@ -1222,7 +1243,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_REPOSITORY_TRIGGER_VALUE = 53;
+  public static final int PPL_EVT_REPOSITORY_TRIGGER_VALUE = 54;
 
   /**
    * The '<em><b>PPL EVT SCHEDULED TRIGGER</b></em>' literal value.
@@ -1233,7 +1254,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_SCHEDULED_TRIGGER_VALUE = 54;
+  public static final int PPL_EVT_SCHEDULED_TRIGGER_VALUE = 55;
 
   /**
    * The '<em><b>PPL EVT REMOTE TRIGGER</b></em>' literal value.
@@ -1244,7 +1265,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_REMOTE_TRIGGER_VALUE = 55;
+  public static final int PPL_EVT_REMOTE_TRIGGER_VALUE = 56;
 
   /**
    * The '<em><b>PPL EVT BITBUCKET TRIGGER</b></em>' literal value.
@@ -1255,7 +1276,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_BITBUCKET_TRIGGER_VALUE = 56;
+  public static final int PPL_EVT_BITBUCKET_TRIGGER_VALUE = 57;
 
   /**
    * The '<em><b>PPL EVT PLAN BRANCH</b></em>' literal value.
@@ -1266,7 +1287,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_PLAN_BRANCH_VALUE = 57;
+  public static final int PPL_EVT_PLAN_BRANCH_VALUE = 58;
 
   /**
    * The '<em><b>PPL EVT CRON</b></em>' literal value.
@@ -1277,7 +1298,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_CRON_VALUE = 58;
+  public static final int PPL_EVT_CRON_VALUE = 59;
 
   /**
    * The '<em><b>PPL EVT NOTIFICATIONS</b></em>' literal value.
@@ -1288,7 +1309,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_NOTIFICATIONS_VALUE = 59;
+  public static final int PPL_EVT_NOTIFICATIONS_VALUE = 60;
 
   /**
    * The '<em><b>PPL EVT LOCK BEHAVIOR</b></em>' literal value.
@@ -1299,7 +1320,7 @@ public enum PipelineEventKeyword implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int PPL_EVT_LOCK_BEHAVIOR_VALUE = 60;
+  public static final int PPL_EVT_LOCK_BEHAVIOR_VALUE = 61;
 
   /**
    * An array of all the '<em><b>Event Keyword</b></em>' enumerators.
@@ -1312,6 +1333,7 @@ public enum PipelineEventKeyword implements Enumerator
     {
       PPL_EVT_PUSH,
       PPL_EVT_PULL_REQUEST,
+      PPL_EVT_NONE,
       PPL_EVT_WORKFLOW_DISPATCH,
       PPL_EVT_REPOSITORY_DISPATCH,
       PPL_EVT_CHECK_RUN,
@@ -1437,6 +1459,7 @@ public enum PipelineEventKeyword implements Enumerator
     {
       case PPL_EVT_PUSH_VALUE: return PPL_EVT_PUSH;
       case PPL_EVT_PULL_REQUEST_VALUE: return PPL_EVT_PULL_REQUEST;
+      case PPL_EVT_NONE_VALUE: return PPL_EVT_NONE;
       case PPL_EVT_WORKFLOW_DISPATCH_VALUE: return PPL_EVT_WORKFLOW_DISPATCH;
       case PPL_EVT_REPOSITORY_DISPATCH_VALUE: return PPL_EVT_REPOSITORY_DISPATCH;
       case PPL_EVT_CHECK_RUN_VALUE: return PPL_EVT_CHECK_RUN;

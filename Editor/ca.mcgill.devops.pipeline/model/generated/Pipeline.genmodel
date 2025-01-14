@@ -16,6 +16,7 @@
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="Pipeline.ecore#//PipelineEventKeyword">
       <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineEventKeyword/PPL_EVT_PUSH"/>
       <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineEventKeyword/PPL_EVT_PULL_REQUEST"/>
+      <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineEventKeyword/PPL_EVT_NONE"/>
       <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineEventKeyword/PPL_EVT_WORKFLOW_DISPATCH"/>
       <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineEventKeyword/PPL_EVT_REPOSITORY_DISPATCH"/>
       <genEnumLiterals ecoreEnumLiteral="Pipeline.ecore#//PipelineEventKeyword/PPL_EVT_CHECK_RUN"/>

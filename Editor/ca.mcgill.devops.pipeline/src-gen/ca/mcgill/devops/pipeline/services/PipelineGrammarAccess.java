@@ -3417,129 +3417,132 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		private final Keyword cPPL_EVT_PUSHPushKeyword_0_0 = (Keyword)cPPL_EVT_PUSHEnumLiteralDeclaration_0.eContents().get(0);
 		private final EnumLiteralDeclaration cPPL_EVT_PULL_REQUESTEnumLiteralDeclaration_1 = (EnumLiteralDeclaration)cAlternatives.eContents().get(1);
 		private final Keyword cPPL_EVT_PULL_REQUESTPull_requestKeyword_1_0 = (Keyword)cPPL_EVT_PULL_REQUESTEnumLiteralDeclaration_1.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_WORKFLOW_DISPATCHEnumLiteralDeclaration_2 = (EnumLiteralDeclaration)cAlternatives.eContents().get(2);
-		private final Keyword cPPL_EVT_WORKFLOW_DISPATCHWorkflow_dispatchKeyword_2_0 = (Keyword)cPPL_EVT_WORKFLOW_DISPATCHEnumLiteralDeclaration_2.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_REPOSITORY_DISPATCHEnumLiteralDeclaration_3 = (EnumLiteralDeclaration)cAlternatives.eContents().get(3);
-		private final Keyword cPPL_EVT_REPOSITORY_DISPATCHRepository_dispatchKeyword_3_0 = (Keyword)cPPL_EVT_REPOSITORY_DISPATCHEnumLiteralDeclaration_3.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_CHECK_RUNEnumLiteralDeclaration_4 = (EnumLiteralDeclaration)cAlternatives.eContents().get(4);
-		private final Keyword cPPL_EVT_CHECK_RUNCheck_runKeyword_4_0 = (Keyword)cPPL_EVT_CHECK_RUNEnumLiteralDeclaration_4.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_CHECK_SUITEEnumLiteralDeclaration_5 = (EnumLiteralDeclaration)cAlternatives.eContents().get(5);
-		private final Keyword cPPL_EVT_CHECK_SUITECheck_suiteKeyword_5_0 = (Keyword)cPPL_EVT_CHECK_SUITEEnumLiteralDeclaration_5.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_CREATEEnumLiteralDeclaration_6 = (EnumLiteralDeclaration)cAlternatives.eContents().get(6);
-		private final Keyword cPPL_EVT_CREATECreateKeyword_6_0 = (Keyword)cPPL_EVT_CREATEEnumLiteralDeclaration_6.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_DELETEEnumLiteralDeclaration_7 = (EnumLiteralDeclaration)cAlternatives.eContents().get(7);
-		private final Keyword cPPL_EVT_DELETEDeleteKeyword_7_0 = (Keyword)cPPL_EVT_DELETEEnumLiteralDeclaration_7.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_DEPLOYMENTEnumLiteralDeclaration_8 = (EnumLiteralDeclaration)cAlternatives.eContents().get(8);
-		private final Keyword cPPL_EVT_DEPLOYMENTDeploymentKeyword_8_0 = (Keyword)cPPL_EVT_DEPLOYMENTEnumLiteralDeclaration_8.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_DEPLOYMENT_STATUSEnumLiteralDeclaration_9 = (EnumLiteralDeclaration)cAlternatives.eContents().get(9);
-		private final Keyword cPPL_EVT_DEPLOYMENT_STATUSDeployment_statusKeyword_9_0 = (Keyword)cPPL_EVT_DEPLOYMENT_STATUSEnumLiteralDeclaration_9.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_FORKEnumLiteralDeclaration_10 = (EnumLiteralDeclaration)cAlternatives.eContents().get(10);
-		private final Keyword cPPL_EVT_FORKForkKeyword_10_0 = (Keyword)cPPL_EVT_FORKEnumLiteralDeclaration_10.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_GOLLUMEnumLiteralDeclaration_11 = (EnumLiteralDeclaration)cAlternatives.eContents().get(11);
-		private final Keyword cPPL_EVT_GOLLUMGollumKeyword_11_0 = (Keyword)cPPL_EVT_GOLLUMEnumLiteralDeclaration_11.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_ISSUE_COMMENTEnumLiteralDeclaration_12 = (EnumLiteralDeclaration)cAlternatives.eContents().get(12);
-		private final Keyword cPPL_EVT_ISSUE_COMMENTIssue_commentKeyword_12_0 = (Keyword)cPPL_EVT_ISSUE_COMMENTEnumLiteralDeclaration_12.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_ISSUESEnumLiteralDeclaration_13 = (EnumLiteralDeclaration)cAlternatives.eContents().get(13);
-		private final Keyword cPPL_EVT_ISSUESIssuesKeyword_13_0 = (Keyword)cPPL_EVT_ISSUESEnumLiteralDeclaration_13.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_LABELEnumLiteralDeclaration_14 = (EnumLiteralDeclaration)cAlternatives.eContents().get(14);
-		private final Keyword cPPL_EVT_LABELLabelKeyword_14_0 = (Keyword)cPPL_EVT_LABELEnumLiteralDeclaration_14.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_MILESTONEEnumLiteralDeclaration_15 = (EnumLiteralDeclaration)cAlternatives.eContents().get(15);
-		private final Keyword cPPL_EVT_MILESTONEMilestoneKeyword_15_0 = (Keyword)cPPL_EVT_MILESTONEEnumLiteralDeclaration_15.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_PAGE_BUILDEnumLiteralDeclaration_16 = (EnumLiteralDeclaration)cAlternatives.eContents().get(16);
-		private final Keyword cPPL_EVT_PAGE_BUILDPage_buildKeyword_16_0 = (Keyword)cPPL_EVT_PAGE_BUILDEnumLiteralDeclaration_16.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_PROJECTEnumLiteralDeclaration_17 = (EnumLiteralDeclaration)cAlternatives.eContents().get(17);
-		private final Keyword cPPL_EVT_PROJECTProjectKeyword_17_0 = (Keyword)cPPL_EVT_PROJECTEnumLiteralDeclaration_17.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_PROJECT_CARDEnumLiteralDeclaration_18 = (EnumLiteralDeclaration)cAlternatives.eContents().get(18);
-		private final Keyword cPPL_EVT_PROJECT_CARDProject_cardKeyword_18_0 = (Keyword)cPPL_EVT_PROJECT_CARDEnumLiteralDeclaration_18.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_PROJECT_COLUMNEnumLiteralDeclaration_19 = (EnumLiteralDeclaration)cAlternatives.eContents().get(19);
-		private final Keyword cPPL_EVT_PROJECT_COLUMNProject_columnKeyword_19_0 = (Keyword)cPPL_EVT_PROJECT_COLUMNEnumLiteralDeclaration_19.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_PUBLICEnumLiteralDeclaration_20 = (EnumLiteralDeclaration)cAlternatives.eContents().get(20);
-		private final Keyword cPPL_EVT_PUBLICPublicKeyword_20_0 = (Keyword)cPPL_EVT_PUBLICEnumLiteralDeclaration_20.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_PULL_REQUEST_REVIEWEnumLiteralDeclaration_21 = (EnumLiteralDeclaration)cAlternatives.eContents().get(21);
-		private final Keyword cPPL_EVT_PULL_REQUEST_REVIEWPull_request_reviewKeyword_21_0 = (Keyword)cPPL_EVT_PULL_REQUEST_REVIEWEnumLiteralDeclaration_21.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_PULL_REQUEST_REVIEW_COMMENTEnumLiteralDeclaration_22 = (EnumLiteralDeclaration)cAlternatives.eContents().get(22);
-		private final Keyword cPPL_EVT_PULL_REQUEST_REVIEW_COMMENTPull_request_review_commentKeyword_22_0 = (Keyword)cPPL_EVT_PULL_REQUEST_REVIEW_COMMENTEnumLiteralDeclaration_22.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_PULL_REQUEST_TARGETEnumLiteralDeclaration_23 = (EnumLiteralDeclaration)cAlternatives.eContents().get(23);
-		private final Keyword cPPL_EVT_PULL_REQUEST_TARGETPull_request_targetKeyword_23_0 = (Keyword)cPPL_EVT_PULL_REQUEST_TARGETEnumLiteralDeclaration_23.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_REGISTRY_PACKAGEEnumLiteralDeclaration_24 = (EnumLiteralDeclaration)cAlternatives.eContents().get(24);
-		private final Keyword cPPL_EVT_REGISTRY_PACKAGERegistry_packageKeyword_24_0 = (Keyword)cPPL_EVT_REGISTRY_PACKAGEEnumLiteralDeclaration_24.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_RELEASEEnumLiteralDeclaration_25 = (EnumLiteralDeclaration)cAlternatives.eContents().get(25);
-		private final Keyword cPPL_EVT_RELEASEReleaseKeyword_25_0 = (Keyword)cPPL_EVT_RELEASEEnumLiteralDeclaration_25.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_STATUSEnumLiteralDeclaration_26 = (EnumLiteralDeclaration)cAlternatives.eContents().get(26);
-		private final Keyword cPPL_EVT_STATUSStatusKeyword_26_0 = (Keyword)cPPL_EVT_STATUSEnumLiteralDeclaration_26.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_WATCHEnumLiteralDeclaration_27 = (EnumLiteralDeclaration)cAlternatives.eContents().get(27);
-		private final Keyword cPPL_EVT_WATCHWatchKeyword_27_0 = (Keyword)cPPL_EVT_WATCHEnumLiteralDeclaration_27.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_WORKFLOW_CALLEnumLiteralDeclaration_28 = (EnumLiteralDeclaration)cAlternatives.eContents().get(28);
-		private final Keyword cPPL_EVT_WORKFLOW_CALLWorkflow_callKeyword_28_0 = (Keyword)cPPL_EVT_WORKFLOW_CALLEnumLiteralDeclaration_28.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_WORKFLOW_RUNEnumLiteralDeclaration_29 = (EnumLiteralDeclaration)cAlternatives.eContents().get(29);
-		private final Keyword cPPL_EVT_WORKFLOW_RUNWorkflow_runKeyword_29_0 = (Keyword)cPPL_EVT_WORKFLOW_RUNEnumLiteralDeclaration_29.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_TRIGGEREnumLiteralDeclaration_30 = (EnumLiteralDeclaration)cAlternatives.eContents().get(30);
-		private final Keyword cPPL_EVT_TRIGGERTriggerKeyword_30_0 = (Keyword)cPPL_EVT_TRIGGEREnumLiteralDeclaration_30.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_PREnumLiteralDeclaration_31 = (EnumLiteralDeclaration)cAlternatives.eContents().get(31);
-		private final Keyword cPPL_EVT_PRPrKeyword_31_0 = (Keyword)cPPL_EVT_PREnumLiteralDeclaration_31.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_BRANCHESEnumLiteralDeclaration_32 = (EnumLiteralDeclaration)cAlternatives.eContents().get(32);
-		private final Keyword cPPL_EVT_BRANCHESBranchesKeyword_32_0 = (Keyword)cPPL_EVT_BRANCHESEnumLiteralDeclaration_32.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_TAGSEnumLiteralDeclaration_33 = (EnumLiteralDeclaration)cAlternatives.eContents().get(33);
-		private final Keyword cPPL_EVT_TAGSTagsKeyword_33_0 = (Keyword)cPPL_EVT_TAGSEnumLiteralDeclaration_33.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_PATHSEnumLiteralDeclaration_34 = (EnumLiteralDeclaration)cAlternatives.eContents().get(34);
-		private final Keyword cPPL_EVT_PATHSPathsKeyword_34_0 = (Keyword)cPPL_EVT_PATHSEnumLiteralDeclaration_34.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_AUTO_CANCELEnumLiteralDeclaration_35 = (EnumLiteralDeclaration)cAlternatives.eContents().get(35);
-		private final Keyword cPPL_EVT_AUTO_CANCELAutoCancelKeyword_35_0 = (Keyword)cPPL_EVT_AUTO_CANCELEnumLiteralDeclaration_35.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_DRAFTSEnumLiteralDeclaration_36 = (EnumLiteralDeclaration)cAlternatives.eContents().get(36);
-		private final Keyword cPPL_EVT_DRAFTSDraftsKeyword_36_0 = (Keyword)cPPL_EVT_DRAFTSEnumLiteralDeclaration_36.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_ONLYEnumLiteralDeclaration_37 = (EnumLiteralDeclaration)cAlternatives.eContents().get(37);
-		private final Keyword cPPL_EVT_ONLYOnlyKeyword_37_0 = (Keyword)cPPL_EVT_ONLYEnumLiteralDeclaration_37.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_EXCEPTEnumLiteralDeclaration_38 = (EnumLiteralDeclaration)cAlternatives.eContents().get(38);
-		private final Keyword cPPL_EVT_EXCEPTExceptKeyword_38_0 = (Keyword)cPPL_EVT_EXCEPTEnumLiteralDeclaration_38.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_RULESEnumLiteralDeclaration_39 = (EnumLiteralDeclaration)cAlternatives.eContents().get(39);
-		private final Keyword cPPL_EVT_RULESRulesKeyword_39_0 = (Keyword)cPPL_EVT_RULESEnumLiteralDeclaration_39.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_WORKFLOW_RULESEnumLiteralDeclaration_40 = (EnumLiteralDeclaration)cAlternatives.eContents().get(40);
-		private final Keyword cPPL_EVT_WORKFLOW_RULESWorkflowRulesKeyword_40_0 = (Keyword)cPPL_EVT_WORKFLOW_RULESEnumLiteralDeclaration_40.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_PIPELINE_SCHEDULEEnumLiteralDeclaration_41 = (EnumLiteralDeclaration)cAlternatives.eContents().get(41);
-		private final Keyword cPPL_EVT_PIPELINE_SCHEDULEPipeline_scheduleKeyword_41_0 = (Keyword)cPPL_EVT_PIPELINE_SCHEDULEEnumLiteralDeclaration_41.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_MERGE_REQUESTSEnumLiteralDeclaration_42 = (EnumLiteralDeclaration)cAlternatives.eContents().get(42);
-		private final Keyword cPPL_EVT_MERGE_REQUESTSMerge_requestsKeyword_42_0 = (Keyword)cPPL_EVT_MERGE_REQUESTSEnumLiteralDeclaration_42.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_CHANGESEnumLiteralDeclaration_43 = (EnumLiteralDeclaration)cAlternatives.eContents().get(43);
-		private final Keyword cPPL_EVT_CHANGESChangesKeyword_43_0 = (Keyword)cPPL_EVT_CHANGESEnumLiteralDeclaration_43.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_PIPELINESEnumLiteralDeclaration_44 = (EnumLiteralDeclaration)cAlternatives.eContents().get(44);
-		private final Keyword cPPL_EVT_PIPELINESPipelinesKeyword_44_0 = (Keyword)cPPL_EVT_PIPELINESEnumLiteralDeclaration_44.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_DEFAULTEnumLiteralDeclaration_45 = (EnumLiteralDeclaration)cAlternatives.eContents().get(45);
-		private final Keyword cPPL_EVT_DEFAULTDefaultKeyword_45_0 = (Keyword)cPPL_EVT_DEFAULTEnumLiteralDeclaration_45.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_PULL_REQUESTSEnumLiteralDeclaration_46 = (EnumLiteralDeclaration)cAlternatives.eContents().get(46);
-		private final Keyword cPPL_EVT_PULL_REQUESTSPullRequestsKeyword_46_0 = (Keyword)cPPL_EVT_PULL_REQUESTSEnumLiteralDeclaration_46.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_CUSTOMEnumLiteralDeclaration_47 = (EnumLiteralDeclaration)cAlternatives.eContents().get(47);
-		private final Keyword cPPL_EVT_CUSTOMCustomKeyword_47_0 = (Keyword)cPPL_EVT_CUSTOMEnumLiteralDeclaration_47.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_CONDITIONSEnumLiteralDeclaration_48 = (EnumLiteralDeclaration)cAlternatives.eContents().get(48);
-		private final Keyword cPPL_EVT_CONDITIONSConditionsKeyword_48_0 = (Keyword)cPPL_EVT_CONDITIONSEnumLiteralDeclaration_48.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_BRANCH_DELETEDEnumLiteralDeclaration_49 = (EnumLiteralDeclaration)cAlternatives.eContents().get(49);
-		private final Keyword cPPL_EVT_BRANCH_DELETEDBitbucketBranchDeletedKeyword_49_0 = (Keyword)cPPL_EVT_BRANCH_DELETEDEnumLiteralDeclaration_49.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_BRANCH_CREATEDEnumLiteralDeclaration_50 = (EnumLiteralDeclaration)cAlternatives.eContents().get(50);
-		private final Keyword cPPL_EVT_BRANCH_CREATEDBitbucketBranchCreatedKeyword_50_0 = (Keyword)cPPL_EVT_BRANCH_CREATEDEnumLiteralDeclaration_50.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_TAG_CREATEDEnumLiteralDeclaration_51 = (EnumLiteralDeclaration)cAlternatives.eContents().get(51);
-		private final Keyword cPPL_EVT_TAG_CREATEDBitbucketTagCreatedKeyword_51_0 = (Keyword)cPPL_EVT_TAG_CREATEDEnumLiteralDeclaration_51.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_TAG_DELETEDEnumLiteralDeclaration_52 = (EnumLiteralDeclaration)cAlternatives.eContents().get(52);
-		private final Keyword cPPL_EVT_TAG_DELETEDBitbucketTagDeletedKeyword_52_0 = (Keyword)cPPL_EVT_TAG_DELETEDEnumLiteralDeclaration_52.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_REPOSITORY_TRIGGEREnumLiteralDeclaration_53 = (EnumLiteralDeclaration)cAlternatives.eContents().get(53);
-		private final Keyword cPPL_EVT_REPOSITORY_TRIGGERRepositoryKeyword_53_0 = (Keyword)cPPL_EVT_REPOSITORY_TRIGGEREnumLiteralDeclaration_53.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_SCHEDULED_TRIGGEREnumLiteralDeclaration_54 = (EnumLiteralDeclaration)cAlternatives.eContents().get(54);
-		private final Keyword cPPL_EVT_SCHEDULED_TRIGGERScheduledKeyword_54_0 = (Keyword)cPPL_EVT_SCHEDULED_TRIGGEREnumLiteralDeclaration_54.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_REMOTE_TRIGGEREnumLiteralDeclaration_55 = (EnumLiteralDeclaration)cAlternatives.eContents().get(55);
-		private final Keyword cPPL_EVT_REMOTE_TRIGGERRemoteKeyword_55_0 = (Keyword)cPPL_EVT_REMOTE_TRIGGEREnumLiteralDeclaration_55.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_BITBUCKET_TRIGGEREnumLiteralDeclaration_56 = (EnumLiteralDeclaration)cAlternatives.eContents().get(56);
-		private final Keyword cPPL_EVT_BITBUCKET_TRIGGERBitbucketKeyword_56_0 = (Keyword)cPPL_EVT_BITBUCKET_TRIGGEREnumLiteralDeclaration_56.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_PLAN_BRANCHEnumLiteralDeclaration_57 = (EnumLiteralDeclaration)cAlternatives.eContents().get(57);
-		private final Keyword cPPL_EVT_PLAN_BRANCHPlanBranchKeyword_57_0 = (Keyword)cPPL_EVT_PLAN_BRANCHEnumLiteralDeclaration_57.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_CRONEnumLiteralDeclaration_58 = (EnumLiteralDeclaration)cAlternatives.eContents().get(58);
-		private final Keyword cPPL_EVT_CRONCronKeyword_58_0 = (Keyword)cPPL_EVT_CRONEnumLiteralDeclaration_58.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_NOTIFICATIONSEnumLiteralDeclaration_59 = (EnumLiteralDeclaration)cAlternatives.eContents().get(59);
-		private final Keyword cPPL_EVT_NOTIFICATIONSNotificationsKeyword_59_0 = (Keyword)cPPL_EVT_NOTIFICATIONSEnumLiteralDeclaration_59.eContents().get(0);
-		private final EnumLiteralDeclaration cPPL_EVT_LOCK_BEHAVIOREnumLiteralDeclaration_60 = (EnumLiteralDeclaration)cAlternatives.eContents().get(60);
-		private final Keyword cPPL_EVT_LOCK_BEHAVIORLockBehaviorKeyword_60_0 = (Keyword)cPPL_EVT_LOCK_BEHAVIOREnumLiteralDeclaration_60.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_NONEEnumLiteralDeclaration_2 = (EnumLiteralDeclaration)cAlternatives.eContents().get(2);
+		private final Keyword cPPL_EVT_NONENoneKeyword_2_0 = (Keyword)cPPL_EVT_NONEEnumLiteralDeclaration_2.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_WORKFLOW_DISPATCHEnumLiteralDeclaration_3 = (EnumLiteralDeclaration)cAlternatives.eContents().get(3);
+		private final Keyword cPPL_EVT_WORKFLOW_DISPATCHWorkflow_dispatchKeyword_3_0 = (Keyword)cPPL_EVT_WORKFLOW_DISPATCHEnumLiteralDeclaration_3.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_REPOSITORY_DISPATCHEnumLiteralDeclaration_4 = (EnumLiteralDeclaration)cAlternatives.eContents().get(4);
+		private final Keyword cPPL_EVT_REPOSITORY_DISPATCHRepository_dispatchKeyword_4_0 = (Keyword)cPPL_EVT_REPOSITORY_DISPATCHEnumLiteralDeclaration_4.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_CHECK_RUNEnumLiteralDeclaration_5 = (EnumLiteralDeclaration)cAlternatives.eContents().get(5);
+		private final Keyword cPPL_EVT_CHECK_RUNCheck_runKeyword_5_0 = (Keyword)cPPL_EVT_CHECK_RUNEnumLiteralDeclaration_5.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_CHECK_SUITEEnumLiteralDeclaration_6 = (EnumLiteralDeclaration)cAlternatives.eContents().get(6);
+		private final Keyword cPPL_EVT_CHECK_SUITECheck_suiteKeyword_6_0 = (Keyword)cPPL_EVT_CHECK_SUITEEnumLiteralDeclaration_6.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_CREATEEnumLiteralDeclaration_7 = (EnumLiteralDeclaration)cAlternatives.eContents().get(7);
+		private final Keyword cPPL_EVT_CREATECreateKeyword_7_0 = (Keyword)cPPL_EVT_CREATEEnumLiteralDeclaration_7.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_DELETEEnumLiteralDeclaration_8 = (EnumLiteralDeclaration)cAlternatives.eContents().get(8);
+		private final Keyword cPPL_EVT_DELETEDeleteKeyword_8_0 = (Keyword)cPPL_EVT_DELETEEnumLiteralDeclaration_8.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_DEPLOYMENTEnumLiteralDeclaration_9 = (EnumLiteralDeclaration)cAlternatives.eContents().get(9);
+		private final Keyword cPPL_EVT_DEPLOYMENTDeploymentKeyword_9_0 = (Keyword)cPPL_EVT_DEPLOYMENTEnumLiteralDeclaration_9.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_DEPLOYMENT_STATUSEnumLiteralDeclaration_10 = (EnumLiteralDeclaration)cAlternatives.eContents().get(10);
+		private final Keyword cPPL_EVT_DEPLOYMENT_STATUSDeployment_statusKeyword_10_0 = (Keyword)cPPL_EVT_DEPLOYMENT_STATUSEnumLiteralDeclaration_10.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_FORKEnumLiteralDeclaration_11 = (EnumLiteralDeclaration)cAlternatives.eContents().get(11);
+		private final Keyword cPPL_EVT_FORKForkKeyword_11_0 = (Keyword)cPPL_EVT_FORKEnumLiteralDeclaration_11.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_GOLLUMEnumLiteralDeclaration_12 = (EnumLiteralDeclaration)cAlternatives.eContents().get(12);
+		private final Keyword cPPL_EVT_GOLLUMGollumKeyword_12_0 = (Keyword)cPPL_EVT_GOLLUMEnumLiteralDeclaration_12.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_ISSUE_COMMENTEnumLiteralDeclaration_13 = (EnumLiteralDeclaration)cAlternatives.eContents().get(13);
+		private final Keyword cPPL_EVT_ISSUE_COMMENTIssue_commentKeyword_13_0 = (Keyword)cPPL_EVT_ISSUE_COMMENTEnumLiteralDeclaration_13.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_ISSUESEnumLiteralDeclaration_14 = (EnumLiteralDeclaration)cAlternatives.eContents().get(14);
+		private final Keyword cPPL_EVT_ISSUESIssuesKeyword_14_0 = (Keyword)cPPL_EVT_ISSUESEnumLiteralDeclaration_14.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_LABELEnumLiteralDeclaration_15 = (EnumLiteralDeclaration)cAlternatives.eContents().get(15);
+		private final Keyword cPPL_EVT_LABELLabelKeyword_15_0 = (Keyword)cPPL_EVT_LABELEnumLiteralDeclaration_15.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_MILESTONEEnumLiteralDeclaration_16 = (EnumLiteralDeclaration)cAlternatives.eContents().get(16);
+		private final Keyword cPPL_EVT_MILESTONEMilestoneKeyword_16_0 = (Keyword)cPPL_EVT_MILESTONEEnumLiteralDeclaration_16.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_PAGE_BUILDEnumLiteralDeclaration_17 = (EnumLiteralDeclaration)cAlternatives.eContents().get(17);
+		private final Keyword cPPL_EVT_PAGE_BUILDPage_buildKeyword_17_0 = (Keyword)cPPL_EVT_PAGE_BUILDEnumLiteralDeclaration_17.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_PROJECTEnumLiteralDeclaration_18 = (EnumLiteralDeclaration)cAlternatives.eContents().get(18);
+		private final Keyword cPPL_EVT_PROJECTProjectKeyword_18_0 = (Keyword)cPPL_EVT_PROJECTEnumLiteralDeclaration_18.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_PROJECT_CARDEnumLiteralDeclaration_19 = (EnumLiteralDeclaration)cAlternatives.eContents().get(19);
+		private final Keyword cPPL_EVT_PROJECT_CARDProject_cardKeyword_19_0 = (Keyword)cPPL_EVT_PROJECT_CARDEnumLiteralDeclaration_19.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_PROJECT_COLUMNEnumLiteralDeclaration_20 = (EnumLiteralDeclaration)cAlternatives.eContents().get(20);
+		private final Keyword cPPL_EVT_PROJECT_COLUMNProject_columnKeyword_20_0 = (Keyword)cPPL_EVT_PROJECT_COLUMNEnumLiteralDeclaration_20.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_PUBLICEnumLiteralDeclaration_21 = (EnumLiteralDeclaration)cAlternatives.eContents().get(21);
+		private final Keyword cPPL_EVT_PUBLICPublicKeyword_21_0 = (Keyword)cPPL_EVT_PUBLICEnumLiteralDeclaration_21.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_PULL_REQUEST_REVIEWEnumLiteralDeclaration_22 = (EnumLiteralDeclaration)cAlternatives.eContents().get(22);
+		private final Keyword cPPL_EVT_PULL_REQUEST_REVIEWPull_request_reviewKeyword_22_0 = (Keyword)cPPL_EVT_PULL_REQUEST_REVIEWEnumLiteralDeclaration_22.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_PULL_REQUEST_REVIEW_COMMENTEnumLiteralDeclaration_23 = (EnumLiteralDeclaration)cAlternatives.eContents().get(23);
+		private final Keyword cPPL_EVT_PULL_REQUEST_REVIEW_COMMENTPull_request_review_commentKeyword_23_0 = (Keyword)cPPL_EVT_PULL_REQUEST_REVIEW_COMMENTEnumLiteralDeclaration_23.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_PULL_REQUEST_TARGETEnumLiteralDeclaration_24 = (EnumLiteralDeclaration)cAlternatives.eContents().get(24);
+		private final Keyword cPPL_EVT_PULL_REQUEST_TARGETPull_request_targetKeyword_24_0 = (Keyword)cPPL_EVT_PULL_REQUEST_TARGETEnumLiteralDeclaration_24.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_REGISTRY_PACKAGEEnumLiteralDeclaration_25 = (EnumLiteralDeclaration)cAlternatives.eContents().get(25);
+		private final Keyword cPPL_EVT_REGISTRY_PACKAGERegistry_packageKeyword_25_0 = (Keyword)cPPL_EVT_REGISTRY_PACKAGEEnumLiteralDeclaration_25.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_RELEASEEnumLiteralDeclaration_26 = (EnumLiteralDeclaration)cAlternatives.eContents().get(26);
+		private final Keyword cPPL_EVT_RELEASEReleaseKeyword_26_0 = (Keyword)cPPL_EVT_RELEASEEnumLiteralDeclaration_26.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_STATUSEnumLiteralDeclaration_27 = (EnumLiteralDeclaration)cAlternatives.eContents().get(27);
+		private final Keyword cPPL_EVT_STATUSStatusKeyword_27_0 = (Keyword)cPPL_EVT_STATUSEnumLiteralDeclaration_27.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_WATCHEnumLiteralDeclaration_28 = (EnumLiteralDeclaration)cAlternatives.eContents().get(28);
+		private final Keyword cPPL_EVT_WATCHWatchKeyword_28_0 = (Keyword)cPPL_EVT_WATCHEnumLiteralDeclaration_28.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_WORKFLOW_CALLEnumLiteralDeclaration_29 = (EnumLiteralDeclaration)cAlternatives.eContents().get(29);
+		private final Keyword cPPL_EVT_WORKFLOW_CALLWorkflow_callKeyword_29_0 = (Keyword)cPPL_EVT_WORKFLOW_CALLEnumLiteralDeclaration_29.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_WORKFLOW_RUNEnumLiteralDeclaration_30 = (EnumLiteralDeclaration)cAlternatives.eContents().get(30);
+		private final Keyword cPPL_EVT_WORKFLOW_RUNWorkflow_runKeyword_30_0 = (Keyword)cPPL_EVT_WORKFLOW_RUNEnumLiteralDeclaration_30.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_TRIGGEREnumLiteralDeclaration_31 = (EnumLiteralDeclaration)cAlternatives.eContents().get(31);
+		private final Keyword cPPL_EVT_TRIGGERTriggerKeyword_31_0 = (Keyword)cPPL_EVT_TRIGGEREnumLiteralDeclaration_31.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_PREnumLiteralDeclaration_32 = (EnumLiteralDeclaration)cAlternatives.eContents().get(32);
+		private final Keyword cPPL_EVT_PRPrKeyword_32_0 = (Keyword)cPPL_EVT_PREnumLiteralDeclaration_32.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_BRANCHESEnumLiteralDeclaration_33 = (EnumLiteralDeclaration)cAlternatives.eContents().get(33);
+		private final Keyword cPPL_EVT_BRANCHESBranchesKeyword_33_0 = (Keyword)cPPL_EVT_BRANCHESEnumLiteralDeclaration_33.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_TAGSEnumLiteralDeclaration_34 = (EnumLiteralDeclaration)cAlternatives.eContents().get(34);
+		private final Keyword cPPL_EVT_TAGSTagsKeyword_34_0 = (Keyword)cPPL_EVT_TAGSEnumLiteralDeclaration_34.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_PATHSEnumLiteralDeclaration_35 = (EnumLiteralDeclaration)cAlternatives.eContents().get(35);
+		private final Keyword cPPL_EVT_PATHSPathsKeyword_35_0 = (Keyword)cPPL_EVT_PATHSEnumLiteralDeclaration_35.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_AUTO_CANCELEnumLiteralDeclaration_36 = (EnumLiteralDeclaration)cAlternatives.eContents().get(36);
+		private final Keyword cPPL_EVT_AUTO_CANCELAutoCancelKeyword_36_0 = (Keyword)cPPL_EVT_AUTO_CANCELEnumLiteralDeclaration_36.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_DRAFTSEnumLiteralDeclaration_37 = (EnumLiteralDeclaration)cAlternatives.eContents().get(37);
+		private final Keyword cPPL_EVT_DRAFTSDraftsKeyword_37_0 = (Keyword)cPPL_EVT_DRAFTSEnumLiteralDeclaration_37.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_ONLYEnumLiteralDeclaration_38 = (EnumLiteralDeclaration)cAlternatives.eContents().get(38);
+		private final Keyword cPPL_EVT_ONLYOnlyKeyword_38_0 = (Keyword)cPPL_EVT_ONLYEnumLiteralDeclaration_38.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_EXCEPTEnumLiteralDeclaration_39 = (EnumLiteralDeclaration)cAlternatives.eContents().get(39);
+		private final Keyword cPPL_EVT_EXCEPTExceptKeyword_39_0 = (Keyword)cPPL_EVT_EXCEPTEnumLiteralDeclaration_39.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_RULESEnumLiteralDeclaration_40 = (EnumLiteralDeclaration)cAlternatives.eContents().get(40);
+		private final Keyword cPPL_EVT_RULESRulesKeyword_40_0 = (Keyword)cPPL_EVT_RULESEnumLiteralDeclaration_40.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_WORKFLOW_RULESEnumLiteralDeclaration_41 = (EnumLiteralDeclaration)cAlternatives.eContents().get(41);
+		private final Keyword cPPL_EVT_WORKFLOW_RULESWorkflowRulesKeyword_41_0 = (Keyword)cPPL_EVT_WORKFLOW_RULESEnumLiteralDeclaration_41.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_PIPELINE_SCHEDULEEnumLiteralDeclaration_42 = (EnumLiteralDeclaration)cAlternatives.eContents().get(42);
+		private final Keyword cPPL_EVT_PIPELINE_SCHEDULEPipeline_scheduleKeyword_42_0 = (Keyword)cPPL_EVT_PIPELINE_SCHEDULEEnumLiteralDeclaration_42.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_MERGE_REQUESTSEnumLiteralDeclaration_43 = (EnumLiteralDeclaration)cAlternatives.eContents().get(43);
+		private final Keyword cPPL_EVT_MERGE_REQUESTSMerge_requestsKeyword_43_0 = (Keyword)cPPL_EVT_MERGE_REQUESTSEnumLiteralDeclaration_43.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_CHANGESEnumLiteralDeclaration_44 = (EnumLiteralDeclaration)cAlternatives.eContents().get(44);
+		private final Keyword cPPL_EVT_CHANGESChangesKeyword_44_0 = (Keyword)cPPL_EVT_CHANGESEnumLiteralDeclaration_44.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_PIPELINESEnumLiteralDeclaration_45 = (EnumLiteralDeclaration)cAlternatives.eContents().get(45);
+		private final Keyword cPPL_EVT_PIPELINESPipelinesKeyword_45_0 = (Keyword)cPPL_EVT_PIPELINESEnumLiteralDeclaration_45.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_DEFAULTEnumLiteralDeclaration_46 = (EnumLiteralDeclaration)cAlternatives.eContents().get(46);
+		private final Keyword cPPL_EVT_DEFAULTDefaultKeyword_46_0 = (Keyword)cPPL_EVT_DEFAULTEnumLiteralDeclaration_46.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_PULL_REQUESTSEnumLiteralDeclaration_47 = (EnumLiteralDeclaration)cAlternatives.eContents().get(47);
+		private final Keyword cPPL_EVT_PULL_REQUESTSPullRequestsKeyword_47_0 = (Keyword)cPPL_EVT_PULL_REQUESTSEnumLiteralDeclaration_47.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_CUSTOMEnumLiteralDeclaration_48 = (EnumLiteralDeclaration)cAlternatives.eContents().get(48);
+		private final Keyword cPPL_EVT_CUSTOMCustomKeyword_48_0 = (Keyword)cPPL_EVT_CUSTOMEnumLiteralDeclaration_48.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_CONDITIONSEnumLiteralDeclaration_49 = (EnumLiteralDeclaration)cAlternatives.eContents().get(49);
+		private final Keyword cPPL_EVT_CONDITIONSConditionsKeyword_49_0 = (Keyword)cPPL_EVT_CONDITIONSEnumLiteralDeclaration_49.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_BRANCH_DELETEDEnumLiteralDeclaration_50 = (EnumLiteralDeclaration)cAlternatives.eContents().get(50);
+		private final Keyword cPPL_EVT_BRANCH_DELETEDBitbucketBranchDeletedKeyword_50_0 = (Keyword)cPPL_EVT_BRANCH_DELETEDEnumLiteralDeclaration_50.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_BRANCH_CREATEDEnumLiteralDeclaration_51 = (EnumLiteralDeclaration)cAlternatives.eContents().get(51);
+		private final Keyword cPPL_EVT_BRANCH_CREATEDBitbucketBranchCreatedKeyword_51_0 = (Keyword)cPPL_EVT_BRANCH_CREATEDEnumLiteralDeclaration_51.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_TAG_CREATEDEnumLiteralDeclaration_52 = (EnumLiteralDeclaration)cAlternatives.eContents().get(52);
+		private final Keyword cPPL_EVT_TAG_CREATEDBitbucketTagCreatedKeyword_52_0 = (Keyword)cPPL_EVT_TAG_CREATEDEnumLiteralDeclaration_52.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_TAG_DELETEDEnumLiteralDeclaration_53 = (EnumLiteralDeclaration)cAlternatives.eContents().get(53);
+		private final Keyword cPPL_EVT_TAG_DELETEDBitbucketTagDeletedKeyword_53_0 = (Keyword)cPPL_EVT_TAG_DELETEDEnumLiteralDeclaration_53.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_REPOSITORY_TRIGGEREnumLiteralDeclaration_54 = (EnumLiteralDeclaration)cAlternatives.eContents().get(54);
+		private final Keyword cPPL_EVT_REPOSITORY_TRIGGERRepositoryKeyword_54_0 = (Keyword)cPPL_EVT_REPOSITORY_TRIGGEREnumLiteralDeclaration_54.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_SCHEDULED_TRIGGEREnumLiteralDeclaration_55 = (EnumLiteralDeclaration)cAlternatives.eContents().get(55);
+		private final Keyword cPPL_EVT_SCHEDULED_TRIGGERScheduledKeyword_55_0 = (Keyword)cPPL_EVT_SCHEDULED_TRIGGEREnumLiteralDeclaration_55.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_REMOTE_TRIGGEREnumLiteralDeclaration_56 = (EnumLiteralDeclaration)cAlternatives.eContents().get(56);
+		private final Keyword cPPL_EVT_REMOTE_TRIGGERRemoteKeyword_56_0 = (Keyword)cPPL_EVT_REMOTE_TRIGGEREnumLiteralDeclaration_56.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_BITBUCKET_TRIGGEREnumLiteralDeclaration_57 = (EnumLiteralDeclaration)cAlternatives.eContents().get(57);
+		private final Keyword cPPL_EVT_BITBUCKET_TRIGGERBitbucketKeyword_57_0 = (Keyword)cPPL_EVT_BITBUCKET_TRIGGEREnumLiteralDeclaration_57.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_PLAN_BRANCHEnumLiteralDeclaration_58 = (EnumLiteralDeclaration)cAlternatives.eContents().get(58);
+		private final Keyword cPPL_EVT_PLAN_BRANCHPlanBranchKeyword_58_0 = (Keyword)cPPL_EVT_PLAN_BRANCHEnumLiteralDeclaration_58.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_CRONEnumLiteralDeclaration_59 = (EnumLiteralDeclaration)cAlternatives.eContents().get(59);
+		private final Keyword cPPL_EVT_CRONCronKeyword_59_0 = (Keyword)cPPL_EVT_CRONEnumLiteralDeclaration_59.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_NOTIFICATIONSEnumLiteralDeclaration_60 = (EnumLiteralDeclaration)cAlternatives.eContents().get(60);
+		private final Keyword cPPL_EVT_NOTIFICATIONSNotificationsKeyword_60_0 = (Keyword)cPPL_EVT_NOTIFICATIONSEnumLiteralDeclaration_60.eContents().get(0);
+		private final EnumLiteralDeclaration cPPL_EVT_LOCK_BEHAVIOREnumLiteralDeclaration_61 = (EnumLiteralDeclaration)cAlternatives.eContents().get(61);
+		private final Keyword cPPL_EVT_LOCK_BEHAVIORLockBehaviorKeyword_61_0 = (Keyword)cPPL_EVT_LOCK_BEHAVIOREnumLiteralDeclaration_61.eContents().get(0);
 		
 		///*----------------------------------------------------Event Enum----------------------------------------------------*/
 		//enum PipelineEventKeyword:
 		//    PPL_EVT_PUSH = 'push:' |
 		//    PPL_EVT_PULL_REQUEST = 'pull_request:' |
+		//    PPL_EVT_NONE = 'none' |
 		//    //PPL_EVT_SCHEDULE = 'schedule:' |
 		//    PPL_EVT_WORKFLOW_DISPATCH = 'workflow_dispatch:' |
 		//    PPL_EVT_REPOSITORY_DISPATCH = 'repository_dispatch:' |
@@ -3605,6 +3608,7 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		
 		//PPL_EVT_PUSH = 'push:' |
 		//PPL_EVT_PULL_REQUEST = 'pull_request:' |
+		//PPL_EVT_NONE = 'none' |
 		////PPL_EVT_SCHEDULE = 'schedule:' |
 		//PPL_EVT_WORKFLOW_DISPATCH = 'workflow_dispatch:' |
 		//PPL_EVT_REPOSITORY_DISPATCH = 'repository_dispatch:' |
@@ -3679,360 +3683,366 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//'pull_request:'
 		public Keyword getPPL_EVT_PULL_REQUESTPull_requestKeyword_1_0() { return cPPL_EVT_PULL_REQUESTPull_requestKeyword_1_0; }
 		
+		//PPL_EVT_NONE = 'none'
+		public EnumLiteralDeclaration getPPL_EVT_NONEEnumLiteralDeclaration_2() { return cPPL_EVT_NONEEnumLiteralDeclaration_2; }
+		
+		//'none'
+		public Keyword getPPL_EVT_NONENoneKeyword_2_0() { return cPPL_EVT_NONENoneKeyword_2_0; }
+		
 		////PPL_EVT_SCHEDULE = 'schedule:' |
 		//PPL_EVT_WORKFLOW_DISPATCH = 'workflow_dispatch:'
-		public EnumLiteralDeclaration getPPL_EVT_WORKFLOW_DISPATCHEnumLiteralDeclaration_2() { return cPPL_EVT_WORKFLOW_DISPATCHEnumLiteralDeclaration_2; }
+		public EnumLiteralDeclaration getPPL_EVT_WORKFLOW_DISPATCHEnumLiteralDeclaration_3() { return cPPL_EVT_WORKFLOW_DISPATCHEnumLiteralDeclaration_3; }
 		
 		//'workflow_dispatch:'
-		public Keyword getPPL_EVT_WORKFLOW_DISPATCHWorkflow_dispatchKeyword_2_0() { return cPPL_EVT_WORKFLOW_DISPATCHWorkflow_dispatchKeyword_2_0; }
+		public Keyword getPPL_EVT_WORKFLOW_DISPATCHWorkflow_dispatchKeyword_3_0() { return cPPL_EVT_WORKFLOW_DISPATCHWorkflow_dispatchKeyword_3_0; }
 		
 		//PPL_EVT_REPOSITORY_DISPATCH = 'repository_dispatch:'
-		public EnumLiteralDeclaration getPPL_EVT_REPOSITORY_DISPATCHEnumLiteralDeclaration_3() { return cPPL_EVT_REPOSITORY_DISPATCHEnumLiteralDeclaration_3; }
+		public EnumLiteralDeclaration getPPL_EVT_REPOSITORY_DISPATCHEnumLiteralDeclaration_4() { return cPPL_EVT_REPOSITORY_DISPATCHEnumLiteralDeclaration_4; }
 		
 		//'repository_dispatch:'
-		public Keyword getPPL_EVT_REPOSITORY_DISPATCHRepository_dispatchKeyword_3_0() { return cPPL_EVT_REPOSITORY_DISPATCHRepository_dispatchKeyword_3_0; }
+		public Keyword getPPL_EVT_REPOSITORY_DISPATCHRepository_dispatchKeyword_4_0() { return cPPL_EVT_REPOSITORY_DISPATCHRepository_dispatchKeyword_4_0; }
 		
 		//PPL_EVT_CHECK_RUN = 'check_run:'
-		public EnumLiteralDeclaration getPPL_EVT_CHECK_RUNEnumLiteralDeclaration_4() { return cPPL_EVT_CHECK_RUNEnumLiteralDeclaration_4; }
+		public EnumLiteralDeclaration getPPL_EVT_CHECK_RUNEnumLiteralDeclaration_5() { return cPPL_EVT_CHECK_RUNEnumLiteralDeclaration_5; }
 		
 		//'check_run:'
-		public Keyword getPPL_EVT_CHECK_RUNCheck_runKeyword_4_0() { return cPPL_EVT_CHECK_RUNCheck_runKeyword_4_0; }
+		public Keyword getPPL_EVT_CHECK_RUNCheck_runKeyword_5_0() { return cPPL_EVT_CHECK_RUNCheck_runKeyword_5_0; }
 		
 		//PPL_EVT_CHECK_SUITE = 'check_suite:'
-		public EnumLiteralDeclaration getPPL_EVT_CHECK_SUITEEnumLiteralDeclaration_5() { return cPPL_EVT_CHECK_SUITEEnumLiteralDeclaration_5; }
+		public EnumLiteralDeclaration getPPL_EVT_CHECK_SUITEEnumLiteralDeclaration_6() { return cPPL_EVT_CHECK_SUITEEnumLiteralDeclaration_6; }
 		
 		//'check_suite:'
-		public Keyword getPPL_EVT_CHECK_SUITECheck_suiteKeyword_5_0() { return cPPL_EVT_CHECK_SUITECheck_suiteKeyword_5_0; }
+		public Keyword getPPL_EVT_CHECK_SUITECheck_suiteKeyword_6_0() { return cPPL_EVT_CHECK_SUITECheck_suiteKeyword_6_0; }
 		
 		//PPL_EVT_CREATE = 'create:'
-		public EnumLiteralDeclaration getPPL_EVT_CREATEEnumLiteralDeclaration_6() { return cPPL_EVT_CREATEEnumLiteralDeclaration_6; }
+		public EnumLiteralDeclaration getPPL_EVT_CREATEEnumLiteralDeclaration_7() { return cPPL_EVT_CREATEEnumLiteralDeclaration_7; }
 		
 		//'create:'
-		public Keyword getPPL_EVT_CREATECreateKeyword_6_0() { return cPPL_EVT_CREATECreateKeyword_6_0; }
+		public Keyword getPPL_EVT_CREATECreateKeyword_7_0() { return cPPL_EVT_CREATECreateKeyword_7_0; }
 		
 		//PPL_EVT_DELETE = 'delete:'
-		public EnumLiteralDeclaration getPPL_EVT_DELETEEnumLiteralDeclaration_7() { return cPPL_EVT_DELETEEnumLiteralDeclaration_7; }
+		public EnumLiteralDeclaration getPPL_EVT_DELETEEnumLiteralDeclaration_8() { return cPPL_EVT_DELETEEnumLiteralDeclaration_8; }
 		
 		//'delete:'
-		public Keyword getPPL_EVT_DELETEDeleteKeyword_7_0() { return cPPL_EVT_DELETEDeleteKeyword_7_0; }
+		public Keyword getPPL_EVT_DELETEDeleteKeyword_8_0() { return cPPL_EVT_DELETEDeleteKeyword_8_0; }
 		
 		//PPL_EVT_DEPLOYMENT = 'deployment:'
-		public EnumLiteralDeclaration getPPL_EVT_DEPLOYMENTEnumLiteralDeclaration_8() { return cPPL_EVT_DEPLOYMENTEnumLiteralDeclaration_8; }
+		public EnumLiteralDeclaration getPPL_EVT_DEPLOYMENTEnumLiteralDeclaration_9() { return cPPL_EVT_DEPLOYMENTEnumLiteralDeclaration_9; }
 		
 		//'deployment:'
-		public Keyword getPPL_EVT_DEPLOYMENTDeploymentKeyword_8_0() { return cPPL_EVT_DEPLOYMENTDeploymentKeyword_8_0; }
+		public Keyword getPPL_EVT_DEPLOYMENTDeploymentKeyword_9_0() { return cPPL_EVT_DEPLOYMENTDeploymentKeyword_9_0; }
 		
 		//PPL_EVT_DEPLOYMENT_STATUS = 'deployment_status:'
-		public EnumLiteralDeclaration getPPL_EVT_DEPLOYMENT_STATUSEnumLiteralDeclaration_9() { return cPPL_EVT_DEPLOYMENT_STATUSEnumLiteralDeclaration_9; }
+		public EnumLiteralDeclaration getPPL_EVT_DEPLOYMENT_STATUSEnumLiteralDeclaration_10() { return cPPL_EVT_DEPLOYMENT_STATUSEnumLiteralDeclaration_10; }
 		
 		//'deployment_status:'
-		public Keyword getPPL_EVT_DEPLOYMENT_STATUSDeployment_statusKeyword_9_0() { return cPPL_EVT_DEPLOYMENT_STATUSDeployment_statusKeyword_9_0; }
+		public Keyword getPPL_EVT_DEPLOYMENT_STATUSDeployment_statusKeyword_10_0() { return cPPL_EVT_DEPLOYMENT_STATUSDeployment_statusKeyword_10_0; }
 		
 		//PPL_EVT_FORK = 'fork:'
-		public EnumLiteralDeclaration getPPL_EVT_FORKEnumLiteralDeclaration_10() { return cPPL_EVT_FORKEnumLiteralDeclaration_10; }
+		public EnumLiteralDeclaration getPPL_EVT_FORKEnumLiteralDeclaration_11() { return cPPL_EVT_FORKEnumLiteralDeclaration_11; }
 		
 		//'fork:'
-		public Keyword getPPL_EVT_FORKForkKeyword_10_0() { return cPPL_EVT_FORKForkKeyword_10_0; }
+		public Keyword getPPL_EVT_FORKForkKeyword_11_0() { return cPPL_EVT_FORKForkKeyword_11_0; }
 		
 		//PPL_EVT_GOLLUM = 'gollum:'
-		public EnumLiteralDeclaration getPPL_EVT_GOLLUMEnumLiteralDeclaration_11() { return cPPL_EVT_GOLLUMEnumLiteralDeclaration_11; }
+		public EnumLiteralDeclaration getPPL_EVT_GOLLUMEnumLiteralDeclaration_12() { return cPPL_EVT_GOLLUMEnumLiteralDeclaration_12; }
 		
 		//'gollum:'
-		public Keyword getPPL_EVT_GOLLUMGollumKeyword_11_0() { return cPPL_EVT_GOLLUMGollumKeyword_11_0; }
+		public Keyword getPPL_EVT_GOLLUMGollumKeyword_12_0() { return cPPL_EVT_GOLLUMGollumKeyword_12_0; }
 		
 		//PPL_EVT_ISSUE_COMMENT = 'issue_comment:'
-		public EnumLiteralDeclaration getPPL_EVT_ISSUE_COMMENTEnumLiteralDeclaration_12() { return cPPL_EVT_ISSUE_COMMENTEnumLiteralDeclaration_12; }
+		public EnumLiteralDeclaration getPPL_EVT_ISSUE_COMMENTEnumLiteralDeclaration_13() { return cPPL_EVT_ISSUE_COMMENTEnumLiteralDeclaration_13; }
 		
 		//'issue_comment:'
-		public Keyword getPPL_EVT_ISSUE_COMMENTIssue_commentKeyword_12_0() { return cPPL_EVT_ISSUE_COMMENTIssue_commentKeyword_12_0; }
+		public Keyword getPPL_EVT_ISSUE_COMMENTIssue_commentKeyword_13_0() { return cPPL_EVT_ISSUE_COMMENTIssue_commentKeyword_13_0; }
 		
 		//PPL_EVT_ISSUES = 'issues:'
-		public EnumLiteralDeclaration getPPL_EVT_ISSUESEnumLiteralDeclaration_13() { return cPPL_EVT_ISSUESEnumLiteralDeclaration_13; }
+		public EnumLiteralDeclaration getPPL_EVT_ISSUESEnumLiteralDeclaration_14() { return cPPL_EVT_ISSUESEnumLiteralDeclaration_14; }
 		
 		//'issues:'
-		public Keyword getPPL_EVT_ISSUESIssuesKeyword_13_0() { return cPPL_EVT_ISSUESIssuesKeyword_13_0; }
+		public Keyword getPPL_EVT_ISSUESIssuesKeyword_14_0() { return cPPL_EVT_ISSUESIssuesKeyword_14_0; }
 		
 		//PPL_EVT_LABEL = 'label:'
-		public EnumLiteralDeclaration getPPL_EVT_LABELEnumLiteralDeclaration_14() { return cPPL_EVT_LABELEnumLiteralDeclaration_14; }
+		public EnumLiteralDeclaration getPPL_EVT_LABELEnumLiteralDeclaration_15() { return cPPL_EVT_LABELEnumLiteralDeclaration_15; }
 		
 		//'label:'
-		public Keyword getPPL_EVT_LABELLabelKeyword_14_0() { return cPPL_EVT_LABELLabelKeyword_14_0; }
+		public Keyword getPPL_EVT_LABELLabelKeyword_15_0() { return cPPL_EVT_LABELLabelKeyword_15_0; }
 		
 		//PPL_EVT_MILESTONE = 'milestone:'
-		public EnumLiteralDeclaration getPPL_EVT_MILESTONEEnumLiteralDeclaration_15() { return cPPL_EVT_MILESTONEEnumLiteralDeclaration_15; }
+		public EnumLiteralDeclaration getPPL_EVT_MILESTONEEnumLiteralDeclaration_16() { return cPPL_EVT_MILESTONEEnumLiteralDeclaration_16; }
 		
 		//'milestone:'
-		public Keyword getPPL_EVT_MILESTONEMilestoneKeyword_15_0() { return cPPL_EVT_MILESTONEMilestoneKeyword_15_0; }
+		public Keyword getPPL_EVT_MILESTONEMilestoneKeyword_16_0() { return cPPL_EVT_MILESTONEMilestoneKeyword_16_0; }
 		
 		//PPL_EVT_PAGE_BUILD = 'page_build:'
-		public EnumLiteralDeclaration getPPL_EVT_PAGE_BUILDEnumLiteralDeclaration_16() { return cPPL_EVT_PAGE_BUILDEnumLiteralDeclaration_16; }
+		public EnumLiteralDeclaration getPPL_EVT_PAGE_BUILDEnumLiteralDeclaration_17() { return cPPL_EVT_PAGE_BUILDEnumLiteralDeclaration_17; }
 		
 		//'page_build:'
-		public Keyword getPPL_EVT_PAGE_BUILDPage_buildKeyword_16_0() { return cPPL_EVT_PAGE_BUILDPage_buildKeyword_16_0; }
+		public Keyword getPPL_EVT_PAGE_BUILDPage_buildKeyword_17_0() { return cPPL_EVT_PAGE_BUILDPage_buildKeyword_17_0; }
 		
 		//PPL_EVT_PROJECT = 'project:'
-		public EnumLiteralDeclaration getPPL_EVT_PROJECTEnumLiteralDeclaration_17() { return cPPL_EVT_PROJECTEnumLiteralDeclaration_17; }
+		public EnumLiteralDeclaration getPPL_EVT_PROJECTEnumLiteralDeclaration_18() { return cPPL_EVT_PROJECTEnumLiteralDeclaration_18; }
 		
 		//'project:'
-		public Keyword getPPL_EVT_PROJECTProjectKeyword_17_0() { return cPPL_EVT_PROJECTProjectKeyword_17_0; }
+		public Keyword getPPL_EVT_PROJECTProjectKeyword_18_0() { return cPPL_EVT_PROJECTProjectKeyword_18_0; }
 		
 		//PPL_EVT_PROJECT_CARD = 'project_card:'
-		public EnumLiteralDeclaration getPPL_EVT_PROJECT_CARDEnumLiteralDeclaration_18() { return cPPL_EVT_PROJECT_CARDEnumLiteralDeclaration_18; }
+		public EnumLiteralDeclaration getPPL_EVT_PROJECT_CARDEnumLiteralDeclaration_19() { return cPPL_EVT_PROJECT_CARDEnumLiteralDeclaration_19; }
 		
 		//'project_card:'
-		public Keyword getPPL_EVT_PROJECT_CARDProject_cardKeyword_18_0() { return cPPL_EVT_PROJECT_CARDProject_cardKeyword_18_0; }
+		public Keyword getPPL_EVT_PROJECT_CARDProject_cardKeyword_19_0() { return cPPL_EVT_PROJECT_CARDProject_cardKeyword_19_0; }
 		
 		//PPL_EVT_PROJECT_COLUMN = 'project_column:'
-		public EnumLiteralDeclaration getPPL_EVT_PROJECT_COLUMNEnumLiteralDeclaration_19() { return cPPL_EVT_PROJECT_COLUMNEnumLiteralDeclaration_19; }
+		public EnumLiteralDeclaration getPPL_EVT_PROJECT_COLUMNEnumLiteralDeclaration_20() { return cPPL_EVT_PROJECT_COLUMNEnumLiteralDeclaration_20; }
 		
 		//'project_column:'
-		public Keyword getPPL_EVT_PROJECT_COLUMNProject_columnKeyword_19_0() { return cPPL_EVT_PROJECT_COLUMNProject_columnKeyword_19_0; }
+		public Keyword getPPL_EVT_PROJECT_COLUMNProject_columnKeyword_20_0() { return cPPL_EVT_PROJECT_COLUMNProject_columnKeyword_20_0; }
 		
 		//PPL_EVT_PUBLIC = 'public:'
-		public EnumLiteralDeclaration getPPL_EVT_PUBLICEnumLiteralDeclaration_20() { return cPPL_EVT_PUBLICEnumLiteralDeclaration_20; }
+		public EnumLiteralDeclaration getPPL_EVT_PUBLICEnumLiteralDeclaration_21() { return cPPL_EVT_PUBLICEnumLiteralDeclaration_21; }
 		
 		//'public:'
-		public Keyword getPPL_EVT_PUBLICPublicKeyword_20_0() { return cPPL_EVT_PUBLICPublicKeyword_20_0; }
+		public Keyword getPPL_EVT_PUBLICPublicKeyword_21_0() { return cPPL_EVT_PUBLICPublicKeyword_21_0; }
 		
 		//PPL_EVT_PULL_REQUEST_REVIEW = 'pull_request_review:'
-		public EnumLiteralDeclaration getPPL_EVT_PULL_REQUEST_REVIEWEnumLiteralDeclaration_21() { return cPPL_EVT_PULL_REQUEST_REVIEWEnumLiteralDeclaration_21; }
+		public EnumLiteralDeclaration getPPL_EVT_PULL_REQUEST_REVIEWEnumLiteralDeclaration_22() { return cPPL_EVT_PULL_REQUEST_REVIEWEnumLiteralDeclaration_22; }
 		
 		//'pull_request_review:'
-		public Keyword getPPL_EVT_PULL_REQUEST_REVIEWPull_request_reviewKeyword_21_0() { return cPPL_EVT_PULL_REQUEST_REVIEWPull_request_reviewKeyword_21_0; }
+		public Keyword getPPL_EVT_PULL_REQUEST_REVIEWPull_request_reviewKeyword_22_0() { return cPPL_EVT_PULL_REQUEST_REVIEWPull_request_reviewKeyword_22_0; }
 		
 		//PPL_EVT_PULL_REQUEST_REVIEW_COMMENT = 'pull_request_review_comment:'
-		public EnumLiteralDeclaration getPPL_EVT_PULL_REQUEST_REVIEW_COMMENTEnumLiteralDeclaration_22() { return cPPL_EVT_PULL_REQUEST_REVIEW_COMMENTEnumLiteralDeclaration_22; }
+		public EnumLiteralDeclaration getPPL_EVT_PULL_REQUEST_REVIEW_COMMENTEnumLiteralDeclaration_23() { return cPPL_EVT_PULL_REQUEST_REVIEW_COMMENTEnumLiteralDeclaration_23; }
 		
 		//'pull_request_review_comment:'
-		public Keyword getPPL_EVT_PULL_REQUEST_REVIEW_COMMENTPull_request_review_commentKeyword_22_0() { return cPPL_EVT_PULL_REQUEST_REVIEW_COMMENTPull_request_review_commentKeyword_22_0; }
+		public Keyword getPPL_EVT_PULL_REQUEST_REVIEW_COMMENTPull_request_review_commentKeyword_23_0() { return cPPL_EVT_PULL_REQUEST_REVIEW_COMMENTPull_request_review_commentKeyword_23_0; }
 		
 		//PPL_EVT_PULL_REQUEST_TARGET = 'pull_request_target:'
-		public EnumLiteralDeclaration getPPL_EVT_PULL_REQUEST_TARGETEnumLiteralDeclaration_23() { return cPPL_EVT_PULL_REQUEST_TARGETEnumLiteralDeclaration_23; }
+		public EnumLiteralDeclaration getPPL_EVT_PULL_REQUEST_TARGETEnumLiteralDeclaration_24() { return cPPL_EVT_PULL_REQUEST_TARGETEnumLiteralDeclaration_24; }
 		
 		//'pull_request_target:'
-		public Keyword getPPL_EVT_PULL_REQUEST_TARGETPull_request_targetKeyword_23_0() { return cPPL_EVT_PULL_REQUEST_TARGETPull_request_targetKeyword_23_0; }
+		public Keyword getPPL_EVT_PULL_REQUEST_TARGETPull_request_targetKeyword_24_0() { return cPPL_EVT_PULL_REQUEST_TARGETPull_request_targetKeyword_24_0; }
 		
 		//PPL_EVT_REGISTRY_PACKAGE = 'registry_package:'
-		public EnumLiteralDeclaration getPPL_EVT_REGISTRY_PACKAGEEnumLiteralDeclaration_24() { return cPPL_EVT_REGISTRY_PACKAGEEnumLiteralDeclaration_24; }
+		public EnumLiteralDeclaration getPPL_EVT_REGISTRY_PACKAGEEnumLiteralDeclaration_25() { return cPPL_EVT_REGISTRY_PACKAGEEnumLiteralDeclaration_25; }
 		
 		//'registry_package:'
-		public Keyword getPPL_EVT_REGISTRY_PACKAGERegistry_packageKeyword_24_0() { return cPPL_EVT_REGISTRY_PACKAGERegistry_packageKeyword_24_0; }
+		public Keyword getPPL_EVT_REGISTRY_PACKAGERegistry_packageKeyword_25_0() { return cPPL_EVT_REGISTRY_PACKAGERegistry_packageKeyword_25_0; }
 		
 		//PPL_EVT_RELEASE = 'release:'
-		public EnumLiteralDeclaration getPPL_EVT_RELEASEEnumLiteralDeclaration_25() { return cPPL_EVT_RELEASEEnumLiteralDeclaration_25; }
+		public EnumLiteralDeclaration getPPL_EVT_RELEASEEnumLiteralDeclaration_26() { return cPPL_EVT_RELEASEEnumLiteralDeclaration_26; }
 		
 		//'release:'
-		public Keyword getPPL_EVT_RELEASEReleaseKeyword_25_0() { return cPPL_EVT_RELEASEReleaseKeyword_25_0; }
+		public Keyword getPPL_EVT_RELEASEReleaseKeyword_26_0() { return cPPL_EVT_RELEASEReleaseKeyword_26_0; }
 		
 		//PPL_EVT_STATUS = 'status:'
-		public EnumLiteralDeclaration getPPL_EVT_STATUSEnumLiteralDeclaration_26() { return cPPL_EVT_STATUSEnumLiteralDeclaration_26; }
+		public EnumLiteralDeclaration getPPL_EVT_STATUSEnumLiteralDeclaration_27() { return cPPL_EVT_STATUSEnumLiteralDeclaration_27; }
 		
 		//'status:'
-		public Keyword getPPL_EVT_STATUSStatusKeyword_26_0() { return cPPL_EVT_STATUSStatusKeyword_26_0; }
+		public Keyword getPPL_EVT_STATUSStatusKeyword_27_0() { return cPPL_EVT_STATUSStatusKeyword_27_0; }
 		
 		//PPL_EVT_WATCH = 'watch:'
-		public EnumLiteralDeclaration getPPL_EVT_WATCHEnumLiteralDeclaration_27() { return cPPL_EVT_WATCHEnumLiteralDeclaration_27; }
+		public EnumLiteralDeclaration getPPL_EVT_WATCHEnumLiteralDeclaration_28() { return cPPL_EVT_WATCHEnumLiteralDeclaration_28; }
 		
 		//'watch:'
-		public Keyword getPPL_EVT_WATCHWatchKeyword_27_0() { return cPPL_EVT_WATCHWatchKeyword_27_0; }
+		public Keyword getPPL_EVT_WATCHWatchKeyword_28_0() { return cPPL_EVT_WATCHWatchKeyword_28_0; }
 		
 		//PPL_EVT_WORKFLOW_CALL = 'workflow_call:'
-		public EnumLiteralDeclaration getPPL_EVT_WORKFLOW_CALLEnumLiteralDeclaration_28() { return cPPL_EVT_WORKFLOW_CALLEnumLiteralDeclaration_28; }
+		public EnumLiteralDeclaration getPPL_EVT_WORKFLOW_CALLEnumLiteralDeclaration_29() { return cPPL_EVT_WORKFLOW_CALLEnumLiteralDeclaration_29; }
 		
 		//'workflow_call:'
-		public Keyword getPPL_EVT_WORKFLOW_CALLWorkflow_callKeyword_28_0() { return cPPL_EVT_WORKFLOW_CALLWorkflow_callKeyword_28_0; }
+		public Keyword getPPL_EVT_WORKFLOW_CALLWorkflow_callKeyword_29_0() { return cPPL_EVT_WORKFLOW_CALLWorkflow_callKeyword_29_0; }
 		
 		//PPL_EVT_WORKFLOW_RUN = 'workflow_run:'
-		public EnumLiteralDeclaration getPPL_EVT_WORKFLOW_RUNEnumLiteralDeclaration_29() { return cPPL_EVT_WORKFLOW_RUNEnumLiteralDeclaration_29; }
+		public EnumLiteralDeclaration getPPL_EVT_WORKFLOW_RUNEnumLiteralDeclaration_30() { return cPPL_EVT_WORKFLOW_RUNEnumLiteralDeclaration_30; }
 		
 		//'workflow_run:'
-		public Keyword getPPL_EVT_WORKFLOW_RUNWorkflow_runKeyword_29_0() { return cPPL_EVT_WORKFLOW_RUNWorkflow_runKeyword_29_0; }
+		public Keyword getPPL_EVT_WORKFLOW_RUNWorkflow_runKeyword_30_0() { return cPPL_EVT_WORKFLOW_RUNWorkflow_runKeyword_30_0; }
 		
 		//PPL_EVT_TRIGGER = 'trigger:'
-		public EnumLiteralDeclaration getPPL_EVT_TRIGGEREnumLiteralDeclaration_30() { return cPPL_EVT_TRIGGEREnumLiteralDeclaration_30; }
+		public EnumLiteralDeclaration getPPL_EVT_TRIGGEREnumLiteralDeclaration_31() { return cPPL_EVT_TRIGGEREnumLiteralDeclaration_31; }
 		
 		//'trigger:'
-		public Keyword getPPL_EVT_TRIGGERTriggerKeyword_30_0() { return cPPL_EVT_TRIGGERTriggerKeyword_30_0; }
+		public Keyword getPPL_EVT_TRIGGERTriggerKeyword_31_0() { return cPPL_EVT_TRIGGERTriggerKeyword_31_0; }
 		
 		//PPL_EVT_PR = 'pr:'
-		public EnumLiteralDeclaration getPPL_EVT_PREnumLiteralDeclaration_31() { return cPPL_EVT_PREnumLiteralDeclaration_31; }
+		public EnumLiteralDeclaration getPPL_EVT_PREnumLiteralDeclaration_32() { return cPPL_EVT_PREnumLiteralDeclaration_32; }
 		
 		//'pr:'
-		public Keyword getPPL_EVT_PRPrKeyword_31_0() { return cPPL_EVT_PRPrKeyword_31_0; }
+		public Keyword getPPL_EVT_PRPrKeyword_32_0() { return cPPL_EVT_PRPrKeyword_32_0; }
 		
 		//PPL_EVT_BRANCHES = 'branches:'
-		public EnumLiteralDeclaration getPPL_EVT_BRANCHESEnumLiteralDeclaration_32() { return cPPL_EVT_BRANCHESEnumLiteralDeclaration_32; }
+		public EnumLiteralDeclaration getPPL_EVT_BRANCHESEnumLiteralDeclaration_33() { return cPPL_EVT_BRANCHESEnumLiteralDeclaration_33; }
 		
 		//'branches:'
-		public Keyword getPPL_EVT_BRANCHESBranchesKeyword_32_0() { return cPPL_EVT_BRANCHESBranchesKeyword_32_0; }
+		public Keyword getPPL_EVT_BRANCHESBranchesKeyword_33_0() { return cPPL_EVT_BRANCHESBranchesKeyword_33_0; }
 		
 		//PPL_EVT_TAGS = 'tags:'
-		public EnumLiteralDeclaration getPPL_EVT_TAGSEnumLiteralDeclaration_33() { return cPPL_EVT_TAGSEnumLiteralDeclaration_33; }
+		public EnumLiteralDeclaration getPPL_EVT_TAGSEnumLiteralDeclaration_34() { return cPPL_EVT_TAGSEnumLiteralDeclaration_34; }
 		
 		//'tags:'
-		public Keyword getPPL_EVT_TAGSTagsKeyword_33_0() { return cPPL_EVT_TAGSTagsKeyword_33_0; }
+		public Keyword getPPL_EVT_TAGSTagsKeyword_34_0() { return cPPL_EVT_TAGSTagsKeyword_34_0; }
 		
 		//PPL_EVT_PATHS = 'paths:'
-		public EnumLiteralDeclaration getPPL_EVT_PATHSEnumLiteralDeclaration_34() { return cPPL_EVT_PATHSEnumLiteralDeclaration_34; }
+		public EnumLiteralDeclaration getPPL_EVT_PATHSEnumLiteralDeclaration_35() { return cPPL_EVT_PATHSEnumLiteralDeclaration_35; }
 		
 		//'paths:'
-		public Keyword getPPL_EVT_PATHSPathsKeyword_34_0() { return cPPL_EVT_PATHSPathsKeyword_34_0; }
+		public Keyword getPPL_EVT_PATHSPathsKeyword_35_0() { return cPPL_EVT_PATHSPathsKeyword_35_0; }
 		
 		//PPL_EVT_AUTO_CANCEL = 'autoCancel:'
-		public EnumLiteralDeclaration getPPL_EVT_AUTO_CANCELEnumLiteralDeclaration_35() { return cPPL_EVT_AUTO_CANCELEnumLiteralDeclaration_35; }
+		public EnumLiteralDeclaration getPPL_EVT_AUTO_CANCELEnumLiteralDeclaration_36() { return cPPL_EVT_AUTO_CANCELEnumLiteralDeclaration_36; }
 		
 		//'autoCancel:'
-		public Keyword getPPL_EVT_AUTO_CANCELAutoCancelKeyword_35_0() { return cPPL_EVT_AUTO_CANCELAutoCancelKeyword_35_0; }
+		public Keyword getPPL_EVT_AUTO_CANCELAutoCancelKeyword_36_0() { return cPPL_EVT_AUTO_CANCELAutoCancelKeyword_36_0; }
 		
 		//PPL_EVT_DRAFTS = 'drafts:'
-		public EnumLiteralDeclaration getPPL_EVT_DRAFTSEnumLiteralDeclaration_36() { return cPPL_EVT_DRAFTSEnumLiteralDeclaration_36; }
+		public EnumLiteralDeclaration getPPL_EVT_DRAFTSEnumLiteralDeclaration_37() { return cPPL_EVT_DRAFTSEnumLiteralDeclaration_37; }
 		
 		//'drafts:'
-		public Keyword getPPL_EVT_DRAFTSDraftsKeyword_36_0() { return cPPL_EVT_DRAFTSDraftsKeyword_36_0; }
+		public Keyword getPPL_EVT_DRAFTSDraftsKeyword_37_0() { return cPPL_EVT_DRAFTSDraftsKeyword_37_0; }
 		
 		//PPL_EVT_ONLY = 'only:'
-		public EnumLiteralDeclaration getPPL_EVT_ONLYEnumLiteralDeclaration_37() { return cPPL_EVT_ONLYEnumLiteralDeclaration_37; }
+		public EnumLiteralDeclaration getPPL_EVT_ONLYEnumLiteralDeclaration_38() { return cPPL_EVT_ONLYEnumLiteralDeclaration_38; }
 		
 		//'only:'
-		public Keyword getPPL_EVT_ONLYOnlyKeyword_37_0() { return cPPL_EVT_ONLYOnlyKeyword_37_0; }
+		public Keyword getPPL_EVT_ONLYOnlyKeyword_38_0() { return cPPL_EVT_ONLYOnlyKeyword_38_0; }
 		
 		//PPL_EVT_EXCEPT = 'except:'
-		public EnumLiteralDeclaration getPPL_EVT_EXCEPTEnumLiteralDeclaration_38() { return cPPL_EVT_EXCEPTEnumLiteralDeclaration_38; }
+		public EnumLiteralDeclaration getPPL_EVT_EXCEPTEnumLiteralDeclaration_39() { return cPPL_EVT_EXCEPTEnumLiteralDeclaration_39; }
 		
 		//'except:'
-		public Keyword getPPL_EVT_EXCEPTExceptKeyword_38_0() { return cPPL_EVT_EXCEPTExceptKeyword_38_0; }
+		public Keyword getPPL_EVT_EXCEPTExceptKeyword_39_0() { return cPPL_EVT_EXCEPTExceptKeyword_39_0; }
 		
 		//PPL_EVT_RULES = 'rules:'
-		public EnumLiteralDeclaration getPPL_EVT_RULESEnumLiteralDeclaration_39() { return cPPL_EVT_RULESEnumLiteralDeclaration_39; }
+		public EnumLiteralDeclaration getPPL_EVT_RULESEnumLiteralDeclaration_40() { return cPPL_EVT_RULESEnumLiteralDeclaration_40; }
 		
 		//'rules:'
-		public Keyword getPPL_EVT_RULESRulesKeyword_39_0() { return cPPL_EVT_RULESRulesKeyword_39_0; }
+		public Keyword getPPL_EVT_RULESRulesKeyword_40_0() { return cPPL_EVT_RULESRulesKeyword_40_0; }
 		
 		//PPL_EVT_WORKFLOW_RULES = 'workflow.rules:'
-		public EnumLiteralDeclaration getPPL_EVT_WORKFLOW_RULESEnumLiteralDeclaration_40() { return cPPL_EVT_WORKFLOW_RULESEnumLiteralDeclaration_40; }
+		public EnumLiteralDeclaration getPPL_EVT_WORKFLOW_RULESEnumLiteralDeclaration_41() { return cPPL_EVT_WORKFLOW_RULESEnumLiteralDeclaration_41; }
 		
 		//'workflow.rules:'
-		public Keyword getPPL_EVT_WORKFLOW_RULESWorkflowRulesKeyword_40_0() { return cPPL_EVT_WORKFLOW_RULESWorkflowRulesKeyword_40_0; }
+		public Keyword getPPL_EVT_WORKFLOW_RULESWorkflowRulesKeyword_41_0() { return cPPL_EVT_WORKFLOW_RULESWorkflowRulesKeyword_41_0; }
 		
 		//PPL_EVT_PIPELINE_SCHEDULE = 'pipeline_schedule:'
-		public EnumLiteralDeclaration getPPL_EVT_PIPELINE_SCHEDULEEnumLiteralDeclaration_41() { return cPPL_EVT_PIPELINE_SCHEDULEEnumLiteralDeclaration_41; }
+		public EnumLiteralDeclaration getPPL_EVT_PIPELINE_SCHEDULEEnumLiteralDeclaration_42() { return cPPL_EVT_PIPELINE_SCHEDULEEnumLiteralDeclaration_42; }
 		
 		//'pipeline_schedule:'
-		public Keyword getPPL_EVT_PIPELINE_SCHEDULEPipeline_scheduleKeyword_41_0() { return cPPL_EVT_PIPELINE_SCHEDULEPipeline_scheduleKeyword_41_0; }
+		public Keyword getPPL_EVT_PIPELINE_SCHEDULEPipeline_scheduleKeyword_42_0() { return cPPL_EVT_PIPELINE_SCHEDULEPipeline_scheduleKeyword_42_0; }
 		
 		//PPL_EVT_MERGE_REQUESTS = 'merge_requests:'
-		public EnumLiteralDeclaration getPPL_EVT_MERGE_REQUESTSEnumLiteralDeclaration_42() { return cPPL_EVT_MERGE_REQUESTSEnumLiteralDeclaration_42; }
+		public EnumLiteralDeclaration getPPL_EVT_MERGE_REQUESTSEnumLiteralDeclaration_43() { return cPPL_EVT_MERGE_REQUESTSEnumLiteralDeclaration_43; }
 		
 		//'merge_requests:'
-		public Keyword getPPL_EVT_MERGE_REQUESTSMerge_requestsKeyword_42_0() { return cPPL_EVT_MERGE_REQUESTSMerge_requestsKeyword_42_0; }
+		public Keyword getPPL_EVT_MERGE_REQUESTSMerge_requestsKeyword_43_0() { return cPPL_EVT_MERGE_REQUESTSMerge_requestsKeyword_43_0; }
 		
 		//PPL_EVT_CHANGES = 'changes:'
-		public EnumLiteralDeclaration getPPL_EVT_CHANGESEnumLiteralDeclaration_43() { return cPPL_EVT_CHANGESEnumLiteralDeclaration_43; }
+		public EnumLiteralDeclaration getPPL_EVT_CHANGESEnumLiteralDeclaration_44() { return cPPL_EVT_CHANGESEnumLiteralDeclaration_44; }
 		
 		//'changes:'
-		public Keyword getPPL_EVT_CHANGESChangesKeyword_43_0() { return cPPL_EVT_CHANGESChangesKeyword_43_0; }
+		public Keyword getPPL_EVT_CHANGESChangesKeyword_44_0() { return cPPL_EVT_CHANGESChangesKeyword_44_0; }
 		
 		//PPL_EVT_PIPELINES = 'pipelines:'
-		public EnumLiteralDeclaration getPPL_EVT_PIPELINESEnumLiteralDeclaration_44() { return cPPL_EVT_PIPELINESEnumLiteralDeclaration_44; }
+		public EnumLiteralDeclaration getPPL_EVT_PIPELINESEnumLiteralDeclaration_45() { return cPPL_EVT_PIPELINESEnumLiteralDeclaration_45; }
 		
 		//'pipelines:'
-		public Keyword getPPL_EVT_PIPELINESPipelinesKeyword_44_0() { return cPPL_EVT_PIPELINESPipelinesKeyword_44_0; }
+		public Keyword getPPL_EVT_PIPELINESPipelinesKeyword_45_0() { return cPPL_EVT_PIPELINESPipelinesKeyword_45_0; }
 		
 		//PPL_EVT_DEFAULT = 'default:'
-		public EnumLiteralDeclaration getPPL_EVT_DEFAULTEnumLiteralDeclaration_45() { return cPPL_EVT_DEFAULTEnumLiteralDeclaration_45; }
+		public EnumLiteralDeclaration getPPL_EVT_DEFAULTEnumLiteralDeclaration_46() { return cPPL_EVT_DEFAULTEnumLiteralDeclaration_46; }
 		
 		//'default:'
-		public Keyword getPPL_EVT_DEFAULTDefaultKeyword_45_0() { return cPPL_EVT_DEFAULTDefaultKeyword_45_0; }
+		public Keyword getPPL_EVT_DEFAULTDefaultKeyword_46_0() { return cPPL_EVT_DEFAULTDefaultKeyword_46_0; }
 		
 		//PPL_EVT_PULL_REQUESTS = 'pull-requests:'
-		public EnumLiteralDeclaration getPPL_EVT_PULL_REQUESTSEnumLiteralDeclaration_46() { return cPPL_EVT_PULL_REQUESTSEnumLiteralDeclaration_46; }
+		public EnumLiteralDeclaration getPPL_EVT_PULL_REQUESTSEnumLiteralDeclaration_47() { return cPPL_EVT_PULL_REQUESTSEnumLiteralDeclaration_47; }
 		
 		//'pull-requests:'
-		public Keyword getPPL_EVT_PULL_REQUESTSPullRequestsKeyword_46_0() { return cPPL_EVT_PULL_REQUESTSPullRequestsKeyword_46_0; }
+		public Keyword getPPL_EVT_PULL_REQUESTSPullRequestsKeyword_47_0() { return cPPL_EVT_PULL_REQUESTSPullRequestsKeyword_47_0; }
 		
 		//PPL_EVT_CUSTOM = 'custom:'
-		public EnumLiteralDeclaration getPPL_EVT_CUSTOMEnumLiteralDeclaration_47() { return cPPL_EVT_CUSTOMEnumLiteralDeclaration_47; }
+		public EnumLiteralDeclaration getPPL_EVT_CUSTOMEnumLiteralDeclaration_48() { return cPPL_EVT_CUSTOMEnumLiteralDeclaration_48; }
 		
 		//'custom:'
-		public Keyword getPPL_EVT_CUSTOMCustomKeyword_47_0() { return cPPL_EVT_CUSTOMCustomKeyword_47_0; }
+		public Keyword getPPL_EVT_CUSTOMCustomKeyword_48_0() { return cPPL_EVT_CUSTOMCustomKeyword_48_0; }
 		
 		//PPL_EVT_CONDITIONS = 'conditions:'
-		public EnumLiteralDeclaration getPPL_EVT_CONDITIONSEnumLiteralDeclaration_48() { return cPPL_EVT_CONDITIONSEnumLiteralDeclaration_48; }
+		public EnumLiteralDeclaration getPPL_EVT_CONDITIONSEnumLiteralDeclaration_49() { return cPPL_EVT_CONDITIONSEnumLiteralDeclaration_49; }
 		
 		//'conditions:'
-		public Keyword getPPL_EVT_CONDITIONSConditionsKeyword_48_0() { return cPPL_EVT_CONDITIONSConditionsKeyword_48_0; }
+		public Keyword getPPL_EVT_CONDITIONSConditionsKeyword_49_0() { return cPPL_EVT_CONDITIONSConditionsKeyword_49_0; }
 		
 		//PPL_EVT_BRANCH_DELETED = 'bitbucket-branch-deleted:'
-		public EnumLiteralDeclaration getPPL_EVT_BRANCH_DELETEDEnumLiteralDeclaration_49() { return cPPL_EVT_BRANCH_DELETEDEnumLiteralDeclaration_49; }
+		public EnumLiteralDeclaration getPPL_EVT_BRANCH_DELETEDEnumLiteralDeclaration_50() { return cPPL_EVT_BRANCH_DELETEDEnumLiteralDeclaration_50; }
 		
 		//'bitbucket-branch-deleted:'
-		public Keyword getPPL_EVT_BRANCH_DELETEDBitbucketBranchDeletedKeyword_49_0() { return cPPL_EVT_BRANCH_DELETEDBitbucketBranchDeletedKeyword_49_0; }
+		public Keyword getPPL_EVT_BRANCH_DELETEDBitbucketBranchDeletedKeyword_50_0() { return cPPL_EVT_BRANCH_DELETEDBitbucketBranchDeletedKeyword_50_0; }
 		
 		//PPL_EVT_BRANCH_CREATED = 'bitbucket-branch-created:'
-		public EnumLiteralDeclaration getPPL_EVT_BRANCH_CREATEDEnumLiteralDeclaration_50() { return cPPL_EVT_BRANCH_CREATEDEnumLiteralDeclaration_50; }
+		public EnumLiteralDeclaration getPPL_EVT_BRANCH_CREATEDEnumLiteralDeclaration_51() { return cPPL_EVT_BRANCH_CREATEDEnumLiteralDeclaration_51; }
 		
 		//'bitbucket-branch-created:'
-		public Keyword getPPL_EVT_BRANCH_CREATEDBitbucketBranchCreatedKeyword_50_0() { return cPPL_EVT_BRANCH_CREATEDBitbucketBranchCreatedKeyword_50_0; }
+		public Keyword getPPL_EVT_BRANCH_CREATEDBitbucketBranchCreatedKeyword_51_0() { return cPPL_EVT_BRANCH_CREATEDBitbucketBranchCreatedKeyword_51_0; }
 		
 		//PPL_EVT_TAG_CREATED = 'bitbucket-tag-created:'
-		public EnumLiteralDeclaration getPPL_EVT_TAG_CREATEDEnumLiteralDeclaration_51() { return cPPL_EVT_TAG_CREATEDEnumLiteralDeclaration_51; }
+		public EnumLiteralDeclaration getPPL_EVT_TAG_CREATEDEnumLiteralDeclaration_52() { return cPPL_EVT_TAG_CREATEDEnumLiteralDeclaration_52; }
 		
 		//'bitbucket-tag-created:'
-		public Keyword getPPL_EVT_TAG_CREATEDBitbucketTagCreatedKeyword_51_0() { return cPPL_EVT_TAG_CREATEDBitbucketTagCreatedKeyword_51_0; }
+		public Keyword getPPL_EVT_TAG_CREATEDBitbucketTagCreatedKeyword_52_0() { return cPPL_EVT_TAG_CREATEDBitbucketTagCreatedKeyword_52_0; }
 		
 		//PPL_EVT_TAG_DELETED = 'bitbucket-tag-deleted:'
-		public EnumLiteralDeclaration getPPL_EVT_TAG_DELETEDEnumLiteralDeclaration_52() { return cPPL_EVT_TAG_DELETEDEnumLiteralDeclaration_52; }
+		public EnumLiteralDeclaration getPPL_EVT_TAG_DELETEDEnumLiteralDeclaration_53() { return cPPL_EVT_TAG_DELETEDEnumLiteralDeclaration_53; }
 		
 		//'bitbucket-tag-deleted:'
-		public Keyword getPPL_EVT_TAG_DELETEDBitbucketTagDeletedKeyword_52_0() { return cPPL_EVT_TAG_DELETEDBitbucketTagDeletedKeyword_52_0; }
+		public Keyword getPPL_EVT_TAG_DELETEDBitbucketTagDeletedKeyword_53_0() { return cPPL_EVT_TAG_DELETEDBitbucketTagDeletedKeyword_53_0; }
 		
 		//PPL_EVT_REPOSITORY_TRIGGER = 'repository:'
-		public EnumLiteralDeclaration getPPL_EVT_REPOSITORY_TRIGGEREnumLiteralDeclaration_53() { return cPPL_EVT_REPOSITORY_TRIGGEREnumLiteralDeclaration_53; }
+		public EnumLiteralDeclaration getPPL_EVT_REPOSITORY_TRIGGEREnumLiteralDeclaration_54() { return cPPL_EVT_REPOSITORY_TRIGGEREnumLiteralDeclaration_54; }
 		
 		//'repository:'
-		public Keyword getPPL_EVT_REPOSITORY_TRIGGERRepositoryKeyword_53_0() { return cPPL_EVT_REPOSITORY_TRIGGERRepositoryKeyword_53_0; }
+		public Keyword getPPL_EVT_REPOSITORY_TRIGGERRepositoryKeyword_54_0() { return cPPL_EVT_REPOSITORY_TRIGGERRepositoryKeyword_54_0; }
 		
 		//PPL_EVT_SCHEDULED_TRIGGER = 'scheduled:'
-		public EnumLiteralDeclaration getPPL_EVT_SCHEDULED_TRIGGEREnumLiteralDeclaration_54() { return cPPL_EVT_SCHEDULED_TRIGGEREnumLiteralDeclaration_54; }
+		public EnumLiteralDeclaration getPPL_EVT_SCHEDULED_TRIGGEREnumLiteralDeclaration_55() { return cPPL_EVT_SCHEDULED_TRIGGEREnumLiteralDeclaration_55; }
 		
 		//'scheduled:'
-		public Keyword getPPL_EVT_SCHEDULED_TRIGGERScheduledKeyword_54_0() { return cPPL_EVT_SCHEDULED_TRIGGERScheduledKeyword_54_0; }
+		public Keyword getPPL_EVT_SCHEDULED_TRIGGERScheduledKeyword_55_0() { return cPPL_EVT_SCHEDULED_TRIGGERScheduledKeyword_55_0; }
 		
 		//PPL_EVT_REMOTE_TRIGGER = 'remote:'
-		public EnumLiteralDeclaration getPPL_EVT_REMOTE_TRIGGEREnumLiteralDeclaration_55() { return cPPL_EVT_REMOTE_TRIGGEREnumLiteralDeclaration_55; }
+		public EnumLiteralDeclaration getPPL_EVT_REMOTE_TRIGGEREnumLiteralDeclaration_56() { return cPPL_EVT_REMOTE_TRIGGEREnumLiteralDeclaration_56; }
 		
 		//'remote:'
-		public Keyword getPPL_EVT_REMOTE_TRIGGERRemoteKeyword_55_0() { return cPPL_EVT_REMOTE_TRIGGERRemoteKeyword_55_0; }
+		public Keyword getPPL_EVT_REMOTE_TRIGGERRemoteKeyword_56_0() { return cPPL_EVT_REMOTE_TRIGGERRemoteKeyword_56_0; }
 		
 		//PPL_EVT_BITBUCKET_TRIGGER = 'bitbucket:'
-		public EnumLiteralDeclaration getPPL_EVT_BITBUCKET_TRIGGEREnumLiteralDeclaration_56() { return cPPL_EVT_BITBUCKET_TRIGGEREnumLiteralDeclaration_56; }
+		public EnumLiteralDeclaration getPPL_EVT_BITBUCKET_TRIGGEREnumLiteralDeclaration_57() { return cPPL_EVT_BITBUCKET_TRIGGEREnumLiteralDeclaration_57; }
 		
 		//'bitbucket:'
-		public Keyword getPPL_EVT_BITBUCKET_TRIGGERBitbucketKeyword_56_0() { return cPPL_EVT_BITBUCKET_TRIGGERBitbucketKeyword_56_0; }
+		public Keyword getPPL_EVT_BITBUCKET_TRIGGERBitbucketKeyword_57_0() { return cPPL_EVT_BITBUCKET_TRIGGERBitbucketKeyword_57_0; }
 		
 		//PPL_EVT_PLAN_BRANCH = 'planBranch:'
-		public EnumLiteralDeclaration getPPL_EVT_PLAN_BRANCHEnumLiteralDeclaration_57() { return cPPL_EVT_PLAN_BRANCHEnumLiteralDeclaration_57; }
+		public EnumLiteralDeclaration getPPL_EVT_PLAN_BRANCHEnumLiteralDeclaration_58() { return cPPL_EVT_PLAN_BRANCHEnumLiteralDeclaration_58; }
 		
 		//'planBranch:'
-		public Keyword getPPL_EVT_PLAN_BRANCHPlanBranchKeyword_57_0() { return cPPL_EVT_PLAN_BRANCHPlanBranchKeyword_57_0; }
+		public Keyword getPPL_EVT_PLAN_BRANCHPlanBranchKeyword_58_0() { return cPPL_EVT_PLAN_BRANCHPlanBranchKeyword_58_0; }
 		
 		//PPL_EVT_CRON = 'cron:'
-		public EnumLiteralDeclaration getPPL_EVT_CRONEnumLiteralDeclaration_58() { return cPPL_EVT_CRONEnumLiteralDeclaration_58; }
+		public EnumLiteralDeclaration getPPL_EVT_CRONEnumLiteralDeclaration_59() { return cPPL_EVT_CRONEnumLiteralDeclaration_59; }
 		
 		//'cron:'
-		public Keyword getPPL_EVT_CRONCronKeyword_58_0() { return cPPL_EVT_CRONCronKeyword_58_0; }
+		public Keyword getPPL_EVT_CRONCronKeyword_59_0() { return cPPL_EVT_CRONCronKeyword_59_0; }
 		
 		//PPL_EVT_NOTIFICATIONS = 'notifications:'
-		public EnumLiteralDeclaration getPPL_EVT_NOTIFICATIONSEnumLiteralDeclaration_59() { return cPPL_EVT_NOTIFICATIONSEnumLiteralDeclaration_59; }
+		public EnumLiteralDeclaration getPPL_EVT_NOTIFICATIONSEnumLiteralDeclaration_60() { return cPPL_EVT_NOTIFICATIONSEnumLiteralDeclaration_60; }
 		
 		//'notifications:'
-		public Keyword getPPL_EVT_NOTIFICATIONSNotificationsKeyword_59_0() { return cPPL_EVT_NOTIFICATIONSNotificationsKeyword_59_0; }
+		public Keyword getPPL_EVT_NOTIFICATIONSNotificationsKeyword_60_0() { return cPPL_EVT_NOTIFICATIONSNotificationsKeyword_60_0; }
 		
 		//PPL_EVT_LOCK_BEHAVIOR = 'lockBehavior:'
-		public EnumLiteralDeclaration getPPL_EVT_LOCK_BEHAVIOREnumLiteralDeclaration_60() { return cPPL_EVT_LOCK_BEHAVIOREnumLiteralDeclaration_60; }
+		public EnumLiteralDeclaration getPPL_EVT_LOCK_BEHAVIOREnumLiteralDeclaration_61() { return cPPL_EVT_LOCK_BEHAVIOREnumLiteralDeclaration_61; }
 		
 		//'lockBehavior:'
-		public Keyword getPPL_EVT_LOCK_BEHAVIORLockBehaviorKeyword_60_0() { return cPPL_EVT_LOCK_BEHAVIORLockBehaviorKeyword_60_0; }
+		public Keyword getPPL_EVT_LOCK_BEHAVIORLockBehaviorKeyword_61_0() { return cPPL_EVT_LOCK_BEHAVIORLockBehaviorKeyword_61_0; }
 	}
 	public class PipelineKeywordElements extends AbstractElementFinder.AbstractEnumRuleElementFinder {
 		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "ca.mcgill.devops.pipeline.Pipeline.PipelineKeyword");
@@ -6024,6 +6034,7 @@ public class PipelineGrammarAccess extends AbstractElementFinder.AbstractGrammar
 	//enum PipelineEventKeyword:
 	//    PPL_EVT_PUSH = 'push:' |
 	//    PPL_EVT_PULL_REQUEST = 'pull_request:' |
+	//    PPL_EVT_NONE = 'none' |
 	//    //PPL_EVT_SCHEDULE = 'schedule:' |
 	//    PPL_EVT_WORKFLOW_DISPATCH = 'workflow_dispatch:' |
 	//    PPL_EVT_REPOSITORY_DISPATCH = 'repository_dispatch:' |
