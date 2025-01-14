@@ -33,7 +33,7 @@ def run_java_program(resource_path, file_name, output_file):
         counter = extract_counter(output)
         
         if counter>0:
-            with open('load_error_logs.txt','+a') as logs:
+            with open('load_error_logs_1.txt','+a') as logs:
                 logs.write(f"{file_name} {counter} \n")
         # Save the counter value to the output file
         # with open(output_file, 'w') as file:
