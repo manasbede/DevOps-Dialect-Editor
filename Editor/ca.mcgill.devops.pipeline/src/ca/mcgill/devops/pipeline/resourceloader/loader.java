@@ -26,26 +26,36 @@ import ca.mcgill.devops.pipeline.pipeline.Pipeline;
 
 public class loader {
 	public static Pipeline resourceLoad(String resourcePath, String fileName) {
-		Injector injector = new PipelineStandaloneSetup().createInjectorAndDoEMFRegistration();
-	    XtextResourceSet resourceSet = injector.getInstance(XtextResourceSet.class);
-	    resourceSet.addLoadOption(XtextResource.OPTION_RESOLVE_ALL, Boolean.TRUE);
-	    System.out.println("Pipeline Validator");
-
-	    // replace absoluteTargetFolderPath with the path to your folder
-	    String inputURI = "file:///" + resourcePath +"\\" + fileName +".Pipeline";
-	    String outputURI = "file:///" + resourcePath +"\\" + fileName + ".xmi";
-	    System.out.println("Resource URI: "+ inputURI +"\n\n");
+		try {
+			Injector injector = new PipelineStandaloneSetup().createInjectorAndDoEMFRegistration();
+		    XtextResourceSet resourceSet = injector.getInstance(XtextResourceSet.class);
+		    resourceSet.addLoadOption(XtextResource.OPTION_RESOLVE_ALL, Boolean.TRUE);
+		    System.out.println("Pipeline Validator");
+	
+		    // replace absoluteTargetFolderPath with the path to your folder
+		    String inputURI = "file:///" + resourcePath +"\\" + fileName +".Pipeline";
+		    String outputURI = "file:///" + resourcePath +"\\" + fileName + ".xmi";
+		    System.out.println("Resource URI: "+ inputURI +"\n\n");
+		    
+		    URI uri = URI.createURI(inputURI);
+		    Resource xtextResource = resourceSet.getResource(uri, true);
+	
+		    IResourceValidator resourceValidator = injector.getInstance(IResourceValidator.class);
+		    Iterable<Issue> issues = resourceValidator.validate(xtextResource, CheckMode.ALL, CancelIndicator.NullImpl);
+		    // Print the issues
+	        int issue_counter = printValidationIssues(issues);
+		    EcoreUtil.resolveAll(xtextResource);
+		    if (issue_counter == 0){
+		    	return (Pipeline)xtextResource.getContents().get(0);
+		    }
+		    else {
+		    	return null;
+		    }
+		}
+		catch(Exception e) {
+			return null;
+		}
 	    
-	    URI uri = URI.createURI(inputURI);
-	    Resource xtextResource = resourceSet.getResource(uri, true);
-	    
-
-	    IResourceValidator resourceValidator = injector.getInstance(IResourceValidator.class);
-	    Iterable<Issue> issues = resourceValidator.validate(xtextResource, CheckMode.ALL, CancelIndicator.NullImpl);
-	    // Print the issues
-        printValidationIssues(issues);
-	    EcoreUtil.resolveAll(xtextResource);
-
 //	    Resource xmiResource = resourceSet.createResource(URI.createURI(outputURI));
 //	    xmiResource.getContents().add(xtextResource.getContents().get(0));
 //	    try {
@@ -54,10 +64,9 @@ public class loader {
 //	    } catch (IOException e) {
 //	        e.printStackTrace();
 //	    }
-		return null;
 	}
 	
-	private static void printValidationIssues(Iterable<Issue> issues) {
+	private static int printValidationIssues(Iterable<Issue> issues) {
 		int counter = 0;
         for (Issue issue : issues) {
         	counter++;
@@ -67,9 +76,10 @@ public class loader {
             System.out.println("Location: " + issue.getUriToProblem());
             System.out.println("--------------");
         }
-//        if (counter == 0) {
-//        	System.out.println("No issue found while parsing pipeline");
-//        }
+        if (counter == 0) {
+        	System.out.println("No issue found while parsing pipeline");
+        }
+        return counter;
     }
 	
 	public static void main(String[] args) {
@@ -82,8 +92,8 @@ public class loader {
 //        String fileName = args[1];
 
         System.out.println("Starting pipeline validation and processing...");
-        String resourcePath = "C:\\Users\\mbedek\\Documents\\DevOps Dialect Editor\\runtime-EclipseApplication\\BasicSanity";
-        String fileName = "Test";
+        String resourcePath = "C:\\Users\\mbedek\\Documents\\DevOps Dialect Editor\\DatasetTest";
+        String fileName = "021fe4e14d5826cc95e4ad5d8c61e6efd81c7aaa";
         Pipeline pipeline = resourceLoad(resourcePath, fileName);
 
         if (pipeline != null) {
