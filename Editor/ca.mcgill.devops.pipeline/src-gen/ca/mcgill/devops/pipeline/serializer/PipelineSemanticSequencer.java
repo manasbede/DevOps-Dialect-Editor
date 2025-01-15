@@ -245,7 +245,11 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 * Constraint:
 	 *     (
 	 *         (name=PipelineKeyword | otherName=ID | otherName=COMPLEX_EXPRESSION) 
-	 *         (((value=AnyData | value=ArrayList | value=HyphenValues) subParameters+=ParameterValue*) | subParameters+=ParameterValue+)?
+	 *         (
+	 *             ((value=AnyData | value=ArrayList | value=HyphenValues) subParameters+=ParameterValue*) | 
+	 *             subParameters+=ParameterValue+ | 
+	 *             subParameters+=ParameterValue+
+	 *         )?
 	 *     )
 	 * </pre>
 	 */
@@ -336,19 +340,19 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *     (
 	 *         name=AnyData 
 	 *         (
-	 *             (
-	 *                 displayName=UnquotedString | 
-	 *                 poolValue=AnyData | 
-	 *                 vmDemands=AnyData | 
-	 *                 vmDemands=HyphenValues | 
-	 *                 conditionValue=AnyData | 
-	 *                 isSkippable=ID | 
-	 *                 stageVariables+=Variable | 
-	 *                 dependsOn+=[Stage|ID] | 
-	 *                 jobs+=Job
-	 *             )? 
-	 *             (vmName=ID (vmImage=ID | vmImage=STRING)?)?
-	 *         )+
+	 *             displayName=STRING | 
+	 *             poolValue=AnyData | 
+	 *             vmName=ID | 
+	 *             vmImage=ID | 
+	 *             vmImage=STRING | 
+	 *             vmDemands=AnyData | 
+	 *             vmDemands=HyphenValues | 
+	 *             conditionValue=AnyData | 
+	 *             isSkippable=ID | 
+	 *             stageVariables+=Variable | 
+	 *             dependsOn+=[Stage|ID] | 
+	 *             jobs+=Job
+	 *         )*
 	 *     )
 	 * </pre>
 	 */
@@ -384,7 +388,11 @@ public class PipelineSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *     Variable returns Variable
 	 *
 	 * Constraint:
-	 *     ((variableKey=ID variableValue=AnyData) | (name=AnyData (value=AnyData readonly=ID?)?) | (name=ID variables+=KeyValue+))
+	 *     (
+	 *         (variableKey=ID (variableValue=ID | variableValue=STRING | variableValue=COMPLEX_EXPRESSION)) | 
+	 *         (name=AnyData (value=AnyData readonly=ID?)?) | 
+	 *         (name=ID variables+=KeyValue+)
+	 *     )
 	 * </pre>
 	 */
 	protected void sequence_Variable(ISerializationContext context, Variable semanticObject) {

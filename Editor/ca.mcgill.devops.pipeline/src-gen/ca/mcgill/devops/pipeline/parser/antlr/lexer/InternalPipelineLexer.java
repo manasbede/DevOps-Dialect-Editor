@@ -5190,7 +5190,7 @@ public class InternalPipelineLexer extends Lexer {
             	    if ( ((LA8_0>='0' && LA8_0<='9')) ) {
             	        alt8=1;
             	    }
-            	    else if ( (LA8_0=='&'||(LA8_0>='-' && LA8_0<='/')||(LA8_0>='@' && LA8_0<='Z')||LA8_0=='\\'||LA8_0=='_'||(LA8_0>='a' && LA8_0<='z')) ) {
+            	    else if ( (LA8_0=='&'||(LA8_0>='(' && LA8_0<=')')||(LA8_0>='-' && LA8_0<='/')||(LA8_0>='@' && LA8_0<='Z')||LA8_0=='\\'||LA8_0=='_'||(LA8_0>='a' && LA8_0<='z')) ) {
             	        alt8=2;
             	    }
             	    else {
@@ -5274,10 +5274,10 @@ public class InternalPipelineLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalPipelineLexer.g:466:9: ( ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '/' | '@' | '-' | '.' | '\\\\' | '&' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '/' | '@' | '&' | '-' | '.' | '\\\\' | '(' | ')' | '|' | '$' )* )
-            // InternalPipelineLexer.g:466:11: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '/' | '@' | '-' | '.' | '\\\\' | '&' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '/' | '@' | '&' | '-' | '.' | '\\\\' | '(' | ')' | '|' | '$' )*
+            // InternalPipelineLexer.g:466:9: ( ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '/' | '@' | '-' | '.' | '\\\\' | '&' | '(' | ')' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '/' | '@' | '&' | '-' | '.' | '\\\\' | '(' | ')' | '|' | '$' )* )
+            // InternalPipelineLexer.g:466:11: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '/' | '@' | '-' | '.' | '\\\\' | '&' | '(' | ')' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '/' | '@' | '&' | '-' | '.' | '\\\\' | '(' | ')' | '|' | '$' )*
             {
-            if ( input.LA(1)=='&'||(input.LA(1)>='-' && input.LA(1)<='9')||(input.LA(1)>='@' && input.LA(1)<='Z')||input.LA(1)=='\\'||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z') ) {
+            if ( input.LA(1)=='&'||(input.LA(1)>='(' && input.LA(1)<=')')||(input.LA(1)>='-' && input.LA(1)<='9')||(input.LA(1)>='@' && input.LA(1)<='Z')||input.LA(1)=='\\'||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z') ) {
                 input.consume();
 
             }
@@ -5286,7 +5286,7 @@ public class InternalPipelineLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // InternalPipelineLexer.g:466:69: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '/' | '@' | '&' | '-' | '.' | '\\\\' | '(' | ')' | '|' | '$' )*
+            // InternalPipelineLexer.g:466:77: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | '/' | '@' | '&' | '-' | '.' | '\\\\' | '(' | ')' | '|' | '$' )*
             loop10:
             do {
                 int alt10=2;
@@ -7390,7 +7390,7 @@ public class InternalPipelineLexer extends Lexer {
     static final String DFA20_specialS =
         "\1\2\43\uffff\1\0\1\1\u0576\uffff}>";
     static final String[] DFA20_transitionS = {
-            "\11\47\2\46\2\47\1\46\22\47\1\46\1\47\1\44\1\43\1\36\1\47\1\42\1\45\4\47\1\27\1\30\1\42\1\41\1\37\11\40\1\31\3\47\1\26\1\47\1\42\32\35\1\32\1\42\1\33\1\47\1\42\1\47\1\12\1\2\1\4\1\5\1\16\1\20\1\17\1\35\1\13\1\24\1\35\1\15\1\11\1\14\1\22\1\1\1\23\1\3\1\10\1\7\1\25\1\21\1\6\3\35\1\47\1\34\uff83\47",
+            "\11\47\2\46\2\47\1\46\22\47\1\46\1\47\1\44\1\43\1\36\1\47\1\42\1\45\2\42\2\47\1\27\1\30\1\42\1\41\1\37\11\40\1\31\3\47\1\26\1\47\1\42\32\35\1\32\1\42\1\33\1\47\1\42\1\47\1\12\1\2\1\4\1\5\1\16\1\20\1\17\1\35\1\13\1\24\1\35\1\15\1\11\1\14\1\22\1\1\1\23\1\3\1\10\1\7\1\25\1\21\1\6\3\35\1\47\1\34\uff83\47",
             "\1\62\10\uffff\1\61\23\uffff\32\61\6\uffff\1\53\3\61\1\54\3\61\1\51\2\61\1\55\2\61\1\56\2\61\1\52\2\61\1\50\1\61\1\57\3\61",
             "\1\62\10\uffff\1\61\23\uffff\32\61\6\uffff\1\67\3\61\1\65\3\61\1\63\10\61\1\64\2\61\1\66\5\61",
             "\1\62\10\uffff\1\61\23\uffff\32\61\6\uffff\4\61\1\70\17\61\1\71\5\61",
@@ -7523,7 +7523,7 @@ public class InternalPipelineLexer extends Lexer {
             "",
             "",
             "\12\u010c\7\uffff\6\u010c\32\uffff\6\u010c",
-            "\1\u010e\6\uffff\3\u010e\12\u010d\6\uffff\33\u010e\1\uffff\1\u010e\2\uffff\1\u010e\1\uffff\32\u010e",
+            "\1\u010e\1\uffff\2\u010e\3\uffff\3\u010e\12\u010d\6\uffff\33\u010e\1\uffff\1\u010e\2\uffff\1\u010e\1\uffff\32\u010e",
             "\1\u0085\1\uffff\12\u0086",
             "",
             "",
@@ -7804,7 +7804,7 @@ public class InternalPipelineLexer extends Lexer {
             "\1\60\1\uffff\1\60\1\uffff\2\60\3\uffff\3\60\12\u019b\6\uffff\33\60\1\uffff\1\60\2\uffff\1\60\1\uffff\32\60\1\uffff\1\60",
             "",
             "",
-            "\1\u01a0\1\uffff\1\u023b\1\uffff\2\u01a0\3\uffff\1\u023b\1\u023a\1\u023b\12\u0239\6\uffff\33\u023b\1\uffff\1\u023b\2\uffff\1\u023b\1\uffff\32\u023b\1\uffff\1\u01a0",
+            "\1\u01a0\1\uffff\1\u023b\1\uffff\2\u023b\3\uffff\1\u023b\1\u023a\1\u023b\12\u0239\6\uffff\33\u023b\1\uffff\1\u023b\2\uffff\1\u023b\1\uffff\32\u023b\1\uffff\1\u01a0",
             "\1\u01a0\1\uffff\1\u01a0\1\uffff\2\u01a0\3\uffff\1\u01a0\1\u019e\1\u01a0\12\u019f\6\uffff\33\u01a0\1\uffff\1\u01a0\2\uffff\1\u01a0\1\uffff\32\u01a0\1\uffff\1\u01a0",
             "\1\u01a0\1\uffff\1\u01a0\1\uffff\2\u01a0\3\uffff\1\u01a0\1\u019e\13\u01a0\6\uffff\33\u01a0\1\uffff\1\u01a0\2\uffff\1\u01a0\1\uffff\32\u01a0\1\uffff\1\u01a0",
             "",
@@ -7960,7 +7960,7 @@ public class InternalPipelineLexer extends Lexer {
             "",
             "",
             "\1\u01a0\1\uffff\1\u01a0\1\uffff\2\u01a0\3\uffff\1\u01a0\1\u019e\1\u01a0\12\u02c8\6\uffff\33\u01a0\1\uffff\1\u01a0\2\uffff\1\u01a0\1\uffff\32\u01a0\1\uffff\1\u01a0",
-            "\1\u01a0\1\uffff\1\u023b\1\uffff\2\u01a0\3\uffff\1\u023b\1\u023a\1\u023b\12\u0239\6\uffff\33\u023b\1\uffff\1\u023b\2\uffff\1\u023b\1\uffff\32\u023b\1\uffff\1\u01a0",
+            "\1\u01a0\1\uffff\1\u023b\1\uffff\2\u023b\3\uffff\1\u023b\1\u023a\1\u023b\12\u0239\6\uffff\33\u023b\1\uffff\1\u023b\2\uffff\1\u023b\1\uffff\32\u023b\1\uffff\1\u01a0",
             "\1\u01a0\1\uffff\1\u01a0\1\uffff\2\u01a0\3\uffff\1\u01a0\1\u019e\13\u01a0\6\uffff\33\u01a0\1\uffff\1\u01a0\2\uffff\1\u01a0\1\uffff\32\u01a0\1\uffff\1\u01a0",
             "\1\u02c9",
             "\1\62\10\uffff\1\61\23\uffff\32\61\6\uffff\4\61\1\u02ca\25\61",
@@ -8954,7 +8954,7 @@ public class InternalPipelineLexer extends Lexer {
 
                         else if ( (LA20_0=='/') ) {s = 33;}
 
-                        else if ( (LA20_0=='&'||LA20_0=='.'||LA20_0=='@'||LA20_0=='\\'||LA20_0=='_') ) {s = 34;}
+                        else if ( (LA20_0=='&'||(LA20_0>='(' && LA20_0<=')')||LA20_0=='.'||LA20_0=='@'||LA20_0=='\\'||LA20_0=='_') ) {s = 34;}
 
                         else if ( (LA20_0=='#') ) {s = 35;}
 
@@ -8964,7 +8964,7 @@ public class InternalPipelineLexer extends Lexer {
 
                         else if ( ((LA20_0>='\t' && LA20_0<='\n')||LA20_0=='\r'||LA20_0==' ') ) {s = 38;}
 
-                        else if ( ((LA20_0>='\u0000' && LA20_0<='\b')||(LA20_0>='\u000B' && LA20_0<='\f')||(LA20_0>='\u000E' && LA20_0<='\u001F')||LA20_0=='!'||LA20_0=='%'||(LA20_0>='(' && LA20_0<='+')||(LA20_0>=';' && LA20_0<='=')||LA20_0=='?'||LA20_0=='^'||LA20_0=='`'||LA20_0=='{'||(LA20_0>='}' && LA20_0<='\uFFFF')) ) {s = 39;}
+                        else if ( ((LA20_0>='\u0000' && LA20_0<='\b')||(LA20_0>='\u000B' && LA20_0<='\f')||(LA20_0>='\u000E' && LA20_0<='\u001F')||LA20_0=='!'||LA20_0=='%'||(LA20_0>='*' && LA20_0<='+')||(LA20_0>=';' && LA20_0<='=')||LA20_0=='?'||LA20_0=='^'||LA20_0=='`'||LA20_0=='{'||(LA20_0>='}' && LA20_0<='\uFFFF')) ) {s = 39;}
 
                         if ( s>=0 ) return s;
                         break;

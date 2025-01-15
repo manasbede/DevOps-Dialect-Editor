@@ -69,14 +69,14 @@ Configurations:
 	('version:' version=VERSION)? &
 	
 	// Common for GitHub Actions, Azure Devops, GitLab, CircleCI
-	('variables:' (pplVariables+=Variable*)) ? &
+	('variables:' (BEGIN (pplVariables+=Variable*) END)) ? &
 	('parameters:'(('-'parameterValues+=ParameterValue)*)) ? &
 	(extendOrInclude=('extends:'|'include:')(BEGIN (extendedParameters+=ParameterValue+) END))?
 ;
 
 //
 Variable:
-	((BEGIN (variableKey=ID':')(variableValue=AnyData) END)|
+	((variableKey=ID':')(variableValue=(ID|STRING|COMPLEX_EXPRESSION))|
 	(('-'('name:'|'group:')name=AnyData)(BEGIN ('value:'value=AnyData)('readonly:'readonly=ID)? END)?))|
 	(BEGIN 
 		name=ID':'
@@ -94,7 +94,7 @@ Resource:
 /*----------------------------------------------------Event Configurations----------------------------------------------------*/
 Event:
 	(
-		((name=PipelineEventKeyword)|(simpleEvent=(ID)(':')?))(includedBranches+=Branch*)
+		((name=PipelineEventKeyword)|(simpleEvent=(ID)(':')?))('none')?(includedBranches+=Branch*)
 		(BEGIN 
 			(	(('types:')(activities+=Activity))? &
 				('batch:' batch=ID)? &
@@ -112,7 +112,7 @@ Event:
 	)|
 	(
 		((scheduleNameKW=(('schedules:')|('schedule:')))(triggerSchedules+=TriggerSchedule*))|
-		((workflowTypeKW=('workflow_call:')|('workflow_dispatch:'))(BEGIN workFlowActivities+=Activity* END)?)
+		((workflowTypeKW=('workflow_call:')|('workflow_dispatch:'))(BEGIN workFlowActivities+=Activity* END))
 	)
 ;
 
@@ -143,12 +143,12 @@ Activity:
 Stage:
 	(('-''stage:' name=AnyData))
 	(BEGIN
-		('displayName:' displayName=UnquotedString)? &
-		('pool:'((poolValue=AnyData)|(BEGIN ('name:'vmName=ID)('vmImage:'vmImage=(ID|STRING))?&('demands:'vmDemands=(AnyData|HyphenValues))? END)))? &
+		('displayName:' displayName=STRING)? &
+		('pool:'((poolValue=AnyData)? (BEGIN ('name:'vmName=ID)?('vmImage:'vmImage=(ID|STRING))?('demands:'vmDemands=(AnyData|HyphenValues))? END)?))? &
 		('condition:'(conditionValue=AnyData))? &
 		('isSkippable:' isSkippable=ID)? &
-		('variables:' (stageVariables+=Variable)*)? &
-		('dependsOn:' (dependsOn+=[Stage])*)? &
+		('variables:' (BEGIN (stageVariables+=Variable)* END))? &
+		('dependsOn:' (dependsOn+=[Stage])*)?
 		('jobs:'(jobs+=Job)*)
 	END)?
 ; 
@@ -193,7 +193,7 @@ ParameterValue:
 	((name=PipelineKeyword)|(otherName=(ID|COMPLEX_EXPRESSION)':'))
 	(
 		(value=(AnyData|ArrayList|HyphenValues)(BEGIN (('-')?subParameters+=ParameterValue)* END)?)|
-		(BEGIN (('-')?subParameters+=ParameterValue)* END)
+		((BEGIN (('-')?subParameters+=ParameterValue)* END)|(('-'subParameters+=ParameterValue)*))
 	)
 ;
 
@@ -214,8 +214,8 @@ enum Permission:
 enum PipelineEventKeyword:
     PPL_EVT_PUSH = 'push:' |
     PPL_EVT_PULL_REQUEST = 'pull_request:' |
-    PPL_EVT_NONE = 'none' |
     //PPL_EVT_SCHEDULE = 'schedule:' |
+    PPL_EVT_NONE = 'none' |
     PPL_EVT_WORKFLOW_DISPATCH = 'workflow_dispatch:' |
     PPL_EVT_REPOSITORY_DISPATCH = 'repository_dispatch:' |
     PPL_EVT_CHECK_RUN = 'check_run:' |
@@ -496,7 +496,7 @@ terminal END: 'synthetic:END';
 
 @Override 
 terminal ID:
-    ('a'..'z' | 'A'..'Z' | '0'..'9' | '_' | '/' | '@' | '-' | '.' | '\\' | '&') ('a'..'z' | 'A'..'Z' | '0'..'9' | '_' | '/' | '@' | '&' |'-' | '.' | '\\' | '(' | ')' | '|' | '$' )*;
+    ('a'..'z' | 'A'..'Z' | '0'..'9' | '_' | '/' | '@' | '-' | '.' | '\\' | '&' | '(' | ')') ('a'..'z' | 'A'..'Z' | '0'..'9' | '_' | '/' | '@' | '&' |'-' | '.' | '\\' | '(' | ')' | '|' | '$' )*;
 
 @Override 
 terminal ML_COMMENT:
