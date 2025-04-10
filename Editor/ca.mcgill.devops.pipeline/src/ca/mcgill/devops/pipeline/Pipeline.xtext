@@ -42,7 +42,7 @@ generate pipeline "http://www.mcgill.ca/devops/pipeline/Pipeline"
 /*----------------------------------------------------Basic Configurations----------------------------------------------------*/
 Pipeline:
 	// GitHub Actions Config
-	(pipelineConfiguration=Configurations)
+	(pipelineConfiguration=Configuration)
 	
 	// Event Config
 	(('on:' (BEGIN triggers+=Event+ END)? ((triggers+=Event) | ('['triggers+=Event (',' triggers+=Event)*']'))?) | (triggers+=Event*))
@@ -53,11 +53,10 @@ Pipeline:
     )
 ;
 
-Configurations:
+Configuration:
 	('name:' name=UnquotedString)? &
 	('run-name:'runName=UnquotedString)? &
 	('defaults:' BEGIN 'run:' BEGIN ('shell:'defaultShellValue=(STRING|ID))?&('working-directory:'defaultWDValue=(STRING|ID))? END END)? &
-	('env:' BEGIN ('-'?env+=KeyValue)* END)? &
 	('permissions:'((allPermission=ID)|(BEGIN (indPermissions+=IndPermissionValue*) END))) ? &
 	('concurrency:'((BEGIN ('group:' group=(ID|COMPLEX_EXPRESSION)) ('cancel-in-progress:' cancelConcurrence=(ID|COMPLEX_EXPRESSION)) END) | (concurrency=(AnyData|ArrayList))))? &
 	
@@ -69,12 +68,12 @@ Configurations:
 	('version:' version=VERSION)? &
 	
 	// Common for GitHub Actions, Azure Devops, GitLab, CircleCI
-	('variables:' (BEGIN (pplVariables+=Variable*) END)) ? &
+	(variableKW=('variables:'|'env:') (BEGIN (pplVariables+=Variable*) END)) ? &
 	('parameters:'(('-'parameterValues+=ParameterValue)*)) ? &
 	(extendOrInclude=('extends:'|'include:')(BEGIN (extendedParameters+=ParameterValue+) END))?
 ;
 
-//
+
 Variable:
 	((variableKey=ID':')(variableValue=(ID|STRING|COMPLEX_EXPRESSION))|
 	(('-'('name:'|'group:')name=AnyData)(BEGIN ('value:'value=AnyData)('readonly:'readonly=ID)? END)?))|
@@ -85,7 +84,7 @@ Variable:
 		END)
 	END)
 ;
-//
+
 Resource:
 	(resourceName=('builds:'|'containers:'|'pipelines:'|'repositories:'|'webhooks:'|'packages:'))
 	(('-'resourceValues+=ParameterValue)*|(BEGIN('-'resourceValues+=ParameterValue)*END))
@@ -111,8 +110,8 @@ Event:
 		END)?
 	)|
 	(
-		((scheduleNameKW=(('schedules:')|('schedule:')))(triggerSchedules+=TriggerSchedule*))|
-		((workflowTypeKW=('workflow_call:')|('workflow_dispatch:'))(BEGIN workFlowActivities+=Activity* END))
+		((scheduleNameKW=('schedules:'|'schedule:'))(triggerSchedules+=TriggerSchedule*))|
+		((workflowTypeKW=('workflow_call:'|'workflow_dispatch:'))(BEGIN workFlowActivities+=Activity* END))
 	)
 ;
 
@@ -178,7 +177,6 @@ Script:
 	(BEGIN (subSteps+=(Action|Script))* END)?
 ;
 
-//------------------------------------------Task: Add ENUM to keyword
 Action:
 	(('name:' actionName=UnquotedString)|
 	(
@@ -200,23 +198,12 @@ ParameterValue:
 
 
 /* Defining Enum */
-/*----------------------------------------------------Permission Enum----------------------------------------------------*/
-
-enum Permission:
-	READ_ALL = 'read-all:' |
-    WRITE_ALL = 'write-all:'|
-    READ ='read:'|
-    WRITE = 'write:'|
-    NONE = 'none:'
-;
 
 /*----------------------------------------------------Event Enum----------------------------------------------------*/
 enum PipelineEventKeyword:
     PPL_EVT_PUSH = 'push:' |
     PPL_EVT_PULL_REQUEST = 'pull_request:' |
-    //PPL_EVT_SCHEDULE = 'schedule:' |
     PPL_EVT_NONE = 'none' |
-    PPL_EVT_WORKFLOW_DISPATCH = 'workflow_dispatch:' |
     PPL_EVT_REPOSITORY_DISPATCH = 'repository_dispatch:' |
     PPL_EVT_CHECK_RUN = 'check_run:' |
     PPL_EVT_CHECK_SUITE = 'check_suite:' |
@@ -283,8 +270,6 @@ enum PipelineKeyword:
     PPL_KW_RUN_NAME = 'run-name:' |
     PPL_KW_ON = 'on:' |
     PPL_KW_DEFAULTS = 'defaults:' |
-    PPL_KW_RUN = 'run:' |
-    PPL_KW_SHELL = 'shell:' |
     PPL_KW_WORKING_DIRECTORY = 'working-directory:' |
     PPL_KW_ENV = 'env:' |
     PPL_KW_PERMISSION = 'permission:' |
@@ -322,19 +307,8 @@ enum PipelineKeyword:
     PPL_KW_STAGE = 'stage:' |
     PPL_KW_CONDITION = 'condition:' |
     PPL_KW_IS_SKIPPABLE = 'isSkippable:' |
-    PPL_KW_DEPENDS_ON = 'dependsOn:' |
     PPL_KW_JOB = 'job:' |
     PPL_KW_DEPLOYMENT = 'deployment:' |
-//    PPL_KW_NEEDS = 'needs:' |
-    PPL_KW_SCRIPT = 'script:' |
-    PPL_KW_BASH = 'bash:' |
-    PPL_KW_PWSH = 'pwsh:' |
-    PPL_KW_POWERSHELL = 'powershell:' |
-    PPL_KW_CHECKOUT = 'checkout:' |
-    PPL_KW_DOWNLOAD = 'download:' |
-    PPL_KW_GET_PACKAGE = 'getPackage:' |
-    PPL_KW_PUBLISH = 'publish:' |
-    PPL_KW_TASK = 'task:' |
     PPL_KW_VALUE = 'value:' |
     PPL_KW_READONLY = 'readonly:' |
     PPL_KW_BUILDS = 'builds:' |
@@ -357,7 +331,6 @@ enum PipelineKeyword:
     PPL_KW_MATRIX = 'matrix:' |
     PPL_KW_CONTAINER = 'container:' |
     PPL_KW_SERVICES = 'services:' |
-    PPL_KW_STEPS = 'steps:' |
     PPL_KW_USES = 'uses:' |
     PPL_KW_WITH = 'with:' |
     PPL_KW_TIMEOUT_MINUTES = 'timeout-minutes:' |
