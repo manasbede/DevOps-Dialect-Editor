@@ -1,0 +1,725 @@
+-- @path GH=/ca.mcgill.devops.pipeline/model/generated/Pipeline.ecore
+-- @path AZ=/ca.mcgill.devops.pipeline/model/generated/Pipeline.ecore
+
+module GitHub2Azure;
+create OUT : AZ from IN : GH;
+
+helper def : jobStageNo : Integer = 0;
+helper def : stageNumber : Integer = 0;
+helper def : temp : String = 'string0';
+
+helper def : pipeline : AZ!Pipeline = OclUndefined;
+helper def : defaultStage : AZ!Stage = OclUndefined;
+
+helper def : independentJob : OrderedSet(AZ!Job) = OrderedSet{};
+helper def : dependentJob : OrderedSet(AZ!Job) = OrderedSet{};
+helper def : stageList : Sequence(AZ!Stage) = Sequence{};
+
+helper def : tmpJob : AZ!Job = OclUndefined;
+helper def : tempAction : AZ!Action = OclUndefined;
+helper def : tempScript : AZ!Script = OclUndefined;
+helper def : tempStep : AZ!Step = OclUndefined;
+
+-- List of keys
+helper def : mappedJobList : Sequence(AZ!Job) = Sequence {};
+
+-- Corresponding list of values
+helper def : stageIndexList : Sequence(Integer) = Sequence {};
+
+rule pipeline2pipeline{
+	from
+		github_pipeline: GH!Pipeline
+	to
+		default_stage: AZ!Stage(
+			name <- 'stage'+thisModule.stageNumber,
+			displayName <- 'Stage '+thisModule.stageNumber
+		),
+		azure_pipeline: AZ!Pipeline(
+			jobOrStageVar <- 'stages:',
+			stages <- default_stage
+		)
+		
+	do{
+		thisModule.pipeline <- azure_pipeline;
+		thisModule.defaultStage <- default_stage;
+		thisModule.stageList <- thisModule.stageList -> including(default_stage);
+		--thisModule.stageNumber <- thisModule.stageNumber + 1;
+
+		--thisModule.debug(thisModule.temp.split('string')->at(2));
+		
+		for (job in github_pipeline.jobs){
+			if (job.dependKW.oclIsUndefined()){
+				thisModule.debug(job.name);
+				thisModule.JobtoDefaultStage(job);	
+				thisModule.independentJob <- thisModule.independentJob -> including(job);
+				thisModule.mappedJobList <- thisModule.mappedJobList -> including(job);
+				thisModule.stageIndexList <- thisModule.stageIndexList -> including(0);
+			}
+			else {
+				thisModule.dependentJob <- thisModule.dependentJob -> including(job);	
+			}
+		}
+		
+		for (job in thisModule.dependentJob){
+			thisModule.debug(job.name);	
+			for (depJob in job.references){
+				if (thisModule.jobStageNo < (thisModule.stageIndexList.at(thisModule.mappedJobList.indexOf(depJob)))){
+					thisModule.jobStageNo <- thisModule.stageIndexList.at(thisModule.mappedJobList.indexOf(depJob));
+				}
+			}
+			thisModule.debug(thisModule.jobStageNo);
+			if (thisModule.jobStageNo = thisModule.stageNumber){
+					thisModule.stageNumber <- thisModule.stageNumber + 1; 
+					thisModule.JobtoNewStage(job);
+			}
+			else{
+				thisModule.JobtoStage(job,thisModule.stageList.at(thisModule.jobStageNo+2));	
+			}
+		}
+	}
+}
+
+rule configuration2configuration{
+	from
+		github_config: GH!Configuration
+	to
+		azure_config: AZ!Configuration(
+			name <- github_config.name,
+			variableKW <- 'variables:'
+		)
+	do{
+		thisModule.pipeline.pipelineConfiguration <- azure_config;
+		
+		if (not github_config.defaultShellValue.oclIsUndefined()){
+			--thisModule.toVariable(azure_config,'defaultShellValue',github_config.defaultShellValue);	
+		}
+		if (not github_config.defaultWDValue.oclIsUndefined()){
+			--thisModule.toVariable(azure_config,'defaultWDValue',github_config.defaultWDValue);	
+		}
+	}
+}
+
+rule variable2variable{
+	from 
+		github_var: GH!Variable
+	to
+		azure_var: AZ!Variable(
+			variableKey <- github_var.variableKey,
+			variableValue <- github_var.variableValue,
+			name <- github_var.name,
+			value <- github_var.value,
+			readonly <- github_var.readonly,
+			variables <- github_var.variables
+		)
+	do{
+		thisModule.pipeline.pipelineConfiguration.pplVariables <- thisModule.pipeline.pipelineConfiguration.pplVariables->including(azure_var);
+	}
+}
+
+rule evnet2event{
+	from
+		github_event: GH!Event
+	to
+		azure_trigger: AZ!Event(
+			includedPaths <- github_event.includedPaths,
+			excludedPaths <- github_event.excludedPaths,
+			includedTags <- github_event.includedTags,
+			excludedTags <- github_event.excludedTags
+		)
+		
+	do{
+		--thisModule.debug('Here we go '+github_event.name+'\n');
+		if (github_event.name.toString() = 'push:' and github_event.workflowTypeKW.oclIsUndefined() and github_event.scheduleNameKW.oclIsUndefined()){
+			azure_trigger.name <- 'trigger:';
+		}
+		if (github_event.name.toString() = 'pull_request:'){
+			azure_trigger.name <- 'pr:';
+		}
+		if (not github_event.workflowTypeKW.oclIsUndefined() and github_event.workflowTypeKW.toString() = 'workflow_dispatch:'){
+			azure_trigger.name <- 'trigger:';	
+		}
+		if (not github_event.scheduleNameKW.oclIsUndefined()){
+			azure_trigger.scheduleNameKW <- 'schedules:';
+			for (sch in github_event.triggerSchedules){
+				thisModule.createSchedule(azure_trigger,sch);
+			}
+		}
+		
+		for (b in github_event.includedBranches){
+			thisModule.includeBranch(azure_trigger,b.name.toString());	
+		}
+		for (b in github_event.excludedBranches){
+			thisModule.excludeBranch(azure_trigger,b.name.toString());	
+		}
+		thisModule.pipeline.triggers <- thisModule.pipeline.triggers-> including(azure_trigger);
+		
+	}
+}
+
+
+rule toVariable(config:AZ!Configuration, variableKey:String, variableValue:String){
+	to
+		azure_var: AZ!Variable(
+			variableKey <- variableKey,
+			variableValue <- variableValue
+		)
+	do{
+		config.pplVariables <- config.pplVariables-> including(azure_var);	
+	}
+}
+
+
+--------------------------------------Job---------------------------------------
+rule JobtoDefaultStage(job:GH!Job){
+	to
+		azure_job: AZ!Job(
+			name <- job.name
+		)
+	do{
+		thisModule.defaultStage.jobs <- thisModule.defaultStage.jobs -> including(azure_job);
+		
+		for(param in job.jobParameterValues){
+			if (param.name.toString() <> 'defaults:'){
+				thisModule.JobParameters(param,azure_job);
+			}
+		}
+		
+		for (step in job.steps){
+			if (step.oclIsTypeOf(GH!Script)){
+				thisModule.debug('Step is script');
+				thisModule.CreateScript(step,azure_job);
+			}
+			else{
+				thisModule.debug('Step is action');
+				if (step.actionKeyword.toString() <> 'id:'){
+					--thisModule.CreateAction(step,azure_job);
+					if (step.actionKeyword.toString() = 'uses:'){
+						thisModule.CreateScriptForAction('task:',step,azure_job);
+					}
+					else{
+						thisModule.CreateAction(step,azure_job);
+					}
+				}
+				else{
+					thisModule.tempStep <- step.subSteps -> first();
+					thisModule.debug(thisModule.tempStep.subSteps);
+					if (thisModule.tempStep.subSteps -> size() = 0){
+						thisModule.debug('ocl undefined aahe so uthe aloy aapn');
+						thisModule.tempStep.subSteps <- step.subSteps -> excluding(step.subSteps -> first());
+						if (thisModule.tempStep.oclIsTypeOf(GH!Script)){
+							thisModule.debug('Step is script');
+							thisModule.CreateScript(thisModule.tempStep,azure_job);
+						}
+						else{
+							thisModule.debug('Step is action');
+							thisModule.CreateAction(thisModule.tempStep,azure_job);
+						}
+					}
+					else{
+						for (subStep in step.subSteps){
+							if (subStep.oclIsTypeOf(GH!Script)){
+								thisModule.debug('Step is script');
+								thisModule.CreateScript(subStep,azure_job);
+							}
+							else{
+								thisModule.debug('Step is action');
+								thisModule.CreateAction(subStep,azure_job);
+							}
+						}	
+					}
+				}
+			}
+		}
+	}
+}
+
+rule JobtoStage(job:GH!Job, stage:AZ!Stage){
+	to
+		azure_job: AZ!Job(
+			name <- job.name
+		)
+	do{
+		stage.jobs <- stage.jobs -> including(azure_job);
+		for(param in job.jobParameterValues){
+			if (param.name.toString() <> 'defaults:'){
+				thisModule.JobParameters(param,azure_job);
+			}
+		}
+		
+		for (step in job.steps){
+			if (step.oclIsTypeOf(GH!Script)){
+				thisModule.debug('Step is script');
+				thisModule.CreateScript(step,azure_job);
+			}
+			else{
+				thisModule.debug('Step is action');
+				if (step.actionKeyword.toString() <> 'id:'){
+					--thisModule.CreateAction(step,azure_job);
+					if (step.actionKeyword.toString() = 'uses:'){
+						thisModule.CreateScriptForAction('task:',step,azure_job);
+					}
+					else{
+						thisModule.CreateAction(step,azure_job);
+					}
+				}
+				else{
+					thisModule.tempStep <- step.subSteps -> first();
+					thisModule.debug(thisModule.tempStep.subSteps);
+					if (thisModule.tempStep.subSteps -> size() = 0){
+						thisModule.debug('ocl undefined aahe so uthe aloy aapn');
+						thisModule.tempStep.subSteps <- step.subSteps -> excluding(step.subSteps -> first());
+						if (thisModule.tempStep.oclIsTypeOf(GH!Script)){
+							thisModule.debug('Step is script');
+							thisModule.CreateScript(thisModule.tempStep,azure_job);
+						}
+						else{
+							thisModule.debug('Step is action');
+							thisModule.CreateAction(thisModule.tempStep,azure_job);
+						}
+					}
+					else{
+						for (subStep in step.subSteps){
+							if (subStep.oclIsTypeOf(GH!Script)){
+								thisModule.debug('Step is script');
+								thisModule.CreateScript(subStep,azure_job);
+							}
+							else{
+								thisModule.debug('Step is action');
+								thisModule.CreateAction(subStep,azure_job);
+							}
+						}	
+					}
+				}
+			}
+		}
+	}
+}
+
+
+rule JobtoNewStage(job:GH!Job){
+	to
+		azure_job: AZ!Job(
+			name <- job.name
+		),
+		azure_stage: AZ!Stage(
+			name <- 'stage'+thisModule.stageNumber,
+			displayName <- 'Stage '+thisModule.stageNumber
+		)
+	do{
+		
+		azure_stage.jobs <- azure_stage.jobs -> including(azure_job);	
+		
+		for(param in job.jobParameterValues){
+			if (param.name.toString() <> 'defaults:'){
+				thisModule.JobParameters(param,azure_job);
+			}
+		}
+		
+		thisModule.pipeline.stages <- thisModule.pipeline.stages -> including(azure_stage);
+		thisModule.mappedJobList <- thisModule.mappedJobList -> including(job);
+		thisModule.stageIndexList <- thisModule.stageIndexList -> including(thisModule.stageNumber);
+		thisModule.stageList <- thisModule.stageList -> including(azure_stage);
+		
+		
+		for (step in job.steps){
+			if (step.oclIsTypeOf(GH!Script)){
+				thisModule.debug('Step is script');
+				thisModule.CreateScript(step,azure_job);
+			}
+			else{
+				thisModule.debug('Step is action');
+				if (step.actionKeyword.toString() <> 'id:'){
+					--thisModule.CreateAction(step,azure_job);
+					if (step.actionKeyword.toString() = 'uses:'){
+						thisModule.CreateScriptForAction('task:',step,azure_job);
+					}
+					else{
+						thisModule.CreateAction(step,azure_job);
+					}
+				}
+				else{
+					thisModule.tempStep <- step.subSteps -> first();
+					thisModule.debug(thisModule.tempStep.subSteps);
+					if (thisModule.tempStep.subSteps -> size() = 0){
+						thisModule.debug('ocl undefined aahe so uthe aloy aapn');
+						thisModule.tempStep.subSteps <- step.subSteps -> excluding(step.subSteps -> first());
+						if (thisModule.tempStep.oclIsTypeOf(GH!Script)){
+							thisModule.debug('Step is script');
+							thisModule.CreateScript(thisModule.tempStep,azure_job);
+						}
+						else{
+							thisModule.debug('Step is action');
+							thisModule.CreateAction(thisModule.tempStep,azure_job);
+						}
+					}
+					else{
+						for (subStep in step.subSteps){
+							if (subStep.oclIsTypeOf(GH!Script)){
+								thisModule.debug('Step is script');
+								thisModule.CreateScript(subStep,azure_job);
+							}
+							else{
+								thisModule.debug('Step is action');
+								thisModule.CreateAction(subStep,azure_job);
+							}
+						}	
+					}
+				}
+			}
+		}
+	}
+}
+
+--------------------------------------Job Parameters-------------------------------
+
+rule AdditionalParameterWithName(param:GH!ParameterValue,root_param:AZ!ParameterValue, additional_param:String){
+	to
+		azure_param: AZ!ParameterValue(
+			name <- additional_param,
+			otherName <- param.otherName,
+			value <- param.value
+		)
+	do{
+		root_param.subParameters <- root_param.subParameters -> including(azure_param);
+	}
+}
+
+rule NestedParameters(param:GH!ParameterValue,root_param:AZ!ParameterValue){
+	to
+		azure_param: AZ!ParameterValue(
+			name<- param.name,
+			otherName <- param.otherName,
+			value <- param.value
+		)
+	do{
+		root_param.subParameters <- root_param.subParameters -> including(azure_param);
+		if (azure_param.name.toString() = 'max-parallel:'){
+			azure_param.name <- 'maxParallel:';	
+		}
+		for (subParam in param.subParameters){
+			--thisModule.debug('Here');
+			thisModule.NestedParameters(subParam, azure_param);
+		}
+	}
+}
+
+rule JobParameters(param:GH!ParameterValue,job:AZ!Job){
+	to
+		azure_param: AZ!ParameterValue(
+			name<- param.name,
+			otherName <- param.otherName
+			--value <- param.value
+		)
+	do{
+		
+		if (param.name.toString()='name:'){
+			azure_param.name <- 'displayName:';
+			azure_param.value <- param.value;
+		}
+		else if (param.name.toString() = 'runs-on:'){
+			azure_param.name <- 'pool:';
+			azure_param.value <- param.value;
+		}
+		else if (param.name.toString() = 'if:'){
+			azure_param.name <- 'condition:';	
+			azure_param.value <- param.value;
+		}
+		else if (param.name.toString() = 'continue-on-erro:'){
+			azure_param.name <- 'continueOnError:';
+			azure_param.value <- param.value;
+		}
+		else if (param.name.toString() = 'timeout-minutes:'){
+			azure_param.name <- 'timeoutInMinutes:';	
+			azure_param.value <- param.value;
+		}
+		else if (param.name.toString() = 'with:'){
+			azure_param.name <- 'variables:';	
+			azure_param.value <- param.value;
+		}
+		else if (param.name.toString() = 'uses:'){
+			azure_param.name <- 'uses:';
+			azure_param.value <- thisModule.nullString;
+			thisModule.debug('Here we are going to display data : '+azure_param.value);
+			thisModule.AdditionalParameterWithName(param,azure_param,'repositories:');
+		}
+		else{
+			azure_param.value <- param.value;	
+		}
+		
+		
+		job.jobParameterValues <- job.jobParameterValues -> including(azure_param);
+		for (subParam in param.subParameters){
+			--thisModule.debug('Here');
+			thisModule.NestedParameters(subParam, azure_param);
+		}
+
+	}
+}
+
+
+--------------------------------------Step----------------------------------------
+
+rule CreateAction(action:GH!Action,job:AZ!Job){
+	to
+		azure_action: AZ!Action(
+			actionName <- action.actionName,
+			otherKeyword <- action.otherKeyword,
+			actionValue <- action.actionValue
+		)
+	do{
+		job.steps <- job.steps -> including(azure_action);
+		if (action.actionKeyword.toString() = 'name:'){
+			azure_action.actionKeyword <- 'displayName:';
+		}
+		else if (action.actionKeyword.toString() = 'if:'){
+			azure_action.actionKeyword <- 'condition:';
+		}
+		else if (action.actionKeyword.toString() = 'working-directory:'){
+			azure_action.actionKeyword <- 'workingDirectory:';
+		}
+		else if (action.actionKeyword.toString() = 'with:'){
+			azure_action.actionKeyword <- 'inputs:';
+		}
+		else if (action.actionKeyword.toString() = 'timeout-minutes:'){
+			azure_action.actionKeyword <- 'timeoutInMinutes:';
+		}
+		else{
+			azure_action.actionKeyword <- action.actionKeyword;
+		}
+		
+		for (step in action.subSteps){
+			if (step.oclIsTypeOf(GH!Script)){
+				thisModule.debug('subStep is script');
+				thisModule.CreateSubScript(step,azure_action);
+			}
+			else{
+				thisModule.debug('subStep is action');
+				if (step.actionKeyword.toString() = 'uses:'){
+					thisModule.CreateSubScriptForAction('task:',step,azure_action);
+				}
+				else{
+					thisModule.CreateSubAction(step,azure_action);
+				}
+			}
+		}
+	}
+}
+
+rule CreateScript(script:GH!Script,job:AZ!Job){
+	to
+		azure_script: AZ!Script(
+			name <- script.name,
+			command <-script.command
+		)
+	do{
+		job.steps <- job.steps -> including(azure_script);
+		
+		if(script.name.toString() = 'run:'){
+			azure_script.name <- 'bash:';
+		}
+		
+		for (step in script.subSteps){
+			if (step.oclIsTypeOf(GH!Script)){
+				thisModule.debug('subStep is script');
+				thisModule.CreateSubScript(step,azure_script);
+			}
+			else{
+				thisModule.debug('subStep is action');
+				if (step.actionKeyword.toString() = 'uses:'){
+					thisModule.CreateSubScriptForAction('task:',step,azure_script);
+				}
+				else{
+					thisModule.CreateSubAction(step,azure_script);
+				}
+			}
+		}
+	}
+}
+
+rule CreateSubAction(action:GH!Action,step:AZ!Action){
+	to
+		azure_action: AZ!Action(
+			actionName <- action.actionName,
+			otherKeyword <- action.otherKeyword,
+			actionValue <- action.actionValue
+		)
+	do{
+		step.subSteps <- step.subSteps -> including(azure_action);
+		
+		if (action.actionKeyword.toString() = 'name:' and action.otherKeyword = OclUndefined){
+			azure_action.actionKeyword <- 'displayName:';
+		}
+		else if (action.actionKeyword.toString() = 'if:'){
+			azure_action.actionKeyword <- 'condition:';
+		}
+		else if (action.actionKeyword.toString() = 'working-directory:'){
+			azure_action.actionKeyword <- 'workingDirectory:';
+		}
+		else if (action.actionKeyword.toString() = 'with:'){
+			azure_action.actionKeyword <- 'inputs:';
+		}
+		else if (action.actionKeyword.toString() = 'timeout-minutes:'){
+			azure_action.actionKeyword <- 'timeoutInMinutes:';
+		}
+		else{
+			azure_action.actionKeyword <- action.actionKeyword;
+		}
+				
+		for (step in action.subSteps){
+			if (step.oclIsTypeOf(GH!Script)){
+				thisModule.debug('subSubStep is script');
+				thisModule.CreateSubScript(step,azure_action);
+			}
+			else{
+				thisModule.debug('subSubStep is action');
+				if (step.actionKeyword.toString() = 'uses:'){
+					thisModule.CreateSubScriptForAction('task:',step,azure_action);
+				}
+				else{
+					thisModule.CreateSubAction(step,azure_action);
+				}
+			}
+		}
+	}
+}
+
+rule CreateSubScript(script:GH!Script,step:AZ!Script){
+	to
+		azure_script: AZ!Script(
+			name <- script.name,
+			command <-script.command
+		)
+	do{
+		step.subSteps <- step.subSteps -> including(azure_script);
+		if(script.name.toString() = 'run:'){
+			azure_script.name <- 'bash:';
+		}
+		for (step in script.subSteps){
+			if (step.oclIsTypeOf(GH!Script)){
+				thisModule.debug('subSubStep is script');
+				thisModule.CreateSubScript(step,azure_script);
+			}
+			else{
+				thisModule.debug('subSubStep is action');
+				if (step.actionKeyword.toString() = 'uses:'){
+					thisModule.CreateSubScriptForAction('task:',step,azure_script);
+				}
+				else{
+					thisModule.CreateSubAction(step,azure_script);
+				}
+			}
+		}
+	}
+}
+
+rule CreateScriptForAction(script_name:String, action:GH!Action, job:AZ!Action){
+	to
+		azure_script: AZ!Script(
+			name <- script_name,
+			command <- action.actionValue
+		)
+	do{
+		job.steps <- job.steps -> including(azure_script);
+		for (step in action.subSteps){
+			if (step.oclIsTypeOf(GH!Script)){
+				thisModule.debug('subSubStep is script');
+				thisModule.CreateSubScript(step,azure_script);
+			}
+			else{
+				thisModule.debug('subSubStep is action');
+				if (step.actionKeyword.toString() = 'uses:'){
+					thisModule.CreateSubScriptForAction('task:',step,azure_script);
+				}
+				else{
+					thisModule.CreateSubAction(step,azure_script);
+				}
+			}
+		}
+	}
+}
+
+rule CreateSubScriptForAction(script_name:String, action:GH!Action, step:AZ!Action){
+	to
+		azure_script: AZ!Script(
+			name <- script_name,
+			command <- action.value
+		)
+	do{
+		step.subSteps <- step.subSteps -> including(azure_script);
+		for (step in action.subSteps){
+			if (step.oclIsTypeOf(GH!Script)){
+				thisModule.debug('subSubStep is script');
+				thisModule.CreateSubScript(step,azure_script);
+			}
+			else{
+				thisModule.debug('subSubStep is action');
+				if (step.actionKeyword.toString() = 'uses:'){
+					thisModule.CreateSubScriptForAction('task:',step,azure_script);
+				}
+				else{
+					thisModule.CreateSubAction(step,azure_script);
+				}
+			}
+		}
+	}
+}
+
+
+---------------------------------------Event---------------------------------------
+rule includeBranch(trigger:AZ!Event,branchName: String){
+	to
+		azure_branch: AZ!Branch(
+			name <- branchName	
+		)
+	do{
+		trigger.includedBranches <- trigger.includedBranches -> including(azure_branch);
+	}
+}
+
+rule excludeBranch(trigger:AZ!Event,branchName: String){
+	to
+		azure_branch: AZ!Branch(
+			name <- branchName	
+		)
+	do{
+		trigger.excludedBranches <- trigger.excludedBranches -> including(azure_branch);
+	}
+}
+
+rule includeBranchSch(sch:AZ!TrrigerSchedule,branchName: String){
+	to
+		azure_branch: AZ!Branch(
+			name <- branchName	
+		)
+	do{
+		sch.includedBranches <- sch.includedBranches -> including(azure_branch);
+	}
+}
+
+rule excludeBranchSch(sch:AZ!TriggerSchedule,branchName: String){
+	to
+		azure_branch: AZ!Branch(
+			name <- branchName	
+		)
+	do{
+		sch.excludedBranches <- sch.excludedBranches -> including(azure_branch);
+	}
+}
+
+
+rule createSchedule(trigger:AZ!Event,sch:GH!TriggerSchedule){
+	to
+		triggerSchedule: AZ!TriggerSchedule
+	do{
+		triggerSchedule.cronValue <- sch.cronValue;
+		trigger.triggerSchedules <- trigger.triggerSchedules -> including(triggerSchedule);
+		for (b in sch.includedBranches){
+			thisModule.includeBranchSch(triggerSchedule, b.name.toString());
+		}
+		
+		for (b in sch.excludedBranches){
+			thisModule.excludeBranchSch(triggerSchedule, b.name.toString());
+		}
+	}
+}
+	

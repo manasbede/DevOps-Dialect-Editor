@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pipeline:Pipeline xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pipeline="http://www.mcgill.ca/devops/pipeline/Pipeline" jobOrStageVar="stages:">
+  <pipelineConfiguration name="build-snowflake-exp" variableKW="variables:">
+    <pplVariables variableKey="VMIMAGENAME" variableValue="ubuntu-latest"/>
+    <pplVariables variableKey="REPO_NAME" variableValue="$(Build.Repository.Name)"/>
+    <pplVariables variableKey="BRANCH_NAME" variableValue="$(Build.SourceBranchName)"/>
+    <pplVariables variableKey="System.Debug" variableValue="true"/>
+  </pipelineConfiguration>
+  <triggers name="trigger:" excludedPaths="- docs/ - README.md">
+    <includedBranches name="develop/*"/>
+    <includedBranches name="feature/*"/>
+    <includedBranches name="master"/>
+    <excludedBranches name="releases/old*"/>
+  </triggers>
+  <triggers name="pr:"/>
+  <triggers name="trigger:"/>
+  <stages name="stage0" displayName="Stage 0">
+    <jobs name="config">
+      <jobParameterValues name="uses:">
+        <subParameters name="repositories:" value="aplaceformom/workflows/.github/workflows/default-config.yaml@main"/>
+      </jobParameterValues>
+      <jobParameterValues name="variables:">
+        <subParameters otherName="deployment-role" value="${{ inputs.deployment-role || null }}"/>
+        <subParameters otherName="application-role" value="${{ inputs.function-role  || null }}"/>
+        <subParameters otherName="aws-region" value="${{ inputs.aws-region || null }}"/>
+        <subParameters name="env:" value="${{ inputs.env }}"/>
+      </jobParameterValues>
+      <steps xsi:type="pipeline:Script" name="bash:" command="&quot;./activate profile&quot;"/>
+    </jobs>
+    <jobs name="deploy-jdk">
+      <jobParameterValues name="uses:">
+        <subParameters name="repositories:" value="aplaceformom/workflows/.github/workflows/jdk-install.yaml@main"/>
+      </jobParameterValues>
+      <jobParameterValues name="with:">
+        <subParameters otherName="deployment-role" value="${{ inputs.deployment-role || null }}"/>
+        <subParameters otherName="application-role" value="${{ inputs.function-role  || null }}"/>
+        <subParameters otherName="aws-region" value="${{ inputs.aws-region || null }}"/>
+        <subParameters name="env:" value="${{ inputs.env }}"/>
+      </jobParameterValues>
+      <jobParameterValues name="pool:" value="ubuntu-latest"/>
+      <steps xsi:type="pipeline:Action" actionKeyword="id:" actionValue="Install-JDK-17">
+        <subSteps xsi:type="pipeline:Script" name="bash:" command="&quot;cd /opt/$JBOOS_HOME &amp;&amp; source ~/.$PROFILE &amp;&amp; sudo apt update &amp;&amp; sudo apt purge -y openjdk-* &amp;&amp; sudo apt install -y openjdk-17-jdk&quot;"/>
+      </steps>
+    </jobs>
+  </stages>
+  <stages name="stage1" displayName="Stage 1">
+    <jobs name="deploy">
+      <jobParameterValues name="pool:" value="ubuntu-latest"/>
+      <steps xsi:type="pipeline:Script" name="task:" command="actions/download-artifact@v3">
+        <subSteps xsi:type="pipeline:Action" actionKeyword="inputs:">
+          <subSteps xsi:type="pipeline:Action" actionValue="${{ inputs.artifact }}"/>
+          <subSteps xsi:type="pipeline:Action" otherKeyword="path" actionValue="."/>
+        </subSteps>
+      </steps>
+      <steps xsi:type="pipeline:Script" name="bash:" command="&quot;: Debug lambda artifact\nunzip -l lambda.zip\nfind .\n&quot;"/>
+      <steps xsi:type="pipeline:Script" name="task:" command="aws-actions/configure-aws-credentials@v2">
+        <subSteps xsi:type="pipeline:Action" actionKeyword="inputs:">
+          <subSteps xsi:type="pipeline:Action" otherKeyword="role-to-assume" actionValue="${{ needs.config.outputs.deployment-role }}"/>
+          <subSteps xsi:type="pipeline:Action" otherKeyword="aws-region" actionValue="${{ needs.config.outputs.aws-region }}"/>
+        </subSteps>
+      </steps>
+      <steps xsi:type="pipeline:Script" name="bash:" command="&quot;: Test if lambda exists\nlambda_update=false\nif aws lambda get-function\&#xD;&#xA;        \ --function-name '${{ inputs.function-name }}' --region '${{ needs.config.outputs.aws-region\&#xD;&#xA;        \ }}' > /dev/null; then\n  echo \&quot;Detected lambda: ${{ inputs.function-name\&#xD;&#xA;        \ }}\&quot;\n  lambda_update=true\nfi\necho \&quot;update=${lambda_update}\&quot; >> \&quot;${GITHUB_OUTPUT}\&quot;\&#xD;&#xA;        \n&quot;"/>
+      <steps xsi:type="pipeline:Script" name="bash:" command="&quot;: Create Lambda\nset --\nset -- \&quot;$@\&quot; --handler '${{ inputs.handler }}'\n\&#xD;&#xA;        set -- \&quot;$@\&quot; --region '${{ needs.config.outputs.aws-region }}'\nset -- \&quot;\&#xD;&#xA;        $@\&quot; --function-name '${{ inputs.function-name }}'\nset -- \&quot;$@\&quot; --zip-file\&#xD;&#xA;        \ \&quot;fileb://${PWD}/lambda.zip\&quot;\nset -- \&quot;$@\&quot; --runtime '${{ inputs.runtime\&#xD;&#xA;        \ }}'\nset -- \&quot;$@\&quot; --timeout '${{ inputs.timeout }}'\nset -- \&quot;$@\&quot; --memory-size\&#xD;&#xA;        \ '${{ inputs.memory }}'\nset -- \&quot;$@\&quot; --role '${{ inputs.function-role }}'\n\&#xD;&#xA;        set -- \&quot;$@\&quot; --description '${{ inputs.description }}'\nif test ! -z \&quot;${{\&#xD;&#xA;        \ inputs.subnets }}\&quot; &amp;&amp; test ! -z \&quot;${{ inputs.security_groups }}\&quot;; then\n\&#xD;&#xA;        set -- \&quot;$@\&quot; --vpc-config 'SubnetIds=[${{ inputs.subnets }}],SecurityGroups=[${{\&#xD;&#xA;        \ inputs.security_groups }}]'\nfi\nset -- \&quot;$@\&quot; ${{ inputs.publish &amp;&amp; '--publish'\&#xD;&#xA;        \ || '--no-publish' }}\naws lambda create-function \&quot;$@\&quot;\n&quot;">
+        <subSteps xsi:type="pipeline:Action" actionKeyword="condition:" actionValue="${{ steps.lambda.outputs.update != 'true' }}"/>
+      </steps>
+      <steps xsi:type="pipeline:Script" name="bash:" command="&quot;: Update Lambda Code\nset --\nset -- \&quot;$@\&quot; --region '${{ needs.config.outputs.aws-region\&#xD;&#xA;        \ }}'\nset -- \&quot;$@\&quot; --function-name '${{ inputs.function-name }}'\nset --\&#xD;&#xA;        \ \&quot;$@\&quot; --zip-file \&quot;fileb://${PWD}/lambda.zip\&quot;\nset -- \&quot;$@\&quot; ${{ inputs.publish\&#xD;&#xA;        \ &amp;&amp; '--publish' || '--no-publish' }}\naws lambda update-function-code \&quot;\&#xD;&#xA;        $@\&quot;\n&quot;">
+        <subSteps xsi:type="pipeline:Action" actionKeyword="condition:" actionValue="${{ steps.lambda.outputs.update == 'true' }}"/>
+      </steps>
+      <steps xsi:type="pipeline:Script" name="bash:" command="&quot;: Update Lambda Config\nfor i in $(seq 100); do\n  status=\&quot;$(aws lambda\&#xD;&#xA;        \ get-function --function-name '${{ inputs.function-name }}' --region '${{\&#xD;&#xA;        \ needs.config.outputs.aws-region }}' | jq -r .Configuration.LastUpdateStatus)\&quot;\&#xD;&#xA;        \n  test \&quot;${status}\&quot; = 'InProgress' || break\n  sleep 3\ndone\nset --\n\&#xD;&#xA;        set -- \&quot;$@\&quot; --handler '${{ inputs.handler }}'\nset -- \&quot;$@\&quot; --region '${{\&#xD;&#xA;        \ needs.config.outputs.aws-region }}'\nset -- \&quot;$@\&quot; --function-name '${{\&#xD;&#xA;        \ inputs.function-name }}'\nset -- \&quot;$@\&quot; --runtime '${{ inputs.runtime }}'\n\&#xD;&#xA;        set -- \&quot;$@\&quot; --timeout '${{ inputs.timeout }}'\nset -- \&quot;$@\&quot; --memory-size\&#xD;&#xA;        \ '${{ inputs.memory }}'\nset -- \&quot;$@\&quot; --role '${{ inputs.function-role }}'\n\&#xD;&#xA;        set -- \&quot;$@\&quot; --description '${{ inputs.description }}'\naws lambda update-function-configuration\&#xD;&#xA;        \ \&quot;$@\&quot;\n&quot;">
+        <subSteps xsi:type="pipeline:Action" actionKeyword="condition:" actionValue="${{ steps.lambda.outputs.update == 'true' }}"/>
+      </steps>
+    </jobs>
+  </stages>
+  <stages name="stage2" displayName="Stage 2">
+    <jobs name="test">
+      <jobParameterValues name="pool:" value="ubuntu-latest"/>
+      <steps xsi:type="pipeline:Script" name="bash:" command="&quot;$HOME/ginger/sanity/non-prod-single.sh&quot;"/>
+    </jobs>
+  </stages>
+</pipeline:Pipeline>
