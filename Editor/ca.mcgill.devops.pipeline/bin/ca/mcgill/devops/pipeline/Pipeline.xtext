@@ -212,6 +212,7 @@ enum Permission:
 
 /*----------------------------------------------------Event Enum----------------------------------------------------*/
 enum PipelineEventKeyword:
+	PPL_EVT_NULL = 'null' |
     PPL_EVT_PUSH = 'push:' |
     PPL_EVT_PULL_REQUEST = 'pull_request:' |
     //PPL_EVT_SCHEDULE = 'schedule:' |
@@ -279,6 +280,7 @@ enum PipelineEventKeyword:
 
 /*----------------------------------------------------Pipeline Enum----------------------------------------------------*/
 enum PipelineKeyword:
+	PPL_KW_NULL = 'null' |
     PPL_KW_NAME = 'name:' |
     PPL_KW_RUN_NAME = 'run-name:' |
     PPL_KW_ON = 'on:' |
