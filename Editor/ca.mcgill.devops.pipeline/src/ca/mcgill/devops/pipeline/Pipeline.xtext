@@ -201,6 +201,7 @@ ParameterValue:
 
 /*----------------------------------------------------Event Enum----------------------------------------------------*/
 enum PipelineEventKeyword:
+	PPL_EVT_NULL = 'null' |
     PPL_EVT_PUSH = 'push:' |
     PPL_EVT_PULL_REQUEST = 'pull_request:' |
     PPL_EVT_NONE = 'none' |
@@ -229,7 +230,7 @@ enum PipelineEventKeyword:
     PPL_EVT_RELEASE = 'release:' |
     PPL_EVT_STATUS = 'status:' |
     PPL_EVT_WATCH = 'watch:' |
-    PPL_EVT_WORKFLOW_CALL = 'workflow_call:' |
+    //PPL_EVT_WORKFLOW_CALL = 'workflow_call:' |
     PPL_EVT_WORKFLOW_RUN = 'workflow_run:' |
     PPL_EVT_TRIGGER = 'trigger:' |
     PPL_EVT_PR = 'pr:' |
@@ -266,6 +267,7 @@ enum PipelineEventKeyword:
 
 /*----------------------------------------------------Pipeline Enum----------------------------------------------------*/
 enum PipelineKeyword:
+	PPL_KW_NULL = 'null' |
     PPL_KW_NAME = 'name:' |
     PPL_KW_RUN_NAME = 'run-name:' |
     PPL_KW_ON = 'on:' |
